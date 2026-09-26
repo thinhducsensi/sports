@@ -768,6 +768,17 @@ def parse_direct_cola(data, cfg):
         if not home or not away:
             continue
         sources = []
+        league_obj = raw.get("league") if isinstance(raw.get("league"), dict) else {}
+        competition_obj = raw.get("competition") if isinstance(raw.get("competition"), dict) else {}
+        tournament_obj = raw.get("tournament") if isinstance(raw.get("tournament"), dict) else {}
+        competition = first_text(
+            raw.get("competitionName"), raw.get("competition_name"),
+            raw.get("leagueName"), raw.get("league_name"),
+            raw.get("tournamentName"), raw.get("tournament_name"),
+            league_obj.get("name"), league_obj.get("title"),
+            competition_obj.get("name"), competition_obj.get("title"),
+            tournament_obj.get("name"), tournament_obj.get("title"),
+        )
         anchors = raw.get("anchorAppointmentVoList")
         if isinstance(anchors, list):
             for i, anchor in enumerate(anchors):
@@ -876,17 +887,6 @@ def parse_direct_gavang33(data, cfg):
         if not home or not away:
             continue
         sources = []
-        league_obj = raw.get("league") if isinstance(raw.get("league"), dict) else {}
-        competition_obj = raw.get("competition") if isinstance(raw.get("competition"), dict) else {}
-        tournament_obj = raw.get("tournament") if isinstance(raw.get("tournament"), dict) else {}
-        competition = first_text(
-            raw.get("competitionName"), raw.get("competition_name"),
-            raw.get("leagueName"), raw.get("league_name"),
-            raw.get("tournamentName"), raw.get("tournament_name"),
-            league_obj.get("name"), league_obj.get("title"),
-            competition_obj.get("name"), competition_obj.get("title"),
-            tournament_obj.get("name"), tournament_obj.get("title"),
-        )
         anchors = raw.get("anchorAppointmentVoList")
         if isinstance(anchors, list):
             for ai, anchor in enumerate(anchors):
@@ -1254,8 +1254,7 @@ def _xoilac_pages_from_json(text, base_url, candidates):
                     name = first_text(c.get("name"), c.get("nickName"), c.get("nickname"))
                 else:
                     name = scalar_text(c)
-                # Preserve duplicates: the listing can describe one commentator per player source.
-                if name:
+                if name and normalize_text(name) not in {normalize_text(x) for x in names}:
                     names.append(name)
         if names:
             commentators[item["api_index"]] = names
@@ -1281,50 +1280,6 @@ def _xoilac_listing_for_domain(base_url, candidates, category="football"):
             path = page
         normalized[idx] = urljoin(base_url.rstrip("/") + "/", path.lstrip("/"))
     return normalized, commentators, headers
-
-
-def _xoilac_explicit_caster_values(body):
-    if not body:
-        return []
-    values = []
-    patterns = (
-        r'\bdata-(?:commentator|caster|blv|nickname|nick-name)=["\']([^"\']+)["\']',
-        r'["\'](?:commentator|caster|blv|nickName|nickname)["\']\s*:\s*["\']([^"\']+)["\']',
-        r'\b(?:commentator|caster|blv)\s*[:=]\s*["\']([^"\']+)["\']',
-    )
-    for pattern in patterns:
-        for m in re.finditer(pattern, body, flags=re.I):
-            value = html_lib.unescape(_strip_tags(m.group(1))).strip()
-            if value:
-                values.append(value)
-    for tag in ("title", "h1", "h2"):
-        for m in re.finditer(rf"(?is)<{tag}[^>]*>(.*?)</{tag}>", body):
-            value = html_lib.unescape(_strip_tags(m.group(1))).strip()
-            if value:
-                values.append(value)
-    return values
-
-
-def _xoilac_source_caster(people, label, target, target_body, order, total_sources):
-    people = [scalar_text(x) for x in (people or []) if scalar_text(x)]
-    if people:
-        matched = people_match_from_evidence(people, [label, target])
-        if matched:
-            return matched
-    explicit_values = _xoilac_explicit_caster_values(target_body)
-    if people and explicit_values:
-        matched = people_match_from_evidence(people, explicit_values)
-        if matched:
-            return matched
-    # Positional mapping is authoritative only when cardinality is 1:1.
-    if total_sources > 1 and len(people) == total_sources and 0 <= order < len(people):
-        return people[order]
-    if not people:
-        for value in explicit_values:
-            human = strip_stream_technical_tokens(value)
-            if human and not technical_label(human) and len(human.split()) <= 4:
-                return human
-    return ""
 
 
 def fetch_xoilac_sources(candidates):
@@ -1365,11 +1320,8 @@ def fetch_xoilac_sources(candidates):
                 page_htmls[idx] = (url, "")
 
     jobs = []
-    player_counts = {}
     for idx, (page_url, body) in page_htmls.items():
-        links = _xoilac_player_links(body, page_url)
-        player_counts[idx] = len(links)
-        for order, label, target in links:
+        for order, label, target in _xoilac_player_links(body, page_url):
             jobs.append((idx, order, label, target, page_url))
 
     result = {}
@@ -1390,10 +1342,15 @@ def fetch_xoilac_sources(candidates):
                 if not stream:
                     continue
                 fmt = "HLS" if ".m3u8" in stream.lower() else "FLV" if ".flv" in stream.lower() else ""
+                # Player-link text is a source identity, not automatically a commentator.
+                # Only bind a per-stream caster when the listing API explicitly gave
+                # commentator names and this source label matches exactly one of them.
+                # Otherwise leave it empty and use the match-level commentator from
+                # sport.json, exactly like SportStream does for the match card.
+                caster = ""
                 people = listed_commentators.get(idx, [])
-                caster = _xoilac_source_caster(
-                    people, label, target, body, order, player_counts.get(idx, 0)
-                )
+                if people:
+                    caster = people_match_from_evidence(people, [label])
                 obj = source_obj(
                     stream,
                     caster=caster,
@@ -1402,10 +1359,7 @@ def fetch_xoilac_sources(candidates):
                     name=label,
                     index=order,
                 )
-                if obj:
-                    obj["_xoilac_multi"] = player_counts.get(idx, 0) > 1
-                    obj["_xoilac_order"] = order
-                    result.setdefault(idx, []).append(obj)
+                result.setdefault(idx, []).append(obj)
     return {idx: dedupe_sources(srcs) for idx, srcs in result.items() if srcs}
 
 
@@ -1925,9 +1879,9 @@ def source_commentator(source, match):
     if matched:
         return matched
 
-    # Xoilac multi-source must not copy one match-level BLV to every player source.
-    if provider_key(match) == "xoilacxth" and source.get("_xoilac_multi"):
-        return ""
+    # Exact SportStream fallback. MainActivity reads the match-level field using
+    # commentator -> blv -> caster and shows it on the match card. It does not
+    # discard the value merely because there are several names.
     return direct_match_commentator(match)
 
 def order_sources(sources, match):
