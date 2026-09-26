@@ -45,6 +45,7 @@ GENERIC_STREAM_WORDS = {
     "main", "primary", "mirror", "default", "auto", "link", "channel", "cdn",
 }
 FORMAT_ORDER = {"HLS": 0, "FLV": 1, "TS": 2, "DASH": 3, "MP4": 4}
+KNOWN_PROVIDER_IDS = {"chuoichien", "colatv", "gavang33", "giovang", "phalang", "xoilacxth", "sport", "sports", "sportstream", "sport stream"}
 
 
 def scalar_text(value):
@@ -502,51 +503,100 @@ def explicit_source_people(source):
     return []
 
 
-def source_commentator(source, match):
-    known = match_known_people(match)
-    explicit = explicit_source_people(source)
-    evidence_values = [
-        source.get("provider"), source.get("name"), source.get("label"), source.get("title"), source.get("server"), source.get("url")
-    ]
+def is_provider_identity(value, match):
+    norm = normalize_text(value)
+    if not norm:
+        return False
+    match_provider = normalize_text(first_text(match.get("provider"), match.get("provider_name"), match.get("source"), match.get("source_name")))
+    return norm in KNOWN_PROVIDER_IDS or (match_provider and norm == match_provider)
+
+
+def strip_stream_technical_tokens(value):
+    raw = scalar_text(value)
+    if not raw:
+        return ""
+    text = re.sub(r"(?i)^\s*(?:blv|caster|commentator)\s*[:\-]?\s*", "", raw).strip()
+    text = re.sub(r"(?i)\b(?:hls|flv|dash|mpeg\s*ts|ts|mp4)\s*#?\d*\b", " ", text)
+    text = re.sub(r"(?i)\b(?:4k|uhd|qhd|fhd|full\s*hd|hd|sd|2160p?|1440p?|1080p?|720p?|576p?|540p?|480p?|360p?)\b", " ", text)
+    text = re.sub(r"(?i)\b\d{3,4}\s*[xX×]\s*\d{3,4}\b", " ", text)
+    text = re.sub(r"(?i)\b(?:backup|mirror|main|primary|auto|server|source|stream|link|channel|cdn|sv)\s*#?\d*\b", " ", text)
+    text = re.sub(r"[\[\](){}•|;,]+", " ", text)
+    text = re.sub(r"\s+", " ", text).strip(" -–—/\\")
+    return text.strip()
+
+
+def people_match_from_evidence(people, evidence_values):
+    if not people:
+        return ""
     evidence_norm = " ".join(normalize_text(v) for v in evidence_values if scalar_text(v))
     evidence_slug = slug_text(" ".join(scalar_text(v) for v in evidence_values if scalar_text(v)))
+    hits = []
+    for person in people:
+        norm = normalize_text(person)
+        slug = slug_text(person)
+        if (norm and norm in evidence_norm) or (slug and len(slug) >= 3 and slug in evidence_slug):
+            if person not in hits:
+                hits.append(person)
+    return hits[0] if len(hits) == 1 else ""
 
-    if explicit:
-        if len(explicit) == 1:
-            return explicit[0]
-        matched = [person for person in explicit if slug_text(person) and slug_text(person) in evidence_slug]
-        if len(matched) == 1:
-            return matched[0]
 
-    if known:
-        matched = []
-        for person in known:
-            norm = normalize_text(person)
-            slug = slug_text(person)
-            if (norm and norm in evidence_norm) or (slug and slug in evidence_slug):
-                matched.append(person)
-        if len(matched) == 1:
-            return matched[0]
+def source_commentator(source, match):
+    known = match_known_people(match)
 
-    provider = first_text(source.get("provider"))
-    if provider and not technical_label(provider):
-        human = clean_human_label(provider)
-        if human:
-            return human
+    explicit = explicit_source_people(source)
+    if len(explicit) == 1:
+        return explicit[0]
+    if len(explicit) > 1:
+        matched = people_match_from_evidence(explicit, [source.get("name"), source.get("label"), source.get("title"), source.get("server")])
+        if matched:
+            return matched
+        return ""
 
+    # SportStream's resolver model treats source.name/provider as source identity,
+    # not as match commentator. Use them only as evidence, never blindly.
+    name_evidence = [source.get("name"), source.get("label"), source.get("title"), source.get("server")]
+    matched = people_match_from_evidence(known, name_evidence)
+    if matched:
+        return matched
+
+    # Some resolvers put the caster directly in source.name. Accept only the
+    # human residue after removing protocol/quality/backup tokens.
     for key in ("name", "label", "title", "server"):
-        human = clean_human_label(source.get(key))
-        if human:
-            if known:
-                matches = [person for person in known if slug_text(person) and slug_text(person) in slug_text(human)]
-                if len(matches) == 1:
-                    return matches[0]
-            return human
+        raw = first_text(source.get(key))
+        if not raw:
+            continue
+        human = strip_stream_technical_tokens(raw)
+        if not human or technical_label(human) or is_provider_identity(human, match):
+            continue
+        # Do not turn a whole match/competition label into a caster.
+        hnorm = normalize_text(human)
+        if hnorm in {normalize_text(match_name(match)), normalize_text(competition_name(match))}:
+            continue
+        # If match declares multiple commentators, only accept a residue that
+        # matches exactly one of them; otherwise the mapping is ambiguous.
+        if len(known) > 1:
+            matched = people_match_from_evidence(known, [human])
+            if matched:
+                return matched
+            continue
+        return human
+
+    # source.provider is frequently the upstream provider (e.g. XoilacXTH),
+    # so only use it when it explicitly matches a known match commentator or
+    # carries a BLV/caster prefix.
+    provider = first_text(source.get("provider"))
+    if provider:
+        matched = people_match_from_evidence(known, [provider])
+        if matched:
+            return matched
+        if re.match(r"(?i)^\s*(?:blv|caster|commentator)\b", provider):
+            human = strip_stream_technical_tokens(provider)
+            if human and not is_provider_identity(human, match):
+                return human
 
     if len(known) == 1:
         return known[0]
     return ""
-
 
 def order_sources(sources, match):
     caster_order = {}
@@ -704,7 +754,9 @@ def build_title(match, state, source):
 
 
 def build_playlist():
-    data = fetch_json(SPORT_API, timeout=10, retries=2, cache_bust=True)
+    data = fetch_json(SPORT_API, timeout=10, retries=1, cache_bust=True)
+    if not isinstance(data, dict):
+        data = fetch_json(SPORT_API, timeout=10, retries=2, cache_bust=False)
     if not isinstance(data, dict):
         raise RuntimeError("Không lấy được sport.json")
     matches = data.get("matches") if isinstance(data.get("matches"), list) else []
@@ -769,7 +821,7 @@ def build_playlist():
     temp = Path("playlist.m3u.tmp")
     temp.write_text("\n".join(lines) + "\n", encoding="utf-8")
     temp.replace("playlist.m3u")
-    print(f"v23: {total_streams} luồng / {total_matches} trận / {len(provider_sequence)} nguồn")
+    print(f"v24: {total_streams} luồng / {total_matches} trận / {len(provider_sequence)} nguồn")
 
 
 if __name__ == "__main__":
