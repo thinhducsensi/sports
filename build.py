@@ -1,6 +1,7 @@
 import hashlib
 import json
 import math
+import re
 import sys
 import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -442,20 +443,99 @@ def merge_duplicate_source(existing, incoming):
     for key in (
         "commentator", "blv", "caster", "audio_name", "audioName",
         "name", "label", "title", "server",
-        "quality", "resolution", "video_quality", "videoQuality", "format", "type",
+        "quality", "resolution", "video_quality", "videoQuality",
+        "video_resolution", "videoResolution", "dimensions", "dimension",
+        "width", "height", "video_width", "video_height", "videoWidth", "videoHeight",
+        "format", "type",
     ):
         if not merged.get(key) and incoming.get(key):
             merged[key] = incoming.get(key)
     return merged
 
 
+def _dimension_label(value):
+    text = str(value or "").strip()
+    if not text:
+        return ""
+    match = re.search(r"(?<!\d)(\d{3,4})\s*[xX×]\s*(\d{3,4})(?!\d)", text)
+    if not match:
+        return ""
+    return f"{match.group(1)}x{match.group(2)}"
+
+
+def _quality_token(value):
+    text = str(value or "").strip()
+    if not text:
+        return ""
+    dimension = _dimension_label(text)
+    if dimension:
+        return dimension
+    normalized = normalize_text(text)
+    patterns = (
+        (r"(?<!\d)2160p?(?!\d)", "2160p"),
+        (r"(?<!\d)1440p?(?!\d)", "1440p"),
+        (r"(?<!\d)1080p?(?!\d)", "1080p"),
+        (r"(?<!\d)720p?(?!\d)", "720p"),
+        (r"(?<!\d)576p?(?!\d)", "576p"),
+        (r"(?<!\d)540p?(?!\d)", "540p"),
+        (r"(?<!\d)480p?(?!\d)", "480p"),
+        (r"(?<!\d)360p?(?!\d)", "360p"),
+    )
+    for pattern, label in patterns:
+        if re.search(pattern, normalized):
+            return label
+    words = {word for word in normalized.split() if word}
+    if "4k" in words:
+        return "4K"
+    if "uhd" in words:
+        return "UHD"
+    if "fhd" in words or ("full" in words and "hd" in words):
+        return "FHD"
+    if normalized == "hd":
+        return "HD"
+    if normalized == "sd":
+        return "SD"
+    return ""
+
+
+def source_quality_label(source):
+    width = first_text(source.get("width"), source.get("video_width"), source.get("videoWidth"))
+    height = first_text(source.get("height"), source.get("video_height"), source.get("videoHeight"))
+    try:
+        width_num = int(float(width)) if width else 0
+        height_num = int(float(height)) if height else 0
+    except (TypeError, ValueError):
+        width_num = height_num = 0
+    if width_num > 0 and height_num > 0:
+        return f"{width_num}x{height_num}"
+
+    for key in ("resolution", "video_resolution", "videoResolution", "dimensions", "dimension"):
+        label = _dimension_label(source.get(key))
+        if label:
+            return label
+
+    # SportStream presents source.name directly in its source picker.  If name
+    # carries a concrete resolution/quality token, prefer it over generic quality.
+    for key in ("name", "label", "title"):
+        label = _quality_token(source.get(key))
+        if label:
+            return label
+
+    for key in ("video_quality", "videoQuality", "quality", "resolution"):
+        label = _quality_token(source.get(key))
+        if label:
+            return label
+
+    return first_text(source.get("video_quality"), source.get("videoQuality"), source.get("quality"), source.get("resolution"))
+
+
 def quality_rank(source):
-    quality = normalize_text(first_text(source.get("quality"), source.get("resolution"), source.get("video_quality"), source.get("videoQuality")))
-    if "4k" in quality or "2160" in quality:
+    quality = normalize_text(source_quality_label(source))
+    if "4k" in quality or "uhd" in quality or "2160" in quality:
         return 0
-    if "fhd" in quality or "1080" in quality:
+    if "fhd" in quality or "1080" in quality or "1920x1080" in quality:
         return 1
-    if quality == "hd" or "720" in quality:
+    if quality == "hd" or "720" in quality or "1280x720" in quality:
         return 2
     if "540" in quality:
         return 3
@@ -553,7 +633,7 @@ def header_value(headers, name):
 
 def source_meta(source, match):
     commentator = source_commentator(source, match)
-    quality = first_text(source.get("quality"), source.get("resolution"), source.get("video_quality"), source.get("videoQuality"))
+    quality = source_quality_label(source)
     fmt = infer_format(source)
     stream_parts = []
     if quality:
