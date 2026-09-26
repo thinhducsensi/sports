@@ -1,0 +1,74 @@
+name: Auto Update IPTV Playlist
+run-name: IPTV refresh - ${{ github.event_name }}
+
+on:
+  repository_dispatch:
+    types: [iptv_refresh]
+  workflow_dispatch:
+  schedule:
+    - cron: '11 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: iptv-playlist-update
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      TZ: Asia/Ho_Chi_Minh
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+          check-latest: false
+
+      - name: Build playlist
+        shell: bash
+        run: |
+          python -m py_compile build.py
+          for attempt in 1 2 3; do
+            if python build.py; then
+              exit 0
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              exit 1
+            fi
+            sleep $((attempt * 10))
+          done
+
+      - name: Commit and push
+        shell: bash
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add playlist.m3u
+          if git diff --cached --quiet; then
+            echo "playlist.m3u unchanged"
+            exit 0
+          fi
+          git commit -m "Auto update playlist [$(date '+%d/%m %H:%M ICT')]"
+          for attempt in 1 2 3; do
+            git fetch origin "$DEFAULT_BRANCH"
+            git rebase "origin/$DEFAULT_BRANCH"
+            if git push origin "HEAD:$DEFAULT_BRANCH"; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((attempt * 5))
+          done
+          exit 1
