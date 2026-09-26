@@ -1676,18 +1676,24 @@ def dedupe_by_stream_url(sources):
     return result
 
 
-def probe_hls(source):
-    """Check a current manifest with its own HTTP headers; never guess from URL age."""
+def probe_stream(source):
+    """Check a stream response with its own HTTP headers; never guess URL age."""
     url = first_text(source.get("url"))
-    if ".m3u8" not in urlsplit(url).path.lower():
+    path = urlsplit(url).path.lower()
+    if not path.endswith((".m3u8", ".flv", ".ts")):
         return "unknown"
     headers = normalize_headers(source.get("headers"))
     headers.setdefault("User-Agent", USER_AGENT)
     try:
         req = Request(url, headers=headers)
         with urlopen(req, timeout=2.5) as response:
-            body = response.read(4096).lstrip(b"\xef\xbb\xbf \t\r\n")
-            return "ok" if body.startswith(b"#EXTM3U") and b"#EXT-X-ENDLIST" not in body else "unknown"
+            body = response.read(4096 if path.endswith(".m3u8") else 32)
+            if path.endswith(".m3u8"):
+                playlist = body.lstrip(b"\xef\xbb\xbf \t\r\n")
+                return "ok" if playlist.startswith(b"#EXTM3U") and b"#EXT-X-ENDLIST" not in playlist else "unknown"
+            if path.endswith(".flv"):
+                return "ok" if body.startswith(b"FLV") else "unknown"
+            return "ok" if body.startswith(b"\x47") else "unknown"
     except HTTPError as exc:
         return "dead" if exc.code in (404, 410) else "unknown"
     except (URLError, TimeoutError, OSError, ValueError):
@@ -1695,27 +1701,31 @@ def probe_hls(source):
 
 
 def prioritize_verified_sources(items):
-    """Probe competing HLS links with bounded work; preserve untestable links."""
+    """Probe competing HLS/FLV/TS links with bounded work."""
     if os.environ.get("PLAYLIST_VERIFY_HLS", "1") == "0":
         return [item for item in items if item["state"].get("kind") != "needs_live_check"]
     unique = {}
     # Reserve the first verification slots for past-cutoff events, including
     # events with only one source. Others are tested after those candidates.
-    ordered_items = sorted(items, key=lambda item: item["state"].get("kind") != "needs_live_check")
-    for item in ordered_items:
-        pending = item["state"].get("kind") == "needs_live_check"
-        if item["state"].get("block") != 0 or (len(item["sources"]) < 2 and not pending):
-            continue
-        for source in item["sources"]:
-            key = (source["url"], tuple(sorted(normalize_headers(source.get("headers")).items())))
-            if key not in unique and ".m3u8" in urlsplit(source["url"]).path.lower():
-                unique[key] = source
+    pending_items = [item for item in items if item["state"].get("kind") == "needs_live_check"]
+    normal_items = [item for item in items if item["state"].get("kind") != "needs_live_check" and item["state"].get("block") == 0 and len(item["sources"]) > 1]
+    for group in (pending_items, normal_items):
+        # Round robin: one provider with many streams cannot consume the entire
+        # verification budget before the next match gets a chance.
+        for position in range(max((len(item["sources"]) for item in group), default=0)):
+            for item in group:
+                if position >= len(item["sources"]):
+                    continue
+                source = item["sources"][position]
+                key = (source["url"], tuple(sorted(normalize_headers(source.get("headers")).items())))
+                if key not in unique and urlsplit(source["url"]).path.lower().endswith((".m3u8", ".flv", ".ts")):
+                    unique[key] = source
     # Bound execution for the five-minute GitHub Actions job.
     selected = list(unique.items())[:120]
     checks = {}
     if selected:
         with ThreadPoolExecutor(max_workers=min(24, len(selected))) as executor:
-            futures = {executor.submit(probe_hls, source): key for key, source in selected}
+            futures = {executor.submit(probe_stream, source): key for key, source in selected}
             for future in as_completed(futures):
                 try:
                     checks[futures[future]] = future.result()
