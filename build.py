@@ -18,6 +18,9 @@ from zoneinfo import ZoneInfo
 SPORT_API = "https://sport-stream-resolver.viet-ng228.workers.dev/sport.json"
 TIME_ZONE = ZoneInfo("Asia/Ho_Chi_Minh")
 RECENT_WINDOW_MS = 135 * 60 * 1000
+# Additional time in which an unlabelled event can prove it is still active.
+# Events explicitly marked live have no duration cap.
+VERIFY_LIVE_WINDOW_MS = 12 * 60 * 60 * 1000
 MAX_WORKERS = 24
 RESOLVER_TIMEOUT = 5.0
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
@@ -477,14 +480,15 @@ def fetch_giovang_supplement_matches():
     urls = [base + "/storage/livestream/all.json", base + "/storage/livestream/live.json"]
     rows = []
     with ThreadPoolExecutor(max_workers=2) as ex:
-        futures = [ex.submit(fetch_json_custom, u, headers, 5.0) for u in urls]
-        for f in futures:
+        futures = {ex.submit(fetch_json_custom, u, headers, 5.0): u for u in urls}
+        for f in as_completed(futures):
             try:
-                rows.extend(_giovang_rows(f.result()))
+                is_live_listing = futures[f].endswith("/live.json")
+                rows.extend((row, is_live_listing) for row in _giovang_rows(f.result()))
             except Exception:
                 pass
     out, seen = [], set()
-    for row in rows:
+    for row, is_live_listing in rows:
         sport = _giovang_sport_type(row)
         if not sport:
             continue
@@ -505,6 +509,11 @@ def fetch_giovang_supplement_matches():
             continue
         key = f"{sport}|{event_id}|{kickoff}"
         if key in seen:
+            if is_live_listing:
+                for existing in out:
+                    if existing["id"] == f"giovang:{event_id}" and existing["kickoff"] == kickoff:
+                        existing["_listed_live"] = True
+                        break
             continue
         seen.add(key)
         blv = row.get("blv") if isinstance(row.get("blv"), list) else []
@@ -519,6 +528,7 @@ def fetch_giovang_supplement_matches():
             "id": f"giovang:{event_id}", "provider": "giovang", "provider_name": "Giờ Vàng", "sport": sport,
             "sport_name": sport, "name": f"{home} vs {away}", "kickoff": kickoff,
             "live": row.get("isLive") is True or row.get("live") is True or normalize_text(status) in LIVE_STATUSES,
+            "_listed_live": is_live_listing,
             "status": status, "competition": first_text(league.get("title"), league.get("name")),
             "home_logo": first_text(home_obj.get("logo")), "away_logo": first_text(away_obj.get("logo")),
             "commentator": _join_people(names), "_giovang_detail": base + "/api/fixtures/" + event_id,
@@ -687,6 +697,8 @@ def merge_supplement_matches(base_matches, supplements):
             )
         if extra.get("live") is True:
             found["live"] = True
+        if extra.get("_listed_live") is True:
+            found["_listed_live"] = True
     return result
 
 
@@ -1481,7 +1493,7 @@ def is_terminal(match):
 
 
 def is_explicit_live(match):
-    return match.get("live") is True or bool(status_values(match) & LIVE_STATUSES)
+    return match.get("live") is True or match.get("_listed_live") is True or bool(status_values(match) & LIVE_STATUSES)
 
 
 def classify_match(match, current_ms, future_end_ms):
@@ -1500,6 +1512,10 @@ def classify_match(match, current_ms, future_end_ms):
         return {"block": 0, "kind": "live", "kickoff": kickoff}
     if 0 <= age <= RECENT_WINDOW_MS:
         return {"block": 0, "kind": "recent", "kickoff": kickoff}
+    if age <= VERIFY_LIVE_WINDOW_MS:
+        # Retain provisionally until resolved streams can be checked. A manifest
+        # alone is weaker evidence than the provider's explicit live listing.
+        return {"block": 0, "kind": "needs_live_check", "kickoff": kickoff}
     return None
 
 
@@ -1670,8 +1686,8 @@ def probe_hls(source):
     try:
         req = Request(url, headers=headers)
         with urlopen(req, timeout=2.5) as response:
-            body = response.read(1024).lstrip(b"\xef\xbb\xbf \t\r\n")
-            return "ok" if body.startswith(b"#EXTM3U") else "unknown"
+            body = response.read(4096).lstrip(b"\xef\xbb\xbf \t\r\n")
+            return "ok" if body.startswith(b"#EXTM3U") and b"#EXT-X-ENDLIST" not in body else "unknown"
     except HTTPError as exc:
         return "dead" if exc.code in (404, 410) else "unknown"
     except (URLError, TimeoutError, OSError, ValueError):
@@ -1681,10 +1697,14 @@ def probe_hls(source):
 def prioritize_verified_sources(items):
     """Probe competing HLS links with bounded work; preserve untestable links."""
     if os.environ.get("PLAYLIST_VERIFY_HLS", "1") == "0":
-        return items
+        return [item for item in items if item["state"].get("kind") != "needs_live_check"]
     unique = {}
-    for item in items:
-        if item["state"].get("block") != 0 or len(item["sources"]) < 2:
+    # Reserve the first verification slots for past-cutoff events, including
+    # events with only one source. Others are tested after those candidates.
+    ordered_items = sorted(items, key=lambda item: item["state"].get("kind") != "needs_live_check")
+    for item in ordered_items:
+        pending = item["state"].get("kind") == "needs_live_check"
+        if item["state"].get("block") != 0 or (len(item["sources"]) < 2 and not pending):
             continue
         for source in item["sources"]:
             key = (source["url"], tuple(sorted(normalize_headers(source.get("headers")).items())))
@@ -1701,17 +1721,23 @@ def prioritize_verified_sources(items):
                     checks[futures[future]] = future.result()
                 except Exception:
                     checks[futures[future]] = "unknown"
+    retained = []
     for item in items:
         def state(source):
             key = (source["url"], tuple(sorted(normalize_headers(source.get("headers")).items())))
             return checks.get(key, "unknown")
         sources = item["sources"]
+        if item["state"].get("kind") == "needs_live_check" and not any(state(source) == "ok" for source in sources):
+            continue
         if any(state(source) == "ok" for source in sources):
             # A 404/410 is conclusive only when another link for the same match
             # actually returns an HLS manifest. Timeout and 403 remain available.
             sources = [source for source in sources if state(source) != "dead"]
         item["sources"] = sorted(sources, key=lambda source: 0 if state(source) == "ok" else 1 if state(source) == "unknown" else 2)
-    return items
+        if item["state"].get("kind") == "needs_live_check":
+            item["state"] = {**item["state"], "kind": "verified_live"}
+        retained.append(item)
+    return retained
 
 
 def resolver_url(match):
