@@ -1,5 +1,6 @@
 import hashlib
 import json
+import re
 import sys
 import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -266,60 +267,6 @@ def first_text(*values):
     return ""
 
 
-
-
-def competition_of(*objects):
-    """Resolve competition/league from match, resolver body, nested data/meta/event, or source metadata.
-
-    This is intentionally provider-agnostic: providers expose the same field under different names.
-    The first non-empty value wins, with no hardcoded competition names.
-    """
-    keys = (
-        "competition", "competition_name", "competitionName",
-        "league", "league_name", "leagueName",
-        "tournament", "tournament_name", "tournamentName",
-        "championship", "championship_name", "championshipName",
-        "event_league", "eventLeague",
-    )
-    nested_keys = ("data", "meta", "event", "match", "detail", "info")
-
-    def pick(obj, depth=0):
-        if not isinstance(obj, dict) or depth > 2:
-            return ""
-        for key in keys:
-            value = obj.get(key)
-            if isinstance(value, dict):
-                value = first_text(value.get("name"), value.get("title"), value.get("label"))
-            text = first_text(value)
-            if text:
-                return text
-        for key in nested_keys:
-            child = obj.get(key)
-            text = pick(child, depth + 1)
-            if text:
-                return text
-        return ""
-
-    for obj in objects:
-        text = pick(obj)
-        if text:
-            return text
-    return ""
-
-
-def enrich_match_metadata(match, body, sources):
-    """Fill only missing display metadata from the resolver response.
-
-    Stream URLs/player metadata are untouched. This fixes providers such as Gà Vàng 33 where
-    the list endpoint has teams/time but the detail endpoint carries the competition name.
-    """
-    enriched = dict(match)
-    if not first_text(enriched.get("competition"), enriched.get("league"), enriched.get("tournament")):
-        competition = competition_of(body, *(sources or []))
-        if competition:
-            enriched["competition"] = competition
-    return enriched
-
 def header_value(headers, name):
     if not isinstance(headers, dict):
         return ""
@@ -394,85 +341,102 @@ def normalize_source(raw, fallback_headers=None):
     return result
 
 
-def explicit_commentator_of(source):
+def commentator_of(source):
     return first_text(
         source.get("commentator"),
         source.get("blv"),
         source.get("caster"),
         source.get("audio_name"),
         source.get("audioName"),
-        source.get("commentator_name"),
-        source.get("commentatorName"),
-        source.get("caster_name"),
-        source.get("casterName"),
     )
 
 
-def source_label_of(source):
-    return first_text(
+def xoilac_label_commentator(source, match):
+    """Return a caster only when a XoiLac per-stream label really contains a human label.
+
+    Generic source labels such as "Xoilac Nguồn 1 FLV" must never become a commentator.
+    """
+    raw = first_text(
         source.get("label"),
-        source.get("name"),
-        source.get("server"),
-        source.get("title"),
+        source.get("button"),
+        source.get("button_text"),
+        source.get("buttonText"),
         source.get("display_name"),
         source.get("displayName"),
         source.get("stream_name"),
         source.get("streamName"),
+        source.get("server_name"),
+        source.get("serverName"),
+        source.get("name"),
+        source.get("title"),
+        source.get("server"),
     )
-
-
-def commentator_from_source_label(source, match=None):
-    """Extract a caster name from a per-stream button/label without hardcoding names.
-
-    XoiLac exposes stream buttons such as a caster name or quality + caster name.
-    Quality/protocol words are metadata, not part of the commentator identity.
-    """
-    label = source_label_of(source)
-    if not label:
-        return ""
-
-    raw = " ".join(str(label).replace("|", " ").replace("•", " ").split()).strip()
     if not raw:
         return ""
+    text = " ".join(str(raw).replace("|", " ").replace("•", " ").split()).strip()
+    if not text:
+        return ""
+    match_name = normalize_text(match.get("name"))
+    if match_name and normalize_text(text) == match_name:
+        return ""
 
-    # A match title accidentally copied into a source label is not a commentator.
-    if match:
-        match_name = normalize_text(match.get("name"))
-        if match_name and normalize_text(raw) == match_name:
-            return ""
-
-    import re
-    cleaned = raw
-    # Strip visual/playback metadata while preserving the human label.
-    cleaned = re.sub(r"^[\s▶▷►▸⏵⏯️]+", "", cleaned, flags=re.IGNORECASE)
-    cleaned = re.sub(
-        r"(?i)\b(?:FULL\s*HD|FHD|UHD|4K|2K|2160P|1440P|1080P|720P|576P|540P|480P|360P|HD|SD)\b",
-        " ",
-        cleaned,
-    )
-    cleaned = re.sub(r"(?i)\b(?:STREAM|SERVER|SOURCE|LINK|FEED|CAM)\s*#?\d*\b", " ", cleaned)
+    # Remove only playback/provider decoration. What remains must look like a real caster label.
+    cleaned = re.sub(r"^[\s▶▷►▸⏵⏯️]+", "", text)
+    cleaned = re.sub(r"(?i)\b(?:FULL\s*HD|FHD|UHD|4K|2K|2160P|1440P|1080P|720P|576P|540P|480P|360P|HD|SD)\b", " ", cleaned)
+    cleaned = re.sub(r"(?i)\b(?:HLS|FLV|DASH|MPD|M3U8|TS|MP4)\b", " ", cleaned)
+    cleaned = re.sub(r"(?i)\b(?:XOILAC(?:Z)?(?:\.IO)?|XOI\s*LAC|XTH)\b", " ", cleaned)
+    cleaned = re.sub(r"(?i)\b(?:NGUỒN|NGUON|LUỒNG|LUONG|SOURCE|SERVER|STREAM|LINK|FEED|CAM)\s*#?\d*\b", " ", cleaned)
+    cleaned = re.sub(r"(?i)\b(?:PLAY|LIVE|VIDEO|AUTO|DEFAULT|MAIN|PRIMARY)\b", " ", cleaned)
+    cleaned = re.sub(r"\b\d+\b", " ", cleaned)
     cleaned = re.sub(r"^[\s:|/\-–—]+|[\s:|/\-–—]+$", "", cleaned)
     cleaned = " ".join(cleaned.split()).strip()
     if not cleaned:
         return ""
 
     norm = normalize_text(cleaned)
-    if not norm or norm in {"auto", "default", "main", "primary", "live", "play", "video"}:
+    generic = {
+        "xoilac", "xoilacz", "nguon", "luong", "source", "server", "stream", "link",
+        "hls", "flv", "dash", "mpd", "ts", "hd", "fhd", "full hd", "live", "video",
+    }
+    if not norm or norm in generic or norm.isdigit():
         return ""
-    if norm.isdigit():
+    # Reject leftovers that are still just generic source numbering/quality text.
+    tokens = [t for t in norm.split() if t]
+    if tokens and all(t in generic or t.isdigit() for t in tokens):
         return ""
     return cleaned
 
 
-def commentator_of(source, match=None):
-    explicit = explicit_commentator_of(source)
-    # XoiLac's stream button label is per-stream and therefore more precise than a
-    # match-level commentator copied to every resolved source.
-    if match and str(match.get("provider") or "").lower() == "xoilacxth":
-        label_commentator = commentator_from_source_label(source, match)
-        if label_commentator:
-            return label_commentator
-    return explicit
+def gavang_competition_from_body(body):
+    """Read only competition metadata from Gà Vàng resolver detail.
+
+    Do not touch commentator/source metadata and do not fall back to sport_name here.
+    """
+    keys = (
+        "competition", "competition_name", "competitionName",
+        "league", "league_name", "leagueName",
+        "tournament", "tournament_name", "tournamentName",
+        "championship", "championship_name", "championshipName",
+    )
+    nested = ("data", "meta", "event", "match", "detail", "info")
+
+    def pick(obj, depth=0):
+        if not isinstance(obj, dict) or depth > 3:
+            return ""
+        for key in keys:
+            value = obj.get(key)
+            if isinstance(value, dict):
+                value = first_text(value.get("name"), value.get("title"), value.get("label"))
+            text = first_text(value)
+            if text:
+                return text
+        for key in nested:
+            text = pick(obj.get(key), depth + 1)
+            if text:
+                return text
+        return ""
+
+    return pick(body)
 
 
 def source_key(source):
@@ -537,32 +501,36 @@ def extract_sources(body, match):
     return sorted(merged.values(), key=source_priority)
 
 
-def source_meta(source, match, index, count, has_per_source_commentators=False):
+def source_meta(source, match, index, count, xoilac_labels_available=False, xoilac_explicit_repeated=False):
+    provider = str(match.get("provider") or "").lower()
     names = []
     seen = set()
-    # For XoiLac, resolve the commentator from the stream itself (button label / caster field).
-    # Do not let a match-level BLV overwrite every stream in a multi-stream match.
-    per_source = commentator_of(source, match)
-    values = list(source.get("commentators") or [])
-    if per_source:
-        # If the resolver copied one match-level commentator into all source records,
-        # the stream-specific label must win for this source.
-        values = [per_source]
-    else:
-        values.append(explicit_commentator_of(source))
-    for value in values:
-        if value and value not in seen:
-            seen.add(value)
-            names.append(value)
 
-    match_commentator = first_text(match.get("commentator"), match.get("blv"), match.get("caster"))
-    if not names and match_commentator:
-        provider = str(match.get("provider") or "").lower()
-        # Original match-level fallback is still valid for single-source providers.
-        # For XoiLac multi-stream matches, only use it when no source carries its own caster
-        # metadata at all; otherwise applying it to every source creates ROY/ROY/ROY/... .
-        if count <= 1 or provider != "xoilacxth":
+    if provider == "xoilacxth":
+        # XoiLac multi-source pages expose the caster on each stream button. Prefer that label.
+        label_commentator = xoilac_label_commentator(source, match)
+        if label_commentator:
+            names.append(label_commentator)
+            seen.add(label_commentator)
+        else:
+            explicit = commentator_of(source)
+            # A single explicit value copied to every stream is match-level metadata, not per-stream.
+            if explicit and not (count > 1 and xoilac_explicit_repeated and xoilac_labels_available):
+                names.append(explicit)
+                seen.add(explicit)
+        match_commentator = first_text(match.get("commentator"), match.get("blv"), match.get("caster"))
+        if not names and count <= 1 and match_commentator:
             names.append(match_commentator)
+    else:
+        # Preserve the original, already-working commentator path for Gà Vàng and every other source.
+        for value in list(source.get("commentators") or []) + [commentator_of(source)]:
+            if value and value not in seen:
+                seen.add(value)
+                names.append(value)
+        match_commentator = first_text(match.get("commentator"), match.get("blv"))
+        if not names and match_commentator:
+            names.append(match_commentator)
+
     fmt = infer_format(source)
     quality = first_text(
         source.get("quality"),
@@ -614,7 +582,12 @@ def resolve_match(match):
     if body is not None:
         sources = extract_sources(body, match)
         if sources:
-            resolved_match = enrich_match_metadata(match, body, sources)
+            resolved_match = match
+            if str(match.get("provider") or "").lower() == "gavang33" and not first_text(match.get("competition"), match.get("league"), match.get("tournament")):
+                competition = gavang_competition_from_body(body)
+                if competition:
+                    resolved_match = dict(match)
+                    resolved_match["competition"] = competition
             return {"match": resolved_match, "sources": sources}
     return {"match": match, "sources": direct_sources} if direct_sources else None
 
@@ -678,12 +651,15 @@ def build_playlist():
             total_matches += 1
             kickoff = get_kickoff(match)
             live_dot = "🔴 " if state["rank"] in (0, 1) else ""
-            competition = competition_of(match, *(sources or [])) or match.get("sport_name") or "Thể thao"
+            competition = match.get("competition") or match.get("league") or match.get("sport_name") or "Thể thao"
             logo = match.get("home_logo") or match.get("away_logo") or ""
 
-            has_per_source_commentators = any(
-                bool(commentator_of(candidate, match)) for candidate in sources if candidate.get("url")
-            )
+            provider_key = str(match.get("provider") or "").lower()
+            xoilac_label_values = [xoilac_label_commentator(src, match) for src in sources] if provider_key == "xoilacxth" else []
+            xoilac_labels_available = any(xoilac_label_values)
+            xoilac_explicit_values = [commentator_of(src) for src in sources if commentator_of(src)] if provider_key == "xoilacxth" else []
+            xoilac_explicit_repeated = len(sources) > 1 and bool(xoilac_explicit_values) and len(set(xoilac_explicit_values)) == 1
+
             for index, source in enumerate(sources):
                 if not source.get("url"):
                     continue
@@ -692,7 +668,8 @@ def build_playlist():
                     match,
                     index,
                     len(sources),
-                    has_per_source_commentators=has_per_source_commentators,
+                    xoilac_labels_available=xoilac_labels_available,
+                    xoilac_explicit_repeated=xoilac_explicit_repeated,
                 )
                 blv_part = f" • BLV {meta['commentator']}" if meta["commentator"] else ""
                 competition_part = f" • {competition}" if competition else ""
