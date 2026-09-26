@@ -1,11 +1,12 @@
 import hashlib
 import json
+import math
 import sys
 import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, time, timedelta
-from time import sleep
 from pathlib import Path
+from time import sleep
 from urllib.error import HTTPError, URLError
 from urllib.parse import parse_qsl, quote, urlencode, urlsplit, urlunsplit
 from urllib.request import Request, urlopen
@@ -13,23 +14,24 @@ from zoneinfo import ZoneInfo
 
 SPORT_API = "https://sport-stream-resolver.viet-ng228.workers.dev/sport.json"
 TIME_ZONE = ZoneInfo("Asia/Ho_Chi_Minh")
-MATCH_DURATION_MS = 135 * 60 * 1000
+RECENT_WINDOW_MS = 135 * 60 * 1000
+MAX_WORKERS = 16
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-MAX_WORKERS = 32
 
-ORDERED_PROVIDERS = [
-    {"key": "chuoichien", "name": "Chuối Chiên"},
-    {"key": "colatv", "name": "CoLaTV"},
-    {"key": "gavang33", "name": "Gà Vàng 33"},
-    {"key": "giovang", "name": "Giờ Vàng"},
-    {"key": "phalang", "name": "PhaLangTV"},
-    {"key": "xoilacxth", "name": "XoilacXTH"},
+PREFERRED_PROVIDERS = [
+    ("chuoichien", "Chuối Chiên"),
+    ("colatv", "CoLaTV"),
+    ("gavang33", "Gà Vàng 33"),
+    ("giovang", "Giờ Vàng"),
+    ("phalang", "PhaLangTV"),
+    ("xoilacxth", "XoilacXTH"),
 ]
 
-FOOTBALL_ALIASES = {"football", "soccer", "bong da"}
+FOOTBALL_ALIASES = {"football", "soccer", "bong da", "bóng đá"}
 
 SPORT_ICON_BY_NAME = {
     "football": "⚽",
+    "soccer": "⚽",
     "futsal": "⚽",
     "basketball": "🏀",
     "volleyball": "🏐",
@@ -37,6 +39,7 @@ SPORT_ICON_BY_NAME = {
     "badminton": "🏸",
     "table tennis": "🏓",
     "billiards": "🎱",
+    "billiard": "🎱",
     "snooker": "🎱",
     "pool": "🎱",
     "baseball": "⚾",
@@ -52,7 +55,7 @@ SPORT_ICON_BY_NAME = {
     "esports": "🎮",
 }
 
-FINISHED_STATUSES = {
+TERMINAL_STATUSES = {
     "ft",
     "finished",
     "finish",
@@ -60,8 +63,14 @@ FINISHED_STATUSES = {
     "end",
     "completed",
     "complete",
+    "cancelled",
+    "canceled",
+    "postponed",
+    "abandoned",
     "kết thúc",
     "ket thuc",
+    "hủy",
+    "huy",
 }
 
 LIVE_STATUSES = {
@@ -75,8 +84,35 @@ LIVE_STATUSES = {
     "ht",
     "halftime",
     "ongoing",
+    "running",
 }
 
+KICKOFF_FIELDS = (
+    "kickoff",
+    "time_start",
+    "start_time",
+    "startTime",
+    "start_timestamp",
+    "startTimestamp",
+    "timestamp",
+)
+
+
+def normalize_text(value):
+    text = str(value or "").strip().lower().replace("_", " ").replace("-", " ")
+    text = unicodedata.normalize("NFD", text)
+    text = "".join(ch for ch in text if unicodedata.category(ch) != "Mn")
+    return " ".join(text.split())
+
+
+def first_text(*values):
+    for value in values:
+        if value is None:
+            continue
+        text = str(value).strip()
+        if text:
+            return text
+    return ""
 
 
 def with_cache_buster(url):
@@ -86,7 +122,7 @@ def with_cache_buster(url):
     return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), parts.fragment))
 
 
-def fetch_json(url, timeout=7, retries=2, cache_bust=False):
+def fetch_json(url, timeout=8, retries=2, cache_bust=False):
     target = with_cache_buster(url) if cache_bust else str(url)
     headers = {
         "User-Agent": USER_AGENT,
@@ -112,9 +148,43 @@ def now_ms():
     return int(datetime.now().timestamp() * 1000)
 
 
+def parse_timestamp_ms(value):
+    if value in (None, ""):
+        return None
+    if isinstance(value, (int, float)):
+        number = float(value)
+    else:
+        text = str(value).strip()
+        try:
+            number = float(text)
+        except ValueError:
+            try:
+                parsed = datetime.fromisoformat(text.replace("Z", "+00:00"))
+                if parsed.tzinfo is None:
+                    parsed = parsed.replace(tzinfo=TIME_ZONE)
+                return int(parsed.timestamp() * 1000)
+            except ValueError:
+                return None
+    if not math.isfinite(number) or number <= 0:
+        return None
+    if number > 100_000_000_000_000:
+        number /= 1000
+    elif number < 100_000_000_000:
+        number *= 1000
+    return int(number)
+
+
+def get_kickoff(match):
+    for field in KICKOFF_FIELDS:
+        timestamp = parse_timestamp_ms(match.get(field))
+        if timestamp is not None:
+            return timestamp
+    return None
+
+
 def format_match_time(timestamp_ms):
     if not timestamp_ms:
-        return "[--:--] --/--"
+        return "[LIVE]"
     value = datetime.fromtimestamp(timestamp_ms / 1000, TIME_ZONE)
     return value.strftime("[%H:%M] %d/%m")
 
@@ -130,30 +200,6 @@ def end_of_next_vietnam_day(timestamp_ms):
     return int(target.timestamp() * 1000)
 
 
-def get_kickoff(match):
-    value = match.get("kickoff")
-    if value in (None, ""):
-        value = match.get("time_start")
-    if value in (None, ""):
-        return None
-    try:
-        number = float(value)
-    except (TypeError, ValueError):
-        return None
-    if number != number or number in (float("inf"), float("-inf")):
-        return None
-    if number < 100_000_000_000:
-        number *= 1000
-    return int(number)
-
-
-def normalize_text(value):
-    text = str(value or "").strip().lower().replace("_", " ").replace("-", " ")
-    text = unicodedata.normalize("NFD", text)
-    text = "".join(char for char in text if unicodedata.category(char) != "Mn")
-    return " ".join(text.split())
-
-
 def status_values(match):
     values = set()
     for key in ("status_code", "status", "state", "phase"):
@@ -163,8 +209,8 @@ def status_values(match):
     return values
 
 
-def is_finished(match):
-    return bool(status_values(match) & FINISHED_STATUSES)
+def is_terminal(match):
+    return bool(status_values(match) & TERMINAL_STATUSES)
 
 
 def is_explicit_live(match):
@@ -172,39 +218,77 @@ def is_explicit_live(match):
 
 
 def classify_match(match, current_ms, future_end_ms):
-    if is_finished(match):
+    if is_terminal(match):
         return None
     kickoff = get_kickoff(match)
+    live = is_explicit_live(match)
     if kickoff is None:
-        return None
+        return {"kind": "live", "rank": 0, "kickoff": 0, "explicit_live": True} if live else None
     if kickoff > current_ms:
         if kickoff <= future_end_ms:
-            return {"rank": 2, "kickoff": kickoff}
+            return {"kind": "upcoming", "rank": 2, "kickoff": kickoff, "explicit_live": False}
         return None
     age = current_ms - kickoff
-    if age < 0 or age > MATCH_DURATION_MS:
-        return None
-    return {"rank": 0 if is_explicit_live(match) else 1, "kickoff": kickoff}
+    if live:
+        return {"kind": "live", "rank": 0, "kickoff": kickoff, "explicit_live": True}
+    if 0 <= age <= RECENT_WINDOW_MS:
+        return {"kind": "recent", "rank": 1, "kickoff": kickoff, "explicit_live": False}
+    return None
+
+
+def raw_sport_name(match):
+    return first_text(match.get("sport"), match.get("sport_name"), match.get("sportType"), match.get("category"))
 
 
 def sport_category(match):
-    raw_sport = normalize_text(match.get("sport"))
-    raw_name = normalize_text(match.get("sport_name"))
-    values = [value for value in (raw_sport, raw_name) if value]
-    for value in values:
-        if value in FOOTBALL_ALIASES or any(alias in value.split() for alias in ("football", "soccer")):
-            return "football"
-    return values[0] if values else "other"
+    raw = normalize_text(raw_sport_name(match))
+    if raw in {normalize_text(value) for value in FOOTBALL_ALIASES}:
+        return "football"
+    if raw in {"association football", "men football", "women football"}:
+        return "football"
+    return raw or "other"
 
 
 def sport_icon(match):
+    direct = first_text(match.get("sport_icon"), match.get("sportIcon"), match.get("icon"), match.get("emoji"))
+    if direct and len(direct) <= 8:
+        return direct
     category = sport_category(match)
     if category in SPORT_ICON_BY_NAME:
         return SPORT_ICON_BY_NAME[category]
     for name, icon in SPORT_ICON_BY_NAME.items():
-        if category == name or category.startswith(name + " ") or category.endswith(" " + name):
+        if category.startswith(name + " ") or category.endswith(" " + name):
             return icon
     return "🏅"
+
+
+def provider_key(match):
+    return normalize_text(first_text(match.get("provider"), match.get("source"), match.get("provider_key"))) or "other"
+
+
+def provider_display_name(match):
+    key = provider_key(match)
+    preferred = {normalize_text(k): v for k, v in PREFERRED_PROVIDERS}
+    if key in preferred:
+        return preferred[key]
+    return first_text(match.get("provider_name"), match.get("source_name"), match.get("provider"), match.get("source"), "Khác")
+
+
+def build_provider_order(items):
+    discovered = {}
+    for index, item in enumerate(items):
+        key = provider_key(item["match"])
+        if key not in discovered:
+            discovered[key] = {"first_seen": index, "name": provider_display_name(item["match"])}
+    order = []
+    preferred_keys = [normalize_text(key) for key, _ in PREFERRED_PROVIDERS]
+    for key in preferred_keys:
+        if key in discovered:
+            order.append((key, discovered[key]["name"]))
+    unknown = [key for key in discovered if key not in preferred_keys]
+    unknown.sort(key=lambda key: (discovered[key]["first_seen"], discovered[key]["name"].lower()))
+    order.extend((key, discovered[key]["name"]) for key in unknown)
+    return order
 
 
 def build_sport_order(items):
@@ -216,12 +300,41 @@ def build_sport_order(items):
             discovered[category] = {"first_seen": index, "earliest": kickoff if kickoff > 0 else 2**63 - 1}
         elif kickoff > 0:
             discovered[category]["earliest"] = min(discovered[category]["earliest"], kickoff)
+    order = {}
+    index = 0
+    if "football" in discovered:
+        order["football"] = index
+        index += 1
     others = [category for category in discovered if category != "football"]
     others.sort(key=lambda category: (discovered[category]["earliest"], discovered[category]["first_seen"], category))
-    order = {"football": 0}
-    for index, category in enumerate(others, start=1):
+    for category in others:
         order[category] = index
+        index += 1
     return order
+
+
+def match_name(match):
+    return first_text(match.get("name"), match.get("match_name"), match.get("matchName"), match.get("title"), "Trận đấu")
+
+
+def competition_name(match):
+    return first_text(
+        match.get("competition"),
+        match.get("league"),
+        match.get("tournament"),
+        match.get("championship"),
+        match.get("competition_name"),
+        match.get("league_name"),
+    )
+
+
+def match_identity(match):
+    key = provider_key(match)
+    match_id = first_text(match.get("id"), match.get("match_id"), match.get("matchId"))
+    if match_id:
+        return f"{key}|id:{match_id}"
+    kickoff = get_kickoff(match) or 0
+    return f"{key}|{sport_category(match)}|{kickoff}|{normalize_text(match_name(match))}"
 
 
 def match_sort_key(item, sport_order):
@@ -229,15 +342,14 @@ def match_sort_key(item, sport_order):
     state = item["state"]
     category = sport_category(match)
     kickoff = state.get("kickoff") or get_kickoff(match) or 0
-    missing_time_rank = 0 if kickoff == 0 and state.get("rank") == 0 else 1
-    time_key = kickoff if kickoff > 0 else 0
+    untimed_live = 0 if kickoff == 0 and state.get("kind") == "live" else 1
     return (
         sport_order.get(category, 10**9),
-        missing_time_rank,
-        time_key,
+        untimed_live,
+        kickoff if kickoff > 0 else 0,
         state.get("rank", 9),
-        normalize_text(match.get("competition") or match.get("league")),
-        normalize_text(match.get("name")),
+        normalize_text(competition_name(match)),
+        normalize_text(match_name(match)),
     )
 
 
@@ -245,70 +357,59 @@ def escape_attr(value):
     return str(value or "").replace("&", "&amp;").replace('"', "&quot;")
 
 
-def first_text(*values):
-    for value in values:
-        if value is None:
-            continue
-        text = str(value).strip()
-        if text:
-            return text
-    return ""
-
-
-def header_value(headers, name):
-    if not isinstance(headers, dict):
-        return ""
-    wanted = name.lower()
-    for key, value in headers.items():
-        if str(key).lower() == wanted:
-            return str(value or "")
-    return ""
-
-
 def normalize_headers(headers):
-    if not isinstance(headers, dict):
-        return {}
     result = {}
-    for key, value in headers.items():
-        if value is None:
-            continue
-        text = str(value).strip()
-        if text:
-            result[str(key)] = str(value)
+    if isinstance(headers, dict):
+        for key, value in headers.items():
+            if value is None:
+                continue
+            text = str(value).strip()
+            if text:
+                result[str(key)] = text
     return result
 
 
+def source_headers(raw, fallback=None):
+    headers = normalize_headers(fallback)
+    if isinstance(raw, dict):
+        headers.update(normalize_headers(raw.get("headers")))
+        aliases = {
+            "Referer": first_text(raw.get("referer"), raw.get("referrer"), raw.get("http_referrer")),
+            "Origin": first_text(raw.get("origin"), raw.get("http_origin")),
+            "User-Agent": first_text(raw.get("user_agent"), raw.get("userAgent"), raw.get("ua")),
+            "Cookie": first_text(raw.get("cookie"), raw.get("cookies")),
+            "Authorization": first_text(raw.get("authorization"), raw.get("auth")),
+        }
+        for key, value in aliases.items():
+            if value and not any(existing.lower() == key.lower() for existing in headers):
+                headers[key] = value
+    return headers
+
+
 def infer_format(source):
-    direct = first_text(
-        source.get("format"),
-        source.get("type"),
-        source.get("protocol"),
-        source.get("extension"),
-        source.get("ext"),
-    ).upper()
-    if direct and direct not in {"STREAM", "VIDEO", "URL"}:
+    direct = first_text(source.get("format"), source.get("type"), source.get("protocol"), source.get("extension"), source.get("ext")).upper()
+    if direct and direct not in {"STREAM", "VIDEO", "URL", "SOURCE"}:
         return direct
     url = str(source.get("url") or "").lower().split("?", 1)[0]
     if ".m3u8" in url:
         return "HLS"
-    if ".flv" in url:
-        return "FLV"
     if ".mpd" in url:
         return "DASH"
     if ".ts" in url:
         return "TS"
+    if ".flv" in url:
+        return "FLV"
     if ".mp4" in url:
         return "MP4"
     return ""
 
 
 def normalize_source(raw, fallback_headers=None):
-    fallback_headers = fallback_headers or {}
     if not raw:
         return None
     if isinstance(raw, str):
         url = raw.strip()
-        return {"url": url, "headers": normalize_headers(fallback_headers)} if url else None
+        return {"url": url, "headers": source_headers({}, fallback_headers)} if url else None
     if not isinstance(raw, dict):
         return None
     url = first_text(
@@ -319,110 +420,182 @@ def normalize_source(raw, fallback_headers=None):
         raw.get("streamUrl"),
         raw.get("play_url"),
         raw.get("playUrl"),
+        raw.get("file"),
     )
     if not url:
         return None
     result = dict(raw)
     result["url"] = url
-    own_headers = raw.get("headers")
-    result["headers"] = normalize_headers(own_headers if isinstance(own_headers, dict) else fallback_headers)
+    result["headers"] = source_headers(raw, fallback_headers)
     return result
 
 
 def commentator_of(source):
-    return first_text(
-        source.get("commentator"),
-        source.get("blv"),
-        source.get("caster"),
-        source.get("audio_name"),
-        source.get("audioName"),
-    )
+    return first_text(source.get("commentator"), source.get("blv"), source.get("caster"), source.get("audio_name"), source.get("audioName"))
+
+
+def source_label(source):
+    return first_text(source.get("server"), source.get("label"), source.get("channel"), source.get("name"), source.get("title"))
 
 
 def source_key(source):
-    headers = sorted(
-        (str(key).lower().strip(), str(value).strip())
-        for key, value in (source.get("headers") or {}).items()
-    )
+    headers = sorted((str(key).lower().strip(), str(value).strip()) for key, value in (source.get("headers") or {}).items())
     header_text = "\n".join(f"{key}:{value}" for key, value in headers)
     return f"{str(source.get('url') or '').strip()}\n{header_text}"
 
 
-def merge_duplicate(existing, incoming):
-    names = []
-    seen = set()
-    values = list(existing.get("commentators") or []) + [commentator_of(existing), commentator_of(incoming)]
-    for value in values:
-        if value and value not in seen:
-            seen.add(value)
-            names.append(value)
+def merge_duplicate_source(existing, incoming):
     merged = dict(existing)
-    for key in ("commentator", "blv", "name", "label", "server", "quality", "resolution", "format"):
+    commentators = []
+    seen = set()
+    for value in list(existing.get("commentators") or []) + [commentator_of(existing), commentator_of(incoming)]:
+        if value and normalize_text(value) not in seen:
+            seen.add(normalize_text(value))
+            commentators.append(value)
+    merged["commentators"] = commentators
+    for key in ("commentator", "blv", "server", "label", "name", "title", "quality", "resolution", "format"):
         if not merged.get(key) and incoming.get(key):
             merged[key] = incoming.get(key)
-    merged["commentators"] = names
     return merged
+
+
+def quality_rank(source):
+    quality = normalize_text(first_text(source.get("quality"), source.get("resolution"), source.get("video_quality"), source.get("videoQuality")))
+    if "4k" in quality or "2160" in quality:
+        return 0
+    if "fhd" in quality or "1080" in quality:
+        return 1
+    if quality == "hd" or "720" in quality:
+        return 2
+    if "540" in quality:
+        return 3
+    if "sd" in quality or "480" in quality or "360" in quality:
+        return 4
+    return 5
 
 
 def source_priority(source):
     fmt = infer_format(source)
-    return {"HLS": 0, "TS": 1, "DASH": 2, "FLV": 3, "MP4": 4}.get(fmt, 5)
+    format_rank = {"HLS": 0, "TS": 1, "DASH": 2, "FLV": 3, "MP4": 4}.get(fmt, 5)
+    return (format_rank, quality_rank(source), normalize_text(commentator_of(source)), normalize_text(source_label(source)), source.get("url", ""))
+
+
+def dedupe_sources(sources):
+    merged = {}
+    for source in sources:
+        if not source or not source.get("url"):
+            continue
+        key = source_key(source)
+        merged[key] = merge_duplicate_source(merged[key], source) if key in merged else source
+    return sorted(merged.values(), key=source_priority)
 
 
 def extract_sources(body, match):
     body = body if isinstance(body, dict) else {}
     data = body.get("data") if isinstance(body.get("data"), dict) else {}
+    fallback_headers = {}
+    fallback_headers.update(normalize_headers(match.get("headers")))
+    fallback_headers.update(normalize_headers(body.get("headers")))
     arrays = [
         body.get("sources"),
         body.get("streams"),
         body.get("links"),
+        body.get("urls"),
         data.get("sources"),
         data.get("streams"),
         data.get("links"),
+        data.get("urls"),
         match.get("sources"),
         match.get("streams"),
         match.get("links"),
+        match.get("urls"),
     ]
-    fallback_headers = body.get("headers") if isinstance(body.get("headers"), dict) else match.get("headers") or {}
-    merged = {}
-
-    def add(raw):
-        source = normalize_source(raw, fallback_headers)
-        if not source:
-            return
-        key = source_key(source)
-        merged[key] = merge_duplicate(merged[key], source) if key in merged else source
-
+    sources = []
     for array in arrays:
         if isinstance(array, list):
             for raw in array:
-                add(raw)
-    add(body.get("source") or data.get("source") or match.get("source"))
-    return sorted(merged.values(), key=source_priority)
+                source = normalize_source(raw, fallback_headers)
+                if source:
+                    sources.append(source)
+    for raw in (body.get("source"), data.get("source"), body, data, match.get("source"), match):
+        source = normalize_source(raw, fallback_headers)
+        if source:
+            sources.append(source)
+    return dedupe_sources(sources)
+
+
+def looks_like_stream_url(url):
+    path = str(url or "").lower().split("?", 1)[0]
+    return any(ext in path for ext in (".m3u8", ".mpd", ".ts", ".flv", ".mp4"))
+
+
+def resolve_match(match):
+    direct_sources = extract_sources({}, match)
+    resolver = first_text(match.get("resolver"), match.get("resolve_url"), match.get("resolver_url"))
+    all_sources = list(direct_sources)
+    resolver_ok = False
+    if resolver:
+        body = fetch_json(resolver, timeout=8, retries=2, cache_bust=False)
+        if body is not None:
+            resolver_ok = True
+            all_sources.extend(extract_sources(body, match))
+        elif looks_like_stream_url(resolver):
+            direct = normalize_source({"url": resolver}, match.get("headers"))
+            if direct:
+                all_sources.append(direct)
+    sources = dedupe_sources(all_sources)
+    return {"match": match, "sources": sources, "resolver_ok": resolver_ok} if sources else None
+
+
+def merge_match_items(items):
+    merged = {}
+    for item in items:
+        key = match_identity(item["match"])
+        if key not in merged:
+            merged[key] = {"match": dict(item["match"]), "state": dict(item["state"]), "sources": list(item["sources"])}
+            continue
+        current = merged[key]
+        current["sources"] = dedupe_sources(current["sources"] + item["sources"])
+        if item["state"].get("rank", 9) < current["state"].get("rank", 9):
+            current["state"] = dict(item["state"])
+        for field in ("home_logo", "away_logo", "competition", "league", "tournament", "commentator", "blv", "sport_icon"):
+            if not current["match"].get(field) and item["match"].get(field):
+                current["match"][field] = item["match"][field]
+    return list(merged.values())
+
+
+def header_value(headers, name):
+    wanted = name.lower()
+    for key, value in (headers or {}).items():
+        if str(key).lower() == wanted:
+            return str(value or "")
+    return ""
 
 
 def source_meta(source, match, index, count):
     names = []
     seen = set()
     for value in list(source.get("commentators") or []) + [commentator_of(source)]:
-        if value and value not in seen:
-            seen.add(value)
+        normalized = normalize_text(value)
+        if value and normalized not in seen:
+            seen.add(normalized)
             names.append(value)
     match_commentator = first_text(match.get("commentator"), match.get("blv"))
     if not names and match_commentator:
         names.append(match_commentator)
     fmt = infer_format(source)
-    quality = first_text(
-        source.get("quality"),
-        source.get("resolution"),
-        source.get("video_quality"),
-        source.get("videoQuality"),
-    )
+    quality = first_text(source.get("quality"), source.get("resolution"), source.get("video_quality"), source.get("videoQuality"))
+    label = source_label(source)
+    label_norm = normalize_text(label)
+    blocked_labels = {normalize_text(value) for value in names if value}
+    blocked_labels.update({normalize_text(quality), normalize_text(fmt), normalize_text(match_name(match))})
     parts = []
     if fmt:
         parts.append(fmt)
-    if quality:
+    if quality and normalize_text(quality) != normalize_text(fmt):
         parts.append(quality)
+    if label and label_norm and label_norm not in blocked_labels and label_norm not in {"stream", "source", "server"}:
+        parts.append(label)
     if count > 1:
         parts.append(f"{index + 1}/{count}")
     return {"commentator": "/".join(names), "stream_info": " • ".join(parts)}
@@ -434,11 +607,21 @@ def encode_component(value):
 
 def stream_url_with_headers(source):
     blocked = {"host", "content-length", "transfer-encoding", "connection"}
-    params = []
-    for name, value in (source.get("headers") or {}).items():
-        if str(name).lower() in blocked:
-            continue
-        params.append(f"{encode_component(name)}={encode_component(value)}")
+    preferred = ["User-Agent", "Referer", "Origin", "Cookie", "Authorization"]
+    headers = source.get("headers") or {}
+    ordered = []
+    used = set()
+    for wanted in preferred:
+        for key, value in headers.items():
+            if key.lower() == wanted.lower() and key.lower() not in used:
+                ordered.append((key, value))
+                used.add(key.lower())
+    for key, value in sorted(headers.items(), key=lambda item: item[0].lower()):
+        lower = key.lower()
+        if lower not in used and lower not in blocked:
+            ordered.append((key, value))
+            used.add(lower)
+    params = [f"{encode_component(name)}={encode_component(value)}" for name, value in ordered if name.lower() not in blocked]
     if not params:
         return source["url"]
     separator = "&" if "|" in source["url"] else "|"
@@ -446,24 +629,9 @@ def stream_url_with_headers(source):
 
 
 def stable_source_id(match, source):
-    match_id = match.get("id") or "match"
-    base_name = match.get("id") or match.get("name") or "match"
-    raw = f"{base_name}\n{source_key(source)}".encode("utf-8")
-    digest = hashlib.sha1(raw).hexdigest()[:10]
-    return f"{match_id}-{digest}"
-
-
-def resolve_match(match):
-    direct_sources = extract_sources({}, match)
-    resolver = match.get("resolver")
-    if not resolver:
-        return {"match": match, "sources": direct_sources} if direct_sources else None
-    body = fetch_json(str(resolver), timeout=7, retries=2, cache_bust=False)
-    if body is not None:
-        sources = extract_sources(body, match)
-        if sources:
-            return {"match": match, "sources": sources}
-    return {"match": match, "sources": direct_sources} if direct_sources else None
+    base = f"{match_identity(match)}\n{source_key(source)}".encode("utf-8")
+    digest = hashlib.sha1(base).hexdigest()[:12]
+    return f"sport-{digest}"
 
 
 def build_playlist():
@@ -482,28 +650,32 @@ def build_playlist():
             candidates.append({"match": match, "state": state})
 
     resolved = []
-    workers = min(MAX_WORKERS, max(1, len(candidates)))
-    with ThreadPoolExecutor(max_workers=workers) as executor:
-        futures = {executor.submit(resolve_match, item["match"]): item for item in candidates}
-        for future in as_completed(futures):
-            item = futures[future]
-            try:
-                value = future.result()
-            except Exception:
-                value = None
-            if value:
-                value["state"] = item["state"]
-                resolved.append(value)
+    if candidates:
+        workers = min(MAX_WORKERS, len(candidates))
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            futures = {executor.submit(resolve_match, item["match"]): item for item in candidates}
+            for future in as_completed(futures):
+                item = futures[future]
+                try:
+                    value = future.result()
+                except Exception:
+                    value = None
+                if value:
+                    value["state"] = item["state"]
+                    resolved.append(value)
 
-    buckets = {provider["key"]: [] for provider in ORDERED_PROVIDERS}
+    resolved = merge_match_items(resolved)
+    if candidates and not resolved:
+        raise RuntimeError("Có trận hợp lệ nhưng không resolve được luồng nào; giữ playlist cũ")
+
+    provider_order = build_provider_order(resolved)
+    sport_order = build_sport_order(resolved)
+    buckets = {key: [] for key, _ in provider_order}
     for item in resolved:
-        key = item["match"].get("provider") or ""
-        if key in buckets:
-            buckets[key].append(item)
-
-    sport_order = build_sport_order(candidates)
-    for provider in ORDERED_PROVIDERS:
-        buckets[provider["key"]].sort(key=lambda item: match_sort_key(item, sport_order))
+        key = provider_key(item["match"])
+        buckets.setdefault(key, []).append(item)
+    for key in buckets:
+        buckets[key].sort(key=lambda item: match_sort_key(item, sport_order))
 
     update_group = format_update_group(current_ms)
     lines = ['#EXTM3U x-tvg-url=""']
@@ -515,37 +687,31 @@ def build_playlist():
     total_streams = 0
     total_matches = 0
 
-    for provider in ORDERED_PROVIDERS:
-        group_name = provider["name"]
-        for item in buckets[provider["key"]]:
+    for provider, group_name in provider_order:
+        for item in buckets.get(provider, []):
             match = item["match"]
-            sources = item["sources"]
             state = item["state"]
+            sources = item["sources"]
             if not sources:
                 continue
             total_matches += 1
             kickoff = get_kickoff(match)
-            live_dot = "🔴 " if state["rank"] in (0, 1) else ""
-            competition = match.get("competition") or match.get("league") or match.get("sport_name") or "Thể thao"
-            logo = match.get("home_logo") or match.get("away_logo") or ""
-
+            live_dot = "🔴 " if state.get("kind") in {"live", "recent"} else ""
+            competition = competition_name(match)
+            logo = first_text(match.get("home_logo"), match.get("away_logo"), match.get("logo"))
+            name = match_name(match)
             for index, source in enumerate(sources):
-                if not source.get("url"):
-                    continue
                 meta = source_meta(source, match, index, len(sources))
                 blv_part = f" • BLV {meta['commentator']}" if meta["commentator"] else ""
                 competition_part = f" • {competition}" if competition else ""
                 stream_part = f" [{meta['stream_info']}]" if meta["stream_info"] else ""
-                title = (
-                    f"{live_dot}{format_match_time(kickoff)} {sport_icon(match)} {match.get('name') or ''}"
-                    f"{blv_part}{competition_part}{stream_part}"
-                )
+                title = f"{live_dot}{format_match_time(kickoff)} {sport_icon(match)} {name}{blv_part}{competition_part}{stream_part}"
                 unique_id = stable_source_id(match, source)
                 referer = header_value(source.get("headers"), "Referer")
                 origin = header_value(source.get("headers"), "Origin")
                 user_agent = header_value(source.get("headers"), "User-Agent")
                 lines.append(
-                    f'#EXTINF:-1 tvg-id="{escape_attr(unique_id)}" tvg-name="{escape_attr(match.get("name") or "")}" '
+                    f'#EXTINF:-1 tvg-id="{escape_attr(unique_id)}" tvg-name="{escape_attr(name)}" '
                     f'tvg-logo="{escape_attr(logo)}" group-title="{escape_attr(group_name)}",{title}'
                 )
                 lines.append(f"#EXTGRP:{group_name}")
@@ -558,8 +724,17 @@ def build_playlist():
                 lines.append(stream_url_with_headers(source))
                 total_streams += 1
 
-    Path("playlist.m3u").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    output = "\n".join(lines) + "\n"
+    temp = Path("playlist.m3u.tmp")
+    temp.write_text(output, encoding="utf-8")
+    temp.replace("playlist.m3u")
+
+    sports = {}
+    for item in resolved:
+        category = sport_category(item["match"])
+        sports[category] = sports.get(category, 0) + 1
     print(f"Đã xuất {total_streams} luồng từ {total_matches} trận. {update_group}")
+    print("Môn:", ", ".join(f"{name}={count}" for name, count in sorted(sports.items(), key=lambda item: sport_order.get(item[0], 10**9))))
 
 
 if __name__ == "__main__":
