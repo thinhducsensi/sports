@@ -284,28 +284,45 @@ def _chuoi_match_from_row(row, sport):
     return result
 
 
-def fetch_chuoichien_supplement_matches():
+def fetch_chuoichien_supplement_matches(feed=None):
     jobs = []
     out = []
     headers = {"User-Agent": USER_AGENT, "Referer": "https://chuoichientv.org/"}
     def task(sport):
-        suffix = f"/v2/matches?page=1&limit=100&sport={quote(sport)}"
-        if sport == "football":
-            suffix += "&type=blv"
-        data = None
-        for base in CHUOICHIEN_API_BASES:
-            data = fetch_json_custom(base + suffix, headers, timeout=5.5)
-            if isinstance(data, (dict, list)):
+        rows, seen = [], set()
+        # The API is paged; a single page of 100 silently loses events.
+        for page in range(1, 21):
+            suffix = f"/v2/matches?page={page}&limit=100&sport={quote(sport)}"
+            if sport == "football":
+                suffix += "&type=blv"
+            data = None
+            for base in CHUOICHIEN_API_BASES:
+                data = fetch_json_custom(base + suffix, headers, timeout=5.5)
+                if isinstance(data, (dict, list)):
+                    break
+            if not isinstance(data, (dict, list)):
                 break
-        if not isinstance(data, (dict, list)):
-            return sport, []
-        rows = []
-        for row in _chuoi_rows(data):
-            match = _chuoi_match_from_row(row, sport)
-            if match:
-                rows.append(match)
+            page_rows = _chuoi_rows(data)
+            new_count = 0
+            for row in page_rows:
+                match = _chuoi_match_from_row(row, sport)
+                if match and match["id"] not in seen:
+                    seen.add(match["id"])
+                    rows.append(match)
+                    new_count += 1
+            # Stop on a short page, or an endpoint that ignores 'page'.
+            if len(page_rows) < 100 or new_count == 0:
+                break
         return sport, rows
-    sports = PROVIDER_SPORT_CAPABILITIES["chuoichien"]
+    sports = list(PROVIDER_SPORT_CAPABILITIES["chuoichien"])
+    # Ask for every category named by the upstream index, including categories
+    # introduced after the bundled capability list was written.
+    if isinstance(feed, dict):
+        for row in feed.get("matches") or []:
+            if isinstance(row, dict) and provider_key(row) == "chuoichien":
+                sport = normalize_text(first_text(row.get("sport"), row.get("sport_name"), row.get("sportType")))
+                if sport and sport not in sports:
+                    sports.append(sport)
     with ThreadPoolExecutor(max_workers=len(sports)) as executor:
         futures = [executor.submit(task, sport) for sport in sports]
         for future in as_completed(futures):
@@ -393,7 +410,8 @@ def fetch_colatv_supplement_matches():
         out.append({
             "id": "colatv:" + first_text(raw.get("matchId"), hashlib.sha1(f"{home}|{away}|{kickoff}".encode()).hexdigest()[:10]),
             "provider": "colatv", "provider_name": "CoLaTV", "sport": sport, "sport_name": sport,
-            "name": f"{home} vs {away}", "kickoff": kickoff, "live": current >= kickoff,
+            "name": f"{home} vs {away}", "kickoff": kickoff,
+            "live": raw.get("isLive") is True or raw.get("live") is True or normalize_text(raw.get("status")) in LIVE_STATUSES,
             "competition": first_text(raw.get("competitionName")), "home_logo": first_text(raw.get("homeTeamLogo")),
             "away_logo": first_text(raw.get("awayTeamLogo")), "commentator": _join_people(names), "sources": dedupe_sources(sources),
         })
@@ -426,7 +444,13 @@ def _giovang_sport_type(row):
         "combat":"boxing", "vothuat":"boxing", "muaythai":"boxing", "kickboxing":"boxing", "ufc":"boxing",
         "esport":"esports", "esports":"esports", "lol":"esports", "gaming":"esports",
     }
-    return mapping.get(n, "")
+    if n in mapping:
+        return mapping[n]
+    # An explicit sport category in the provider data should not disappear just
+    # because we have not assigned an icon or translation to it yet.
+    if raw and any(first_text(row.get(key), league.get(key)) for key in keys):
+        return normalize_text(raw)
+    return ""
 
 
 def _giovang_rows(data):
@@ -492,7 +516,8 @@ def fetch_giovang_supplement_matches():
         league = row.get("league") if isinstance(row.get("league"), dict) else {}
         out.append({
             "id": f"giovang:{event_id}", "provider": "giovang", "provider_name": "Giờ Vàng", "sport": sport,
-            "sport_name": sport, "name": f"{home} vs {away}", "kickoff": kickoff, "live": now_ms() >= kickoff,
+            "sport_name": sport, "name": f"{home} vs {away}", "kickoff": kickoff,
+            "live": row.get("isLive") is True or row.get("live") is True or normalize_text(status) in LIVE_STATUSES,
             "status": status, "competition": first_text(league.get("title"), league.get("name")),
             "home_logo": first_text(home_obj.get("logo")), "away_logo": first_text(away_obj.get("logo")),
             "commentator": _join_people(names), "_giovang_detail": base + "/api/fixtures/" + event_id,
@@ -620,7 +645,7 @@ def fetch_all_provider_supplements(data):
         futures=[]
         for provider, func in adapters.items():
             if provider in participating:
-                futures.append(ex.submit(func))
+                futures.append(ex.submit(func, data) if provider == "chuoichien" else ex.submit(func))
         for f in as_completed(futures):
             try:
                 rows=f.result()
@@ -652,9 +677,13 @@ def merge_supplement_matches(base_matches, supplements):
         if found is None:
             result.append(extra)
             continue
-        for key in ("_chuoi_external_id", "_giovang_detail", "_xoilac_detail", "commentator", "competition", "home_logo", "away_logo", "sport", "sport_name", "sources"):
+        for key in ("_chuoi_external_id", "_giovang_detail", "_xoilac_detail", "commentator", "competition", "home_logo", "away_logo", "sport", "sport_name"):
             if extra.get(key) and not found.get(key):
                 found[key] = extra[key]
+        if isinstance(extra.get("sources"), list):
+            found["sources"] = dedupe_by_stream_url(
+                direct_sources(found) + direct_sources(extra)
+            )
         if extra.get("live") is True:
             found["live"] = True
     return result
@@ -1106,7 +1135,7 @@ def fetch_giovang_sources(candidates):
     )
     rows = feed.get("response") if isinstance(feed, dict) else None
     if not isinstance(rows, list):
-        return {}
+        return result
     jobs = []
     for row in rows:
         if not isinstance(row, dict):
@@ -1137,7 +1166,7 @@ def fetch_giovang_sources(candidates):
                 except Exception:
                     sources = []
                 if sources:
-                    result[idx] = sources
+                    result[idx] = dedupe_by_stream_url(result.get(idx, []) + sources)
     return result
 
 
@@ -1616,6 +1645,19 @@ def dedupe_sources(sources):
     return result
 
 
+def dedupe_by_stream_url(sources):
+    """One playable entry per URL; keep the first source's metadata and headers."""
+    result, seen = [], set()
+    for source in sources:
+        if not source or not source.get("url"):
+            continue
+        key = html_lib.unescape(source["url"]).strip()
+        if key not in seen:
+            seen.add(key)
+            result.append(source)
+    return result
+
+
 def resolver_url(match):
     value = first_text(match.get("resolver"), match.get("resolve_url"), match.get("resolver_url"))
     if value:
@@ -1944,7 +1986,9 @@ def build_sport_order(items):
 
 
 def escape_attr(value):
-    return safe_title_text(value).replace("&", "&amp;").replace('"', "&quot;")
+    # Metadata URLs can contain commas (image crop parameters); title cleaning
+    # must not rewrite them into another URL.
+    return scalar_text(value).replace("\r", " ").replace("\n", " ").replace("&", "&amp;").replace('"', "&quot;")
 
 
 def header_value(headers, name):
@@ -1997,7 +2041,7 @@ def resolve_all(candidates):
         elif item["api_index"] in xoilac_map:
             provider_direct_map[item["api_index"]] = xoilac_map[item["api_index"]]
         url = resolver_url(match)
-        if url and not provider_direct_map[item["api_index"]]:
+        if url:
             resolver_to_matches.setdefault(url, []).append(item["api_index"])
 
     bodies = {}
@@ -2018,9 +2062,11 @@ def resolve_all(candidates):
         exact = provider_direct_map.get(item["api_index"], [])
         local = local_direct_map.get(item["api_index"], [])
         url = resolver_url(match)
-        remote = resolver_sources(bodies.get(url), match) if url and not exact else []
+        remote = resolver_sources(bodies.get(url), match) if url else []
         # Direct provider API wins because it preserves the caster<->stream relationship.
-        sources = exact if exact else dedupe_sources(remote + local)
+        # Resolver links can rotate while an HTML page still advertises an old
+        # stream. Keep all distinct URLs, with current resolver links first.
+        sources = dedupe_by_stream_url(remote + local + exact)
         sources = order_sources(sources, match)
         if sources:
             resolved.append({**item, "sources": sources, "direct_provider": bool(exact)})
@@ -2108,7 +2154,7 @@ def build_playlist():
     temp = Path("playlist.m3u.tmp")
     temp.write_text("\n".join(lines) + "\n", encoding="utf-8")
     temp.replace("playlist.m3u")
-    print(f"v28-multisport: {total_streams} luồng / {total_matches} trận / {len(provider_sequence)} nguồn")
+    print(f"{total_streams} luồng / {total_matches} trận / {len(provider_sequence)} nguồn")
 
 
 if __name__ == "__main__":
