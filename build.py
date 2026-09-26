@@ -45,6 +45,46 @@ GENERIC_STREAM_WORDS = {
     "main", "primary", "mirror", "default", "auto", "link", "channel", "cdn",
 }
 FORMAT_ORDER = {"HLS": 0, "FLV": 1, "TS": 2, "DASH": 3, "MP4": 4}
+
+DIRECT_FEEDS = {
+    "colatv": {
+        "url": "https://api.cltvlv.com/api/matches",
+        "kind": "cola",
+        "headers": {"User-Agent": USER_AGENT},
+    },
+    "chuoichien": {
+        "url": "https://api-v2.chuoichientv.net/v2/matches?page=1&limit=100&type=blv",
+        "kind": "chuoichien",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+    },
+    "gavang33": {
+        "url": "https://gavangtv-api.adviceme.io/api/v1/matches",
+        "kind": "gavang33",
+        "headers": {"User-Agent": USER_AGENT, "Referer": "https://gavang33.co/"},
+    },
+    "socolive": {
+        "url": "https://json.vnres.co/all_live_rooms.json",
+        "kind": "socolive",
+        "headers": {"User-Agent": "Mozilla/5.0", "Referer": "https://socolivedz.com/"},
+    },
+    "vuasanco": {
+        "url": "https://vsc9.com/api/data/lives/matches",
+        "kind": "vuasanco",
+        "headers": {"User-Agent": USER_AGENT, "Origin": "https://vsc9.com", "Referer": "https://vsc9.com/"},
+    },
+}
+
+PROVIDER_ALIASES = {
+    "cola": "colatv",
+    "colatv": "colatv",
+    "chuoi chien": "chuoichien",
+    "chuoichien": "chuoichien",
+    "ga vang 33": "gavang33",
+    "gavang33": "gavang33",
+    "socolive": "socolive",
+    "vua san co": "vuasanco",
+    "vuasanco": "vuasanco",
+}
 KNOWN_PROVIDER_IDS = {"chuoichien", "colatv", "gavang33", "giovang", "phalang", "xoilacxth", "sport", "sports", "sportstream", "sport stream"}
 
 
@@ -104,6 +144,326 @@ def fetch_json(url, timeout=8, retries=1, cache_bust=False):
             if attempt + 1 < retries:
                 sleep(1.0 + attempt)
     return None
+
+
+def fetch_json_custom(url, headers=None, timeout=6):
+    req_headers = {
+        "Accept": "application/json,text/plain,*/*",
+        "User-Agent": USER_AGENT,
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
+    }
+    if isinstance(headers, dict):
+        req_headers.update(headers)
+    try:
+        request = Request(with_cache_buster(url), headers=req_headers)
+        with urlopen(request, timeout=timeout) as response:
+            if not 200 <= getattr(response, "status", 200) < 300:
+                return None
+            return json.loads(response.read().decode("utf-8-sig"))
+    except (HTTPError, URLError, TimeoutError, OSError, json.JSONDecodeError, UnicodeDecodeError):
+        return None
+
+
+def provider_canonical(value):
+    norm = normalize_text(value)
+    return PROVIDER_ALIASES.get(norm, norm.replace(" ", ""))
+
+
+def split_match_teams(value):
+    text = scalar_text(value)
+    if not text:
+        return "", ""
+    parts = re.split(r"(?i)\s+(?:vs\.?|v|versus)\s+", text, maxsplit=1)
+    if len(parts) != 2:
+        return "", ""
+    return normalize_text(parts[0]), normalize_text(parts[1])
+
+
+def pair_key(home, away):
+    return f"{normalize_text(home)}|{normalize_text(away)}"
+
+
+def source_obj(url, caster="", fmt="", quality="", headers=None, name="", index=0):
+    if not scalar_text(url):
+        return None
+    obj = {
+        "url": scalar_text(url),
+        "headers": normalize_headers(headers or {}),
+        "_api_index": index,
+    }
+    if caster:
+        obj["commentator"] = scalar_text(caster)
+        obj["_direct_caster"] = scalar_text(caster)
+    if fmt:
+        obj["type"] = fmt
+    if quality:
+        obj["quality"] = quality
+    if name:
+        obj["name"] = name
+    return obj
+
+
+def parse_direct_cola(data, cfg):
+    out = {}
+    root = data.get("data") if isinstance(data, dict) else None
+    if not isinstance(root, dict):
+        return out
+    playback_headers = {"User-Agent": USER_AGENT, "Referer": "https://cola.tv/"}
+    for raw in root.values():
+        if not isinstance(raw, dict):
+            continue
+        home, away = first_text(raw.get("homeTeamName")), first_text(raw.get("awayTeamName"))
+        if not home or not away:
+            continue
+        sources = []
+        anchors = raw.get("anchorAppointmentVoList")
+        if isinstance(anchors, list):
+            for i, anchor in enumerate(anchors):
+                if not isinstance(anchor, dict):
+                    continue
+                caster = first_text(anchor.get("nickName"), anchor.get("nickname"), anchor.get("name"))
+                hls = first_text(anchor.get("playStreamAddress2"))
+                flv = first_text(anchor.get("playStreamAddress"))
+                if hls:
+                    sources.append(source_obj(hls, caster, "HLS", headers=playback_headers, name=caster, index=i*2))
+                if flv:
+                    sources.append(source_obj(flv, caster, "FLV", headers=playback_headers, name=caster, index=i*2+1))
+        if sources:
+            out[pair_key(home, away)] = dedupe_sources(sources)
+    return out
+
+
+def _iter_candidate_matches(data):
+    if isinstance(data, list):
+        return data
+    if not isinstance(data, dict):
+        return []
+    for key in ("matches", "result", "data", "response"):
+        value = data.get(key)
+        if isinstance(value, list):
+            return value
+        if isinstance(value, dict):
+            if key == "data":
+                nested = value.get("matches")
+                if isinstance(nested, list):
+                    return nested
+    if isinstance(data.get("data"), dict):
+        return list(data["data"].values())
+    return []
+
+
+def parse_direct_chuoichien(data, cfg):
+    out = {}
+    playback_headers = {
+        "User-Agent": "Mozilla/5.0",
+        "Origin": "https://live.chuoichien.tv",
+        "Referer": "https://live.chuoichien.tv/",
+    }
+    rows = _iter_candidate_matches(data)
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        match = row.get("match") if isinstance(row.get("match"), dict) else row
+        home_obj = row.get("home") if isinstance(row.get("home"), dict) else match.get("home") if isinstance(match.get("home"), dict) else {}
+        away_obj = row.get("away") if isinstance(row.get("away"), dict) else match.get("away") if isinstance(match.get("away"), dict) else {}
+        home = first_text(home_obj.get("name"), home_obj.get("nickname"), row.get("team1"), row.get("homeName"), match.get("team1"), match.get("homeName"))
+        away = first_text(away_obj.get("name"), away_obj.get("nickname"), row.get("team2"), row.get("awayName"), match.get("team2"), match.get("awayName"))
+        if not home or not away:
+            continue
+        sources = []
+        blvs = row.get("blvs") or row.get("branchStreamUrls") or match.get("blvs") or match.get("branchStreamUrls")
+        if isinstance(blvs, list):
+            for bi, blv in enumerate(blvs):
+                if not isinstance(blv, dict):
+                    continue
+                caster = first_text(blv.get("name"), blv.get("nickname"), blv.get("blv"))
+                streams = blv.get("streams") or blv.get("branchStreamUrls") or blv.get("urls")
+                if isinstance(streams, list):
+                    for si, st in enumerate(streams):
+                        if isinstance(st, str):
+                            url, label = st, ""
+                        elif isinstance(st, dict):
+                            url = first_text(st.get("url"), st.get("link"), st.get("streamUrl"))
+                            label = first_text(st.get("label"), st.get("name"))
+                        else:
+                            continue
+                        fmt = "HLS" if ".m3u8" in url.lower() else "FLV" if ".flv" in url.lower() else ""
+                        quality = quality_label({"name": label})
+                        obj = source_obj(url, caster, fmt, quality, playback_headers, label or caster, bi*100+si)
+                        if obj:
+                            sources.append(obj)
+        top_streams = row.get("streams") or match.get("streams")
+        single_blv = first_text(row.get("blv"), match.get("blv"))
+        if isinstance(top_streams, list):
+            for si, st in enumerate(top_streams):
+                if not isinstance(st, dict):
+                    continue
+                url = first_text(st.get("url"), st.get("link"), st.get("streamUrl"))
+                label = first_text(st.get("label"), st.get("name"))
+                fmt = "HLS" if ".m3u8" in url.lower() else "FLV" if ".flv" in url.lower() else ""
+                obj = source_obj(url, single_blv, fmt, quality_label({"name": label}), playback_headers, label, 10000+si)
+                if obj:
+                    sources.append(obj)
+        if sources:
+            out[pair_key(home, away)] = dedupe_sources(sources)
+    return out
+
+
+def parse_direct_gavang33(data, cfg):
+    out = {}
+    root = data.get("data") if isinstance(data, dict) else None
+    if not isinstance(root, dict):
+        return out
+    playback_headers = {"User-Agent": USER_AGENT, "Referer": "https://gavang33.co/"}
+    for raw in root.values():
+        if not isinstance(raw, dict):
+            continue
+        home_obj = raw.get("homeTeam") if isinstance(raw.get("homeTeam"), dict) else {}
+        away_obj = raw.get("awayTeam") if isinstance(raw.get("awayTeam"), dict) else {}
+        home, away = first_text(home_obj.get("name")), first_text(away_obj.get("name"))
+        if not home or not away:
+            continue
+        sources = []
+        anchors = raw.get("anchorAppointmentVoList")
+        if isinstance(anchors, list):
+            for ai, anchor in enumerate(anchors):
+                if not isinstance(anchor, dict):
+                    continue
+                caster = first_text(anchor.get("nickName"), anchor.get("nickname"), anchor.get("name"))
+                urls = anchor.get("streamUrls")
+                if isinstance(urls, list):
+                    for ui, url in enumerate(urls):
+                        if not isinstance(url, str) or not url.strip():
+                            continue
+                        fmt = "FLV" if ".flv" in url.lower() else "HLS" if ".m3u8" in url.lower() else ""
+                        sources.append(source_obj(url, caster, fmt, headers=playback_headers, name=caster, index=ai*100+ui))
+        if sources:
+            out[pair_key(home, away)] = dedupe_sources(sources)
+    return out
+
+
+def parse_direct_socolive(data, cfg):
+    out = {}
+    rows = data if isinstance(data, list) else data.get("data") if isinstance(data, dict) and isinstance(data.get("data"), list) else []
+    playback_headers = {"User-Agent": "Mozilla/5.0", "Referer": "https://socolivedz.com/"}
+    for ri, row in enumerate(rows):
+        if not isinstance(row, dict):
+            continue
+        home = first_text(row.get("hostName"), row.get("homeName"))
+        away = first_text(row.get("guestName"), row.get("awayName"))
+        if not home or not away:
+            continue
+        room = row.get("roomItem") if isinstance(row.get("roomItem"), dict) else row
+        anchor = room.get("anchor") if isinstance(room.get("anchor"), dict) else {}
+        caster = first_text(anchor.get("nickName"), anchor.get("nickname"), anchor.get("name"))
+        stream = room.get("stream") if isinstance(room.get("stream"), dict) else row.get("stream") if isinstance(row.get("stream"), dict) else {}
+        sources = []
+        for idx, (key, fmt, q) in enumerate((("hdM3u8","HLS","FHD"),("m3u8","HLS",""),("hdFlv","FLV","HD"),("flv","FLV",""))):
+            url = first_text(stream.get(key))
+            obj = source_obj(url, caster, fmt, q, playback_headers, caster, idx)
+            if obj:
+                sources.append(obj)
+        if sources:
+            out[pair_key(home, away)] = dedupe_sources(sources)
+    return out
+
+
+def _extract_vuasanco_streams(container, playback_headers):
+    sources = []
+    seq = 0
+    if not isinstance(container, dict):
+        return sources
+    arrays = []
+    for key in ("lives", "streams", "links"):
+        value = container.get(key)
+        if isinstance(value, list):
+            arrays.extend(value)
+    for entry in arrays:
+        if isinstance(entry, str):
+            url, caster = entry, ""
+        elif isinstance(entry, dict):
+            url = first_text(entry.get("link"), entry.get("url"), entry.get("streamUrl"))
+            caster = first_text(entry.get("commentator"), entry.get("blv"), entry.get("caster"))
+        else:
+            continue
+        fmt = "HLS" if ".m3u8" in url.lower() else "FLV" if ".flv" in url.lower() else ""
+        obj = source_obj(url, caster, fmt, headers=playback_headers, name=caster, index=seq)
+        seq += 1
+        if obj:
+            sources.append(obj)
+    return sources
+
+
+def parse_direct_vuasanco(data, cfg):
+    out = {}
+    rows = _iter_candidate_matches(data)
+    playback_headers = {"User-Agent": USER_AGENT, "Origin": "https://vsc9.com", "Referer": "https://vsc9.com/"}
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        home_obj = row.get("home") if isinstance(row.get("home"), dict) else {}
+        away_obj = row.get("away") if isinstance(row.get("away"), dict) else {}
+        home = first_text(home_obj.get("name"), row.get("homeName"), row.get("team1"))
+        away = first_text(away_obj.get("name"), row.get("awayName"), row.get("team2"))
+        if not home or not away:
+            continue
+        sources = _extract_vuasanco_streams(row, playback_headers)
+        if sources:
+            out[pair_key(home, away)] = dedupe_sources(sources)
+    return out
+
+
+DIRECT_PARSERS = {
+    "cola": parse_direct_cola,
+    "chuoichien": parse_direct_chuoichien,
+    "gavang33": parse_direct_gavang33,
+    "socolive": parse_direct_socolive,
+    "vuasanco": parse_direct_vuasanco,
+}
+
+
+def fetch_direct_indexes():
+    indexes = {}
+    def task(provider, cfg):
+        data = fetch_json_custom(cfg["url"], cfg.get("headers"), timeout=5.5)
+        if data is None:
+            return provider, {}
+        parser = DIRECT_PARSERS.get(cfg.get("kind"))
+        try:
+            return provider, parser(data, cfg) if parser else {}
+        except Exception:
+            return provider, {}
+    with ThreadPoolExecutor(max_workers=len(DIRECT_FEEDS)) as executor:
+        futures = [executor.submit(task, provider, cfg) for provider, cfg in DIRECT_FEEDS.items()]
+        for future in as_completed(futures):
+            provider, index = future.result()
+            indexes[provider] = index
+    return indexes
+
+
+def direct_sources_for_match(match, indexes):
+    provider = provider_canonical(first_text(match.get("provider"), match.get("source"), match.get("provider_name"), match.get("source_name")))
+    index = indexes.get(provider)
+    if not index:
+        return []
+    home = first_text(match.get("home_team"), match.get("homeTeam"), match.get("team1"), match.get("home"))
+    away = first_text(match.get("away_team"), match.get("awayTeam"), match.get("team2"), match.get("away"))
+    if not home or not away:
+        home, away = split_match_teams(match_name(match))
+        key = f"{home}|{away}" if home and away else ""
+    else:
+        key = pair_key(home, away)
+    if key in index:
+        return index[key]
+    # tolerant fallback: match both normalized team names inside direct key
+    h, a = split_match_teams(match_name(match))
+    if h and a:
+        for direct_key, sources in index.items():
+            dh, da = direct_key.split("|", 1) if "|" in direct_key else ("", "")
+            if (h == dh and a == da) or (h == da and a == dh):
+                return sources
+    return []
 
 
 def now_ms():
@@ -541,6 +901,10 @@ def people_match_from_evidence(people, evidence_values):
 
 
 def source_commentator(source, match):
+    direct_caster = first_text(source.get("_direct_caster"))
+    if direct_caster:
+        return direct_caster
+
     known = match_known_people(match)
 
     explicit = explicit_source_people(source)
@@ -708,13 +1072,16 @@ def stable_source_id(match, source):
 
 
 def resolve_all(candidates):
+    direct_indexes = fetch_direct_indexes()
     resolver_to_matches = {}
-    direct_map = {}
+    local_direct_map = {}
+    provider_direct_map = {}
     for item in candidates:
         match = item["match"]
-        direct_map[item["api_index"]] = direct_sources(match)
+        local_direct_map[item["api_index"]] = direct_sources(match)
+        provider_direct_map[item["api_index"]] = direct_sources_for_match(match, direct_indexes)
         url = resolver_url(match)
-        if url:
+        if url and not provider_direct_map[item["api_index"]]:
             resolver_to_matches.setdefault(url, []).append(item["api_index"])
 
     bodies = {}
@@ -732,13 +1099,15 @@ def resolve_all(candidates):
     resolved = []
     for item in candidates:
         match = item["match"]
-        direct = direct_map.get(item["api_index"], [])
+        exact = provider_direct_map.get(item["api_index"], [])
+        local = local_direct_map.get(item["api_index"], [])
         url = resolver_url(match)
-        remote = resolver_sources(bodies.get(url), match) if url else []
-        sources = dedupe_sources(remote + direct)
+        remote = resolver_sources(bodies.get(url), match) if url and not exact else []
+        # Direct provider API wins because it preserves the caster<->stream relationship.
+        sources = exact if exact else dedupe_sources(remote + local)
         sources = order_sources(sources, match)
         if sources:
-            resolved.append({**item, "sources": sources})
+            resolved.append({**item, "sources": sources, "direct_provider": bool(exact)})
     return resolved
 
 
@@ -821,7 +1190,7 @@ def build_playlist():
     temp = Path("playlist.m3u.tmp")
     temp.write_text("\n".join(lines) + "\n", encoding="utf-8")
     temp.replace("playlist.m3u")
-    print(f"v24: {total_streams} luồng / {total_matches} trận / {len(provider_sequence)} nguồn")
+    print(f"v25-direct: {total_streams} luồng / {total_matches} trận / {len(provider_sequence)} nguồn")
 
 
 if __name__ == "__main__":
