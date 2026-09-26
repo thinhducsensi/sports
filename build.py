@@ -1,4 +1,5 @@
 import hashlib
+import html as html_lib
 import json
 import math
 import re
@@ -9,7 +10,7 @@ from datetime import datetime, time, timedelta
 from pathlib import Path
 from time import sleep
 from urllib.error import HTTPError, URLError
-from urllib.parse import parse_qsl, quote, urlencode, urlsplit, urlunsplit
+from urllib.parse import parse_qsl, quote, urlencode, urljoin, urlsplit, urlunsplit
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 
@@ -85,7 +86,12 @@ PROVIDER_ALIASES = {
     "vua san co": "vuasanco",
     "vuasanco": "vuasanco",
 }
-KNOWN_PROVIDER_IDS = {"chuoichien", "colatv", "gavang33", "giovang", "phalang", "xoilacxth", "sport", "sports", "sportstream", "sport stream"}
+KNOWN_PROVIDER_IDS = {
+    "chuoichien", "chuoi chien", "colatv", "cola", "gavang33", "ga vang 33",
+    "giovang", "gio vang", "phalang", "phalangtv", "pha lang", "pha lang tv",
+    "xoilacxth", "xoilac", "xoi lac", "xoi lac xth", "sport", "sports",
+    "sportstream", "sport stream",
+}
 
 
 def scalar_text(value):
@@ -163,6 +169,25 @@ def fetch_json_custom(url, headers=None, timeout=6):
             return json.loads(response.read().decode("utf-8-sig"))
     except (HTTPError, URLError, TimeoutError, OSError, json.JSONDecodeError, UnicodeDecodeError):
         return None
+
+
+def fetch_text(url, headers=None, timeout=5):
+    req_headers = {
+        "Accept": "text/html,application/xhtml+xml,application/json,text/plain,*/*",
+        "User-Agent": USER_AGENT,
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
+    }
+    if isinstance(headers, dict):
+        req_headers.update(headers)
+    try:
+        request = Request(str(url), headers=req_headers)
+        with urlopen(request, timeout=timeout) as response:
+            if not 200 <= getattr(response, "status", 200) < 300:
+                return ""
+            return response.read().decode("utf-8", errors="replace")
+    except (HTTPError, URLError, TimeoutError, OSError, UnicodeDecodeError):
+        return ""
 
 
 def provider_canonical(value):
@@ -465,6 +490,349 @@ def direct_sources_for_match(match, indexes):
                 return sources
     return []
 
+
+def slugify_vi(value):
+    text = normalize_text(value)
+    text = re.sub(r"[^a-z0-9]+", "-", text).strip("-")
+    return text
+
+
+def _team_pair_from_match(match):
+    return split_match_teams(match_name(match))
+
+
+def _candidate_by_pair(candidates, provider):
+    out = {}
+    for item in candidates:
+        if provider_key(item["match"]) != provider:
+            continue
+        home, away = _team_pair_from_match(item["match"])
+        if home and away:
+            out.setdefault(pair_key(home, away), []).append(item)
+            out.setdefault(pair_key(away, home), []).append(item)
+    return out
+
+
+def _best_candidate_for_pair(pair_map, home, away):
+    rows = pair_map.get(pair_key(home, away)) or pair_map.get(pair_key(away, home)) or []
+    return rows[0] if rows else None
+
+
+def _parse_giovang_detail(html_text, page_url):
+    if not html_text:
+        return []
+    m = re.search("data-blv\\s*=\\s*([\\\"'])(.*?)\\1", html_text, flags=re.I | re.S)
+    if not m:
+        return []
+    raw = html_lib.unescape(m.group(2)).replace("\\/", "/")
+    try:
+        rows = json.loads(raw)
+    except Exception:
+        return []
+    headers = {"User-Agent": USER_AGENT, "Referer": page_url, "Origin": "https://giovang.org"}
+    out = []
+    if isinstance(rows, list):
+        for i, row in enumerate(rows):
+            if not isinstance(row, dict):
+                continue
+            caster = first_text(row.get("blv_name"), row.get("name"), row.get("commentator"))
+            url = first_text(row.get("mobile_stream_url"), row.get("pc_stream_url"), row.get("stream_url"))
+            if not url:
+                continue
+            fmt = "HLS" if ".m3u8" in url.lower() else "FLV" if ".flv" in url.lower() else ""
+            out.append(source_obj(url, caster=caster, fmt=fmt, headers=headers, name=caster, index=i))
+    return dedupe_sources(out)
+
+
+def fetch_giovang_sources(candidates):
+    matches = _candidate_by_pair(candidates, "giovang")
+    if not matches:
+        return {}
+    feed = fetch_json_custom(
+        "https://live-api.keonhacaitp.one/storage/livestream/live.json",
+        headers={"User-Agent": "Mozilla/5.0", "Referer": "https://giovang.org/"},
+        timeout=5,
+    )
+    rows = feed.get("response") if isinstance(feed, dict) else None
+    if not isinstance(rows, list):
+        return {}
+    jobs = []
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        teams = row.get("teams") if isinstance(row.get("teams"), dict) else {}
+        home_obj = teams.get("home") if isinstance(teams.get("home"), dict) else {}
+        away_obj = teams.get("away") if isinstance(teams.get("away"), dict) else {}
+        home = first_text(home_obj.get("name"))
+        away = first_text(away_obj.get("name"))
+        item = _best_candidate_for_pair(matches, home, away)
+        if not item:
+            continue
+        ident = first_text(row.get("fi"), row.get("id"))
+        day_month = first_text(row.get("day_month")).replace("/", "-")
+        hs = first_text(home_obj.get("slug")) or slugify_vi(home)
+        aw_slug = first_text(away_obj.get("slug")) or slugify_vi(away)
+        if not ident or not day_month or not hs or not aw_slug:
+            continue
+        page = f"https://giovang.org/truc-tiep-{hs}-vs-{aw_slug}-{day_month}-{ident}"
+        jobs.append((item["api_index"], page))
+    result = {}
+    if jobs:
+        with ThreadPoolExecutor(max_workers=min(8, len(jobs))) as ex:
+            fmap = {ex.submit(fetch_text, page, {"User-Agent": USER_AGENT, "Referer": "https://giovang.org/"}, 4): (idx, page) for idx, page in jobs}
+            for fut in as_completed(fmap):
+                idx, page = fmap[fut]
+                try:
+                    sources = _parse_giovang_detail(fut.result(), page)
+                except Exception:
+                    sources = []
+                if sources:
+                    result[idx] = sources
+    return result
+
+
+def _strip_tags(text):
+    text = re.sub(r"<script\\b[^>]*>.*?</script>", " ", text, flags=re.I | re.S)
+    text = re.sub(r"<style\\b[^>]*>.*?</style>", " ", text, flags=re.I | re.S)
+    text = re.sub(r"<[^>]+>", " ", text)
+    return re.sub(r"\\s+", " ", html_lib.unescape(text)).strip()
+
+
+def _xoilac_find_match_pages(list_html, candidates):
+    if not list_html:
+        return {}
+    pages = {}
+    anchors = list(re.finditer("<a\\b[^>]*href=[\\\"']([^\\\"']*/truc-tiep/[^\\\"']+)[\\\"'][^>]*>", list_html, flags=re.I))
+    for item in candidates:
+        if provider_key(item["match"]) != "xoilacxth":
+            continue
+        home, away = _team_pair_from_match(item["match"])
+        if not home or not away:
+            continue
+        for m in anchors:
+            start = max(0, m.start() - 2200)
+            end = min(len(list_html), m.end() + 2200)
+            context = normalize_text(_strip_tags(list_html[start:end]))
+            if home in context and away in context:
+                pages[item["api_index"]] = urljoin("https://xoilacz.vip", html_lib.unescape(m.group(1)))
+                break
+    return pages
+
+
+def _extract_stream_url_from_text(text):
+    if not text:
+        return ""
+    patterns = [
+        "[\\\"'](https?://[^\\\"']+?\\.m3u8(?:\\?[^\\\"']*)?)[\\\"']",
+        "[\\\"'](https?://[^\\\"']+?\\.flv(?:\\?[^\\\"']*)?)[\\\"']",
+        "(https?://[^\\s\\\"'<>]+?\\.m3u8(?:\\?[^\\s\\\"'<>]*)?)",
+        "(https?://[^\\s\\\"'<>]+?\\.flv(?:\\?[^\\s\\\"'<>]*)?)",
+    ]
+    for pattern in patterns:
+        m = re.search(pattern, text, flags=re.I)
+        if m:
+            return html_lib.unescape(m.group(1)).replace("\\/", "/")
+    return ""
+
+
+def _xoilac_player_links(page_html, page_url):
+    out = []
+    if not page_html:
+        return out
+    pattern = re.compile("<a\\b([^>]*\\bplayer-link\\b[^>]*)>(.*?)</a>", re.I | re.S)
+    for i, m in enumerate(pattern.finditer(page_html)):
+        attrs = m.group(1)
+        data = re.search("\\bdata-link=[\\\"']([^\\\"']+)[\\\"']", attrs, flags=re.I)
+        if not data:
+            continue
+        label = _strip_tags(m.group(2))
+        target = urljoin(page_url, html_lib.unescape(data.group(1)))
+        if target:
+            out.append((i, label, target))
+    return out
+
+
+def _xoilac_pages_from_json(text, base_url, candidates):
+    if not text:
+        return {}, {}
+    try:
+        payload = json.loads(text)
+    except Exception:
+        return {}, {}
+    rows = payload.get("data") if isinstance(payload, dict) else None
+    if not isinstance(rows, list):
+        return {}, {}
+    pair_map = _candidate_by_pair(candidates, "xoilacxth")
+    pages = {}
+    commentators = {}
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        home_obj = row.get("home_team") if isinstance(row.get("home_team"), dict) else {}
+        away_obj = row.get("away_team") if isinstance(row.get("away_team"), dict) else {}
+        home = first_text(home_obj.get("name"), row.get("home_name"), row.get("home"))
+        away = first_text(away_obj.get("name"), row.get("away_name"), row.get("away"))
+        item = _best_candidate_for_pair(pair_map, home, away)
+        if not item:
+            continue
+        slug = first_text(row.get("slug"), row.get("seo_slug"))
+        detail = first_text(row.get("url"), row.get("link"), row.get("detail_url"))
+        if not detail and slug:
+            detail = f"/truc-tiep/{slug}"
+        if detail:
+            pages[item["api_index"]] = urljoin(base_url.rstrip("/") + "/", detail)
+        names = []
+        arr = row.get("commentators")
+        if isinstance(arr, list):
+            for c in arr:
+                if isinstance(c, dict):
+                    name = first_text(c.get("name"), c.get("nickName"), c.get("nickname"))
+                else:
+                    name = scalar_text(c)
+                if name and normalize_text(name) not in {normalize_text(x) for x in names}:
+                    names.append(name)
+        if names:
+            commentators[item["api_index"]] = names
+    return pages, commentators
+
+
+def _xoilac_listing_for_domain(base_url, candidates):
+    headers = {"User-Agent": USER_AGENT, "Referer": base_url.rstrip("/") + "/"}
+    endpoint = base_url.rstrip("/") + "/sport/football/filter/commentator"
+    listing = fetch_text(endpoint, headers, 5)
+    if not listing:
+        return {}, {}, headers
+    pages_json, commentators = _xoilac_pages_from_json(listing, base_url, candidates)
+    if pages_json:
+        return pages_json, commentators, headers
+    pages_html = _xoilac_find_match_pages(listing, candidates)
+    # _xoilac_find_match_pages historically joins xoilacz.vip; normalize to this base.
+    normalized = {}
+    for idx, page in pages_html.items():
+        try:
+            path = urlsplit(page).path
+        except Exception:
+            path = page
+        normalized[idx] = urljoin(base_url.rstrip("/") + "/", path.lstrip("/"))
+    return normalized, commentators, headers
+
+
+def fetch_xoilac_sources(candidates):
+    relevant = [item for item in candidates if provider_key(item["match"]) == "xoilacxth"]
+    if not relevant:
+        return {}
+    pages = {}
+    listed_commentators = {}
+    chosen_headers = {}
+    for base in ("https://xoilacz.vip", "https://xlz.domainkqt.cc"):
+        domain_pages, domain_commentators, headers = _xoilac_listing_for_domain(base, relevant)
+        if domain_pages:
+            pages.update({k: v for k, v in domain_pages.items() if k not in pages})
+            listed_commentators.update({k: v for k, v in domain_commentators.items() if k not in listed_commentators})
+            for idx in domain_pages:
+                chosen_headers[idx] = headers
+        if len(pages) >= len(relevant):
+            break
+    if not pages:
+        return {}
+
+    page_htmls = {}
+    with ThreadPoolExecutor(max_workers=min(8, len(pages))) as ex:
+        fmap = {}
+        for idx, url in pages.items():
+            headers = chosen_headers.get(idx) or {"User-Agent": USER_AGENT, "Referer": url}
+            fmap[ex.submit(fetch_text, url, headers, 4)] = (idx, url)
+        for fut in as_completed(fmap):
+            idx, url = fmap[fut]
+            try:
+                page_htmls[idx] = (url, fut.result())
+            except Exception:
+                page_htmls[idx] = (url, "")
+
+    jobs = []
+    for idx, (page_url, body) in page_htmls.items():
+        for order, label, target in _xoilac_player_links(body, page_url):
+            jobs.append((idx, order, label, target, page_url))
+
+    result = {}
+    if jobs:
+        with ThreadPoolExecutor(max_workers=min(12, len(jobs))) as ex:
+            fmap = {
+                ex.submit(fetch_text, target, {"User-Agent": USER_AGENT, "Referer": page_url}, 4):
+                (idx, order, label, target, page_url)
+                for idx, order, label, target, page_url in jobs
+            }
+            for fut in as_completed(fmap):
+                idx, order, label, target, page_url = fmap[fut]
+                try:
+                    body = fut.result()
+                except Exception:
+                    body = ""
+                stream = _extract_stream_url_from_text(body) or _extract_stream_url_from_text(target)
+                if not stream:
+                    continue
+                fmt = "HLS" if ".m3u8" in stream.lower() else "FLV" if ".flv" in stream.lower() else ""
+                # Player-link text is the stream identity used by HongTV. First try exact
+                # listed commentators, then use a cleaned human label.
+                caster = ""
+                people = listed_commentators.get(idx, [])
+                if people:
+                    caster = people_match_from_evidence(people, [label])
+                if not caster:
+                    caster = clean_human_label(label)
+                obj = source_obj(
+                    stream,
+                    caster=caster,
+                    fmt=fmt,
+                    headers={"User-Agent": USER_AGENT, "Referer": page_url},
+                    name=label,
+                    index=order,
+                )
+                result.setdefault(idx, []).append(obj)
+    return {idx: dedupe_sources(srcs) for idx, srcs in result.items() if srcs}
+
+
+def provider_special_source_caster(source, match):
+    if provider_key(match) != "phalang":
+        return ""
+
+    known = match_known_people(match)
+    explicit = explicit_source_people(source)
+    if len(explicit) == 1:
+        return explicit[0]
+    if len(explicit) > 1:
+        matched = people_match_from_evidence(explicit, [source.get("name"), source.get("label"), source.get("title"), source.get("server"), source.get("provider")])
+        return matched
+
+    evidence = [source.get("name"), source.get("label"), source.get("title"), source.get("server"), source.get("provider")]
+    matched = people_match_from_evidence(known, evidence)
+    if matched:
+        return matched
+
+    match_norm = normalize_text(match_name(match))
+    competition_norm = normalize_text(competition_name(match))
+    for key in ("name", "label", "title", "server", "provider"):
+        raw = first_text(source.get(key))
+        if not raw:
+            continue
+        # Strong signal: upstream explicitly labels this as BLV/caster/commentator.
+        prefixed = bool(re.match(r"(?i)^\s*(?:blv|caster|commentator)\b", raw))
+        human = strip_stream_technical_tokens(raw)
+        if not human or technical_label(human) or is_provider_identity(human, match):
+            continue
+        norm = normalize_text(human)
+        if norm in KNOWN_PROVIDER_IDS or norm in {match_norm, competition_norm}:
+            continue
+        if re.search(r"(?i)\b(?:vs\.?|versus)\b", human):
+            continue
+        # A whole source description is not a caster unless the label is explicit.
+        if not prefixed and len(human.split()) > 5:
+            continue
+        return human
+
+    if len(known) == 1:
+        return known[0]
+    return ""
 
 def now_ms():
     return int(datetime.now().timestamp() * 1000)
@@ -888,15 +1256,23 @@ def strip_stream_technical_tokens(value):
 def people_match_from_evidence(people, evidence_values):
     if not people:
         return ""
-    evidence_norm = " ".join(normalize_text(v) for v in evidence_values if scalar_text(v))
+    normalized_values = [normalize_text(v) for v in evidence_values if scalar_text(v)]
+    evidence_norm = " ".join(normalized_values)
     evidence_slug = slug_text(" ".join(scalar_text(v) for v in evidence_values if scalar_text(v)))
     hits = []
     for person in people:
         norm = normalize_text(person)
         slug = slug_text(person)
-        if (norm and norm in evidence_norm) or (slug and len(slug) >= 3 and slug in evidence_slug):
-            if person not in hits:
-                hits.append(person)
+        if not norm:
+            continue
+        # Short nicknames such as A/B must match a complete token. Without this,
+        # "B" accidentally matches the B in "BLV".
+        if len(norm) <= 2:
+            matched = any(re.search(r"(?:^|\s)" + re.escape(norm) + r"(?:$|\s)", value) for value in normalized_values)
+        else:
+            matched = norm in evidence_norm or (slug and len(slug) >= 3 and slug in evidence_slug)
+        if matched and person not in hits:
+            hits.append(person)
     return hits[0] if len(hits) == 1 else ""
 
 
@@ -904,6 +1280,9 @@ def source_commentator(source, match):
     direct_caster = first_text(source.get("_direct_caster"))
     if direct_caster:
         return direct_caster
+    special = provider_special_source_caster(source, match)
+    if special:
+        return special
 
     known = match_known_people(match)
 
@@ -1073,6 +1452,8 @@ def stable_source_id(match, source):
 
 def resolve_all(candidates):
     direct_indexes = fetch_direct_indexes()
+    giovang_map = fetch_giovang_sources(candidates)
+    xoilac_map = fetch_xoilac_sources(candidates)
     resolver_to_matches = {}
     local_direct_map = {}
     provider_direct_map = {}
@@ -1080,6 +1461,10 @@ def resolve_all(candidates):
         match = item["match"]
         local_direct_map[item["api_index"]] = direct_sources(match)
         provider_direct_map[item["api_index"]] = direct_sources_for_match(match, direct_indexes)
+        if item["api_index"] in giovang_map:
+            provider_direct_map[item["api_index"]] = giovang_map[item["api_index"]]
+        elif item["api_index"] in xoilac_map:
+            provider_direct_map[item["api_index"]] = xoilac_map[item["api_index"]]
         url = resolver_url(match)
         if url and not provider_direct_map[item["api_index"]]:
             resolver_to_matches.setdefault(url, []).append(item["api_index"])
@@ -1190,7 +1575,7 @@ def build_playlist():
     temp = Path("playlist.m3u.tmp")
     temp.write_text("\n".join(lines) + "\n", encoding="utf-8")
     temp.replace("playlist.m3u")
-    print(f"v25-direct: {total_streams} luồng / {total_matches} trận / {len(provider_sequence)} nguồn")
+    print(f"v26-direct-meta: {total_streams} luồng / {total_matches} trận / {len(provider_sequence)} nguồn")
 
 
 if __name__ == "__main__":
