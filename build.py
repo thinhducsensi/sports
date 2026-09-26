@@ -768,17 +768,6 @@ def parse_direct_cola(data, cfg):
         if not home or not away:
             continue
         sources = []
-        league_obj = raw.get("league") if isinstance(raw.get("league"), dict) else {}
-        competition_obj = raw.get("competition") if isinstance(raw.get("competition"), dict) else {}
-        tournament_obj = raw.get("tournament") if isinstance(raw.get("tournament"), dict) else {}
-        competition = first_text(
-            raw.get("competitionName"), raw.get("competition_name"),
-            raw.get("leagueName"), raw.get("league_name"),
-            raw.get("tournamentName"), raw.get("tournament_name"),
-            league_obj.get("name"), league_obj.get("title"),
-            competition_obj.get("name"), competition_obj.get("title"),
-            tournament_obj.get("name"), tournament_obj.get("title"),
-        )
         anchors = raw.get("anchorAppointmentVoList")
         if isinstance(anchors, list):
             for i, anchor in enumerate(anchors):
@@ -899,11 +888,7 @@ def parse_direct_gavang33(data, cfg):
                         if not isinstance(url, str) or not url.strip():
                             continue
                         fmt = "FLV" if ".flv" in url.lower() else "HLS" if ".m3u8" in url.lower() else ""
-                        obj = source_obj(url, caster, fmt, headers=playback_headers, name=caster, index=ai*100+ui)
-                        if obj:
-                            if competition:
-                                obj["_competition"] = competition
-                            sources.append(obj)
+                        sources.append(source_obj(url, caster, fmt, headers=playback_headers, name=caster, index=ai*100+ui))
         if sources:
             out[pair_key(home, away)] = dedupe_sources(sources)
     return out
@@ -2047,8 +2032,6 @@ def build_title(match, state, source):
     name = safe_title_text(match_name(match))
     caster, stream_info = source_meta(source, match)
     competition = safe_title_text(competition_name(match))
-    if not competition and provider_key(match) == "gavang33":
-        competition = safe_title_text(source.get("_competition"))
     caster_part = f" ({safe_title_text(caster)})" if caster else ""
     competition_part = f" • {competition}" if competition else ""
     stream_part = f" [{stream_info}]" if stream_info else ""
