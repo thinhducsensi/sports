@@ -379,8 +379,60 @@ def normalize_source(raw, fallback_headers=None):
     return result
 
 
-def commentator_of(source):
-    return first_text(source.get("commentator"), source.get("blv"), source.get("caster"), source.get("audio_name"), source.get("audioName"))
+def explicit_source_commentator(source):
+    return first_text(
+        source.get("commentator"),
+        source.get("blv"),
+        source.get("caster"),
+        source.get("audio_name"),
+        source.get("audioName"),
+    )
+
+
+def match_commentator(match):
+    return first_text(match.get("commentator"), match.get("blv"), match.get("caster"))
+
+
+def is_generic_source_label(value, source, match):
+    label = normalize_text(value)
+    if not label:
+        return True
+    generic_exact = {
+        "stream", "source", "sport stream", "sports stream", "main", "primary", "backup",
+        "hls", "dash", "flv", "ts", "mp4", "hd", "fhd", "uhd", "4k", "sd",
+        "auto", "default", "server", "link", "live",
+    }
+    if label in generic_exact:
+        return True
+    generic_prefixes = ("server ", "stream ", "source ", "link ", "backup ", "luong ", "luồng ")
+    if label.startswith(generic_prefixes):
+        return True
+    provider_names = {
+        normalize_text(match.get("provider")),
+        normalize_text(match.get("provider_name")),
+        normalize_text(source.get("provider")),
+    }
+    provider_names.discard("")
+    if label in provider_names:
+        return True
+    quality = normalize_text(first_text(source.get("quality"), source.get("resolution"), source.get("video_quality"), source.get("videoQuality")))
+    fmt = normalize_text(infer_format(source))
+    if label in {quality, fmt} - {""}:
+        return True
+    if label == normalize_text(match_name(match)):
+        return True
+    return False
+
+
+def source_commentator(source, match):
+    explicit = explicit_source_commentator(source)
+    if explicit:
+        return explicit
+    for key in ("name", "label", "title", "server"):
+        candidate = first_text(source.get(key))
+        if candidate and not is_generic_source_label(candidate, source, match):
+            return candidate
+    return match_commentator(match)
 
 
 def source_key(source):
@@ -391,15 +443,11 @@ def source_key(source):
 
 def merge_duplicate_source(existing, incoming):
     merged = dict(existing)
-    commentators = []
-    seen = set()
-    for value in list(existing.get("commentators") or []) + [commentator_of(existing), commentator_of(incoming)]:
-        normalized = normalize_text(value)
-        if value and normalized not in seen:
-            seen.add(normalized)
-            commentators.append(value)
-    merged["commentators"] = commentators
-    for key in ("commentator", "blv", "quality", "resolution", "format"):
+    for key in (
+        "commentator", "blv", "caster", "audio_name", "audioName",
+        "name", "label", "title", "server",
+        "quality", "resolution", "video_quality", "videoQuality", "format", "type",
+    ):
         if not merged.get(key) and incoming.get(key):
             merged[key] = incoming.get(key)
     return merged
@@ -423,7 +471,7 @@ def quality_rank(source):
 def source_priority(source):
     fmt = infer_format(source)
     format_rank = {"HLS": 0, "TS": 1, "DASH": 2, "FLV": 3, "MP4": 4}.get(fmt, 5)
-    return (format_rank, quality_rank(source), normalize_text(commentator_of(source)), source.get("url", ""))
+    return (format_rank, quality_rank(source), normalize_text(explicit_source_commentator(source)), source.get("url", ""))
 
 
 def dedupe_sources(sources):
@@ -493,7 +541,7 @@ def merge_match_items(items):
         current["sources"] = dedupe_sources(current["sources"] + item["sources"])
         if item["state"].get("rank", 9) < current["state"].get("rank", 9):
             current["state"] = dict(item["state"])
-        for field in ("home_logo", "away_logo", "competition", "league", "tournament", "commentator", "blv", "sport_icon"):
+        for field in ("home_logo", "away_logo", "competition", "league", "tournament", "commentator", "blv", "caster", "sport_icon"):
             if not current["match"].get(field) and item["match"].get(field):
                 current["match"][field] = item["match"][field]
     return list(merged.values())
@@ -508,16 +556,7 @@ def header_value(headers, name):
 
 
 def source_meta(source, match):
-    names = []
-    seen = set()
-    for value in list(source.get("commentators") or []) + [commentator_of(source)]:
-        normalized = normalize_text(value)
-        if value and normalized not in seen:
-            seen.add(normalized)
-            names.append(value)
-    match_commentator = first_text(match.get("commentator"), match.get("blv"))
-    if not names and match_commentator:
-        names.append(match_commentator)
+    commentator = source_commentator(source, match)
     quality = first_text(source.get("quality"), source.get("resolution"), source.get("video_quality"), source.get("videoQuality"))
     fmt = infer_format(source)
     stream_parts = []
@@ -525,7 +564,7 @@ def source_meta(source, match):
         stream_parts.append(quality)
     if fmt and normalize_text(fmt) != normalize_text(quality):
         stream_parts.append(fmt)
-    return {"commentator": "/".join(names), "stream_info": " • ".join(stream_parts)}
+    return {"commentator": commentator, "stream_info": " • ".join(stream_parts)}
 
 
 def encode_component(value):
