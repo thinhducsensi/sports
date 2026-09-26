@@ -772,14 +772,15 @@ def fetch_xoilac_sources(candidates):
                 if not stream:
                     continue
                 fmt = "HLS" if ".m3u8" in stream.lower() else "FLV" if ".flv" in stream.lower() else ""
-                # Player-link text is the stream identity used by HongTV. First try exact
-                # listed commentators, then use a cleaned human label.
+                # Player-link text is a source identity, not automatically a commentator.
+                # Only bind a per-stream caster when the listing API explicitly gave
+                # commentator names and this source label matches exactly one of them.
+                # Otherwise leave it empty and use the match-level commentator from
+                # sport.json, exactly like SportStream does for the match card.
                 caster = ""
                 people = listed_commentators.get(idx, [])
                 if people:
                     caster = people_match_from_evidence(people, [label])
-                if not caster:
-                    caster = clean_human_label(label)
                 obj = source_obj(
                     stream,
                     caster=caster,
@@ -1277,69 +1278,41 @@ def people_match_from_evidence(people, evidence_values):
 
 
 def source_commentator(source, match):
+    # Authoritative per-stream metadata from direct provider APIs wins.
     direct_caster = first_text(source.get("_direct_caster"))
     if direct_caster:
         return direct_caster
-    special = provider_special_source_caster(source, match)
-    if special:
-        return special
-
-    known = match_known_people(match)
 
     explicit = explicit_source_people(source)
     if len(explicit) == 1:
         return explicit[0]
     if len(explicit) > 1:
-        matched = people_match_from_evidence(explicit, [source.get("name"), source.get("label"), source.get("title"), source.get("server")])
+        matched = people_match_from_evidence(
+            explicit,
+            [source.get("name"), source.get("label"), source.get("title"), source.get("server")],
+        )
         if matched:
             return matched
-        return ""
 
-    # SportStream's resolver model treats source.name/provider as source identity,
-    # not as match commentator. Use them only as evidence, never blindly.
-    name_evidence = [source.get("name"), source.get("label"), source.get("title"), source.get("server")]
-    matched = people_match_from_evidence(known, name_evidence)
+    special = provider_special_source_caster(source, match)
+    if special:
+        return special
+
+    # If source identity explicitly points to one of the match commentators, use
+    # that person for this source.
+    known = match_known_people(match)
+    evidence = [
+        source.get("name"), source.get("label"), source.get("title"),
+        source.get("server"), source.get("provider"),
+    ]
+    matched = people_match_from_evidence(known, evidence)
     if matched:
         return matched
 
-    # Some resolvers put the caster directly in source.name. Accept only the
-    # human residue after removing protocol/quality/backup tokens.
-    for key in ("name", "label", "title", "server"):
-        raw = first_text(source.get(key))
-        if not raw:
-            continue
-        human = strip_stream_technical_tokens(raw)
-        if not human or technical_label(human) or is_provider_identity(human, match):
-            continue
-        # Do not turn a whole match/competition label into a caster.
-        hnorm = normalize_text(human)
-        if hnorm in {normalize_text(match_name(match)), normalize_text(competition_name(match))}:
-            continue
-        # If match declares multiple commentators, only accept a residue that
-        # matches exactly one of them; otherwise the mapping is ambiguous.
-        if len(known) > 1:
-            matched = people_match_from_evidence(known, [human])
-            if matched:
-                return matched
-            continue
-        return human
-
-    # source.provider is frequently the upstream provider (e.g. XoilacXTH),
-    # so only use it when it explicitly matches a known match commentator or
-    # carries a BLV/caster prefix.
-    provider = first_text(source.get("provider"))
-    if provider:
-        matched = people_match_from_evidence(known, [provider])
-        if matched:
-            return matched
-        if re.match(r"(?i)^\s*(?:blv|caster|commentator)\b", provider):
-            human = strip_stream_technical_tokens(provider)
-            if human and not is_provider_identity(human, match):
-                return human
-
-    if len(known) == 1:
-        return known[0]
-    return ""
+    # Exact SportStream fallback. MainActivity reads the match-level field using
+    # commentator -> blv -> caster and shows it on the match card. It does not
+    # discard the value merely because there are several names.
+    return direct_match_commentator(match)
 
 def order_sources(sources, match):
     caster_order = {}
