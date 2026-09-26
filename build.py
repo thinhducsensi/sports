@@ -2,6 +2,7 @@ import hashlib
 import html as html_lib
 import json
 import math
+import os
 import re
 import sys
 import unicodedata
@@ -1091,11 +1092,12 @@ def _parse_giovang_detail(html_text, page_url):
             if not isinstance(row, dict):
                 continue
             caster = first_text(row.get("blv_name"), row.get("name"), row.get("commentator"))
-            url = first_text(row.get("mobile_stream_url"), row.get("pc_stream_url"), row.get("stream_url"))
-            if not url:
-                continue
-            fmt = "HLS" if ".m3u8" in url.lower() else "FLV" if ".flv" in url.lower() else ""
-            out.append(source_obj(url, caster=caster, fmt=fmt, headers=headers, name=caster, index=i))
+            for j, field in enumerate(("mobile_stream_url", "pc_stream_url", "stream_url", "link_stream_hd", "link_stream_sd")):
+                url = first_text(row.get(field))
+                if not url:
+                    continue
+                fmt = "HLS" if ".m3u8" in url.lower() else "FLV" if ".flv" in url.lower() else ""
+                out.append(source_obj(url, caster=caster, fmt=fmt, headers=headers, name=caster, index=i * 10 + j))
     return dedupe_sources(out)
 
 
@@ -1658,6 +1660,60 @@ def dedupe_by_stream_url(sources):
     return result
 
 
+def probe_hls(source):
+    """Check a current manifest with its own HTTP headers; never guess from URL age."""
+    url = first_text(source.get("url"))
+    if ".m3u8" not in urlsplit(url).path.lower():
+        return "unknown"
+    headers = normalize_headers(source.get("headers"))
+    headers.setdefault("User-Agent", USER_AGENT)
+    try:
+        req = Request(url, headers=headers)
+        with urlopen(req, timeout=2.5) as response:
+            body = response.read(1024).lstrip(b"\xef\xbb\xbf \t\r\n")
+            return "ok" if body.startswith(b"#EXTM3U") else "unknown"
+    except HTTPError as exc:
+        return "dead" if exc.code in (404, 410) else "unknown"
+    except (URLError, TimeoutError, OSError, ValueError):
+        return "unknown"
+
+
+def prioritize_verified_sources(items):
+    """Probe competing HLS links with bounded work; preserve untestable links."""
+    if os.environ.get("PLAYLIST_VERIFY_HLS", "1") == "0":
+        return items
+    unique = {}
+    for item in items:
+        if item["state"].get("block") != 0 or len(item["sources"]) < 2:
+            continue
+        for source in item["sources"]:
+            key = (source["url"], tuple(sorted(normalize_headers(source.get("headers")).items())))
+            if key not in unique and ".m3u8" in urlsplit(source["url"]).path.lower():
+                unique[key] = source
+    # Bound execution for the five-minute GitHub Actions job.
+    selected = list(unique.items())[:120]
+    checks = {}
+    if selected:
+        with ThreadPoolExecutor(max_workers=min(24, len(selected))) as executor:
+            futures = {executor.submit(probe_hls, source): key for key, source in selected}
+            for future in as_completed(futures):
+                try:
+                    checks[futures[future]] = future.result()
+                except Exception:
+                    checks[futures[future]] = "unknown"
+    for item in items:
+        def state(source):
+            key = (source["url"], tuple(sorted(normalize_headers(source.get("headers")).items())))
+            return checks.get(key, "unknown")
+        sources = item["sources"]
+        if any(state(source) == "ok" for source in sources):
+            # A 404/410 is conclusive only when another link for the same match
+            # actually returns an HLS manifest. Timeout and 403 remain available.
+            sources = [source for source in sources if state(source) != "dead"]
+        item["sources"] = sorted(sources, key=lambda source: 0 if state(source) == "ok" else 1 if state(source) == "unknown" else 2)
+    return items
+
+
 def resolver_url(match):
     value = first_text(match.get("resolver"), match.get("resolve_url"), match.get("resolver_url"))
     if value:
@@ -1702,6 +1758,11 @@ def resolver_sources(body, match):
         if source:
             sources.append(source)
     return dedupe_sources(sources)
+
+
+def fetch_fresh_resolver(url):
+    # Prefer a fresh resolve; some providers reject extra query parameters.
+    return fetch_json(url, RESOLVER_TIMEOUT, 1, True) or fetch_json(url, RESOLVER_TIMEOUT, 1, False)
 
 
 def infer_format(source):
@@ -2033,13 +2094,13 @@ def resolve_all(candidates):
     for item in candidates:
         match = item["match"]
         local_direct_map[item["api_index"]] = direct_sources(match)
-        provider_direct_map[item["api_index"]] = direct_sources_for_match(match, direct_indexes)
-        if item["api_index"] in chuoi_detail_map:
-            provider_direct_map[item["api_index"]] = chuoi_detail_map[item["api_index"]]
-        elif item["api_index"] in giovang_map:
-            provider_direct_map[item["api_index"]] = giovang_map[item["api_index"]]
-        elif item["api_index"] in xoilac_map:
-            provider_direct_map[item["api_index"]] = xoilac_map[item["api_index"]]
+        idx = item["api_index"]
+        provider_direct_map[idx] = dedupe_by_stream_url(
+            direct_sources_for_match(match, direct_indexes)
+            + chuoi_detail_map.get(idx, [])
+            + giovang_map.get(idx, [])
+            + xoilac_map.get(idx, [])
+        )
         url = resolver_url(match)
         if url:
             resolver_to_matches.setdefault(url, []).append(item["api_index"])
@@ -2048,7 +2109,7 @@ def resolve_all(candidates):
     urls = list(resolver_to_matches)
     if urls:
         with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(urls))) as executor:
-            future_map = {executor.submit(fetch_json, url, RESOLVER_TIMEOUT, 1, False): url for url in urls}
+            future_map = {executor.submit(fetch_fresh_resolver, url): url for url in urls}
             for future in as_completed(future_map):
                 url = future_map[future]
                 try:
@@ -2070,7 +2131,7 @@ def resolve_all(candidates):
         sources = order_sources(sources, match)
         if sources:
             resolved.append({**item, "sources": sources, "direct_provider": bool(exact)})
-    return resolved
+    return prioritize_verified_sources(resolved)
 
 
 def build_title(match, state, source):
