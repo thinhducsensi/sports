@@ -393,11 +393,95 @@ def direct_match_commentator(match):
             return text
     return ""
 
+
+def _split_commentator_candidates(value):
+    text = str(value or "").strip()
+    if not text:
+        return []
+    parts = re.split(r"\s*(?:/|\||•|,|;|\n|\r|\s+&\s+|\s+\+\s+)\s*", text)
+    out = []
+    seen = set()
+    for part in parts:
+        clean = part.strip(" ()[]{}-–—")
+        norm = normalize_text(clean)
+        if not clean or not norm or norm in seen:
+            continue
+        seen.add(norm)
+        out.append(clean)
+    return out
+
+
+def _explicit_source_commentator(source):
+    containers = [source]
+    for key in ("audio", "metadata", "meta"):
+        nested = source.get(key)
+        if isinstance(nested, dict):
+            containers.append(nested)
+    for container in containers:
+        for key in ("commentator", "blv", "caster", "audio_name", "audioName", "audio_label", "audioLabel"):
+            value = container.get(key)
+            if isinstance(value, bool) or not isinstance(value, (str, int, float)):
+                continue
+            text = str(value).strip()
+            if text:
+                return text
+    return ""
+
+
+def _source_label_text(source):
+    return first_text(
+        source.get("name"), source.get("label"), source.get("title"), source.get("server"),
+        source.get("channel"), source.get("provider"),
+    )
+
+
+def _pick_candidate_from_label(candidates, source):
+    if not candidates:
+        return ""
+    label = normalize_text(_source_label_text(source))
+    if not label:
+        return ""
+    matches = []
+    for candidate in candidates:
+        norm = normalize_text(candidate)
+        if not norm:
+            continue
+        # Match a commentator token inside the source label, but never infer a
+        # random label as BLV. This maps labels such as
+        # "haucay • FHD • HLS" to the known match commentator "haucay".
+        if norm == label or re.search(r"(?:^|\s)" + re.escape(norm) + r"(?:$|\s)", label):
+            matches.append(candidate)
+    unique = []
+    seen = set()
+    for value in matches:
+        norm = normalize_text(value)
+        if norm not in seen:
+            seen.add(norm)
+            unique.append(value)
+    return unique[0] if len(unique) == 1 else ""
+
+
 def source_commentator(source, match):
-    # Match SportStream exactly for card metadata: commentator -> blv -> caster
-    # is read from the match object. Resolver source.name is a stream label,
-    # not a commentator, so never infer BLV/caster from source name/label/title.
-    return direct_match_commentator(match)
+    match_candidates = _split_commentator_candidates(direct_match_commentator(match))
+    explicit = _explicit_source_commentator(source)
+    if explicit:
+        explicit_candidates = _split_commentator_candidates(explicit)
+        if len(explicit_candidates) == 1:
+            return explicit_candidates[0]
+        picked = _pick_candidate_from_label(explicit_candidates, source)
+        if picked:
+            return picked
+        # An explicit source field that still contains multiple commentators is
+        # ambiguous for a single stream. Do not print the merged value.
+        return ""
+    picked = _pick_candidate_from_label(match_candidates, source)
+    if picked:
+        return picked
+    if len(match_candidates) == 1:
+        return match_candidates[0]
+    # Multiple match-level commentators with no per-source discriminator:
+    # hide BLV rather than assigning the wrong combined list to every stream.
+    return ""
 
 
 def safe_title_text(value):
@@ -546,8 +630,33 @@ def quality_rank(source):
 
 def source_priority(source):
     fmt = infer_format(source)
-    format_rank = {"HLS": 0, "TS": 1, "DASH": 2, "FLV": 3, "MP4": 4}.get(fmt, 5)
+    format_rank = {"HLS": 0, "FLV": 1, "TS": 2, "DASH": 3, "MP4": 4}.get(fmt, 5)
     return (format_rank, quality_rank(source), source.get("url", ""))
+
+
+def order_sources_by_commentator_and_format(sources, match):
+    # Primary block: commentator/caster, in the order first seen from the API.
+    # Secondary block inside each commentator: HLS -> FLV -> TS -> DASH -> MP4 -> other.
+    commentator_order = {}
+    next_index = 0
+    decorated = []
+    for api_index, source in enumerate(sources):
+        commentator = source_commentator(source, match)
+        norm = normalize_text(commentator)
+        if norm:
+            if norm not in commentator_order:
+                commentator_order[norm] = next_index
+                next_index += 1
+            commentator_rank = commentator_order[norm]
+            unknown_rank = 0
+        else:
+            commentator_rank = 10**9
+            unknown_rank = 1
+        fmt = infer_format(source)
+        format_rank = {"HLS": 0, "FLV": 1, "TS": 2, "DASH": 3, "MP4": 4}.get(fmt, 5)
+        decorated.append(((unknown_rank, commentator_rank, format_rank, api_index), source))
+    decorated.sort(key=lambda item: item[0])
+    return [source for _, source in decorated]
 
 
 def dedupe_sources(sources):
@@ -627,6 +736,7 @@ def resolve_match(match):
             if body is not None:
                 resolver_sources = resolver_sources_exact(body, match)
     sources = dedupe_sources(resolver_sources + direct_sources)
+    sources = order_sources_by_commentator_and_format(sources, match)
     return {"match": match, "sources": sources} if sources else None
 
 
@@ -646,6 +756,7 @@ def merge_match_items(items):
             continue
         current = merged[key]
         current["sources"] = dedupe_sources(current["sources"] + item["sources"])
+        current["sources"] = order_sources_by_commentator_and_format(current["sources"], current["match"])
         current["api_index"] = min(current.get("api_index", 10**9), item.get("api_index", 10**9))
         if item["state"].get("rank", 9) < current["state"].get("rank", 9):
             current["state"] = dict(item["state"])
