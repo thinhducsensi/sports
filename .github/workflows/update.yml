@@ -13,7 +13,7 @@ permissions:
 
 concurrency:
   group: iptv-playlist-update
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -64,11 +64,13 @@ jobs:
           git commit -m "Auto update playlist [$(date '+%d/%m %H:%M ICT')]"
           for attempt in 1 2 3; do
             git fetch origin "$DEFAULT_BRANCH"
-            git rebase "origin/$DEFAULT_BRANCH"
+            if ! git rebase "origin/$DEFAULT_BRANCH"; then
+              git rebase --abort 2>/dev/null || true
+              exit 1
+            fi
             if git push origin "HEAD:$DEFAULT_BRANCH"; then
               exit 0
             fi
-            git rebase --abort 2>/dev/null || true
             sleep $((attempt * 5))
           done
           exit 1
