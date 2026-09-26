@@ -382,83 +382,24 @@ def normalize_source(raw, fallback_headers=None):
     return result
 
 
-def explicit_source_commentator(source):
-    return first_text(
-        source.get("commentator"),
-        source.get("blv"),
-        source.get("caster"),
-        source.get("audio_name"),
-        source.get("audioName"),
-    )
-
-
-def match_commentator(match):
+def direct_match_commentator(match):
     return first_text(match.get("commentator"), match.get("blv"), match.get("caster"))
 
 
-def is_generic_source_label(value, source, match):
-    label = normalize_text(value)
-    if not label:
-        return True
-    generic_exact = {
-        "stream", "source", "sport stream", "sports stream", "main", "primary", "backup",
-        "hls", "dash", "flv", "ts", "mp4", "hd", "fhd", "uhd", "4k", "sd",
-        "auto", "default", "server", "link", "live",
-    }
-    if label in generic_exact:
-        return True
-    generic_prefixes = ("server ", "stream ", "source ", "link ", "backup ", "luong ", "luồng ")
-    if label.startswith(generic_prefixes):
-        return True
-    provider_names = {
-        normalize_text(match.get("provider")),
-        normalize_text(match.get("provider_name")),
-        normalize_text(source.get("provider")),
-    }
-    provider_names.discard("")
-    if label in provider_names:
-        return True
-    quality = normalize_text(first_text(source.get("quality"), source.get("resolution"), source.get("video_quality"), source.get("videoQuality")))
-    fmt = normalize_text(infer_format(source))
-    if label in {quality, fmt} - {""}:
-        return True
-    if label == normalize_text(match_name(match)):
-        return True
-    return False
-
-
-def source_name_commentator(source, match):
-    value = first_text(source.get("name"))
-    if not value:
-        return ""
-    if any(token in value for token in ("•", "|", "[", "]", "(", ")", "/", "\\")):
-        return ""
-    if len(value) > 48:
-        return ""
-    normalized = normalize_text(value)
-    if not normalized or normalized == normalize_text(match_name(match)):
-        return ""
-    bad_words = {
-        "backup", "stream", "source", "server", "link", "main", "primary", "default",
-        "hls", "dash", "flv", "ts", "mp4", "hd", "fhd", "uhd", "4k", "sd", "auto",
-    }
-    words = set(normalized.split())
-    if words & bad_words:
-        return ""
-    if _quality_token(value):
-        return ""
-    return value.strip()
-
-
 def source_commentator(source, match):
-    explicit = explicit_source_commentator(source)
-    if explicit:
-        return explicit
-    direct_name = source_name_commentator(source, match)
-    if direct_name:
-        return direct_name
-    return match_commentator(match)
+    # Match SportStream exactly for card metadata: commentator -> blv -> caster
+    # is read from the match object. Resolver source.name is a stream label,
+    # not a commentator, so never infer BLV/caster from source name/label/title.
+    return direct_match_commentator(match)
 
+
+def safe_title_text(value):
+    text = str(value or "").replace("\r", " ").replace("\n", " ").strip()
+    # The target IPTV parser takes everything after the LAST comma in #EXTINF.
+    # A comma inside match/BLV/competition would therefore chop the title.
+    text = re.sub(r"\s*,\s*", " / ", text)
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
 
 def source_key(source):
     headers = sorted((str(key).lower().strip(), str(value).strip()) for key, value in (source.get("headers") or {}).items())
@@ -595,7 +536,7 @@ def quality_rank(source):
 def source_priority(source):
     fmt = infer_format(source)
     format_rank = {"HLS": 0, "TS": 1, "DASH": 2, "FLV": 3, "MP4": 4}.get(fmt, 5)
-    return (format_rank, quality_rank(source), normalize_text(explicit_source_commentator(source)), source.get("url", ""))
+    return (format_rank, quality_rank(source), source.get("url", ""))
 
 
 def dedupe_sources(sources):
@@ -736,17 +677,20 @@ def build_title(match, state, source):
         parts.append("🔴")
     time_part = format_match_time(get_kickoff(match))
     icon = sport_icon(match)
-    name = match_name(match)
+    name = safe_title_text(match_name(match))
     head = " ".join(part for part in (" ".join(parts), time_part, icon, name) if part)
     meta = source_meta(source, match)
-    if meta["commentator"]:
-        head += f" ({meta['commentator']})"
-    competition = competition_name(match)
+    commentator = safe_title_text(meta["commentator"])
+    if commentator:
+        head += f" ({commentator})"
+    competition = safe_title_text(competition_name(match))
     if competition:
         head += f" • {competition}"
-    if meta["stream_info"]:
-        head += f" [{meta['stream_info']}]"
-    return head.strip()
+    stream_info = safe_title_text(meta["stream_info"])
+    if stream_info:
+        head += f" [{stream_info}]"
+    # Hard invariant for this IPTV parser: the display title may not contain commas.
+    return safe_title_text(head)
 
 
 def build_playlist():
