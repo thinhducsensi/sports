@@ -360,6 +360,20 @@ def infer_format(source):
         return "TS"
     if ".mp4" in url:
         return "MP4"
+    # SportStream resolver source.name often carries the stream kind (HLS1/FLV2)
+    # even when `type` is missing.  Use only an explicit technical token.
+    label = first_text(source.get("name"), source.get("label"), source.get("title"))
+    label_norm = normalize_text(label)
+    if re.search(r"(?:^|\s)hls\d*(?:$|\s)", label_norm):
+        return "HLS"
+    if re.search(r"(?:^|\s)flv\d*(?:$|\s)", label_norm):
+        return "FLV"
+    if re.search(r"(?:^|\s)dash\d*(?:$|\s)", label_norm):
+        return "DASH"
+    if re.search(r"(?:^|\s)ts\d*(?:$|\s)", label_norm):
+        return "TS"
+    if re.search(r"(?:^|\s)mp4\d*(?:$|\s)", label_norm):
+        return "MP4"
     return ""
 
 
@@ -428,61 +442,125 @@ def _explicit_source_commentator(source):
     return ""
 
 
-def _source_label_text(source):
-    return first_text(
-        source.get("name"), source.get("label"), source.get("title"), source.get("server"),
-        source.get("channel"), source.get("provider"),
-    )
+def _is_technical_stream_label(value):
+    raw = str(value or "").strip()
+    if not raw:
+        return True
+    norm = normalize_text(raw)
+    if not norm:
+        return True
+    # Pure technical labels shown by resolver, not caster names.
+    if re.fullmatch(r"(?i)(?:hls|flv|dash|ts|mp4)(?:\s*[-_]?\s*\d+)?", raw):
+        return True
+    if re.fullmatch(r"(?i)(?:4k|uhd|qhd|fhd|hd|sd|2160p?|1440p?|1080p?|720p?|576p?|540p?|480p?|360p?|\d{3,4}\s*[xX×]\s*\d{3,4})", raw):
+        return True
+    if re.fullmatch(r"(?i)(?:server|sv|stream|source|backup|main|primary|mirror)(?:\s*[-_#]?\s*\d+)?", raw):
+        return True
+    if norm in {"sport", "sport stream", "sports", "default", "unknown"}:
+        return True
+    return False
 
 
-def _pick_candidate_from_label(candidates, source):
-    if not candidates:
+def _match_provider_aliases(match):
+    aliases = set()
+    for key in ("provider", "provider_name", "source", "source_name", "provider_key"):
+        value = normalize_text(match.get(key))
+        if value:
+            aliases.add(value)
+    return aliases
+
+
+def _clean_stream_human_label(value):
+    """Extract only the human/caster part from a resolver label.
+
+    SportStream itself displays resolver sources as `provider • name` (rb0.toString()).
+    Some resolvers put the caster in `provider`, others in `name`, while technical
+    bits (HLS/FLV/FHD/Backup/Server...) live beside it.  Strip only those technical
+    tokens and preserve the remaining human label exactly.
+    """
+    raw = str(value or "").strip()
+    if not raw:
         return ""
-    label = normalize_text(_source_label_text(source))
-    if not label:
-        return ""
-    matches = []
-    for candidate in candidates:
-        norm = normalize_text(candidate)
-        if not norm:
+    # Split only on strong UI separators; do not split normal spaces in names.
+    parts = [part.strip(" ()[]{}-–—") for part in re.split(r"\s*(?:•|\||;|,|/|\\)\s*", raw)]
+    human = []
+    for part in parts:
+        if not part:
             continue
-        # Match a commentator token inside the source label, but never infer a
-        # random label as BLV. This maps labels such as
-        # "haucay • FHD • HLS" to the known match commentator "haucay".
-        if norm == label or re.search(r"(?:^|\s)" + re.escape(norm) + r"(?:$|\s)", label):
-            matches.append(candidate)
-    unique = []
+        # Whole labels such as "Server 2" / "Backup 1" are purely technical.
+        if re.fullmatch(r"(?i)(?:server|sv|stream|source|backup|main|primary|mirror)(?:\s*[-_#]?\s*\d+)?", part):
+            continue
+        # remove common technical suffix/prefix tokens while keeping actual names
+        tokens = part.split()
+        kept = []
+        for token in tokens:
+            t = token.strip("()[]{}-–—")
+            low = normalize_text(t)
+            if re.fullmatch(r"(?i)(?:hls|flv|dash|ts|mp4)(?:\d+)?", t):
+                continue
+            if re.fullmatch(r"(?i)(?:4k|uhd|qhd|fhd|hd|sd|2160p?|1440p?|1080p?|720p?|576p?|540p?|480p?|360p?|\d{3,4}[xX×]\d{3,4})", t):
+                continue
+            if low in {"backup", "main", "primary", "mirror", "stream", "source", "server", "sv"}:
+                continue
+            kept.append(token)
+        candidate = " ".join(kept).strip(" ()[]{}-–—")
+        if candidate and not _is_technical_stream_label(candidate):
+            human.append(candidate)
+    # If stripping did not produce a useful human label, do not invent one.
+    if not human:
+        return ""
+    # Preserve order, remove duplicate pieces.
+    out = []
     seen = set()
-    for value in matches:
-        norm = normalize_text(value)
-        if norm not in seen:
+    for part in human:
+        norm = normalize_text(part)
+        if norm and norm not in seen:
             seen.add(norm)
-            unique.append(value)
-    return unique[0] if len(unique) == 1 else ""
+            out.append(part)
+    return " • ".join(out)
 
 
 def source_commentator(source, match):
-    match_candidates = _split_commentator_candidates(direct_match_commentator(match))
+    # 1) Strongest signal: a commentator/caster field attached to this exact source.
     explicit = _explicit_source_commentator(source)
     if explicit:
-        explicit_candidates = _split_commentator_candidates(explicit)
-        if len(explicit_candidates) == 1:
-            return explicit_candidates[0]
-        picked = _pick_candidate_from_label(explicit_candidates, source)
-        if picked:
-            return picked
-        # An explicit source field that still contains multiple commentators is
-        # ambiguous for a single stream. Do not print the merged value.
+        candidates = _split_commentator_candidates(explicit)
+        if len(candidates) == 1:
+            return candidates[0]
+        # Never print an ambiguous merged source field for one stream.
         return ""
-    picked = _pick_candidate_from_label(match_candidates, source)
-    if picked:
-        return picked
+
+    # 2) Mirror SportStream resolver semantics.  rb0 is constructed from
+    #    source.name + source.provider and its toString() is `provider • name`.
+    #    Resolver providers are therefore a per-stream discriminator and must be
+    #    checked before the match-level commentator list.
+    source_provider = str(source.get("provider") or "").strip()
+    provider_norm = normalize_text(source_provider)
+    if source_provider and provider_norm not in _match_provider_aliases(match) and not _is_technical_stream_label(source_provider):
+        human = _clean_stream_human_label(source_provider)
+        if human:
+            return human
+
+    # 3) Some resolvers put the caster in source.name rather than provider.
+    source_name = first_text(source.get("name"), source.get("label"), source.get("title"))
+    human = _clean_stream_human_label(source_name)
+    if human:
+        # Prefer a known match-level name if the source label contains exactly one
+        # of them; otherwise the resolver's per-stream human label is still more
+        # precise than a merged match-level list.
+        match_candidates = _split_commentator_candidates(direct_match_commentator(match))
+        if match_candidates:
+            label_norm = normalize_text(human)
+            matched = [c for c in match_candidates if normalize_text(c) and normalize_text(c) in label_norm]
+            if len(matched) == 1:
+                return matched[0]
+        return human
+
+    # 4) Match-level fallback is safe only when there is exactly one commentator.
+    match_candidates = _split_commentator_candidates(direct_match_commentator(match))
     if len(match_candidates) == 1:
         return match_candidates[0]
-    # Multiple match-level commentators with no per-source discriminator:
-    # hide BLV rather than assigning the wrong combined list to every stream.
     return ""
-
 
 def safe_title_text(value):
     text = str(value or "").replace("\r", " ").replace("\n", " ").strip()
@@ -501,7 +579,7 @@ def merge_duplicate_source(existing, incoming):
     merged = dict(existing)
     for key in (
         "commentator", "blv", "caster", "audio_name", "audioName",
-        "name", "label", "title", "server",
+        "name", "label", "title", "server", "provider",
         "quality", "resolution", "video_quality", "videoQuality",
         "video_resolution", "videoResolution", "dimensions", "dimension",
         "width", "height", "video_width", "video_height", "videoWidth", "videoHeight",
