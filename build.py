@@ -1200,10 +1200,60 @@ def _extract_stream_url_from_text(text):
     return ""
 
 
+def _xoilac_caster_from_button(attrs, inner_html):
+    """Extract only the caster identity shown by one Xoilac player button.
+
+    This is intentionally provider-local. It never affects other providers and never
+    falls back to generic source names such as "Xoilac Nguồn 1 FLV".
+    """
+    attrs = attrs or ""
+    inner_html = inner_html or ""
+    values = []
+
+    # Prefer explicit metadata if the current Xoilac skin exposes it.
+    for key in ("data-blv", "data-commentator", "data-caster", "data-name", "aria-label", "title"):
+        m = re.search(r"\b" + re.escape(key) + r"\s*=\s*([\"'])(.*?)\1", attrs, flags=re.I | re.S)
+        if m:
+            values.append(html_lib.unescape(m.group(2)))
+
+    # Then use exactly the visible button caption (ROY / RIO / FULL HD ROY...).
+    values.append(_strip_tags(inner_html))
+
+    for raw in values:
+        raw = scalar_text(raw)
+        if not raw:
+            continue
+        # Remove play icons / decorative punctuation before textual filtering.
+        raw = re.sub(r"^[^0-9A-Za-zÀ-ỹ]+", "", raw).strip()
+        if not raw:
+            continue
+
+        # Generic source identities are not BLV names.
+        norm = normalize_text(raw)
+        if re.search(r"\b(?:xoilac|xoi lac|nguon|source|server|stream|kenh|channel|cdn|link)\b", norm):
+            continue
+
+        human = strip_stream_technical_tokens(raw)
+        human = re.sub(r"^[^0-9A-Za-zÀ-ỹ]+|[^0-9A-Za-zÀ-ỹ]+$", "", human).strip()
+        if not human:
+            continue
+        hnorm = normalize_text(human)
+        if not hnorm or technical_label(human) or hnorm in KNOWN_PROVIDER_IDS:
+            continue
+        if re.search(r"(?i)\b(?:vs\.?|versus)\b", human):
+            continue
+        # Xoilac caster button names are short nicknames/names, not long source descriptions.
+        if len(human.split()) > 4:
+            continue
+        return human
+    return ""
+
+
 def _xoilac_player_links(page_html, page_url):
     out = []
     if not page_html:
         return out
+    # Current/older skins use <a class="player-link">. Keep matching deliberately narrow.
     pattern = re.compile("<a\\b([^>]*\\bplayer-link\\b[^>]*)>(.*?)</a>", re.I | re.S)
     for i, m in enumerate(pattern.finditer(page_html)):
         attrs = m.group(1)
@@ -1211,11 +1261,11 @@ def _xoilac_player_links(page_html, page_url):
         if not data:
             continue
         label = _strip_tags(m.group(2))
+        caster = _xoilac_caster_from_button(attrs, m.group(2))
         target = urljoin(page_url, html_lib.unescape(data.group(1)))
         if target:
-            out.append((i, label, target))
+            out.append((i, label, caster, target))
     return out
-
 
 def _xoilac_pages_from_json(text, base_url, candidates):
     if not text:
@@ -1282,34 +1332,6 @@ def _xoilac_listing_for_domain(base_url, candidates, category="football"):
     return normalized, commentators, headers
 
 
-def _xoilac_caster_from_player_label(label):
-    """Return a real per-button caster name only when the Xoilac label itself carries one.
-
-    Examples: ROY -> ROY, RIO -> RIO, FULL HD ROY -> ROY.
-    Generic identities such as Xoilac Nguồn 1 FLV are intentionally rejected.
-    This is provider-local and does not affect any other source.
-    """
-    raw = first_text(label)
-    if not raw:
-        return ""
-    norm = normalize_text(raw)
-    # Player/source identities are not commentator names.
-    if re.search(r"\b(?:xoilac|xoi lac|nguon|source|server|stream|kenh|channel)\b", norm):
-        return ""
-    human = strip_stream_technical_tokens(raw)
-    if not human:
-        return ""
-    hnorm = normalize_text(human)
-    if not hnorm or technical_label(human) or hnorm in KNOWN_PROVIDER_IDS:
-        return ""
-    if re.search(r"(?i)\b(?:vs\.?|versus)\b", human):
-        return ""
-    # Button caster nicknames are short human labels; reject sentence-like leftovers.
-    if len(human.split()) > 4:
-        return ""
-    return human
-
-
 def fetch_xoilac_sources(candidates):
     relevant = [item for item in candidates if provider_key(item["match"]) == "xoilacxth"]
     if not relevant:
@@ -1349,19 +1371,19 @@ def fetch_xoilac_sources(candidates):
 
     jobs = []
     for idx, (page_url, body) in page_htmls.items():
-        for order, label, target in _xoilac_player_links(body, page_url):
-            jobs.append((idx, order, label, target, page_url))
+        for order, label, button_caster, target in _xoilac_player_links(body, page_url):
+            jobs.append((idx, order, label, button_caster, target, page_url))
 
     result = {}
     if jobs:
         with ThreadPoolExecutor(max_workers=min(12, len(jobs))) as ex:
             fmap = {
                 ex.submit(fetch_text, target, {"User-Agent": USER_AGENT, "Referer": page_url}, 4):
-                (idx, order, label, target, page_url)
-                for idx, order, label, target, page_url in jobs
+                (idx, order, label, button_caster, target, page_url)
+                for idx, order, label, button_caster, target, page_url in jobs
             }
             for fut in as_completed(fmap):
-                idx, order, label, target, page_url = fmap[fut]
+                idx, order, label, button_caster, target, page_url = fmap[fut]
                 try:
                     body = fut.result()
                 except Exception:
@@ -1370,14 +1392,11 @@ def fetch_xoilac_sources(candidates):
                 if not stream:
                     continue
                 fmt = "HLS" if ".m3u8" in stream.lower() else "FLV" if ".flv" in stream.lower() else ""
-                # Player-link text is a source identity, not automatically a commentator.
-                # Only bind a per-stream caster when the listing API explicitly gave
-                # commentator names and this source label matches exactly one of them.
-                # Otherwise leave it empty and use the match-level commentator from
-                # sport.json, exactly like SportStream does for the match card.
-                # Xoilac's player buttons carry the per-stream caster identity.
-                # Use it only when it is a real human label; generic source labels are rejected.
-                caster = _xoilac_caster_from_player_label(label)
+                # Xoilac-specific rule: the player button is the authoritative per-stream BLV.
+                # Example: ROY / RIO / RIO / FULL HD ROY -> ROY / RIO / RIO / ROY.
+                # If this skin does not expose a human button label, fall back to the
+                # listing's known commentator names only when the label proves one exact match.
+                caster = button_caster
                 if not caster:
                     people = listed_commentators.get(idx, [])
                     if people:
