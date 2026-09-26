@@ -428,10 +428,6 @@ def source_commentator(source, match):
     explicit = explicit_source_commentator(source)
     if explicit:
         return explicit
-    for key in ("name", "label", "title", "server"):
-        candidate = first_text(source.get(key))
-        if candidate and not is_generic_source_label(candidate, source, match):
-            return candidate
     return match_commentator(match)
 
 
@@ -610,7 +606,7 @@ def build_title(match, state, source):
     head = " ".join(part for part in (" ".join(parts), time_part, icon, name) if part)
     meta = source_meta(source, match)
     if meta["commentator"]:
-        head += f" (BLV {meta['commentator']})"
+        head += f" ({meta['commentator']})"
     competition = competition_name(match)
     if competition:
         head += f" • {competition}"
