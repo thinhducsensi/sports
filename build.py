@@ -30,71 +30,30 @@ PREFERRED_PROVIDERS = [
 FOOTBALL_ALIASES = {"football", "soccer", "bong da", "bóng đá"}
 
 SPORT_ICON_BY_NAME = {
-    "football": "⚽",
-    "soccer": "⚽",
-    "futsal": "⚽",
-    "basketball": "🏀",
-    "volleyball": "🏐",
-    "tennis": "🎾",
-    "badminton": "🏸",
-    "table tennis": "🏓",
-    "billiards": "🎱",
-    "billiard": "🎱",
-    "snooker": "🎱",
-    "pool": "🎱",
-    "baseball": "⚾",
-    "hockey": "🏒",
-    "handball": "🤾",
-    "rugby": "🏉",
-    "cricket": "🏏",
-    "golf": "⛳",
-    "boxing": "🥊",
-    "mma": "🥊",
-    "motorsport": "🏁",
-    "racing": "🏁",
-    "esports": "🎮",
+    "football": "⚽", "soccer": "⚽", "futsal": "⚽",
+    "basketball": "🏀", "volleyball": "🏐", "tennis": "🎾",
+    "badminton": "🏸", "table tennis": "🏓", "billiards": "🎱",
+    "billiard": "🎱", "snooker": "🎱", "pool": "🎱",
+    "baseball": "⚾", "hockey": "🏒", "handball": "🤾",
+    "rugby": "🏉", "cricket": "🏏", "golf": "⛳",
+    "boxing": "🥊", "mma": "🥊", "motorsport": "🏁",
+    "racing": "🏁", "esports": "🎮",
 }
 
 TERMINAL_STATUSES = {
-    "ft",
-    "finished",
-    "finish",
-    "ended",
-    "end",
-    "completed",
-    "complete",
-    "cancelled",
-    "canceled",
-    "postponed",
-    "abandoned",
-    "kết thúc",
-    "ket thuc",
-    "hủy",
-    "huy",
+    "ft", "finished", "finish", "ended", "end", "completed", "complete",
+    "cancelled", "canceled", "postponed", "abandoned", "kết thúc", "ket thuc",
+    "hủy", "huy",
 }
 
 LIVE_STATUSES = {
-    "live",
-    "playing",
-    "inplay",
-    "in-play",
-    "in play",
-    "1h",
-    "2h",
-    "ht",
-    "halftime",
-    "ongoing",
-    "running",
+    "live", "playing", "inplay", "in-play", "in play", "1h", "2h", "ht",
+    "halftime", "ongoing", "running",
 }
 
 KICKOFF_FIELDS = (
-    "kickoff",
-    "time_start",
-    "start_time",
-    "startTime",
-    "start_timestamp",
-    "startTimestamp",
-    "timestamp",
+    "kickoff", "time_start", "start_time", "startTime", "start_timestamp",
+    "startTimestamp", "timestamp",
 )
 
 
@@ -221,18 +180,18 @@ def classify_match(match, current_ms, future_end_ms):
     if is_terminal(match):
         return None
     kickoff = get_kickoff(match)
-    live = is_explicit_live(match)
+    explicit_live = is_explicit_live(match)
     if kickoff is None:
-        return {"kind": "live", "rank": 0, "kickoff": 0, "explicit_live": True} if live else None
+        return {"kind": "live", "block": 0, "rank": 0, "kickoff": 0} if explicit_live else None
     if kickoff > current_ms:
         if kickoff <= future_end_ms:
-            return {"kind": "upcoming", "rank": 2, "kickoff": kickoff, "explicit_live": False}
+            return {"kind": "upcoming", "block": 1, "rank": 2, "kickoff": kickoff}
         return None
     age = current_ms - kickoff
-    if live:
-        return {"kind": "live", "rank": 0, "kickoff": kickoff, "explicit_live": True}
+    if explicit_live:
+        return {"kind": "live", "block": 0, "rank": 0, "kickoff": kickoff}
     if 0 <= age <= RECENT_WINDOW_MS:
-        return {"kind": "recent", "rank": 1, "kickoff": kickoff, "explicit_live": False}
+        return {"kind": "recent", "block": 0, "rank": 1, "kickoff": kickoff}
     return None
 
 
@@ -242,9 +201,8 @@ def raw_sport_name(match):
 
 def sport_category(match):
     raw = normalize_text(raw_sport_name(match))
-    if raw in {normalize_text(value) for value in FOOTBALL_ALIASES}:
-        return "football"
-    if raw in {"association football", "men football", "women football"}:
+    aliases = {normalize_text(value) for value in FOOTBALL_ALIASES}
+    if raw in aliases or raw in {"association football", "men football", "women football"}:
         return "football"
     return raw or "other"
 
@@ -301,30 +259,26 @@ def build_sport_order(items):
         elif kickoff > 0:
             discovered[category]["earliest"] = min(discovered[category]["earliest"], kickoff)
     order = {}
-    index = 0
+    position = 0
     if "football" in discovered:
-        order["football"] = index
-        index += 1
+        order["football"] = position
+        position += 1
     others = [category for category in discovered if category != "football"]
     others.sort(key=lambda category: (discovered[category]["earliest"], discovered[category]["first_seen"], category))
     for category in others:
-        order[category] = index
-        index += 1
+        order[category] = position
+        position += 1
     return order
 
 
 def match_name(match):
-    return first_text(match.get("name"), match.get("match_name"), match.get("matchName"), match.get("title"), "Trận đấu")
+    return first_text(match.get("name"), match.get("match_name"), match.get("matchName"), match.get("title"))
 
 
 def competition_name(match):
     return first_text(
-        match.get("competition"),
-        match.get("league"),
-        match.get("tournament"),
-        match.get("championship"),
-        match.get("competition_name"),
-        match.get("league_name"),
+        match.get("competition"), match.get("league"), match.get("tournament"),
+        match.get("championship"), match.get("competition_name"), match.get("league_name"),
     )
 
 
@@ -342,8 +296,9 @@ def match_sort_key(item, sport_order):
     state = item["state"]
     category = sport_category(match)
     kickoff = state.get("kickoff") or get_kickoff(match) or 0
-    untimed_live = 0 if kickoff == 0 and state.get("kind") == "live" else 1
+    untimed_live = 0 if kickoff == 0 and state.get("block") == 0 else 1
     return (
+        state.get("block", 9),
         sport_order.get(category, 10**9),
         untimed_live,
         kickoff if kickoff > 0 else 0,
@@ -413,14 +368,8 @@ def normalize_source(raw, fallback_headers=None):
     if not isinstance(raw, dict):
         return None
     url = first_text(
-        raw.get("url"),
-        raw.get("link"),
-        raw.get("src"),
-        raw.get("stream_url"),
-        raw.get("streamUrl"),
-        raw.get("play_url"),
-        raw.get("playUrl"),
-        raw.get("file"),
+        raw.get("url"), raw.get("link"), raw.get("src"), raw.get("stream_url"), raw.get("streamUrl"),
+        raw.get("play_url"), raw.get("playUrl"), raw.get("file"),
     )
     if not url:
         return None
@@ -434,10 +383,6 @@ def commentator_of(source):
     return first_text(source.get("commentator"), source.get("blv"), source.get("caster"), source.get("audio_name"), source.get("audioName"))
 
 
-def source_label(source):
-    return first_text(source.get("server"), source.get("label"), source.get("channel"), source.get("name"), source.get("title"))
-
-
 def source_key(source):
     headers = sorted((str(key).lower().strip(), str(value).strip()) for key, value in (source.get("headers") or {}).items())
     header_text = "\n".join(f"{key}:{value}" for key, value in headers)
@@ -449,11 +394,12 @@ def merge_duplicate_source(existing, incoming):
     commentators = []
     seen = set()
     for value in list(existing.get("commentators") or []) + [commentator_of(existing), commentator_of(incoming)]:
-        if value and normalize_text(value) not in seen:
-            seen.add(normalize_text(value))
+        normalized = normalize_text(value)
+        if value and normalized not in seen:
+            seen.add(normalized)
             commentators.append(value)
     merged["commentators"] = commentators
-    for key in ("commentator", "blv", "server", "label", "name", "title", "quality", "resolution", "format"):
+    for key in ("commentator", "blv", "quality", "resolution", "format"):
         if not merged.get(key) and incoming.get(key):
             merged[key] = incoming.get(key)
     return merged
@@ -477,7 +423,7 @@ def quality_rank(source):
 def source_priority(source):
     fmt = infer_format(source)
     format_rank = {"HLS": 0, "TS": 1, "DASH": 2, "FLV": 3, "MP4": 4}.get(fmt, 5)
-    return (format_rank, quality_rank(source), normalize_text(commentator_of(source)), normalize_text(source_label(source)), source.get("url", ""))
+    return (format_rank, quality_rank(source), normalize_text(commentator_of(source)), source.get("url", ""))
 
 
 def dedupe_sources(sources):
@@ -497,18 +443,9 @@ def extract_sources(body, match):
     fallback_headers.update(normalize_headers(match.get("headers")))
     fallback_headers.update(normalize_headers(body.get("headers")))
     arrays = [
-        body.get("sources"),
-        body.get("streams"),
-        body.get("links"),
-        body.get("urls"),
-        data.get("sources"),
-        data.get("streams"),
-        data.get("links"),
-        data.get("urls"),
-        match.get("sources"),
-        match.get("streams"),
-        match.get("links"),
-        match.get("urls"),
+        body.get("sources"), body.get("streams"), body.get("links"), body.get("urls"),
+        data.get("sources"), data.get("streams"), data.get("links"), data.get("urls"),
+        match.get("sources"), match.get("streams"), match.get("links"), match.get("urls"),
     ]
     sources = []
     for array in arrays:
@@ -533,18 +470,16 @@ def resolve_match(match):
     direct_sources = extract_sources({}, match)
     resolver = first_text(match.get("resolver"), match.get("resolve_url"), match.get("resolver_url"))
     all_sources = list(direct_sources)
-    resolver_ok = False
     if resolver:
         body = fetch_json(resolver, timeout=8, retries=2, cache_bust=False)
         if body is not None:
-            resolver_ok = True
             all_sources.extend(extract_sources(body, match))
         elif looks_like_stream_url(resolver):
             direct = normalize_source({"url": resolver}, match.get("headers"))
             if direct:
                 all_sources.append(direct)
     sources = dedupe_sources(all_sources)
-    return {"match": match, "sources": sources, "resolver_ok": resolver_ok} if sources else None
+    return {"match": match, "sources": sources} if sources else None
 
 
 def merge_match_items(items):
@@ -572,7 +507,7 @@ def header_value(headers, name):
     return ""
 
 
-def source_meta(source, match, index, count):
+def source_meta(source, match):
     names = []
     seen = set()
     for value in list(source.get("commentators") or []) + [commentator_of(source)]:
@@ -583,22 +518,14 @@ def source_meta(source, match, index, count):
     match_commentator = first_text(match.get("commentator"), match.get("blv"))
     if not names and match_commentator:
         names.append(match_commentator)
-    fmt = infer_format(source)
     quality = first_text(source.get("quality"), source.get("resolution"), source.get("video_quality"), source.get("videoQuality"))
-    label = source_label(source)
-    label_norm = normalize_text(label)
-    blocked_labels = {normalize_text(value) for value in names if value}
-    blocked_labels.update({normalize_text(quality), normalize_text(fmt), normalize_text(match_name(match))})
-    parts = []
-    if fmt:
-        parts.append(fmt)
-    if quality and normalize_text(quality) != normalize_text(fmt):
-        parts.append(quality)
-    if label and label_norm and label_norm not in blocked_labels and label_norm not in {"stream", "source", "server"}:
-        parts.append(label)
-    if count > 1:
-        parts.append(f"{index + 1}/{count}")
-    return {"commentator": "/".join(names), "stream_info": " • ".join(parts)}
+    fmt = infer_format(source)
+    stream_parts = []
+    if quality:
+        stream_parts.append(quality)
+    if fmt and normalize_text(fmt) != normalize_text(quality):
+        stream_parts.append(fmt)
+    return {"commentator": "/".join(names), "stream_info": " • ".join(stream_parts)}
 
 
 def encode_component(value):
@@ -632,6 +559,25 @@ def stable_source_id(match, source):
     base = f"{match_identity(match)}\n{source_key(source)}".encode("utf-8")
     digest = hashlib.sha1(base).hexdigest()[:12]
     return f"sport-{digest}"
+
+
+def build_title(match, state, source):
+    parts = []
+    if state.get("block") == 0:
+        parts.append("🔴")
+    time_part = format_match_time(get_kickoff(match))
+    icon = sport_icon(match)
+    name = match_name(match)
+    head = " ".join(part for part in (" ".join(parts), time_part, icon, name) if part)
+    meta = source_meta(source, match)
+    if meta["commentator"]:
+        head += f" (BLV {meta['commentator']})"
+    competition = competition_name(match)
+    if competition:
+        head += f" • {competition}"
+    if meta["stream_info"]:
+        head += f" [{meta['stream_info']}]"
+    return head.strip()
 
 
 def build_playlist():
@@ -672,8 +618,7 @@ def build_playlist():
     sport_order = build_sport_order(resolved)
     buckets = {key: [] for key, _ in provider_order}
     for item in resolved:
-        key = provider_key(item["match"])
-        buckets.setdefault(key, []).append(item)
+        buckets.setdefault(provider_key(item["match"]), []).append(item)
     for key in buckets:
         buckets[key].sort(key=lambda item: match_sort_key(item, sport_order))
 
@@ -694,18 +639,13 @@ def build_playlist():
             sources = item["sources"]
             if not sources:
                 continue
-            total_matches += 1
-            kickoff = get_kickoff(match)
-            live_dot = "🔴 " if state.get("kind") in {"live", "recent"} else ""
-            competition = competition_name(match)
-            logo = first_text(match.get("home_logo"), match.get("away_logo"), match.get("logo"))
             name = match_name(match)
-            for index, source in enumerate(sources):
-                meta = source_meta(source, match, index, len(sources))
-                blv_part = f" • BLV {meta['commentator']}" if meta["commentator"] else ""
-                competition_part = f" • {competition}" if competition else ""
-                stream_part = f" [{meta['stream_info']}]" if meta["stream_info"] else ""
-                title = f"{live_dot}{format_match_time(kickoff)} {sport_icon(match)} {name}{blv_part}{competition_part}{stream_part}"
+            if not name:
+                continue
+            total_matches += 1
+            logo = first_text(match.get("home_logo"), match.get("away_logo"), match.get("logo"))
+            for source in sources:
+                title = build_title(match, state, source)
                 unique_id = stable_source_id(match, source)
                 referer = header_value(source.get("headers"), "Referer")
                 origin = header_value(source.get("headers"), "Origin")
@@ -728,13 +668,7 @@ def build_playlist():
     temp = Path("playlist.m3u.tmp")
     temp.write_text(output, encoding="utf-8")
     temp.replace("playlist.m3u")
-
-    sports = {}
-    for item in resolved:
-        category = sport_category(item["match"])
-        sports[category] = sports.get(category, 0) + 1
     print(f"Đã xuất {total_streams} luồng từ {total_matches} trận. {update_group}")
-    print("Môn:", ", ".join(f"{name}={count}" for name, count in sorted(sports.items(), key=lambda item: sport_order.get(item[0], 10**9))))
 
 
 if __name__ == "__main__":
