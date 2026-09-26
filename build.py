@@ -16,8 +16,9 @@ from zoneinfo import ZoneInfo
 SPORT_API = "https://sport-stream-resolver.viet-ng228.workers.dev/sport.json"
 TIME_ZONE = ZoneInfo("Asia/Ho_Chi_Minh")
 RECENT_WINDOW_MS = 135 * 60 * 1000
-MAX_WORKERS = 16
+MAX_WORKERS = 32
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+BUILD_VERSION = "v20"
 
 FOOTBALL_ALIASES = {"football", "soccer", "bong da", "bóng đá"}
 
@@ -272,11 +273,11 @@ def competition_name(match):
 def match_identity(match):
     key = provider_key(match)
     match_id = first_text(match.get("id"), match.get("match_id"), match.get("matchId"))
-    if match_id:
-        return f"{key}|id:{match_id}"
     kickoff = get_kickoff(match) or 0
-    return f"{key}|{sport_category(match)}|{kickoff}|{normalize_text(match_name(match))}"
-
+    name = normalize_text(match_name(match))
+    competition = normalize_text(competition_name(match))
+    commentator = normalize_text(direct_match_commentator(match))
+    return f"{key}|{match_id}|{kickoff}|{name}|{competition}|{commentator}"
 
 def match_sort_key(item, sport_orders):
     match = item["match"]
@@ -383,8 +384,14 @@ def normalize_source(raw, fallback_headers=None):
 
 
 def direct_match_commentator(match):
-    return first_text(match.get("commentator"), match.get("blv"), match.get("caster"))
-
+    for key in ("commentator", "blv", "caster"):
+        value = match.get(key)
+        if isinstance(value, bool) or not isinstance(value, (str, int, float)):
+            continue
+        text = str(value).strip()
+        if text:
+            return text
+    return ""
 
 def source_commentator(source, match):
     # Match SportStream exactly for card metadata: commentator -> blv -> caster
@@ -395,9 +402,8 @@ def source_commentator(source, match):
 
 def safe_title_text(value):
     text = str(value or "").replace("\r", " ").replace("\n", " ").strip()
-    # The target IPTV parser takes everything after the LAST comma in #EXTINF.
-    # A comma inside match/BLV/competition would therefore chop the title.
-    text = re.sub(r"\s*,\s*", " / ", text)
+    for mark in (",", "，", "︐", "︑", "﹐", "،", "、"):
+        text = text.replace(mark, " / ")
     text = re.sub(r"\s+", " ", text)
     return text.strip()
 
@@ -509,12 +515,17 @@ def source_quality_label(source):
         if label:
             return label
 
-    # SportStream itself displays source.name.  We only extract a recognised
-    # quality token from it; the rest of the source name is never treated as quality.
+    # source.name is a stream label in SportStream. Only use it as quality
+    # when the whole value itself is a quality/resolution token.
     for key in ("name", "label", "title"):
-        label = canonical_quality(source.get(key))
-        if label:
-            return label
+        raw = source.get(key)
+        if not isinstance(raw, (str, int, float)) or isinstance(raw, bool):
+            continue
+        compact = str(raw).strip()
+        if re.fullmatch(r"(?i)(?:\d{3,4}\s*[xX×]\s*\d{3,4}|2160p?|1440p?|1080p?|720p?|576p?|540p?|480p?|360p?|4K|UHD|QHD|FHD|HD|SD)", compact):
+            label = canonical_quality(compact)
+            if label:
+                return label
     return ""
 
 
@@ -554,25 +565,43 @@ def dedupe_sources(sources):
     return [merged[key] for key in order]
 
 
-def extract_sources(body, match):
-    body = body if isinstance(body, dict) else {}
-    data = body.get("data") if isinstance(body.get("data"), dict) else {}
-    fallback_headers = {}
-    fallback_headers.update(normalize_headers(match.get("headers")))
-    fallback_headers.update(normalize_headers(body.get("headers")))
-    arrays = [
-        body.get("sources"), body.get("streams"), body.get("links"), body.get("urls"),
-        data.get("sources"), data.get("streams"), data.get("links"), data.get("urls"),
-        match.get("sources"), match.get("streams"), match.get("links"), match.get("urls"),
-    ]
+def direct_sources_from_match(match):
     sources = []
-    for array in arrays:
+    fallback_headers = normalize_headers(match.get("headers"))
+    for key in ("sources", "streams", "links", "urls"):
+        array = match.get(key)
         if isinstance(array, list):
             for raw in array:
                 source = normalize_source(raw, fallback_headers)
                 if source:
                     sources.append(source)
-    for raw in (body.get("source"), data.get("source"), body, data, match.get("source"), match):
+    source = normalize_source(match.get("source"), fallback_headers)
+    if source:
+        sources.append(source)
+    return dedupe_sources(sources)
+
+
+def resolver_url_for_match(match):
+    resolver = match.get("resolver")
+    if isinstance(resolver, str) and resolver.strip():
+        return resolver.strip()
+    sources = match.get("sources")
+    if isinstance(sources, list) and sources and isinstance(sources[0], dict):
+        resolver = sources[0].get("resolver")
+        if isinstance(resolver, str) and resolver.strip():
+            return resolver.strip()
+    return ""
+
+
+def resolver_sources_exact(body, match):
+    if not isinstance(body, dict):
+        return []
+    array = body.get("sources")
+    if not isinstance(array, list):
+        return []
+    fallback_headers = normalize_headers(match.get("headers"))
+    sources = []
+    for raw in array:
         source = normalize_source(raw, fallback_headers)
         if source:
             sources.append(source)
@@ -585,37 +614,42 @@ def looks_like_stream_url(url):
 
 
 def resolve_match(match):
-    direct_sources = extract_sources({}, match)
-    resolver = first_text(match.get("resolver"), match.get("resolve_url"), match.get("resolver_url"))
+    direct_sources = direct_sources_from_match(match)
+    resolver = resolver_url_for_match(match)
     resolver_sources = []
     if resolver:
-        body = fetch_json(resolver, timeout=8, retries=2, cache_bust=False)
-        if body is not None:
-            resolver_sources = extract_sources(body, match)
-        elif looks_like_stream_url(resolver):
-            direct = normalize_source({"url": resolver}, match.get("headers"))
-            if direct:
-                resolver_sources = [direct]
+        if looks_like_stream_url(resolver):
+            source = normalize_source({"url": resolver}, match.get("headers"))
+            if source:
+                resolver_sources.append(source)
+        else:
+            body = fetch_json(resolver, timeout=4.5, retries=1, cache_bust=False)
+            if body is not None:
+                resolver_sources = resolver_sources_exact(body, match)
     sources = dedupe_sources(resolver_sources + direct_sources)
     return {"match": match, "sources": sources} if sources else None
 
 
 def merge_match_items(items):
     merged = {}
+    order = []
     for item in items:
         key = match_identity(item["match"])
         if key not in merged:
-            merged[key] = {"match": dict(item["match"]), "state": dict(item["state"]), "sources": list(item["sources"]), "api_index": item.get("api_index", 10**9)}
+            merged[key] = {
+                "match": dict(item["match"]),
+                "state": dict(item["state"]),
+                "sources": list(item["sources"]),
+                "api_index": item.get("api_index", 10**9),
+            }
+            order.append(key)
             continue
         current = merged[key]
         current["sources"] = dedupe_sources(current["sources"] + item["sources"])
         current["api_index"] = min(current.get("api_index", 10**9), item.get("api_index", 10**9))
         if item["state"].get("rank", 9) < current["state"].get("rank", 9):
             current["state"] = dict(item["state"])
-        for field in ("home_logo", "away_logo", "competition", "league", "tournament", "commentator", "blv", "caster", "sport_icon"):
-            if not current["match"].get(field) and item["match"].get(field):
-                current["match"][field] = item["match"][field]
-    return list(merged.values())
+    return [merged[key] for key in order]
 
 
 def header_value(headers, name):
@@ -689,8 +723,10 @@ def build_title(match, state, source):
     stream_info = safe_title_text(meta["stream_info"])
     if stream_info:
         head += f" [{stream_info}]"
-    # Hard invariant for this IPTV parser: the display title may not contain commas.
-    return safe_title_text(head)
+    title = safe_title_text(head)
+    if "," in title:
+        raise ValueError(f"Unsafe comma remained in title: {title}")
+    return title
 
 
 def build_playlist():
@@ -782,7 +818,7 @@ def build_playlist():
     temp = Path("playlist.m3u.tmp")
     temp.write_text(output, encoding="utf-8")
     temp.replace("playlist.m3u")
-    print(f"Đã xuất {total_streams} luồng từ {total_matches} trận. {update_group}")
+    print(f"{BUILD_VERSION}: Đã xuất {total_streams} luồng từ {total_matches} trận. {update_group}")
 
 
 if __name__ == "__main__":
