@@ -266,6 +266,60 @@ def first_text(*values):
     return ""
 
 
+
+
+def competition_of(*objects):
+    """Resolve competition/league from match, resolver body, nested data/meta/event, or source metadata.
+
+    This is intentionally provider-agnostic: providers expose the same field under different names.
+    The first non-empty value wins, with no hardcoded competition names.
+    """
+    keys = (
+        "competition", "competition_name", "competitionName",
+        "league", "league_name", "leagueName",
+        "tournament", "tournament_name", "tournamentName",
+        "championship", "championship_name", "championshipName",
+        "event_league", "eventLeague",
+    )
+    nested_keys = ("data", "meta", "event", "match", "detail", "info")
+
+    def pick(obj, depth=0):
+        if not isinstance(obj, dict) or depth > 2:
+            return ""
+        for key in keys:
+            value = obj.get(key)
+            if isinstance(value, dict):
+                value = first_text(value.get("name"), value.get("title"), value.get("label"))
+            text = first_text(value)
+            if text:
+                return text
+        for key in nested_keys:
+            child = obj.get(key)
+            text = pick(child, depth + 1)
+            if text:
+                return text
+        return ""
+
+    for obj in objects:
+        text = pick(obj)
+        if text:
+            return text
+    return ""
+
+
+def enrich_match_metadata(match, body, sources):
+    """Fill only missing display metadata from the resolver response.
+
+    Stream URLs/player metadata are untouched. This fixes providers such as Gà Vàng 33 where
+    the list endpoint has teams/time but the detail endpoint carries the competition name.
+    """
+    enriched = dict(match)
+    if not first_text(enriched.get("competition"), enriched.get("league"), enriched.get("tournament")):
+        competition = competition_of(body, *(sources or []))
+        if competition:
+            enriched["competition"] = competition
+    return enriched
+
 def header_value(headers, name):
     if not isinstance(headers, dict):
         return ""
@@ -560,7 +614,8 @@ def resolve_match(match):
     if body is not None:
         sources = extract_sources(body, match)
         if sources:
-            return {"match": match, "sources": sources}
+            resolved_match = enrich_match_metadata(match, body, sources)
+            return {"match": resolved_match, "sources": sources}
     return {"match": match, "sources": direct_sources} if direct_sources else None
 
 
@@ -623,7 +678,7 @@ def build_playlist():
             total_matches += 1
             kickoff = get_kickoff(match)
             live_dot = "🔴 " if state["rank"] in (0, 1) else ""
-            competition = match.get("competition") or match.get("league") or match.get("sport_name") or "Thể thao"
+            competition = competition_of(match, *(sources or [])) or match.get("sport_name") or "Thể thao"
             logo = match.get("home_logo") or match.get("away_logo") or ""
 
             has_per_source_commentators = any(
