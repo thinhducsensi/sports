@@ -47,6 +47,22 @@ GENERIC_STREAM_WORDS = {
 }
 FORMAT_ORDER = {"HLS": 0, "FLV": 1, "TS": 2, "DASH": 3, "MP4": 4}
 
+PROVIDER_SPORT_CAPABILITIES = {
+    "chuoichien": ("football", "tennis", "billiards", "basketball", "badminton", "volleyball", "cricket"),
+    "colatv": ("football", "basketball"),
+    "giovang": ("football", "tennis", "basketball", "badminton", "volleyball", "table tennis", "baseball", "boxing", "esports"),
+    "xoilacxth": ("football", "tennis", "basketball", "volleyball", "badminton", "esports"),
+    "socolive": ("football", "basketball"),
+    "gavang": ("football", "basketball"),
+    "changtv": ("football", "billiards"),
+    "gavang33": ("football",),
+    "phalang": ("football",),
+}
+CHUOICHIEN_API_BASES = (
+    "https://api-v2.chuoichientv.com",
+    "https://api-v2.chuoichientv.net",
+)
+
 DIRECT_FEEDS = {
     "colatv": {
         "url": "https://api.cltvlv.com/api/matches",
@@ -188,6 +204,516 @@ def fetch_text(url, headers=None, timeout=5):
             return response.read().decode("utf-8", errors="replace")
     except (HTTPError, URLError, TimeoutError, OSError, UnicodeDecodeError):
         return ""
+
+
+
+def _nested_obj(obj, key):
+    value = obj.get(key) if isinstance(obj, dict) else None
+    return value if isinstance(value, dict) else {}
+
+
+def _array_value(obj, *keys):
+    if not isinstance(obj, dict):
+        return []
+    for key in keys:
+        value = obj.get(key)
+        if isinstance(value, list):
+            return value
+    return []
+
+
+def _chuoi_rows(data):
+    rows = _iter_candidate_matches(data)
+    return [row for row in rows if isinstance(row, dict)]
+
+
+def _chuoi_commentators(row):
+    people = []
+    seen = set()
+    for blv in _array_value(row, "blvs", "commentators"):
+        if not isinstance(blv, dict):
+            continue
+        name = first_text(blv.get("name"), blv.get("username"), blv.get("nickname"), blv.get("nickName"))
+        norm = normalize_text(name)
+        if name and norm not in seen:
+            seen.add(norm)
+            people.append(name)
+    return " / ".join(people)
+
+
+def _chuoi_match_from_row(row, sport):
+    teams = _nested_obj(row, "teams")
+    home = _nested_obj(teams, "home") or _nested_obj(row, "home")
+    away = _nested_obj(teams, "away") or _nested_obj(row, "away")
+    home_name = first_text(home.get("name"), row.get("homeName"), row.get("team1"))
+    away_name = first_text(away.get("name"), row.get("awayName"), row.get("team2"))
+    title = first_text(row.get("title"), row.get("name"))
+    if home_name and away_name:
+        title = f"{home_name} vs {away_name}"
+    if not title:
+        return None
+    external_id = first_text(row.get("externalId"), row.get("external_id"), row.get("id"), row.get("_id"))
+    if not external_id:
+        return None
+    kickoff = None
+    for key in ("matchTime", "match_time", "startTime", "start_time", "kickoff", "time_start", "timestamp"):
+        kickoff = parse_timestamp_ms(row.get(key))
+        if kickoff:
+            break
+    if not kickoff:
+        return None
+    league = _nested_obj(row, "league")
+    status = first_text(row.get("status"), row.get("status_code"))
+    live = row.get("isLive") is True or row.get("live") is True or normalize_text(status) in LIVE_STATUSES
+    result = {
+        "id": f"chuoichien:{external_id}",
+        "provider": "chuoichien",
+        "provider_name": "Chuối Chiên",
+        "sport": sport,
+        "sport_name": sport,
+        "name": title,
+        "kickoff": kickoff,
+        "live": live,
+        "status": status,
+        "competition": first_text(league.get("name"), league.get("title"), row.get("competition")),
+        "home_logo": first_text(home.get("logo"), home.get("logoUrl")),
+        "away_logo": first_text(away.get("logo"), away.get("logoUrl")),
+        "commentator": _chuoi_commentators(row),
+        "_chuoi_external_id": external_id,
+    }
+    return result
+
+
+def fetch_chuoichien_supplement_matches():
+    jobs = []
+    out = []
+    headers = {"User-Agent": USER_AGENT, "Referer": "https://chuoichientv.org/"}
+    def task(sport):
+        suffix = f"/v2/matches?page=1&limit=100&sport={quote(sport)}"
+        if sport == "football":
+            suffix += "&type=blv"
+        data = None
+        for base in CHUOICHIEN_API_BASES:
+            data = fetch_json_custom(base + suffix, headers, timeout=5.5)
+            if isinstance(data, (dict, list)):
+                break
+        if not isinstance(data, (dict, list)):
+            return sport, []
+        rows = []
+        for row in _chuoi_rows(data):
+            match = _chuoi_match_from_row(row, sport)
+            if match:
+                rows.append(match)
+        return sport, rows
+    sports = PROVIDER_SPORT_CAPABILITIES["chuoichien"]
+    with ThreadPoolExecutor(max_workers=len(sports)) as executor:
+        futures = [executor.submit(task, sport) for sport in sports]
+        for future in as_completed(futures):
+            try:
+                _, rows = future.result()
+                out.extend(rows)
+            except Exception:
+                pass
+    return out
+
+
+def _provider_ids_in_feed(data):
+    ids = set()
+    if not isinstance(data, dict):
+        return ids
+    providers = data.get("providers")
+    if isinstance(providers, list):
+        for item in providers:
+            if isinstance(item, dict):
+                key = provider_canonical(first_text(item.get("key"), item.get("id"), item.get("name")))
+            else:
+                key = provider_canonical(item)
+            if key:
+                ids.add(key)
+    for match in data.get("matches") or []:
+        if isinstance(match, dict):
+            key = provider_key(match)
+            if key:
+                ids.add(key)
+    return ids
+
+
+def _join_people(values):
+    out, seen = [], set()
+    for value in values:
+        text = first_text(value)
+        norm = normalize_text(text)
+        if text and norm and norm not in seen:
+            seen.add(norm)
+            out.append(text)
+    return " / ".join(out)
+
+
+def fetch_colatv_supplement_matches():
+    data = None
+    for host in (1, 2, 3, 4, 5, 6):
+        data = fetch_json_custom(f"https://api{host}.colatv88xd.cc/api/matches", {"User-Agent": USER_AGENT}, timeout=4.5)
+        if isinstance(data, dict) and isinstance(data.get("data"), dict) and data["data"]:
+            break
+    if not isinstance(data, dict) or not isinstance(data.get("data"), dict):
+        return []
+    out = []
+    current = now_ms()
+    for raw in data["data"].values():
+        if not isinstance(raw, dict):
+            continue
+        sport = {1: "football", 2: "basketball"}.get(int(raw.get("sportId") or 0))
+        if not sport:
+            continue
+        kickoff = parse_timestamp_ms(raw.get("matchTime"))
+        if not kickoff:
+            continue
+        home = first_text(raw.get("homeTeamName"))
+        away = first_text(raw.get("awayTeamName"))
+        if not home or not away:
+            continue
+        anchors = raw.get("anchorAppointmentVoList")
+        if not isinstance(anchors, list) or not anchors:
+            continue
+        sources, names = [], []
+        for ai, anchor in enumerate(anchors):
+            if not isinstance(anchor, dict):
+                continue
+            caster = first_text(anchor.get("nickName"), anchor.get("nickname"), anchor.get("name"))
+            if caster:
+                names.append(caster)
+            for si, (field, fmt) in enumerate((("playStreamAddress2", "HLS"), ("playStreamAddress", "FLV"))):
+                url = first_text(anchor.get(field))
+                if url:
+                    obj = source_obj(url, caster, fmt, headers={"User-Agent": USER_AGENT, "Referer": "https://cola.tv/"}, name=caster, index=ai * 2 + si)
+                    if obj:
+                        sources.append(obj)
+        if not sources:
+            continue
+        out.append({
+            "id": "colatv:" + first_text(raw.get("matchId"), hashlib.sha1(f"{home}|{away}|{kickoff}".encode()).hexdigest()[:10]),
+            "provider": "colatv", "provider_name": "CoLaTV", "sport": sport, "sport_name": sport,
+            "name": f"{home} vs {away}", "kickoff": kickoff, "live": current >= kickoff,
+            "competition": first_text(raw.get("competitionName")), "home_logo": first_text(raw.get("homeTeamLogo")),
+            "away_logo": first_text(raw.get("awayTeamLogo")), "commentator": _join_people(names), "sources": dedupe_sources(sources),
+        })
+    return out
+
+
+def _giovang_sport_type(row):
+    if not isinstance(row, dict):
+        return ""
+    league = row.get("league") if isinstance(row.get("league"), dict) else {}
+    keys = ("sport", "sport_type", "sportType", "category", "category_name", "categoryName", "game_type", "gameType")
+    raw = ""
+    for key in keys:
+        raw = first_text(row.get(key))
+        if raw:
+            break
+    if not raw:
+        for key in keys:
+            raw = first_text(league.get(key))
+            if raw:
+                break
+    if not raw:
+        raw = first_text(row.get("type"))
+    n = normalize_text(raw).replace(" ", "")
+    mapping = {
+        "football":"football", "soccer":"football", "bongda":"football", "tennis":"tennis",
+        "basketball":"basketball", "bongro":"basketball", "volleyball":"volleyball", "bongchuyen":"volleyball",
+        "badminton":"badminton", "caulong":"badminton", "tabletennis":"table tennis", "pingpong":"table tennis",
+        "bongban":"table tennis", "baseball":"baseball", "bongchay":"baseball", "boxing":"boxing", "mma":"boxing",
+        "combat":"boxing", "vothuat":"boxing", "muaythai":"boxing", "kickboxing":"boxing", "ufc":"boxing",
+        "esport":"esports", "esports":"esports", "lol":"esports", "gaming":"esports",
+    }
+    return mapping.get(n, "")
+
+
+def _giovang_rows(data):
+    if isinstance(data, list):
+        return [x for x in data if isinstance(x, dict)]
+    if not isinstance(data, dict):
+        return []
+    for key in ("response", "data", "matches", "fixtures"):
+        value = data.get(key)
+        if isinstance(value, list):
+            return [x for x in value if isinstance(x, dict)]
+        if isinstance(value, dict):
+            for sub in ("response", "data", "matches", "fixtures", "list"):
+                nested = value.get(sub)
+                if isinstance(nested, list):
+                    return [x for x in nested if isinstance(x, dict)]
+    return []
+
+
+def fetch_giovang_supplement_matches():
+    base = "https://live-api.keonhacaitp.one"
+    headers = {"User-Agent": USER_AGENT, "Referer": "https://giovang.org/"}
+    urls = [base + "/storage/livestream/all.json", base + "/storage/livestream/live.json"]
+    rows = []
+    with ThreadPoolExecutor(max_workers=2) as ex:
+        futures = [ex.submit(fetch_json_custom, u, headers, 5.0) for u in urls]
+        for f in futures:
+            try:
+                rows.extend(_giovang_rows(f.result()))
+            except Exception:
+                pass
+    out, seen = [], set()
+    for row in rows:
+        sport = _giovang_sport_type(row)
+        if not sport:
+            continue
+        status = first_text(row.get("status"))
+        if normalize_text(status) in TERMINAL_STATUSES or "ket thuc" in normalize_text(status):
+            continue
+        teams = row.get("teams") if isinstance(row.get("teams"), dict) else {}
+        home_obj = teams.get("home") if isinstance(teams.get("home"), dict) else {}
+        away_obj = teams.get("away") if isinstance(teams.get("away"), dict) else {}
+        home, away = first_text(home_obj.get("name")), first_text(away_obj.get("name"))
+        if not home or not away:
+            continue
+        kickoff = parse_timestamp_ms(row.get("time_start"))
+        if not kickoff:
+            continue
+        event_id = first_text(row.get("id"))
+        if not event_id:
+            continue
+        key = f"{sport}|{event_id}|{kickoff}"
+        if key in seen:
+            continue
+        seen.add(key)
+        blv = row.get("blv") if isinstance(row.get("blv"), list) else []
+        names=[]
+        for person in blv:
+            if isinstance(person, dict):
+                names.append(first_text(person.get("name"), person.get("nickname"), person.get("nickName"), person.get("username"), person.get("title"), person.get("blv")))
+            else:
+                names.append(first_text(person))
+        league = row.get("league") if isinstance(row.get("league"), dict) else {}
+        out.append({
+            "id": f"giovang:{event_id}", "provider": "giovang", "provider_name": "Giờ Vàng", "sport": sport,
+            "sport_name": sport, "name": f"{home} vs {away}", "kickoff": kickoff, "live": now_ms() >= kickoff,
+            "status": status, "competition": first_text(league.get("title"), league.get("name")),
+            "home_logo": first_text(home_obj.get("logo")), "away_logo": first_text(away_obj.get("logo")),
+            "commentator": _join_people(names), "_giovang_detail": base + "/api/fixtures/" + event_id,
+        })
+    return out
+
+
+def _extract_html_payload(text):
+    if not text:
+        return ""
+    raw = text.strip()
+    if not raw.startswith("{"):
+        return raw
+    try:
+        root = json.loads(raw)
+    except Exception:
+        return ""
+    data = root.get("data") if isinstance(root, dict) and isinstance(root.get("data"), dict) else {}
+    parts=[]
+    arr = data.get("htmls") if isinstance(data.get("htmls"), list) else root.get("htmls") if isinstance(root, dict) and isinstance(root.get("htmls"), list) else []
+    parts.extend(str(x) for x in arr if x)
+    if not parts:
+        one = first_text(data.get("html"), root.get("html") if isinstance(root, dict) else "")
+        if one:
+            parts.append(one)
+    return "\n".join(parts)
+
+
+def _extract_attr(tag, name):
+    m = re.search(r"\b" + re.escape(name) + r"\s*=\s*([\"'])(.*?)\1", tag, flags=re.I|re.S)
+    return html_lib.unescape(m.group(2)) if m else ""
+
+
+def _xoilac_match_segments(html_text):
+    if not html_text:
+        return []
+    starts=[m.start() for m in re.finditer(r"<div\b[^>]*class=[\"'][^\"']*(?:main-grid-match|grid-matches__item)[^\"']*[\"'][^>]*>", html_text, flags=re.I)]
+    if not starts:
+        return []
+    starts.append(len(html_text))
+    return [html_text[starts[i]:starts[i+1]] for i in range(len(starts)-1)]
+
+
+def _xoilac_team_from_segment(segment, side):
+    class_pat = r"(?:gmd-" + side + r"_team|" + side + r"[^\"']*team)"
+    m = re.search(r"<[^>]+class=[\"'][^\"']*" + class_pat + r"[^\"']*[\"'][^>]*>(.{0,1600}?)</(?:div|section|li)>", segment, flags=re.I|re.S)
+    if not m:
+        return ""
+    block=m.group(1)
+    # Prefer a named team element; otherwise use cleaned text.
+    n = re.search(r"<[^>]+class=[\"'][^\"']*(?:team-name|team-name-group)[^\"']*[\"'][^>]*>(.*?)</[^>]+>", block, flags=re.I|re.S)
+    return _strip_tags(n.group(1) if n else block)
+
+
+def _xoilac_parse_time(segment):
+    text=_strip_tags(segment)
+    now=datetime.now(TIME_ZONE)
+    m=re.search(r"\b(\d{1,2}):(\d{2})\b(?:\s*(?:ngay|ngày)?\s*)?(\d{1,2})/(\d{1,2})(?:/(\d{4}))?", normalize_text(text))
+    if m:
+        year=int(m.group(5) or now.year)
+        try:
+            return int(datetime(year,int(m.group(4)),int(m.group(3)),int(m.group(1)),int(m.group(2)),tzinfo=TIME_ZONE).timestamp()*1000)
+        except Exception:
+            pass
+    return None
+
+
+def fetch_xoilac_supplement_matches():
+    categories = (("football","football"),("tennis","tennis"),("basketball","basketball"),("volleyball","volleyball"),("badminton","badminton"),("esports","esports"))
+    bases=("https://xoilacz.vip", "https://xlz.domainkqt.cc")
+    out=[]
+    for sport, category in categories:
+        payload=""; used_base=""
+        for base in bases:
+            payload=fetch_text(base + f"/sport/{category}/filter/commentator", {"User-Agent": USER_AGENT, "Referer": base + "/"}, 4.5)
+            if payload:
+                used_base=base; break
+        html=_extract_html_payload(payload)
+        if not html:
+            continue
+        for seg in _xoilac_match_segments(html):
+            anchor=re.search(r"<a\b([^>]*)href=[\"']([^\"']*/truc-tiep/[^\"']+)[\"']([^>]*)>", seg, flags=re.I|re.S)
+            if not anchor:
+                continue
+            tag=anchor.group(0)
+            href=html_lib.unescape(anchor.group(2))
+            home=_xoilac_team_from_segment(seg,"home")
+            away=_xoilac_team_from_segment(seg,"away")
+            if not home or not away:
+                title=_extract_attr(tag,"title")
+                h,a=split_match_teams(title)
+                home=home or h; away=away or a
+            if not home or not away:
+                continue
+            names=[]
+            for cm in re.finditer(r"<(?:a|div|span)\b[^>]*class=[\"'][^\"']*(?:blv-item|commentator|grid-match__commentator)[^\"']*[\"'][^>]*>(.*?)</(?:a|div|span)>", seg, flags=re.I|re.S):
+                name=_strip_tags(cm.group(1))
+                if name and normalize_text(name) != "vs": names.append(name)
+            status_match=re.search(r"\bdata-status=[\"']([^\"']+)[\"']", seg, flags=re.I)
+            status=status_match.group(1) if status_match else ""
+            live=status != "1"
+            kickoff=_xoilac_parse_time(seg)
+            fid_match=re.search(r"\bdata-fid=[\"']([^\"']+)[\"']", seg, flags=re.I)
+            fid=fid_match.group(1) if fid_match else href.rstrip('/').split('/')[-1]
+            league_match=re.search(r"<[^>]+class=[\"'][^\"']*(?:match-league|league-name)[^\"']*[\"'][^>]*>(.*?)</[^>]+>", seg, flags=re.I|re.S)
+            league=_strip_tags(league_match.group(1)) if league_match else ""
+            match={"id":"xoilacxth:"+fid,"provider":"xoilacxth","provider_name":"XoilacXTH","sport":sport,"sport_name":sport,
+                   "name":f"{home} vs {away}","live":live,"status":status,"competition":league,"commentator":_join_people(names),
+                   "_xoilac_detail":urljoin(used_base.rstrip('/')+'/', href)}
+            if kickoff: match["kickoff"]=kickoff
+            out.append(match)
+    return out
+
+
+def fetch_all_provider_supplements(data):
+    participating=_provider_ids_in_feed(data)
+    jobs=[]
+    adapters={
+        "chuoichien": fetch_chuoichien_supplement_matches,
+        "colatv": fetch_colatv_supplement_matches,
+        "giovang": fetch_giovang_supplement_matches,
+        "xoilacxth": fetch_xoilac_supplement_matches,
+    }
+    with ThreadPoolExecutor(max_workers=max(1, min(len(adapters), 4))) as ex:
+        futures=[]
+        for provider, func in adapters.items():
+            if provider in participating:
+                futures.append(ex.submit(func))
+        for f in as_completed(futures):
+            try:
+                rows=f.result()
+                if rows: jobs.extend(rows)
+            except Exception:
+                pass
+    return jobs
+
+
+def _same_match(a, b):
+    if provider_key(a) != provider_key(b):
+        return False
+    if sport_category(a) != sport_category(b):
+        return False
+    if normalize_text(match_name(a)) != normalize_text(match_name(b)):
+        return False
+    ka, kb = get_kickoff(a), get_kickoff(b)
+    return bool(ka and kb and abs(ka - kb) <= 10 * 60 * 1000)
+
+
+def merge_supplement_matches(base_matches, supplements):
+    result = list(base_matches)
+    for extra in supplements:
+        found = None
+        for current in result:
+            if isinstance(current, dict) and _same_match(current, extra):
+                found = current
+                break
+        if found is None:
+            result.append(extra)
+            continue
+        for key in ("_chuoi_external_id", "_giovang_detail", "_xoilac_detail", "commentator", "competition", "home_logo", "away_logo", "sport", "sport_name", "sources"):
+            if extra.get(key) and not found.get(key):
+                found[key] = extra[key]
+        if extra.get("live") is True:
+            found["live"] = True
+    return result
+
+
+def _chuoi_detail_sources(data):
+    if not isinstance(data, dict):
+        return []
+    root = data.get("data") if isinstance(data.get("data"), dict) else data.get("match") if isinstance(data.get("match"), dict) else data.get("result") if isinstance(data.get("result"), dict) else data
+    if not isinstance(root, dict):
+        return []
+    headers = {"User-Agent": USER_AGENT, "Referer": "https://chuoichientv.org/", "Origin": "https://live.chuoichien.tv"}
+    sources = []
+    for bi, blv in enumerate(_array_value(root, "blvs", "commentators")):
+        if not isinstance(blv, dict):
+            continue
+        caster = first_text(blv.get("name"), blv.get("username"), blv.get("nickname"), blv.get("nickName"))
+        streams = _array_value(blv, "streams", "streamUrls", "stream_urls")
+        for si, stream in enumerate(streams):
+            if isinstance(stream, str):
+                url, label = stream, ""
+            elif isinstance(stream, dict):
+                url = first_text(stream.get("url"), stream.get("sourceUrl"), stream.get("source_url"), stream.get("link"), stream.get("streamUrl"))
+                label = first_text(stream.get("label"), stream.get("name"), stream.get("quality"))
+            else:
+                continue
+            if not url or ".mp4" in url.lower():
+                continue
+            fmt = "HLS" if ".m3u8" in url.lower() else "FLV" if ".flv" in url.lower() else ""
+            obj = source_obj(url, caster, fmt, quality_label({"name": label}), headers, label or caster, bi * 100 + si)
+            if obj:
+                sources.append(obj)
+    return dedupe_sources(sources)
+
+
+def fetch_chuoichien_detail_sources(candidates):
+    relevant = [(item["api_index"], first_text(item["match"].get("_chuoi_external_id"))) for item in candidates if provider_key(item["match"]) == "chuoichien" and first_text(item["match"].get("_chuoi_external_id"))]
+    if not relevant:
+        return {}
+    headers = {"User-Agent": USER_AGENT, "Referer": "https://chuoichientv.org/"}
+    out = {}
+    def task(index, external_id):
+        data = None
+        suffix = "/v2/matches/external/" + quote(external_id, safe="")
+        for base in CHUOICHIEN_API_BASES:
+            data = fetch_json_custom(base + suffix, headers, timeout=5.0)
+            if isinstance(data, dict):
+                break
+        return index, _chuoi_detail_sources(data)
+    with ThreadPoolExecutor(max_workers=min(16, len(relevant))) as executor:
+        futures = [executor.submit(task, idx, external_id) for idx, external_id in relevant]
+        for future in as_completed(futures):
+            try:
+                idx, sources = future.result()
+                if sources:
+                    out[idx] = sources
+            except Exception:
+                pass
+    return out
 
 
 def provider_canonical(value):
@@ -548,6 +1074,31 @@ def fetch_giovang_sources(candidates):
     matches = _candidate_by_pair(candidates, "giovang")
     if not matches:
         return {}
+    result = {}
+    direct_jobs = [(item["api_index"], first_text(item["match"].get("_giovang_detail"))) for item in candidates if provider_key(item["match"]) == "giovang" and first_text(item["match"].get("_giovang_detail"))]
+    def parse_detail_json(data):
+        if not isinstance(data, dict): return []
+        response=data.get("response") if isinstance(data.get("response"), dict) else {}
+        blv=response.get("blv") if isinstance(response.get("blv"), list) else []
+        out=[]
+        for i,row in enumerate(blv):
+            if not isinstance(row,dict): continue
+            caster=first_text(row.get("blv_name"),row.get("name"),row.get("nickname"),row.get("nickName"))
+            for j,field in enumerate(("mobile_stream_url","pc_stream_url","link_stream_hd","link_stream_sd")):
+                url=first_text(row.get(field))
+                if not url: continue
+                fmt="HLS" if ".m3u8" in url.lower() else "FLV" if ".flv" in url.lower() else ""
+                obj=source_obj(url,caster,fmt,headers={"User-Agent":USER_AGENT,"Referer":"https://giovang.org/"},name=caster,index=i*10+j)
+                if obj: out.append(obj)
+        return dedupe_sources(out)
+    if direct_jobs:
+        with ThreadPoolExecutor(max_workers=min(8,len(direct_jobs))) as ex:
+            fmap={ex.submit(fetch_json_custom,url,{"User-Agent":USER_AGENT,"Referer":"https://giovang.org/"},4.5):(idx,url) for idx,url in direct_jobs}
+            for fut in as_completed(fmap):
+                idx,_=fmap[fut]
+                try: src=parse_detail_json(fut.result())
+                except Exception: src=[]
+                if src: result[idx]=src
     feed = fetch_json_custom(
         "https://live-api.keonhacaitp.one/storage/livestream/live.json",
         headers={"User-Agent": "Mozilla/5.0", "Referer": "https://giovang.org/"},
@@ -576,7 +1127,6 @@ def fetch_giovang_sources(candidates):
             continue
         page = f"https://giovang.org/truc-tiep-{hs}-vs-{aw_slug}-{day_month}-{ident}"
         jobs.append((item["api_index"], page))
-    result = {}
     if jobs:
         with ThreadPoolExecutor(max_workers=min(8, len(jobs))) as ex:
             fmap = {ex.submit(fetch_text, page, {"User-Agent": USER_AGENT, "Referer": "https://giovang.org/"}, 4): (idx, page) for idx, page in jobs}
@@ -696,9 +1246,9 @@ def _xoilac_pages_from_json(text, base_url, candidates):
     return pages, commentators
 
 
-def _xoilac_listing_for_domain(base_url, candidates):
+def _xoilac_listing_for_domain(base_url, candidates, category="football"):
     headers = {"User-Agent": USER_AGENT, "Referer": base_url.rstrip("/") + "/"}
-    endpoint = base_url.rstrip("/") + "/sport/football/filter/commentator"
+    endpoint = base_url.rstrip("/") + f"/sport/{category}/filter/commentator"
     listing = fetch_text(endpoint, headers, 5)
     if not listing:
         return {}, {}, headers
@@ -724,15 +1274,20 @@ def fetch_xoilac_sources(candidates):
     pages = {}
     listed_commentators = {}
     chosen_headers = {}
-    for base in ("https://xoilacz.vip", "https://xlz.domainkqt.cc"):
-        domain_pages, domain_commentators, headers = _xoilac_listing_for_domain(base, relevant)
-        if domain_pages:
-            pages.update({k: v for k, v in domain_pages.items() if k not in pages})
-            listed_commentators.update({k: v for k, v in domain_commentators.items() if k not in listed_commentators})
-            for idx in domain_pages:
-                chosen_headers[idx] = headers
-        if len(pages) >= len(relevant):
-            break
+    catmap={"football":"football","basketball":"basketball","tennis":"tennis","volleyball":"volleyball","badminton":"badminton","esports":"esports"}
+    grouped={}
+    for item in relevant:
+        grouped.setdefault(catmap.get(sport_category(item["match"]),"football"),[]).append(item)
+        direct=first_text(item["match"].get("_xoilac_detail"))
+        if direct: pages[item["api_index"]]=direct
+    for category, group in grouped.items():
+        for base in ("https://xoilacz.vip", "https://xlz.domainkqt.cc"):
+            domain_pages, domain_commentators, headers = _xoilac_listing_for_domain(base, group, category)
+            if domain_pages:
+                pages.update({k: v for k, v in domain_pages.items() if k not in pages})
+                listed_commentators.update({k: v for k, v in domain_commentators.items() if k not in listed_commentators})
+                for idx in domain_pages: chosen_headers[idx]=headers
+            if all(item["api_index"] in pages for item in group): break
     if not pages:
         return {}
 
@@ -1425,6 +1980,7 @@ def stable_source_id(match, source):
 
 def resolve_all(candidates):
     direct_indexes = fetch_direct_indexes()
+    chuoi_detail_map = fetch_chuoichien_detail_sources(candidates)
     giovang_map = fetch_giovang_sources(candidates)
     xoilac_map = fetch_xoilac_sources(candidates)
     resolver_to_matches = {}
@@ -1434,7 +1990,9 @@ def resolve_all(candidates):
         match = item["match"]
         local_direct_map[item["api_index"]] = direct_sources(match)
         provider_direct_map[item["api_index"]] = direct_sources_for_match(match, direct_indexes)
-        if item["api_index"] in giovang_map:
+        if item["api_index"] in chuoi_detail_map:
+            provider_direct_map[item["api_index"]] = chuoi_detail_map[item["api_index"]]
+        elif item["api_index"] in giovang_map:
             provider_direct_map[item["api_index"]] = giovang_map[item["api_index"]]
         elif item["api_index"] in xoilac_map:
             provider_direct_map[item["api_index"]] = xoilac_map[item["api_index"]]
@@ -1487,6 +2045,8 @@ def build_playlist():
     if not isinstance(data, dict):
         raise RuntimeError("Không lấy được sport.json")
     matches = data.get("matches") if isinstance(data.get("matches"), list) else []
+    supplements = fetch_all_provider_supplements(data)
+    matches = merge_supplement_matches(matches, supplements)
     current = now_ms()
     future_end = end_of_next_vietnam_day(current)
     candidates = []
@@ -1548,7 +2108,7 @@ def build_playlist():
     temp = Path("playlist.m3u.tmp")
     temp.write_text("\n".join(lines) + "\n", encoding="utf-8")
     temp.replace("playlist.m3u")
-    print(f"v26-direct-meta: {total_streams} luồng / {total_matches} trận / {len(provider_sequence)} nguồn")
+    print(f"v28-multisport: {total_streams} luồng / {total_matches} trận / {len(provider_sequence)} nguồn")
 
 
 if __name__ == "__main__":
