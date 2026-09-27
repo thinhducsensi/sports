@@ -1440,23 +1440,8 @@ def fetch_chuoichien_detail_sources(candidates):
     return found
 
 
-def provider_special_source_caster(source, match):
-    if provider_key(match) != "phalang":
-        return ""
-
-    known = match_known_people(match)
-    explicit = explicit_source_people(source)
-    if len(explicit) == 1:
-        return explicit[0]
-    if len(explicit) > 1:
-        matched = people_match_from_evidence(explicit, [source.get("name"), source.get("label"), source.get("title"), source.get("server"), source.get("provider")])
-        return matched
-
-    evidence = [source.get("name"), source.get("label"), source.get("title"), source.get("server"), source.get("provider")]
-    matched = people_match_from_evidence(known, evidence)
-    if matched:
-        return matched
-
+def source_label_commentator(source, match):
+    """Use a source label as a caster only when the API labels it as such."""
     match_norm = normalize_text(match_name(match))
     competition_norm = normalize_text(competition_name(match))
     for key in ("name", "label", "title", "server", "provider"):
@@ -1478,8 +1463,7 @@ def provider_special_source_caster(source, match):
             continue
         return human
 
-    if len(known) == 1 and match.get("_stream_count", 1) == 1:
-        return known[0]
+    # A lone match-level name does not prove ownership of this stream.
     return ""
 
 def now_ms():
@@ -1766,7 +1750,9 @@ def probe_stream(source):
                 return "ok" if body.startswith(b"FLV") else "unknown"
             return "ok" if body.startswith(b"\x47") else "unknown"
     except HTTPError as exc:
-        return "dead" if exc.code in (404, 410) else "unknown"
+        # A GitHub runner can receive a geo-routed 404 for a stream that
+        # remains playable by the user's IPTV client in another region.
+        return "dead" if exc.code == 410 else "unknown"
     except (URLError, TimeoutError, OSError, ValueError):
         return "unknown"
 
@@ -2328,9 +2314,9 @@ def source_commentator(source, match):
         if matched:
             return matched
 
-    special = provider_special_source_caster(source, match)
-    if special:
-        return special
+    label_caster = source_label_commentator(source, match)
+    if label_caster:
+        return label_caster
 
     # If source identity explicitly points to one of the match commentators, use
     # that person for this source.
@@ -2343,10 +2329,9 @@ def source_commentator(source, match):
     if matched:
         return matched
 
-    # The app shows the match-level text on its card; it does not establish
-    # which of several commentators belongs to this particular stream.
-    fallback = direct_match_commentator(match)
-    return fallback if match.get("_stream_count", 1) == 1 and len(split_people(fallback)) == 1 else ""
+    # Match-level blv lists people shown on a card, not ownership of a
+    # specific URL. Never assign an unlabeled stream an invented caster.
+    return ""
 
 def order_sources(sources, match):
     caster_order = {}
