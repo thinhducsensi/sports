@@ -7,6 +7,7 @@ import re
 import sys
 import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from collections import Counter
 from datetime import datetime, time, timedelta
 from pathlib import Path
 from time import sleep
@@ -129,7 +130,7 @@ def first_text(*values):
 
 
 def normalize_text(value):
-    text = scalar_text(value).lower().replace("_", " ").replace("-", " ")
+    text = scalar_text(value).lower().replace("đ", "d").replace("_", " ").replace("-", " ")
     text = unicodedata.normalize("NFD", text)
     text = "".join(ch for ch in text if unicodedata.category(ch) != "Mn")
     text = re.sub(r"\s+", " ", text).strip()
@@ -324,7 +325,7 @@ def fetch_chuoichien_supplement_matches(feed=None):
     if isinstance(feed, dict):
         for row in feed.get("matches") or []:
             if isinstance(row, dict) and provider_key(row) == "chuoichien":
-                sport = normalize_text(first_text(row.get("sport"), row.get("sport_name"), row.get("sportType")))
+                sport = sport_category(row)
                 if sport and sport not in sports:
                     sports.append(sport)
     with ThreadPoolExecutor(max_workers=len(sports)) as executor:
@@ -383,15 +384,17 @@ def fetch_colatv_supplement_matches():
     for raw in data["data"].values():
         if not isinstance(raw, dict):
             continue
-        sport = {1: "football", 2: "basketball"}.get(int(raw.get("sportId") or 0))
+        sport_id = first_text(raw.get("sportId"))
+        sport = first_text(raw.get("sportName"), raw.get("sport_name"), raw.get("sport"))
         if not sport:
-            continue
+            sport = {"1": "football", "2": "basketball"}.get(sport_id, f"sport {sport_id}" if sport_id else "other")
         kickoff = parse_timestamp_ms(raw.get("matchTime"))
         if not kickoff:
             continue
         home = first_text(raw.get("homeTeamName"))
         away = first_text(raw.get("awayTeamName"))
-        if not home or not away:
+        title = f"{home} vs {away}" if home and away else first_text(raw.get("title"), raw.get("name"), raw.get("matchName"))
+        if not title:
             continue
         anchors = raw.get("anchorAppointmentVoList")
         if not isinstance(anchors, list) or not anchors:
@@ -414,7 +417,7 @@ def fetch_colatv_supplement_matches():
         out.append({
             "id": "colatv:" + first_text(raw.get("matchId"), hashlib.sha1(f"{home}|{away}|{kickoff}".encode()).hexdigest()[:10]),
             "provider": "colatv", "provider_name": "CoLaTV", "sport": sport, "sport_name": sport,
-            "name": f"{home} vs {away}", "kickoff": kickoff,
+            "name": title, "kickoff": kickoff,
             "live": raw.get("isLive") is True or raw.get("live") is True or normalize_text(raw.get("status")) in LIVE_STATUSES,
             "competition": first_text(raw.get("competitionName")), "home_logo": first_text(raw.get("homeTeamLogo")),
             "away_logo": first_text(raw.get("awayTeamLogo")), "commentator": _join_people(names), "sources": dedupe_sources(sources),
@@ -499,7 +502,8 @@ def fetch_giovang_supplement_matches():
         home_obj = teams.get("home") if isinstance(teams.get("home"), dict) else {}
         away_obj = teams.get("away") if isinstance(teams.get("away"), dict) else {}
         home, away = first_text(home_obj.get("name")), first_text(away_obj.get("name"))
-        if not home or not away:
+        title = f"{home} vs {away}" if home and away else first_text(row.get("title"), row.get("name"), row.get("event_name"))
+        if not title:
             continue
         kickoff = parse_timestamp_ms(row.get("time_start"))
         if not kickoff:
@@ -526,7 +530,7 @@ def fetch_giovang_supplement_matches():
         league = row.get("league") if isinstance(row.get("league"), dict) else {}
         out.append({
             "id": f"giovang:{event_id}", "provider": "giovang", "provider_name": "Giờ Vàng", "sport": sport,
-            "sport_name": sport, "name": f"{home} vs {away}", "kickoff": kickoff,
+            "sport_name": sport, "name": title, "kickoff": kickoff,
             "live": row.get("isLive") is True or row.get("live") is True or normalize_text(status) in LIVE_STATUSES,
             "_listed_live": is_live_listing,
             "status": status, "competition": first_text(league.get("title"), league.get("name")),
@@ -555,6 +559,97 @@ def _extract_html_payload(text):
         if one:
             parts.append(one)
     return "\n".join(parts)
+
+
+def discover_provider_categories(homepage, feed=None, provider="xoilacxth"):
+    """Union provider navigation and the upstream index; never use a sport allowlist."""
+    categories = []
+    def add(value):
+        slug = normalize_text(value).replace(" ", "-").strip("/ ")
+        if re.fullmatch(r"[a-z0-9][a-z0-9_-]{0,49}", slug) and slug not in categories:
+            categories.append(slug)
+    page = html_lib.unescape(homepage or "").replace("\\/", "/")
+    for slug in re.findall(r"/sport/([a-zA-Z0-9_-]+)(?:/|[\"'?#\s<]|$)", page, re.I):
+        add(slug)
+    if isinstance(feed, dict):
+        for row in feed.get("matches") or []:
+            if isinstance(row, dict) and provider_key(row) == provider:
+                for field in ("sport_slug", "sportSlug", "sport", "sport_name", "sportType"):
+                    add(row.get(field))
+    return categories
+
+
+def _xoilac_match_rows(text, base, sport):
+    """Read JSON listing rows as well as the HTML fragments returned by the site."""
+    try:
+        payload = json.loads(text)
+    except (ValueError, TypeError):
+        return []
+    rows = _iter_candidate_matches(payload)
+    if not rows and isinstance(payload, dict):
+        nested = payload.get("data")
+        if isinstance(nested, dict):
+            rows = _iter_candidate_matches(nested)
+    result = []
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        home_obj = first_text(_nested_obj(row, "home_team").get("name"), _nested_obj(row, "home").get("name"), row.get("home_name"), row.get("homeName"))
+        away_obj = first_text(_nested_obj(row, "away_team").get("name"), _nested_obj(row, "away").get("name"), row.get("away_name"), row.get("awayName"))
+        title = first_text(row.get("name"), row.get("title"), row.get("match_name"), row.get("event_name"))
+        if home_obj and away_obj:
+            title = f"{home_obj} vs {away_obj}"
+        if not title:
+            continue
+        path = first_text(row.get("detail_url"), row.get("url"), row.get("link"))
+        row_sources = direct_sources(row)
+        if urlsplit(path).path.lower().endswith((".m3u8", ".flv", ".ts")):
+            direct = normalize_source({"url":path, "headers":row.get("headers")}, api_index=len(row_sources))
+            if direct:
+                row_sources = dedupe_by_stream_url(row_sources + [direct])
+            path = first_text(row.get("detail_url"))
+        slug = first_text(row.get("slug"), row.get("seo_slug"))
+        if not path and slug:
+            path = "/truc-tiep/" + slug
+        if not path and not row_sources:
+            continue
+        kickoff = next((t for key in ("kickoff", "time_start", "start_time", "startTime", "matchTime", "timestamp") if (t := parse_timestamp_ms(row.get(key)))), None)
+        status = first_text(row.get("status"), row.get("state"))
+        category = first_text(row.get("sport"), row.get("sport_name"), row.get("sportType"), sport)
+        ident = first_text(row.get("id"), row.get("match_id"), slug, path)
+        match = {"id":"xoilacxth:"+ident, "provider":"xoilacxth", "provider_name":"XoilacXTH",
+                 "sport":category, "sport_name":category, "name":title,
+                 "status":status, "live":row.get("live") is True or row.get("isLive") is True or normalize_text(status) in LIVE_STATUSES,
+                 "competition":first_text(row.get("competition"), row.get("league")),
+                 "_xoilac_detail":urljoin(base.rstrip("/")+"/", path) if path else ""}
+        if kickoff:
+            match["kickoff"] = kickoff
+        match["sources"] = row_sources
+        result.append(match)
+    return result
+
+
+def _listing_next_url(payload, current_url):
+    """Follow pagination only when the endpoint advertises a next page."""
+    try:
+        root = json.loads(payload)
+    except (TypeError, ValueError):
+        return ""
+    if not isinstance(root, dict):
+        return ""
+    candidates = [root, root.get("pagination"), root.get("meta"), root.get("data")]
+    for obj in candidates:
+        if not isinstance(obj, dict):
+            continue
+        value = first_text(obj.get("next_page_url"), obj.get("nextPageUrl"), obj.get("next_url"), obj.get("nextUrl"))
+        if not value:
+            next_obj = obj.get("links")
+            value = first_text(next_obj.get("next")) if isinstance(next_obj, dict) else ""
+        if value:
+            result = urljoin(current_url, value)
+            if urlsplit(result).netloc == urlsplit(current_url).netloc:
+                return result
+    return ""
 
 
 def _extract_attr(tag, name):
@@ -596,16 +691,45 @@ def _xoilac_parse_time(segment):
     return None
 
 
-def fetch_xoilac_supplement_matches():
-    categories = (("football","football"),("tennis","tennis"),("basketball","basketball"),("volleyball","volleyball"),("badminton","badminton"),("esports","esports"))
+def fetch_xoilac_supplement_matches(feed=None):
     bases=("https://xoilacz.vip", "https://xlz.domainkqt.cc")
     out=[]
-    for sport, category in categories:
-        payload=""; used_base=""
+    categories=[]
+    for base in bases:
+        home=fetch_text(base+"/", {"User-Agent":USER_AGENT, "Referer":base+"/"}, 4.5)
+        for category in discover_provider_categories(home, feed):
+            if category not in categories:
+                categories.append(category)
+    # The primary index still provides categories when the site's home page is down.
+    for category in discover_provider_categories("", feed):
+        if category not in categories:
+            categories.append(category)
+    # Existing categories are discovery seeds, never a filter on newer sports.
+    for category in PROVIDER_SPORT_CAPABILITIES["xoilacxth"]:
+        if category not in categories:
+            categories.append(category)
+    def load_category(category):
+        results=[]
         for base in bases:
-            payload=fetch_text(base + f"/sport/{category}/filter/commentator", {"User-Agent": USER_AGENT, "Referer": base + "/"}, 4.5)
-            if payload:
-                used_base=base; break
+            url=base + f"/sport/{category}/filter/commentator"
+            visited=set()
+            for _ in range(12):
+                if url in visited:
+                    break
+                visited.add(url)
+                payload=fetch_text(url, {"User-Agent": USER_AGENT, "Referer": base + "/"}, 4.5)
+                if not payload:
+                    break
+                results.append((payload, base))
+                url=_listing_next_url(payload, url)
+                if not url:
+                    break
+        return category, results
+    with ThreadPoolExecutor(max_workers=min(8, max(1, len(categories)))) as executor:
+        fetched = list(executor.map(load_category, categories))
+    for category, payloads in fetched:
+      for payload, used_base in payloads:
+        out.extend(_xoilac_match_rows(payload, used_base, category))
         html=_extract_html_payload(payload)
         if not html:
             continue
@@ -621,7 +745,8 @@ def fetch_xoilac_supplement_matches():
                 title=_extract_attr(tag,"title")
                 h,a=split_match_teams(title)
                 home=home or h; away=away or a
-            if not home or not away:
+            title = f"{home} vs {away}" if home and away else _extract_attr(tag,"title")
+            if not title:
                 continue
             names=[]
             for cm in re.finditer(r"<(?:a|div|span)\b[^>]*class=[\"'][^\"']*(?:blv-item|commentator|grid-match__commentator)[^\"']*[\"'][^>]*>(.*?)</(?:a|div|span)>", seg, flags=re.I|re.S):
@@ -629,18 +754,25 @@ def fetch_xoilac_supplement_matches():
                 if name and normalize_text(name) != "vs": names.append(name)
             status_match=re.search(r"\bdata-status=[\"']([^\"']+)[\"']", seg, flags=re.I)
             status=status_match.group(1) if status_match else ""
-            live=status != "1"
+            live=normalize_text(status) in LIVE_STATUSES
             kickoff=_xoilac_parse_time(seg)
             fid_match=re.search(r"\bdata-fid=[\"']([^\"']+)[\"']", seg, flags=re.I)
             fid=fid_match.group(1) if fid_match else href.rstrip('/').split('/')[-1]
             league_match=re.search(r"<[^>]+class=[\"'][^\"']*(?:match-league|league-name)[^\"']*[\"'][^>]*>(.*?)</[^>]+>", seg, flags=re.I|re.S)
             league=_strip_tags(league_match.group(1)) if league_match else ""
-            match={"id":"xoilacxth:"+fid,"provider":"xoilacxth","provider_name":"XoilacXTH","sport":sport,"sport_name":sport,
-                   "name":f"{home} vs {away}","live":live,"status":status,"competition":league,"commentator":_join_people(names),
+            match={"id":"xoilacxth:"+fid,"provider":"xoilacxth","provider_name":"XoilacXTH","sport":category,"sport_name":category,
+                   "name":title,"live":live,"status":status,"competition":league,"commentator":_join_people(names),
                    "_xoilac_detail":urljoin(used_base.rstrip('/')+'/', href)}
             if kickoff: match["kickoff"]=kickoff
             out.append(match)
-    return out
+    unique={}
+    for match in out:
+        key=(match["id"], sport_category(match))
+        if key not in unique:
+            unique[key]=match
+        elif match.get("sources"):
+            unique[key]["sources"]=dedupe_by_stream_url(unique[key].get("sources", [])+match["sources"])
+    return list(unique.values())
 
 
 def fetch_all_provider_supplements(data):
@@ -651,12 +783,15 @@ def fetch_all_provider_supplements(data):
         "colatv": fetch_colatv_supplement_matches,
         "giovang": fetch_giovang_supplement_matches,
         "xoilacxth": fetch_xoilac_supplement_matches,
+        "gavang33": lambda: fetch_direct_supplement_matches("gavang33"),
+        "socolive": lambda: fetch_direct_supplement_matches("socolive"),
+        "vuasanco": lambda: fetch_direct_supplement_matches("vuasanco"),
     }
     with ThreadPoolExecutor(max_workers=max(1, min(len(adapters), 4))) as ex:
         futures=[]
         for provider, func in adapters.items():
             if provider in participating:
-                futures.append(ex.submit(func, data) if provider == "chuoichien" else ex.submit(func))
+                futures.append(ex.submit(func, data) if provider in ("chuoichien", "xoilacxth") else ex.submit(func))
         for f in as_completed(futures):
             try:
                 rows=f.result()
@@ -674,7 +809,9 @@ def _same_match(a, b):
     if normalize_text(match_name(a)) != normalize_text(match_name(b)):
         return False
     ka, kb = get_kickoff(a), get_kickoff(b)
-    return bool(ka and kb and abs(ka - kb) <= 10 * 60 * 1000)
+    if ka and kb:
+        return abs(ka - kb) <= 10 * 60 * 1000
+    return bool(first_text(a.get("id")) and first_text(a.get("id")) == first_text(b.get("id")))
 
 
 def merge_supplement_matches(base_matches, supplements):
@@ -832,13 +969,13 @@ def _iter_candidate_matches(data):
         return data
     if not isinstance(data, dict):
         return []
-    for key in ("matches", "result", "data", "response"):
+    for key in ("matches", "result", "data", "response", "list", "items", "rows"):
         value = data.get(key)
         if isinstance(value, list):
             return value
         if isinstance(value, dict):
-            if key == "data":
-                nested = value.get("matches")
+            for subkey in ("matches", "list", "items", "rows", "response"):
+                nested = value.get(subkey)
                 if isinstance(nested, list):
                     return nested
     if isinstance(data.get("data"), dict):
@@ -1035,6 +1172,52 @@ def fetch_direct_indexes():
     return indexes
 
 
+def fetch_direct_supplement_matches(provider):
+    """Supplement any sport exposed by a participating direct provider feed."""
+    cfg = DIRECT_FEEDS.get(provider)
+    if not cfg:
+        return []
+    data = fetch_json_custom(cfg["url"], cfg.get("headers"), timeout=5.5)
+    if data is None:
+        return []
+    parser = DIRECT_PARSERS.get(cfg["kind"])
+    index = parser(data, cfg) if parser else {}
+    rows = _iter_candidate_matches(data)
+    out = []
+    for raw in rows:
+        if not isinstance(raw, dict):
+            continue
+        match = _nested_obj(raw, "match") or raw
+        home = first_text(_nested_obj(match, "homeTeam").get("name"), _nested_obj(match, "home").get("name"), raw.get("hostName"), raw.get("homeName"))
+        away = first_text(_nested_obj(match, "awayTeam").get("name"), _nested_obj(match, "away").get("name"), raw.get("guestName"), raw.get("awayName"))
+        title = f"{home} vs {away}" if home and away else first_text(match.get("title"), match.get("name"))
+        if not title:
+            continue
+        sources = index.get(pair_key(home, away), []) if home and away else direct_sources(match)
+        if not sources:
+            continue
+        kickoff = next((t for key in ("matchTime", "time_start", "startTime", "start_time", "kickoff", "timestamp") if (t := parse_timestamp_ms(match.get(key)))), None)
+        status = first_text(match.get("status"), match.get("state"))
+        sport = first_text(match.get("sportName"), match.get("sport"), match.get("sportType"), match.get("category"))
+        sport_id = first_text(match.get("sportId"))
+        if not sport:
+            sport = {"1": "football", "2": "basketball"}.get(sport_id, f"sport {sport_id}" if sport_id else "other")
+        ident = first_text(match.get("id"), match.get("matchId"), match.get("match_id"))
+        if not ident:
+            ident = hashlib.sha1(f"{title}|{kickoff}".encode()).hexdigest()[:12]
+        item = {"id":provider+":"+ident, "provider":provider, "provider_name":provider,
+                "sport":sport, "sport_name":sport, "name":title,
+                "status":status, "live":match.get("live") is True or match.get("isLive") is True or normalize_text(status) in LIVE_STATUSES,
+                "competition":first_text(match.get("competitionName"), match.get("competition")),
+                "sources":dedupe_by_stream_url(sources)}
+        if kickoff:
+            item["kickoff"] = kickoff
+        if provider == "socolive" and not kickoff:
+            item["_listed_live"] = True  # all_live_rooms feed
+        out.append(item)
+    return out
+
+
 def direct_sources_for_match(match, indexes):
     provider = provider_canonical(first_text(match.get("provider"), match.get("source"), match.get("provider_name"), match.get("source_name")))
     index = indexes.get(provider)
@@ -1115,8 +1298,6 @@ def _parse_giovang_detail(html_text, page_url):
 
 def fetch_giovang_sources(candidates):
     matches = _candidate_by_pair(candidates, "giovang")
-    if not matches:
-        return {}
     result = {}
     direct_jobs = [(item["api_index"], first_text(item["match"].get("_giovang_detail"))) for item in candidates if provider_key(item["match"]) == "giovang" and first_text(item["match"].get("_giovang_detail"))]
     def parse_detail_json(data):
@@ -1317,13 +1498,16 @@ def fetch_xoilac_sources(candidates):
     pages = {}
     listed_commentators = {}
     chosen_headers = {}
-    catmap={"football":"football","basketball":"basketball","tennis":"tennis","volleyball":"volleyball","badminton":"badminton","esports":"esports"}
     grouped={}
     for item in relevant:
-        grouped.setdefault(catmap.get(sport_category(item["match"]),"football"),[]).append(item)
+        category = first_text(item["match"].get("sport_slug"), item["match"].get("sportSlug")) or sport_category(item["match"]).replace(" ", "-")
+        if re.fullmatch(r"[a-z0-9][a-z0-9_-]{0,49}", category):
+            grouped.setdefault(category, []).append(item)
         direct=first_text(item["match"].get("_xoilac_detail"))
         if direct: pages[item["api_index"]]=direct
     for category, group in grouped.items():
+        if all(item["api_index"] in pages for item in group):
+            continue
         for base in ("https://xoilacz.vip", "https://xlz.domainkqt.cc"):
             domain_pages, domain_commentators, headers = _xoilac_listing_for_domain(base, group, category)
             if domain_pages:
@@ -1539,8 +1723,15 @@ def competition_name(match):
 
 def sport_category(match):
     raw = normalize_text(first_text(match.get("sport"), match.get("sport_name"), match.get("sportType"), match.get("category")))
-    if raw in {"football", "soccer", "bong da", "association football"}:
-        return "football"
+    aliases = {
+        "soccer": "football", "bong da": "football", "association football": "football",
+        "bong ro": "basketball", "bong chuyen": "volleyball", "quan vot": "tennis",
+        "the thao dien tu": "esports", "esport": "esports", "e sport": "esports",
+        "dua xe": "motorsport", "motor sport": "motorsport", "racing": "motorsport", "formula 1": "motorsport",
+        "vo thuat": "mma",
+    }
+    if raw in aliases:
+        return aliases[raw]
     return raw or "other"
 
 
@@ -2203,6 +2394,12 @@ def build_playlist():
     resolved = resolve_all(candidates)
     if candidates and not resolved:
         raise RuntimeError("Không resolve được luồng nào; giữ playlist cũ")
+
+    discovered = Counter((provider_key(m), sport_category(m)) for m in matches if isinstance(m, dict))
+    eligible = Counter((provider_key(item["match"]), sport_category(item["match"])) for item in candidates)
+    playable = Counter((provider_key(item["match"]), sport_category(item["match"])) for item in resolved)
+    for key in sorted(discovered):
+        print(f"[coverage] {key[0]}/{key[1]}: API={discovered[key]} eligible={eligible[key]} playable={playable[key]}")
 
     provider_sequence = provider_order(data, resolved)
     sport_order = build_sport_order(resolved)
