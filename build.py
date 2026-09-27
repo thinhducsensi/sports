@@ -284,10 +284,25 @@ def _chuoi_match_from_row(row, sport):
 
 
 def fetch_chuoichien_supplement_matches(feed=None):
-    jobs = []
     out = []
     headers = {"User-Agent": USER_AGENT, "Referer": "https://chuoichientv.org/"}
     known_sports = {}
+    discovered_sports = set()
+    def category(value):
+        if isinstance(value, dict):
+            return first_text(value.get("slug"), value.get("key"), value.get("id"), value.get("name"))
+        return first_text(value)
+    def discover_catalog(data):
+        if not isinstance(data, dict):
+            return
+        for parent in (data, _nested_obj(data, "data"), _nested_obj(data, "filters"), _nested_obj(data, "meta")):
+            for key in ("sports", "sportTypes", "sport_types", "categories"):
+                values = parent.get(key)
+                if isinstance(values, list):
+                    for entry in values:
+                        value = category(entry)
+                        if value and normalize_text(value) not in ("all", "tat ca"):
+                            discovered_sports.add(value)
     if isinstance(feed, dict):
         for prior in feed.get("matches") or []:
             if isinstance(prior, dict) and provider_key(prior) == "chuoichien":
@@ -297,6 +312,7 @@ def fetch_chuoichien_supplement_matches(feed=None):
                         known_sports[ident] = sport_category(prior)
     def task(sport):
         rows, seen = [], set()
+        previous_page = None
         # The API is paged; a single page of 100 silently loses events.
         for page in range(1, 51):
             suffix = f"/v2/matches?page={page}&limit=100"
@@ -311,11 +327,15 @@ def fetch_chuoichien_supplement_matches(feed=None):
                     break
             if not isinstance(data, (dict, list)):
                 break
+            if not sport:
+                discover_catalog(data)
             page_rows = _chuoi_rows(data)
-            new_count = 0
+            signature = tuple(first_text(row.get("externalId"), row.get("id"), row.get("_id")) for row in page_rows[:20])
             for row in page_rows:
-                declared = first_text(row.get("sport"), row.get("sportName"), row.get("sport_name"),
-                                      row.get("sportType"), row.get("category"))
+                declared = next((value for field in ("sport", "sportName", "sport_name", "sportType", "category")
+                                 if (value := category(row.get(field)))), "")
+                if not sport and declared:
+                    discovered_sports.add(declared)
                 # The unfiltered endpoint can expose sports missing from both
                 # the old seed list and the aggregated sport.json snapshot.
                 ident = first_text(row.get("externalId"), row.get("external_id"), row.get("id"), row.get("_id"))
@@ -323,12 +343,15 @@ def fetch_chuoichien_supplement_matches(feed=None):
                 if match and match["id"] not in seen:
                     seen.add(match["id"])
                     rows.append(match)
-                    new_count += 1
-            # Stop on a short page, or an endpoint that ignores 'page'.
-            if len(page_rows) < 100 or new_count == 0:
+            # A short page or repeated page finishes pagination. Do not stop
+            # merely because a full page has new API rows lacking valid IDs.
+            if len(page_rows) < 100 or signature == previous_page:
                 break
+            previous_page = signature
         return sport, rows
-    sports = list(CHUOICHIEN_DISCOVERY_SEEDS)
+    _, unfiltered = task("")
+    out.extend(unfiltered)
+    sports = list(dict.fromkeys(sorted(discovered_sports) + list(CHUOICHIEN_DISCOVERY_SEEDS)))
     # Ask for every category named by the upstream index, including categories
     # introduced after the bundled capability list was written.
     if isinstance(feed, dict):
@@ -338,14 +361,26 @@ def fetch_chuoichien_supplement_matches(feed=None):
                 if sport and sport not in sports:
                     sports.append(sport)
     with ThreadPoolExecutor(max_workers=min(8, len(sports) + 1)) as executor:
-        futures = [executor.submit(task, sport) for sport in [""] + sports]
+        futures = [executor.submit(task, sport) for sport in sports]
         for future in as_completed(futures):
             try:
                 _, rows = future.result()
                 out.extend(rows)
             except Exception:
                 pass
-    return out
+    unique = {}
+    for match in out:
+        existing = unique.get(match["id"])
+        if existing is None:
+            unique[match["id"]] = match
+            continue
+        if sport_category(existing) == "other" and sport_category(match) != "other":
+            existing["sport"] = match["sport"]
+            existing["sport_name"] = match["sport_name"]
+        existing["sources"] = dedupe_by_stream_url(existing.get("sources", []) + match.get("sources", []))
+        if not existing.get("commentator") and match.get("commentator"):
+            existing["commentator"] = match["commentator"]
+    return list(unique.values())
 
 
 def _provider_ids_in_feed(data):
@@ -435,8 +470,6 @@ def fetch_colatv_supplement_matches():
         obj = source_obj(video, headers={"User-Agent": USER_AGENT, "Referer": "https://cola.tv/"}, index=10000)
         if obj:
             sources.append(obj)
-        if not sources:
-            continue
         out.append({
             "id": "colatv:" + first_text(raw.get("matchId"), hashlib.sha1(f"{home}|{away}|{kickoff}".encode()).hexdigest()[:10]),
             "provider": "colatv", "provider_name": "CoLaTV", "sport": sport, "sport_name": sport,
@@ -479,11 +512,9 @@ def _giovang_sport_type(row):
     }
     if n in mapping:
         return mapping[n]
-    # An explicit sport category in the provider data should not disappear just
-    # because we have not assigned an icon or translation to it yet.
-    if raw and any(first_text(row.get(key), league.get(key)) for key in keys):
-        return normalize_text(raw)
-    return ""
+    # 'type' is itself the API's sport category. A new type must survive even
+    # if no icon or translation has been added to this script yet.
+    return normalize_text(raw) if raw else "other"
 
 
 def _giovang_rows(data):
