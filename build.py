@@ -160,7 +160,7 @@ def fetch_json(url, timeout=8, retries=1, cache_bust=False):
     return None
 
 
-def fetch_json_custom(url, headers=None, timeout=6):
+def fetch_json_custom(url, headers=None, timeout=6, cache_bust=True):
     req_headers = {
         "Accept": "application/json,text/plain,*/*",
         "User-Agent": USER_AGENT,
@@ -170,7 +170,7 @@ def fetch_json_custom(url, headers=None, timeout=6):
     if isinstance(headers, dict):
         req_headers.update(headers)
     try:
-        request = Request(with_cache_buster(url), headers=req_headers)
+        request = Request(with_cache_buster(url) if cache_bust else str(url), headers=req_headers)
         with urlopen(request, timeout=timeout) as response:
             if not 200 <= getattr(response, "status", 200) < 300:
                 return None
@@ -271,6 +271,7 @@ def _chuoi_match_from_row(row, sport):
         "away_logo": first_text(away.get("logo"), away.get("logoUrl")),
         "commentator": _chuoi_commentators(row),
         "_chuoi_external_id": external_id,
+        "_chuoi_detail": first_text(row.get("detail_api"), row.get("api_url"), row.get("json_url"), row.get("resolver")),
     }
     if kickoff:
         result["kickoff"] = kickoff
@@ -499,6 +500,9 @@ def _giovang_rows(data):
                 nested = value.get(sub)
                 if isinstance(nested, list):
                     return [x for x in nested if isinstance(x, dict)]
+            indexed = [x for x in value.values() if isinstance(x, dict) and any(k in x for k in ("id", "time_start", "teams"))]
+            if indexed:
+                return indexed
     return []
 
 
@@ -562,7 +566,8 @@ def fetch_giovang_supplement_matches():
             "_listed_live": is_live_listing,
             "status": status, "status_code": status_code, "competition": first_text(league.get("title"), league.get("name")),
             "home_logo": first_text(home_obj.get("logo")), "away_logo": first_text(away_obj.get("logo")),
-            "commentator": _join_people(names), "_giovang_detail": base + "/api/fixtures/" + event_id,
+            "commentator": _join_people(names),
+            "_giovang_detail": first_text(row.get("detail_api"), row.get("api_url"), row.get("json_url")),
         })
     return out
 
@@ -586,24 +591,6 @@ def _extract_html_payload(text):
         if one:
             parts.append(one)
     return "\n".join(parts)
-
-
-def discover_provider_categories(homepage, feed=None, provider="xoilacxth"):
-    """Union provider navigation and the upstream index; never use a sport allowlist."""
-    categories = []
-    def add(value):
-        slug = normalize_text(value).replace(" ", "-").strip("/ ")
-        if re.fullmatch(r"[a-z0-9][a-z0-9_-]{0,49}", slug) and slug not in categories:
-            categories.append(slug)
-    page = html_lib.unescape(homepage or "").replace("\\/", "/")
-    for slug in re.findall(r"/sport/([a-zA-Z0-9_-]+)(?:/|[\"'?#\s<]|$)", page, re.I):
-        add(slug)
-    if isinstance(feed, dict):
-        for row in feed.get("matches") or []:
-            if isinstance(row, dict) and provider_key(row) == provider:
-                for field in ("sport_slug", "sportSlug", "sport", "sport_name", "sportType"):
-                    add(row.get(field))
-    return categories
 
 
 def _xoilac_match_rows(text, base, sport):
@@ -744,27 +731,31 @@ def fetch_xoilac_supplement_matches(feed=None):
     categories=[]
     for base in bases:
         home=fetch_text(base+"/", {"User-Agent":USER_AGENT, "Referer":base+"/"}, 4.5)
-        for category in discover_provider_categories(home):
-            if category not in categories:
-                categories.append(category)
+        # Follow the URLs actually published in the provider's navigation;
+        # do not invent a /sport/{category}/filter/... API route.
+        for path in re.findall(r"/sport/[a-zA-Z0-9_-]+(?:/filter/[a-zA-Z0-9_-]+)?", html_lib.unescape(home).replace("\\/", "/"), re.I):
+            category = path.split("/")[2].lower()
+            listing_url = urljoin(base + "/", path)
+            if (category, listing_url, base) not in categories:
+                categories.append((category, listing_url, base))
     # If this provider exposes no category links, the primary index and each
     # match's own resolver remain the authoritative paths to its streams.
-    def load_category(category):
+    def load_category(job):
+        category, listing_url, base = job
         results=[]
-        for base in bases:
-            url=base + f"/sport/{category}/filter/commentator"
-            visited=set()
-            for _ in range(12):
-                if url in visited:
-                    break
-                visited.add(url)
-                payload=fetch_text(url, {"User-Agent": USER_AGENT, "Referer": base + "/"}, 4.5)
-                if not payload:
-                    break
-                results.append((payload, base))
-                url=_listing_next_url(payload, url)
-                if not url:
-                    break
+        url=listing_url
+        visited=set()
+        for _ in range(12):
+            if url in visited:
+                break
+            visited.add(url)
+            payload=fetch_text(url, {"User-Agent": USER_AGENT, "Referer": base + "/"}, 4.5)
+            if not payload:
+                break
+            results.append((payload, base))
+            url=_listing_next_url(payload, url)
+            if not url:
+                break
         return category, results
     with ThreadPoolExecutor(max_workers=min(8, max(1, len(categories)))) as executor:
         fetched = list(executor.map(load_category, categories))
@@ -838,7 +829,8 @@ def fetch_all_provider_supplements(data):
             provider = futures[f]
             try:
                 rows=f.result()
-                print(f"[adapter] {provider}: {len(rows)} trận từ API riêng" +
+                source_kind = "link danh mục/JSON" if provider == "xoilacxth" else "API riêng"
+                print(f"[adapter] {provider}: {len(rows)} trận từ {source_kind}" +
                       (" (API không truy cập được, trả rỗng hoặc không có danh mục mới)" if not rows else ""))
                 if rows: jobs.extend(rows)
             except Exception as exc:
@@ -874,7 +866,7 @@ def merge_supplement_matches(base_matches, supplements):
         if found is None:
             result.append(extra)
             continue
-        for key in ("_chuoi_external_id", "_giovang_detail", "_xoilac_detail",
+        for key in ("_chuoi_external_id", "_chuoi_detail", "_giovang_detail", "_xoilac_detail",
                     "name", "kickoff", "competition", "home_logo", "away_logo", "commentator"):
             if extra.get(key):
                 found[key] = extra[key]
@@ -907,62 +899,6 @@ def merge_supplement_matches(base_matches, supplements):
         if extra.get("_listed_live") is True and not is_terminal(extra):
             found["_listed_live"] = True
     return result
-
-
-def _chuoi_detail_sources(data):
-    if not isinstance(data, dict):
-        return []
-    root = data.get("data") if isinstance(data.get("data"), dict) else data.get("match") if isinstance(data.get("match"), dict) else data.get("result") if isinstance(data.get("result"), dict) else data
-    if not isinstance(root, dict):
-        return []
-    headers = {"User-Agent": USER_AGENT, "Referer": "https://chuoichientv.org/", "Origin": "https://live.chuoichien.tv"}
-    sources = []
-    for bi, blv in enumerate(_array_value(root, "blvs", "commentators")):
-        if not isinstance(blv, dict):
-            continue
-        caster = first_text(blv.get("name"), blv.get("username"), blv.get("nickname"), blv.get("nickName"))
-        streams = _array_value(blv, "streams", "streamUrls", "stream_urls")
-        for si, stream in enumerate(streams):
-            if isinstance(stream, str):
-                url, label = stream, ""
-            elif isinstance(stream, dict):
-                url = first_text(stream.get("url"), stream.get("sourceUrl"), stream.get("source_url"), stream.get("link"), stream.get("streamUrl"))
-                label = first_text(stream.get("label"), stream.get("name"), stream.get("quality"))
-            else:
-                continue
-            if not url or ".mp4" in url.lower():
-                continue
-            fmt = "HLS" if ".m3u8" in url.lower() else "FLV" if ".flv" in url.lower() else ""
-            obj = source_obj(url, caster, fmt, quality_label({"name": label}), headers, label or caster, bi * 100 + si)
-            if obj:
-                sources.append(obj)
-    return dedupe_sources(sources)
-
-
-def fetch_chuoichien_detail_sources(candidates):
-    relevant = [(item["api_index"], first_text(item["match"].get("_chuoi_external_id"))) for item in candidates if provider_key(item["match"]) == "chuoichien" and first_text(item["match"].get("_chuoi_external_id"))]
-    if not relevant:
-        return {}
-    headers = {"User-Agent": USER_AGENT, "Referer": "https://chuoichientv.org/"}
-    out = {}
-    def task(index, external_id):
-        data = None
-        suffix = "/v2/matches/external/" + quote(external_id, safe="")
-        for base in CHUOICHIEN_API_BASES:
-            data = fetch_json_custom(base + suffix, headers, timeout=5.0)
-            if isinstance(data, dict):
-                break
-        return index, _chuoi_detail_sources(data)
-    with ThreadPoolExecutor(max_workers=min(16, len(relevant))) as executor:
-        futures = [executor.submit(task, idx, external_id) for idx, external_id in relevant]
-        for future in as_completed(futures):
-            try:
-                idx, sources = future.result()
-                if sources:
-                    out[idx] = sources
-            except Exception:
-                pass
-    return out
 
 
 def provider_canonical(value):
@@ -1259,162 +1195,11 @@ def fetch_direct_supplement_matches(provider, feed=None):
     return out
 
 
-def slugify_vi(value):
-    text = normalize_text(value)
-    text = re.sub(r"[^a-z0-9]+", "-", text).strip("-")
-    return text
-
-
-def _team_pair_from_match(match):
-    return split_match_teams(match_name(match))
-
-
-def _candidate_by_pair(candidates, provider):
-    out = {}
-    for item in candidates:
-        if provider_key(item["match"]) != provider:
-            continue
-        home, away = _team_pair_from_match(item["match"])
-        if home and away:
-            out.setdefault(pair_key(home, away), []).append(item)
-            out.setdefault(pair_key(away, home), []).append(item)
-    return out
-
-
-def _best_candidate_for_pair(pair_map, home, away):
-    rows = pair_map.get(pair_key(home, away)) or pair_map.get(pair_key(away, home)) or []
-    return rows[0] if rows else None
-
-
-def _parse_giovang_detail(html_text, page_url):
-    if not html_text:
-        return []
-    m = re.search("data-blv\\s*=\\s*([\\\"'])(.*?)\\1", html_text, flags=re.I | re.S)
-    if not m:
-        return []
-    raw = html_lib.unescape(m.group(2)).replace("\\/", "/")
-    try:
-        rows = json.loads(raw)
-    except Exception:
-        return []
-    headers = {"User-Agent": USER_AGENT, "Referer": page_url, "Origin": "https://giovang.org"}
-    out = []
-    if isinstance(rows, list):
-        for i, row in enumerate(rows):
-            if not isinstance(row, dict):
-                continue
-            caster = first_text(row.get("blv_name"), row.get("name"), row.get("commentator"))
-            for j, field in enumerate(("mobile_stream_url", "pc_stream_url", "stream_url", "link_stream_hd", "link_stream_sd")):
-                url = first_text(row.get(field))
-                if not url:
-                    continue
-                fmt = "HLS" if ".m3u8" in url.lower() else "FLV" if ".flv" in url.lower() else ""
-                out.append(source_obj(url, caster=caster, fmt=fmt, headers=headers, name=caster, index=i * 10 + j))
-    return dedupe_sources(out)
-
-
-def fetch_giovang_sources(candidates):
-    matches_by_id = {}
-    for item in candidates:
-        match = item["match"]
-        if provider_key(match) != "giovang":
-            continue
-        for candidate_id in (match.get("provider_id"), match.get("source_id"), match.get("id")):
-            if first_text(candidate_id):
-                matches_by_id[first_text(candidate_id).removeprefix("giovang:")] = item
-    result = {}
-    direct_jobs = [(item["api_index"], first_text(item["match"].get("_giovang_detail"))) for item in candidates if provider_key(item["match"]) == "giovang" and first_text(item["match"].get("_giovang_detail"))]
-    def parse_detail_json(data):
-        if not isinstance(data, dict): return []
-        response=data.get("response") if isinstance(data.get("response"), dict) else {}
-        blv=response.get("blv") if isinstance(response.get("blv"), list) else []
-        out=[]
-        for i,row in enumerate(blv):
-            if not isinstance(row,dict): continue
-            caster=first_text(row.get("blv_name"),row.get("name"),row.get("nickname"),row.get("nickName"))
-            for j,field in enumerate(("mobile_stream_url","pc_stream_url","link_stream_hd","link_stream_sd")):
-                url=first_text(row.get(field))
-                if not url: continue
-                fmt="HLS" if ".m3u8" in url.lower() else "FLV" if ".flv" in url.lower() else ""
-                obj=source_obj(url,caster,fmt,headers={"User-Agent":USER_AGENT,"Referer":"https://giovang.org/"},name=caster,index=i*10+j)
-                if obj: out.append(obj)
-        return dedupe_sources(out)
-    if direct_jobs:
-        with ThreadPoolExecutor(max_workers=min(8,len(direct_jobs))) as ex:
-            fmap={ex.submit(fetch_json_custom,url,{"User-Agent":USER_AGENT,"Referer":"https://giovang.org/"},4.5):(idx,url) for idx,url in direct_jobs}
-            for fut in as_completed(fmap):
-                idx,_=fmap[fut]
-                try: src=parse_detail_json(fut.result())
-                except Exception: src=[]
-                if src: result[idx]=src
-    feed = fetch_json_custom(
-        "https://live-api.keonhacaitp.one/storage/livestream/live.json",
-        headers={"User-Agent": "Mozilla/5.0", "Referer": "https://giovang.org/"},
-        timeout=5,
-    )
-    rows = feed.get("response") if isinstance(feed, dict) else None
-    if not isinstance(rows, list):
-        return result
-    jobs = []
-    for row in rows:
-        if not isinstance(row, dict):
-            continue
-        teams = row.get("teams") if isinstance(row.get("teams"), dict) else {}
-        home_obj = teams.get("home") if isinstance(teams.get("home"), dict) else {}
-        away_obj = teams.get("away") if isinstance(teams.get("away"), dict) else {}
-        home = first_text(home_obj.get("name"))
-        away = first_text(away_obj.get("name"))
-        ident = first_text(row.get("fi"), row.get("id"))
-        item = matches_by_id.get(ident)
-        if not item:
-            continue
-        day_month = first_text(row.get("day_month")).replace("/", "-")
-        hs = first_text(home_obj.get("slug")) or slugify_vi(home)
-        aw_slug = first_text(away_obj.get("slug")) or slugify_vi(away)
-        if not ident or not day_month or not hs or not aw_slug:
-            continue
-        page = f"https://giovang.org/truc-tiep-{hs}-vs-{aw_slug}-{day_month}-{ident}"
-        jobs.append((item["api_index"], page))
-    if jobs:
-        with ThreadPoolExecutor(max_workers=min(8, len(jobs))) as ex:
-            fmap = {ex.submit(fetch_text, page, {"User-Agent": USER_AGENT, "Referer": "https://giovang.org/"}, 4): (idx, page) for idx, page in jobs}
-            for fut in as_completed(fmap):
-                idx, page = fmap[fut]
-                try:
-                    sources = _parse_giovang_detail(fut.result(), page)
-                except Exception:
-                    sources = []
-                if sources:
-                    result[idx] = dedupe_by_stream_url(result.get(idx, []) + sources)
-    return result
-
-
 def _strip_tags(text):
     text = re.sub(r"<script\\b[^>]*>.*?</script>", " ", text, flags=re.I | re.S)
     text = re.sub(r"<style\\b[^>]*>.*?</style>", " ", text, flags=re.I | re.S)
     text = re.sub(r"<[^>]+>", " ", text)
     return re.sub(r"\\s+", " ", html_lib.unescape(text)).strip()
-
-
-def _xoilac_find_match_pages(list_html, candidates, base_url):
-    if not list_html:
-        return {}
-    pages = {}
-    anchors = list(re.finditer("<a\\b[^>]*href=[\\\"']([^\\\"']*/truc-tiep/[^\\\"']+)[\\\"'][^>]*>", list_html, flags=re.I))
-    for item in candidates:
-        if provider_key(item["match"]) != "xoilacxth":
-            continue
-        home, away = _team_pair_from_match(item["match"])
-        if not home or not away:
-            continue
-        for m in anchors:
-            start = max(0, m.start() - 2200)
-            end = min(len(list_html), m.end() + 2200)
-            context = normalize_text(_strip_tags(list_html[start:end]))
-            if home in context and away in context:
-                pages[item["api_index"]] = urljoin(base_url.rstrip("/") + "/", html_lib.unescape(m.group(1)))
-                break
-    return pages
 
 
 def _extract_stream_url_from_text(text):
@@ -1450,99 +1235,19 @@ def _xoilac_player_links(page_html, page_url):
     return out
 
 
-def _xoilac_pages_from_json(text, base_url, candidates):
-    if not text:
-        return {}, {}
-    try:
-        payload = json.loads(text)
-    except Exception:
-        return {}, {}
-    rows = payload.get("data") if isinstance(payload, dict) else None
-    if not isinstance(rows, list):
-        return {}, {}
-    pair_map = _candidate_by_pair(candidates, "xoilacxth")
-    pages = {}
-    commentators = {}
-    for row in rows:
-        if not isinstance(row, dict):
-            continue
-        home_obj = row.get("home_team") if isinstance(row.get("home_team"), dict) else {}
-        away_obj = row.get("away_team") if isinstance(row.get("away_team"), dict) else {}
-        home = first_text(home_obj.get("name"), row.get("home_name"), row.get("home"))
-        away = first_text(away_obj.get("name"), row.get("away_name"), row.get("away"))
-        item = _best_candidate_for_pair(pair_map, home, away)
-        if not item:
-            continue
-        slug = first_text(row.get("slug"), row.get("seo_slug"))
-        detail = first_text(row.get("url"), row.get("link"), row.get("detail_url"))
-        if not detail and slug:
-            detail = f"/truc-tiep/{slug}"
-        if detail:
-            pages[item["api_index"]] = urljoin(base_url.rstrip("/") + "/", detail)
-        names = []
-        arr = row.get("commentators")
-        if isinstance(arr, list):
-            for c in arr:
-                if isinstance(c, dict):
-                    name = first_text(c.get("name"), c.get("nickName"), c.get("nickname"))
-                else:
-                    name = scalar_text(c)
-                if name and normalize_text(name) not in {normalize_text(x) for x in names}:
-                    names.append(name)
-        if names:
-            commentators[item["api_index"]] = names
-    return pages, commentators
-
-
-def _xoilac_listing_for_domain(base_url, candidates, category="football"):
-    headers = {"User-Agent": USER_AGENT, "Referer": base_url.rstrip("/") + "/"}
-    endpoint = base_url.rstrip("/") + f"/sport/{category}/filter/commentator"
-    listing = fetch_text(endpoint, headers, 5)
-    if not listing:
-        return {}, {}, headers
-    pages_json, commentators = _xoilac_pages_from_json(listing, base_url, candidates)
-    if pages_json:
-        return pages_json, commentators, headers
-    pages_html = _xoilac_find_match_pages(listing, candidates, base_url)
-    normalized = {}
-    for idx, page in pages_html.items():
-        try:
-            path = urlsplit(page).path
-        except Exception:
-            path = page
-        normalized[idx] = urljoin(base_url.rstrip("/") + "/", path.lstrip("/"))
-    return normalized, commentators, headers
-
-
 def fetch_xoilac_sources(candidates):
     relevant = [item for item in candidates if provider_key(item["match"]) == "xoilacxth"]
     if not relevant:
         return {}
     origins = _xoilac_origins({"matches": [item["match"] for item in relevant]})
     pages = {}
-    listed_commentators = {}
-    chosen_headers = {}
-    grouped={}
     for item in relevant:
         match = item["match"]
-        category = first_text(match.get("sport_slug"), match.get("sportSlug")) or sport_category(match).replace(" ", "-")
         direct = first_text(match.get("_xoilac_detail"))
         if not direct:
             direct = first_text(dict(parse_qsl(urlsplit(resolver_url(match)).query)).get("url"))
         if direct and f"{urlsplit(direct).scheme}://{urlsplit(direct).netloc}" in origins:
             pages[item["api_index"]] = direct
-        elif re.fullmatch(r"[a-z0-9][a-z0-9_-]{0,49}", category):
-            grouped.setdefault(category, []).append(item)
-    for category, group in grouped.items():
-        if all(item["api_index"] in pages for item in group):
-            continue
-        for base in origins:
-            domain_pages, domain_commentators, headers = _xoilac_listing_for_domain(base, group, category)
-            if domain_pages:
-                pages.update({k: v for k, v in domain_pages.items() if k not in pages})
-                listed_commentators.update({k: v for k, v in domain_commentators.items() if k not in listed_commentators})
-                for idx in domain_pages: chosen_headers[idx]=headers
-            if all(item["api_index"] in pages for item in group): break
     if not pages:
         return {}
 
@@ -1550,7 +1255,7 @@ def fetch_xoilac_sources(candidates):
     with ThreadPoolExecutor(max_workers=min(8, len(pages))) as ex:
         fmap = {}
         for idx, url in pages.items():
-            headers = chosen_headers.get(idx) or {"User-Agent": USER_AGENT, "Referer": url}
+            headers = {"User-Agent": USER_AGENT, "Referer": url}
             fmap[ex.submit(fetch_text, url, headers, 4)] = (idx, url)
         for fut in as_completed(fmap):
             idx, url = fmap[fut]
@@ -1583,17 +1288,9 @@ def fetch_xoilac_sources(candidates):
                     continue
                 fmt = "HLS" if ".m3u8" in stream.lower() else "FLV" if ".flv" in stream.lower() else ""
                 # Player-link text is a source identity, not automatically a commentator.
-                # Only bind a per-stream caster when the listing API explicitly gave
-                # commentator names and this source label matches exactly one of them.
-                # Otherwise leave it empty and use the match-level commentator from
-                # sport.json, exactly like SportStream does for the match card.
-                caster = ""
-                people = listed_commentators.get(idx, [])
-                if people:
-                    caster = people_match_from_evidence(people, [label])
                 obj = source_obj(
                     stream,
-                    caster=caster,
+                    caster="",
                     fmt=fmt,
                     headers={"User-Agent": USER_AGENT, "Referer": page_url},
                     name=label,
@@ -1986,6 +1683,95 @@ def resolver_url(match):
     return ""
 
 
+def declared_match_json_urls(match):
+    """Read API links declared for this match, including per-source resolvers."""
+    links = []
+    def add(value):
+        for raw in value if isinstance(value, list) else [value]:
+            url = _json_http_url(first_text(raw.get("url"), raw.get("href")) if isinstance(raw, dict) else raw)
+            if url and url not in links:
+                links.append(url)
+    for key in ("resolver", "resolvers", "resolve_url", "resolver_url", "json_url", "json_urls", "api_url", "api_urls", "sources_url", "streams_url", "_chuoi_detail", "_giovang_detail"):
+        add(match.get(key))
+    for group in ("sources", "streams", "links", "urls"):
+        for row in match.get(group, []) if isinstance(match.get(group), list) else []:
+            if isinstance(row, dict):
+                for key in JSON_REFERENCE_FIELDS:
+                    add(row.get(key))
+                candidates = (row.get("url"), row.get("link"))
+                if normalize_text(first_text(row.get("type"), row.get("format"))) in {"resolver", "json", "api"}:
+                    for value in candidates:
+                        add(value)
+                    continue
+            else:
+                candidates = (row,)
+            for value in candidates:
+                if urlsplit(first_text(value)).path.lower().endswith(".json"):
+                    add(value)
+    return links
+
+
+def fetch_match_json_bodies(matches):
+    requested = {}
+    for match in matches:
+        if not isinstance(match, dict):
+            continue
+        headers = normalize_headers(match.get("resolver_headers")) or normalize_headers(match.get("headers"))
+        for url in declared_match_json_urls(match):
+            requested.setdefault(url, headers)
+    urls = list(requested)
+    bodies = {}
+    if urls:
+        with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(urls))) as executor:
+            future_map = {executor.submit(fetch_fresh_resolver, url, requested[url]): url for url in urls}
+            for future in as_completed(future_map):
+                url = future_map[future]
+                try:
+                    bodies[url] = future.result()
+                except Exception:
+                    bodies[url] = None
+    print(f"[resolver] đã hỏi {len(urls)} URL JSON được các trận khai báo; {sum(isinstance(v, (dict, list)) for v in bodies.values())} trả JSON")
+    return bodies
+
+
+def refresh_match_from_json(match, bodies):
+    """Only overwrite match status when a newly fetched JSON declares it."""
+    recognized = LIVE_STATUSES | TERMINAL_STATUSES | {"upcoming", "scheduled", "ns", "not started", "chua bat dau"}
+    for body in bodies.values():
+        if not isinstance(body, dict):
+            continue
+        for obj in (body, body.get("match"), body.get("data"), body.get("response")):
+            if not isinstance(obj, dict):
+                continue
+            status = first_text(obj.get("status_code"), obj.get("matchStatus"), obj.get("status"))
+            if provider_key(match) == "colatv" and obj.get("matchStatus") == 2:
+                status = "live"
+            if normalize_text(status) in recognized:
+                match["status"] = status
+                match["status_code"] = status
+            if isinstance(obj.get("live"), bool):
+                match["live"] = obj["live"]
+            elif isinstance(obj.get("is_live"), bool):
+                match["live"] = obj["is_live"]
+            elif isinstance(obj.get("isLive"), bool):
+                match["live"] = obj["isLive"]
+            if first_text(obj.get("commentator"), obj.get("caster")):
+                match["commentator"] = first_text(obj.get("commentator"), obj.get("caster"))
+            league = _nested_obj(obj, "league") or _nested_obj(obj, "competition")
+            competition = first_text(obj.get("competition"), obj.get("league"),
+                                     league.get("name"), league.get("title"), obj.get("competitionName"))
+            if competition:
+                match["competition"] = competition
+            sport = first_text(obj.get("sport"), obj.get("sport_name"), obj.get("sportName"))
+            if sport:
+                match["sport"] = sport
+                match["sport_name"] = sport
+            if any(isinstance(obj.get(key), dict) for key in ("home", "homeTeam", "home_team", "teams")):
+                name = first_text(obj.get("name"), obj.get("match_name"), obj.get("matchName"), obj.get("title"))
+                if name:
+                    match["name"] = name
+
+
 def direct_sources(match):
     headers = normalize_headers(match.get("headers"))
     sources = []
@@ -1998,28 +1784,184 @@ def direct_sources(match):
                     continue
                 source = normalize_source(raw, headers, index)
                 index += 1
-                if source:
+                if source and _json_media_url(source["url"]) and normalize_text(first_text(source.get("type"), source.get("format"))) not in {"resolver", "json", "api"}:
                     sources.append(source)
     return dedupe_sources(sources)
 
 
 def resolver_sources(body, match):
-    if not isinstance(body, dict):
-        return []
-    array = body.get("sources")
-    if not isinstance(array, list):
-        return []
-    base_headers = normalize_headers(match.get("headers"))
-    sources = []
-    for index, raw in enumerate(array):
-        source = normalize_source(raw, base_headers, index)
-        if source:
-            sources.append(source)
-    return dedupe_sources(sources)
+    sources, _ = json_stream_fields(body, normalize_headers(match.get("headers")))
+    return dedupe_by_stream_url(sources)
 
 
-def fetch_fresh_resolver(url):
+JSON_STREAM_ARRAYS = frozenset({
+    "sources", "streams", "links", "urls", "streamUrls", "stream_urls",
+    "branchStreamUrls", "servers", "lives", "playbacks", "qualities",
+})
+JSON_STREAM_FIELDS = frozenset({
+    "videoUrl", "video_url", "playStreamAddress", "playStreamAddress2",
+    "mobile_stream_url", "pc_stream_url", "link_stream_hd", "link_stream_sd",
+    "stream_url", "streamUrl", "sourceUrl", "source_url", "play_url",
+    "playUrl", "hdM3u8", "m3u8", "hdFlv", "flv",
+})
+JSON_REFERENCE_FIELDS = frozenset({
+    "resolver", "resolvers", "resolve_url", "resolver_url", "api_url", "api_urls", "json_url", "json_urls",
+    "sources_url", "streams_url", "stream_api", "detail_api", "detail_url",
+})
+def _json_http_url(value, base=""):
+    raw = scalar_text(value)
+    if not raw or len(raw) > 4096:
+        return ""
+    try:
+        url = urljoin(base, raw) if base else raw
+        parsed = urlsplit(url)
+    except ValueError:
+        return ""
+    if parsed.scheme not in ("https", "http") or not parsed.hostname or parsed.username or parsed.password:
+        return ""
+    return url
+
+
+def _json_media_url(url):
+    path = urlsplit(url).path.lower()
+    return bool(path.strip("/")) and not path.endswith((".json", ".html", ".htm", ".jpg", ".jpeg", ".png", ".svg", ".webp"))
+
+
+def json_stream_fields(payload, fallback_headers=None, base_url="", inherited_caster=""):
+    """Read the API's stream fields and explicit JSON references, not arbitrary URLs."""
+    streams, references = [], []
+    base_headers = normalize_headers(fallback_headers)
+    count = 0
+
+    def walk(node, key="", headers=None, caster="", depth=0):
+        nonlocal count
+        if depth > 12 or count > 100000:
+            return
+        if isinstance(node, list):
+            for item in node:
+                walk(item, key, headers, caster, depth + 1)
+            return
+        if not isinstance(node, dict):
+            if isinstance(node, str) and key in JSON_STREAM_ARRAYS:
+                add(node, {}, headers, caster, key)
+            return
+        count += 1
+        current_headers = {**(headers or base_headers), **normalize_headers(node.get("headers"))}
+        # Only names attached to an anchor or an individual source belong to
+        # that stream. A match-wide commentator is not a per-stream identity.
+        local_caster = first_text(node.get("commentator"), node.get("blv"), node.get("caster"))
+        if key in ("blv", "blvs", "commentators", "anchorAppointmentVoList", "anchors", "sources", "streams"):
+            local_caster = first_text(local_caster, node.get("nickName"), node.get("nickname"), node.get("name") if key in ("blv", "blvs", "commentators", "anchorAppointmentVoList", "anchors") else "")
+        effective_caster = local_caster or caster
+        source_context = key in JSON_STREAM_ARRAYS or key in ("source", "stream", "playback")
+        owner_context = source_context or key in ("blv", "blvs", "commentators", "anchorAppointmentVoList", "anchors")
+        for field, value in node.items():
+            if field in JSON_REFERENCE_FIELDS:
+                for raw in value if isinstance(value, list) else [value]:
+                    link = _json_http_url(first_text(raw.get("url"), raw.get("href")) if isinstance(raw, dict) else raw, base_url)
+                    if link:
+                        references.append((link, effective_caster if owner_context else caster, current_headers))
+            elif field in JSON_STREAM_FIELDS:
+                add(value, node, current_headers, effective_caster if owner_context else caster, field)
+            elif field in ("url", "link", "src", "file") and source_context:
+                add(value, node, current_headers, effective_caster, field)
+            elif field in ("url", "link", "src", "file") and _json_http_url(value, base_url) and urlsplit(_json_http_url(value, base_url)).path.lower().endswith((".m3u8", ".flv", ".mpd", ".ts", ".mp4")):
+                add(value, node, current_headers, effective_caster if owner_context else caster, field)
+            elif isinstance(value, (dict, list)):
+                walk(value, field, current_headers, effective_caster if owner_context else caster, depth + 1)
+            elif source_context and isinstance(value, str) and _json_http_url(value, base_url):
+                path = urlsplit(_json_http_url(value, base_url)).path.lower()
+                if path.endswith((".m3u8", ".flv", ".mpd", ".ts", ".mp4")) or re.match(r"(?i)^(?:server|stream|hls|flv|cdn|backup)[\s_\-\d]*$", field):
+                    add(value, node, current_headers, effective_caster, field)
+
+    def add(value, container, headers, caster, field):
+        if isinstance(value, list):
+            for part in value:
+                add(part, container, headers, caster, field)
+            return
+        if isinstance(value, dict):
+            walk(value, field, headers, caster, 1)
+            return
+        url = _json_http_url(value, base_url)
+        if not url:
+            return
+        if urlsplit(url).path.lower().endswith(".json") or normalize_text(first_text(container.get("type"), container.get("format"))) in {"resolver", "json", "api"}:
+            references.append((url, caster, headers or base_headers))
+            return
+        if not _json_media_url(url):
+            return
+        obj = normalize_source({
+            "url": url, "headers": headers or base_headers,
+            "name": first_text(container.get("name") if field in ("url", "link", "src") else "", container.get("label")),
+            "type": first_text(container.get("type"), container.get("format")),
+            "quality": first_text(container.get("quality")),
+            "commentator": first_text(container.get("commentator"), container.get("blv"), container.get("caster"), caster),
+        }, api_index=len(streams))
+        if obj:
+            streams.append(obj)
+
+    walk(payload, headers=base_headers, caster=inherited_caster)
+    return dedupe_by_stream_url(streams), references
+
+
+def follow_json_streams(body, match, resolver, loaded=None, seen_urls=None):
+    """Follow only JSON references actually returned by an API, with cycle bounds."""
+    loaded = loaded if loaded is not None else {}
+    pending = [(resolver, body, "", normalize_headers(match.get("headers")), 0)]
+    visited, streams = set(), []
+    while pending and len(visited) < 64:
+        url, payload, caster, headers, depth = pending.pop(0)
+        if url in visited or depth > 3 or not isinstance(payload, (dict, list)):
+            continue
+        visited.add(url)
+        if seen_urls is not None and url not in seen_urls:
+            seen_urls.append(url)
+        found, refs = json_stream_fields(payload, headers, url, caster)
+        streams.extend(found)
+        for link, child_caster, child_headers in refs:
+            if link in visited or any(entry[0] == link for entry in pending):
+                continue
+            if link not in loaded:
+                loaded[link] = fetch_fresh_resolver(link, child_headers)
+            if isinstance(loaded[link], (dict, list)):
+                pending.append((link, loaded[link], child_caster, child_headers, depth + 1))
+    if pending:
+        print(f"[resolver] {resolver}: còn JSON liên kết chưa đọc do giới hạn 64 URL", file=sys.stderr)
+    return dedupe_by_stream_url(streams)
+
+
+def read_match_json_graphs(indexed_matches, root_bodies):
+    """Fetch linked JSON concurrently and keep metadata belonging to each match."""
+    streams_by_index, bodies_by_index = {}, {}
+    if not indexed_matches:
+        return streams_by_index, bodies_by_index
+
+    def read_one(index, match):
+        cache = dict(root_bodies)
+        seen = []
+        streams = []
+        for url in declared_match_json_urls(match):
+            streams.extend(follow_json_streams(cache.get(url), match, url, cache, seen))
+        return index, dedupe_by_stream_url(streams), {url: cache[url] for url in seen if isinstance(cache.get(url), dict)}
+
+    with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(indexed_matches))) as executor:
+        futures = [executor.submit(read_one, index, match) for index, match in indexed_matches]
+        for future in as_completed(futures):
+            try:
+                index, streams, bodies = future.result()
+                streams_by_index[index] = streams
+                bodies_by_index[index] = bodies
+            except Exception as exc:
+                print(f"[resolver] lỗi đọc JSON liên kết: {exc}", file=sys.stderr)
+    print(f"[resolver] luồng từ JSON liên kết: {sum(len(v) for v in streams_by_index.values())}; phản hồi JSON: {sum(len(v) for v in bodies_by_index.values())}")
+    return streams_by_index, bodies_by_index
+
+
+def fetch_fresh_resolver(url, headers=None):
     # Prefer a fresh resolve; some providers reject extra query parameters.
+    if headers:
+        return (fetch_json_custom(url, headers, RESOLVER_TIMEOUT, True)
+                or fetch_json_custom(url, headers, RESOLVER_TIMEOUT, False))
     return fetch_json(url, RESOLVER_TIMEOUT, 1, True) or fetch_json(url, RESOLVER_TIMEOUT, 1, False)
 
 
@@ -2199,6 +2141,11 @@ def source_commentator(source, match):
     if direct_caster:
         return direct_caster
 
+    # A single source-level field is explicit metadata; keep its spelling.
+    written_caster = first_text(source.get("commentator"), source.get("blv"), source.get("caster"))
+    if written_caster and len(split_people(written_caster)) == 1:
+        return written_caster
+
     explicit = explicit_source_people(source)
     if len(explicit) == 1:
         return explicit[0]
@@ -2341,11 +2288,12 @@ def stable_source_id(match, source):
     return "sport-" + hashlib.sha1(raw).hexdigest()[:12]
 
 
-def resolve_all(candidates):
-    chuoi_detail_map = fetch_chuoichien_detail_sources(candidates)
-    giovang_map = fetch_giovang_sources(candidates)
+def resolve_all(candidates, json_source_map=None):
+    # Provider-declared detail JSON is already included in json_source_map.
     xoilac_map = fetch_xoilac_sources(candidates)
-    resolver_to_matches = {}
+    if json_source_map is None:
+        roots = fetch_match_json_bodies([item["match"] for item in candidates])
+        json_source_map, _ = read_match_json_graphs([(item["api_index"], item["match"]) for item in candidates], roots)
     embedded_map = {}
     fresh_provider_map = {}
     provider_direct_map = {}
@@ -2354,45 +2302,20 @@ def resolve_all(candidates):
         embedded_map[item["api_index"]] = direct_sources(match)
         fresh_provider_map[item["api_index"]] = direct_sources({"sources": match.get("_provider_sources", [])})
         idx = item["api_index"]
-        provider_direct_map[idx] = dedupe_by_stream_url(
-            chuoi_detail_map.get(idx, [])
-            + giovang_map.get(idx, [])
-            + xoilac_map.get(idx, [])
-        )
-        url = resolver_url(match)
-        if url:
-            resolver_to_matches.setdefault(url, []).append(item["api_index"])
-
-    bodies = {}
-    urls = list(resolver_to_matches)
-    if urls:
-        with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(urls))) as executor:
-            future_map = {executor.submit(fetch_fresh_resolver, url): url for url in urls}
-            for future in as_completed(future_map):
-                url = future_map[future]
-                try:
-                    bodies[url] = future.result()
-                except Exception:
-                    bodies[url] = None
+        provider_direct_map[idx] = dedupe_by_stream_url(xoilac_map.get(idx, []))
 
     resolved = []
     for item in candidates:
         match = item["match"]
         exact = provider_direct_map.get(item["api_index"], [])
         direct = fresh_provider_map.get(item["api_index"], [])
-        url = resolver_url(match)
-        remote = resolver_sources(bodies.get(url), match) if url else []
-        if (direct or exact) and remote:
-            # A resolver can itself serve cached data. When an independently
-            # fetched provider API has links, don't reintroduce a resolver URL
-            # identical to the older link embedded in sport.json.
-            cached_urls = {source["url"] for source in embedded_map.get(item["api_index"], [])}
-            remote = [source for source in remote if source["url"] not in cached_urls]
+        urls = declared_match_json_urls(match)
+        remote = json_source_map.get(item["api_index"], [])
         # Combine the current direct feed and freshly called resolver: the
         # resolver may expose additional commentators/backup servers. Never
         # reuse embedded sport.json sources when a resolver exists; those URLs
         # may predate a CDN change. The provider feed is first for its caster.
-        embedded = embedded_map.get(item["api_index"], []) if not url and not (direct or exact) else []
+        embedded = embedded_map.get(item["api_index"], []) if not urls and not (direct or exact) else []
         if direct:
             sources = dedupe_by_stream_url(direct + remote + exact)
         elif exact and provider_key(match) in ("giovang", "chuoichien"):
@@ -2430,6 +2353,13 @@ def build_playlist():
     matches = data.get("matches") if isinstance(data.get("matches"), list) else []
     supplements = fetch_all_provider_supplements(data)
     matches = merge_supplement_matches(matches, supplements)
+    # Resolve the current API JSON before time filtering: a long-running event
+    # can have an old kickoff and a freshly declared live status.
+    resolver_bodies = fetch_match_json_bodies(matches)
+    indexed_matches = [(index, match) for index, match in enumerate(matches) if isinstance(match, dict)]
+    json_source_map, json_metadata = read_match_json_graphs(indexed_matches, resolver_bodies)
+    for index, match in indexed_matches:
+        refresh_match_from_json(match, json_metadata.get(index, {}))
     current = now_ms()
     future_end = end_of_next_vietnam_day(current)
     candidates = []
@@ -2440,7 +2370,7 @@ def build_playlist():
         if state:
             candidates.append({"match": match, "state": state, "api_index": api_index})
 
-    resolved = resolve_all(candidates)
+    resolved = resolve_all(candidates, json_source_map)
     if candidates and not resolved:
         raise RuntimeError("Không resolve được luồng nào; giữ playlist cũ")
 
