@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url=""
-#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 14:31 27/09" group-title="🕒 Cập nhật 14:31 27/09",🕒 Cập nhật 14:31 27/09
+#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 14:45 27/09" group-title="🕒 Cập nhật 14:45 27/09",🕒 Cập nhật 14:45 27/09
 http://127.0.0.1/
 #EXTINF:-1 tvg-id="sport-087b8bbe636d" tvg-name="Hong Kong vs Laos" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png" group-title="Gà Vàng 33",🔴 [14:00] 27/09 ⚽ Hong Kong vs Laos [HLS]
 #EXTGRP:Gà Vàng 33
@@ -41,6 +41,16 @@ https://live2.zktsva.app/live/301263.m3u8|Referer=https%3A%2F%2Fgavang33.me%2F&O
 #EXTVLCOPT:http-referrer=https://gavang33.me/
 #EXTVLCOPT:http-origin=https://gavang33.me
 https://live2.zktsva.app/live/301263.flv|Referer=https%3A%2F%2Fgavang33.me%2F&Origin=https%3A%2F%2Fgavang33.me
+#EXTINF:-1 tvg-id="sport-e3f9373c6d3a" tvg-name="China vs New Zealand" tvg-logo="https://img.gvapi.cc/football/team/445ef89e5620a875f7c2eaddd033e39d.png" group-title="Gà Vàng 33",[18:35] 27/09 ⚽ China vs New Zealand [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.me/
+#EXTVLCOPT:http-origin=https://gavang33.me
+https://live2.zktsva.app/live/307240.m3u8|Referer=https%3A%2F%2Fgavang33.me%2F&Origin=https%3A%2F%2Fgavang33.me
+#EXTINF:-1 tvg-id="sport-c75b2f18e6f5" tvg-name="China vs New Zealand" tvg-logo="https://img.gvapi.cc/football/team/445ef89e5620a875f7c2eaddd033e39d.png" group-title="Gà Vàng 33",[18:35] 27/09 ⚽ China vs New Zealand [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.me/
+#EXTVLCOPT:http-origin=https://gavang33.me
+https://live2.zktsva.app/live/307240.flv|Referer=https%3A%2F%2Fgavang33.me%2F&Origin=https%3A%2F%2Fgavang33.me
 #EXTINF:-1 tvg-id="sport-6e0147ff7c35" tvg-name="Real Valladolid CF vs Cordoba" tvg-logo="https://img.gvapi.cc/football/team/fdf63461c00668597319a4f0db14dcee.png" group-title="Gà Vàng 33",[19:00] 27/09 ⚽ Real Valladolid CF vs Cordoba [HLS]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-referrer=https://gavang33.me/
@@ -351,812 +361,892 @@ https://live2.zktsva.app/live/741294.m3u8|Referer=https%3A%2F%2Fgavang33.me%2F&O
 #EXTVLCOPT:http-referrer=https://gavang33.me/
 #EXTVLCOPT:http-origin=https://gavang33.me
 https://live2.zktsva.app/live/741294.flv|Referer=https%3A%2F%2Fgavang33.me%2F&Origin=https%3A%2F%2Fgavang33.me
-#EXTINF:-1 tvg-id="sport-d0ecde515c68" tvg-name="China vs New Zealand" tvg-logo="" group-title="Gà Vàng 33",[18:35] 27/09 🏅 China vs New Zealand (Gà Siêu Tốc) [HLS]
-#EXTGRP:Gà Vàng 33
-#EXTVLCOPT:http-referrer=https://gavang33.co/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://live2.zktsva.app/live/307240.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
-#EXTINF:-1 tvg-id="sport-a998112b1310" tvg-name="China vs New Zealand" tvg-logo="" group-title="Gà Vàng 33",[18:35] 27/09 🏅 China vs New Zealand (Gà Siêu Tốc) [FLV]
-#EXTGRP:Gà Vàng 33
-#EXTVLCOPT:http-referrer=https://gavang33.co/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://live2.zktsva.app/live/307240.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
-#EXTINF:-1 tvg-id="sport-47069d607fba" tvg-name="Hồng Kông vs Lào" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png!w80" group-title="CoLaTV",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào • ASEAN Cup [HLS]
+#EXTINF:-1 tvg-id="sport-47069d607fba" tvg-name="Hồng Kông vs Lào" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png!w80" group-title="CoLaTV",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào (REVIVE) • ASEAN Cup [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/33982309_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-384c9a986d9e" tvg-name="Hồng Kông vs Lào" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png!w80" group-title="CoLaTV",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào • ASEAN Cup [HLS]
+#EXTINF:-1 tvg-id="sport-384c9a986d9e" tvg-name="Hồng Kông vs Lào" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png!w80" group-title="CoLaTV",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào (REVIVE) • ASEAN Cup [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/33982309_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-469cab287b68" tvg-name="Hồng Kông vs Lào" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png!w80" group-title="CoLaTV",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào • ASEAN Cup [HLS]
+#EXTINF:-1 tvg-id="sport-b3f4440fcf71" tvg-name="Hồng Kông vs Lào" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png!w80" group-title="CoLaTV",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào (REVIVE) • ASEAN Cup [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://colatv77.live/
+#EXTVLCOPT:http-origin=https://colatv77.live
+https://live05.meung.app/live/33982309_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
+#EXTINF:-1 tvg-id="sport-469cab287b68" tvg-name="Hồng Kông vs Lào" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png!w80" group-title="CoLaTV",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào (SODA) • ASEAN Cup [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/02456966_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-a0914ace5e22" tvg-name="Hồng Kông vs Lào" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png!w80" group-title="CoLaTV",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào • ASEAN Cup [HLS]
+#EXTINF:-1 tvg-id="sport-a0914ace5e22" tvg-name="Hồng Kông vs Lào" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png!w80" group-title="CoLaTV",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào (SODA) • ASEAN Cup [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/02456966_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-d898b1e52b9f" tvg-name="Hồng Kông vs Lào" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png!w80" group-title="CoLaTV",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào • ASEAN Cup [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://colatv77.live/
-#EXTVLCOPT:http-origin=https://colatv77.live
-https://live.dyrur1.com/live/74557416_289b770fa2001979b2e14275d1f566ba_autoChange.m3u8?auth_key=1790508693-0-0-66743cf4e92635932316d9e1378e8aa2|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-b3f4440fcf71" tvg-name="Hồng Kông vs Lào" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png!w80" group-title="CoLaTV",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào • ASEAN Cup [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://colatv77.live/
-#EXTVLCOPT:http-origin=https://colatv77.live
-https://live05.meung.app/live/33982309_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-61268ef17522" tvg-name="Hồng Kông vs Lào" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png!w80" group-title="CoLaTV",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào • ASEAN Cup [FLV]
+#EXTINF:-1 tvg-id="sport-61268ef17522" tvg-name="Hồng Kông vs Lào" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png!w80" group-title="CoLaTV",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào (SODA) • ASEAN Cup [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/02456966_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-8af64eaa1b10" tvg-name="Campuchia vs Myanmar" tvg-logo="https://img.gvapi.cc/football/team/31d64389a45aaeb7a61c9b76b72be555.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Campuchia vs Myanmar • ASEAN Cup [HLS]
+#EXTINF:-1 tvg-id="sport-3818fbff2fcb" tvg-name="Hồng Kông vs Lào" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png!w80" group-title="CoLaTV",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào (BLV REVIVE / BLV SODA) • ASEAN Cup [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://colatv77.live/
+#EXTVLCOPT:http-origin=https://colatv77.live
+https://live.dyrur1.com/live/74557416_289b770fa2001979b2e14275d1f566ba_autoChange.m3u8?auth_key=1790509522-0-0-97a7d8589a2229abc0d2adae446f9490|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
+#EXTINF:-1 tvg-id="sport-6835d0f8e0c5" tvg-name="Adelaide 36ers vs Cairns Taipans" tvg-logo="https://img.gvapi.cc/basketball/team/af9d0a8374fb9658485eadbe1e224f4c.png!w80" group-title="CoLaTV",🔴 [13:00] 27/09 🏀 Adelaide 36ers vs Cairns Taipans (BLV Cozy) • Liên đoàn Bóng rổ Quốc gia Úc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/87379114_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-957686b9f2ce" tvg-name="Adelaide 36ers vs Cairns Taipans" tvg-logo="https://img.gvapi.cc/basketball/team/af9d0a8374fb9658485eadbe1e224f4c.png!w80" group-title="CoLaTV",🔴 [13:00] 27/09 🏀 Adelaide 36ers vs Cairns Taipans (BLV Cozy) • Liên đoàn Bóng rổ Quốc gia Úc [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/87379114_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-6f61223ccad3" tvg-name="KCC Egis vs Incheon" tvg-logo="https://img.gvapi.cc/basketball/team/0add24fc964de3ea25e83417aa301f81.png!w80" group-title="CoLaTV",🔴 [14:30] 27/09 🏀 KCC Egis vs Incheon (BLV POCARI) • Korean Basketball League Open Match Day [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/19919577_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-9f45514a30be" tvg-name="KCC Egis vs Incheon" tvg-logo="https://img.gvapi.cc/basketball/team/0add24fc964de3ea25e83417aa301f81.png!w80" group-title="CoLaTV",🔴 [14:30] 27/09 🏀 KCC Egis vs Incheon (BLV POCARI) • Korean Basketball League Open Match Day [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/19919577_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-d9778052d510" tvg-name="Sydney vs Illawarra Hawks" tvg-logo="https://img.gvapi.cc/basketball/team/eba4bbba15054de591179e0001ab718b.png!w80" group-title="CoLaTV",[15:00] 27/09 🏀 Sydney vs Illawarra Hawks (BLV ROCKSTAR) • Liên đoàn Bóng rổ Quốc gia Úc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/82054853_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-bd670e0c82c7" tvg-name="Sydney vs Illawarra Hawks" tvg-logo="https://img.gvapi.cc/basketball/team/eba4bbba15054de591179e0001ab718b.png!w80" group-title="CoLaTV",[15:00] 27/09 🏀 Sydney vs Illawarra Hawks (BLV ROCKSTAR) • Liên đoàn Bóng rổ Quốc gia Úc [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/82054853_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-b34c882a13fd" tvg-name="Hanoi buffalo vs Sài Gòn Heat" tvg-logo="https://img.gvapi.cc/basketball/team/36de6e50c9a54ca558d69ae01ded3ac8.png!w80" group-title="CoLaTV",[19:30] 27/09 🏀 Hanoi buffalo vs Sài Gòn Heat (BLV POCARI) • Giải Bóng rổ VBA Việt Nam [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/19919577_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-20b25990849a" tvg-name="Hanoi buffalo vs Sài Gòn Heat" tvg-logo="https://img.gvapi.cc/basketball/team/36de6e50c9a54ca558d69ae01ded3ac8.png!w80" group-title="CoLaTV",[19:30] 27/09 🏀 Hanoi buffalo vs Sài Gòn Heat (BLV POCARI) • Giải Bóng rổ VBA Việt Nam [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/19919577_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-71d59ba48a43" tvg-name="Minnesota Lynx vs New York Liberty" tvg-logo="https://img.gvapi.cc/basketball/team/49fd2772263eaccfe78608a04e5b6f4c.png!w80" group-title="CoLaTV",[01:00] 28/09 🏀 Minnesota Lynx vs New York Liberty (BLV POCARI) • Hiệp hội bóng rổ quốc gia nữ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/19919577_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-47e537a5f0d0" tvg-name="Minnesota Lynx vs New York Liberty" tvg-logo="https://img.gvapi.cc/basketball/team/49fd2772263eaccfe78608a04e5b6f4c.png!w80" group-title="CoLaTV",[01:00] 28/09 🏀 Minnesota Lynx vs New York Liberty (BLV POCARI) • Hiệp hội bóng rổ quốc gia nữ [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/19919577_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-6821a3e8bc2b" tvg-name="Las Vegas Aces vs Indiana Fever" tvg-logo="https://img.gvapi.cc/basketball/team/ce8ab1125fdb3fdbd8c09dba8c437c49.png!w80" group-title="CoLaTV",[03:00] 28/09 🏀 Las Vegas Aces vs Indiana Fever (BLV 247) • Hiệp hội bóng rổ quốc gia nữ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/90865415_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-4f2f04062682" tvg-name="Las Vegas Aces vs Indiana Fever" tvg-logo="https://img.gvapi.cc/basketball/team/ce8ab1125fdb3fdbd8c09dba8c437c49.png!w80" group-title="CoLaTV",[03:00] 28/09 🏀 Las Vegas Aces vs Indiana Fever (BLV 247) • Hiệp hội bóng rổ quốc gia nữ [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/90865415_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-701e3d0d52be" tvg-name="Atlanta Dream vs Washington Mystics" tvg-logo="https://img.gvapi.cc/basketball/team/be3ef0f7745b3b45b846fac31ca987c6.png!w80" group-title="CoLaTV",[06:00] 28/09 🏀 Atlanta Dream vs Washington Mystics (BLV Cozy) • Hiệp hội bóng rổ quốc gia nữ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/87379114_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-285e9d5a59ba" tvg-name="Atlanta Dream vs Washington Mystics" tvg-logo="https://img.gvapi.cc/basketball/team/be3ef0f7745b3b45b846fac31ca987c6.png!w80" group-title="CoLaTV",[06:00] 28/09 🏀 Atlanta Dream vs Washington Mystics (BLV Cozy) • Hiệp hội bóng rổ quốc gia nữ [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/87379114_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-7529d713b7b6" tvg-name="Golden State Valkyries vs Dallas Wings" tvg-logo="https://img.gvapi.cc/basketball/team/380d81d4050b81debf9a5500239e96d0.png!w80" group-title="CoLaTV",[08:00] 28/09 🏀 Golden State Valkyries vs Dallas Wings (BLV ROCKSTAR) • Hiệp hội bóng rổ quốc gia nữ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/82054853_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-89b962ad2d3a" tvg-name="Golden State Valkyries vs Dallas Wings" tvg-logo="https://img.gvapi.cc/basketball/team/380d81d4050b81debf9a5500239e96d0.png!w80" group-title="CoLaTV",[08:00] 28/09 🏀 Golden State Valkyries vs Dallas Wings (BLV ROCKSTAR) • Hiệp hội bóng rổ quốc gia nữ [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/82054853_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-8af64eaa1b10" tvg-name="Campuchia vs Myanmar" tvg-logo="https://img.gvapi.cc/football/team/31d64389a45aaeb7a61c9b76b72be555.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Campuchia vs Myanmar (C2) • ASEAN Cup [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/08552895_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-af3c79a6924a" tvg-name="Campuchia vs Myanmar" tvg-logo="https://img.gvapi.cc/football/team/31d64389a45aaeb7a61c9b76b72be555.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Campuchia vs Myanmar • ASEAN Cup [HLS]
+#EXTINF:-1 tvg-id="sport-af3c79a6924a" tvg-name="Campuchia vs Myanmar" tvg-logo="https://img.gvapi.cc/football/team/31d64389a45aaeb7a61c9b76b72be555.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Campuchia vs Myanmar (C2) • ASEAN Cup [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/08552895_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-5c4cb2ef1731" tvg-name="Campuchia vs Myanmar" tvg-logo="https://img.gvapi.cc/football/team/31d64389a45aaeb7a61c9b76b72be555.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Campuchia vs Myanmar • ASEAN Cup [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://colatv77.live/
-#EXTVLCOPT:http-origin=https://colatv77.live
-https://live05.meung.app/live/14707124_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-980df89753ec" tvg-name="Campuchia vs Myanmar" tvg-logo="https://img.gvapi.cc/football/team/31d64389a45aaeb7a61c9b76b72be555.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Campuchia vs Myanmar • ASEAN Cup [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://colatv77.live/
-#EXTVLCOPT:http-origin=https://colatv77.live
-https://live05.miekgo.app/live/14707124_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-c15b34d876e5" tvg-name="Campuchia vs Myanmar" tvg-logo="https://img.gvapi.cc/football/team/31d64389a45aaeb7a61c9b76b72be555.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Campuchia vs Myanmar • ASEAN Cup [FLV]
+#EXTINF:-1 tvg-id="sport-c15b34d876e5" tvg-name="Campuchia vs Myanmar" tvg-logo="https://img.gvapi.cc/football/team/31d64389a45aaeb7a61c9b76b72be555.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Campuchia vs Myanmar (C2) • ASEAN Cup [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/08552895_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-ffc505074a69" tvg-name="Campuchia vs Myanmar" tvg-logo="https://img.gvapi.cc/football/team/31d64389a45aaeb7a61c9b76b72be555.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Campuchia vs Myanmar • ASEAN Cup [FLV]
+#EXTINF:-1 tvg-id="sport-5c4cb2ef1731" tvg-name="Campuchia vs Myanmar" tvg-logo="https://img.gvapi.cc/football/team/31d64389a45aaeb7a61c9b76b72be555.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Campuchia vs Myanmar (STING) • ASEAN Cup [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://colatv77.live/
+#EXTVLCOPT:http-origin=https://colatv77.live
+https://live05.meung.app/live/14707124_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
+#EXTINF:-1 tvg-id="sport-980df89753ec" tvg-name="Campuchia vs Myanmar" tvg-logo="https://img.gvapi.cc/football/team/31d64389a45aaeb7a61c9b76b72be555.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Campuchia vs Myanmar (STING) • ASEAN Cup [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://colatv77.live/
+#EXTVLCOPT:http-origin=https://colatv77.live
+https://live05.miekgo.app/live/14707124_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
+#EXTINF:-1 tvg-id="sport-ffc505074a69" tvg-name="Campuchia vs Myanmar" tvg-logo="https://img.gvapi.cc/football/team/31d64389a45aaeb7a61c9b76b72be555.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Campuchia vs Myanmar (STING) • ASEAN Cup [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/14707124_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-8a74e2f66f7a" tvg-name="Gangwon vs Incheon United" tvg-logo="https://img.gvapi.cc/football/team/771a93ae7f62b1a47a71c3d62b89dca3.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Gangwon vs Incheon United • Giải K1 Hàn Quốc [HLS]
+#EXTINF:-1 tvg-id="sport-8a74e2f66f7a" tvg-name="Gangwon vs Incheon United" tvg-logo="https://img.gvapi.cc/football/team/771a93ae7f62b1a47a71c3d62b89dca3.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Gangwon vs Incheon United (PEPSI) • Giải K1 Hàn Quốc [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/59444581_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-b714d89ac7ae" tvg-name="Gangwon vs Incheon United" tvg-logo="https://img.gvapi.cc/football/team/771a93ae7f62b1a47a71c3d62b89dca3.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Gangwon vs Incheon United • Giải K1 Hàn Quốc [HLS]
+#EXTINF:-1 tvg-id="sport-b714d89ac7ae" tvg-name="Gangwon vs Incheon United" tvg-logo="https://img.gvapi.cc/football/team/771a93ae7f62b1a47a71c3d62b89dca3.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Gangwon vs Incheon United (PEPSI) • Giải K1 Hàn Quốc [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/59444581_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-f32e4754925d" tvg-name="Gangwon vs Incheon United" tvg-logo="https://img.gvapi.cc/football/team/771a93ae7f62b1a47a71c3d62b89dca3.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Gangwon vs Incheon United • Giải K1 Hàn Quốc [FLV]
+#EXTINF:-1 tvg-id="sport-f32e4754925d" tvg-name="Gangwon vs Incheon United" tvg-logo="https://img.gvapi.cc/football/team/771a93ae7f62b1a47a71c3d62b89dca3.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Gangwon vs Incheon United (PEPSI) • Giải K1 Hàn Quốc [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/59444581_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-5684ccd343cb" tvg-name="Đồng Tháp vs Thai Nguyen" tvg-logo="https://img.gvapi.cc/football/team/aaf7ff777567dba636caf52a05a45c31.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Đồng Tháp vs Thai Nguyen • Giải Bóng đá Hạng Nhất Quốc Gia Việt Nam [HLS]
+#EXTINF:-1 tvg-id="sport-5684ccd343cb" tvg-name="Đồng Tháp vs Thai Nguyen" tvg-logo="https://img.gvapi.cc/football/team/aaf7ff777567dba636caf52a05a45c31.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Đồng Tháp vs Thai Nguyen (FANTA) • Giải Bóng đá Hạng Nhất Quốc Gia Việt Nam [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/16226575_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-23a861057862" tvg-name="Đồng Tháp vs Thai Nguyen" tvg-logo="https://img.gvapi.cc/football/team/aaf7ff777567dba636caf52a05a45c31.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Đồng Tháp vs Thai Nguyen • Giải Bóng đá Hạng Nhất Quốc Gia Việt Nam [HLS]
+#EXTINF:-1 tvg-id="sport-23a861057862" tvg-name="Đồng Tháp vs Thai Nguyen" tvg-logo="https://img.gvapi.cc/football/team/aaf7ff777567dba636caf52a05a45c31.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Đồng Tháp vs Thai Nguyen (FANTA) • Giải Bóng đá Hạng Nhất Quốc Gia Việt Nam [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/16226575_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-08eaba8caa1b" tvg-name="Đồng Tháp vs Thai Nguyen" tvg-logo="https://img.gvapi.cc/football/team/aaf7ff777567dba636caf52a05a45c31.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Đồng Tháp vs Thai Nguyen • Giải Bóng đá Hạng Nhất Quốc Gia Việt Nam [FLV]
+#EXTINF:-1 tvg-id="sport-08eaba8caa1b" tvg-name="Đồng Tháp vs Thai Nguyen" tvg-logo="https://img.gvapi.cc/football/team/aaf7ff777567dba636caf52a05a45c31.png!w80" group-title="CoLaTV",[17:00] 27/09 ⚽ Đồng Tháp vs Thai Nguyen (FANTA) • Giải Bóng đá Hạng Nhất Quốc Gia Việt Nam [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/16226575_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-532ff864d946" tvg-name="Tân Châu Huệ Long vs Đại Liên Hoa Nghị" tvg-logo="https://img.gvapi.cc/football/team/69b0ed18e16d15d6888baad52e6fa88f.png!w80" group-title="CoLaTV",[18:00] 27/09 ⚽ Tân Châu Huệ Long vs Đại Liên Hoa Nghị • Giải bóng đá Hạng nhất Trung Quốc [HLS]
+#EXTINF:-1 tvg-id="sport-532ff864d946" tvg-name="Tân Châu Huệ Long vs Đại Liên Hoa Nghị" tvg-logo="https://img.gvapi.cc/football/team/69b0ed18e16d15d6888baad52e6fa88f.png!w80" group-title="CoLaTV",[18:00] 27/09 ⚽ Tân Châu Huệ Long vs Đại Liên Hoa Nghị (AQUA) • Giải bóng đá Hạng nhất Trung Quốc [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/18812304_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-0168f7360e4c" tvg-name="Tân Châu Huệ Long vs Đại Liên Hoa Nghị" tvg-logo="https://img.gvapi.cc/football/team/69b0ed18e16d15d6888baad52e6fa88f.png!w80" group-title="CoLaTV",[18:00] 27/09 ⚽ Tân Châu Huệ Long vs Đại Liên Hoa Nghị • Giải bóng đá Hạng nhất Trung Quốc [HLS]
+#EXTINF:-1 tvg-id="sport-0168f7360e4c" tvg-name="Tân Châu Huệ Long vs Đại Liên Hoa Nghị" tvg-logo="https://img.gvapi.cc/football/team/69b0ed18e16d15d6888baad52e6fa88f.png!w80" group-title="CoLaTV",[18:00] 27/09 ⚽ Tân Châu Huệ Long vs Đại Liên Hoa Nghị (AQUA) • Giải bóng đá Hạng nhất Trung Quốc [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/18812304_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-a0758c04372d" tvg-name="Tân Châu Huệ Long vs Đại Liên Hoa Nghị" tvg-logo="https://img.gvapi.cc/football/team/69b0ed18e16d15d6888baad52e6fa88f.png!w80" group-title="CoLaTV",[18:00] 27/09 ⚽ Tân Châu Huệ Long vs Đại Liên Hoa Nghị • Giải bóng đá Hạng nhất Trung Quốc [FLV]
+#EXTINF:-1 tvg-id="sport-a0758c04372d" tvg-name="Tân Châu Huệ Long vs Đại Liên Hoa Nghị" tvg-logo="https://img.gvapi.cc/football/team/69b0ed18e16d15d6888baad52e6fa88f.png!w80" group-title="CoLaTV",[18:00] 27/09 ⚽ Tân Châu Huệ Long vs Đại Liên Hoa Nghị (AQUA) • Giải bóng đá Hạng nhất Trung Quốc [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/18812304_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-630b0651a906" tvg-name="Trung Quốc vs New Zealand" tvg-logo="https://img.gvapi.cc/football/team/445ef89e5620a875f7c2eaddd033e39d.png!w80" group-title="CoLaTV",[18:35] 27/09 ⚽ Trung Quốc vs New Zealand • CFA Team China International Tournament [HLS]
+#EXTINF:-1 tvg-id="sport-630b0651a906" tvg-name="Trung Quốc vs New Zealand" tvg-logo="https://img.gvapi.cc/football/team/445ef89e5620a875f7c2eaddd033e39d.png!w80" group-title="CoLaTV",[18:35] 27/09 ⚽ Trung Quốc vs New Zealand (REVIVE) • CFA Team China International Tournament [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/33982309_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-50e929233fc2" tvg-name="Trung Quốc vs New Zealand" tvg-logo="https://img.gvapi.cc/football/team/445ef89e5620a875f7c2eaddd033e39d.png!w80" group-title="CoLaTV",[18:35] 27/09 ⚽ Trung Quốc vs New Zealand • CFA Team China International Tournament [HLS]
+#EXTINF:-1 tvg-id="sport-50e929233fc2" tvg-name="Trung Quốc vs New Zealand" tvg-logo="https://img.gvapi.cc/football/team/445ef89e5620a875f7c2eaddd033e39d.png!w80" group-title="CoLaTV",[18:35] 27/09 ⚽ Trung Quốc vs New Zealand (REVIVE) • CFA Team China International Tournament [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/33982309_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-f9bbb61c2347" tvg-name="Trung Quốc vs New Zealand" tvg-logo="https://img.gvapi.cc/football/team/445ef89e5620a875f7c2eaddd033e39d.png!w80" group-title="CoLaTV",[18:35] 27/09 ⚽ Trung Quốc vs New Zealand • CFA Team China International Tournament [FLV]
+#EXTINF:-1 tvg-id="sport-f9bbb61c2347" tvg-name="Trung Quốc vs New Zealand" tvg-logo="https://img.gvapi.cc/football/team/445ef89e5620a875f7c2eaddd033e39d.png!w80" group-title="CoLaTV",[18:35] 27/09 ⚽ Trung Quốc vs New Zealand (REVIVE) • CFA Team China International Tournament [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/33982309_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-b09a45382c0a" tvg-name="Trung Quốc vs New Zealand" tvg-logo="https://img.gvapi.cc/football/team/445ef89e5620a875f7c2eaddd033e39d.png!w80" group-title="CoLaTV",[18:35] 27/09 ⚽ Trung Quốc vs New Zealand • CFA Team China International Tournament [HLS]
+#EXTINF:-1 tvg-id="sport-b09a45382c0a" tvg-name="Trung Quốc vs New Zealand" tvg-logo="https://img.gvapi.cc/football/team/445ef89e5620a875f7c2eaddd033e39d.png!w80" group-title="CoLaTV",[18:35] 27/09 ⚽ Trung Quốc vs New Zealand (SPRITE) • CFA Team China International Tournament [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/75748097_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-c0d2d25fc7b1" tvg-name="Trung Quốc vs New Zealand" tvg-logo="https://img.gvapi.cc/football/team/445ef89e5620a875f7c2eaddd033e39d.png!w80" group-title="CoLaTV",[18:35] 27/09 ⚽ Trung Quốc vs New Zealand • CFA Team China International Tournament [HLS]
+#EXTINF:-1 tvg-id="sport-c0d2d25fc7b1" tvg-name="Trung Quốc vs New Zealand" tvg-logo="https://img.gvapi.cc/football/team/445ef89e5620a875f7c2eaddd033e39d.png!w80" group-title="CoLaTV",[18:35] 27/09 ⚽ Trung Quốc vs New Zealand (SPRITE) • CFA Team China International Tournament [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/75748097_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-6f04aaf3ad1c" tvg-name="Trung Quốc vs New Zealand" tvg-logo="https://img.gvapi.cc/football/team/445ef89e5620a875f7c2eaddd033e39d.png!w80" group-title="CoLaTV",[18:35] 27/09 ⚽ Trung Quốc vs New Zealand • CFA Team China International Tournament [FLV]
+#EXTINF:-1 tvg-id="sport-6f04aaf3ad1c" tvg-name="Trung Quốc vs New Zealand" tvg-logo="https://img.gvapi.cc/football/team/445ef89e5620a875f7c2eaddd033e39d.png!w80" group-title="CoLaTV",[18:35] 27/09 ⚽ Trung Quốc vs New Zealand (SPRITE) • CFA Team China International Tournament [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/75748097_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-2e3559950437" tvg-name="Manchester Utd Nữ vs West Ham Nữ" tvg-logo="https://img.gvapi.cc/football/team/db33359c11033fc28c9bedec0a4a89d9.png!w80" group-title="CoLaTV",[19:00] 27/09 ⚽ Manchester Utd Nữ vs West Ham Nữ • Hạng Nhất nữ Anh [HLS]
+#EXTINF:-1 tvg-id="sport-2e3559950437" tvg-name="Manchester Utd Nữ vs West Ham Nữ" tvg-logo="https://img.gvapi.cc/football/team/db33359c11033fc28c9bedec0a4a89d9.png!w80" group-title="CoLaTV",[19:00] 27/09 ⚽ Manchester Utd Nữ vs West Ham Nữ (MOUNTAIN DEW) • Hạng Nhất nữ Anh [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/87547578_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-4ac6119a8a03" tvg-name="Manchester Utd Nữ vs West Ham Nữ" tvg-logo="https://img.gvapi.cc/football/team/db33359c11033fc28c9bedec0a4a89d9.png!w80" group-title="CoLaTV",[19:00] 27/09 ⚽ Manchester Utd Nữ vs West Ham Nữ • Hạng Nhất nữ Anh [HLS]
+#EXTINF:-1 tvg-id="sport-4ac6119a8a03" tvg-name="Manchester Utd Nữ vs West Ham Nữ" tvg-logo="https://img.gvapi.cc/football/team/db33359c11033fc28c9bedec0a4a89d9.png!w80" group-title="CoLaTV",[19:00] 27/09 ⚽ Manchester Utd Nữ vs West Ham Nữ (MOUNTAIN DEW) • Hạng Nhất nữ Anh [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/87547578_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-e840913df35f" tvg-name="Manchester Utd Nữ vs West Ham Nữ" tvg-logo="https://img.gvapi.cc/football/team/db33359c11033fc28c9bedec0a4a89d9.png!w80" group-title="CoLaTV",[19:00] 27/09 ⚽ Manchester Utd Nữ vs West Ham Nữ • Hạng Nhất nữ Anh [FLV]
+#EXTINF:-1 tvg-id="sport-e840913df35f" tvg-name="Manchester Utd Nữ vs West Ham Nữ" tvg-logo="https://img.gvapi.cc/football/team/db33359c11033fc28c9bedec0a4a89d9.png!w80" group-title="CoLaTV",[19:00] 27/09 ⚽ Manchester Utd Nữ vs West Ham Nữ (MOUNTAIN DEW) • Hạng Nhất nữ Anh [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/87547578_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-89a3daeafdf1" tvg-name="Real Valladolid vs Cordoba" tvg-logo="https://img.gvapi.cc/football/team/fdf63461c00668597319a4f0db14dcee.png!w80" group-title="CoLaTV",[19:00] 27/09 ⚽ Real Valladolid vs Cordoba • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
+#EXTINF:-1 tvg-id="sport-89a3daeafdf1" tvg-name="Real Valladolid vs Cordoba" tvg-logo="https://img.gvapi.cc/football/team/fdf63461c00668597319a4f0db14dcee.png!w80" group-title="CoLaTV",[19:00] 27/09 ⚽ Real Valladolid vs Cordoba (SAMURAI) • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/07808742_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-993f7c6922ba" tvg-name="Real Valladolid vs Cordoba" tvg-logo="https://img.gvapi.cc/football/team/fdf63461c00668597319a4f0db14dcee.png!w80" group-title="CoLaTV",[19:00] 27/09 ⚽ Real Valladolid vs Cordoba • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
+#EXTINF:-1 tvg-id="sport-993f7c6922ba" tvg-name="Real Valladolid vs Cordoba" tvg-logo="https://img.gvapi.cc/football/team/fdf63461c00668597319a4f0db14dcee.png!w80" group-title="CoLaTV",[19:00] 27/09 ⚽ Real Valladolid vs Cordoba (SAMURAI) • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/07808742_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-c0ff04a6e74d" tvg-name="Real Valladolid vs Cordoba" tvg-logo="https://img.gvapi.cc/football/team/fdf63461c00668597319a4f0db14dcee.png!w80" group-title="CoLaTV",[19:00] 27/09 ⚽ Real Valladolid vs Cordoba • Giải bóng đá Hạng nhì Tây Ban Nha [FLV]
+#EXTINF:-1 tvg-id="sport-c0ff04a6e74d" tvg-name="Real Valladolid vs Cordoba" tvg-logo="https://img.gvapi.cc/football/team/fdf63461c00668597319a4f0db14dcee.png!w80" group-title="CoLaTV",[19:00] 27/09 ⚽ Real Valladolid vs Cordoba (SAMURAI) • Giải bóng đá Hạng nhì Tây Ban Nha [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/07808742_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-57d5b52f1f31" tvg-name="ĐTQG Lithuania vs Azerbaijan" tvg-logo="https://img.gvapi.cc/football/team/f2b6806d6ed60d2d87b0dd5ae62e6f20.png!w80" group-title="CoLaTV",[20:00] 27/09 ⚽ ĐTQG Lithuania vs Azerbaijan • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-57d5b52f1f31" tvg-name="ĐTQG Lithuania vs Azerbaijan" tvg-logo="https://img.gvapi.cc/football/team/f2b6806d6ed60d2d87b0dd5ae62e6f20.png!w80" group-title="CoLaTV",[20:00] 27/09 ⚽ ĐTQG Lithuania vs Azerbaijan (HỔ VẰN) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/07428422_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-ea31643c1e94" tvg-name="ĐTQG Lithuania vs Azerbaijan" tvg-logo="https://img.gvapi.cc/football/team/f2b6806d6ed60d2d87b0dd5ae62e6f20.png!w80" group-title="CoLaTV",[20:00] 27/09 ⚽ ĐTQG Lithuania vs Azerbaijan • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-ea31643c1e94" tvg-name="ĐTQG Lithuania vs Azerbaijan" tvg-logo="https://img.gvapi.cc/football/team/f2b6806d6ed60d2d87b0dd5ae62e6f20.png!w80" group-title="CoLaTV",[20:00] 27/09 ⚽ ĐTQG Lithuania vs Azerbaijan (HỔ VẰN) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/07428422_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-aea797fe0cf8" tvg-name="ĐTQG Lithuania vs Azerbaijan" tvg-logo="https://img.gvapi.cc/football/team/f2b6806d6ed60d2d87b0dd5ae62e6f20.png!w80" group-title="CoLaTV",[20:00] 27/09 ⚽ ĐTQG Lithuania vs Azerbaijan • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTINF:-1 tvg-id="sport-aea797fe0cf8" tvg-name="ĐTQG Lithuania vs Azerbaijan" tvg-logo="https://img.gvapi.cc/football/team/f2b6806d6ed60d2d87b0dd5ae62e6f20.png!w80" group-title="CoLaTV",[20:00] 27/09 ⚽ ĐTQG Lithuania vs Azerbaijan (HỔ VẰN) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/07428422_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-dcd14326a3ea" tvg-name="RCD Mallorca vs CLB Almeria" tvg-logo="https://img.gvapi.cc/football/team/fdef90456d2a2eee09976c558457aec7.png!w80" group-title="CoLaTV",[21:15] 27/09 ⚽ RCD Mallorca vs CLB Almeria • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
+#EXTINF:-1 tvg-id="sport-dcd14326a3ea" tvg-name="RCD Mallorca vs CLB Almeria" tvg-logo="https://img.gvapi.cc/football/team/fdef90456d2a2eee09976c558457aec7.png!w80" group-title="CoLaTV",[21:15] 27/09 ⚽ RCD Mallorca vs CLB Almeria (WARRIOR) • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/97885009_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-901146ad4784" tvg-name="RCD Mallorca vs CLB Almeria" tvg-logo="https://img.gvapi.cc/football/team/fdef90456d2a2eee09976c558457aec7.png!w80" group-title="CoLaTV",[21:15] 27/09 ⚽ RCD Mallorca vs CLB Almeria • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
+#EXTINF:-1 tvg-id="sport-901146ad4784" tvg-name="RCD Mallorca vs CLB Almeria" tvg-logo="https://img.gvapi.cc/football/team/fdef90456d2a2eee09976c558457aec7.png!w80" group-title="CoLaTV",[21:15] 27/09 ⚽ RCD Mallorca vs CLB Almeria (WARRIOR) • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/97885009_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-42ba16a3b73e" tvg-name="RCD Mallorca vs CLB Almeria" tvg-logo="https://img.gvapi.cc/football/team/fdef90456d2a2eee09976c558457aec7.png!w80" group-title="CoLaTV",[21:15] 27/09 ⚽ RCD Mallorca vs CLB Almeria • Giải bóng đá Hạng nhì Tây Ban Nha [FLV]
+#EXTINF:-1 tvg-id="sport-42ba16a3b73e" tvg-name="RCD Mallorca vs CLB Almeria" tvg-logo="https://img.gvapi.cc/football/team/fdef90456d2a2eee09976c558457aec7.png!w80" group-title="CoLaTV",[21:15] 27/09 ⚽ RCD Mallorca vs CLB Almeria (WARRIOR) • Giải bóng đá Hạng nhì Tây Ban Nha [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/97885009_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-2be3d2be8ea1" tvg-name="Yemen vs Qatar" tvg-logo="https://img.gvapi.cc/football/team/aa0f9de3c3f38177051c3c8741dac037.png!w80" group-title="CoLaTV",[22:55] 27/09 ⚽ Yemen vs Qatar • Cúp Gulf [HLS]
+#EXTINF:-1 tvg-id="sport-2be3d2be8ea1" tvg-name="Yemen vs Qatar" tvg-logo="https://img.gvapi.cc/football/team/aa0f9de3c3f38177051c3c8741dac037.png!w80" group-title="CoLaTV",[22:55] 27/09 ⚽ Yemen vs Qatar (GIÀ LÀNG) • Cúp Gulf [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/14830711_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-c3d86ff0792c" tvg-name="Yemen vs Qatar" tvg-logo="https://img.gvapi.cc/football/team/aa0f9de3c3f38177051c3c8741dac037.png!w80" group-title="CoLaTV",[22:55] 27/09 ⚽ Yemen vs Qatar • Cúp Gulf [HLS]
+#EXTINF:-1 tvg-id="sport-c3d86ff0792c" tvg-name="Yemen vs Qatar" tvg-logo="https://img.gvapi.cc/football/team/aa0f9de3c3f38177051c3c8741dac037.png!w80" group-title="CoLaTV",[22:55] 27/09 ⚽ Yemen vs Qatar (GIÀ LÀNG) • Cúp Gulf [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/14830711_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-0eac6d21c035" tvg-name="Yemen vs Qatar" tvg-logo="https://img.gvapi.cc/football/team/aa0f9de3c3f38177051c3c8741dac037.png!w80" group-title="CoLaTV",[22:55] 27/09 ⚽ Yemen vs Qatar • Cúp Gulf [FLV]
+#EXTINF:-1 tvg-id="sport-0eac6d21c035" tvg-name="Yemen vs Qatar" tvg-logo="https://img.gvapi.cc/football/team/aa0f9de3c3f38177051c3c8741dac037.png!w80" group-title="CoLaTV",[22:55] 27/09 ⚽ Yemen vs Qatar (GIÀ LÀNG) • Cúp Gulf [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/14830711_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-54df6aff1e3e" tvg-name="Gibraltar vs Andorra" tvg-logo="https://img.gvapi.cc/football/team/275612d39c2aacdf7b64836df54b9229.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ Gibraltar vs Andorra • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-54df6aff1e3e" tvg-name="Gibraltar vs Andorra" tvg-logo="https://img.gvapi.cc/football/team/275612d39c2aacdf7b64836df54b9229.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ Gibraltar vs Andorra (MOUNTAIN DEW) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/87547578_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-9426660c7104" tvg-name="Gibraltar vs Andorra" tvg-logo="https://img.gvapi.cc/football/team/275612d39c2aacdf7b64836df54b9229.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ Gibraltar vs Andorra • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-9426660c7104" tvg-name="Gibraltar vs Andorra" tvg-logo="https://img.gvapi.cc/football/team/275612d39c2aacdf7b64836df54b9229.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ Gibraltar vs Andorra (MOUNTAIN DEW) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/87547578_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-1a04373a35af" tvg-name="Gibraltar vs Andorra" tvg-logo="https://img.gvapi.cc/football/team/275612d39c2aacdf7b64836df54b9229.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ Gibraltar vs Andorra • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTINF:-1 tvg-id="sport-1a04373a35af" tvg-name="Gibraltar vs Andorra" tvg-logo="https://img.gvapi.cc/football/team/275612d39c2aacdf7b64836df54b9229.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ Gibraltar vs Andorra (MOUNTAIN DEW) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/87547578_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-e6f824581499" tvg-name="Serbia vs ĐTQG Hà Lan" tvg-logo="https://img.gvapi.cc/football/team/059bbd8df7767d3bc7829e3735c221e2.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ Serbia vs ĐTQG Hà Lan • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-e6f824581499" tvg-name="Serbia vs ĐTQG Hà Lan" tvg-logo="https://img.gvapi.cc/football/team/059bbd8df7767d3bc7829e3735c221e2.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ Serbia vs ĐTQG Hà Lan (247) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/90865415_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-bd346ed39cfc" tvg-name="Serbia vs ĐTQG Hà Lan" tvg-logo="https://img.gvapi.cc/football/team/059bbd8df7767d3bc7829e3735c221e2.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ Serbia vs ĐTQG Hà Lan • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-bd346ed39cfc" tvg-name="Serbia vs ĐTQG Hà Lan" tvg-logo="https://img.gvapi.cc/football/team/059bbd8df7767d3bc7829e3735c221e2.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ Serbia vs ĐTQG Hà Lan (247) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/90865415_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-4d02e2a1e060" tvg-name="Serbia vs ĐTQG Hà Lan" tvg-logo="https://img.gvapi.cc/football/team/059bbd8df7767d3bc7829e3735c221e2.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ Serbia vs ĐTQG Hà Lan • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTINF:-1 tvg-id="sport-4d02e2a1e060" tvg-name="Serbia vs ĐTQG Hà Lan" tvg-logo="https://img.gvapi.cc/football/team/059bbd8df7767d3bc7829e3735c221e2.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ Serbia vs ĐTQG Hà Lan (247) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/90865415_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-56116eccedfd" tvg-name="ĐTQG Áo vs ĐTQG Kosovo" tvg-logo="https://img.gvapi.cc/football/team/b27c40f1f7fb35fcf65d89dc29748e29.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ ĐTQG Áo vs ĐTQG Kosovo • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-56116eccedfd" tvg-name="ĐTQG Áo vs ĐTQG Kosovo" tvg-logo="https://img.gvapi.cc/football/team/b27c40f1f7fb35fcf65d89dc29748e29.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ ĐTQG Áo vs ĐTQG Kosovo (Cozy) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/87379114_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-cc05f3d0d672" tvg-name="ĐTQG Áo vs ĐTQG Kosovo" tvg-logo="https://img.gvapi.cc/football/team/b27c40f1f7fb35fcf65d89dc29748e29.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ ĐTQG Áo vs ĐTQG Kosovo • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-cc05f3d0d672" tvg-name="ĐTQG Áo vs ĐTQG Kosovo" tvg-logo="https://img.gvapi.cc/football/team/b27c40f1f7fb35fcf65d89dc29748e29.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ ĐTQG Áo vs ĐTQG Kosovo (Cozy) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/87379114_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-9ce12e28ca62" tvg-name="ĐTQG Áo vs ĐTQG Kosovo" tvg-logo="https://img.gvapi.cc/football/team/b27c40f1f7fb35fcf65d89dc29748e29.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ ĐTQG Áo vs ĐTQG Kosovo • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTINF:-1 tvg-id="sport-9ce12e28ca62" tvg-name="ĐTQG Áo vs ĐTQG Kosovo" tvg-logo="https://img.gvapi.cc/football/team/b27c40f1f7fb35fcf65d89dc29748e29.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ ĐTQG Áo vs ĐTQG Kosovo (Cozy) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/87379114_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-5b51696d44a4" tvg-name="ĐTQG Đan Mạch vs Xứ Wales" tvg-logo="https://img.gvapi.cc/football/team/685d3703a0b1410dc3bf2280eb5a15ec.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ ĐTQG Đan Mạch vs Xứ Wales • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-5b51696d44a4" tvg-name="ĐTQG Đan Mạch vs Xứ Wales" tvg-logo="https://img.gvapi.cc/football/team/685d3703a0b1410dc3bf2280eb5a15ec.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ ĐTQG Đan Mạch vs Xứ Wales (ROCKSTAR) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/82054853_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-760f61ef103b" tvg-name="ĐTQG Đan Mạch vs Xứ Wales" tvg-logo="https://img.gvapi.cc/football/team/685d3703a0b1410dc3bf2280eb5a15ec.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ ĐTQG Đan Mạch vs Xứ Wales • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-760f61ef103b" tvg-name="ĐTQG Đan Mạch vs Xứ Wales" tvg-logo="https://img.gvapi.cc/football/team/685d3703a0b1410dc3bf2280eb5a15ec.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ ĐTQG Đan Mạch vs Xứ Wales (ROCKSTAR) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/82054853_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-24a5a246b418" tvg-name="ĐTQG Đan Mạch vs Xứ Wales" tvg-logo="https://img.gvapi.cc/football/team/685d3703a0b1410dc3bf2280eb5a15ec.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ ĐTQG Đan Mạch vs Xứ Wales • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTINF:-1 tvg-id="sport-24a5a246b418" tvg-name="ĐTQG Đan Mạch vs Xứ Wales" tvg-logo="https://img.gvapi.cc/football/team/685d3703a0b1410dc3bf2280eb5a15ec.png!w80" group-title="CoLaTV",[23:00] 27/09 ⚽ ĐTQG Đan Mạch vs Xứ Wales (ROCKSTAR) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/82054853_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-9b86672b22ff" tvg-name="Burgos CF vs Eldense" tvg-logo="https://img.gvapi.cc/football/team/1e888ca542d892600d3b2818d1c40e22.png!w80" group-title="CoLaTV",[23:30] 27/09 ⚽ Burgos CF vs Eldense • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
+#EXTINF:-1 tvg-id="sport-9b86672b22ff" tvg-name="Burgos CF vs Eldense" tvg-logo="https://img.gvapi.cc/football/team/1e888ca542d892600d3b2818d1c40e22.png!w80" group-title="CoLaTV",[23:30] 27/09 ⚽ Burgos CF vs Eldense (BÍ ĐAO) • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/99121525_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-b3b480d4bcae" tvg-name="Burgos CF vs Eldense" tvg-logo="https://img.gvapi.cc/football/team/1e888ca542d892600d3b2818d1c40e22.png!w80" group-title="CoLaTV",[23:30] 27/09 ⚽ Burgos CF vs Eldense • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
+#EXTINF:-1 tvg-id="sport-b3b480d4bcae" tvg-name="Burgos CF vs Eldense" tvg-logo="https://img.gvapi.cc/football/team/1e888ca542d892600d3b2818d1c40e22.png!w80" group-title="CoLaTV",[23:30] 27/09 ⚽ Burgos CF vs Eldense (BÍ ĐAO) • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/99121525_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-78b0220682e0" tvg-name="Burgos CF vs Eldense" tvg-logo="https://img.gvapi.cc/football/team/1e888ca542d892600d3b2818d1c40e22.png!w80" group-title="CoLaTV",[23:30] 27/09 ⚽ Burgos CF vs Eldense • Giải bóng đá Hạng nhì Tây Ban Nha [FLV]
+#EXTINF:-1 tvg-id="sport-78b0220682e0" tvg-name="Burgos CF vs Eldense" tvg-logo="https://img.gvapi.cc/football/team/1e888ca542d892600d3b2818d1c40e22.png!w80" group-title="CoLaTV",[23:30] 27/09 ⚽ Burgos CF vs Eldense (BÍ ĐAO) • Giải bóng đá Hạng nhì Tây Ban Nha [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/99121525_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-4890cc504d2e" tvg-name="CLB Eibar vs CLB Las Palmas" tvg-logo="https://img.gvapi.cc/football/team/230be7f4f23de1cb08877a72cd08f619.png!w80" group-title="CoLaTV",[23:30] 27/09 ⚽ CLB Eibar vs CLB Las Palmas • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
+#EXTINF:-1 tvg-id="sport-4890cc504d2e" tvg-name="CLB Eibar vs CLB Las Palmas" tvg-logo="https://img.gvapi.cc/football/team/230be7f4f23de1cb08877a72cd08f619.png!w80" group-title="CoLaTV",[23:30] 27/09 ⚽ CLB Eibar vs CLB Las Palmas (HỔ VẰN) • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/07428422_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-7ac87fdc05e7" tvg-name="CLB Eibar vs CLB Las Palmas" tvg-logo="https://img.gvapi.cc/football/team/230be7f4f23de1cb08877a72cd08f619.png!w80" group-title="CoLaTV",[23:30] 27/09 ⚽ CLB Eibar vs CLB Las Palmas • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
+#EXTINF:-1 tvg-id="sport-7ac87fdc05e7" tvg-name="CLB Eibar vs CLB Las Palmas" tvg-logo="https://img.gvapi.cc/football/team/230be7f4f23de1cb08877a72cd08f619.png!w80" group-title="CoLaTV",[23:30] 27/09 ⚽ CLB Eibar vs CLB Las Palmas (HỔ VẰN) • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/07428422_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-be22e330b8fb" tvg-name="CLB Eibar vs CLB Las Palmas" tvg-logo="https://img.gvapi.cc/football/team/230be7f4f23de1cb08877a72cd08f619.png!w80" group-title="CoLaTV",[23:30] 27/09 ⚽ CLB Eibar vs CLB Las Palmas • Giải bóng đá Hạng nhì Tây Ban Nha [FLV]
+#EXTINF:-1 tvg-id="sport-be22e330b8fb" tvg-name="CLB Eibar vs CLB Las Palmas" tvg-logo="https://img.gvapi.cc/football/team/230be7f4f23de1cb08877a72cd08f619.png!w80" group-title="CoLaTV",[23:30] 27/09 ⚽ CLB Eibar vs CLB Las Palmas (HỔ VẰN) • Giải bóng đá Hạng nhì Tây Ban Nha [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/07428422_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-ec86c6010b86" tvg-name="Bahrain vs United Arab Emirates" tvg-logo="https://img.gvapi.cc/football/team/595e32d94437adf5bde6225b77bf1e14.png!w80" group-title="CoLaTV",[01:00] 28/09 ⚽ Bahrain vs United Arab Emirates • Cúp Gulf [HLS]
+#EXTINF:-1 tvg-id="sport-ec86c6010b86" tvg-name="Bahrain vs United Arab Emirates" tvg-logo="https://img.gvapi.cc/football/team/595e32d94437adf5bde6225b77bf1e14.png!w80" group-title="CoLaTV",[01:00] 28/09 ⚽ Bahrain vs United Arab Emirates (PEPSI) • Cúp Gulf [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/59444581_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-b40ad03704a1" tvg-name="Bahrain vs United Arab Emirates" tvg-logo="https://img.gvapi.cc/football/team/595e32d94437adf5bde6225b77bf1e14.png!w80" group-title="CoLaTV",[01:00] 28/09 ⚽ Bahrain vs United Arab Emirates • Cúp Gulf [HLS]
+#EXTINF:-1 tvg-id="sport-b40ad03704a1" tvg-name="Bahrain vs United Arab Emirates" tvg-logo="https://img.gvapi.cc/football/team/595e32d94437adf5bde6225b77bf1e14.png!w80" group-title="CoLaTV",[01:00] 28/09 ⚽ Bahrain vs United Arab Emirates (PEPSI) • Cúp Gulf [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/59444581_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-7fa224e7c2a9" tvg-name="Bahrain vs United Arab Emirates" tvg-logo="https://img.gvapi.cc/football/team/595e32d94437adf5bde6225b77bf1e14.png!w80" group-title="CoLaTV",[01:00] 28/09 ⚽ Bahrain vs United Arab Emirates • Cúp Gulf [FLV]
+#EXTINF:-1 tvg-id="sport-7fa224e7c2a9" tvg-name="Bahrain vs United Arab Emirates" tvg-logo="https://img.gvapi.cc/football/team/595e32d94437adf5bde6225b77bf1e14.png!w80" group-title="CoLaTV",[01:00] 28/09 ⚽ Bahrain vs United Arab Emirates (PEPSI) • Cúp Gulf [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/59444581_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-46327ccb40c4" tvg-name="U.N.A.M.- Pumas vs Atletico San Luis" tvg-logo="https://img.gvapi.cc/football/team/7654a95374767f93f6bec6a3d4819f76.png!w80" group-title="CoLaTV",[01:00] 28/09 ⚽ U.N.A.M.- Pumas vs Atletico San Luis • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
+#EXTINF:-1 tvg-id="sport-46327ccb40c4" tvg-name="U.N.A.M.- Pumas vs Atletico San Luis" tvg-logo="https://img.gvapi.cc/football/team/7654a95374767f93f6bec6a3d4819f76.png!w80" group-title="CoLaTV",[01:00] 28/09 ⚽ U.N.A.M.- Pumas vs Atletico San Luis (FANTA) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/16226575_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-074d20e3c72c" tvg-name="U.N.A.M.- Pumas vs Atletico San Luis" tvg-logo="https://img.gvapi.cc/football/team/7654a95374767f93f6bec6a3d4819f76.png!w80" group-title="CoLaTV",[01:00] 28/09 ⚽ U.N.A.M.- Pumas vs Atletico San Luis • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
+#EXTINF:-1 tvg-id="sport-074d20e3c72c" tvg-name="U.N.A.M.- Pumas vs Atletico San Luis" tvg-logo="https://img.gvapi.cc/football/team/7654a95374767f93f6bec6a3d4819f76.png!w80" group-title="CoLaTV",[01:00] 28/09 ⚽ U.N.A.M.- Pumas vs Atletico San Luis (FANTA) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/16226575_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-97be292ddb85" tvg-name="U.N.A.M.- Pumas vs Atletico San Luis" tvg-logo="https://img.gvapi.cc/football/team/7654a95374767f93f6bec6a3d4819f76.png!w80" group-title="CoLaTV",[01:00] 28/09 ⚽ U.N.A.M.- Pumas vs Atletico San Luis • Giải Vô địch Bóng đá Quốc gia Mexico [FLV]
+#EXTINF:-1 tvg-id="sport-97be292ddb85" tvg-name="U.N.A.M.- Pumas vs Atletico San Luis" tvg-logo="https://img.gvapi.cc/football/team/7654a95374767f93f6bec6a3d4819f76.png!w80" group-title="CoLaTV",[01:00] 28/09 ⚽ U.N.A.M.- Pumas vs Atletico San Luis (FANTA) • Giải Vô địch Bóng đá Quốc gia Mexico [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/16226575_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-366104447d9d" tvg-name="Na Uy vs Bồ Đào Nha" tvg-logo="https://img.gvapi.cc/football/team/51934729f32d36841a17e43e9390483a.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Na Uy vs Bồ Đào Nha • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-366104447d9d" tvg-name="Na Uy vs Bồ Đào Nha" tvg-logo="https://img.gvapi.cc/football/team/51934729f32d36841a17e43e9390483a.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Na Uy vs Bồ Đào Nha (C2) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/08552895_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-7690b362bd26" tvg-name="Na Uy vs Bồ Đào Nha" tvg-logo="https://img.gvapi.cc/football/team/51934729f32d36841a17e43e9390483a.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Na Uy vs Bồ Đào Nha • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-7690b362bd26" tvg-name="Na Uy vs Bồ Đào Nha" tvg-logo="https://img.gvapi.cc/football/team/51934729f32d36841a17e43e9390483a.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Na Uy vs Bồ Đào Nha (C2) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/08552895_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-765f07d64e99" tvg-name="Na Uy vs Bồ Đào Nha" tvg-logo="https://img.gvapi.cc/football/team/51934729f32d36841a17e43e9390483a.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Na Uy vs Bồ Đào Nha • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://colatv77.live/
-#EXTVLCOPT:http-origin=https://colatv77.live
-https://live05.meung.app/live/14707124_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-51365addaef2" tvg-name="Na Uy vs Bồ Đào Nha" tvg-logo="https://img.gvapi.cc/football/team/51934729f32d36841a17e43e9390483a.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Na Uy vs Bồ Đào Nha • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://colatv77.live/
-#EXTVLCOPT:http-origin=https://colatv77.live
-https://live05.miekgo.app/live/14707124_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-40757b7807b2" tvg-name="Na Uy vs Bồ Đào Nha" tvg-logo="https://img.gvapi.cc/football/team/51934729f32d36841a17e43e9390483a.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Na Uy vs Bồ Đào Nha • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTINF:-1 tvg-id="sport-40757b7807b2" tvg-name="Na Uy vs Bồ Đào Nha" tvg-logo="https://img.gvapi.cc/football/team/51934729f32d36841a17e43e9390483a.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Na Uy vs Bồ Đào Nha (C2) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/08552895_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-c75eddab203e" tvg-name="Na Uy vs Bồ Đào Nha" tvg-logo="https://img.gvapi.cc/football/team/51934729f32d36841a17e43e9390483a.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Na Uy vs Bồ Đào Nha • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTINF:-1 tvg-id="sport-765f07d64e99" tvg-name="Na Uy vs Bồ Đào Nha" tvg-logo="https://img.gvapi.cc/football/team/51934729f32d36841a17e43e9390483a.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Na Uy vs Bồ Đào Nha (STING) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://colatv77.live/
+#EXTVLCOPT:http-origin=https://colatv77.live
+https://live05.meung.app/live/14707124_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
+#EXTINF:-1 tvg-id="sport-51365addaef2" tvg-name="Na Uy vs Bồ Đào Nha" tvg-logo="https://img.gvapi.cc/football/team/51934729f32d36841a17e43e9390483a.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Na Uy vs Bồ Đào Nha (STING) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://colatv77.live/
+#EXTVLCOPT:http-origin=https://colatv77.live
+https://live05.miekgo.app/live/14707124_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
+#EXTINF:-1 tvg-id="sport-c75eddab203e" tvg-name="Na Uy vs Bồ Đào Nha" tvg-logo="https://img.gvapi.cc/football/team/51934729f32d36841a17e43e9390483a.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Na Uy vs Bồ Đào Nha (STING) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/14707124_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-fca8439e169f" tvg-name="ĐTQG Israel vs Ireland" tvg-logo="https://img.gvapi.cc/football/team/a370afda41a7ae62dcb8d1b721b92bed.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ ĐTQG Israel vs Ireland • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-fca8439e169f" tvg-name="ĐTQG Israel vs Ireland" tvg-logo="https://img.gvapi.cc/football/team/a370afda41a7ae62dcb8d1b721b92bed.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ ĐTQG Israel vs Ireland (HỔ VẰN) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/07428422_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-65acae70eac1" tvg-name="ĐTQG Israel vs Ireland" tvg-logo="https://img.gvapi.cc/football/team/a370afda41a7ae62dcb8d1b721b92bed.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ ĐTQG Israel vs Ireland • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-65acae70eac1" tvg-name="ĐTQG Israel vs Ireland" tvg-logo="https://img.gvapi.cc/football/team/a370afda41a7ae62dcb8d1b721b92bed.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ ĐTQG Israel vs Ireland (HỔ VẰN) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/07428422_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-bc5b1a128d6a" tvg-name="ĐTQG Israel vs Ireland" tvg-logo="https://img.gvapi.cc/football/team/a370afda41a7ae62dcb8d1b721b92bed.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ ĐTQG Israel vs Ireland • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTINF:-1 tvg-id="sport-bc5b1a128d6a" tvg-name="ĐTQG Israel vs Ireland" tvg-logo="https://img.gvapi.cc/football/team/a370afda41a7ae62dcb8d1b721b92bed.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ ĐTQG Israel vs Ireland (HỔ VẰN) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/07428422_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-de5b2ce2b84d" tvg-name="Đức vs CLB Greece" tvg-logo="https://img.gvapi.cc/football/team/5856c2f4a854359864b18f9aed3f8874.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Đức vs CLB Greece • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-de5b2ce2b84d" tvg-name="Đức vs CLB Greece" tvg-logo="https://img.gvapi.cc/football/team/5856c2f4a854359864b18f9aed3f8874.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Đức vs CLB Greece (REVIVE) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/33982309_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-5e9f6c3eeb24" tvg-name="Đức vs CLB Greece" tvg-logo="https://img.gvapi.cc/football/team/5856c2f4a854359864b18f9aed3f8874.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Đức vs CLB Greece • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-5e9f6c3eeb24" tvg-name="Đức vs CLB Greece" tvg-logo="https://img.gvapi.cc/football/team/5856c2f4a854359864b18f9aed3f8874.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Đức vs CLB Greece (REVIVE) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/33982309_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-a144442a68e5" tvg-name="Đức vs CLB Greece" tvg-logo="https://img.gvapi.cc/football/team/5856c2f4a854359864b18f9aed3f8874.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Đức vs CLB Greece • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTINF:-1 tvg-id="sport-a144442a68e5" tvg-name="Đức vs CLB Greece" tvg-logo="https://img.gvapi.cc/football/team/5856c2f4a854359864b18f9aed3f8874.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Đức vs CLB Greece (REVIVE) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/33982309_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-31fea4c72a84" tvg-name="Đức vs CLB Greece" tvg-logo="https://img.gvapi.cc/football/team/5856c2f4a854359864b18f9aed3f8874.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Đức vs CLB Greece • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-31fea4c72a84" tvg-name="Đức vs CLB Greece" tvg-logo="https://img.gvapi.cc/football/team/5856c2f4a854359864b18f9aed3f8874.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Đức vs CLB Greece (7UP) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/78905744_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-3edd0f5933c5" tvg-name="Đức vs CLB Greece" tvg-logo="https://img.gvapi.cc/football/team/5856c2f4a854359864b18f9aed3f8874.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Đức vs CLB Greece • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-3edd0f5933c5" tvg-name="Đức vs CLB Greece" tvg-logo="https://img.gvapi.cc/football/team/5856c2f4a854359864b18f9aed3f8874.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Đức vs CLB Greece (7UP) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/78905744_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-debe4c942b2c" tvg-name="Đức vs CLB Greece" tvg-logo="https://img.gvapi.cc/football/team/5856c2f4a854359864b18f9aed3f8874.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Đức vs CLB Greece • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTINF:-1 tvg-id="sport-debe4c942b2c" tvg-name="Đức vs CLB Greece" tvg-logo="https://img.gvapi.cc/football/team/5856c2f4a854359864b18f9aed3f8874.png!w80" group-title="CoLaTV",[01:45] 28/09 ⚽ Đức vs CLB Greece (7UP) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/78905744_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-4ea7338ae2a2" tvg-name="Guyana vs Quần đảo Cayman" tvg-logo="https://img.gvapi.cc/football/team/d5a92a68f9af953b26eafb935a054ce7.png!w80" group-title="CoLaTV",[02:00] 28/09 ⚽ Guyana vs Quần đảo Cayman • Liên minh bóng đá quốc gia châu Mỹ [HLS]
+#EXTINF:-1 tvg-id="sport-4ea7338ae2a2" tvg-name="Guyana vs Quần đảo Cayman" tvg-logo="https://img.gvapi.cc/football/team/d5a92a68f9af953b26eafb935a054ce7.png!w80" group-title="CoLaTV",[02:00] 28/09 ⚽ Guyana vs Quần đảo Cayman (SODA) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/02456966_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-a38f818c90b3" tvg-name="Guyana vs Quần đảo Cayman" tvg-logo="https://img.gvapi.cc/football/team/d5a92a68f9af953b26eafb935a054ce7.png!w80" group-title="CoLaTV",[02:00] 28/09 ⚽ Guyana vs Quần đảo Cayman • Liên minh bóng đá quốc gia châu Mỹ [HLS]
+#EXTINF:-1 tvg-id="sport-a38f818c90b3" tvg-name="Guyana vs Quần đảo Cayman" tvg-logo="https://img.gvapi.cc/football/team/d5a92a68f9af953b26eafb935a054ce7.png!w80" group-title="CoLaTV",[02:00] 28/09 ⚽ Guyana vs Quần đảo Cayman (SODA) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/02456966_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-d2d53b290baf" tvg-name="Guyana vs Quần đảo Cayman" tvg-logo="https://img.gvapi.cc/football/team/d5a92a68f9af953b26eafb935a054ce7.png!w80" group-title="CoLaTV",[02:00] 28/09 ⚽ Guyana vs Quần đảo Cayman • Liên minh bóng đá quốc gia châu Mỹ [FLV]
+#EXTINF:-1 tvg-id="sport-d2d53b290baf" tvg-name="Guyana vs Quần đảo Cayman" tvg-logo="https://img.gvapi.cc/football/team/d5a92a68f9af953b26eafb935a054ce7.png!w80" group-title="CoLaTV",[02:00] 28/09 ⚽ Guyana vs Quần đảo Cayman (SODA) • Liên minh bóng đá quốc gia châu Mỹ [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/02456966_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-bc009edb3af1" tvg-name="R. Oviedo vs Sporting Gijon" tvg-logo="https://img.gvapi.cc/football/team/21551996567bcd206ee574043d509a84.png!w80" group-title="CoLaTV",[02:00] 28/09 ⚽ R. Oviedo vs Sporting Gijon • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
+#EXTINF:-1 tvg-id="sport-bc009edb3af1" tvg-name="R. Oviedo vs Sporting Gijon" tvg-logo="https://img.gvapi.cc/football/team/21551996567bcd206ee574043d509a84.png!w80" group-title="CoLaTV",[02:00] 28/09 ⚽ R. Oviedo vs Sporting Gijon (BÍ ĐAO) • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/99121525_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-089d8dd3f3b5" tvg-name="R. Oviedo vs Sporting Gijon" tvg-logo="https://img.gvapi.cc/football/team/21551996567bcd206ee574043d509a84.png!w80" group-title="CoLaTV",[02:00] 28/09 ⚽ R. Oviedo vs Sporting Gijon • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
+#EXTINF:-1 tvg-id="sport-089d8dd3f3b5" tvg-name="R. Oviedo vs Sporting Gijon" tvg-logo="https://img.gvapi.cc/football/team/21551996567bcd206ee574043d509a84.png!w80" group-title="CoLaTV",[02:00] 28/09 ⚽ R. Oviedo vs Sporting Gijon (BÍ ĐAO) • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/99121525_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-f480b879d8e3" tvg-name="R. Oviedo vs Sporting Gijon" tvg-logo="https://img.gvapi.cc/football/team/21551996567bcd206ee574043d509a84.png!w80" group-title="CoLaTV",[02:00] 28/09 ⚽ R. Oviedo vs Sporting Gijon • Giải bóng đá Hạng nhì Tây Ban Nha [FLV]
+#EXTINF:-1 tvg-id="sport-f480b879d8e3" tvg-name="R. Oviedo vs Sporting Gijon" tvg-logo="https://img.gvapi.cc/football/team/21551996567bcd206ee574043d509a84.png!w80" group-title="CoLaTV",[02:00] 28/09 ⚽ R. Oviedo vs Sporting Gijon (BÍ ĐAO) • Giải bóng đá Hạng nhì Tây Ban Nha [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/99121525_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-d3b9061dcd63" tvg-name="Gimnasia y Tiro vs CLB Atletico Rafaela" tvg-logo="https://img.gvapi.cc/football/team/1dcae0ff1f13a4eacf57b5095080fea1.png!w80" group-title="CoLaTV",[04:00] 28/09 ⚽ Gimnasia y Tiro vs CLB Atletico Rafaela • Giải bóng đá Hạng nhì Argentina [HLS]
+#EXTINF:-1 tvg-id="sport-d3b9061dcd63" tvg-name="Gimnasia y Tiro vs CLB Atletico Rafaela" tvg-logo="https://img.gvapi.cc/football/team/1dcae0ff1f13a4eacf57b5095080fea1.png!w80" group-title="CoLaTV",[04:00] 28/09 ⚽ Gimnasia y Tiro vs CLB Atletico Rafaela (AQUA) • Giải bóng đá Hạng nhì Argentina [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/18812304_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-460a139213fd" tvg-name="Gimnasia y Tiro vs CLB Atletico Rafaela" tvg-logo="https://img.gvapi.cc/football/team/1dcae0ff1f13a4eacf57b5095080fea1.png!w80" group-title="CoLaTV",[04:00] 28/09 ⚽ Gimnasia y Tiro vs CLB Atletico Rafaela • Giải bóng đá Hạng nhì Argentina [HLS]
+#EXTINF:-1 tvg-id="sport-460a139213fd" tvg-name="Gimnasia y Tiro vs CLB Atletico Rafaela" tvg-logo="https://img.gvapi.cc/football/team/1dcae0ff1f13a4eacf57b5095080fea1.png!w80" group-title="CoLaTV",[04:00] 28/09 ⚽ Gimnasia y Tiro vs CLB Atletico Rafaela (AQUA) • Giải bóng đá Hạng nhì Argentina [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/18812304_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-dd9a73a87f2c" tvg-name="Gimnasia y Tiro vs CLB Atletico Rafaela" tvg-logo="https://img.gvapi.cc/football/team/1dcae0ff1f13a4eacf57b5095080fea1.png!w80" group-title="CoLaTV",[04:00] 28/09 ⚽ Gimnasia y Tiro vs CLB Atletico Rafaela • Giải bóng đá Hạng nhì Argentina [FLV]
+#EXTINF:-1 tvg-id="sport-dd9a73a87f2c" tvg-name="Gimnasia y Tiro vs CLB Atletico Rafaela" tvg-logo="https://img.gvapi.cc/football/team/1dcae0ff1f13a4eacf57b5095080fea1.png!w80" group-title="CoLaTV",[04:00] 28/09 ⚽ Gimnasia y Tiro vs CLB Atletico Rafaela (AQUA) • Giải bóng đá Hạng nhì Argentina [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/18812304_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-1e1873fab53d" tvg-name="CLB Columbus Crew vs Inter Miami" tvg-logo="https://img.gvapi.cc/football/team/b6d8f81e8454813b3e672b179e627d3a.png!w80" group-title="CoLaTV",[06:00] 28/09 ⚽ CLB Columbus Crew vs Inter Miami • Major League Soccer [HLS]
+#EXTINF:-1 tvg-id="sport-1e1873fab53d" tvg-name="CLB Columbus Crew vs Inter Miami" tvg-logo="https://img.gvapi.cc/football/team/b6d8f81e8454813b3e672b179e627d3a.png!w80" group-title="CoLaTV",[06:00] 28/09 ⚽ CLB Columbus Crew vs Inter Miami (WARRIOR) • Major League Soccer [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/97885009_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-d4955c6fe9c7" tvg-name="CLB Columbus Crew vs Inter Miami" tvg-logo="https://img.gvapi.cc/football/team/b6d8f81e8454813b3e672b179e627d3a.png!w80" group-title="CoLaTV",[06:00] 28/09 ⚽ CLB Columbus Crew vs Inter Miami • Major League Soccer [HLS]
+#EXTINF:-1 tvg-id="sport-d4955c6fe9c7" tvg-name="CLB Columbus Crew vs Inter Miami" tvg-logo="https://img.gvapi.cc/football/team/b6d8f81e8454813b3e672b179e627d3a.png!w80" group-title="CoLaTV",[06:00] 28/09 ⚽ CLB Columbus Crew vs Inter Miami (WARRIOR) • Major League Soccer [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/97885009_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-51efaf84ceaf" tvg-name="CLB Columbus Crew vs Inter Miami" tvg-logo="https://img.gvapi.cc/football/team/b6d8f81e8454813b3e672b179e627d3a.png!w80" group-title="CoLaTV",[06:00] 28/09 ⚽ CLB Columbus Crew vs Inter Miami • Major League Soccer [FLV]
+#EXTINF:-1 tvg-id="sport-51efaf84ceaf" tvg-name="CLB Columbus Crew vs Inter Miami" tvg-logo="https://img.gvapi.cc/football/team/b6d8f81e8454813b3e672b179e627d3a.png!w80" group-title="CoLaTV",[06:00] 28/09 ⚽ CLB Columbus Crew vs Inter Miami (WARRIOR) • Major League Soccer [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/97885009_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-eb5f7727d481" tvg-name="Haiti vs Costa Rica" tvg-logo="https://img.gvapi.cc/football/team/d55980e43b8a49a3ac62d7a899334f11.png!w80" group-title="CoLaTV",[06:00] 28/09 ⚽ Haiti vs Costa Rica • Liên minh bóng đá quốc gia châu Mỹ [HLS]
+#EXTINF:-1 tvg-id="sport-eb5f7727d481" tvg-name="Haiti vs Costa Rica" tvg-logo="https://img.gvapi.cc/football/team/d55980e43b8a49a3ac62d7a899334f11.png!w80" group-title="CoLaTV",[06:00] 28/09 ⚽ Haiti vs Costa Rica (MOUNTAIN DEW) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/87547578_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-41ded174842f" tvg-name="Haiti vs Costa Rica" tvg-logo="https://img.gvapi.cc/football/team/d55980e43b8a49a3ac62d7a899334f11.png!w80" group-title="CoLaTV",[06:00] 28/09 ⚽ Haiti vs Costa Rica • Liên minh bóng đá quốc gia châu Mỹ [HLS]
+#EXTINF:-1 tvg-id="sport-41ded174842f" tvg-name="Haiti vs Costa Rica" tvg-logo="https://img.gvapi.cc/football/team/d55980e43b8a49a3ac62d7a899334f11.png!w80" group-title="CoLaTV",[06:00] 28/09 ⚽ Haiti vs Costa Rica (MOUNTAIN DEW) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/87547578_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-4bb83b8e206f" tvg-name="Haiti vs Costa Rica" tvg-logo="https://img.gvapi.cc/football/team/d55980e43b8a49a3ac62d7a899334f11.png!w80" group-title="CoLaTV",[06:00] 28/09 ⚽ Haiti vs Costa Rica • Liên minh bóng đá quốc gia châu Mỹ [FLV]
+#EXTINF:-1 tvg-id="sport-4bb83b8e206f" tvg-name="Haiti vs Costa Rica" tvg-logo="https://img.gvapi.cc/football/team/d55980e43b8a49a3ac62d7a899334f11.png!w80" group-title="CoLaTV",[06:00] 28/09 ⚽ Haiti vs Costa Rica (MOUNTAIN DEW) • Liên minh bóng đá quốc gia châu Mỹ [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/87547578_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-a79a55dbbade" tvg-name="Curacao vs Nicaragua" tvg-logo="https://img.gvapi.cc/football/team/31fd3b7fb312954c8a781d31f83166b7.png!w80" group-title="CoLaTV",[07:00] 28/09 ⚽ Curacao vs Nicaragua • Liên minh bóng đá quốc gia châu Mỹ [HLS]
+#EXTINF:-1 tvg-id="sport-a79a55dbbade" tvg-name="Curacao vs Nicaragua" tvg-logo="https://img.gvapi.cc/football/team/31fd3b7fb312954c8a781d31f83166b7.png!w80" group-title="CoLaTV",[07:00] 28/09 ⚽ Curacao vs Nicaragua (SAMURAI) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/07808742_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-46bb3df5f478" tvg-name="Curacao vs Nicaragua" tvg-logo="https://img.gvapi.cc/football/team/31fd3b7fb312954c8a781d31f83166b7.png!w80" group-title="CoLaTV",[07:00] 28/09 ⚽ Curacao vs Nicaragua • Liên minh bóng đá quốc gia châu Mỹ [HLS]
+#EXTINF:-1 tvg-id="sport-46bb3df5f478" tvg-name="Curacao vs Nicaragua" tvg-logo="https://img.gvapi.cc/football/team/31fd3b7fb312954c8a781d31f83166b7.png!w80" group-title="CoLaTV",[07:00] 28/09 ⚽ Curacao vs Nicaragua (SAMURAI) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/07808742_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-a9428a0c7be1" tvg-name="Curacao vs Nicaragua" tvg-logo="https://img.gvapi.cc/football/team/31fd3b7fb312954c8a781d31f83166b7.png!w80" group-title="CoLaTV",[07:00] 28/09 ⚽ Curacao vs Nicaragua • Liên minh bóng đá quốc gia châu Mỹ [FLV]
+#EXTINF:-1 tvg-id="sport-a9428a0c7be1" tvg-name="Curacao vs Nicaragua" tvg-logo="https://img.gvapi.cc/football/team/31fd3b7fb312954c8a781d31f83166b7.png!w80" group-title="CoLaTV",[07:00] 28/09 ⚽ Curacao vs Nicaragua (SAMURAI) • Liên minh bóng đá quốc gia châu Mỹ [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/07808742_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-bd338209c143" tvg-name="Dominica vs Puerto Rico" tvg-logo="https://img.gvapi.cc/football/team/52e9caed9827b4c611bd6cc7a96ed455.png!w80" group-title="CoLaTV",[07:00] 28/09 ⚽ Dominica vs Puerto Rico • Liên minh bóng đá quốc gia châu Mỹ [HLS]
+#EXTINF:-1 tvg-id="sport-bd338209c143" tvg-name="Dominica vs Puerto Rico" tvg-logo="https://img.gvapi.cc/football/team/52e9caed9827b4c611bd6cc7a96ed455.png!w80" group-title="CoLaTV",[07:00] 28/09 ⚽ Dominica vs Puerto Rico (MONSTER) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/75915087_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-5678858db27e" tvg-name="Dominica vs Puerto Rico" tvg-logo="https://img.gvapi.cc/football/team/52e9caed9827b4c611bd6cc7a96ed455.png!w80" group-title="CoLaTV",[07:00] 28/09 ⚽ Dominica vs Puerto Rico • Liên minh bóng đá quốc gia châu Mỹ [HLS]
+#EXTINF:-1 tvg-id="sport-5678858db27e" tvg-name="Dominica vs Puerto Rico" tvg-logo="https://img.gvapi.cc/football/team/52e9caed9827b4c611bd6cc7a96ed455.png!w80" group-title="CoLaTV",[07:00] 28/09 ⚽ Dominica vs Puerto Rico (MONSTER) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/75915087_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-97bff1f0c04e" tvg-name="Dominica vs Puerto Rico" tvg-logo="https://img.gvapi.cc/football/team/52e9caed9827b4c611bd6cc7a96ed455.png!w80" group-title="CoLaTV",[07:00] 28/09 ⚽ Dominica vs Puerto Rico • Liên minh bóng đá quốc gia châu Mỹ [FLV]
+#EXTINF:-1 tvg-id="sport-97bff1f0c04e" tvg-name="Dominica vs Puerto Rico" tvg-logo="https://img.gvapi.cc/football/team/52e9caed9827b4c611bd6cc7a96ed455.png!w80" group-title="CoLaTV",[07:00] 28/09 ⚽ Dominica vs Puerto Rico (MONSTER) • Liên minh bóng đá quốc gia châu Mỹ [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/75915087_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-26af104149be" tvg-name="Club Leon vs Juarez" tvg-logo="https://img.gvapi.cc/football/team/4695f653aca6ac49ff2baa4a961fa67b.png!w80" group-title="CoLaTV",[08:00] 28/09 ⚽ Club Leon vs Juarez • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
+#EXTINF:-1 tvg-id="sport-26af104149be" tvg-name="Club Leon vs Juarez" tvg-logo="https://img.gvapi.cc/football/team/4695f653aca6ac49ff2baa4a961fa67b.png!w80" group-title="CoLaTV",[08:00] 28/09 ⚽ Club Leon vs Juarez (MOUNTAIN DEW) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/87547578_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-ef9fb72584a4" tvg-name="Club Leon vs Juarez" tvg-logo="https://img.gvapi.cc/football/team/4695f653aca6ac49ff2baa4a961fa67b.png!w80" group-title="CoLaTV",[08:00] 28/09 ⚽ Club Leon vs Juarez • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
+#EXTINF:-1 tvg-id="sport-ef9fb72584a4" tvg-name="Club Leon vs Juarez" tvg-logo="https://img.gvapi.cc/football/team/4695f653aca6ac49ff2baa4a961fa67b.png!w80" group-title="CoLaTV",[08:00] 28/09 ⚽ Club Leon vs Juarez (MOUNTAIN DEW) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/87547578_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-6b980a86830e" tvg-name="Club Leon vs Juarez" tvg-logo="https://img.gvapi.cc/football/team/4695f653aca6ac49ff2baa4a961fa67b.png!w80" group-title="CoLaTV",[08:00] 28/09 ⚽ Club Leon vs Juarez • Giải Vô địch Bóng đá Quốc gia Mexico [FLV]
+#EXTINF:-1 tvg-id="sport-6b980a86830e" tvg-name="Club Leon vs Juarez" tvg-logo="https://img.gvapi.cc/football/team/4695f653aca6ac49ff2baa4a961fa67b.png!w80" group-title="CoLaTV",[08:00] 28/09 ⚽ Club Leon vs Juarez (MOUNTAIN DEW) • Giải Vô địch Bóng đá Quốc gia Mexico [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/87547578_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-bf10bfc1e203" tvg-name="Trinidad &amp; Tobago vs Cộng hòa Dominican" tvg-logo="https://img.gvapi.cc/football/team/edb8dfb5b878d0e33c4a86488ad8eb6a.png!w80" group-title="CoLaTV",[08:00] 28/09 ⚽ Trinidad & Tobago vs Cộng hòa Dominican • Liên minh bóng đá quốc gia châu Mỹ [HLS]
+#EXTINF:-1 tvg-id="sport-bf10bfc1e203" tvg-name="Trinidad &amp; Tobago vs Cộng hòa Dominican" tvg-logo="https://img.gvapi.cc/football/team/edb8dfb5b878d0e33c4a86488ad8eb6a.png!w80" group-title="CoLaTV",[08:00] 28/09 ⚽ Trinidad & Tobago vs Cộng hòa Dominican (POCARI) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/19919577_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-95ac4fd9be72" tvg-name="Trinidad &amp; Tobago vs Cộng hòa Dominican" tvg-logo="https://img.gvapi.cc/football/team/edb8dfb5b878d0e33c4a86488ad8eb6a.png!w80" group-title="CoLaTV",[08:00] 28/09 ⚽ Trinidad & Tobago vs Cộng hòa Dominican • Liên minh bóng đá quốc gia châu Mỹ [HLS]
+#EXTINF:-1 tvg-id="sport-95ac4fd9be72" tvg-name="Trinidad &amp; Tobago vs Cộng hòa Dominican" tvg-logo="https://img.gvapi.cc/football/team/edb8dfb5b878d0e33c4a86488ad8eb6a.png!w80" group-title="CoLaTV",[08:00] 28/09 ⚽ Trinidad & Tobago vs Cộng hòa Dominican (POCARI) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/19919577_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-f720089c310e" tvg-name="Trinidad &amp; Tobago vs Cộng hòa Dominican" tvg-logo="https://img.gvapi.cc/football/team/edb8dfb5b878d0e33c4a86488ad8eb6a.png!w80" group-title="CoLaTV",[08:00] 28/09 ⚽ Trinidad & Tobago vs Cộng hòa Dominican • Liên minh bóng đá quốc gia châu Mỹ [FLV]
+#EXTINF:-1 tvg-id="sport-f720089c310e" tvg-name="Trinidad &amp; Tobago vs Cộng hòa Dominican" tvg-logo="https://img.gvapi.cc/football/team/edb8dfb5b878d0e33c4a86488ad8eb6a.png!w80" group-title="CoLaTV",[08:00] 28/09 ⚽ Trinidad & Tobago vs Cộng hòa Dominican (POCARI) • Liên minh bóng đá quốc gia châu Mỹ [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/19919577_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-dc21591611f9" tvg-name="Necaxa vs Club America" tvg-logo="https://img.gvapi.cc/football/team/05321a8272ff8e7ff2eb7eae2e0b72a6.png!w80" group-title="CoLaTV",[10:10] 28/09 ⚽ Necaxa vs Club America • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
+#EXTINF:-1 tvg-id="sport-dc21591611f9" tvg-name="Necaxa vs Club America" tvg-logo="https://img.gvapi.cc/football/team/05321a8272ff8e7ff2eb7eae2e0b72a6.png!w80" group-title="CoLaTV",[10:10] 28/09 ⚽ Necaxa vs Club America (GIÀ LÀNG) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/14830711_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-2e217b16a53f" tvg-name="Necaxa vs Club America" tvg-logo="https://img.gvapi.cc/football/team/05321a8272ff8e7ff2eb7eae2e0b72a6.png!w80" group-title="CoLaTV",[10:10] 28/09 ⚽ Necaxa vs Club America • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
+#EXTINF:-1 tvg-id="sport-2e217b16a53f" tvg-name="Necaxa vs Club America" tvg-logo="https://img.gvapi.cc/football/team/05321a8272ff8e7ff2eb7eae2e0b72a6.png!w80" group-title="CoLaTV",[10:10] 28/09 ⚽ Necaxa vs Club America (GIÀ LÀNG) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/14830711_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-4c794d744ef0" tvg-name="Necaxa vs Club America" tvg-logo="https://img.gvapi.cc/football/team/05321a8272ff8e7ff2eb7eae2e0b72a6.png!w80" group-title="CoLaTV",[10:10] 28/09 ⚽ Necaxa vs Club America • Giải Vô địch Bóng đá Quốc gia Mexico [FLV]
+#EXTINF:-1 tvg-id="sport-4c794d744ef0" tvg-name="Necaxa vs Club America" tvg-logo="https://img.gvapi.cc/football/team/05321a8272ff8e7ff2eb7eae2e0b72a6.png!w80" group-title="CoLaTV",[10:10] 28/09 ⚽ Necaxa vs Club America (GIÀ LÀNG) • Giải Vô địch Bóng đá Quốc gia Mexico [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/14830711_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-fc96418887b8" tvg-name="Singapore vs Đội tuyển quốc gia Bangladesh" tvg-logo="https://img.gvapi.cc/football/team/bfa20d86a59044ef90a4609dde03985c.png!w80" group-title="CoLaTV",[16:00] 28/09 ⚽ Singapore vs Đội tuyển quốc gia Bangladesh • ASEAN Cup [HLS]
+#EXTINF:-1 tvg-id="sport-fc96418887b8" tvg-name="Singapore vs Đội tuyển quốc gia Bangladesh" tvg-logo="https://img.gvapi.cc/football/team/bfa20d86a59044ef90a4609dde03985c.png!w80" group-title="CoLaTV",[16:00] 28/09 ⚽ Singapore vs Đội tuyển quốc gia Bangladesh (SPRITE) • ASEAN Cup [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/75748097_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-b723ea145eb0" tvg-name="Singapore vs Đội tuyển quốc gia Bangladesh" tvg-logo="https://img.gvapi.cc/football/team/bfa20d86a59044ef90a4609dde03985c.png!w80" group-title="CoLaTV",[16:00] 28/09 ⚽ Singapore vs Đội tuyển quốc gia Bangladesh • ASEAN Cup [HLS]
+#EXTINF:-1 tvg-id="sport-b723ea145eb0" tvg-name="Singapore vs Đội tuyển quốc gia Bangladesh" tvg-logo="https://img.gvapi.cc/football/team/bfa20d86a59044ef90a4609dde03985c.png!w80" group-title="CoLaTV",[16:00] 28/09 ⚽ Singapore vs Đội tuyển quốc gia Bangladesh (SPRITE) • ASEAN Cup [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/75748097_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-4d7eee7d42aa" tvg-name="Singapore vs Đội tuyển quốc gia Bangladesh" tvg-logo="https://img.gvapi.cc/football/team/bfa20d86a59044ef90a4609dde03985c.png!w80" group-title="CoLaTV",[16:00] 28/09 ⚽ Singapore vs Đội tuyển quốc gia Bangladesh • ASEAN Cup [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://colatv77.live/
-#EXTVLCOPT:http-origin=https://colatv77.live
-https://live05.meung.app/live/14830711_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-b377c4c3eff0" tvg-name="Singapore vs Đội tuyển quốc gia Bangladesh" tvg-logo="https://img.gvapi.cc/football/team/bfa20d86a59044ef90a4609dde03985c.png!w80" group-title="CoLaTV",[16:00] 28/09 ⚽ Singapore vs Đội tuyển quốc gia Bangladesh • ASEAN Cup [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://colatv77.live/
-#EXTVLCOPT:http-origin=https://colatv77.live
-https://live05.miekgo.app/live/14830711_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-1e9e59390b33" tvg-name="Singapore vs Đội tuyển quốc gia Bangladesh" tvg-logo="https://img.gvapi.cc/football/team/bfa20d86a59044ef90a4609dde03985c.png!w80" group-title="CoLaTV",[16:00] 28/09 ⚽ Singapore vs Đội tuyển quốc gia Bangladesh • ASEAN Cup [FLV]
+#EXTINF:-1 tvg-id="sport-1e9e59390b33" tvg-name="Singapore vs Đội tuyển quốc gia Bangladesh" tvg-logo="https://img.gvapi.cc/football/team/bfa20d86a59044ef90a4609dde03985c.png!w80" group-title="CoLaTV",[16:00] 28/09 ⚽ Singapore vs Đội tuyển quốc gia Bangladesh (SPRITE) • ASEAN Cup [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/75748097_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-e41aacca67b5" tvg-name="Singapore vs Đội tuyển quốc gia Bangladesh" tvg-logo="https://img.gvapi.cc/football/team/bfa20d86a59044ef90a4609dde03985c.png!w80" group-title="CoLaTV",[16:00] 28/09 ⚽ Singapore vs Đội tuyển quốc gia Bangladesh • ASEAN Cup [FLV]
+#EXTINF:-1 tvg-id="sport-4d7eee7d42aa" tvg-name="Singapore vs Đội tuyển quốc gia Bangladesh" tvg-logo="https://img.gvapi.cc/football/team/bfa20d86a59044ef90a4609dde03985c.png!w80" group-title="CoLaTV",[16:00] 28/09 ⚽ Singapore vs Đội tuyển quốc gia Bangladesh (GIÀ LÀNG) • ASEAN Cup [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://colatv77.live/
+#EXTVLCOPT:http-origin=https://colatv77.live
+https://live05.meung.app/live/14830711_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
+#EXTINF:-1 tvg-id="sport-b377c4c3eff0" tvg-name="Singapore vs Đội tuyển quốc gia Bangladesh" tvg-logo="https://img.gvapi.cc/football/team/bfa20d86a59044ef90a4609dde03985c.png!w80" group-title="CoLaTV",[16:00] 28/09 ⚽ Singapore vs Đội tuyển quốc gia Bangladesh (GIÀ LÀNG) • ASEAN Cup [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://colatv77.live/
+#EXTVLCOPT:http-origin=https://colatv77.live
+https://live05.miekgo.app/live/14830711_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
+#EXTINF:-1 tvg-id="sport-e41aacca67b5" tvg-name="Singapore vs Đội tuyển quốc gia Bangladesh" tvg-logo="https://img.gvapi.cc/football/team/bfa20d86a59044ef90a4609dde03985c.png!w80" group-title="CoLaTV",[16:00] 28/09 ⚽ Singapore vs Đội tuyển quốc gia Bangladesh (GIÀ LÀNG) • ASEAN Cup [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/14830711_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-9d7ae2c3c279" tvg-name="Tensung FC vs RTC FC" tvg-logo="https://img.gvapi.cc/football/team/8a9fc46ed01d4d8aa736a356b92bc291.png!w80" group-title="CoLaTV",[16:00] 28/09 ⚽ Tensung FC vs RTC FC • Giải bóng đá hàng đầu Bhutan [HLS]
+#EXTINF:-1 tvg-id="sport-9d7ae2c3c279" tvg-name="Tensung FC vs RTC FC" tvg-logo="https://img.gvapi.cc/football/team/8a9fc46ed01d4d8aa736a356b92bc291.png!w80" group-title="CoLaTV",[16:00] 28/09 ⚽ Tensung FC vs RTC FC (247) • Giải bóng đá hàng đầu Bhutan [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/90865415_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-a22c03106d94" tvg-name="Tensung FC vs RTC FC" tvg-logo="https://img.gvapi.cc/football/team/8a9fc46ed01d4d8aa736a356b92bc291.png!w80" group-title="CoLaTV",[16:00] 28/09 ⚽ Tensung FC vs RTC FC • Giải bóng đá hàng đầu Bhutan [HLS]
+#EXTINF:-1 tvg-id="sport-a22c03106d94" tvg-name="Tensung FC vs RTC FC" tvg-logo="https://img.gvapi.cc/football/team/8a9fc46ed01d4d8aa736a356b92bc291.png!w80" group-title="CoLaTV",[16:00] 28/09 ⚽ Tensung FC vs RTC FC (247) • Giải bóng đá hàng đầu Bhutan [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/90865415_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-5225e268bb18" tvg-name="Tensung FC vs RTC FC" tvg-logo="https://img.gvapi.cc/football/team/8a9fc46ed01d4d8aa736a356b92bc291.png!w80" group-title="CoLaTV",[16:00] 28/09 ⚽ Tensung FC vs RTC FC • Giải bóng đá hàng đầu Bhutan [FLV]
+#EXTINF:-1 tvg-id="sport-5225e268bb18" tvg-name="Tensung FC vs RTC FC" tvg-logo="https://img.gvapi.cc/football/team/8a9fc46ed01d4d8aa736a356b92bc291.png!w80" group-title="CoLaTV",[16:00] 28/09 ⚽ Tensung FC vs RTC FC (247) • Giải bóng đá hàng đầu Bhutan [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/90865415_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-856509d1d747" tvg-name="Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela" tvg-logo="https://img.gvapi.cc/football/team/cb4f05e5448145bbba8c26a840ab900d.png!w80" group-title="CoLaTV",[17:25] 28/09 ⚽ Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela • Giao hữu Quốc tế [HLS]
+#EXTINF:-1 tvg-id="sport-856509d1d747" tvg-name="Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela" tvg-logo="https://img.gvapi.cc/football/team/cb4f05e5448145bbba8c26a840ab900d.png!w80" group-title="CoLaTV",[17:25] 28/09 ⚽ Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela (REVIVE) • Giao hữu Quốc tế [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/33982309_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-176f11bf0a90" tvg-name="Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela" tvg-logo="https://img.gvapi.cc/football/team/cb4f05e5448145bbba8c26a840ab900d.png!w80" group-title="CoLaTV",[17:25] 28/09 ⚽ Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela • Giao hữu Quốc tế [HLS]
+#EXTINF:-1 tvg-id="sport-176f11bf0a90" tvg-name="Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela" tvg-logo="https://img.gvapi.cc/football/team/cb4f05e5448145bbba8c26a840ab900d.png!w80" group-title="CoLaTV",[17:25] 28/09 ⚽ Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela (REVIVE) • Giao hữu Quốc tế [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/33982309_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-16c2bfd76a88" tvg-name="Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela" tvg-logo="https://img.gvapi.cc/football/team/cb4f05e5448145bbba8c26a840ab900d.png!w80" group-title="CoLaTV",[17:25] 28/09 ⚽ Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela • Giao hữu Quốc tế [FLV]
+#EXTINF:-1 tvg-id="sport-16c2bfd76a88" tvg-name="Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela" tvg-logo="https://img.gvapi.cc/football/team/cb4f05e5448145bbba8c26a840ab900d.png!w80" group-title="CoLaTV",[17:25] 28/09 ⚽ Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela (REVIVE) • Giao hữu Quốc tế [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/33982309_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-9418e87a6403" tvg-name="Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela" tvg-logo="https://img.gvapi.cc/football/team/cb4f05e5448145bbba8c26a840ab900d.png!w80" group-title="CoLaTV",[17:25] 28/09 ⚽ Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela • Giao hữu Quốc tế [HLS]
+#EXTINF:-1 tvg-id="sport-9418e87a6403" tvg-name="Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela" tvg-logo="https://img.gvapi.cc/football/team/cb4f05e5448145bbba8c26a840ab900d.png!w80" group-title="CoLaTV",[17:25] 28/09 ⚽ Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela (Cozy) • Giao hữu Quốc tế [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/87379114_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-0dbd86234413" tvg-name="Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela" tvg-logo="https://img.gvapi.cc/football/team/cb4f05e5448145bbba8c26a840ab900d.png!w80" group-title="CoLaTV",[17:25] 28/09 ⚽ Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela • Giao hữu Quốc tế [HLS]
+#EXTINF:-1 tvg-id="sport-0dbd86234413" tvg-name="Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela" tvg-logo="https://img.gvapi.cc/football/team/cb4f05e5448145bbba8c26a840ab900d.png!w80" group-title="CoLaTV",[17:25] 28/09 ⚽ Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela (Cozy) • Giao hữu Quốc tế [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/87379114_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-8d0446667a44" tvg-name="Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela" tvg-logo="https://img.gvapi.cc/football/team/cb4f05e5448145bbba8c26a840ab900d.png!w80" group-title="CoLaTV",[17:25] 28/09 ⚽ Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela • Giao hữu Quốc tế [FLV]
+#EXTINF:-1 tvg-id="sport-8d0446667a44" tvg-name="Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela" tvg-logo="https://img.gvapi.cc/football/team/cb4f05e5448145bbba8c26a840ab900d.png!w80" group-title="CoLaTV",[17:25] 28/09 ⚽ Đội tuyển Bóng đá Quốc gia Nhật Bản vs Venezuela (Cozy) • Giao hữu Quốc tế [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/87379114_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-dfe7a36d3c13" tvg-name="Hàn Quốc vs Uruguay" tvg-logo="https://img.gvapi.cc/football/team/6581bc34692022be4c21d98778e33df0.png!w80" group-title="CoLaTV",[18:00] 28/09 ⚽ Hàn Quốc vs Uruguay • Giao hữu Quốc tế [HLS]
+#EXTINF:-1 tvg-id="sport-dfe7a36d3c13" tvg-name="Hàn Quốc vs Uruguay" tvg-logo="https://img.gvapi.cc/football/team/6581bc34692022be4c21d98778e33df0.png!w80" group-title="CoLaTV",[18:00] 28/09 ⚽ Hàn Quốc vs Uruguay (C2) • Giao hữu Quốc tế [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/08552895_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-de0bf41b5bd6" tvg-name="Hàn Quốc vs Uruguay" tvg-logo="https://img.gvapi.cc/football/team/6581bc34692022be4c21d98778e33df0.png!w80" group-title="CoLaTV",[18:00] 28/09 ⚽ Hàn Quốc vs Uruguay • Giao hữu Quốc tế [HLS]
+#EXTINF:-1 tvg-id="sport-de0bf41b5bd6" tvg-name="Hàn Quốc vs Uruguay" tvg-logo="https://img.gvapi.cc/football/team/6581bc34692022be4c21d98778e33df0.png!w80" group-title="CoLaTV",[18:00] 28/09 ⚽ Hàn Quốc vs Uruguay (C2) • Giao hữu Quốc tế [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/08552895_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-7ae84df24ac4" tvg-name="Hàn Quốc vs Uruguay" tvg-logo="https://img.gvapi.cc/football/team/6581bc34692022be4c21d98778e33df0.png!w80" group-title="CoLaTV",[18:00] 28/09 ⚽ Hàn Quốc vs Uruguay • Giao hữu Quốc tế [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://colatv77.live/
-#EXTVLCOPT:http-origin=https://colatv77.live
-https://live05.meung.app/live/78905744_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-a26769ddbc8f" tvg-name="Hàn Quốc vs Uruguay" tvg-logo="https://img.gvapi.cc/football/team/6581bc34692022be4c21d98778e33df0.png!w80" group-title="CoLaTV",[18:00] 28/09 ⚽ Hàn Quốc vs Uruguay • Giao hữu Quốc tế [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://colatv77.live/
-#EXTVLCOPT:http-origin=https://colatv77.live
-https://live05.miekgo.app/live/78905744_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-3f6bb43e9918" tvg-name="Hàn Quốc vs Uruguay" tvg-logo="https://img.gvapi.cc/football/team/6581bc34692022be4c21d98778e33df0.png!w80" group-title="CoLaTV",[18:00] 28/09 ⚽ Hàn Quốc vs Uruguay • Giao hữu Quốc tế [FLV]
+#EXTINF:-1 tvg-id="sport-3f6bb43e9918" tvg-name="Hàn Quốc vs Uruguay" tvg-logo="https://img.gvapi.cc/football/team/6581bc34692022be4c21d98778e33df0.png!w80" group-title="CoLaTV",[18:00] 28/09 ⚽ Hàn Quốc vs Uruguay (C2) • Giao hữu Quốc tế [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/08552895_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-ffaadb90940d" tvg-name="Hàn Quốc vs Uruguay" tvg-logo="https://img.gvapi.cc/football/team/6581bc34692022be4c21d98778e33df0.png!w80" group-title="CoLaTV",[18:00] 28/09 ⚽ Hàn Quốc vs Uruguay • Giao hữu Quốc tế [FLV]
+#EXTINF:-1 tvg-id="sport-7ae84df24ac4" tvg-name="Hàn Quốc vs Uruguay" tvg-logo="https://img.gvapi.cc/football/team/6581bc34692022be4c21d98778e33df0.png!w80" group-title="CoLaTV",[18:00] 28/09 ⚽ Hàn Quốc vs Uruguay (7UP) • Giao hữu Quốc tế [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://colatv77.live/
+#EXTVLCOPT:http-origin=https://colatv77.live
+https://live05.meung.app/live/78905744_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
+#EXTINF:-1 tvg-id="sport-a26769ddbc8f" tvg-name="Hàn Quốc vs Uruguay" tvg-logo="https://img.gvapi.cc/football/team/6581bc34692022be4c21d98778e33df0.png!w80" group-title="CoLaTV",[18:00] 28/09 ⚽ Hàn Quốc vs Uruguay (7UP) • Giao hữu Quốc tế [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://colatv77.live/
+#EXTVLCOPT:http-origin=https://colatv77.live
+https://live05.miekgo.app/live/78905744_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
+#EXTINF:-1 tvg-id="sport-ffaadb90940d" tvg-name="Hàn Quốc vs Uruguay" tvg-logo="https://img.gvapi.cc/football/team/6581bc34692022be4c21d98778e33df0.png!w80" group-title="CoLaTV",[18:00] 28/09 ⚽ Hàn Quốc vs Uruguay (7UP) • Giao hữu Quốc tế [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/78905744_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-6724442db8ff" tvg-name="Cộng hòa Tajikistan vs Palestine" tvg-logo="https://img.gvapi.cc/football/team/79d0360cd882c01f1ac008b3bb85feb3.png!w80" group-title="CoLaTV",[19:00] 28/09 ⚽ Cộng hòa Tajikistan vs Palestine • CFA Team China International Tournament [HLS]
+#EXTINF:-1 tvg-id="sport-6724442db8ff" tvg-name="Cộng hòa Tajikistan vs Palestine" tvg-logo="https://img.gvapi.cc/football/team/79d0360cd882c01f1ac008b3bb85feb3.png!w80" group-title="CoLaTV",[19:00] 28/09 ⚽ Cộng hòa Tajikistan vs Palestine (FANTA) • CFA Team China International Tournament [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/16226575_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-750c1a9daac5" tvg-name="Cộng hòa Tajikistan vs Palestine" tvg-logo="https://img.gvapi.cc/football/team/79d0360cd882c01f1ac008b3bb85feb3.png!w80" group-title="CoLaTV",[19:00] 28/09 ⚽ Cộng hòa Tajikistan vs Palestine • CFA Team China International Tournament [HLS]
+#EXTINF:-1 tvg-id="sport-750c1a9daac5" tvg-name="Cộng hòa Tajikistan vs Palestine" tvg-logo="https://img.gvapi.cc/football/team/79d0360cd882c01f1ac008b3bb85feb3.png!w80" group-title="CoLaTV",[19:00] 28/09 ⚽ Cộng hòa Tajikistan vs Palestine (FANTA) • CFA Team China International Tournament [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/16226575_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-dce413e350d6" tvg-name="Cộng hòa Tajikistan vs Palestine" tvg-logo="https://img.gvapi.cc/football/team/79d0360cd882c01f1ac008b3bb85feb3.png!w80" group-title="CoLaTV",[19:00] 28/09 ⚽ Cộng hòa Tajikistan vs Palestine • CFA Team China International Tournament [FLV]
+#EXTINF:-1 tvg-id="sport-dce413e350d6" tvg-name="Cộng hòa Tajikistan vs Palestine" tvg-logo="https://img.gvapi.cc/football/team/79d0360cd882c01f1ac008b3bb85feb3.png!w80" group-title="CoLaTV",[19:00] 28/09 ⚽ Cộng hòa Tajikistan vs Palestine (FANTA) • CFA Team China International Tournament [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/16226575_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-3308c839df5a" tvg-name="Indonesia vs Malaysia" tvg-logo="https://img.gvapi.cc/football/team/628f16b29939d1b060af49f66ae0f7f8.png!w80" group-title="CoLaTV",[19:30] 28/09 ⚽ Indonesia vs Malaysia • ASEAN Cup [HLS]
+#EXTINF:-1 tvg-id="sport-a413d6e3fc25" tvg-name="Cộng hòa Tajikistan vs Palestine" tvg-logo="https://img.gvapi.cc/football/team/79d0360cd882c01f1ac008b3bb85feb3.png!w80" group-title="CoLaTV",[19:00] 28/09 ⚽ Cộng hòa Tajikistan vs Palestine (BLV ROCKSTAR) • CFA Team China International Tournament [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/82054853_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-dd710fd65fea" tvg-name="Cộng hòa Tajikistan vs Palestine" tvg-logo="https://img.gvapi.cc/football/team/79d0360cd882c01f1ac008b3bb85feb3.png!w80" group-title="CoLaTV",[19:00] 28/09 ⚽ Cộng hòa Tajikistan vs Palestine (BLV ROCKSTAR) • CFA Team China International Tournament [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/82054853_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-330117fe44a0" tvg-name="Malaysia vs Indonesia" tvg-logo="https://img.gvapi.cc/football/team/9e5b39abe0157cedd650c0d0c5cbd767.png!w80" group-title="CoLaTV",[19:30] 28/09 ⚽ Malaysia vs Indonesia (STING) • ASEAN Cup [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/14707124_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-5b5ba402cea5" tvg-name="Indonesia vs Malaysia" tvg-logo="https://img.gvapi.cc/football/team/628f16b29939d1b060af49f66ae0f7f8.png!w80" group-title="CoLaTV",[19:30] 28/09 ⚽ Indonesia vs Malaysia • ASEAN Cup [HLS]
+#EXTINF:-1 tvg-id="sport-121431a9e1a9" tvg-name="Malaysia vs Indonesia" tvg-logo="https://img.gvapi.cc/football/team/9e5b39abe0157cedd650c0d0c5cbd767.png!w80" group-title="CoLaTV",[19:30] 28/09 ⚽ Malaysia vs Indonesia (STING) • ASEAN Cup [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/14707124_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-ecf344a1fc1c" tvg-name="Indonesia vs Malaysia" tvg-logo="https://img.gvapi.cc/football/team/628f16b29939d1b060af49f66ae0f7f8.png!w80" group-title="CoLaTV",[19:30] 28/09 ⚽ Indonesia vs Malaysia • ASEAN Cup [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://colatv77.live/
-#EXTVLCOPT:http-origin=https://colatv77.live
-https://live05.meung.app/live/14830711_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-e45ac0286fe8" tvg-name="Indonesia vs Malaysia" tvg-logo="https://img.gvapi.cc/football/team/628f16b29939d1b060af49f66ae0f7f8.png!w80" group-title="CoLaTV",[19:30] 28/09 ⚽ Indonesia vs Malaysia • ASEAN Cup [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://colatv77.live/
-#EXTVLCOPT:http-origin=https://colatv77.live
-https://live05.miekgo.app/live/14830711_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-0cdd369b7d82" tvg-name="Indonesia vs Malaysia" tvg-logo="https://img.gvapi.cc/football/team/628f16b29939d1b060af49f66ae0f7f8.png!w80" group-title="CoLaTV",[19:30] 28/09 ⚽ Indonesia vs Malaysia • ASEAN Cup [FLV]
+#EXTINF:-1 tvg-id="sport-9f983fb605de" tvg-name="Malaysia vs Indonesia" tvg-logo="https://img.gvapi.cc/football/team/9e5b39abe0157cedd650c0d0c5cbd767.png!w80" group-title="CoLaTV",[19:30] 28/09 ⚽ Malaysia vs Indonesia (STING) • ASEAN Cup [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/14707124_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-21160d7cf8be" tvg-name="Indonesia vs Malaysia" tvg-logo="https://img.gvapi.cc/football/team/628f16b29939d1b060af49f66ae0f7f8.png!w80" group-title="CoLaTV",[19:30] 28/09 ⚽ Indonesia vs Malaysia • ASEAN Cup [FLV]
+#EXTINF:-1 tvg-id="sport-57eeba8052a2" tvg-name="Malaysia vs Indonesia" tvg-logo="https://img.gvapi.cc/football/team/9e5b39abe0157cedd650c0d0c5cbd767.png!w80" group-title="CoLaTV",[19:30] 28/09 ⚽ Malaysia vs Indonesia (GIÀ LÀNG) • ASEAN Cup [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://colatv77.live/
+#EXTVLCOPT:http-origin=https://colatv77.live
+https://live05.meung.app/live/14830711_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
+#EXTINF:-1 tvg-id="sport-0523ef09f1c4" tvg-name="Malaysia vs Indonesia" tvg-logo="https://img.gvapi.cc/football/team/9e5b39abe0157cedd650c0d0c5cbd767.png!w80" group-title="CoLaTV",[19:30] 28/09 ⚽ Malaysia vs Indonesia (GIÀ LÀNG) • ASEAN Cup [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://colatv77.live/
+#EXTVLCOPT:http-origin=https://colatv77.live
+https://live05.miekgo.app/live/14830711_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
+#EXTINF:-1 tvg-id="sport-61957f224951" tvg-name="Malaysia vs Indonesia" tvg-logo="https://img.gvapi.cc/football/team/9e5b39abe0157cedd650c0d0c5cbd767.png!w80" group-title="CoLaTV",[19:30] 28/09 ⚽ Malaysia vs Indonesia (GIÀ LÀNG) • ASEAN Cup [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/14830711_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-a1282fc428a0" tvg-name="Graficar Beograd vs Teleoptik" tvg-logo="https://img.gvapi.cc/football/team/cbb6ad45aa0de955fe139e57eb64cc7e.png!w80" group-title="CoLaTV",[20:00] 28/09 ⚽ Graficar Beograd vs Teleoptik • Giải hạng nhất quốc gia Serbia [HLS]
+#EXTINF:-1 tvg-id="sport-a1282fc428a0" tvg-name="Graficar Beograd vs Teleoptik" tvg-logo="https://img.gvapi.cc/football/team/cbb6ad45aa0de955fe139e57eb64cc7e.png!w80" group-title="CoLaTV",[20:00] 28/09 ⚽ Graficar Beograd vs Teleoptik (PEPSI) • Giải hạng nhất quốc gia Serbia [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/59444581_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-703d16037383" tvg-name="Graficar Beograd vs Teleoptik" tvg-logo="https://img.gvapi.cc/football/team/cbb6ad45aa0de955fe139e57eb64cc7e.png!w80" group-title="CoLaTV",[20:00] 28/09 ⚽ Graficar Beograd vs Teleoptik • Giải hạng nhất quốc gia Serbia [HLS]
+#EXTINF:-1 tvg-id="sport-703d16037383" tvg-name="Graficar Beograd vs Teleoptik" tvg-logo="https://img.gvapi.cc/football/team/cbb6ad45aa0de955fe139e57eb64cc7e.png!w80" group-title="CoLaTV",[20:00] 28/09 ⚽ Graficar Beograd vs Teleoptik (PEPSI) • Giải hạng nhất quốc gia Serbia [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/59444581_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-1b0b3aad0996" tvg-name="Graficar Beograd vs Teleoptik" tvg-logo="https://img.gvapi.cc/football/team/cbb6ad45aa0de955fe139e57eb64cc7e.png!w80" group-title="CoLaTV",[20:00] 28/09 ⚽ Graficar Beograd vs Teleoptik • Giải hạng nhất quốc gia Serbia [FLV]
+#EXTINF:-1 tvg-id="sport-1b0b3aad0996" tvg-name="Graficar Beograd vs Teleoptik" tvg-logo="https://img.gvapi.cc/football/team/cbb6ad45aa0de955fe139e57eb64cc7e.png!w80" group-title="CoLaTV",[20:00] 28/09 ⚽ Graficar Beograd vs Teleoptik (PEPSI) • Giải hạng nhất quốc gia Serbia [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/59444581_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-9c09b1289a97" tvg-name="Al-Kharitiyath vs Al Wakra" tvg-logo="https://img.gvapi.cc/football/team/718ad64f1a3de007af0de47a9ca2df8f.jpg!w80" group-title="CoLaTV",[22:00] 28/09 ⚽ Al-Kharitiyath vs Al Wakra • Cúp Qatar [HLS]
+#EXTINF:-1 tvg-id="sport-9c09b1289a97" tvg-name="Al-Kharitiyath vs Al Wakra" tvg-logo="https://img.gvapi.cc/football/team/718ad64f1a3de007af0de47a9ca2df8f.jpg!w80" group-title="CoLaTV",[22:00] 28/09 ⚽ Al-Kharitiyath vs Al Wakra (MONSTER) • Cúp Qatar [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/75915087_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-de7d0a7285de" tvg-name="Al-Kharitiyath vs Al Wakra" tvg-logo="https://img.gvapi.cc/football/team/718ad64f1a3de007af0de47a9ca2df8f.jpg!w80" group-title="CoLaTV",[22:00] 28/09 ⚽ Al-Kharitiyath vs Al Wakra • Cúp Qatar [HLS]
+#EXTINF:-1 tvg-id="sport-de7d0a7285de" tvg-name="Al-Kharitiyath vs Al Wakra" tvg-logo="https://img.gvapi.cc/football/team/718ad64f1a3de007af0de47a9ca2df8f.jpg!w80" group-title="CoLaTV",[22:00] 28/09 ⚽ Al-Kharitiyath vs Al Wakra (MONSTER) • Cúp Qatar [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/75915087_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-2be2de848219" tvg-name="Al-Kharitiyath vs Al Wakra" tvg-logo="https://img.gvapi.cc/football/team/718ad64f1a3de007af0de47a9ca2df8f.jpg!w80" group-title="CoLaTV",[22:00] 28/09 ⚽ Al-Kharitiyath vs Al Wakra • Cúp Qatar [FLV]
+#EXTINF:-1 tvg-id="sport-2be2de848219" tvg-name="Al-Kharitiyath vs Al Wakra" tvg-logo="https://img.gvapi.cc/football/team/718ad64f1a3de007af0de47a9ca2df8f.jpg!w80" group-title="CoLaTV",[22:00] 28/09 ⚽ Al-Kharitiyath vs Al Wakra (MONSTER) • Cúp Qatar [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/75915087_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-2426d49ee7a1" tvg-name="Leixoes U23 vs Vizela U23" tvg-logo="https://img.gvapi.cc/football/team/d5db95a6441ae92e5dd150663f89dc64.png!w80" group-title="CoLaTV",[22:00] 28/09 ⚽ Leixoes U23 vs Vizela U23 • Giải bóng đá U23 Bồ Đào Nha [HLS]
+#EXTINF:-1 tvg-id="sport-2426d49ee7a1" tvg-name="Leixoes U23 vs Vizela U23" tvg-logo="https://img.gvapi.cc/football/team/d5db95a6441ae92e5dd150663f89dc64.png!w80" group-title="CoLaTV",[22:00] 28/09 ⚽ Leixoes U23 vs Vizela U23 (SPRITE) • Giải bóng đá U23 Bồ Đào Nha [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/75748097_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-6130d8aa12c3" tvg-name="Leixoes U23 vs Vizela U23" tvg-logo="https://img.gvapi.cc/football/team/d5db95a6441ae92e5dd150663f89dc64.png!w80" group-title="CoLaTV",[22:00] 28/09 ⚽ Leixoes U23 vs Vizela U23 • Giải bóng đá U23 Bồ Đào Nha [HLS]
+#EXTINF:-1 tvg-id="sport-6130d8aa12c3" tvg-name="Leixoes U23 vs Vizela U23" tvg-logo="https://img.gvapi.cc/football/team/d5db95a6441ae92e5dd150663f89dc64.png!w80" group-title="CoLaTV",[22:00] 28/09 ⚽ Leixoes U23 vs Vizela U23 (SPRITE) • Giải bóng đá U23 Bồ Đào Nha [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/75748097_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-749ec7d463ce" tvg-name="Leixoes U23 vs Vizela U23" tvg-logo="https://img.gvapi.cc/football/team/d5db95a6441ae92e5dd150663f89dc64.png!w80" group-title="CoLaTV",[22:00] 28/09 ⚽ Leixoes U23 vs Vizela U23 • Giải bóng đá U23 Bồ Đào Nha [FLV]
+#EXTINF:-1 tvg-id="sport-749ec7d463ce" tvg-name="Leixoes U23 vs Vizela U23" tvg-logo="https://img.gvapi.cc/football/team/d5db95a6441ae92e5dd150663f89dc64.png!w80" group-title="CoLaTV",[22:00] 28/09 ⚽ Leixoes U23 vs Vizela U23 (SPRITE) • Giải bóng đá U23 Bồ Đào Nha [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/75748097_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-b4bdb6aa0f17" tvg-name="CLB Armenia vs Montenegro" tvg-logo="https://img.gvapi.cc/football/team/13d8532225dea4fca8e0ebdfb27b83e4.png!w80" group-title="CoLaTV",[23:00] 28/09 ⚽ CLB Armenia vs Montenegro • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-b4bdb6aa0f17" tvg-name="CLB Armenia vs Montenegro" tvg-logo="https://img.gvapi.cc/football/team/13d8532225dea4fca8e0ebdfb27b83e4.png!w80" group-title="CoLaTV",[23:00] 28/09 ⚽ CLB Armenia vs Montenegro (AQUA) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/18812304_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-c48731622e65" tvg-name="CLB Armenia vs Montenegro" tvg-logo="https://img.gvapi.cc/football/team/13d8532225dea4fca8e0ebdfb27b83e4.png!w80" group-title="CoLaTV",[23:00] 28/09 ⚽ CLB Armenia vs Montenegro • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-c48731622e65" tvg-name="CLB Armenia vs Montenegro" tvg-logo="https://img.gvapi.cc/football/team/13d8532225dea4fca8e0ebdfb27b83e4.png!w80" group-title="CoLaTV",[23:00] 28/09 ⚽ CLB Armenia vs Montenegro (AQUA) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/18812304_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-ab82587aa815" tvg-name="CLB Armenia vs Montenegro" tvg-logo="https://img.gvapi.cc/football/team/13d8532225dea4fca8e0ebdfb27b83e4.png!w80" group-title="CoLaTV",[23:00] 28/09 ⚽ CLB Armenia vs Montenegro • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTINF:-1 tvg-id="sport-ab82587aa815" tvg-name="CLB Armenia vs Montenegro" tvg-logo="https://img.gvapi.cc/football/team/13d8532225dea4fca8e0ebdfb27b83e4.png!w80" group-title="CoLaTV",[23:00] 28/09 ⚽ CLB Armenia vs Montenegro (AQUA) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/18812304_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-9a04038da629" tvg-name="Latvia vs Đảo Síp" tvg-logo="https://img.gvapi.cc/football/team/5b52e27a9d5bf294f5b593c4c071500e.png!w80" group-title="CoLaTV",[23:00] 28/09 ⚽ Latvia vs Đảo Síp • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-9a04038da629" tvg-name="Latvia vs Đảo Síp" tvg-logo="https://img.gvapi.cc/football/team/5b52e27a9d5bf294f5b593c4c071500e.png!w80" group-title="CoLaTV",[23:00] 28/09 ⚽ Latvia vs Đảo Síp (HỔ VẰN) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/07428422_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-02e22896983a" tvg-name="Latvia vs Đảo Síp" tvg-logo="https://img.gvapi.cc/football/team/5b52e27a9d5bf294f5b593c4c071500e.png!w80" group-title="CoLaTV",[23:00] 28/09 ⚽ Latvia vs Đảo Síp • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-02e22896983a" tvg-name="Latvia vs Đảo Síp" tvg-logo="https://img.gvapi.cc/football/team/5b52e27a9d5bf294f5b593c4c071500e.png!w80" group-title="CoLaTV",[23:00] 28/09 ⚽ Latvia vs Đảo Síp (HỔ VẰN) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/07428422_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-cf1c371b134f" tvg-name="Latvia vs Đảo Síp" tvg-logo="https://img.gvapi.cc/football/team/5b52e27a9d5bf294f5b593c4c071500e.png!w80" group-title="CoLaTV",[23:00] 28/09 ⚽ Latvia vs Đảo Síp • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTINF:-1 tvg-id="sport-cf1c371b134f" tvg-name="Latvia vs Đảo Síp" tvg-logo="https://img.gvapi.cc/football/team/5b52e27a9d5bf294f5b593c4c071500e.png!w80" group-title="CoLaTV",[23:00] 28/09 ⚽ Latvia vs Đảo Síp (HỔ VẰN) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/07428422_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-7e157ed24ab6" tvg-name="ĐTQG Georgia vs ĐTQG Ukraine" tvg-logo="https://img.gvapi.cc/football/team/c5b86fa907b96e38e377ddfe82802cc6.png!w80" group-title="CoLaTV",[23:00] 28/09 ⚽ ĐTQG Georgia vs ĐTQG Ukraine • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-7e157ed24ab6" tvg-name="ĐTQG Georgia vs ĐTQG Ukraine" tvg-logo="https://img.gvapi.cc/football/team/c5b86fa907b96e38e377ddfe82802cc6.png!w80" group-title="CoLaTV",[23:00] 28/09 ⚽ ĐTQG Georgia vs ĐTQG Ukraine (SAMURAI) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.meung.app/live/07808742_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-4f36454b5425" tvg-name="ĐTQG Georgia vs ĐTQG Ukraine" tvg-logo="https://img.gvapi.cc/football/team/c5b86fa907b96e38e377ddfe82802cc6.png!w80" group-title="CoLaTV",[23:00] 28/09 ⚽ ĐTQG Georgia vs ĐTQG Ukraine • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-4f36454b5425" tvg-name="ĐTQG Georgia vs ĐTQG Ukraine" tvg-logo="https://img.gvapi.cc/football/team/c5b86fa907b96e38e377ddfe82802cc6.png!w80" group-title="CoLaTV",[23:00] 28/09 ⚽ ĐTQG Georgia vs ĐTQG Ukraine (SAMURAI) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
 https://live05.miekgo.app/live/07808742_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
-#EXTINF:-1 tvg-id="sport-6c8d270cc58e" tvg-name="ĐTQG Georgia vs ĐTQG Ukraine" tvg-logo="https://img.gvapi.cc/football/team/c5b86fa907b96e38e377ddfe82802cc6.png!w80" group-title="CoLaTV",[23:00] 28/09 ⚽ ĐTQG Georgia vs ĐTQG Ukraine • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTINF:-1 tvg-id="sport-6c8d270cc58e" tvg-name="ĐTQG Georgia vs ĐTQG Ukraine" tvg-logo="https://img.gvapi.cc/football/team/c5b86fa907b96e38e377ddfe82802cc6.png!w80" group-title="CoLaTV",[23:00] 28/09 ⚽ ĐTQG Georgia vs ĐTQG Ukraine (SAMURAI) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 #EXTVLCOPT:http-origin=https://colatv77.live
@@ -1276,31 +1366,46 @@ https://eqr2hdarxfliv.vcdn.cloud/1790434917_hd/1790434917_hd@720p.m3u8|User-Agen
 #EXTVLCOPT:http-referrer=https://giovang.asia/
 #EXTVLCOPT:http-origin=https://giovang.asia
 https://eqr2hdarxfliv.vcdn.cloud/1790492515_hd/1790492515_hd@720p.m3u8|Referer=https%3A%2F%2Fgiovang.asia%2F&Origin=https%3A%2F%2Fgiovang.asia
-#EXTINF:-1 tvg-id="sport-45fcb0e6d5c4" tvg-name="Gangwon FC vs Incheon United FC" tvg-logo="https://images.keovip88.net/images/teams/gangwon-fc.png" group-title="Giờ Vàng",[17:00] 27/09 ⚽ Gangwon FC vs Incheon United FC (Bón) • K-League Hàn Quốc [HLS]
+#EXTINF:-1 tvg-id="sport-7fadfc8acd5d" tvg-name="Basket Girona vs Murcia" tvg-logo="https://static.flashscore.com/res/image/data/h4mAxXEa-YgmHmwO2.png" group-title="Giờ Vàng",[22:00] 27/09 🏀 Basket Girona vs Murcia (blv-leo) • Euroleague SuperCup [HLS]
 #EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-referrer=https://giovang.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://eqr2hdarxfliv.vcdn.cloud/1790493636_hd/1790493636_hd@720p.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgiovang.org%2F
-#EXTINF:-1 tvg-id="sport-59c039ecf152" tvg-name="Auriense vs CD San Jose de Soria" tvg-logo="https://images.keovip88.net/images/teams/default.png" group-title="Giờ Vàng",[17:00] 27/09 ⚽ Auriense vs CD San Jose de Soria (Mickey) • Cúp nhà vua Tây Ban Nha [HLS]
+#EXTVLCOPT:http-referrer=https://giovang.asia/
+#EXTVLCOPT:http-origin=https://giovang.asia
+https://eqr2hdarxfliv.vcdn.cloud/1790494992_hd/1790494992_hd@720p.m3u8|Referer=https%3A%2F%2Fgiovang.asia%2F&Origin=https%3A%2F%2Fgiovang.asia
+#EXTINF:-1 tvg-id="sport-92f138da9c3f" tvg-name="Auriense vs CD San Jose de Soria" tvg-logo="https://images.keovip88.net/images/teams/default.png" group-title="Giờ Vàng",[17:00] 27/09 ⚽ Auriense vs CD San Jose de Soria (mickey) • Cúp nhà vua Tây Ban Nha [HLS]
 #EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-referrer=https://giovang.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://eqr2hdarxfliv.vcdn.cloud/1790493714_hd/1790493714_hd@720p.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgiovang.org%2F
-#EXTINF:-1 tvg-id="sport-6ea48bb60361" tvg-name="Trung Quốc vs New Zealand" tvg-logo="https://images.keovip88.net/images/teams/china.png" group-title="Giờ Vàng",[18:35] 27/09 ⚽ Trung Quốc vs New Zealand (Súp) • Giao hữu quốc tế [HLS]
+#EXTVLCOPT:http-referrer=https://giovang.asia/
+#EXTVLCOPT:http-origin=https://giovang.asia
+https://eqr2hdarxfliv.vcdn.cloud/1790493714_hd/1790493714_hd@720p.m3u8|Referer=https%3A%2F%2Fgiovang.asia%2F&Origin=https%3A%2F%2Fgiovang.asia
+#EXTINF:-1 tvg-id="sport-a4db33b26f97" tvg-name="Campuchia vs Myanmar" tvg-logo="https://images.keovip88.net/images/teams/cambodia.png" group-title="Giờ Vàng",[17:00] 27/09 ⚽ Campuchia vs Myanmar (blv-mason) • FIFA ASEAN Cup [HLS]
 #EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-referrer=https://giovang.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://eqr2hdarxfliv.vcdn.cloud/1790493807_hd/1790493807_hd@720p.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgiovang.org%2F
-#EXTINF:-1 tvg-id="sport-e006ede0e7dc" tvg-name="Lithuania vs Azerbaijan" tvg-logo="https://images.keovip88.net/images/teams/lithuania.png" group-title="Giờ Vàng",[20:00] 27/09 ⚽ Lithuania vs Azerbaijan (Mickey) • UEFA Nations League [HLS]
+#EXTVLCOPT:http-referrer=https://giovang.asia/
+#EXTVLCOPT:http-origin=https://giovang.asia
+https://eqr2hdarxfliv.vcdn.cloud/1790493555_hd/1790493555_hd@720p.m3u8|Referer=https%3A%2F%2Fgiovang.asia%2F&Origin=https%3A%2F%2Fgiovang.asia
+#EXTINF:-1 tvg-id="sport-3db043c65d3a" tvg-name="Gangwon FC vs Incheon United FC" tvg-logo="https://images.keovip88.net/images/teams/gangwon-fc.png" group-title="Giờ Vàng",[17:00] 27/09 ⚽ Gangwon FC vs Incheon United FC (blv-bon) • K-League Hàn Quốc [HLS]
 #EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-referrer=https://giovang.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://eqr2hdarxfliv.vcdn.cloud/1790494080_hd/1790494080_hd@720p.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgiovang.org%2F
-#EXTINF:-1 tvg-id="sport-df6d82704db1" tvg-name="Mallorca vs Almeria" tvg-logo="https://images.keovip88.net/images/teams/mallorca.png" group-title="Giờ Vàng",[21:15] 27/09 ⚽ Mallorca vs Almeria (Trĩ) • Hạng 2 Tây Ban Nha [HLS]
+#EXTVLCOPT:http-referrer=https://giovang.asia/
+#EXTVLCOPT:http-origin=https://giovang.asia
+https://eqr2hdarxfliv.vcdn.cloud/1790493636_hd/1790493636_hd@720p.m3u8|Referer=https%3A%2F%2Fgiovang.asia%2F&Origin=https%3A%2F%2Fgiovang.asia
+#EXTINF:-1 tvg-id="sport-69bdb4ebf5e6" tvg-name="Trung Quốc vs New Zealand" tvg-logo="https://images.keovip88.net/images/teams/china.png" group-title="Giờ Vàng",[18:35] 27/09 ⚽ Trung Quốc vs New Zealand (blv-sup) • Giao hữu quốc tế [HLS]
 #EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-referrer=https://giovang.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://eqr2hdarxfliv.vcdn.cloud/1790494198_hd/1790494198_hd@720p.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgiovang.org%2F
+#EXTVLCOPT:http-referrer=https://giovang.asia/
+#EXTVLCOPT:http-origin=https://giovang.asia
+https://eqr2hdarxfliv.vcdn.cloud/1790493807_hd/1790493807_hd@720p.m3u8|Referer=https%3A%2F%2Fgiovang.asia%2F&Origin=https%3A%2F%2Fgiovang.asia
+#EXTINF:-1 tvg-id="sport-e252e468b30c" tvg-name="Lithuania vs Azerbaijan" tvg-logo="https://images.keovip88.net/images/teams/lithuania.png" group-title="Giờ Vàng",[20:00] 27/09 ⚽ Lithuania vs Azerbaijan (mickey) • UEFA Nations League [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-referrer=https://giovang.asia/
+#EXTVLCOPT:http-origin=https://giovang.asia
+https://eqr2hdarxfliv.vcdn.cloud/1790494080_hd/1790494080_hd@720p.m3u8|Referer=https%3A%2F%2Fgiovang.asia%2F&Origin=https%3A%2F%2Fgiovang.asia
+#EXTINF:-1 tvg-id="sport-b316944f264f" tvg-name="Mallorca vs Almeria" tvg-logo="https://images.keovip88.net/images/teams/mallorca.png" group-title="Giờ Vàng",[21:15] 27/09 ⚽ Mallorca vs Almeria (blv-tri) • Hạng 2 Tây Ban Nha [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-referrer=https://giovang.asia/
+#EXTVLCOPT:http-origin=https://giovang.asia
+https://eqr2hdarxfliv.vcdn.cloud/1790494198_hd/1790494198_hd@720p.m3u8|Referer=https%3A%2F%2Fgiovang.asia%2F&Origin=https%3A%2F%2Fgiovang.asia
+#EXTINF:-1 tvg-id="sport-cbf7eb261275" tvg-name="Yemen vs Qatar" tvg-logo="https://static.flashscore.com/res/image/data/GANOAmyS-48fOrFoJ.png" group-title="Giờ Vàng",[22:00] 27/09 ⚽ Yemen vs Qatar (blv-beo) • Arabian Gulf Cup [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-referrer=https://giovang.asia/
+#EXTVLCOPT:http-origin=https://giovang.asia
+https://eqr2hdarxfliv.vcdn.cloud/1790494397_hd/1790494397_hd@720p.m3u8|Referer=https%3A%2F%2Fgiovang.asia%2F&Origin=https%3A%2F%2Fgiovang.asia
 #EXTINF:-1 tvg-id="sport-2b6b2cc6d124" tvg-name="Gibraltar vs Andorra" tvg-logo="https://images.keovip88.net/images/teams/gibraltar.png" group-title="Giờ Vàng",[23:00] 27/09 ⚽ Gibraltar vs Andorra (blv-mason) • UEFA Nations League [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-referrer=https://giovang.asia/
@@ -1361,12 +1466,6 @@ https://eqr2hdarxfliv.vcdn.cloud/1790493987_hd/1790493987_hd@720p.m3u8|User-Agen
 #EXTVLCOPT:http-referrer=https://giovang.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://eqr2hdarxfliv.vcdn.cloud/1790493466_hd/1790493466_hd@720p.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgiovang.org%2F
-#EXTINF:-1 tvg-id="sport-7287321e5062" tvg-name="Wofoo Social Enterprises - Sky Leader" tvg-logo="https://img.sports-data.online/football/team/c4c784779f5fcbd8020f863339ce970e.png" group-title="PhaLangTV",🔴 [12:30] 27/09 ⚽ Wofoo Social Enterprises - Sky Leader • Chinese Hong Kong First Division [HLS]
-#EXTGRP:PhaLangTV
-#EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/wofoo-social-enterprises-sky-leader-y39mp1h67n85moj
-#EXTVLCOPT:http-origin=https://phalang.live
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/df416f1673a222adce53bd210eb0de29/playlist.m3u8|Referer=https%3A%2F%2Fphalang.live%2Ftruc-tiep%2Fwofoo-social-enterprises-sky-leader-y39mp1h67n85moj&Origin=https%3A%2F%2Fphalang.live&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="sport-1e8b07991377" tvg-name="China U16 - Vietnam U16" tvg-logo="https://img0.aiscore.com/volleyball/team/da0f5c2d7a7ced93056baddc54135a74.png!w80" group-title="PhaLangTV",🔴 [13:00] 27/09 ⚽ China U16 - Vietnam U16 (LÝ LÀNG LÁ) • Shenyang Peace Cup [HLS]
 #EXTGRP:PhaLangTV
 #EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/china-u16-vietnam-u16-l7oqdehgv359r51
@@ -1433,183 +1532,183 @@ https://lilive1.eu.cc/live/47863d9ab75a0c20e2f0247e7e044fdb/playlist.m3u8|Refere
 #EXTVLCOPT:http-origin=https://phalang.live
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/f66016bee48741d7d1104def89f2d04a/playlist.m3u8|Referer=https%3A%2F%2Fphalang.live%2Ftruc-tiep%2Flithuania-azerbaijan-ednm9whw5y0vryo&Origin=https%3A%2F%2Fphalang.live&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-18331b9870cf" tvg-name="Yuen Long vs Tung Sing" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergpho1o0r8k0/image/small" group-title="XoilacXTH",🔴 [12:30] 27/09 ⚽ Yuen Long vs Tung Sing • Hong Kong First Division [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-#EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel17.flv?wsSecret=5b6bdcbb7721e9864bdc1a13d7106edc&wsABSTime=1790537518|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-6192fb84a53a" tvg-name="Wofoo Social Enterprises vs Sky Leader" tvg-logo="https://imgts.sportpulseapiz.com/football/team/2y8m4zhglepql07/image/small" group-title="XoilacXTH",🔴 [12:30] 27/09 ⚽ Wofoo Social Enterprises vs Sky Leader • Hong Kong First Division [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-#EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel18.flv?wsSecret=9155429f0db982120d1f87974dfdf580&wsABSTime=1790537518|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-3bb88e9ad986" tvg-name="Wan Chai vs Kowloon Cricket Club" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh4zx2r1ge/image/small" group-title="XoilacXTH",🔴 [12:30] 27/09 ⚽ Wan Chai vs Kowloon Cricket Club • Hạng 2 Hồng Kông [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-#EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel19.flv?wsSecret=122b46c4791c1c2c0d278732c8b14c6c&wsABSTime=1790537518|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="sport-0ff037251cdd" tvg-name="Trung Quốc U16 vs Việt Nam U16" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phk2e3m2wd/image/small" group-title="XoilacXTH",🔴 [13:00] 27/09 ⚽ Trung Quốc U16 vs Việt Nam U16 (FABIO) • Shenyang Peace Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 https://live2.zundrixmediapipeline.com/live/channel2.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-afae0af72bce" tvg-name="Trung Quốc U16 vs Việt Nam U16" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phk2e3m2wd/image/small" group-title="XoilacXTH",🔴 [13:00] 27/09 ⚽ Trung Quốc U16 vs Việt Nam U16 (FABIO) • Shenyang Peace Cup [FLV]
+#EXTINF:-1 tvg-id="sport-3020d4c626c0" tvg-name="Trung Quốc U16 vs Việt Nam U16" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phk2e3m2wd/image/small" group-title="XoilacXTH",🔴 [13:00] 27/09 ⚽ Trung Quốc U16 vs Việt Nam U16 (FABIO) • Shenyang Peace Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001790494318-0-0-a177b2b52e98102d15591134c9c8b5c8|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-1baf52790d8e" tvg-name="Verspah Oita vs Azul Claro Numazu" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdeh6049r510/image/small" group-title="XoilacXTH",🔴 [13:00] 27/09 ⚽ Verspah Oita vs Azul Claro Numazu • JFL [FLV]
+https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001790495166-0-0-7be19d7cf84568934ef2328b86f87f51|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-2de8e1d9957c" tvg-name="Verspah Oita vs Azul Claro Numazu" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdeh6049r510/image/small" group-title="XoilacXTH",🔴 [13:00] 27/09 ⚽ Verspah Oita vs Azul Claro Numazu • JFL [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel1.flv?wsSecret=94b20f5efc45cedd8e0c89e69bb64eb9&wsABSTime=1790537518|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-63e85ffad73b" tvg-name="Nữ Okayama Yunogo vs Nữ IGA Kunoichi" tvg-logo="https://imgts.sportpulseapiz.com/football/team/2y8m4zh3nvpql07/image/small" group-title="XoilacXTH",🔴 [13:00] 27/09 ⚽ Nữ Okayama Yunogo vs Nữ IGA Kunoichi • JPN Nadeshiko League 1 [FLV]
+https://live1.quickscoreboardz.com/live/channel1.flv?wsSecret=eac5897d367e154bb878385e0729704d&wsABSTime=1790538365|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-7e28cb2ee8b0" tvg-name="Nữ Okayama Yunogo vs Nữ IGA Kunoichi" tvg-logo="https://imgts.sportpulseapiz.com/football/team/2y8m4zh3nvpql07/image/small" group-title="XoilacXTH",🔴 [13:00] 27/09 ⚽ Nữ Okayama Yunogo vs Nữ IGA Kunoichi • JPN Nadeshiko League 1 [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=056287644ebaa1222dfce156f78aba6d&wsABSTime=1790537518|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=5e46efdf9d31a7f026701e5508201162&wsABSTime=1790538365|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="sport-35d38e70c9f2" tvg-name="Hồng Kông vs Lào" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kn54qllhgjlqvy9/image/small" group-title="XoilacXTH",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào (NICK) • FIFA ASEAN Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 https://live2.zundrixmediapipeline.com/live/channel5.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-23189616e278" tvg-name="Hồng Kông vs Lào" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kn54qllhgjlqvy9/image/small" group-title="XoilacXTH",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào (NICK) • FIFA ASEAN Cup [FLV]
+#EXTINF:-1 tvg-id="sport-ec10982d4e57" tvg-name="Hồng Kông vs Lào" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kn54qllhgjlqvy9/image/small" group-title="XoilacXTH",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào (NICK) • FIFA ASEAN Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-5.flv?auth_key=3000001790494318-0-0-b3d96788d78452e9175e943096950a7f|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-5842daaa2685" tvg-name="Hồng Kông vs Lào" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kn54qllhgjlqvy9/image/small" group-title="XoilacXTH",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào (NICK) • FIFA ASEAN Cup [FLV]
+https://live2.domaincdn.cc/livecdn/channel-5.flv?auth_key=3000001790495166-0-0-8736a7480379365e3f306e3fd95c36e3|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-d67ec7253660" tvg-name="Hồng Kông vs Lào" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kn54qllhgjlqvy9/image/small" group-title="XoilacXTH",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào (NICK) • FIFA ASEAN Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001790494319-0-0-ae15f42e62e28e1eac885ef1977a1da7|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-56003a44fb49" tvg-name="Hồng Kông vs Lào" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kn54qllhgjlqvy9/image/small" group-title="XoilacXTH",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào (NICK) • FIFA ASEAN Cup [FLV]
+https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001790495166-0-0-11eac7d167c140ceeaa212b08bb888f7|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-d0666dd2a784" tvg-name="Hồng Kông vs Lào" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kn54qllhgjlqvy9/image/small" group-title="XoilacXTH",🔴 [14:00] 27/09 ⚽ Hồng Kông vs Lào (NICK) • FIFA ASEAN Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel15.flv?wsSecret=eb0fd1f724389c7f98459111b057d73b&wsABSTime=1790537519|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-a38cbb5771e7" tvg-name="Fiji vs Papua New Guinea" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y39mp1h33kzmojx/image/small" group-title="XoilacXTH",🔴 [14:00] 27/09 ⚽ Fiji vs Papua New Guinea • MSG PM Cup [FLV]
+https://live1.quickscoreboardz.com/live/channel15.flv?wsSecret=e91ca2e3e746dd83fd7ab5d868f06afe&wsABSTime=1790538366|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-de6874902bb5" tvg-name="Fiji vs Papua New Guinea" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y39mp1h33kzmojx/image/small" group-title="XoilacXTH",🔴 [14:00] 27/09 ⚽ Fiji vs Papua New Guinea • MSG PM Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=b04269412a1df9f35294ab6e6c7a48ee&wsABSTime=1790537518|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=1abd50a3fe1d4cc8c36449689fdfd282&wsABSTime=1790538365|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="sport-be95f61fe1ef" tvg-name="Kaya FC vs Philippine Army FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhd3wryk0/image/small" group-title="XoilacXTH",🔴 [14:00] 27/09 ⚽ Kaya FC vs Philippine Army FC (TOM) • Philippines UFL [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 https://live2.zundrixmediapipeline.com/live/channel4.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-2a0113144178" tvg-name="Kaya FC vs Philippine Army FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhd3wryk0/image/small" group-title="XoilacXTH",🔴 [14:00] 27/09 ⚽ Kaya FC vs Philippine Army FC (TOM) • Philippines UFL [FLV]
+#EXTINF:-1 tvg-id="sport-2699bdc494a1" tvg-name="Kaya FC vs Philippine Army FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhd3wryk0/image/small" group-title="XoilacXTH",🔴 [14:00] 27/09 ⚽ Kaya FC vs Philippine Army FC (TOM) • Philippines UFL [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001790494318-0-0-bbea36b84687251f61ca63d386321bae|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-f3c310c86fe8" tvg-name="Nữ Omiya Ardija vs Nữ JEF United" tvg-logo="https://imgts.sportpulseapiz.com/football/team/n54qllh811zqvy9/image/small" group-title="XoilacXTH",🔴 [14:00] 27/09 ⚽ Nữ Omiya Ardija vs Nữ JEF United • Japanese Nadeshiko League Cup [FLV]
+https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001790495166-0-0-225d6798daa5ec379a1b5f4008f2dca6|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-987a0da77816" tvg-name="Nữ Omiya Ardija vs Nữ JEF United" tvg-logo="https://imgts.sportpulseapiz.com/football/team/n54qllh811zqvy9/image/small" group-title="XoilacXTH",🔴 [14:00] 27/09 ⚽ Nữ Omiya Ardija vs Nữ JEF United • Japanese Nadeshiko League Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=231bafb79ec3a01d6baf73c1a6f1b10d&wsABSTime=1790537518|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-f75cc6a4cae5" tvg-name="Wong Tai Sin vs Tuen Mun FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdehnkpxr510/image/small" group-title="XoilacXTH",🔴 [14:00] 27/09 ⚽ Wong Tai Sin vs Tuen Mun FC • Hạng 2 Hồng Kông [FLV]
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=c72c3b257dbba14f8255b619a27811c2&wsABSTime=1790538366|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-4525976d3629" tvg-name="Wong Tai Sin vs Tuen Mun FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdehnkpxr510/image/small" group-title="XoilacXTH",🔴 [14:00] 27/09 ⚽ Wong Tai Sin vs Tuen Mun FC • Hạng 2 Hồng Kông [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=b70f86a55e8aa75e626d0e7ca35f389d&wsABSTime=1790537518|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-21fb3f365875" tvg-name="Lucky Mile FC vs Hoi King" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlh1vy8ryk0/image/small" group-title="XoilacXTH",🔴 [14:00] 27/09 ⚽ Lucky Mile FC vs Hoi King • Hong Kong First Division [FLV]
+https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=c7df9fe134766c43ad9319e9c2465a83&wsABSTime=1790538365|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-9dc86d51bd0c" tvg-name="Lucky Mile FC vs Hoi King" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlh1vy8ryk0/image/small" group-title="XoilacXTH",🔴 [14:00] 27/09 ⚽ Lucky Mile FC vs Hoi King • Hong Kong First Division [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel9.flv?wsSecret=169c4be1c19f68a304312211d51fdd0b&wsABSTime=1790537518|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-3a7fff7a0b3c" tvg-name="Citizen vs Sham Shui Po" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh04n1md7o/image/small" group-title="XoilacXTH",🔴 [14:30] 27/09 ⚽ Citizen vs Sham Shui Po • Hong Kong First Division [FLV]
+https://live1.quickscoreboardz.com/live/channel9.flv?wsSecret=de4ab95a0915307f6b7044aac2e3fcfa&wsABSTime=1790538366|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-474984aa6a15" tvg-name="Citizen vs Sham Shui Po" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh04n1md7o/image/small" group-title="XoilacXTH",🔴 [14:30] 27/09 ⚽ Citizen vs Sham Shui Po • Hong Kong First Division [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel7.flv?wsSecret=c572a504624e1e63a7b49a429dc3ea67&wsABSTime=1790537518|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-1a105a0c6f66" tvg-name="Central Western RSA vs Kui Tan" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdehnvy2r510/image/small" group-title="XoilacXTH",🔴 [14:30] 27/09 ⚽ Central Western RSA vs Kui Tan • Hong Kong First Division [FLV]
+https://live1.quickscoreboardz.com/live/channel7.flv?wsSecret=dce593e32873c3ad62515f508bd1eab7&wsABSTime=1790538366|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-8cc8c814a081" tvg-name="Central Western RSA vs Kui Tan" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdehnvy2r510/image/small" group-title="XoilacXTH",🔴 [14:30] 27/09 ⚽ Central Western RSA vs Kui Tan • Hong Kong First Division [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel8.flv?wsSecret=2910eb6ff40060a176f45f73338d4eb2&wsABSTime=1790537518|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+https://live1.quickscoreboardz.com/live/channel8.flv?wsSecret=c22caff364691facf3b3e6c177daae83&wsABSTime=1790538366|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="sport-0fbd44edcaad" tvg-name="FC Ulaanbaatar vs Hunters FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jhe68lqwzv/image/small" group-title="XoilacXTH",[15:00] 27/09 ⚽ FC Ulaanbaatar vs Hunters FC (FELIX) • Ngoại Hạng Mông Cổ [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 https://live2.zundrixmediapipeline.com/live/channel24.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-f7746627dc79" tvg-name="FC Ulaanbaatar vs Hunters FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jhe68lqwzv/image/small" group-title="XoilacXTH",[15:00] 27/09 ⚽ FC Ulaanbaatar vs Hunters FC (FELIX) • Ngoại Hạng Mông Cổ [FLV]
+#EXTINF:-1 tvg-id="sport-576a4525255b" tvg-name="FC Ulaanbaatar vs Hunters FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jhe68lqwzv/image/small" group-title="XoilacXTH",[15:00] 27/09 ⚽ FC Ulaanbaatar vs Hunters FC (FELIX) • Ngoại Hạng Mông Cổ [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001790494319-0-0-592d69da84728442cf81c863bc94400d|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-33a4fa18c566" tvg-name="Krylia Sovetov-2 vs Khimik Dzerzhinsk" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hjk71qdyj/image/small" group-title="XoilacXTH",[15:00] 27/09 ⚽ Krylia Sovetov-2 vs Khimik Dzerzhinsk • RUS D3B [FLV]
+https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001790495166-0-0-a07501bae304833f03c4567f2b30b536|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-22c48d041460" tvg-name="Krylia Sovetov-2 vs Khimik Dzerzhinsk" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hjk71qdyj/image/small" group-title="XoilacXTH",[15:00] 27/09 ⚽ Krylia Sovetov-2 vs Khimik Dzerzhinsk • RUS D3B [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel11.flv?wsSecret=dbb6ad8931c187bf37ec05ccfca17529&wsABSTime=1790537518|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-27420482d238" tvg-name="Nữ Inac Kobe vs Nữ Sanfrecce Hiroshima" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hw4z3qdyj/image/small" group-title="XoilacXTH",[15:00] 27/09 ⚽ Nữ Inac Kobe vs Nữ Sanfrecce Hiroshima • Japanese Nadeshiko League Cup [FLV]
+https://live1.quickscoreboardz.com/live/channel11.flv?wsSecret=3bc50b963b2fba13b9f114dcbd1badf8&wsABSTime=1790538366|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-83a29355bfad" tvg-name="Nữ Inac Kobe vs Nữ Sanfrecce Hiroshima" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hw4z3qdyj/image/small" group-title="XoilacXTH",[15:00] 27/09 ⚽ Nữ Inac Kobe vs Nữ Sanfrecce Hiroshima • Japanese Nadeshiko League Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel12.flv?wsSecret=a6f56910a5531e081b3ef18040f2b7dc&wsABSTime=1790537518|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-27642a227bf1" tvg-name="Ezhou Team vs Xiangyang Team" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8ghxoj9r6od/image/small" group-title="XoilacXTH",[15:00] 27/09 ⚽ Ezhou Team vs Xiangyang Team • Hubei City Football League [FLV]
+https://live1.quickscoreboardz.com/live/channel12.flv?wsSecret=e65930b8de649747bc2a13c8d696e4aa&wsABSTime=1790538366|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-d98f897536dd" tvg-name="Ezhou Team vs Xiangyang Team" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8ghxoj9r6od/image/small" group-title="XoilacXTH",[15:00] 27/09 ⚽ Ezhou Team vs Xiangyang Team • Hubei City Football League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel13.flv?wsSecret=e100a77754a7708b9380e95fb03eb1eb&wsABSTime=1790537519|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+https://live1.quickscoreboardz.com/live/channel13.flv?wsSecret=ea984a49442c30cb2740233c709b09f1&wsABSTime=1790538366|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="sport-ae889c9d6862" tvg-name="Criacao Shinjuku vs Okinawa SV" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhj3kkryk0/image/small" group-title="XoilacXTH",[15:00] 27/09 ⚽ Criacao Shinjuku vs Okinawa SV (RAVEN) • JFL [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 https://live2.zundrixmediapipeline.com/live/channel21.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-ca50212fae7e" tvg-name="Criacao Shinjuku vs Okinawa SV" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhj3kkryk0/image/small" group-title="XoilacXTH",[15:00] 27/09 ⚽ Criacao Shinjuku vs Okinawa SV (RAVEN) • JFL [FLV]
+#EXTINF:-1 tvg-id="sport-0b6d888c7df8" tvg-name="Criacao Shinjuku vs Okinawa SV" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhj3kkryk0/image/small" group-title="XoilacXTH",[15:00] 27/09 ⚽ Criacao Shinjuku vs Okinawa SV (RAVEN) • JFL [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-21.flv?auth_key=3000001790494319-0-0-fc823c2f1af3694d1837a06477bc9e59|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+https://live2.domaincdn.cc/livecdn/channel-21.flv?auth_key=3000001790495166-0-0-58d6aa905f75c11e5bfd006443b541a7|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-e5054fc5c40f" tvg-name="Wuhan Team vs Huanggang Team" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdeh1z4nr510/image/small" group-title="XoilacXTH",[15:00] 27/09 ⚽ Wuhan Team vs Huanggang Team • Hubei City Football League [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+#EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+https://live1.quickscoreboardz.com/live/channel15.flv?wsSecret=e91ca2e3e746dd83fd7ab5d868f06afe&wsABSTime=1790538366|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-de61dee83261" tvg-name="Jingmen Team vs Shiyan Team" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergphpj3gr8k0/image/small" group-title="XoilacXTH",[15:00] 27/09 ⚽ Jingmen Team vs Shiyan Team • Hubei City Football League [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+#EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+https://live1.quickscoreboardz.com/live/channel16.flv?wsSecret=5c953590247204d6166ccc50e9a52b68&wsABSTime=1790538366|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-8122969a533d" tvg-name="Dukla Praha B vs Bohemians1905 B" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dn1m1ghnyz9moep/image/small" group-title="XoilacXTH",[15:15] 27/09 ⚽ Dukla Praha B vs Bohemians1905 B (8) • Czech 3 liga [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+#EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+https://live1.quickscoreboardz.com/live/channel17.flv?wsSecret=62abca1f3b9e9a22df2d0f6194a37f25&wsABSTime=1790538366|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="sport-c30acbdf60d8" tvg-name="Campuchia vs Myanmar" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66hekxqo9j/image/small" group-title="XoilacXTH",[17:00] 27/09 ⚽ Campuchia vs Myanmar (ROY) • FIFA ASEAN Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 https://live2.zundrixmediapipeline.com/live/channel1.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-ab0fcfcd61fd" tvg-name="Campuchia vs Myanmar" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66hekxqo9j/image/small" group-title="XoilacXTH",[17:00] 27/09 ⚽ Campuchia vs Myanmar (ROY) • FIFA ASEAN Cup [FLV]
+#EXTINF:-1 tvg-id="sport-5d0c2708446e" tvg-name="Campuchia vs Myanmar" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66hekxqo9j/image/small" group-title="XoilacXTH",[17:00] 27/09 ⚽ Campuchia vs Myanmar (ROY) • FIFA ASEAN Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790494319-0-0-f8ccde68279489de719b3e8ae971cbe2|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-de4b999be199" tvg-name="Campuchia vs Myanmar" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66hekxqo9j/image/small" group-title="XoilacXTH",[17:00] 27/09 ⚽ Campuchia vs Myanmar (ROY) • FIFA ASEAN Cup [FLV]
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790495166-0-0-45667a7e73fab601fc0977d19f8f619b|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-4ee10d0365cc" tvg-name="Campuchia vs Myanmar" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66hekxqo9j/image/small" group-title="XoilacXTH",[17:00] 27/09 ⚽ Campuchia vs Myanmar (ROY) • FIFA ASEAN Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001790494319-0-0-5ca28fce6829536a619e94cdb13b23e5|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-a3dcca080b93" tvg-name="Campuchia vs Myanmar" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66hekxqo9j/image/small" group-title="XoilacXTH",[17:00] 27/09 ⚽ Campuchia vs Myanmar (ROY) • FIFA ASEAN Cup [FLV]
+https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001790495166-0-0-43e2b18a526842632dde74139cf6efa2|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-64980d14d79e" tvg-name="Campuchia vs Myanmar" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66hekxqo9j/image/small" group-title="XoilacXTH",[17:00] 27/09 ⚽ Campuchia vs Myanmar (ROY) • FIFA ASEAN Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=9f41a42fbb9cf9bbf149e365e7457d4f&wsABSTime=1790537519|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=a5fb3db29fbc4c16302ce7cb28f8ec0e&wsABSTime=1790538366|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
