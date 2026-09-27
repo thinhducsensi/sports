@@ -962,8 +962,6 @@ def fetch_all_provider_supplements(data):
         # itself reads sport.json and each fixture's resolver. One blocked
         # provider must not prevent other providers from updating.
         data["_failed_provider_adapters"] = failures
-        print("::warning::API riêng không truy cập được: " + ", ".join(sorted(failures)) +
-              "; tiếp tục bằng trận và resolver từ sport.json", file=sys.stderr)
     return jobs
 
 
@@ -2590,6 +2588,17 @@ def build_playlist():
     playable = Counter((provider_key(item["match"]), sport_category(item["match"])) for item in resolved)
     for key in sorted(discovered):
         print(f"[coverage] {key[0]}/{key[1]}: API={discovered[key]} eligible={eligible[key]} playable={playable[key]}")
+    # Direct provider APIs only supplement sport.json. Verify that every
+    # currently eligible worker fixture for an unavailable adapter still has
+    # fresh playable sources before treating its failure as informational.
+    for provider in sorted(data.get("_failed_provider_adapters", {})):
+        sports = [sport for p, sport in eligible if p == provider]
+        expected = sum(eligible[(provider, sport)] for sport in sports)
+        actual = sum(playable[(provider, sport)] for sport in sports)
+        level = "notice" if expected and actual == expected else "warning"
+        print(f"::{level}::API riêng {provider} không truy cập được; "
+              f"luồng dự phòng sport.json: {actual}/{expected} trận đủ điều kiện. "
+              "Chưa xác nhận các môn/trận nằm ngoài sport.json.")
     resolved_ids = {item["api_index"] for item in resolved}
     no_link, unresolved = {}, {}
     for item in candidates:
