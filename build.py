@@ -548,6 +548,24 @@ def _giovang_rows(data):
     return []
 
 
+def _giovang_page_url(row, event_id, kickoff):
+    """The event-page route used by the older working Giờ Vàng builder."""
+    explicit = first_text(row.get("match_url"), row.get("match_link"), row.get("page_url"))
+    if _json_http_url(explicit) and urlsplit(explicit).hostname == "giovang.org":
+        return explicit
+    teams = row.get("teams") if isinstance(row.get("teams"), dict) else {}
+    home = teams.get("home") if isinstance(teams.get("home"), dict) else {}
+    away = teams.get("away") if isinstance(teams.get("away"), dict) else {}
+    home_slug = first_text(home.get("slug")) or re.sub(r"[^a-z0-9]+", "-", normalize_text(home.get("name"))).strip("-")
+    away_slug = first_text(away.get("slug")) or re.sub(r"[^a-z0-9]+", "-", normalize_text(away.get("name"))).strip("-")
+    day_month = first_text(row.get("day_month")).replace("/", "-")
+    if not day_month and kickoff:
+        day_month = datetime.fromtimestamp(kickoff / 1000, TIME_ZONE).strftime("%d-%m")
+    if not all((home_slug, away_slug, day_month, event_id)):
+        return ""
+    return f"https://giovang.org/truc-tiep-{home_slug}-vs-{away_slug}-{day_month}-{event_id}"
+
+
 def fetch_giovang_supplement_matches(feed=None):
     base = "https://live-api.keonhacaitp.one"
     headers = {"User-Agent": USER_AGENT, "Referer": "https://giovang.org/"}
@@ -634,10 +652,19 @@ def fetch_giovang_supplement_matches(feed=None):
         }
         if kickoff:
             item["kickoff"] = kickoff
+        # /api/fixtures/{id} was used in the earlier v29 provider adapter.
+        # The event ID comes from the current JSON; media URLs come only from
+        # the JSON response (or the event page), never from a saved playlist.
+        if not is_terminal(item) and (is_live_listing or explicit_live or kickoff and kickoff <= end_of_next_vietnam_day(now_ms())):
+            item["_giovang_detail"] = base + "/api/fixtures/" + quote(event_id, safe="")
+            item["_giovang_page"] = _giovang_page_url(row, event_id, kickoff)
+            item["resolver_headers"] = headers
         if previous:
-            for key in ("sport", "sport_name", "name", "kickoff", "competition", "home_logo", "away_logo", "commentator"):
+            for key in ("sport", "sport_name", "name", "kickoff", "competition", "home_logo", "away_logo", "commentator", "_giovang_detail", "_giovang_page", "resolver_headers"):
                 if not item.get(key) and previous.get(key):
                     item[key] = previous[key]
+                elif item.get(key):
+                    previous[key] = item[key]
             previous["resolvers"] = list(dict.fromkeys(previous.get("resolvers", []) + detail_urls))
             previous["sources"] = dedupe_by_stream_url(sources + previous.get("sources", [])) if sources else previous.get("sources", [])
             if is_live_listing:
@@ -893,7 +920,6 @@ def fetch_xoilac_supplement_matches(feed=None):
 
 
 def fetch_all_provider_supplements(data):
-    participating=_provider_ids_in_feed(data)
     jobs=[]
     adapters={
         "chuoichien": fetch_chuoichien_supplement_matches,
@@ -907,9 +933,11 @@ def fetch_all_provider_supplements(data):
     with ThreadPoolExecutor(max_workers=max(1, min(len(adapters), 4))) as ex:
         futures={}
         for provider, func in adapters.items():
-            if provider in participating:
-                future = ex.submit(func, data) if provider in ("chuoichien", "xoilacxth") else ex.submit(func)
-                futures[future] = provider
+            # The worker's provider list can lag behind a working provider
+            # API. Probe each configured endpoint; only returned events enter
+            # the playlist. Xoilac still discovers its origin from the feed.
+            future = ex.submit(func, data) if provider in ("chuoichien", "xoilacxth") else ex.submit(func)
+            futures[future] = provider
         for f in as_completed(futures):
             provider = futures[f]
             try:
@@ -958,7 +986,7 @@ def merge_supplement_matches(base_matches, supplements):
                 )
             result.append(extra)
             continue
-        for key in ("_chuoi_external_id", "_chuoi_detail", "_giovang_detail", "_xoilac_detail", "sport_api_type",
+        for key in ("_chuoi_external_id", "_chuoi_detail", "_giovang_detail", "_giovang_page", "resolver_headers", "_xoilac_detail", "sport_api_type",
                     "name", "kickoff", "competition", "home_logo", "away_logo", "commentator"):
             if extra.get(key):
                 found[key] = extra[key]
@@ -1227,7 +1255,7 @@ DIRECT_PARSERS = {
 
 
 def fetch_direct_supplement_matches(provider, feed=None):
-    """Supplement any sport exposed by a participating direct provider feed."""
+    """Supplement every sport declared by this provider's current JSON."""
     cfg = DIRECT_FEEDS.get(provider)
     if not cfg:
         return []
@@ -1395,6 +1423,79 @@ def fetch_xoilac_sources(candidates):
                 )
                 result.setdefault(idx, []).append(obj)
     return {idx: dedupe_sources(srcs) for idx, srcs in result.items() if srcs}
+
+
+def fetch_giovang_page_sources(candidates):
+    """Read the stream JSON embedded in each current provider event page."""
+    pages = {
+        item["api_index"]: item["match"]["_giovang_page"]
+        for item in candidates
+        if provider_key(item["match"]) == "giovang" and item["match"].get("_giovang_page")
+    }
+    found = {}
+    if not pages:
+        return found
+    with ThreadPoolExecutor(max_workers=min(8, len(pages))) as executor:
+        futures = {
+            executor.submit(fetch_text, url, {"User-Agent": USER_AGENT, "Referer": "https://giovang.org/"}, 4): (idx, url)
+            for idx, url in pages.items()
+        }
+        for future in as_completed(futures):
+            idx, page_url = futures[future]
+            try:
+                page = future.result()
+            except Exception:
+                continue
+            data = re.search(r"data-blv\s*=\s*([\"'])(.*?)\1", page, re.I | re.S)
+            if not data:
+                continue
+            try:
+                rows = json.loads(html_lib.unescape(data.group(2)).replace("\\/", "/"))
+            except (ValueError, TypeError):
+                continue
+            headers = {"User-Agent": USER_AGENT, "Referer": page_url, "Origin": "https://giovang.org"}
+            sources, _ = json_stream_fields(rows, headers, page_url)
+            if sources:
+                found[idx] = sources
+    print(f"[giovang] trang chi tiết: {len(pages)} trận, {sum(map(len, found.values()))} URL luồng từ data-blv")
+    return found
+
+
+def fetch_chuoichien_detail_sources(candidates):
+    """Resolve each current match through the provider's external-ID API."""
+    relevant = []
+    for item in candidates:
+        match = item["match"]
+        if provider_key(match) != "chuoichien":
+            continue
+        external_id = first_text(match.get("_chuoi_external_id"), match.get("provider_id"),
+                                 match.get("source_id"), match.get("id")).removeprefix("chuoichien:")
+        if external_id:
+            relevant.append((item["api_index"], match, external_id))
+    if not relevant:
+        return {}
+    headers = {"User-Agent": USER_AGENT, "Referer": "https://chuoichientv.org/", "Origin": "https://live.chuoichien.tv"}
+    def fetch_one(index, match, external_id):
+        suffix = "/v2/matches/external/" + quote(external_id, safe="")
+        for base in CHUOICHIEN_API_BASES:
+            url = base + suffix
+            body = fetch_json_custom(url, headers, timeout=5.0)
+            if isinstance(body, (dict, list)):
+                current = {**match, "headers": {**headers, **normalize_headers(match.get("headers"))}}
+                return index, follow_json_streams(body, current, url)
+        return index, []
+    found = {}
+    with ThreadPoolExecutor(max_workers=min(12, len(relevant))) as executor:
+        futures = [executor.submit(fetch_one, idx, match, external_id) for idx, match, external_id in relevant]
+        for future in as_completed(futures):
+            try:
+                idx, sources = future.result()
+                if sources:
+                    found[idx] = sources
+            except Exception as exc:
+                print(f"[chuoichien] lỗi JSON chi tiết: {exc}", file=sys.stderr)
+    print(f"[chuoichien] chi tiết: {len(relevant)} trận, {sum(map(len, found.values()))} URL luồng")
+    return found
 
 
 def provider_special_source_caster(source, match):
@@ -1946,12 +2047,12 @@ def json_stream_fields(payload, fallback_headers=None, base_url="", inherited_ca
         current_headers = {**(headers or base_headers), **normalize_headers(node.get("headers"))}
         # Only names attached to an anchor or an individual source belong to
         # that stream. A match-wide commentator is not a per-stream identity.
-        local_caster = first_text(node.get("commentator"), node.get("blv"), node.get("caster"))
+        local_caster = first_text(node.get("commentator"), node.get("blv"), node.get("blv_name"), node.get("caster"))
         if key in ("blv", "blvs", "commentators", "anchorAppointmentVoList", "anchors", "sources", "streams"):
             local_caster = first_text(local_caster, node.get("nickName"), node.get("nickname"), node.get("name") if key in ("blv", "blvs", "commentators", "anchorAppointmentVoList", "anchors") else "")
         effective_caster = local_caster or caster
         source_context = key in JSON_STREAM_ARRAYS or key in ("source", "stream", "playback")
-        owner_context = source_context or key in ("blv", "blvs", "commentators", "anchorAppointmentVoList", "anchors")
+        owner_context = source_context or bool(node.get("blv_name")) or key in ("blv", "blvs", "commentators", "anchorAppointmentVoList", "anchors")
         for field, value in node.items():
             if field in JSON_REFERENCE_FIELDS:
                 for raw in value if isinstance(value, list) else [value]:
@@ -2004,7 +2105,10 @@ def json_stream_fields(payload, fallback_headers=None, base_url="", inherited_ca
 def follow_json_streams(body, match, resolver, loaded=None, seen_urls=None):
     """Follow only JSON references actually returned by an API, with cycle bounds."""
     loaded = loaded if loaded is not None else {}
-    pending = [(resolver, body, "", normalize_headers(match.get("headers")), 0)]
+    playback_headers = normalize_headers(match.get("headers"))
+    if provider_key(match) == "giovang":
+        playback_headers = {**normalize_headers(match.get("resolver_headers")), **playback_headers}
+    pending = [(resolver, body, "", playback_headers, 0)]
     visited, streams = set(), []
     while pending and len(visited) < 64:
         url, payload, caster, headers, depth = pending.pop(0)
@@ -2391,6 +2495,8 @@ def resolve_all(candidates, json_source_map=None):
     if json_source_map is None:
         roots = fetch_match_json_bodies([item["match"] for item in candidates])
         json_source_map, _ = read_match_json_graphs([(item["api_index"], item["match"]) for item in candidates], roots)
+    giovang_page_map = fetch_giovang_page_sources(candidates)
+    chuoi_detail_map = fetch_chuoichien_detail_sources(candidates)
     embedded_map = {}
     fresh_provider_map = {}
     provider_direct_map = {}
@@ -2399,7 +2505,9 @@ def resolve_all(candidates, json_source_map=None):
         embedded_map[item["api_index"]] = direct_sources(match)
         fresh_provider_map[item["api_index"]] = direct_sources({"sources": match.get("_provider_sources", [])})
         idx = item["api_index"]
-        provider_direct_map[idx] = dedupe_by_stream_url(xoilac_map.get(idx, []))
+        provider_direct_map[idx] = dedupe_by_stream_url(
+            chuoi_detail_map.get(idx, []) + giovang_page_map.get(idx, []) + xoilac_map.get(idx, [])
+        )
 
     resolved = []
     for item in candidates:
@@ -2413,10 +2521,10 @@ def resolve_all(candidates, json_source_map=None):
         # reuse embedded sport.json sources when a resolver exists; those URLs
         # may predate a CDN change. The provider feed is first for its caster.
         embedded = embedded_map.get(item["api_index"], []) if not urls and not (direct or exact) else []
-        if direct:
+        if exact and provider_key(match) in ("giovang", "chuoichien"):
+            sources = dedupe_by_stream_url(exact + direct + remote)
+        elif direct:
             sources = dedupe_by_stream_url(direct + remote + exact)
-        elif exact and provider_key(match) in ("giovang", "chuoichien"):
-            sources = dedupe_by_stream_url(exact + remote)
         else:
             sources = dedupe_by_stream_url(remote + exact + embedded)
         # A match-level commentator cannot identify an individual backup URL.
@@ -2477,16 +2585,22 @@ def build_playlist():
     for key in sorted(discovered):
         print(f"[coverage] {key[0]}/{key[1]}: API={discovered[key]} eligible={eligible[key]} playable={playable[key]}")
     resolved_ids = {item["api_index"] for item in resolved}
-    no_link = {}
+    no_link, unresolved = {}, {}
     for item in candidates:
         match = item["match"]
         key = (provider_key(match), sport_category(match))
-        if (item["api_index"] not in resolved_ids and not declared_match_json_urls(match)
-                and not direct_sources({"sources": match.get("_provider_sources", [])})
-                and not first_text(match.get("_xoilac_detail"))):
-            no_link.setdefault(key, []).append(first_text(match.get("id"), match_name(match)))
+        if item["api_index"] not in resolved_ids:
+            event_id = first_text(match.get("id"), match_name(match))
+            if (not declared_match_json_urls(match)
+                    and not direct_sources({"sources": match.get("_provider_sources", [])})
+                    and not first_text(match.get("_xoilac_detail"), match.get("_giovang_page"))):
+                no_link.setdefault(key, []).append(event_id)
+            else:
+                unresolved.setdefault(key, []).append(event_id)
     for (provider, sport), event_ids in sorted(no_link.items()):
         print(f"[coverage] {provider}/{sport}: {len(event_ids)} trận hợp lệ nhưng API hiện không khai báo URL luồng/JSON; ví dụ {', '.join(event_ids[:4])}")
+    for (provider, sport), event_ids in sorted(unresolved.items()):
+        print(f"[coverage] {provider}/{sport}: {len(event_ids)} trận đã hỏi luồng chi tiết nhưng không có URL phát dùng được; ví dụ {', '.join(event_ids[:4])}")
 
     provider_sequence = provider_order(data, resolved)
     sport_order = build_sport_order(resolved)
