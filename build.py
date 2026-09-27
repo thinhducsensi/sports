@@ -29,6 +29,7 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 TERMINAL_STATUSES = {
     "ft", "finished", "finish", "ended", "end", "completed", "complete",
     "cancelled", "canceled", "postponed", "abandoned", "ket thuc", "huy",
+    "pend", "bi hoan",
 }
 LIVE_STATUSES = {
     "live", "playing", "inplay", "in play", "1h", "2h", "ht", "halftime",
@@ -296,8 +297,10 @@ def fetch_chuoichien_supplement_matches(feed=None):
     def task(sport):
         rows, seen = [], set()
         # The API is paged; a single page of 100 silently loses events.
-        for page in range(1, 21):
-            suffix = f"/v2/matches?page={page}&limit=100&sport={quote(sport)}"
+        for page in range(1, 51):
+            suffix = f"/v2/matches?page={page}&limit=100"
+            if sport:
+                suffix += f"&sport={quote(sport)}"
             if sport == "football":
                 suffix += "&type=blv"
             data = None
@@ -310,7 +313,13 @@ def fetch_chuoichien_supplement_matches(feed=None):
             page_rows = _chuoi_rows(data)
             new_count = 0
             for row in page_rows:
-                match = _chuoi_match_from_row(row, sport)
+                declared = first_text(row.get("sport"), row.get("sportName"), row.get("sport_name"),
+                                      row.get("sportType"), row.get("category"))
+                # The unfiltered endpoint can expose sports missing from both
+                # the old seed list and the aggregated sport.json snapshot.
+                if not sport and not declared:
+                    continue
+                match = _chuoi_match_from_row(row, declared or sport)
                 if match and match["id"] not in seen:
                     seen.add(match["id"])
                     rows.append(match)
@@ -328,8 +337,8 @@ def fetch_chuoichien_supplement_matches(feed=None):
                 sport = sport_category(row)
                 if sport and sport not in sports:
                     sports.append(sport)
-    with ThreadPoolExecutor(max_workers=len(sports)) as executor:
-        futures = [executor.submit(task, sport) for sport in sports]
+    with ThreadPoolExecutor(max_workers=min(8, len(sports) + 1)) as executor:
+        futures = [executor.submit(task, sport) for sport in [""] + sports]
         for future in as_completed(futures):
             try:
                 _, rows = future.result()
@@ -418,7 +427,8 @@ def fetch_colatv_supplement_matches():
             "id": "colatv:" + first_text(raw.get("matchId"), hashlib.sha1(f"{home}|{away}|{kickoff}".encode()).hexdigest()[:10]),
             "provider": "colatv", "provider_name": "CoLaTV", "sport": sport, "sport_name": sport,
             "name": title, "kickoff": kickoff,
-            "live": raw.get("isLive") is True or raw.get("live") is True or normalize_text(raw.get("status")) in LIVE_STATUSES,
+            "live": raw.get("matchStatus") == 2 or raw.get("isLive") is True or raw.get("live") is True or normalize_text(raw.get("status")) in LIVE_STATUSES,
+            "status": "live" if raw.get("matchStatus") == 2 else first_text(raw.get("status")),
             "competition": first_text(raw.get("competitionName")), "home_logo": first_text(raw.get("homeTeamLogo")),
             "away_logo": first_text(raw.get("awayTeamLogo")), "commentator": _join_people(names), "sources": dedupe_sources(sources),
         })
@@ -443,6 +453,9 @@ def _giovang_sport_type(row):
     if not raw:
         raw = first_text(row.get("type"))
     n = normalize_text(raw).replace(" ", "")
+    league_title = normalize_text(first_text(league.get("title"), league.get("name")))
+    if n in ("esport", "esports") and re.search(r"\b(?:f1|formula 1|grand prix|motogp)\b", league_title):
+        return "motorsport"  # The provider mislabeled this race as esports.
     mapping = {
         "football":"football", "soccer":"football", "bongda":"football", "tennis":"tennis",
         "basketball":"basketball", "bongro":"basketball", "volleyball":"volleyball", "bongchuyen":"volleyball",
@@ -496,7 +509,9 @@ def fetch_giovang_supplement_matches():
         if not sport:
             continue
         status = first_text(row.get("status"))
-        if normalize_text(status) in TERMINAL_STATUSES or "ket thuc" in normalize_text(status):
+        status_code = first_text(row.get("status_code"))
+        if (normalize_text(status) in TERMINAL_STATUSES or
+                normalize_text(status_code) in TERMINAL_STATUSES or "ket thuc" in normalize_text(status)):
             continue
         teams = row.get("teams") if isinstance(row.get("teams"), dict) else {}
         home_obj = teams.get("home") if isinstance(teams.get("home"), dict) else {}
@@ -531,9 +546,9 @@ def fetch_giovang_supplement_matches():
         out.append({
             "id": f"giovang:{event_id}", "provider": "giovang", "provider_name": "Giờ Vàng", "sport": sport,
             "sport_name": sport, "name": title, "kickoff": kickoff,
-            "live": row.get("isLive") is True or row.get("live") is True or normalize_text(status) in LIVE_STATUSES,
+            "live": row.get("is_live") is True or row.get("isLive") is True or row.get("live") is True or normalize_text(status) in LIVE_STATUSES,
             "_listed_live": is_live_listing,
-            "status": status, "competition": first_text(league.get("title"), league.get("name")),
+            "status": status, "status_code": status_code, "competition": first_text(league.get("title"), league.get("name")),
             "home_logo": first_text(home_obj.get("logo")), "away_logo": first_text(away_obj.get("logo")),
             "commentator": _join_people(names), "_giovang_detail": base + "/api/fixtures/" + event_id,
         })
@@ -691,23 +706,33 @@ def _xoilac_parse_time(segment):
     return None
 
 
+def _xoilac_origins(feed):
+    """Trust only source domains explicitly carried in this provider's resolver URLs."""
+    origins = set()
+    for row in feed.get("matches", []) if isinstance(feed, dict) else []:
+        if not isinstance(row, dict) or provider_key(row) != "xoilacxth":
+            continue
+        for candidate in (row.get("_xoilac_detail"), resolver_url(row)):
+            direct = first_text(candidate)
+            if "resolve" in urlsplit(direct).path:
+                direct = first_text(dict(parse_qsl(urlsplit(direct).query)).get("url"))
+            parsed = urlsplit(direct)
+            if parsed.scheme == "https" and parsed.hostname:
+                origins.add(f"https://{parsed.netloc}")
+    return sorted(origins)
+
+
 def fetch_xoilac_supplement_matches(feed=None):
-    bases=("https://xoilacz.vip", "https://xlz.domainkqt.cc")
+    bases=_xoilac_origins(feed)
     out=[]
     categories=[]
     for base in bases:
         home=fetch_text(base+"/", {"User-Agent":USER_AGENT, "Referer":base+"/"}, 4.5)
-        for category in discover_provider_categories(home, feed):
+        for category in discover_provider_categories(home):
             if category not in categories:
                 categories.append(category)
-    # The primary index still provides categories when the site's home page is down.
-    for category in discover_provider_categories("", feed):
-        if category not in categories:
-            categories.append(category)
-    # Existing categories are discovery seeds, never a filter on newer sports.
-    for category in PROVIDER_SPORT_CAPABILITIES["xoilacxth"]:
-        if category not in categories:
-            categories.append(category)
+    # If this provider exposes no category links, the primary index and each
+    # match's own resolver remain the authoritative paths to its streams.
     def load_category(category):
         results=[]
         for base in bases:
@@ -783,7 +808,7 @@ def fetch_all_provider_supplements(data):
         "colatv": fetch_colatv_supplement_matches,
         "giovang": fetch_giovang_supplement_matches,
         "xoilacxth": fetch_xoilac_supplement_matches,
-        "gavang33": lambda: fetch_direct_supplement_matches("gavang33"),
+        "gavang33": lambda: fetch_direct_supplement_matches("gavang33", data),
         "socolive": lambda: fetch_direct_supplement_matches("socolive"),
         "vuasanco": lambda: fetch_direct_supplement_matches("vuasanco"),
     }
@@ -828,6 +853,13 @@ def merge_supplement_matches(base_matches, supplements):
         for key in ("_chuoi_external_id", "_giovang_detail", "_xoilac_detail", "commentator", "competition", "home_logo", "away_logo", "sport", "sport_name"):
             if extra.get(key) and not found.get(key):
                 found[key] = extra[key]
+        # A fresh provider feed can close an event still marked live in an older
+        # aggregated index. Terminal status must win over the stale live flag.
+        if is_terminal(extra):
+            found["status"] = first_text(extra.get("status"), extra.get("status_code"))
+            found["status_code"] = first_text(extra.get("status_code"), extra.get("status"))
+            found["live"] = False
+            found["_listed_live"] = False
         if isinstance(extra.get("sources"), list):
             found["sources"] = dedupe_by_stream_url(
                 direct_sources(found) + direct_sources(extra)
@@ -1172,7 +1204,7 @@ def fetch_direct_indexes():
     return indexes
 
 
-def fetch_direct_supplement_matches(provider):
+def fetch_direct_supplement_matches(provider, feed=None):
     """Supplement any sport exposed by a participating direct provider feed."""
     cfg = DIRECT_FEEDS.get(provider)
     if not cfg:
@@ -1183,6 +1215,12 @@ def fetch_direct_supplement_matches(provider):
     parser = DIRECT_PARSERS.get(cfg["kind"])
     index = parser(data, cfg) if parser else {}
     rows = _iter_candidate_matches(data)
+    sport_by_id = {}
+    for prior in feed.get("matches", []) if isinstance(feed, dict) else []:
+        if isinstance(prior, dict) and provider_key(prior) == provider:
+            for ident in (prior.get("provider_id"), prior.get("source_id"), prior.get("id")):
+                if first_text(ident):
+                    sport_by_id[first_text(ident).removeprefix(provider + ":")] = sport_category(prior)
     out = []
     for raw in rows:
         if not isinstance(raw, dict):
@@ -1197,14 +1235,15 @@ def fetch_direct_supplement_matches(provider):
         if not sources:
             continue
         kickoff = next((t for key in ("matchTime", "time_start", "startTime", "start_time", "kickoff", "timestamp") if (t := parse_timestamp_ms(match.get(key)))), None)
-        status = first_text(match.get("status"), match.get("state"))
+        status = first_text(match.get("status"), match.get("state"), match.get("matchStatus"))
         sport = first_text(match.get("sportName"), match.get("sport"), match.get("sportType"), match.get("category"))
         sport_id = first_text(match.get("sportId"))
         if not sport:
-            sport = {"1": "football", "2": "basketball"}.get(sport_id, f"sport {sport_id}" if sport_id else "other")
-        ident = first_text(match.get("id"), match.get("matchId"), match.get("match_id"))
+            sport = {"1": "football", "2": "basketball"}.get(sport_id, f"sport {sport_id}" if sport_id else "")
+        ident = first_text(match.get("slug"), match.get("id"), match.get("matchId"), match.get("match_id"))
         if not ident:
             ident = hashlib.sha1(f"{title}|{kickoff}".encode()).hexdigest()[:12]
+        sport = sport or sport_by_id.get(ident) or sport_by_id.get(first_text(match.get("matchId"))) or "other"
         item = {"id":provider+":"+ident, "provider":provider, "provider_name":provider,
                 "sport":sport, "sport_name":sport, "name":title,
                 "status":status, "live":match.get("live") is True or match.get("isLive") is True or normalize_text(status) in LIVE_STATUSES,
@@ -1372,7 +1411,7 @@ def _strip_tags(text):
     return re.sub(r"\\s+", " ", html_lib.unescape(text)).strip()
 
 
-def _xoilac_find_match_pages(list_html, candidates):
+def _xoilac_find_match_pages(list_html, candidates, base_url):
     if not list_html:
         return {}
     pages = {}
@@ -1388,7 +1427,7 @@ def _xoilac_find_match_pages(list_html, candidates):
             end = min(len(list_html), m.end() + 2200)
             context = normalize_text(_strip_tags(list_html[start:end]))
             if home in context and away in context:
-                pages[item["api_index"]] = urljoin("https://xoilacz.vip", html_lib.unescape(m.group(1)))
+                pages[item["api_index"]] = urljoin(base_url.rstrip("/") + "/", html_lib.unescape(m.group(1)))
                 break
     return pages
 
@@ -1479,8 +1518,7 @@ def _xoilac_listing_for_domain(base_url, candidates, category="football"):
     pages_json, commentators = _xoilac_pages_from_json(listing, base_url, candidates)
     if pages_json:
         return pages_json, commentators, headers
-    pages_html = _xoilac_find_match_pages(listing, candidates)
-    # _xoilac_find_match_pages historically joins xoilacz.vip; normalize to this base.
+    pages_html = _xoilac_find_match_pages(listing, candidates, base_url)
     normalized = {}
     for idx, page in pages_html.items():
         try:
@@ -1495,20 +1533,25 @@ def fetch_xoilac_sources(candidates):
     relevant = [item for item in candidates if provider_key(item["match"]) == "xoilacxth"]
     if not relevant:
         return {}
+    origins = _xoilac_origins({"matches": [item["match"] for item in relevant]})
     pages = {}
     listed_commentators = {}
     chosen_headers = {}
     grouped={}
     for item in relevant:
-        category = first_text(item["match"].get("sport_slug"), item["match"].get("sportSlug")) or sport_category(item["match"]).replace(" ", "-")
-        if re.fullmatch(r"[a-z0-9][a-z0-9_-]{0,49}", category):
+        match = item["match"]
+        category = first_text(match.get("sport_slug"), match.get("sportSlug")) or sport_category(match).replace(" ", "-")
+        direct = first_text(match.get("_xoilac_detail"))
+        if not direct:
+            direct = first_text(dict(parse_qsl(urlsplit(resolver_url(match)).query)).get("url"))
+        if direct and f"{urlsplit(direct).scheme}://{urlsplit(direct).netloc}" in origins:
+            pages[item["api_index"]] = direct
+        elif re.fullmatch(r"[a-z0-9][a-z0-9_-]{0,49}", category):
             grouped.setdefault(category, []).append(item)
-        direct=first_text(item["match"].get("_xoilac_detail"))
-        if direct: pages[item["api_index"]]=direct
     for category, group in grouped.items():
         if all(item["api_index"] in pages for item in group):
             continue
-        for base in ("https://xoilacz.vip", "https://xlz.domainkqt.cc"):
+        for base in origins:
             domain_pages, domain_commentators, headers = _xoilac_listing_for_domain(base, group, category)
             if domain_pages:
                 pages.update({k: v for k, v in domain_pages.items() if k not in pages})
