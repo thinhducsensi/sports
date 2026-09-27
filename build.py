@@ -52,9 +52,6 @@ GENERIC_STREAM_WORDS = {
 }
 FORMAT_ORDER = {"HLS": 0, "FLV": 1, "TS": 2, "DASH": 3, "MP4": 4}
 
-# Fallback probes for a source that accepts a sport filter. This is not an
-# allowlist: unfiltered pages and categories returned by the API remain in use.
-CHUOICHIEN_DISCOVERY_SEEDS = ("football", "tennis", "billiards", "basketball", "badminton", "volleyball", "cricket")
 CHUOICHIEN_API_BASES = (
     "https://api-v2.chuoichientv.com",
     "https://api-v2.chuoichientv.net",
@@ -263,6 +260,7 @@ def _chuoi_match_from_row(row, sport):
         "provider_name": "Chuối Chiên",
         "sport": sport,
         "sport_name": sport,
+        "sport_api_type": first_text(row.get("sport"), row.get("sportName"), row.get("sport_name"), row.get("sportType"), row.get("category")),
         "name": title,
         "live": live,
         "status": status,
@@ -280,6 +278,9 @@ def _chuoi_match_from_row(row, sport):
         # team names can attach a previous match's caster or stream.
         exact = parse_direct_chuoichien([row], DIRECT_FEEDS["chuoichien"])
         result["sources"] = exact.get(pair_key(home_name, away_name), [])
+    json_sources, json_refs = json_stream_fields(row, {"User-Agent": USER_AGENT, "Referer": "https://chuoichientv.org/"})
+    result["sources"] = dedupe_by_stream_url(result.get("sources", []) + json_sources)
+    result["resolvers"] = list(dict.fromkeys(link for link, _, _ in json_refs))
     return result
 
 
@@ -351,9 +352,9 @@ def fetch_chuoichien_supplement_matches(feed=None):
         return sport, rows
     _, unfiltered = task("")
     out.extend(unfiltered)
-    sports = list(dict.fromkeys(sorted(discovered_sports) + list(CHUOICHIEN_DISCOVERY_SEEDS)))
-    # Ask for every category named by the upstream index, including categories
-    # introduced after the bundled capability list was written.
+    sports = sorted(discovered_sports)
+    # Request only categories returned by the provider or the current worker
+    # feed; this list automatically expands when the APIs add a sport.
     if isinstance(feed, dict):
         for row in feed.get("matches") or []:
             if isinstance(row, dict) and provider_key(row) == "chuoichien":
@@ -380,6 +381,9 @@ def fetch_chuoichien_supplement_matches(feed=None):
         existing["sources"] = dedupe_by_stream_url(existing.get("sources", []) + match.get("sources", []))
         if not existing.get("commentator") and match.get("commentator"):
             existing["commentator"] = match["commentator"]
+        existing["resolvers"] = list(dict.fromkeys(existing.get("resolvers", []) + match.get("resolvers", [])))
+        if not existing.get("sport_api_type") and match.get("sport_api_type"):
+            existing["sport_api_type"] = match["sport_api_type"]
     return list(unique.values())
 
 
@@ -435,7 +439,8 @@ def fetch_colatv_supplement_matches():
         if not sport:
             sport = {"1": "football", "2": "basketball"}.get(sport_id, f"sport {sport_id}" if sport_id else "other")
         kickoff = parse_timestamp_ms(raw.get("matchTime"))
-        if not kickoff:
+        live_status = raw.get("matchStatus") == 2 or raw.get("isLive") is True or raw.get("live") is True or normalize_text(raw.get("status")) in LIVE_STATUSES
+        if not kickoff and not live_status:
             continue
         home = first_text(raw.get("homeTeamName"))
         away = first_text(raw.get("awayTeamName"))
@@ -470,15 +475,22 @@ def fetch_colatv_supplement_matches():
         obj = source_obj(video, headers={"User-Agent": USER_AGENT, "Referer": "https://cola.tv/"}, index=10000)
         if obj:
             sources.append(obj)
-        out.append({
+        json_sources, json_refs = json_stream_fields(raw, {"User-Agent": USER_AGENT, "Referer": "https://cola.tv/"})
+        item = {
             "id": "colatv:" + first_text(raw.get("matchId"), hashlib.sha1(f"{home}|{away}|{kickoff}".encode()).hexdigest()[:10]),
             "provider": "colatv", "provider_name": "CoLaTV", "sport": sport, "sport_name": sport,
-            "name": title, "kickoff": kickoff,
-            "live": raw.get("matchStatus") == 2 or raw.get("isLive") is True or raw.get("live") is True or normalize_text(raw.get("status")) in LIVE_STATUSES,
+            "sport_api_type": first_text(raw.get("sportId"), raw.get("sportName"), raw.get("sport_name")),
+            "name": title,
+            "live": live_status,
             "status": "live" if raw.get("matchStatus") == 2 else "scheduled" if raw.get("matchStatus") == 1 else first_text(raw.get("status")),
             "competition": first_text(raw.get("competitionName")), "home_logo": first_text(raw.get("homeTeamLogo")),
-            "away_logo": first_text(raw.get("awayTeamLogo")), "commentator": _join_people(names), "sources": dedupe_sources(sources),
-        })
+            "away_logo": first_text(raw.get("awayTeamLogo")), "commentator": _join_people(names),
+            "sources": dedupe_by_stream_url(sources + json_sources),
+            "resolvers": list(dict.fromkeys(link for link, _, _ in json_refs)),
+        }
+        if kickoff:
+            item["kickoff"] = kickoff
+        out.append(item)
     return out
 
 
@@ -486,7 +498,8 @@ def _giovang_sport_type(row):
     if not isinstance(row, dict):
         return ""
     league = row.get("league") if isinstance(row.get("league"), dict) else {}
-    keys = ("sport", "sport_type", "sportType", "category", "category_name", "categoryName", "game_type", "gameType")
+    # This API declares its category in `type`; use that value first.
+    keys = ("type", "sport", "sport_type", "sportType", "category", "category_name", "categoryName", "game_type", "gameType")
     raw = ""
     for key in keys:
         raw = first_text(row.get(key))
@@ -497,8 +510,6 @@ def _giovang_sport_type(row):
             raw = first_text(league.get(key))
             if raw:
                 break
-    if not raw:
-        raw = first_text(row.get("type"))
     n = normalize_text(raw).replace(" ", "")
     # Preserve the provider's explicit category even when the league title
     # looks inconsistent. The playlist should not silently rewrite JSON.
@@ -537,10 +548,17 @@ def _giovang_rows(data):
     return []
 
 
-def fetch_giovang_supplement_matches():
+def fetch_giovang_supplement_matches(feed=None):
     base = "https://live-api.keonhacaitp.one"
     headers = {"User-Agent": USER_AGENT, "Referer": "https://giovang.org/"}
     urls = [base + "/storage/livestream/all.json", base + "/storage/livestream/live.json"]
+    worker_matches = {}
+    for match in feed.get("matches", []) if isinstance(feed, dict) else []:
+        if isinstance(match, dict) and provider_key(match) == "giovang":
+            for key in ("provider_id", "source_id", "id"):
+                ident = first_text(match.get(key)).removeprefix("giovang:")
+                if ident:
+                    worker_matches[ident] = match
     listing_rows = {}
     with ThreadPoolExecutor(max_workers=2) as ex:
         futures = {ex.submit(fetch_json_custom, u, headers, 5.0): u for u in urls}
@@ -553,36 +571,36 @@ def fetch_giovang_supplement_matches():
     # listing is evidence for an event, not a replacement for terminal status.
     rows = [(row, False) for row in listing_rows.get(urls[0], [])]
     rows.extend((row, True) for row in listing_rows.get(urls[1], []))
-    out, seen = [], set()
+    out, by_id = [], {}
+    source_counts = {"all": 0, "live": 0}
     for row, is_live_listing in rows:
-        sport = _giovang_sport_type(row)
-        if not sport:
+        event_id = first_text(row.get("id"), row.get("fi"), row.get("fixture_id"), row.get("match_id"))
+        if not event_id:
             continue
-        status = first_text(row.get("status"))
-        status_code = first_text(row.get("status_code"))
+        previous = by_id.get(event_id)
+        worker = worker_matches.get(event_id, {})
+        sport = _giovang_sport_type(row)
+        if sport == "other":
+            sport = first_text(previous.get("sport") if previous else "", worker.get("sport"), "other")
+        status = first_text(row.get("status"), row.get("status_code"))
+        status_code = first_text(row.get("status_code"), row.get("status"))
+        # A current live.json entry supersedes a stale status from all.json.
+        # An explicit terminal status in the current entry still takes priority.
+        if is_live_listing and not (set(filter(None, (normalize_text(status), normalize_text(status_code)))) & TERMINAL_STATUSES):
+            status = status or "live"
+            status_code = status_code or "live"
         teams = row.get("teams") if isinstance(row.get("teams"), dict) else {}
         home_obj = teams.get("home") if isinstance(teams.get("home"), dict) else {}
         away_obj = teams.get("away") if isinstance(teams.get("away"), dict) else {}
         home, away = first_text(home_obj.get("name")), first_text(away_obj.get("name"))
-        title = f"{home} vs {away}" if home and away and normalize_text(home) != normalize_text(away) else first_text(row.get("title"), row.get("name"), row.get("event_name"), home, away)
+        title = f"{home} vs {away}" if home and away and normalize_text(home) != normalize_text(away) else first_text(row.get("title"), row.get("name"), row.get("event_name"), home, away, previous.get("name") if previous else "", worker.get("name"))
         if not title:
             continue
-        kickoff = parse_timestamp_ms(row.get("time_start"))
-        if not kickoff:
+        kickoff = next((value for key in ("time_start", "start_time", "startTime", "matchTime", "kickoff") if (value := parse_timestamp_ms(row.get(key)))), None)
+        kickoff = kickoff or (previous.get("kickoff") if previous else None) or get_kickoff(worker)
+        if not kickoff and not is_live_listing and normalize_text(status) not in LIVE_STATUSES:
             continue
-        event_id = first_text(row.get("id"))
-        if not event_id:
-            continue
-        key = f"{event_id}|{kickoff}"
-        if key in seen:
-            if is_live_listing:
-                for existing in out:
-                    if existing["id"] == f"giovang:{event_id}" and existing["kickoff"] == kickoff:
-                        existing["_listed_live"] = True
-                        break
-            continue
-        seen.add(key)
-        blv = row.get("blv") if isinstance(row.get("blv"), list) else []
+        blv = row.get("blv") if isinstance(row.get("blv"), list) else [row.get("blv")] if row.get("blv") else []
         names=[]
         for person in blv:
             if isinstance(person, dict):
@@ -590,16 +608,52 @@ def fetch_giovang_supplement_matches():
             else:
                 names.append(first_text(person))
         league = row.get("league") if isinstance(row.get("league"), dict) else {}
-        out.append({
+        listing_url = urls[1] if is_live_listing else urls[0]
+        sources, refs = json_stream_fields(row, headers, listing_url)
+        source_counts["live" if is_live_listing else "all"] += len(sources)
+        detail_urls = []
+        for key in ("resolver", "api_url", "json_url", "detail_api", "sources_url"):
+            value = row.get(key)
+            for raw in value if isinstance(value, list) else [value]:
+                link = _json_http_url(raw, listing_url)
+                if link and link not in detail_urls:
+                    detail_urls.append(link)
+        for link, _, _ in refs:
+            if link not in detail_urls:
+                detail_urls.append(link)
+        explicit_live = row.get("is_live") is True or row.get("isLive") is True or row.get("live") is True or normalize_text(status) in LIVE_STATUSES
+        item = {
             "id": f"giovang:{event_id}", "provider": "giovang", "provider_name": "Giờ Vàng", "sport": sport,
-            "sport_name": sport, "name": title, "kickoff": kickoff,
-            "live": row.get("is_live") is True or row.get("isLive") is True or row.get("live") is True or normalize_text(status) in LIVE_STATUSES,
+            "sport_name": sport, "sport_api_type": first_text(row.get("type"), row.get("sport"), row.get("sportType")), "name": title,
+            "live": explicit_live,
             "_listed_live": is_live_listing,
             "status": status, "status_code": status_code, "competition": first_text(league.get("title"), league.get("name")),
             "home_logo": first_text(home_obj.get("logo")), "away_logo": first_text(away_obj.get("logo")),
             "commentator": _join_people(names),
-            "_giovang_detail": first_text(row.get("detail_api"), row.get("api_url"), row.get("json_url")),
-        })
+            "resolvers": detail_urls, "sources": sources,
+        }
+        if kickoff:
+            item["kickoff"] = kickoff
+        if previous:
+            for key in ("sport", "sport_name", "name", "kickoff", "competition", "home_logo", "away_logo", "commentator"):
+                if not item.get(key) and previous.get(key):
+                    item[key] = previous[key]
+            previous["resolvers"] = list(dict.fromkeys(previous.get("resolvers", []) + detail_urls))
+            previous["sources"] = dedupe_by_stream_url(sources + previous.get("sources", [])) if sources else previous.get("sources", [])
+            if is_live_listing:
+                previous["_listed_live"] = True
+                if not is_terminal(item):
+                    previous["status"] = status or "live"
+                    previous["status_code"] = status_code or "live"
+                    previous["live"] = True
+                else:
+                    previous["status"] = status
+                    previous["status_code"] = status_code
+                    previous["live"] = False
+            continue
+        by_id[event_id] = item
+        out.append(item)
+    print(f"[giovang] all.json={len(listing_rows.get(urls[0], []))} live.json={len(listing_rows.get(urls[1], []))} trận; URL luồng trong JSON: all={source_counts['all']} live={source_counts['live']}")
     return out
 
 
@@ -844,7 +898,7 @@ def fetch_all_provider_supplements(data):
     adapters={
         "chuoichien": fetch_chuoichien_supplement_matches,
         "colatv": fetch_colatv_supplement_matches,
-        "giovang": fetch_giovang_supplement_matches,
+        "giovang": lambda: fetch_giovang_supplement_matches(data),
         "xoilacxth": fetch_xoilac_supplement_matches,
         "gavang33": lambda: fetch_direct_supplement_matches("gavang33", data),
         "socolive": lambda: fetch_direct_supplement_matches("socolive"),
@@ -895,9 +949,16 @@ def merge_supplement_matches(base_matches, supplements):
                 found = current
                 break
         if found is None:
+            # A newly discovered event can carry a direct source and a JSON
+            # resolver simultaneously. Keep current API sources separate from
+            # potentially stale embedded sources in the aggregate index.
+            if isinstance(extra.get("sources"), list):
+                extra["_provider_sources"] = dedupe_by_stream_url(
+                    direct_sources(extra) + extra.get("_provider_sources", [])
+                )
             result.append(extra)
             continue
-        for key in ("_chuoi_external_id", "_chuoi_detail", "_giovang_detail", "_xoilac_detail",
+        for key in ("_chuoi_external_id", "_chuoi_detail", "_giovang_detail", "_xoilac_detail", "sport_api_type",
                     "name", "kickoff", "competition", "home_logo", "away_logo", "commentator"):
             if extra.get(key):
                 found[key] = extra[key]
@@ -905,6 +966,9 @@ def merge_supplement_matches(base_matches, supplements):
             for key in ("sport", "sport_name"):
                 if extra.get(key):
                     found[key] = extra[key]
+        extra_json_urls = declared_match_json_urls(extra)
+        if extra_json_urls:
+            found["resolvers"] = list(dict.fromkeys(found.get("resolvers", []) + extra_json_urls))
         # A fresh provider feed can close an event still marked live in an older
         # aggregated index. Terminal status must win over the stale live flag.
         if is_terminal(extra):
@@ -1191,11 +1255,13 @@ def fetch_direct_supplement_matches(provider, feed=None):
         # Parse only the current row, not an index keyed by names of two teams.
         one_row = [raw] if cfg["kind"] == "socolive" else {"data": {"row": raw}}
         exact = parser(one_row, cfg) if parser else {}
-        sources = exact.get(pair_key(home, away), []) if home and away else direct_sources(match)
+        sources = exact.get(pair_key(home, away), []) if home and away else []
         if not sources:
             sources = direct_sources(match)
-        if not sources:
-            continue
+        # Each provider can add sports and stream fields without changing the
+        # old hand-written anchor parser. Read declared JSON fields as well.
+        json_sources, json_refs = json_stream_fields(raw, cfg.get("headers"), cfg["url"])
+        sources = dedupe_by_stream_url(sources + json_sources)
         kickoff = next((t for key in ("matchTime", "time_start", "startTime", "start_time", "kickoff", "timestamp") if (t := parse_timestamp_ms(match.get(key)))), None)
         status = first_text(match.get("status"), match.get("state"), match.get("matchStatus"))
         sport = first_text(match.get("sportName"), match.get("sport"), match.get("sportType"), match.get("category"))
@@ -1211,13 +1277,13 @@ def fetch_direct_supplement_matches(provider, feed=None):
         anchors = match.get("anchorAppointmentVoList") if isinstance(match.get("anchorAppointmentVoList"), list) else []
         anchor_people = _join_people(first_text(anchor.get("nickName"), anchor.get("nickname"), anchor.get("name")) for anchor in anchors if isinstance(anchor, dict))
         item = {"id":provider+":"+ident, "provider":provider, "provider_name":provider,
-                "sport":sport, "sport_name":sport, "name":title,
+                "sport":sport, "sport_name":sport, "sport_api_type": first_text(match.get("sportId"), match.get("sportName"), match.get("sport"), match.get("sportType"), match.get("category")), "name":title,
                 "status":status, "live":match.get("live") is True or match.get("isLive") is True or normalize_text(status) in LIVE_STATUSES,
                 "competition":first_text(match.get("competitionName"), competition_obj.get("name"), competition_obj.get("title"), competition),
                 "home_logo":first_text(_nested_obj(match, "homeTeam").get("logo"), _nested_obj(match, "home").get("logo")),
                 "away_logo":first_text(_nested_obj(match, "awayTeam").get("logo"), _nested_obj(match, "away").get("logo")),
                 "commentator":first_text(match.get("commentator"), anchor_people),
-                "sources":dedupe_by_stream_url(sources)}
+                "sources":sources, "resolvers":list(dict.fromkeys(link for link, _, _ in json_refs))}
         if kickoff:
             item["kickoff"] = kickoff
         if provider == "socolive" and not kickoff:
@@ -2410,6 +2476,17 @@ def build_playlist():
     playable = Counter((provider_key(item["match"]), sport_category(item["match"])) for item in resolved)
     for key in sorted(discovered):
         print(f"[coverage] {key[0]}/{key[1]}: API={discovered[key]} eligible={eligible[key]} playable={playable[key]}")
+    resolved_ids = {item["api_index"] for item in resolved}
+    no_link = {}
+    for item in candidates:
+        match = item["match"]
+        key = (provider_key(match), sport_category(match))
+        if (item["api_index"] not in resolved_ids and not declared_match_json_urls(match)
+                and not direct_sources({"sources": match.get("_provider_sources", [])})
+                and not first_text(match.get("_xoilac_detail"))):
+            no_link.setdefault(key, []).append(first_text(match.get("id"), match_name(match)))
+    for (provider, sport), event_ids in sorted(no_link.items()):
+        print(f"[coverage] {provider}/{sport}: {len(event_ids)} trận hợp lệ nhưng API hiện không khai báo URL luồng/JSON; ví dụ {', '.join(event_ids[:4])}")
 
     provider_sequence = provider_order(data, resolved)
     sport_order = build_sport_order(resolved)
