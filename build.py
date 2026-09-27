@@ -10,7 +10,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from collections import Counter
 from datetime import datetime, time, timedelta
 from pathlib import Path
-from time import sleep
+from time import monotonic, sleep
 from urllib.error import HTTPError, URLError
 from urllib.parse import parse_qsl, quote, urlencode, urljoin, urlsplit, urlunsplit
 from urllib.request import Request, urlopen
@@ -937,24 +937,26 @@ def fetch_all_provider_supplements(data):
         "xoilacxth": fetch_xoilac_supplement_matches,
         "gavang33": lambda: fetch_direct_supplement_matches("gavang33", data),
     }
-    with ThreadPoolExecutor(max_workers=max(1, min(len(adapters), 4))) as ex:
+    started = monotonic()
+    with ThreadPoolExecutor(max_workers=len(adapters)) as ex:
         futures={}
         for provider, func in adapters.items():
             # The worker's provider list can lag behind a working provider
             # API. Probe each configured endpoint; only returned events enter
             # the playlist. Xoilac still discovers its origin from the feed.
             future = ex.submit(func, data) if provider in ("chuoichien", "xoilacxth") else ex.submit(func)
-            futures[future] = provider
+            futures[future] = (provider, monotonic())
         for f in as_completed(futures):
-            provider = futures[f]
+            provider, submitted = futures[f]
             try:
                 rows=f.result()
                 source_kind = "link danh mục/JSON" if provider == "xoilacxth" else "API riêng"
-                print(f"[adapter] {provider}: {len(rows)} trận từ {source_kind}")
+                print(f"[adapter] {provider}: {len(rows)} trận từ {source_kind}; {monotonic() - submitted:.1f}s")
                 if rows: jobs.extend(rows)
             except Exception as exc:
-                print(f"[adapter] {provider}: lỗi lấy dữ liệu: {exc}", file=sys.stderr)
+                print(f"[adapter] {provider}: lỗi lấy dữ liệu sau {monotonic() - submitted:.1f}s: {exc}", file=sys.stderr)
                 failures[provider] = str(exc)
+    print(f"[timing] API riêng: {monotonic() - started:.1f}s")
     if failures:
         # These provider endpoints augment the worker feed; the Android app
         # itself reads sport.json and each fixture's resolver. One blocked
@@ -2462,12 +2464,20 @@ def stable_source_id(match, source):
 
 def resolve_all(candidates, json_source_map=None):
     # Provider-declared detail JSON is already included in json_source_map.
-    xoilac_map = fetch_xoilac_sources(candidates)
     if json_source_map is None:
         roots = fetch_match_json_bodies([item["match"] for item in candidates])
         json_source_map, _ = read_match_json_graphs([(item["api_index"], item["match"]) for item in candidates], roots)
-    giovang_page_map = fetch_giovang_page_sources(candidates)
-    chuoi_detail_map = fetch_chuoichien_detail_sources(candidates)
+    # These three providers have independent detail endpoints. Read them in
+    # parallel without dropping any match or secondary stream URL.
+    started = monotonic()
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        xoilac_future = executor.submit(fetch_xoilac_sources, candidates)
+        giovang_future = executor.submit(fetch_giovang_page_sources, candidates)
+        chuoi_future = executor.submit(fetch_chuoichien_detail_sources, candidates)
+        xoilac_map = xoilac_future.result()
+        giovang_page_map = giovang_future.result()
+        chuoi_detail_map = chuoi_future.result()
+    print(f"[timing] chi tiết trực tiếp 3 nguồn: {monotonic() - started:.1f}s")
     embedded_map = {}
     fresh_provider_map = {}
     provider_direct_map = {}
@@ -2520,6 +2530,7 @@ def build_title(match, state, source):
 
 
 def build_playlist():
+    build_started = monotonic()
     data = fetch_json(SPORT_API, timeout=10, retries=1, cache_bust=True)
     if not isinstance(data, dict):
         data = fetch_json(SPORT_API, timeout=10, retries=2, cache_bust=False)
@@ -2533,9 +2544,11 @@ def build_playlist():
     matches = merge_supplement_matches(matches, supplements)
     # Resolve the current API JSON before time filtering: a long-running event
     # can have an old kickoff and a freshly declared live status.
+    resolver_started = monotonic()
     resolver_bodies = fetch_match_json_bodies(matches)
     indexed_matches = [(index, match) for index, match in enumerate(matches) if isinstance(match, dict)]
     json_source_map, json_metadata = read_match_json_graphs(indexed_matches, resolver_bodies)
+    print(f"[timing] resolver JSON và JSON liên kết: {monotonic() - resolver_started:.1f}s")
     for index, match in indexed_matches:
         refresh_match_from_json(match, json_metadata.get(index, {}))
     current = now_ms()
@@ -2670,6 +2683,7 @@ def build_playlist():
     temp.write_text("\n".join(lines) + "\n", encoding="utf-8")
     temp.replace("playlist.m3u")
     print(f"{total_streams} luồng / {total_matches} trận / {len(provider_sequence)} nguồn")
+    print(f"[timing] tổng thời gian build.py: {monotonic() - build_started:.1f}s")
 
 
 if __name__ == "__main__":
