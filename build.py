@@ -124,7 +124,7 @@ def with_cache_buster(url):
     return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), parts.fragment))
 
 
-def fetch_json(url, timeout=8, retries=1, cache_bust=False):
+def fetch_json(url, timeout=8, retries=1, cache_bust=False, report_failure=False):
     target = with_cache_buster(url) if cache_bust else str(url)
     headers = {
         "Accept": "application/json",
@@ -139,7 +139,13 @@ def fetch_json(url, timeout=8, retries=1, cache_bust=False):
                 if not 200 <= getattr(response, "status", 200) < 300:
                     return None
                 return json.loads(response.read().decode("utf-8-sig"))
-        except (HTTPError, URLError, TimeoutError, OSError, json.JSONDecodeError, UnicodeDecodeError):
+        except (HTTPError, URLError, TimeoutError, OSError, json.JSONDecodeError, UnicodeDecodeError) as exc:
+            if report_failure and attempt + 1 >= retries:
+                fields = dict(parse_qsl(urlsplit(url).query))
+                provider = fields.get("provider", "unknown")
+                event_id = fields.get("id", "")
+                kind = f"HTTP {exc.code}" if isinstance(exc, HTTPError) else type(exc).__name__
+                print(f"[resolver-http] {provider}/{event_id}: {kind}", file=sys.stderr)
             if attempt + 1 < retries:
                 sleep(1.0 + attempt)
     return None
@@ -996,8 +1002,6 @@ def merge_supplement_matches(base_matches, supplements):
             extra["_provider_resolvers"] = declared_match_json_urls(extra)
             result.append(extra)
             continue
-        if not found.get("_aggregate_resolver_urls"):
-            found["_aggregate_resolver_urls"] = declared_match_json_urls(found)
         found["_provider_fresh"] = True
         for key in ("_chuoi_external_id", "_chuoi_detail", "_giovang_detail", "_giovang_page", "resolver_headers", "_xoilac_detail", "sport_api_type",
                     "name", "kickoff", "competition", "home_logo", "away_logo", "commentator"):
@@ -1859,12 +1863,14 @@ def declared_match_json_urls(match):
 
 def fetch_match_json_bodies(matches):
     requested = {}
+    owners = {}
     for match in matches:
         if not isinstance(match, dict):
             continue
         headers = normalize_headers(match.get("resolver_headers")) or normalize_headers(match.get("headers"))
         for url in declared_match_json_urls(match):
             requested.setdefault(url, headers)
+            owners.setdefault(url, []).append((provider_key(match), sport_category(match), first_text(match.get("id"))))
     urls = list(requested)
     bodies = {}
     if urls:
@@ -1877,6 +1883,20 @@ def fetch_match_json_bodies(matches):
                 except Exception:
                     bodies[url] = None
     print(f"[resolver] đã hỏi {len(urls)} URL JSON được các trận khai báo; {sum(isinstance(v, (dict, list)) for v in bodies.values())} trả JSON")
+    totals, examples = {}, {}
+    for url in urls:
+        success = isinstance(bodies.get(url), (dict, list))
+        for provider, sport, event_id in owners[url]:
+            key = (provider, sport)
+            if key not in totals:
+                totals[key] = [0, 0]
+            totals[key][0] += 1
+            totals[key][1] += success
+            if not success and len(examples.setdefault(key, [])) < 3:
+                examples[key].append(event_id)
+    for (provider, sport), (asked, valid) in sorted(totals.items()):
+        print(f"[resolver] {provider}/{sport}: JSON={valid}/{asked}" +
+              (f"; không trả JSON: {', '.join(examples[(provider, sport)])}" if valid < asked else ""))
     return bodies
 
 
@@ -1884,10 +1904,6 @@ def refresh_match_from_json(match, bodies):
     """Only overwrite match status when a newly fetched JSON declares it."""
     recognized = LIVE_STATUSES | TERMINAL_STATUSES | {"upcoming", "scheduled", "ns", "not started", "chua bat dau"}
     for url, body in bodies.items():
-        if match.get("_provider_fresh") and url == match.get("_aggregate_resolver_url"):
-            # The aggregate worker can lag behind the provider's current JSON.
-            # It must not turn a live esports fixture back into FT/football.
-            continue
         if not isinstance(body, dict):
             continue
         for obj in (body, body.get("match"), body.get("data"), body.get("response")):
@@ -2119,7 +2135,7 @@ def fetch_fresh_resolver(url, headers=None):
     if headers:
         return (fetch_json_custom(url, headers, RESOLVER_TIMEOUT, True)
                 or fetch_json_custom(url, headers, RESOLVER_TIMEOUT, False))
-    return fetch_json(url, RESOLVER_TIMEOUT, 1, True) or fetch_json(url, RESOLVER_TIMEOUT, 1, False)
+    return fetch_json(url, RESOLVER_TIMEOUT, 1, True) or fetch_json(url, RESOLVER_TIMEOUT, 1, False, report_failure=True)
 
 
 def infer_format(source):
@@ -2525,12 +2541,32 @@ def build_playlist():
     current = now_ms()
     future_end = end_of_next_vietnam_day(current)
     candidates = []
+    filtered, filtered_examples = Counter(), {}
     for api_index, match in enumerate(matches):
         if not isinstance(match, dict):
             continue
         state = classify_match(match, current, future_end)
         if state:
             candidates.append({"match": match, "state": state, "api_index": api_index})
+        else:
+            kickoff = get_kickoff(match)
+            if is_terminal(match):
+                reason = "trạng thái kết thúc/hủy"
+            elif kickoff is None:
+                reason = "không có giờ bắt đầu và không LIVE"
+            elif kickoff > future_end:
+                reason = "bắt đầu sau ngày mai"
+            else:
+                reason = "quá hạn, API chưa xác nhận LIVE"
+            key = (provider_key(match), sport_category(match), reason)
+            filtered[key] += 1
+            if len(filtered_examples.setdefault(key, [])) < 3:
+                filtered_examples[key].append(
+                    f"{first_text(match.get('id'))}({first_text(match.get('status_code'), match.get('status')) or '-'}, "
+                    f"{format_match_time(kickoff) if kickoff else '-'}, live={is_explicit_live(match)})"
+                )
+    for (provider, sport, reason), amount in sorted(filtered.items()):
+        print(f"[filter] {provider}/{sport}: {amount} trận {reason}; ví dụ {', '.join(filtered_examples[(provider, sport, reason)])}")
 
     resolved = resolve_all(candidates, json_source_map)
     if candidates and not resolved:
@@ -2558,6 +2594,33 @@ def build_playlist():
         print(f"[coverage] {provider}/{sport}: {len(event_ids)} trận hợp lệ nhưng API hiện không khai báo URL luồng/JSON; ví dụ {', '.join(event_ids[:4])}")
     for (provider, sport), event_ids in sorted(unresolved.items()):
         print(f"[coverage] {provider}/{sport}: {len(event_ids)} trận đã hỏi luồng chi tiết nhưng không có URL phát dùng được; ví dụ {', '.join(event_ids[:4])}")
+    # Distinguish a failed HTTP/JSON resolver from an unfamiliar successful
+    # JSON schema. Log field names and value shapes, never stream URLs/tokens.
+    schema_examples = Counter()
+    for item in candidates:
+        match = item["match"]
+        if item["api_index"] in resolved_ids:
+            continue
+        key = (provider_key(match), sport_category(match))
+        if schema_examples[key] >= 2:
+            continue
+        roots = declared_match_json_urls(match)
+        values = [resolver_bodies.get(url) for url in roots]
+        successful = [body for body in values if isinstance(body, (dict, list))]
+        if not roots:
+            continue
+        if not successful:
+            reason = "JSON không trả về"
+        else:
+            body = successful[0]
+            root = body if isinstance(body, dict) else {}
+            keys = ", ".join(f"{name}:{type(value).__name__}" for name, value in list(root.items())[:12])
+            nested = next((value for name in ("response", "data", "match")
+                           if isinstance((value := root.get(name)), dict)), {})
+            child_keys = ", ".join(list(nested)[:12]) if nested else ""
+            reason = f"JSON có {len(body)} mục; root=[{keys}]" + (f"; data=[{child_keys}]" if child_keys else "")
+        print(f"[schema] {first_text(match.get('id'))}: {reason}; luồng JSON={len(json_source_map.get(item['api_index'], []))}")
+        schema_examples[key] += 1
 
     provider_sequence = provider_order(data, resolved)
     sport_order = build_sport_order(resolved)
