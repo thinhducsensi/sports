@@ -174,7 +174,10 @@ def fetch_json_custom(url, headers=None, timeout=6, cache_bust=True):
                 return None
             return json.loads(response.read().decode("utf-8-sig"))
     except (HTTPError, URLError, TimeoutError, OSError, json.JSONDecodeError, UnicodeDecodeError):
-        return None
+        # Some APIs sign the exact query string and reject an extra parameter.
+        # The second request still carries no-cache headers and reads the
+        # server's current response; it never reuses a saved media URL.
+        return fetch_json_custom(url, headers, timeout, False) if cache_bust else None
 
 
 def fetch_text(url, headers=None, timeout=5):
@@ -933,7 +936,7 @@ def fetch_xoilac_supplement_matches(feed=None):
 
 def fetch_all_provider_supplements(data):
     jobs=[]
-    failures=[]
+    failures={}
     adapters={
         "chuoichien": fetch_chuoichien_supplement_matches,
         "colatv": fetch_colatv_supplement_matches,
@@ -956,14 +959,18 @@ def fetch_all_provider_supplements(data):
             try:
                 rows=f.result()
                 source_kind = "link danh mục/JSON" if provider == "xoilacxth" else "API riêng"
-                print(f"[adapter] {provider}: {len(rows)} trận từ {source_kind}" +
-                      (" (API không truy cập được, trả rỗng hoặc không có danh mục mới)" if not rows else ""))
+                print(f"[adapter] {provider}: {len(rows)} trận từ {source_kind}")
                 if rows: jobs.extend(rows)
             except Exception as exc:
                 print(f"[adapter] {provider}: lỗi lấy dữ liệu: {exc}", file=sys.stderr)
-                failures.append(f"{provider}: {exc}")
+                failures[provider] = str(exc)
     if failures:
-        raise RuntimeError("API nguồn lỗi, giữ playlist cũ: " + "; ".join(failures))
+        # These provider endpoints augment the worker feed; the Android app
+        # itself reads sport.json and each fixture's resolver. One blocked
+        # provider must not prevent other providers from updating.
+        data["_failed_provider_adapters"] = failures
+        print("::warning::API riêng không truy cập được: " + ", ".join(sorted(failures)) +
+              "; tiếp tục bằng trận và resolver từ sport.json", file=sys.stderr)
     return jobs
 
 
