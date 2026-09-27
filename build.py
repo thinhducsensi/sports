@@ -7,7 +7,6 @@ import re
 import sys
 import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from collections import Counter
 from datetime import datetime, time, timedelta
 from pathlib import Path
 from time import sleep
@@ -29,7 +28,6 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 TERMINAL_STATUSES = {
     "ft", "finished", "finish", "ended", "end", "completed", "complete",
     "cancelled", "canceled", "postponed", "abandoned", "ket thuc", "huy",
-    "pend", "bi hoan",
 }
 LIVE_STATUSES = {
     "live", "playing", "inplay", "in play", "1h", "2h", "ht", "halftime",
@@ -53,15 +51,28 @@ GENERIC_STREAM_WORDS = {
 }
 FORMAT_ORDER = {"HLS": 0, "FLV": 1, "TS": 2, "DASH": 3, "MP4": 4}
 
-# Fallback probes for a source that accepts a sport filter. This is not an
-# allowlist: unfiltered pages and categories returned by the API remain in use.
-CHUOICHIEN_DISCOVERY_SEEDS = ("football", "tennis", "billiards", "basketball", "badminton", "volleyball", "cricket")
+PROVIDER_SPORT_CAPABILITIES = {
+    "chuoichien": ("football", "tennis", "billiards", "basketball", "badminton", "volleyball", "cricket"),
+    "colatv": ("football", "basketball"),
+    "giovang": ("football", "tennis", "basketball", "badminton", "volleyball", "table tennis", "baseball", "boxing", "esports"),
+    "xoilacxth": ("football", "tennis", "basketball", "volleyball", "badminton", "esports"),
+    "socolive": ("football", "basketball"),
+    "gavang": ("football", "basketball"),
+    "changtv": ("football", "billiards"),
+    "gavang33": ("football",),
+    "phalang": ("football",),
+}
 CHUOICHIEN_API_BASES = (
     "https://api-v2.chuoichientv.com",
     "https://api-v2.chuoichientv.net",
 )
 
 DIRECT_FEEDS = {
+    "colatv": {
+        "url": "https://api.cltvlv.com/api/matches",
+        "kind": "cola",
+        "headers": {"User-Agent": USER_AGENT},
+    },
     "chuoichien": {
         "url": "https://api-v2.chuoichientv.net/v2/matches?page=1&limit=100&type=blv",
         "kind": "chuoichien",
@@ -118,7 +129,7 @@ def first_text(*values):
 
 
 def normalize_text(value):
-    text = scalar_text(value).lower().replace("đ", "d").replace("_", " ").replace("-", " ")
+    text = scalar_text(value).lower().replace("_", " ").replace("-", " ")
     text = unicodedata.normalize("NFD", text)
     text = "".join(ch for ch in text if unicodedata.category(ch) != "Mn")
     text = re.sub(r"\s+", " ", text).strip()
@@ -274,11 +285,6 @@ def _chuoi_match_from_row(row, sport):
         "commentator": _chuoi_commentators(row),
         "_chuoi_external_id": external_id,
     }
-    if home_name and away_name:
-        # Extract streams from this exact event row. A provider-wide index by
-        # team names can attach a previous match's caster or stream.
-        exact = parse_direct_chuoichien([row], DIRECT_FEEDS["chuoichien"])
-        result["sources"] = exact.get(pair_key(home_name, away_name), [])
     return result
 
 
@@ -289,10 +295,8 @@ def fetch_chuoichien_supplement_matches(feed=None):
     def task(sport):
         rows, seen = [], set()
         # The API is paged; a single page of 100 silently loses events.
-        for page in range(1, 51):
-            suffix = f"/v2/matches?page={page}&limit=100"
-            if sport:
-                suffix += f"&sport={quote(sport)}"
+        for page in range(1, 21):
+            suffix = f"/v2/matches?page={page}&limit=100&sport={quote(sport)}"
             if sport == "football":
                 suffix += "&type=blv"
             data = None
@@ -305,13 +309,7 @@ def fetch_chuoichien_supplement_matches(feed=None):
             page_rows = _chuoi_rows(data)
             new_count = 0
             for row in page_rows:
-                declared = first_text(row.get("sport"), row.get("sportName"), row.get("sport_name"),
-                                      row.get("sportType"), row.get("category"))
-                # The unfiltered endpoint can expose sports missing from both
-                # the old seed list and the aggregated sport.json snapshot.
-                if not sport and not declared:
-                    continue
-                match = _chuoi_match_from_row(row, declared or sport)
+                match = _chuoi_match_from_row(row, sport)
                 if match and match["id"] not in seen:
                     seen.add(match["id"])
                     rows.append(match)
@@ -320,17 +318,17 @@ def fetch_chuoichien_supplement_matches(feed=None):
             if len(page_rows) < 100 or new_count == 0:
                 break
         return sport, rows
-    sports = list(CHUOICHIEN_DISCOVERY_SEEDS)
+    sports = list(PROVIDER_SPORT_CAPABILITIES["chuoichien"])
     # Ask for every category named by the upstream index, including categories
     # introduced after the bundled capability list was written.
     if isinstance(feed, dict):
         for row in feed.get("matches") or []:
             if isinstance(row, dict) and provider_key(row) == "chuoichien":
-                sport = sport_category(row)
+                sport = normalize_text(first_text(row.get("sport"), row.get("sport_name"), row.get("sportType")))
                 if sport and sport not in sports:
                     sports.append(sport)
-    with ThreadPoolExecutor(max_workers=min(8, len(sports) + 1)) as executor:
-        futures = [executor.submit(task, sport) for sport in [""] + sports]
+    with ThreadPoolExecutor(max_workers=len(sports)) as executor:
+        futures = [executor.submit(task, sport) for sport in sports]
         for future in as_completed(futures):
             try:
                 _, rows = future.result()
@@ -374,10 +372,8 @@ def _join_people(values):
 
 def fetch_colatv_supplement_matches():
     data = None
-    endpoints = [f"https://api{host}.colatv88xd.cc/api/matches" for host in (1, 2, 3, 4, 5, 6)]
-    endpoints.append("https://api.cltvlv.com/api/matches")
-    for endpoint in endpoints:
-        data = fetch_json_custom(endpoint, {"User-Agent": USER_AGENT}, timeout=4.5)
+    for host in (1, 2, 3, 4, 5, 6):
+        data = fetch_json_custom(f"https://api{host}.colatv88xd.cc/api/matches", {"User-Agent": USER_AGENT}, timeout=4.5)
         if isinstance(data, dict) and isinstance(data.get("data"), dict) and data["data"]:
             break
     if not isinstance(data, dict) or not isinstance(data.get("data"), dict):
@@ -387,17 +383,15 @@ def fetch_colatv_supplement_matches():
     for raw in data["data"].values():
         if not isinstance(raw, dict):
             continue
-        sport_id = first_text(raw.get("sportId"))
-        sport = first_text(raw.get("sportName"), raw.get("sport_name"), raw.get("sport"))
+        sport = {1: "football", 2: "basketball"}.get(int(raw.get("sportId") or 0))
         if not sport:
-            sport = {"1": "football", "2": "basketball"}.get(sport_id, f"sport {sport_id}" if sport_id else "other")
+            continue
         kickoff = parse_timestamp_ms(raw.get("matchTime"))
         if not kickoff:
             continue
         home = first_text(raw.get("homeTeamName"))
         away = first_text(raw.get("awayTeamName"))
-        title = f"{home} vs {away}" if home and away else first_text(raw.get("title"), raw.get("name"), raw.get("matchName"))
-        if not title:
+        if not home or not away:
             continue
         anchors = raw.get("anchorAppointmentVoList")
         if not isinstance(anchors, list) or not anchors:
@@ -420,9 +414,8 @@ def fetch_colatv_supplement_matches():
         out.append({
             "id": "colatv:" + first_text(raw.get("matchId"), hashlib.sha1(f"{home}|{away}|{kickoff}".encode()).hexdigest()[:10]),
             "provider": "colatv", "provider_name": "CoLaTV", "sport": sport, "sport_name": sport,
-            "name": title, "kickoff": kickoff,
-            "live": raw.get("matchStatus") == 2 or raw.get("isLive") is True or raw.get("live") is True or normalize_text(raw.get("status")) in LIVE_STATUSES,
-            "status": "live" if raw.get("matchStatus") == 2 else "scheduled" if raw.get("matchStatus") == 1 else first_text(raw.get("status")),
+            "name": f"{home} vs {away}", "kickoff": kickoff,
+            "live": raw.get("isLive") is True or raw.get("live") is True or normalize_text(raw.get("status")) in LIVE_STATUSES,
             "competition": first_text(raw.get("competitionName")), "home_logo": first_text(raw.get("homeTeamLogo")),
             "away_logo": first_text(raw.get("awayTeamLogo")), "commentator": _join_people(names), "sources": dedupe_sources(sources),
         })
@@ -447,15 +440,12 @@ def _giovang_sport_type(row):
     if not raw:
         raw = first_text(row.get("type"))
     n = normalize_text(raw).replace(" ", "")
-    league_title = normalize_text(first_text(league.get("title"), league.get("name")))
-    if n in ("esport", "esports") and re.search(r"\b(?:f1|formula 1|grand prix|motogp)\b", league_title):
-        return "motorsport"  # The provider mislabeled this race as esports.
     mapping = {
         "football":"football", "soccer":"football", "bongda":"football", "tennis":"tennis",
         "basketball":"basketball", "bongro":"basketball", "volleyball":"volleyball", "bongchuyen":"volleyball",
         "badminton":"badminton", "caulong":"badminton", "tabletennis":"table tennis", "pingpong":"table tennis",
-        "bongban":"table tennis", "baseball":"baseball", "bongchay":"baseball", "boxing":"boxing", "mma":"mma",
-        "combat":"mma", "vothuat":"mma", "muaythai":"boxing", "kickboxing":"boxing", "ufc":"mma",
+        "bongban":"table tennis", "baseball":"baseball", "bongchay":"baseball", "boxing":"boxing", "mma":"boxing",
+        "combat":"boxing", "vothuat":"boxing", "muaythai":"boxing", "kickboxing":"boxing", "ufc":"boxing",
         "esport":"esports", "esports":"esports", "lol":"esports", "gaming":"esports",
     }
     if n in mapping:
@@ -488,31 +478,28 @@ def fetch_giovang_supplement_matches():
     base = "https://live-api.keonhacaitp.one"
     headers = {"User-Agent": USER_AGENT, "Referer": "https://giovang.org/"}
     urls = [base + "/storage/livestream/all.json", base + "/storage/livestream/live.json"]
-    listing_rows = {}
+    rows = []
     with ThreadPoolExecutor(max_workers=2) as ex:
         futures = {ex.submit(fetch_json_custom, u, headers, 5.0): u for u in urls}
         for f in as_completed(futures):
             try:
-                listing_rows[futures[f]] = _giovang_rows(f.result())
+                is_live_listing = futures[f].endswith("/live.json")
+                rows.extend((row, is_live_listing) for row in _giovang_rows(f.result()))
             except Exception:
                 pass
-    # Process all.json first even when live.json responds faster. A live
-    # listing is evidence for an event, not a replacement for terminal status.
-    rows = [(row, False) for row in listing_rows.get(urls[0], [])]
-    rows.extend((row, True) for row in listing_rows.get(urls[1], []))
     out, seen = [], set()
     for row, is_live_listing in rows:
         sport = _giovang_sport_type(row)
         if not sport:
             continue
         status = first_text(row.get("status"))
-        status_code = first_text(row.get("status_code"))
+        if normalize_text(status) in TERMINAL_STATUSES or "ket thuc" in normalize_text(status):
+            continue
         teams = row.get("teams") if isinstance(row.get("teams"), dict) else {}
         home_obj = teams.get("home") if isinstance(teams.get("home"), dict) else {}
         away_obj = teams.get("away") if isinstance(teams.get("away"), dict) else {}
         home, away = first_text(home_obj.get("name")), first_text(away_obj.get("name"))
-        title = f"{home} vs {away}" if home and away and normalize_text(home) != normalize_text(away) else first_text(row.get("title"), row.get("name"), row.get("event_name"), home, away)
-        if not title:
+        if not home or not away:
             continue
         kickoff = parse_timestamp_ms(row.get("time_start"))
         if not kickoff:
@@ -520,7 +507,7 @@ def fetch_giovang_supplement_matches():
         event_id = first_text(row.get("id"))
         if not event_id:
             continue
-        key = f"{event_id}|{kickoff}"
+        key = f"{sport}|{event_id}|{kickoff}"
         if key in seen:
             if is_live_listing:
                 for existing in out:
@@ -539,10 +526,10 @@ def fetch_giovang_supplement_matches():
         league = row.get("league") if isinstance(row.get("league"), dict) else {}
         out.append({
             "id": f"giovang:{event_id}", "provider": "giovang", "provider_name": "Giờ Vàng", "sport": sport,
-            "sport_name": sport, "name": title, "kickoff": kickoff,
-            "live": row.get("is_live") is True or row.get("isLive") is True or row.get("live") is True or normalize_text(status) in LIVE_STATUSES,
+            "sport_name": sport, "name": f"{home} vs {away}", "kickoff": kickoff,
+            "live": row.get("isLive") is True or row.get("live") is True or normalize_text(status) in LIVE_STATUSES,
             "_listed_live": is_live_listing,
-            "status": status, "status_code": status_code, "competition": first_text(league.get("title"), league.get("name")),
+            "status": status, "competition": first_text(league.get("title"), league.get("name")),
             "home_logo": first_text(home_obj.get("logo")), "away_logo": first_text(away_obj.get("logo")),
             "commentator": _join_people(names), "_giovang_detail": base + "/api/fixtures/" + event_id,
         })
@@ -568,97 +555,6 @@ def _extract_html_payload(text):
         if one:
             parts.append(one)
     return "\n".join(parts)
-
-
-def discover_provider_categories(homepage, feed=None, provider="xoilacxth"):
-    """Union provider navigation and the upstream index; never use a sport allowlist."""
-    categories = []
-    def add(value):
-        slug = normalize_text(value).replace(" ", "-").strip("/ ")
-        if re.fullmatch(r"[a-z0-9][a-z0-9_-]{0,49}", slug) and slug not in categories:
-            categories.append(slug)
-    page = html_lib.unescape(homepage or "").replace("\\/", "/")
-    for slug in re.findall(r"/sport/([a-zA-Z0-9_-]+)(?:/|[\"'?#\s<]|$)", page, re.I):
-        add(slug)
-    if isinstance(feed, dict):
-        for row in feed.get("matches") or []:
-            if isinstance(row, dict) and provider_key(row) == provider:
-                for field in ("sport_slug", "sportSlug", "sport", "sport_name", "sportType"):
-                    add(row.get(field))
-    return categories
-
-
-def _xoilac_match_rows(text, base, sport):
-    """Read JSON listing rows as well as the HTML fragments returned by the site."""
-    try:
-        payload = json.loads(text)
-    except (ValueError, TypeError):
-        return []
-    rows = _iter_candidate_matches(payload)
-    if not rows and isinstance(payload, dict):
-        nested = payload.get("data")
-        if isinstance(nested, dict):
-            rows = _iter_candidate_matches(nested)
-    result = []
-    for row in rows:
-        if not isinstance(row, dict):
-            continue
-        home_obj = first_text(_nested_obj(row, "home_team").get("name"), _nested_obj(row, "home").get("name"), row.get("home_name"), row.get("homeName"))
-        away_obj = first_text(_nested_obj(row, "away_team").get("name"), _nested_obj(row, "away").get("name"), row.get("away_name"), row.get("awayName"))
-        title = first_text(row.get("name"), row.get("title"), row.get("match_name"), row.get("event_name"))
-        if home_obj and away_obj:
-            title = f"{home_obj} vs {away_obj}"
-        if not title:
-            continue
-        path = first_text(row.get("detail_url"), row.get("url"), row.get("link"))
-        row_sources = direct_sources(row)
-        if urlsplit(path).path.lower().endswith((".m3u8", ".flv", ".ts")):
-            direct = normalize_source({"url":path, "headers":row.get("headers")}, api_index=len(row_sources))
-            if direct:
-                row_sources = dedupe_by_stream_url(row_sources + [direct])
-            path = first_text(row.get("detail_url"))
-        slug = first_text(row.get("slug"), row.get("seo_slug"))
-        if not path and slug:
-            path = "/truc-tiep/" + slug
-        if not path and not row_sources:
-            continue
-        kickoff = next((t for key in ("kickoff", "time_start", "start_time", "startTime", "matchTime", "timestamp") if (t := parse_timestamp_ms(row.get(key)))), None)
-        status = first_text(row.get("status"), row.get("state"))
-        category = first_text(row.get("sport"), row.get("sport_name"), row.get("sportType"), sport)
-        ident = first_text(row.get("id"), row.get("match_id"), slug, path)
-        match = {"id":"xoilacxth:"+ident, "provider":"xoilacxth", "provider_name":"XoilacXTH",
-                 "sport":category, "sport_name":category, "name":title,
-                 "status":status, "live":row.get("live") is True or row.get("isLive") is True or normalize_text(status) in LIVE_STATUSES,
-                 "competition":first_text(row.get("competition"), row.get("league")),
-                 "_xoilac_detail":urljoin(base.rstrip("/")+"/", path) if path else ""}
-        if kickoff:
-            match["kickoff"] = kickoff
-        match["sources"] = row_sources
-        result.append(match)
-    return result
-
-
-def _listing_next_url(payload, current_url):
-    """Follow pagination only when the endpoint advertises a next page."""
-    try:
-        root = json.loads(payload)
-    except (TypeError, ValueError):
-        return ""
-    if not isinstance(root, dict):
-        return ""
-    candidates = [root, root.get("pagination"), root.get("meta"), root.get("data")]
-    for obj in candidates:
-        if not isinstance(obj, dict):
-            continue
-        value = first_text(obj.get("next_page_url"), obj.get("nextPageUrl"), obj.get("next_url"), obj.get("nextUrl"))
-        if not value:
-            next_obj = obj.get("links")
-            value = first_text(next_obj.get("next")) if isinstance(next_obj, dict) else ""
-        if value:
-            result = urljoin(current_url, value)
-            if urlsplit(result).netloc == urlsplit(current_url).netloc:
-                return result
-    return ""
 
 
 def _extract_attr(tag, name):
@@ -700,55 +596,16 @@ def _xoilac_parse_time(segment):
     return None
 
 
-def _xoilac_origins(feed):
-    """Trust only source domains explicitly carried in this provider's resolver URLs."""
-    origins = set()
-    for row in feed.get("matches", []) if isinstance(feed, dict) else []:
-        if not isinstance(row, dict) or provider_key(row) != "xoilacxth":
-            continue
-        for candidate in (row.get("_xoilac_detail"), resolver_url(row)):
-            direct = first_text(candidate)
-            if "resolve" in urlsplit(direct).path:
-                direct = first_text(dict(parse_qsl(urlsplit(direct).query)).get("url"))
-            parsed = urlsplit(direct)
-            if parsed.scheme == "https" and parsed.hostname:
-                origins.add(f"https://{parsed.netloc}")
-    return sorted(origins)
-
-
-def fetch_xoilac_supplement_matches(feed=None):
-    bases=_xoilac_origins(feed)
+def fetch_xoilac_supplement_matches():
+    categories = (("football","football"),("tennis","tennis"),("basketball","basketball"),("volleyball","volleyball"),("badminton","badminton"),("esports","esports"))
+    bases=("https://xoilacz.vip", "https://xlz.domainkqt.cc")
     out=[]
-    categories=[]
-    for base in bases:
-        home=fetch_text(base+"/", {"User-Agent":USER_AGENT, "Referer":base+"/"}, 4.5)
-        for category in discover_provider_categories(home):
-            if category not in categories:
-                categories.append(category)
-    # If this provider exposes no category links, the primary index and each
-    # match's own resolver remain the authoritative paths to its streams.
-    def load_category(category):
-        results=[]
+    for sport, category in categories:
+        payload=""; used_base=""
         for base in bases:
-            url=base + f"/sport/{category}/filter/commentator"
-            visited=set()
-            for _ in range(12):
-                if url in visited:
-                    break
-                visited.add(url)
-                payload=fetch_text(url, {"User-Agent": USER_AGENT, "Referer": base + "/"}, 4.5)
-                if not payload:
-                    break
-                results.append((payload, base))
-                url=_listing_next_url(payload, url)
-                if not url:
-                    break
-        return category, results
-    with ThreadPoolExecutor(max_workers=min(8, max(1, len(categories)))) as executor:
-        fetched = list(executor.map(load_category, categories))
-    for category, payloads in fetched:
-      for payload, used_base in payloads:
-        out.extend(_xoilac_match_rows(payload, used_base, category))
+            payload=fetch_text(base + f"/sport/{category}/filter/commentator", {"User-Agent": USER_AGENT, "Referer": base + "/"}, 4.5)
+            if payload:
+                used_base=base; break
         html=_extract_html_payload(payload)
         if not html:
             continue
@@ -764,8 +621,7 @@ def fetch_xoilac_supplement_matches(feed=None):
                 title=_extract_attr(tag,"title")
                 h,a=split_match_teams(title)
                 home=home or h; away=away or a
-            title = f"{home} vs {away}" if home and away else _extract_attr(tag,"title")
-            if not title:
+            if not home or not away:
                 continue
             names=[]
             for cm in re.finditer(r"<(?:a|div|span)\b[^>]*class=[\"'][^\"']*(?:blv-item|commentator|grid-match__commentator)[^\"']*[\"'][^>]*>(.*?)</(?:a|div|span)>", seg, flags=re.I|re.S):
@@ -773,25 +629,18 @@ def fetch_xoilac_supplement_matches(feed=None):
                 if name and normalize_text(name) != "vs": names.append(name)
             status_match=re.search(r"\bdata-status=[\"']([^\"']+)[\"']", seg, flags=re.I)
             status=status_match.group(1) if status_match else ""
-            live=normalize_text(status) in LIVE_STATUSES
+            live=status != "1"
             kickoff=_xoilac_parse_time(seg)
             fid_match=re.search(r"\bdata-fid=[\"']([^\"']+)[\"']", seg, flags=re.I)
             fid=fid_match.group(1) if fid_match else href.rstrip('/').split('/')[-1]
             league_match=re.search(r"<[^>]+class=[\"'][^\"']*(?:match-league|league-name)[^\"']*[\"'][^>]*>(.*?)</[^>]+>", seg, flags=re.I|re.S)
             league=_strip_tags(league_match.group(1)) if league_match else ""
-            match={"id":"xoilacxth:"+fid,"provider":"xoilacxth","provider_name":"XoilacXTH","sport":category,"sport_name":category,
-                   "name":title,"live":live,"status":status,"competition":league,"commentator":_join_people(names),
+            match={"id":"xoilacxth:"+fid,"provider":"xoilacxth","provider_name":"XoilacXTH","sport":sport,"sport_name":sport,
+                   "name":f"{home} vs {away}","live":live,"status":status,"competition":league,"commentator":_join_people(names),
                    "_xoilac_detail":urljoin(used_base.rstrip('/')+'/', href)}
             if kickoff: match["kickoff"]=kickoff
             out.append(match)
-    unique={}
-    for match in out:
-        key=(match["id"], sport_category(match))
-        if key not in unique:
-            unique[key]=match
-        elif match.get("sources"):
-            unique[key]["sources"]=dedupe_by_stream_url(unique[key].get("sources", [])+match["sources"])
-    return list(unique.values())
+    return out
 
 
 def fetch_all_provider_supplements(data):
@@ -802,25 +651,18 @@ def fetch_all_provider_supplements(data):
         "colatv": fetch_colatv_supplement_matches,
         "giovang": fetch_giovang_supplement_matches,
         "xoilacxth": fetch_xoilac_supplement_matches,
-        "gavang33": lambda: fetch_direct_supplement_matches("gavang33", data),
-        "socolive": lambda: fetch_direct_supplement_matches("socolive"),
-        "vuasanco": lambda: fetch_direct_supplement_matches("vuasanco"),
     }
     with ThreadPoolExecutor(max_workers=max(1, min(len(adapters), 4))) as ex:
-        futures={}
+        futures=[]
         for provider, func in adapters.items():
             if provider in participating:
-                future = ex.submit(func, data) if provider in ("chuoichien", "xoilacxth") else ex.submit(func)
-                futures[future] = provider
+                futures.append(ex.submit(func, data) if provider == "chuoichien" else ex.submit(func))
         for f in as_completed(futures):
-            provider = futures[f]
             try:
                 rows=f.result()
-                print(f"[adapter] {provider}: {len(rows)} trận từ API riêng" +
-                      (" (API không truy cập được, trả rỗng hoặc không có danh mục mới)" if not rows else ""))
                 if rows: jobs.extend(rows)
-            except Exception as exc:
-                print(f"[adapter] {provider}: lỗi lấy dữ liệu: {exc}", file=sys.stderr)
+            except Exception:
+                pass
     return jobs
 
 
@@ -829,16 +671,10 @@ def _same_match(a, b):
         return False
     if sport_category(a) != sport_category(b):
         return False
-    ids_a = {first_text(a.get(key)).removeprefix(provider_key(a) + ":") for key in ("id", "provider_id", "source_id", "_chuoi_external_id") if first_text(a.get(key))}
-    ids_b = {first_text(b.get(key)).removeprefix(provider_key(b) + ":") for key in ("id", "provider_id", "source_id", "_chuoi_external_id") if first_text(b.get(key))}
-    if ids_a & ids_b:
-        return True
     if normalize_text(match_name(a)) != normalize_text(match_name(b)):
         return False
     ka, kb = get_kickoff(a), get_kickoff(b)
-    if ka and kb:
-        return abs(ka - kb) <= 10 * 60 * 1000
-    return bool(first_text(a.get("id")) and first_text(a.get("id")) == first_text(b.get("id")))
+    return bool(ka and kb and abs(ka - kb) <= 10 * 60 * 1000)
 
 
 def merge_supplement_matches(base_matches, supplements):
@@ -855,27 +691,13 @@ def merge_supplement_matches(base_matches, supplements):
         for key in ("_chuoi_external_id", "_giovang_detail", "_xoilac_detail", "commentator", "competition", "home_logo", "away_logo", "sport", "sport_name"):
             if extra.get(key) and not found.get(key):
                 found[key] = extra[key]
-        # A fresh provider feed can close an event still marked live in an older
-        # aggregated index. Terminal status must win over the stale live flag.
-        if is_terminal(extra):
-            found["status"] = first_text(extra.get("status"), extra.get("status_code"))
-            found["status_code"] = first_text(extra.get("status_code"), extra.get("status"))
-            found["live"] = False
-            found["_listed_live"] = False
-        elif first_text(extra.get("status"), extra.get("status_code")):
-            # Live and scheduled states in the provider API supersede an older
-            # status from the aggregated index; keep long events only if live.
-            found["status"] = first_text(extra.get("status"))
-            found["status_code"] = first_text(extra.get("status_code"))
-            found["live"] = extra.get("live") is True
-            found["_listed_live"] = extra.get("_listed_live") is True
         if isinstance(extra.get("sources"), list):
             found["sources"] = dedupe_by_stream_url(
-                direct_sources(extra) + direct_sources(found)
+                direct_sources(found) + direct_sources(extra)
             )
-        if extra.get("live") is True and not is_terminal(extra):
+        if extra.get("live") is True:
             found["live"] = True
-        if extra.get("_listed_live") is True and not is_terminal(extra):
+        if extra.get("_listed_live") is True:
             found["_listed_live"] = True
     return result
 
@@ -975,18 +797,48 @@ def source_obj(url, caster="", fmt="", quality="", headers=None, name="", index=
     return obj
 
 
+def parse_direct_cola(data, cfg):
+    out = {}
+    root = data.get("data") if isinstance(data, dict) else None
+    if not isinstance(root, dict):
+        return out
+    playback_headers = {"User-Agent": USER_AGENT, "Referer": "https://cola.tv/"}
+    for raw in root.values():
+        if not isinstance(raw, dict):
+            continue
+        home, away = first_text(raw.get("homeTeamName")), first_text(raw.get("awayTeamName"))
+        if not home or not away:
+            continue
+        sources = []
+        anchors = raw.get("anchorAppointmentVoList")
+        if isinstance(anchors, list):
+            for i, anchor in enumerate(anchors):
+                if not isinstance(anchor, dict):
+                    continue
+                caster = first_text(anchor.get("nickName"), anchor.get("nickname"), anchor.get("name"))
+                hls = first_text(anchor.get("playStreamAddress2"))
+                flv = first_text(anchor.get("playStreamAddress"))
+                if hls:
+                    sources.append(source_obj(hls, caster, "HLS", headers=playback_headers, name=caster, index=i*2))
+                if flv:
+                    sources.append(source_obj(flv, caster, "FLV", headers=playback_headers, name=caster, index=i*2+1))
+        if sources:
+            out[pair_key(home, away)] = dedupe_sources(sources)
+    return out
+
+
 def _iter_candidate_matches(data):
     if isinstance(data, list):
         return data
     if not isinstance(data, dict):
         return []
-    for key in ("matches", "result", "data", "response", "list", "items", "rows"):
+    for key in ("matches", "result", "data", "response"):
         value = data.get(key)
         if isinstance(value, list):
             return value
         if isinstance(value, dict):
-            for subkey in ("matches", "list", "items", "rows", "response"):
-                nested = value.get(subkey)
+            if key == "data":
+                nested = value.get("matches")
                 if isinstance(nested, list):
                     return nested
     if isinstance(data.get("data"), dict):
@@ -1156,67 +1008,55 @@ def parse_direct_vuasanco(data, cfg):
 
 
 DIRECT_PARSERS = {
+    "cola": parse_direct_cola,
+    "chuoichien": parse_direct_chuoichien,
     "gavang33": parse_direct_gavang33,
     "socolive": parse_direct_socolive,
     "vuasanco": parse_direct_vuasanco,
 }
 
 
-def fetch_direct_supplement_matches(provider, feed=None):
-    """Supplement any sport exposed by a participating direct provider feed."""
-    cfg = DIRECT_FEEDS.get(provider)
-    if not cfg:
+def fetch_direct_indexes():
+    indexes = {}
+    def task(provider, cfg):
+        data = fetch_json_custom(cfg["url"], cfg.get("headers"), timeout=5.5)
+        if data is None:
+            return provider, {}
+        parser = DIRECT_PARSERS.get(cfg.get("kind"))
+        try:
+            return provider, parser(data, cfg) if parser else {}
+        except Exception:
+            return provider, {}
+    with ThreadPoolExecutor(max_workers=len(DIRECT_FEEDS)) as executor:
+        futures = [executor.submit(task, provider, cfg) for provider, cfg in DIRECT_FEEDS.items()]
+        for future in as_completed(futures):
+            provider, index = future.result()
+            indexes[provider] = index
+    return indexes
+
+
+def direct_sources_for_match(match, indexes):
+    provider = provider_canonical(first_text(match.get("provider"), match.get("source"), match.get("provider_name"), match.get("source_name")))
+    index = indexes.get(provider)
+    if not index:
         return []
-    data = fetch_json_custom(cfg["url"], cfg.get("headers"), timeout=5.5)
-    if data is None:
-        return []
-    parser = DIRECT_PARSERS.get(cfg["kind"])
-    rows = _iter_candidate_matches(data)
-    sport_by_id = {}
-    for prior in feed.get("matches", []) if isinstance(feed, dict) else []:
-        if isinstance(prior, dict) and provider_key(prior) == provider:
-            for ident in (prior.get("provider_id"), prior.get("source_id"), prior.get("id")):
-                if first_text(ident):
-                    sport_by_id[first_text(ident).removeprefix(provider + ":")] = sport_category(prior)
-    out = []
-    for raw in rows:
-        if not isinstance(raw, dict):
-            continue
-        match = _nested_obj(raw, "match") or raw
-        home = first_text(_nested_obj(match, "homeTeam").get("name"), _nested_obj(match, "home").get("name"), raw.get("hostName"), raw.get("homeName"))
-        away = first_text(_nested_obj(match, "awayTeam").get("name"), _nested_obj(match, "away").get("name"), raw.get("guestName"), raw.get("awayName"))
-        title = f"{home} vs {away}" if home and away else first_text(match.get("title"), match.get("name"))
-        if not title:
-            continue
-        # Parse only the current row, not an index keyed by names of two teams.
-        one_row = [raw] if cfg["kind"] == "socolive" else {"data": {"row": raw}}
-        exact = parser(one_row, cfg) if parser else {}
-        sources = exact.get(pair_key(home, away), []) if home and away else direct_sources(match)
-        if not sources:
-            sources = direct_sources(match)
-        if not sources:
-            continue
-        kickoff = next((t for key in ("matchTime", "time_start", "startTime", "start_time", "kickoff", "timestamp") if (t := parse_timestamp_ms(match.get(key)))), None)
-        status = first_text(match.get("status"), match.get("state"), match.get("matchStatus"))
-        sport = first_text(match.get("sportName"), match.get("sport"), match.get("sportType"), match.get("category"))
-        sport_id = first_text(match.get("sportId"))
-        if not sport:
-            sport = {"1": "football", "2": "basketball"}.get(sport_id, f"sport {sport_id}" if sport_id else "")
-        ident = first_text(match.get("slug"), match.get("id"), match.get("matchId"), match.get("match_id"))
-        if not ident:
-            ident = hashlib.sha1(f"{title}|{kickoff}".encode()).hexdigest()[:12]
-        sport = sport or sport_by_id.get(ident) or sport_by_id.get(first_text(match.get("matchId"))) or "other"
-        item = {"id":provider+":"+ident, "provider":provider, "provider_name":provider,
-                "sport":sport, "sport_name":sport, "name":title,
-                "status":status, "live":match.get("live") is True or match.get("isLive") is True or normalize_text(status) in LIVE_STATUSES,
-                "competition":first_text(match.get("competitionName"), match.get("competition")),
-                "sources":dedupe_by_stream_url(sources)}
-        if kickoff:
-            item["kickoff"] = kickoff
-        if provider == "socolive" and not kickoff:
-            item["_listed_live"] = True  # all_live_rooms feed
-        out.append(item)
-    return out
+    home = first_text(match.get("home_team"), match.get("homeTeam"), match.get("team1"), match.get("home"))
+    away = first_text(match.get("away_team"), match.get("awayTeam"), match.get("team2"), match.get("away"))
+    if not home or not away:
+        home, away = split_match_teams(match_name(match))
+        key = f"{home}|{away}" if home and away else ""
+    else:
+        key = pair_key(home, away)
+    if key in index:
+        return index[key]
+    # tolerant fallback: match both normalized team names inside direct key
+    h, a = split_match_teams(match_name(match))
+    if h and a:
+        for direct_key, sources in index.items():
+            dh, da = direct_key.split("|", 1) if "|" in direct_key else ("", "")
+            if (h == dh and a == da) or (h == da and a == dh):
+                return sources
+    return []
 
 
 def slugify_vi(value):
@@ -1274,14 +1114,9 @@ def _parse_giovang_detail(html_text, page_url):
 
 
 def fetch_giovang_sources(candidates):
-    matches_by_id = {}
-    for item in candidates:
-        match = item["match"]
-        if provider_key(match) != "giovang":
-            continue
-        for candidate_id in (match.get("provider_id"), match.get("source_id"), match.get("id")):
-            if first_text(candidate_id):
-                matches_by_id[first_text(candidate_id).removeprefix("giovang:")] = item
+    matches = _candidate_by_pair(candidates, "giovang")
+    if not matches:
+        return {}
     result = {}
     direct_jobs = [(item["api_index"], first_text(item["match"].get("_giovang_detail"))) for item in candidates if provider_key(item["match"]) == "giovang" and first_text(item["match"].get("_giovang_detail"))]
     def parse_detail_json(data):
@@ -1324,10 +1159,10 @@ def fetch_giovang_sources(candidates):
         away_obj = teams.get("away") if isinstance(teams.get("away"), dict) else {}
         home = first_text(home_obj.get("name"))
         away = first_text(away_obj.get("name"))
-        ident = first_text(row.get("fi"), row.get("id"))
-        item = matches_by_id.get(ident)
+        item = _best_candidate_for_pair(matches, home, away)
         if not item:
             continue
+        ident = first_text(row.get("fi"), row.get("id"))
         day_month = first_text(row.get("day_month")).replace("/", "-")
         hs = first_text(home_obj.get("slug")) or slugify_vi(home)
         aw_slug = first_text(away_obj.get("slug")) or slugify_vi(away)
@@ -1356,7 +1191,7 @@ def _strip_tags(text):
     return re.sub(r"\\s+", " ", html_lib.unescape(text)).strip()
 
 
-def _xoilac_find_match_pages(list_html, candidates, base_url):
+def _xoilac_find_match_pages(list_html, candidates):
     if not list_html:
         return {}
     pages = {}
@@ -1372,7 +1207,7 @@ def _xoilac_find_match_pages(list_html, candidates, base_url):
             end = min(len(list_html), m.end() + 2200)
             context = normalize_text(_strip_tags(list_html[start:end]))
             if home in context and away in context:
-                pages[item["api_index"]] = urljoin(base_url.rstrip("/") + "/", html_lib.unescape(m.group(1)))
+                pages[item["api_index"]] = urljoin("https://xoilacz.vip", html_lib.unescape(m.group(1)))
                 break
     return pages
 
@@ -1463,7 +1298,8 @@ def _xoilac_listing_for_domain(base_url, candidates, category="football"):
     pages_json, commentators = _xoilac_pages_from_json(listing, base_url, candidates)
     if pages_json:
         return pages_json, commentators, headers
-    pages_html = _xoilac_find_match_pages(listing, candidates, base_url)
+    pages_html = _xoilac_find_match_pages(listing, candidates)
+    # _xoilac_find_match_pages historically joins xoilacz.vip; normalize to this base.
     normalized = {}
     for idx, page in pages_html.items():
         try:
@@ -1478,25 +1314,17 @@ def fetch_xoilac_sources(candidates):
     relevant = [item for item in candidates if provider_key(item["match"]) == "xoilacxth"]
     if not relevant:
         return {}
-    origins = _xoilac_origins({"matches": [item["match"] for item in relevant]})
     pages = {}
     listed_commentators = {}
     chosen_headers = {}
+    catmap={"football":"football","basketball":"basketball","tennis":"tennis","volleyball":"volleyball","badminton":"badminton","esports":"esports"}
     grouped={}
     for item in relevant:
-        match = item["match"]
-        category = first_text(match.get("sport_slug"), match.get("sportSlug")) or sport_category(match).replace(" ", "-")
-        direct = first_text(match.get("_xoilac_detail"))
-        if not direct:
-            direct = first_text(dict(parse_qsl(urlsplit(resolver_url(match)).query)).get("url"))
-        if direct and f"{urlsplit(direct).scheme}://{urlsplit(direct).netloc}" in origins:
-            pages[item["api_index"]] = direct
-        elif re.fullmatch(r"[a-z0-9][a-z0-9_-]{0,49}", category):
-            grouped.setdefault(category, []).append(item)
+        grouped.setdefault(catmap.get(sport_category(item["match"]),"football"),[]).append(item)
+        direct=first_text(item["match"].get("_xoilac_detail"))
+        if direct: pages[item["api_index"]]=direct
     for category, group in grouped.items():
-        if all(item["api_index"] in pages for item in group):
-            continue
-        for base in origins:
+        for base in ("https://xoilacz.vip", "https://xlz.domainkqt.cc"):
             domain_pages, domain_commentators, headers = _xoilac_listing_for_domain(base, group, category)
             if domain_pages:
                 pages.update({k: v for k, v in domain_pages.items() if k not in pages})
@@ -1711,15 +1539,8 @@ def competition_name(match):
 
 def sport_category(match):
     raw = normalize_text(first_text(match.get("sport"), match.get("sport_name"), match.get("sportType"), match.get("category")))
-    aliases = {
-        "soccer": "football", "bong da": "football", "association football": "football",
-        "bong ro": "basketball", "bong chuyen": "volleyball", "quan vot": "tennis",
-        "the thao dien tu": "esports", "esport": "esports", "e sport": "esports",
-        "dua xe": "motorsport", "motor sport": "motorsport", "racing": "motorsport", "formula 1": "motorsport",
-        "vo thuat": "mma",
-    }
-    if raw in aliases:
-        return aliases[raw]
+    if raw in {"football", "soccer", "bong da", "association football"}:
+        return "football"
     return raw or "other"
 
 
@@ -1843,48 +1664,30 @@ def dedupe_sources(sources):
 
 
 def dedupe_by_stream_url(sources):
-    """One entry per URL, preserving authoritative per-stream metadata."""
-    result, positions = [], {}
+    """One playable entry per URL; keep the first source's metadata and headers."""
+    result, seen = [], set()
     for source in sources:
         if not source or not source.get("url"):
             continue
         key = html_lib.unescape(source["url"]).strip()
-        if key not in positions:
-            positions[key] = len(result)
+        if key not in seen:
+            seen.add(key)
             result.append(source)
-        else:
-            original = result[positions[key]]
-            if source.get("_direct_caster") and not original.get("_direct_caster"):
-                original["_direct_caster"] = source["_direct_caster"]
-                original["commentator"] = source["_direct_caster"]
-            if not original.get("name") and source.get("name"):
-                original["name"] = source["name"]
-            if not original.get("type") and source.get("type"):
-                original["type"] = source["type"]
-            headers = normalize_headers(source.get("headers"))
-            if headers:
-                original["headers"] = {**headers, **normalize_headers(original.get("headers"))}
     return result
 
 
-def probe_stream(source):
-    """Check a stream response with its own HTTP headers; never guess URL age."""
+def probe_hls(source):
+    """Check a current manifest with its own HTTP headers; never guess from URL age."""
     url = first_text(source.get("url"))
-    path = urlsplit(url).path.lower()
-    if not path.endswith((".m3u8", ".flv", ".ts")):
+    if ".m3u8" not in urlsplit(url).path.lower():
         return "unknown"
     headers = normalize_headers(source.get("headers"))
     headers.setdefault("User-Agent", USER_AGENT)
     try:
         req = Request(url, headers=headers)
         with urlopen(req, timeout=2.5) as response:
-            body = response.read(4096 if path.endswith(".m3u8") else 32)
-            if path.endswith(".m3u8"):
-                playlist = body.lstrip(b"\xef\xbb\xbf \t\r\n")
-                return "ok" if playlist.startswith(b"#EXTM3U") and b"#EXT-X-ENDLIST" not in playlist else "unknown"
-            if path.endswith(".flv"):
-                return "ok" if body.startswith(b"FLV") else "unknown"
-            return "ok" if body.startswith(b"\x47") else "unknown"
+            body = response.read(4096).lstrip(b"\xef\xbb\xbf \t\r\n")
+            return "ok" if body.startswith(b"#EXTM3U") and b"#EXT-X-ENDLIST" not in body else "unknown"
     except HTTPError as exc:
         return "dead" if exc.code in (404, 410) else "unknown"
     except (URLError, TimeoutError, OSError, ValueError):
@@ -1892,31 +1695,27 @@ def probe_stream(source):
 
 
 def prioritize_verified_sources(items):
-    """Probe competing HLS/FLV/TS links with bounded work."""
+    """Probe competing HLS links with bounded work; preserve untestable links."""
     if os.environ.get("PLAYLIST_VERIFY_HLS", "1") == "0":
         return [item for item in items if item["state"].get("kind") != "needs_live_check"]
     unique = {}
     # Reserve the first verification slots for past-cutoff events, including
     # events with only one source. Others are tested after those candidates.
-    pending_items = [item for item in items if item["state"].get("kind") == "needs_live_check"]
-    normal_items = [item for item in items if item["state"].get("kind") != "needs_live_check" and item["state"].get("block") == 0 and len(item["sources"]) > 1]
-    for group in (pending_items, normal_items):
-        # Round robin: one provider with many streams cannot consume the entire
-        # verification budget before the next match gets a chance.
-        for position in range(max((len(item["sources"]) for item in group), default=0)):
-            for item in group:
-                if position >= len(item["sources"]):
-                    continue
-                source = item["sources"][position]
-                key = (source["url"], tuple(sorted(normalize_headers(source.get("headers")).items())))
-                if key not in unique and urlsplit(source["url"]).path.lower().endswith((".m3u8", ".flv", ".ts")):
-                    unique[key] = source
+    ordered_items = sorted(items, key=lambda item: item["state"].get("kind") != "needs_live_check")
+    for item in ordered_items:
+        pending = item["state"].get("kind") == "needs_live_check"
+        if item["state"].get("block") != 0 or (len(item["sources"]) < 2 and not pending):
+            continue
+        for source in item["sources"]:
+            key = (source["url"], tuple(sorted(normalize_headers(source.get("headers")).items())))
+            if key not in unique and ".m3u8" in urlsplit(source["url"]).path.lower():
+                unique[key] = source
     # Bound execution for the five-minute GitHub Actions job.
     selected = list(unique.items())[:120]
     checks = {}
     if selected:
         with ThreadPoolExecutor(max_workers=min(24, len(selected))) as executor:
-            futures = {executor.submit(probe_stream, source): key for key, source in selected}
+            futures = {executor.submit(probe_hls, source): key for key, source in selected}
             for future in as_completed(futures):
                 try:
                     checks[futures[future]] = future.result()
@@ -2194,10 +1993,10 @@ def source_commentator(source, match):
     if matched:
         return matched
 
-    # The app shows the match-level text on its card; it does not establish
-    # which of several commentators belongs to this particular stream.
-    fallback = direct_match_commentator(match)
-    return fallback if len(split_people(fallback)) <= 1 else ""
+    # Exact SportStream fallback. MainActivity reads the match-level field using
+    # commentator -> blv -> caster and shows it on the match card. It does not
+    # discard the value merely because there are several names.
+    return direct_match_commentator(match)
 
 def order_sources(sources, match):
     caster_order = {}
@@ -2311,6 +2110,7 @@ def stable_source_id(match, source):
 
 
 def resolve_all(candidates):
+    direct_indexes = fetch_direct_indexes()
     chuoi_detail_map = fetch_chuoichien_detail_sources(candidates)
     giovang_map = fetch_giovang_sources(candidates)
     xoilac_map = fetch_xoilac_sources(candidates)
@@ -2322,7 +2122,8 @@ def resolve_all(candidates):
         local_direct_map[item["api_index"]] = direct_sources(match)
         idx = item["api_index"]
         provider_direct_map[idx] = dedupe_by_stream_url(
-            chuoi_detail_map.get(idx, [])
+            direct_sources_for_match(match, direct_indexes)
+            + chuoi_detail_map.get(idx, [])
             + giovang_map.get(idx, [])
             + xoilac_map.get(idx, [])
         )
@@ -2360,7 +2161,7 @@ def resolve_all(candidates):
 
 
 def build_title(match, state, source):
-    live = "🔴 " if state.get("kind") in ("live", "verified_live") else ""
+    live = "🔴 " if state.get("block") == 0 else ""
     name = safe_title_text(match_name(match))
     caster, stream_info = source_meta(source, match)
     competition = safe_title_text(competition_name(match))
@@ -2376,9 +2177,6 @@ def build_playlist():
         data = fetch_json(SPORT_API, timeout=10, retries=2, cache_bust=False)
     if not isinstance(data, dict):
         raise RuntimeError("Không lấy được sport.json")
-    upstream_update = parse_timestamp_ms(data.get("updated"))
-    if upstream_update and now_ms() - upstream_update > 60 * 60 * 1000:
-        print(f"[freshness] sport.json đã cập nhật cách đây {(now_ms() - upstream_update) // 60000} phút")
     matches = data.get("matches") if isinstance(data.get("matches"), list) else []
     supplements = fetch_all_provider_supplements(data)
     matches = merge_supplement_matches(matches, supplements)
@@ -2395,12 +2193,6 @@ def build_playlist():
     resolved = resolve_all(candidates)
     if candidates and not resolved:
         raise RuntimeError("Không resolve được luồng nào; giữ playlist cũ")
-
-    discovered = Counter((provider_key(m), sport_category(m)) for m in matches if isinstance(m, dict))
-    eligible = Counter((provider_key(item["match"]), sport_category(item["match"])) for item in candidates)
-    playable = Counter((provider_key(item["match"]), sport_category(item["match"])) for item in resolved)
-    for key in sorted(discovered):
-        print(f"[coverage] {key[0]}/{key[1]}: API={discovered[key]} eligible={eligible[key]} playable={playable[key]}")
 
     provider_sequence = provider_order(data, resolved)
     sport_order = build_sport_order(resolved)
