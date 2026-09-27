@@ -69,16 +69,6 @@ DIRECT_FEEDS = {
         "kind": "gavang33",
         "headers": {"User-Agent": USER_AGENT, "Referer": "https://gavang33.co/"},
     },
-    "socolive": {
-        "url": "https://json.vnres.co/all_live_rooms.json",
-        "kind": "socolive",
-        "headers": {"User-Agent": "Mozilla/5.0", "Referer": "https://socolivedz.com/"},
-    },
-    "vuasanco": {
-        "url": "https://vsc9.com/api/data/lives/matches",
-        "kind": "vuasanco",
-        "headers": {"User-Agent": USER_AGENT, "Origin": "https://vsc9.com", "Referer": "https://vsc9.com/"},
-    },
 }
 
 PROVIDER_ALIASES = {
@@ -88,9 +78,6 @@ PROVIDER_ALIASES = {
     "chuoichien": "chuoichien",
     "ga vang 33": "gavang33",
     "gavang33": "gavang33",
-    "socolive": "socolive",
-    "vua san co": "vuasanco",
-    "vuasanco": "vuasanco",
 }
 KNOWN_PROVIDER_IDS = {
     "chuoichien", "chuoi chien", "colatv", "cola", "gavang33", "ga vang 33",
@@ -943,8 +930,6 @@ def fetch_all_provider_supplements(data):
         "giovang": lambda: fetch_giovang_supplement_matches(data),
         "xoilacxth": fetch_xoilac_supplement_matches,
         "gavang33": lambda: fetch_direct_supplement_matches("gavang33", data),
-        "socolive": lambda: fetch_direct_supplement_matches("socolive"),
-        "vuasanco": lambda: fetch_direct_supplement_matches("vuasanco"),
     }
     with ThreadPoolExecutor(max_workers=max(1, min(len(adapters), 4))) as ex:
         futures={}
@@ -1205,81 +1190,8 @@ def parse_direct_gavang33(data, cfg):
     return out
 
 
-def parse_direct_socolive(data, cfg):
-    out = {}
-    rows = data if isinstance(data, list) else data.get("data") if isinstance(data, dict) and isinstance(data.get("data"), list) else []
-    playback_headers = {"User-Agent": "Mozilla/5.0", "Referer": "https://socolivedz.com/"}
-    for ri, row in enumerate(rows):
-        if not isinstance(row, dict):
-            continue
-        home = first_text(row.get("hostName"), row.get("homeName"))
-        away = first_text(row.get("guestName"), row.get("awayName"))
-        if not home or not away:
-            continue
-        room = row.get("roomItem") if isinstance(row.get("roomItem"), dict) else row
-        anchor = room.get("anchor") if isinstance(room.get("anchor"), dict) else {}
-        caster = first_text(anchor.get("nickName"), anchor.get("nickname"), anchor.get("name"))
-        stream = room.get("stream") if isinstance(room.get("stream"), dict) else row.get("stream") if isinstance(row.get("stream"), dict) else {}
-        sources = []
-        for idx, (key, fmt, q) in enumerate((("hdM3u8","HLS","FHD"),("m3u8","HLS",""),("hdFlv","FLV","HD"),("flv","FLV",""))):
-            url = first_text(stream.get(key))
-            obj = source_obj(url, caster, fmt, q, playback_headers, caster, idx)
-            if obj:
-                sources.append(obj)
-        if sources:
-            out[pair_key(home, away)] = dedupe_sources(sources)
-    return out
-
-
-def _extract_vuasanco_streams(container, playback_headers):
-    sources = []
-    seq = 0
-    if not isinstance(container, dict):
-        return sources
-    arrays = []
-    for key in ("lives", "streams", "links"):
-        value = container.get(key)
-        if isinstance(value, list):
-            arrays.extend(value)
-    for entry in arrays:
-        if isinstance(entry, str):
-            url, caster = entry, ""
-        elif isinstance(entry, dict):
-            url = first_text(entry.get("link"), entry.get("url"), entry.get("streamUrl"))
-            caster = first_text(entry.get("commentator"), entry.get("blv"), entry.get("caster"))
-        else:
-            continue
-        fmt = "HLS" if ".m3u8" in url.lower() else "FLV" if ".flv" in url.lower() else ""
-        obj = source_obj(url, caster, fmt, headers=playback_headers, name=caster, index=seq)
-        seq += 1
-        if obj:
-            sources.append(obj)
-    return sources
-
-
-def parse_direct_vuasanco(data, cfg):
-    out = {}
-    rows = _iter_candidate_matches(data)
-    playback_headers = {"User-Agent": USER_AGENT, "Origin": "https://vsc9.com", "Referer": "https://vsc9.com/"}
-    for row in rows:
-        if not isinstance(row, dict):
-            continue
-        home_obj = row.get("home") if isinstance(row.get("home"), dict) else {}
-        away_obj = row.get("away") if isinstance(row.get("away"), dict) else {}
-        home = first_text(home_obj.get("name"), row.get("homeName"), row.get("team1"))
-        away = first_text(away_obj.get("name"), row.get("awayName"), row.get("team2"))
-        if not home or not away:
-            continue
-        sources = _extract_vuasanco_streams(row, playback_headers)
-        if sources:
-            out[pair_key(home, away)] = dedupe_sources(sources)
-    return out
-
-
 DIRECT_PARSERS = {
     "gavang33": parse_direct_gavang33,
-    "socolive": parse_direct_socolive,
-    "vuasanco": parse_direct_vuasanco,
 }
 
 
@@ -1310,7 +1222,7 @@ def fetch_direct_supplement_matches(provider, feed=None):
         if not title:
             continue
         # Parse only the current row, not an index keyed by names of two teams.
-        one_row = [raw] if cfg["kind"] == "socolive" else {"data": {"row": raw}}
+        one_row = {"data": {"row": raw}}
         exact = parser(one_row, cfg) if parser else {}
         sources = exact.get(pair_key(home, away), []) if home and away else []
         if not sources:
@@ -1343,8 +1255,6 @@ def fetch_direct_supplement_matches(provider, feed=None):
                 "sources":sources, "resolvers":list(dict.fromkeys(link for link, _, _ in json_refs))}
         if kickoff:
             item["kickoff"] = kickoff
-        if provider == "socolive" and not kickoff:
-            item["_listed_live"] = True  # all_live_rooms feed
         out.append(item)
     return out
 
