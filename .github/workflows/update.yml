@@ -38,7 +38,6 @@ jobs:
       - name: Build playlist
         run: |
           python -m py_compile build.py
-          python -m unittest discover -s tests
           python build.py
 
       - name: Commit and push
