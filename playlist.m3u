@@ -1,16 +1,11 @@
 #EXTM3U x-tvg-url=""
-#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 23:46 28/09" group-title="🕒 Cập nhật 23:46 28/09",🕒 Cập nhật 23:46 28/09
+#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 00:01 29/09" group-title="🕒 Cập nhật 00:01 29/09",🕒 Cập nhật 00:01 29/09
 http://127.0.0.1/
-#EXTINF:-1 tvg-id="sport-0770f581dc87" tvg-name="Leixoes U23 vs Vizela U23" tvg-logo="https://img.gvapi.cc/football/team/d5db95a6441ae92e5dd150663f89dc64.png" group-title="Gà Vàng 33",🔴 [22:00] 28/09 ⚽ Leixoes U23 vs Vizela U23 (Gà Siêu Tốc) • Portuguese U23 League [HLS]
+#EXTINF:-1 tvg-id="sport-4ebe9e662a46" tvg-name="Leixoes U23 vs Vizela U23" tvg-logo="https://img.gvapi.cc/football/team/d5db95a6441ae92e5dd150663f89dc64.png" group-title="Gà Vàng 33",🔴 [22:00] 28/09 ⚽ Leixoes U23 vs Vizela U23 [HLS]
 #EXTGRP:Gà Vàng 33
-#EXTVLCOPT:http-referrer=https://gavang33.co/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://live2.zktsva.app/live/307240.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
-#EXTINF:-1 tvg-id="sport-b0807670085c" tvg-name="Leixoes U23 vs Vizela U23" tvg-logo="https://img.gvapi.cc/football/team/d5db95a6441ae92e5dd150663f89dc64.png" group-title="Gà Vàng 33",🔴 [22:00] 28/09 ⚽ Leixoes U23 vs Vizela U23 (Gà Siêu Tốc) • Portuguese U23 League [FLV]
-#EXTGRP:Gà Vàng 33
-#EXTVLCOPT:http-referrer=https://gavang33.co/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://live2.zktsva.app/live/307240.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTVLCOPT:http-referrer=https://gavang33.me/
+#EXTVLCOPT:http-origin=https://gavang33.me
+https://video.gvvsb.com/hls/output_v1.m3u8|Referer=https%3A%2F%2Fgavang33.me%2F&Origin=https%3A%2F%2Fgavang33.me
 #EXTINF:-1 tvg-id="sport-054c076499c3" tvg-name="Armenia vs Montenegro" tvg-logo="https://img.gvapi.cc/football/team/13d8532225dea4fca8e0ebdfb27b83e4.png" group-title="Gà Vàng 33",🔴 [23:00] 28/09 ⚽ Armenia vs Montenegro (Gà Siêu Péo) • UEFA Nations League [HLS]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-referrer=https://gavang33.co/
@@ -291,26 +286,246 @@ https://live2.zktsva.app/live/301263.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20
 #EXTVLCOPT:http-referrer=https://gavang33.co/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://live2.zktsva.app/live/301263.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
-#EXTINF:-1 tvg-id="sport-a529ab4a99da" tvg-name="Leixoes U23 vs Vizela U23" tvg-logo="https://img.gvapi.cc/football/team/d5db95a6441ae92e5dd150663f89dc64.png!w80" group-title="CoLaTV",🔴 [22:00] 28/09 ⚽ Leixoes U23 vs Vizela U23 (BLV FANTA) • Giải bóng đá U23 Bồ Đào Nha [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTINF:-1 tvg-id="sport-882bc54828e4" tvg-name="Oman vs Kuwait" tvg-logo="https://img.gvapi.cc/football/team/500739868ce9f7f0857260404eab4d41.png" group-title="Gà Vàng 33",[00:30] 30/09 ⚽ Oman vs Kuwait (Gà Siêu Tồ) • WAFF Arabian Gulf Cup [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://live05.meung.app/live/16226575_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
-#EXTINF:-1 tvg-id="sport-c61a440f3ee9" tvg-name="Leixoes U23 vs Vizela U23" tvg-logo="https://img.gvapi.cc/football/team/d5db95a6441ae92e5dd150663f89dc64.png!w80" group-title="CoLaTV",🔴 [22:00] 28/09 ⚽ Leixoes U23 vs Vizela U23 (BLV FANTA) • Giải bóng đá U23 Bồ Đào Nha [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live2.zktsva.app/live/796315.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-0b8d34777114" tvg-name="Oman vs Kuwait" tvg-logo="https://img.gvapi.cc/football/team/500739868ce9f7f0857260404eab4d41.png" group-title="Gà Vàng 33",[00:30] 30/09 ⚽ Oman vs Kuwait (Gà Siêu Tồ) • WAFF Arabian Gulf Cup [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://live05.meung.app/live/16226575_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
-#EXTINF:-1 tvg-id="sport-f4f165a12dfa" tvg-name="Leixoes U23 vs Vizela U23" tvg-logo="https://img.gvapi.cc/football/team/d5db95a6441ae92e5dd150663f89dc64.png!w80" group-title="CoLaTV",🔴 [22:00] 28/09 ⚽ Leixoes U23 vs Vizela U23 • Giải bóng đá U23 Bồ Đào Nha [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live2.zktsva.app/live/796315.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-3b1978ff356c" tvg-name="Saudi Arabia vs Iraq" tvg-logo="https://img.gvapi.cc/football/team/344c0d0b85274807ba668a603ef5a05e.png" group-title="Gà Vàng 33",[00:30] 30/09 ⚽ Saudi Arabia vs Iraq (Gà Siêu Kiêu) • WAFF Arabian Gulf Cup [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://live1.dyrur1.com/live/73456050_75296cb432206430edc0a401c4cf9ae1_autoChange.m3u8?auth_key=1790628315-0-0-50ef54b61370996c3d70a7d3702b52f0|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
-#EXTINF:-1 tvg-id="sport-2bdfdf57a6f1" tvg-name="Leixoes U23 vs Vizela U23" tvg-logo="https://img.gvapi.cc/football/team/d5db95a6441ae92e5dd150663f89dc64.png!w80" group-title="CoLaTV",🔴 [22:00] 28/09 ⚽ Leixoes U23 vs Vizela U23 (BLV FANTA) • Giải bóng đá U23 Bồ Đào Nha [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live2.zktsva.app/live/741294.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-102044ba799e" tvg-name="Saudi Arabia vs Iraq" tvg-logo="https://img.gvapi.cc/football/team/344c0d0b85274807ba668a603ef5a05e.png" group-title="Gà Vàng 33",[00:30] 30/09 ⚽ Saudi Arabia vs Iraq (Gà Siêu Kiêu) • WAFF Arabian Gulf Cup [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://live05.miekgo.app/live/16226575_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+https://live2.zktsva.app/live/741294.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-d3d624e74244" tvg-name="Czechia vs England" tvg-logo="https://img.gvapi.cc/football/team/445f0bbb49694464b0fee3b1cbdfdafc.png" group-title="Gà Vàng 33",[01:45] 30/09 ⚽ Czechia vs England (Gà Siêu Quỷ) • UEFA Nations League [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/304565.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-1a447a858890" tvg-name="Czechia vs England" tvg-logo="https://img.gvapi.cc/football/team/445f0bbb49694464b0fee3b1cbdfdafc.png" group-title="Gà Vàng 33",[01:45] 30/09 ⚽ Czechia vs England (Gà Siêu Quỷ) • UEFA Nations League [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/304565.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-10d6d9c989ff" tvg-name="Czechia vs England" tvg-logo="https://img.gvapi.cc/football/team/445f0bbb49694464b0fee3b1cbdfdafc.png" group-title="Gà Vàng 33",[01:45] 30/09 ⚽ Czechia vs England (Gà Ô Long) • UEFA Nations League [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/432017.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-f2c61d443b0b" tvg-name="Czechia vs England" tvg-logo="https://img.gvapi.cc/football/team/445f0bbb49694464b0fee3b1cbdfdafc.png" group-title="Gà Vàng 33",[01:45] 30/09 ⚽ Czechia vs England (Gà Ô Long) • UEFA Nations League [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/432017.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-9bbf4b534ba2" tvg-name="San Marino vs Albania" tvg-logo="https://img.gvapi.cc/football/team/9bdc3efe2bdc1946dbb253b2d101b484.png" group-title="Gà Vàng 33",[01:45] 30/09 ⚽ San Marino vs Albania (Gà Siêu Tốc) • UEFA Nations League [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/307240.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-934ec3c07587" tvg-name="San Marino vs Albania" tvg-logo="https://img.gvapi.cc/football/team/9bdc3efe2bdc1946dbb253b2d101b484.png" group-title="Gà Vàng 33",[01:45] 30/09 ⚽ San Marino vs Albania (Gà Siêu Tốc) • UEFA Nations League [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/307240.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-af80036f6c33" tvg-name="Scotland vs Switzerland" tvg-logo="https://img.gvapi.cc/football/team/40812113b19045bfac9e0fd11134ac87.png" group-title="Gà Vàng 33",[01:45] 30/09 ⚽ Scotland vs Switzerland (Gà Siêu Bệu) • UEFA Nations League [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/289650.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-3092f29c75bc" tvg-name="Scotland vs Switzerland" tvg-logo="https://img.gvapi.cc/football/team/40812113b19045bfac9e0fd11134ac87.png" group-title="Gà Vàng 33",[01:45] 30/09 ⚽ Scotland vs Switzerland (Gà Siêu Bệu) • UEFA Nations League [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/289650.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-c890a6d100a9" tvg-name="Slovakia vs Kazakhstan" tvg-logo="https://img.gvapi.cc/football/team/e2fcc738438c4e7ca4b605ef8764db73.png" group-title="Gà Vàng 33",[01:45] 30/09 ⚽ Slovakia vs Kazakhstan (Gà Siêu Nhí) • UEFA Nations League [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/301263.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-77004354744c" tvg-name="Slovakia vs Kazakhstan" tvg-logo="https://img.gvapi.cc/football/team/e2fcc738438c4e7ca4b605ef8764db73.png" group-title="Gà Vàng 33",[01:45] 30/09 ⚽ Slovakia vs Kazakhstan (Gà Siêu Nhí) • UEFA Nations League [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/301263.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-edbb7eabe606" tvg-name="Slovenia vs North Macedonia" tvg-logo="https://img.gvapi.cc/football/team/e4ba31fba036a999321d5460f7f2d1d1.png" group-title="Gà Vàng 33",[01:45] 30/09 ⚽ Slovenia vs North Macedonia (Gà Siêu Péo) • UEFA Nations League [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/303098.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-e4b04535c0a7" tvg-name="Slovenia vs North Macedonia" tvg-logo="https://img.gvapi.cc/football/team/e4ba31fba036a999321d5460f7f2d1d1.png" group-title="Gà Vàng 33",[01:45] 30/09 ⚽ Slovenia vs North Macedonia (Gà Siêu Péo) • UEFA Nations League [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/303098.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-e156e912ded1" tvg-name="Spain vs Croatia" tvg-logo="https://img.gvapi.cc/football/team/9c1958aa257c4a318f87cb4b2d79fa11.png" group-title="Gà Vàng 33",[01:45] 30/09 ⚽ Spain vs Croatia (Gà Siêu Ngố) • UEFA Nations League [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/301238.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-db92cb661376" tvg-name="Spain vs Croatia" tvg-logo="https://img.gvapi.cc/football/team/9c1958aa257c4a318f87cb4b2d79fa11.png" group-title="Gà Vàng 33",[01:45] 30/09 ⚽ Spain vs Croatia (Gà Siêu Ngố) • UEFA Nations League [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/301238.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-8b008041503a" tvg-name="Spain vs Croatia" tvg-logo="https://img.gvapi.cc/football/team/9c1958aa257c4a318f87cb4b2d79fa11.png" group-title="Gà Vàng 33",[01:45] 30/09 ⚽ Spain vs Croatia (Gà Siêu Gáy) • UEFA Nations League [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/294335.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-68f8f8748f4c" tvg-name="Spain vs Croatia" tvg-logo="https://img.gvapi.cc/football/team/9c1958aa257c4a318f87cb4b2d79fa11.png" group-title="Gà Vàng 33",[01:45] 30/09 ⚽ Spain vs Croatia (Gà Siêu Gáy) • UEFA Nations League [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/294335.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-fbca3f85ae8d" tvg-name="USA vs Chile" tvg-logo="https://img.gvapi.cc/football/team/350ec526535f4c9a81f9d9201948d9d5.png" group-title="Gà Vàng 33",[07:00] 30/09 ⚽ USA vs Chile (Gà Siêu Son) • International Friendly [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/306290.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-a44fdbaeaab2" tvg-name="USA vs Chile" tvg-logo="https://img.gvapi.cc/football/team/350ec526535f4c9a81f9d9201948d9d5.png" group-title="Gà Vàng 33",[07:00] 30/09 ⚽ USA vs Chile (Gà Siêu Son) • International Friendly [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/306290.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-f77090442fa8" tvg-name="Mexico vs Peru" tvg-logo="https://img.gvapi.cc/football/team/cd5a7e277e91426d9ad74bd09b946fde.png" group-title="Gà Vàng 33",[08:00] 30/09 ⚽ Mexico vs Peru (Gà Siêu Tồ) • International Friendly [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/796315.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-d9c32eff5b8a" tvg-name="Mexico vs Peru" tvg-logo="https://img.gvapi.cc/football/team/cd5a7e277e91426d9ad74bd09b946fde.png" group-title="Gà Vàng 33",[08:00] 30/09 ⚽ Mexico vs Peru (Gà Siêu Tồ) • International Friendly [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/796315.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-aac6d3b8df8a" tvg-name="Belize vs Saint Vincent and the Grenadines" tvg-logo="https://img.gvapi.cc/football/team/cc43cae8b2c9735749cb067be62f9311.png" group-title="Gà Vàng 33",[09:00] 30/09 ⚽ Belize vs Saint Vincent and the Grenadines (Gà Siêu Kiêu) • CONCACAF Nations League [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/741294.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-1f447ef9725c" tvg-name="Belize vs Saint Vincent and the Grenadines" tvg-logo="https://img.gvapi.cc/football/team/cc43cae8b2c9735749cb067be62f9311.png" group-title="Gà Vàng 33",[09:00] 30/09 ⚽ Belize vs Saint Vincent and the Grenadines (Gà Siêu Kiêu) • CONCACAF Nations League [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/741294.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-523fdec25ad5" tvg-name="Timor Leste vs Cambodia" tvg-logo="https://img.gvapi.cc/football/team/96a83c96abbe6d0b40c72b279ebdf76e.png" group-title="Gà Vàng 33",[16:00] 30/09 ⚽ Timor Leste vs Cambodia (Gà Siêu Gáy) • FIFA ASEAN Cup [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/294335.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-3de870e3409c" tvg-name="Timor Leste vs Cambodia" tvg-logo="https://img.gvapi.cc/football/team/96a83c96abbe6d0b40c72b279ebdf76e.png" group-title="Gà Vàng 33",[16:00] 30/09 ⚽ Timor Leste vs Cambodia (Gà Siêu Gáy) • FIFA ASEAN Cup [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/294335.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-5d5af5c3c913" tvg-name="Hong Kong vs Brunei Darussalam" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png" group-title="Gà Vàng 33",[19:00] 30/09 ⚽ Hong Kong vs Brunei Darussalam (Gà Siêu Ngố) • FIFA ASEAN Cup [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/301238.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-a3fcff97facb" tvg-name="Hong Kong vs Brunei Darussalam" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png" group-title="Gà Vàng 33",[19:00] 30/09 ⚽ Hong Kong vs Brunei Darussalam (Gà Siêu Ngố) • FIFA ASEAN Cup [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/301238.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-e5716a34e393" tvg-name="Aktobe W vs Ajax Amsterdam Women" tvg-logo="https://img.gvapi.cc/football/team/6a361dfa300bb39d857d5e6264788ccf.png" group-title="Gà Vàng 33",[21:00] 30/09 ⚽ Aktobe W vs Ajax Amsterdam Women (Gà Siêu Tốc) • UEFA EL W [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/307240.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-a38755b8f2c8" tvg-name="Aktobe W vs Ajax Amsterdam Women" tvg-logo="https://img.gvapi.cc/football/team/6a361dfa300bb39d857d5e6264788ccf.png" group-title="Gà Vàng 33",[21:00] 30/09 ⚽ Aktobe W vs Ajax Amsterdam Women (Gà Siêu Tốc) • UEFA EL W [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/307240.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-62ee24e5a561" tvg-name="Farul Constanta Women vs Sparta Praha Women" tvg-logo="https://img.gvapi.cc/football/team/1974004c6d06c5f9bdaaef35b1ca7d73.png" group-title="Gà Vàng 33",[21:00] 30/09 ⚽ Farul Constanta Women vs Sparta Praha Women (Gà Siêu Nhí) • UEFA EL W [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/301263.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-59c04d58a67c" tvg-name="Farul Constanta Women vs Sparta Praha Women" tvg-logo="https://img.gvapi.cc/football/team/1974004c6d06c5f9bdaaef35b1ca7d73.png" group-title="Gà Vàng 33",[21:00] 30/09 ⚽ Farul Constanta Women vs Sparta Praha Women (Gà Siêu Nhí) • UEFA EL W [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/301263.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-55e4b9730a61" tvg-name="Eritrea vs South Africa" tvg-logo="https://img.gvapi.cc/football/team/c8c1fad8f7b657fa96c4e5da96ada7c2.png" group-title="Gà Vàng 33",[23:00] 30/09 ⚽ Eritrea vs South Africa (Gà Siêu Péo) • CAF Africa Cup of Nations [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/303098.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-3cd6d7bf988a" tvg-name="Eritrea vs South Africa" tvg-logo="https://img.gvapi.cc/football/team/c8c1fad8f7b657fa96c4e5da96ada7c2.png" group-title="Gà Vàng 33",[23:00] 30/09 ⚽ Eritrea vs South Africa (Gà Siêu Péo) • CAF Africa Cup of Nations [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/303098.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-f2fe636e72cc" tvg-name="Lithuania vs Andorra" tvg-logo="https://img.gvapi.cc/football/team/f2b6806d6ed60d2d87b0dd5ae62e6f20.png" group-title="Gà Vàng 33",[23:00] 30/09 ⚽ Lithuania vs Andorra (Gà Siêu Bệu) • International Friendly [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/289650.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-5c8fefdd985b" tvg-name="Lithuania vs Andorra" tvg-logo="https://img.gvapi.cc/football/team/f2b6806d6ed60d2d87b0dd5ae62e6f20.png" group-title="Gà Vàng 33",[23:00] 30/09 ⚽ Lithuania vs Andorra (Gà Siêu Bệu) • International Friendly [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/289650.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-a156d9bfd67b" tvg-name="AS Roma Women vs Barcelona Women" tvg-logo="https://img.gvapi.cc/football/team/09c9433cfa1c306e6b774a272da7f5a9.png" group-title="Gà Vàng 33",[23:45] 30/09 ⚽ AS Roma Women vs Barcelona Women (Gà Siêu Kiêu) • UEFA Women's Champions League [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/741294.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-b475e2477c8c" tvg-name="AS Roma Women vs Barcelona Women" tvg-logo="https://img.gvapi.cc/football/team/09c9433cfa1c306e6b774a272da7f5a9.png" group-title="Gà Vàng 33",[23:45] 30/09 ⚽ AS Roma Women vs Barcelona Women (Gà Siêu Kiêu) • UEFA Women's Champions League [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/741294.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-bb982db6651a" tvg-name="BK Hacken Women vs Juventus Women" tvg-logo="https://img.gvapi.cc/football/team/e121cced31de682c590d3305327061df.png" group-title="Gà Vàng 33",[23:45] 30/09 ⚽ BK Hacken Women vs Juventus Women (Gà Siêu Tồ) • UEFA Women's Champions League [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/796315.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-8e2bc62a979c" tvg-name="BK Hacken Women vs Juventus Women" tvg-logo="https://img.gvapi.cc/football/team/e121cced31de682c590d3305327061df.png" group-title="Gà Vàng 33",[23:45] 30/09 ⚽ BK Hacken Women vs Juventus Women (Gà Siêu Tồ) • UEFA Women's Champions League [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/796315.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-716b33d1b57e" tvg-name="Paris FC Women vs Arsenal Women" tvg-logo="https://img.gvapi.cc/football/team/fabc3fa7f297e32d91291693eb8c1404.png" group-title="Gà Vàng 33",[23:45] 30/09 ⚽ Paris FC Women vs Arsenal Women (Gà Siêu Nhí) • UEFA Women's Champions League [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/301263.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-d05596f164b0" tvg-name="Paris FC Women vs Arsenal Women" tvg-logo="https://img.gvapi.cc/football/team/fabc3fa7f297e32d91291693eb8c1404.png" group-title="Gà Vàng 33",[23:45] 30/09 ⚽ Paris FC Women vs Arsenal Women (Gà Siêu Nhí) • UEFA Women's Champions League [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live2.zktsva.app/live/301263.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgavang33.co%2F
+#EXTINF:-1 tvg-id="sport-9ff47645eb2a" tvg-name="Leixoes U23 vs Vizela U23" tvg-logo="https://img.gvapi.cc/football/team/d5db95a6441ae92e5dd150663f89dc64.png!w80" group-title="CoLaTV",🔴 [22:00] 28/09 ⚽ Leixoes U23 vs Vizela U23 (FANTA) • Giải bóng đá U23 Bồ Đào Nha [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://colatv77.live/
+#EXTVLCOPT:http-origin=https://colatv77.live
+https://live05.meung.app/live/16226575_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
+#EXTINF:-1 tvg-id="sport-eae699b0b341" tvg-name="Leixoes U23 vs Vizela U23" tvg-logo="https://img.gvapi.cc/football/team/d5db95a6441ae92e5dd150663f89dc64.png!w80" group-title="CoLaTV",🔴 [22:00] 28/09 ⚽ Leixoes U23 vs Vizela U23 (FANTA) • Giải bóng đá U23 Bồ Đào Nha [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://colatv77.live/
+#EXTVLCOPT:http-origin=https://colatv77.live
+https://live05.miekgo.app/live/16226575_tsc.m3u8|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
+#EXTINF:-1 tvg-id="sport-1f4908a34bc2" tvg-name="Leixoes U23 vs Vizela U23" tvg-logo="https://img.gvapi.cc/football/team/d5db95a6441ae92e5dd150663f89dc64.png!w80" group-title="CoLaTV",🔴 [22:00] 28/09 ⚽ Leixoes U23 vs Vizela U23 (FANTA) • Giải bóng đá U23 Bồ Đào Nha [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://colatv77.live/
+#EXTVLCOPT:http-origin=https://colatv77.live
+https://live05.meung.app/live/16226575_tsc.flv|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
+#EXTINF:-1 tvg-id="sport-798bcdd7647d" tvg-name="Leixoes U23 vs Vizela U23" tvg-logo="https://img.gvapi.cc/football/team/d5db95a6441ae92e5dd150663f89dc64.png!w80" group-title="CoLaTV",🔴 [22:00] 28/09 ⚽ Leixoes U23 vs Vizela U23 • Giải bóng đá U23 Bồ Đào Nha [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://colatv77.live/
+#EXTVLCOPT:http-origin=https://colatv77.live
+https://live1.dyrur1.com/live/73456050_75296cb432206430edc0a401c4cf9ae1_autoChange.m3u8?auth_key=1790628871-0-0-12f09847765d7359b5198baab979d5cb|Referer=https%3A%2F%2Fcolatv77.live%2F&Origin=https%3A%2F%2Fcolatv77.live
 #EXTINF:-1 tvg-id="sport-ec8be381a7b8" tvg-name="CLB Armenia vs Montenegro" tvg-logo="https://img.gvapi.cc/football/team/13d8532225dea4fca8e0ebdfb27b83e4.png!w80" group-title="CoLaTV",🔴 [23:00] 28/09 ⚽ CLB Armenia vs Montenegro (BLV AQUA) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://cola.tv/
@@ -326,11 +541,11 @@ https://live05.miekgo.app/live/18812304_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Win
 #EXTVLCOPT:http-referrer=https://cola.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://live05.meung.app/live/18812304_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
-#EXTINF:-1 tvg-id="sport-f2adf4aec8b6" tvg-name="CLB Armenia vs Montenegro" tvg-logo="https://img.gvapi.cc/football/team/13d8532225dea4fca8e0ebdfb27b83e4.png!w80" group-title="CoLaTV",🔴 [23:00] 28/09 ⚽ CLB Armenia vs Montenegro • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-75d24f16a5ba" tvg-name="CLB Armenia vs Montenegro" tvg-logo="https://img.gvapi.cc/football/team/13d8532225dea4fca8e0ebdfb27b83e4.png!w80" group-title="CoLaTV",🔴 [23:00] 28/09 ⚽ CLB Armenia vs Montenegro • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://cola.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://live1.dyrur1.com/live/68932410_563d741e0004e45932efdfd9dd6f6d39_autoChange.m3u8?auth_key=1790628316-0-0-c5fff3854e431011a455c0aca7e46aba|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+https://live1.dyrur1.com/live/68932410_563d741e0004e45932efdfd9dd6f6d39_autoChange.m3u8?auth_key=1790629100-0-0-6a1e0776b1f45b1b89dc10281da8df61|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
 #EXTINF:-1 tvg-id="sport-1ee893383be9" tvg-name="Georgia vs Ukraine" tvg-logo="https://img.gvapi.cc/football/team/c5b86fa907b96e38e377ddfe82802cc6.png!w80" group-title="CoLaTV",🔴 [23:00] 28/09 ⚽ Georgia vs Ukraine (BLV STING) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://cola.tv/
@@ -341,16 +556,16 @@ https://live05.meung.app/live/14707124_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Wind
 #EXTVLCOPT:http-referrer=https://cola.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://live05.meung.app/live/14707124_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
-#EXTINF:-1 tvg-id="sport-ebf7d6cc5f07" tvg-name="Georgia vs Ukraine" tvg-logo="https://img.gvapi.cc/football/team/c5b86fa907b96e38e377ddfe82802cc6.png!w80" group-title="CoLaTV",🔴 [23:00] 28/09 ⚽ Georgia vs Ukraine • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://cola.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://live.dyrur1.com/live/68932754_e8e44c8a6ee937d35caf772c2d1e1130_autoChange.m3u8?auth_key=1790628316-0-0-d6366aebb479639fe37fd7bec315963a|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
 #EXTINF:-1 tvg-id="sport-4a1d2a794056" tvg-name="Georgia vs Ukraine" tvg-logo="https://img.gvapi.cc/football/team/c5b86fa907b96e38e377ddfe82802cc6.png!w80" group-title="CoLaTV",🔴 [23:00] 28/09 ⚽ Georgia vs Ukraine (BLV STING) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://cola.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://live05.miekgo.app/live/14707124_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-38dc26f13f09" tvg-name="Georgia vs Ukraine" tvg-logo="https://img.gvapi.cc/football/team/c5b86fa907b96e38e377ddfe82802cc6.png!w80" group-title="CoLaTV",🔴 [23:00] 28/09 ⚽ Georgia vs Ukraine • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live.dyrur1.com/live/68932754_e8e44c8a6ee937d35caf772c2d1e1130_autoChange.m3u8?auth_key=1790629100-0-0-cf494c80c8ca21bb5c036642fe1bd15a|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
 #EXTINF:-1 tvg-id="sport-25d74c948f69" tvg-name="Latvia vs Đảo Síp" tvg-logo="https://img.gvapi.cc/football/team/5b52e27a9d5bf294f5b593c4c071500e.png!w80" group-title="CoLaTV",🔴 [23:00] 28/09 ⚽ Latvia vs Đảo Síp (BLV HỔ VẰN) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://cola.tv/
@@ -366,11 +581,11 @@ https://live05.miekgo.app/live/07428422_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Win
 #EXTVLCOPT:http-referrer=https://cola.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://live05.meung.app/live/07428422_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
-#EXTINF:-1 tvg-id="sport-27071bfd4869" tvg-name="Latvia vs Đảo Síp" tvg-logo="https://img.gvapi.cc/football/team/5b52e27a9d5bf294f5b593c4c071500e.png!w80" group-title="CoLaTV",🔴 [23:00] 28/09 ⚽ Latvia vs Đảo Síp • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTINF:-1 tvg-id="sport-63bb99d2146f" tvg-name="Latvia vs Đảo Síp" tvg-logo="https://img.gvapi.cc/football/team/5b52e27a9d5bf294f5b593c4c071500e.png!w80" group-title="CoLaTV",🔴 [23:00] 28/09 ⚽ Latvia vs Đảo Síp • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://cola.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://live2.dyrur1.com/live/68932412_7abfa0d25b245857934fbb0cf3b00625_autoChange.m3u8?auth_key=1790628316-0-0-4d53253763ca573c7a4982be372bf968|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+https://live2.dyrur1.com/live/68932412_7abfa0d25b245857934fbb0cf3b00625_autoChange.m3u8?auth_key=1790629100-0-0-4a8cae6d7faf66f82278dc262db6308d|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
 #EXTINF:-1 tvg-id="sport-abd69c713f53" tvg-name="CLB Leganes vs Castellon" tvg-logo="https://img.gvapi.cc/football/team/b6728832f1504989e57f8a43479429ec.png!w80" group-title="CoLaTV",[01:30] 29/09 ⚽ CLB Leganes vs Castellon (BLV PEPSI) • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://cola.tv/
@@ -681,16 +896,16 @@ https|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Refer
 #EXTVLCOPT:http-referrer=https://cola.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://live05.meung.app/live/16226575_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
-#EXTINF:-1 tvg-id="sport-b4e16717e8bb" tvg-name="Necaxa Nữ vs Toluca Nữ" tvg-logo="https://img.gvapi.cc/football/team/1972a91f675413d693c3946315e3f8ac.png!w80" group-title="CoLaTV",[08:06] 29/09 ⚽ Necaxa Nữ vs Toluca Nữ (BLV FANTA) • Giải bóng đá nữ cao cấp Mexico [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://cola.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://live05.meung.app/live/16226575_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
 #EXTINF:-1 tvg-id="sport-538c0bbeaf96" tvg-name="Necaxa Nữ vs Toluca Nữ" tvg-logo="https://img.gvapi.cc/football/team/1972a91f675413d693c3946315e3f8ac.png!w80" group-title="CoLaTV",[08:06] 29/09 ⚽ Necaxa Nữ vs Toluca Nữ (BLV FANTA) • Giải bóng đá nữ cao cấp Mexico [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://cola.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://live05.miekgo.app/live/16226575_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-b4e16717e8bb" tvg-name="Necaxa Nữ vs Toluca Nữ" tvg-logo="https://img.gvapi.cc/football/team/1972a91f675413d693c3946315e3f8ac.png!w80" group-title="CoLaTV",[08:06] 29/09 ⚽ Necaxa Nữ vs Toluca Nữ (BLV FANTA) • Giải bóng đá nữ cao cấp Mexico [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/16226575_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
 #EXTINF:-1 tvg-id="sport-feefde6f7197" tvg-name="Guatemala vs El Salvador" tvg-logo="https://img.gvapi.cc/football/team/a1d4643376bf11b37c51f5c76fcaff79.png!w80" group-title="CoLaTV",[09:00] 29/09 ⚽ Guatemala vs El Salvador (BLV STING) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://cola.tv/
@@ -946,16 +1161,16 @@ https://live05.meung.app/live/59444581_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windo
 #EXTVLCOPT:http-referrer=https://cola.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://live05.meung.app/live/16226575_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
-#EXTINF:-1 tvg-id="sport-d1ade9643336" tvg-name="Wuxi Wugou vs Shanghai Jiading Huilong" tvg-logo="https://img.gvapi.cc/football/team/509b91468e833ffe3fd9edd04f06ddee.png!w80" group-title="CoLaTV",[18:00] 29/09 ⚽ Wuxi Wugou vs Shanghai Jiading Huilong (BLV FANTA) • Giải bóng đá Hạng nhất Trung Quốc [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://cola.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-https://live05.meung.app/live/16226575_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
 #EXTINF:-1 tvg-id="sport-ab0290bda49f" tvg-name="Wuxi Wugou vs Shanghai Jiading Huilong" tvg-logo="https://img.gvapi.cc/football/team/509b91468e833ffe3fd9edd04f06ddee.png!w80" group-title="CoLaTV",[18:00] 29/09 ⚽ Wuxi Wugou vs Shanghai Jiading Huilong (BLV FANTA) • Giải bóng đá Hạng nhất Trung Quốc [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://cola.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://live05.miekgo.app/live/16226575_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-d1ade9643336" tvg-name="Wuxi Wugou vs Shanghai Jiading Huilong" tvg-logo="https://img.gvapi.cc/football/team/509b91468e833ffe3fd9edd04f06ddee.png!w80" group-title="CoLaTV",[18:00] 29/09 ⚽ Wuxi Wugou vs Shanghai Jiading Huilong (BLV FANTA) • Giải bóng đá Hạng nhất Trung Quốc [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/16226575_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
 #EXTINF:-1 tvg-id="sport-08a2ada85766" tvg-name="Wuxi Wugou vs Shanghai Jiading Huilong" tvg-logo="https://img.gvapi.cc/football/team/509b91468e833ffe3fd9edd04f06ddee.png!w80" group-title="CoLaTV",[18:00] 29/09 ⚽ Wuxi Wugou vs Shanghai Jiading Huilong • Giải bóng đá Hạng nhất Trung Quốc
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://cola.tv/
@@ -1156,6 +1371,531 @@ https://live05.miekgo.app/live/19919577_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Win
 #EXTVLCOPT:http-referrer=https://cola.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://live05.meung.app/live/19919577_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-ca4980c058f7" tvg-name="Benin vs Mauritania" tvg-logo="https://img.gvapi.cc/football/team/77983cf4f308d34fe7865a10a25ae39d.png!w80" group-title="CoLaTV",[00:00] 30/09 ⚽ Benin vs Mauritania (BLV FANTA) • Cúp Quốc gia Châu Phi [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/16226575_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-711edf912ef3" tvg-name="Benin vs Mauritania" tvg-logo="https://img.gvapi.cc/football/team/77983cf4f308d34fe7865a10a25ae39d.png!w80" group-title="CoLaTV",[00:00] 30/09 ⚽ Benin vs Mauritania (BLV FANTA) • Cúp Quốc gia Châu Phi [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/16226575_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-550104c97bd1" tvg-name="Benin vs Mauritania" tvg-logo="https://img.gvapi.cc/football/team/77983cf4f308d34fe7865a10a25ae39d.png!w80" group-title="CoLaTV",[00:00] 30/09 ⚽ Benin vs Mauritania (BLV FANTA) • Cúp Quốc gia Châu Phi [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/16226575_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-55bf5a926b53" tvg-name="Oman vs Kuwait" tvg-logo="https://img.gvapi.cc/football/team/500739868ce9f7f0857260404eab4d41.png!w80" group-title="CoLaTV",[00:30] 30/09 ⚽ Oman vs Kuwait (BLV PEPSI) • Cúp Gulf [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/59444581_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-1d735deafd7d" tvg-name="Oman vs Kuwait" tvg-logo="https://img.gvapi.cc/football/team/500739868ce9f7f0857260404eab4d41.png!w80" group-title="CoLaTV",[00:30] 30/09 ⚽ Oman vs Kuwait (BLV PEPSI) • Cúp Gulf [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/59444581_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-676ee8da9df2" tvg-name="Oman vs Kuwait" tvg-logo="https://img.gvapi.cc/football/team/500739868ce9f7f0857260404eab4d41.png!w80" group-title="CoLaTV",[00:30] 30/09 ⚽ Oman vs Kuwait (BLV PEPSI) • Cúp Gulf [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/59444581_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-fb5422a08f64" tvg-name="Ả Rập Saudi vs Iraq" tvg-logo="https://img.gvapi.cc/football/team/cf372cbe6eae54c6a6dfb3ebbcdc3404.png!w80" group-title="CoLaTV",[00:30] 30/09 ⚽ Ả Rập Saudi vs Iraq (BLV AQUA) • Cúp Gulf [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/18812304_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-5e4224faeeca" tvg-name="Ả Rập Saudi vs Iraq" tvg-logo="https://img.gvapi.cc/football/team/cf372cbe6eae54c6a6dfb3ebbcdc3404.png!w80" group-title="CoLaTV",[00:30] 30/09 ⚽ Ả Rập Saudi vs Iraq (BLV AQUA) • Cúp Gulf [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/18812304_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-1d8c67f079b7" tvg-name="Ả Rập Saudi vs Iraq" tvg-logo="https://img.gvapi.cc/football/team/cf372cbe6eae54c6a6dfb3ebbcdc3404.png!w80" group-title="CoLaTV",[00:30] 30/09 ⚽ Ả Rập Saudi vs Iraq (BLV AQUA) • Cúp Gulf [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/18812304_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-cd232f29b67a" tvg-name="CLB San Marino vs Đội tuyển QG Albania" tvg-logo="https://img.gvapi.cc/football/team/9bdc3efe2bdc1946dbb253b2d101b484.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ CLB San Marino vs Đội tuyển QG Albania (BLV STING) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/14707124_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-6526d6478b2c" tvg-name="CLB San Marino vs Đội tuyển QG Albania" tvg-logo="https://img.gvapi.cc/football/team/9bdc3efe2bdc1946dbb253b2d101b484.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ CLB San Marino vs Đội tuyển QG Albania (BLV STING) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/14707124_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-6a4909bbb171" tvg-name="CLB San Marino vs Đội tuyển QG Albania" tvg-logo="https://img.gvapi.cc/football/team/9bdc3efe2bdc1946dbb253b2d101b484.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ CLB San Marino vs Đội tuyển QG Albania (BLV STING) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/14707124_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-751071977468" tvg-name="Cộng hòa Séc vs ĐTQG Anh" tvg-logo="https://img.gvapi.cc/football/team/9cc25407f209e031babdac7d3c520ccb.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Cộng hòa Séc vs ĐTQG Anh (BLV HỔ VẰN) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/07428422_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-f6b354be7eac" tvg-name="Cộng hòa Séc vs ĐTQG Anh" tvg-logo="https://img.gvapi.cc/football/team/9cc25407f209e031babdac7d3c520ccb.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Cộng hòa Séc vs ĐTQG Anh (BLV HỔ VẰN) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/07428422_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-49a6be79b88f" tvg-name="Cộng hòa Séc vs ĐTQG Anh" tvg-logo="https://img.gvapi.cc/football/team/9cc25407f209e031babdac7d3c520ccb.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Cộng hòa Séc vs ĐTQG Anh (BLV HỔ VẰN) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/07428422_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-002013115eb0" tvg-name="Cộng hòa Séc vs ĐTQG Anh" tvg-logo="https://img.gvapi.cc/football/team/9cc25407f209e031babdac7d3c520ccb.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Cộng hòa Séc vs ĐTQG Anh (BLV REVIVE) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/33982309_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-bd25612a9d26" tvg-name="Cộng hòa Séc vs ĐTQG Anh" tvg-logo="https://img.gvapi.cc/football/team/9cc25407f209e031babdac7d3c520ccb.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Cộng hòa Séc vs ĐTQG Anh (BLV REVIVE) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/33982309_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-da256b8ca68d" tvg-name="Cộng hòa Séc vs ĐTQG Anh" tvg-logo="https://img.gvapi.cc/football/team/9cc25407f209e031babdac7d3c520ccb.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Cộng hòa Séc vs ĐTQG Anh (BLV REVIVE) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/33982309_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-7f31132e4760" tvg-name="Luxembourg vs ĐTQG Iceland" tvg-logo="https://img.gvapi.cc/football/team/a878dbebc902328b41dbf02aa87abb58.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Luxembourg vs ĐTQG Iceland (BLV 7UP) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/78905744_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-425ce95f062c" tvg-name="Luxembourg vs ĐTQG Iceland" tvg-logo="https://img.gvapi.cc/football/team/a878dbebc902328b41dbf02aa87abb58.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Luxembourg vs ĐTQG Iceland (BLV 7UP) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/78905744_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-10903ed8bd1d" tvg-name="Luxembourg vs ĐTQG Iceland" tvg-logo="https://img.gvapi.cc/football/team/a878dbebc902328b41dbf02aa87abb58.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Luxembourg vs ĐTQG Iceland (BLV 7UP) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/78905744_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-e1faa0570df8" tvg-name="Slovenia vs Đội tuyển QG Bắc Macedonia" tvg-logo="https://img.gvapi.cc/football/team/e4ba31fba036a999321d5460f7f2d1d1.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Slovenia vs Đội tuyển QG Bắc Macedonia (BLV SODA) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/02456966_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-2226d44875aa" tvg-name="Slovenia vs Đội tuyển QG Bắc Macedonia" tvg-logo="https://img.gvapi.cc/football/team/e4ba31fba036a999321d5460f7f2d1d1.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Slovenia vs Đội tuyển QG Bắc Macedonia (BLV SODA) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/02456966_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-8fbca48d9bc0" tvg-name="Slovenia vs Đội tuyển QG Bắc Macedonia" tvg-logo="https://img.gvapi.cc/football/team/e4ba31fba036a999321d5460f7f2d1d1.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Slovenia vs Đội tuyển QG Bắc Macedonia (BLV SODA) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/02456966_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-654181444332" tvg-name="Tây Ban Nha vs Croatia" tvg-logo="https://img.gvapi.cc/football/team/e5858bd2ddb51631a85b1af22f5a1a6a.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Tây Ban Nha vs Croatia (BLV C2) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/08552895_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-4c5987ad9e7f" tvg-name="Tây Ban Nha vs Croatia" tvg-logo="https://img.gvapi.cc/football/team/e5858bd2ddb51631a85b1af22f5a1a6a.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Tây Ban Nha vs Croatia (BLV C2) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/08552895_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-dc1e123d0676" tvg-name="Tây Ban Nha vs Croatia" tvg-logo="https://img.gvapi.cc/football/team/e5858bd2ddb51631a85b1af22f5a1a6a.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Tây Ban Nha vs Croatia (BLV C2) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/08552895_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-caba4344e109" tvg-name="Tây Ban Nha vs Croatia" tvg-logo="https://img.gvapi.cc/football/team/e5858bd2ddb51631a85b1af22f5a1a6a.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Tây Ban Nha vs Croatia (BLV GIÀ LÀNG) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/14830711_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-c17ca39f0da6" tvg-name="Tây Ban Nha vs Croatia" tvg-logo="https://img.gvapi.cc/football/team/e5858bd2ddb51631a85b1af22f5a1a6a.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Tây Ban Nha vs Croatia (BLV GIÀ LÀNG) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/14830711_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-37f5890edf75" tvg-name="Tây Ban Nha vs Croatia" tvg-logo="https://img.gvapi.cc/football/team/e5858bd2ddb51631a85b1af22f5a1a6a.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Tây Ban Nha vs Croatia (BLV GIÀ LÀNG) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/14830711_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-c54e6d76d766" tvg-name="ĐTQG Bulgaria vs Estonia" tvg-logo="https://img.gvapi.cc/football/team/3c057cb2b41f22c0e740974d7a428918.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ ĐTQG Bulgaria vs Estonia (BLV BÍ ĐAO) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/99121525_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-4d5fa36cc810" tvg-name="ĐTQG Bulgaria vs Estonia" tvg-logo="https://img.gvapi.cc/football/team/3c057cb2b41f22c0e740974d7a428918.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ ĐTQG Bulgaria vs Estonia (BLV BÍ ĐAO) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/99121525_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-e187f221dfd1" tvg-name="ĐTQG Bulgaria vs Estonia" tvg-logo="https://img.gvapi.cc/football/team/3c057cb2b41f22c0e740974d7a428918.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ ĐTQG Bulgaria vs Estonia (BLV BÍ ĐAO) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/99121525_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-0290aeff75a9" tvg-name="ĐTQG Scotland vs Thụy Sĩ" tvg-logo="https://img.gvapi.cc/football/team/c432976945dc8b1ac46792dfa97ea068.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ ĐTQG Scotland vs Thụy Sĩ (BLV WARRIOR) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/97885009_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-e05a05151e63" tvg-name="ĐTQG Scotland vs Thụy Sĩ" tvg-logo="https://img.gvapi.cc/football/team/c432976945dc8b1ac46792dfa97ea068.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ ĐTQG Scotland vs Thụy Sĩ (BLV WARRIOR) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/97885009_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-d01d61eaabe6" tvg-name="ĐTQG Scotland vs Thụy Sĩ" tvg-logo="https://img.gvapi.cc/football/team/c432976945dc8b1ac46792dfa97ea068.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ ĐTQG Scotland vs Thụy Sĩ (BLV WARRIOR) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/97885009_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-0954c359fbef" tvg-name="Đội tuyển Quốc gia Slovakia vs ĐTQG Kazakhstan" tvg-logo="https://img.gvapi.cc/football/team/e2fcc738438c4e7ca4b605ef8764db73.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Đội tuyển Quốc gia Slovakia vs ĐTQG Kazakhstan (BLV SAMURAI) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/07808742_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-271819cce445" tvg-name="Đội tuyển Quốc gia Slovakia vs ĐTQG Kazakhstan" tvg-logo="https://img.gvapi.cc/football/team/e2fcc738438c4e7ca4b605ef8764db73.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Đội tuyển Quốc gia Slovakia vs ĐTQG Kazakhstan (BLV SAMURAI) • Giải vô địch bóng đá các quốc gia châu Âu [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/07808742_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-477892f38404" tvg-name="Đội tuyển Quốc gia Slovakia vs ĐTQG Kazakhstan" tvg-logo="https://img.gvapi.cc/football/team/e2fcc738438c4e7ca4b605ef8764db73.png!w80" group-title="CoLaTV",[01:45] 30/09 ⚽ Đội tuyển Quốc gia Slovakia vs ĐTQG Kazakhstan (BLV SAMURAI) • Giải vô địch bóng đá các quốc gia châu Âu [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/07808742_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-55eca659635c" tvg-name="Quần đảo Virgin Anh vs Quần đảo Turks &amp; Caicos" tvg-logo="https://img.gvapi.cc/football/team/35ce49daeea2bdae89607a6c0a8e8527.png!w80" group-title="CoLaTV",[02:00] 30/09 ⚽ Quần đảo Virgin Anh vs Quần đảo Turks & Caicos (BLV FANTA) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/16226575_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-4a1a0690afc0" tvg-name="Quần đảo Virgin Anh vs Quần đảo Turks &amp; Caicos" tvg-logo="https://img.gvapi.cc/football/team/35ce49daeea2bdae89607a6c0a8e8527.png!w80" group-title="CoLaTV",[02:00] 30/09 ⚽ Quần đảo Virgin Anh vs Quần đảo Turks & Caicos (BLV FANTA) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/16226575_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-a2266e2c5ccc" tvg-name="Quần đảo Virgin Anh vs Quần đảo Turks &amp; Caicos" tvg-logo="https://img.gvapi.cc/football/team/35ce49daeea2bdae89607a6c0a8e8527.png!w80" group-title="CoLaTV",[02:00] 30/09 ⚽ Quần đảo Virgin Anh vs Quần đảo Turks & Caicos (BLV FANTA) • Liên minh bóng đá quốc gia châu Mỹ [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/16226575_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-fea28dfdb7d2" tvg-name="Quần đảo Virgin Mỹ vs Bahamas" tvg-logo="https://img.gvapi.cc/football/team/7de64628d6c08c86d7a1b4a1027b97b8.png!w80" group-title="CoLaTV",[03:00] 30/09 ⚽ Quần đảo Virgin Mỹ vs Bahamas (BLV PEPSI) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/59444581_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-0d2b76164a79" tvg-name="Quần đảo Virgin Mỹ vs Bahamas" tvg-logo="https://img.gvapi.cc/football/team/7de64628d6c08c86d7a1b4a1027b97b8.png!w80" group-title="CoLaTV",[03:00] 30/09 ⚽ Quần đảo Virgin Mỹ vs Bahamas (BLV PEPSI) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/59444581_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-3a3c1419d993" tvg-name="Quần đảo Virgin Mỹ vs Bahamas" tvg-logo="https://img.gvapi.cc/football/team/7de64628d6c08c86d7a1b4a1027b97b8.png!w80" group-title="CoLaTV",[03:00] 30/09 ⚽ Quần đảo Virgin Mỹ vs Bahamas (BLV PEPSI) • Liên minh bóng đá quốc gia châu Mỹ [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/59444581_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-3f380196f2f2" tvg-name="French Guiana vs Sint Maarten" tvg-logo="https://img.gvapi.cc/football/team/54803d9a444e58a28e10b6563e60fec8.png!w80" group-title="CoLaTV",[04:00] 30/09 ⚽ French Guiana vs Sint Maarten (BLV MONSTER) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/75915087_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-dfec8a4245ca" tvg-name="French Guiana vs Sint Maarten" tvg-logo="https://img.gvapi.cc/football/team/54803d9a444e58a28e10b6563e60fec8.png!w80" group-title="CoLaTV",[04:00] 30/09 ⚽ French Guiana vs Sint Maarten (BLV MONSTER) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/75915087_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-1faee0213576" tvg-name="French Guiana vs Sint Maarten" tvg-logo="https://img.gvapi.cc/football/team/54803d9a444e58a28e10b6563e60fec8.png!w80" group-title="CoLaTV",[04:00] 30/09 ⚽ French Guiana vs Sint Maarten (BLV MONSTER) • Liên minh bóng đá quốc gia châu Mỹ [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/75915087_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-b21b11efbd89" tvg-name="Anguilla vs Aruba" tvg-logo="https://img.gvapi.cc/football/team/b87a20a2b24f9944084890d1a136a22f.png!w80" group-title="CoLaTV",[06:00] 30/09 ⚽ Anguilla vs Aruba (BLV MOUNTAIN DEW) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/87547578_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-b3fe1c389327" tvg-name="Anguilla vs Aruba" tvg-logo="https://img.gvapi.cc/football/team/b87a20a2b24f9944084890d1a136a22f.png!w80" group-title="CoLaTV",[06:00] 30/09 ⚽ Anguilla vs Aruba (BLV MOUNTAIN DEW) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/87547578_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-16d830659989" tvg-name="Anguilla vs Aruba" tvg-logo="https://img.gvapi.cc/football/team/b87a20a2b24f9944084890d1a136a22f.png!w80" group-title="CoLaTV",[06:00] 30/09 ⚽ Anguilla vs Aruba (BLV MOUNTAIN DEW) • Liên minh bóng đá quốc gia châu Mỹ [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/87547578_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-54f8798aa35e" tvg-name="Mỹ vs Chilê" tvg-logo="https://img.gvapi.cc/football/team/08e9fb9c257f63bc57837b42b31f8cef.png!w80" group-title="CoLaTV",[07:00] 30/09 ⚽ Mỹ vs Chilê (BLV SPRITE) • Giao hữu Quốc tế [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/75748097_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-34d78fd80261" tvg-name="Mỹ vs Chilê" tvg-logo="https://img.gvapi.cc/football/team/08e9fb9c257f63bc57837b42b31f8cef.png!w80" group-title="CoLaTV",[07:00] 30/09 ⚽ Mỹ vs Chilê (BLV SPRITE) • Giao hữu Quốc tế [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/75748097_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-e590cc9292ae" tvg-name="Mỹ vs Chilê" tvg-logo="https://img.gvapi.cc/football/team/08e9fb9c257f63bc57837b42b31f8cef.png!w80" group-title="CoLaTV",[07:00] 30/09 ⚽ Mỹ vs Chilê (BLV SPRITE) • Giao hữu Quốc tế [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/75748097_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-901f23c2f437" tvg-name="Mexico vs Peru" tvg-logo="https://img.gvapi.cc/football/team/3653cce234494bfbd33e077f4a028f66.png!w80" group-title="CoLaTV",[08:00] 30/09 ⚽ Mexico vs Peru (BLV MONSTER) • Giao hữu Quốc tế [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/75915087_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-a88cdf10d84f" tvg-name="Mexico vs Peru" tvg-logo="https://img.gvapi.cc/football/team/3653cce234494bfbd33e077f4a028f66.png!w80" group-title="CoLaTV",[08:00] 30/09 ⚽ Mexico vs Peru (BLV MONSTER) • Giao hữu Quốc tế [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/75915087_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-6131e9914bc4" tvg-name="Mexico vs Peru" tvg-logo="https://img.gvapi.cc/football/team/3653cce234494bfbd33e077f4a028f66.png!w80" group-title="CoLaTV",[08:00] 30/09 ⚽ Mexico vs Peru (BLV MONSTER) • Giao hữu Quốc tế [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/75915087_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-e98cc9ddea21" tvg-name="Belize vs Thánh Vincent Grenadines" tvg-logo="https://img.gvapi.cc/football/team/cc43cae8b2c9735749cb067be62f9311.png!w80" group-title="CoLaTV",[09:00] 30/09 ⚽ Belize vs Thánh Vincent Grenadines (BLV MOUNTAIN DEW) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/87547578_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-4823cb5e21b2" tvg-name="Belize vs Thánh Vincent Grenadines" tvg-logo="https://img.gvapi.cc/football/team/cc43cae8b2c9735749cb067be62f9311.png!w80" group-title="CoLaTV",[09:00] 30/09 ⚽ Belize vs Thánh Vincent Grenadines (BLV MOUNTAIN DEW) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/87547578_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-bbdc849035e2" tvg-name="Belize vs Thánh Vincent Grenadines" tvg-logo="https://img.gvapi.cc/football/team/cc43cae8b2c9735749cb067be62f9311.png!w80" group-title="CoLaTV",[09:00] 30/09 ⚽ Belize vs Thánh Vincent Grenadines (BLV MOUNTAIN DEW) • Liên minh bóng đá quốc gia châu Mỹ [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/87547578_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-356f26414643" tvg-name="Đông Timor vs Campuchia" tvg-logo="https://img.gvapi.cc/football/team/96a83c96abbe6d0b40c72b279ebdf76e.png!w80" group-title="CoLaTV",[16:00] 30/09 ⚽ Đông Timor vs Campuchia (BLV HỔ VẰN) • ASEAN Cup [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/07428422_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-fa4d0c54f05d" tvg-name="Đông Timor vs Campuchia" tvg-logo="https://img.gvapi.cc/football/team/96a83c96abbe6d0b40c72b279ebdf76e.png!w80" group-title="CoLaTV",[16:00] 30/09 ⚽ Đông Timor vs Campuchia (BLV HỔ VẰN) • ASEAN Cup [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/07428422_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-741509b5917c" tvg-name="Đông Timor vs Campuchia" tvg-logo="https://img.gvapi.cc/football/team/96a83c96abbe6d0b40c72b279ebdf76e.png!w80" group-title="CoLaTV",[16:00] 30/09 ⚽ Đông Timor vs Campuchia (BLV HỔ VẰN) • ASEAN Cup [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/07428422_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-44751921a559" tvg-name="Đông Timor vs Campuchia" tvg-logo="https://img.gvapi.cc/football/team/96a83c96abbe6d0b40c72b279ebdf76e.png!w80" group-title="CoLaTV",[16:00] 30/09 ⚽ Đông Timor vs Campuchia (BLV GIÀ LÀNG) • ASEAN Cup [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/14830711_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-65c749cd1f64" tvg-name="Đông Timor vs Campuchia" tvg-logo="https://img.gvapi.cc/football/team/96a83c96abbe6d0b40c72b279ebdf76e.png!w80" group-title="CoLaTV",[16:00] 30/09 ⚽ Đông Timor vs Campuchia (BLV GIÀ LÀNG) • ASEAN Cup [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/14830711_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-6f0daf2e6dd4" tvg-name="Đông Timor vs Campuchia" tvg-logo="https://img.gvapi.cc/football/team/96a83c96abbe6d0b40c72b279ebdf76e.png!w80" group-title="CoLaTV",[16:00] 30/09 ⚽ Đông Timor vs Campuchia (BLV GIÀ LÀNG) • ASEAN Cup [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/14830711_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-2322ea731e93" tvg-name="Hồng Kông vs Brunei" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png!w80" group-title="CoLaTV",[19:00] 30/09 ⚽ Hồng Kông vs Brunei (BLV C2) • ASEAN Cup [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/08552895_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-c3c452b8f2e2" tvg-name="Hồng Kông vs Brunei" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png!w80" group-title="CoLaTV",[19:00] 30/09 ⚽ Hồng Kông vs Brunei (BLV C2) • ASEAN Cup [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/08552895_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-0769d6ab2972" tvg-name="Hồng Kông vs Brunei" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png!w80" group-title="CoLaTV",[19:00] 30/09 ⚽ Hồng Kông vs Brunei (BLV C2) • ASEAN Cup [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/08552895_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-92e9e6b76ccb" tvg-name="Hồng Kông vs Brunei" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png!w80" group-title="CoLaTV",[19:00] 30/09 ⚽ Hồng Kông vs Brunei (BLV REVIVE) • ASEAN Cup [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/33982309_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-866d01d0a2c4" tvg-name="Hồng Kông vs Brunei" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png!w80" group-title="CoLaTV",[19:00] 30/09 ⚽ Hồng Kông vs Brunei (BLV REVIVE) • ASEAN Cup [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/33982309_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-410a63cb9c89" tvg-name="Hồng Kông vs Brunei" tvg-logo="https://img.gvapi.cc/football/team/df321578b4f5f132345d2e6b39743126.png!w80" group-title="CoLaTV",[19:00] 30/09 ⚽ Hồng Kông vs Brunei (BLV REVIVE) • ASEAN Cup [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/33982309_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-476de41db9c6" tvg-name="Aktobe W vs Ajax Nữ" tvg-logo="https://img.gvapi.cc/football/team/6a361dfa300bb39d857d5e6264788ccf.png!w80" group-title="CoLaTV",[21:00] 30/09 ⚽ Aktobe W vs Ajax Nữ (BLV Cozy) • UEFA EL W [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/87379114_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-64dd6c5dc1eb" tvg-name="Aktobe W vs Ajax Nữ" tvg-logo="https://img.gvapi.cc/football/team/6a361dfa300bb39d857d5e6264788ccf.png!w80" group-title="CoLaTV",[21:00] 30/09 ⚽ Aktobe W vs Ajax Nữ (BLV Cozy) • UEFA EL W [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/87379114_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-4c97ce123ba3" tvg-name="Aktobe W vs Ajax Nữ" tvg-logo="https://img.gvapi.cc/football/team/6a361dfa300bb39d857d5e6264788ccf.png!w80" group-title="CoLaTV",[21:00] 30/09 ⚽ Aktobe W vs Ajax Nữ (BLV Cozy) • UEFA EL W [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/87379114_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-65141cbf5f15" tvg-name="phụ nữ Farul Constanta vs Sparta Prague Nữ" tvg-logo="https://img.gvapi.cc/football/team/1974004c6d06c5f9bdaaef35b1ca7d73.png!w80" group-title="CoLaTV",[21:00] 30/09 ⚽ phụ nữ Farul Constanta vs Sparta Prague Nữ (BLV SPRITE) • UEFA EL W [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/75748097_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-4ed1f2ed1009" tvg-name="phụ nữ Farul Constanta vs Sparta Prague Nữ" tvg-logo="https://img.gvapi.cc/football/team/1974004c6d06c5f9bdaaef35b1ca7d73.png!w80" group-title="CoLaTV",[21:00] 30/09 ⚽ phụ nữ Farul Constanta vs Sparta Prague Nữ (BLV SPRITE) • UEFA EL W [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/75748097_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-ab5119c54eb6" tvg-name="phụ nữ Farul Constanta vs Sparta Prague Nữ" tvg-logo="https://img.gvapi.cc/football/team/1974004c6d06c5f9bdaaef35b1ca7d73.png!w80" group-title="CoLaTV",[21:00] 30/09 ⚽ phụ nữ Farul Constanta vs Sparta Prague Nữ (BLV SPRITE) • UEFA EL W [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/75748097_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-a22d66544981" tvg-name="Eritrea vs Nam Phi" tvg-logo="https://img.gvapi.cc/football/team/c8c1fad8f7b657fa96c4e5da96ada7c2.png!w80" group-title="CoLaTV",[23:00] 30/09 ⚽ Eritrea vs Nam Phi (BLV 7UP) • Cúp Quốc gia Châu Phi [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/78905744_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-9413bd4e71a7" tvg-name="Eritrea vs Nam Phi" tvg-logo="https://img.gvapi.cc/football/team/c8c1fad8f7b657fa96c4e5da96ada7c2.png!w80" group-title="CoLaTV",[23:00] 30/09 ⚽ Eritrea vs Nam Phi (BLV 7UP) • Cúp Quốc gia Châu Phi [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/78905744_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-c8ddbcc0518c" tvg-name="Eritrea vs Nam Phi" tvg-logo="https://img.gvapi.cc/football/team/c8c1fad8f7b657fa96c4e5da96ada7c2.png!w80" group-title="CoLaTV",[23:00] 30/09 ⚽ Eritrea vs Nam Phi (BLV 7UP) • Cúp Quốc gia Châu Phi [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/78905744_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-6625037d7941" tvg-name="ĐTQG Lithuania vs Andorra" tvg-logo="https://img.gvapi.cc/football/team/f2b6806d6ed60d2d87b0dd5ae62e6f20.png!w80" group-title="CoLaTV",[23:00] 30/09 ⚽ ĐTQG Lithuania vs Andorra (BLV STING) • Giao hữu Quốc tế [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/14707124_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-f8a07df5e1d0" tvg-name="ĐTQG Lithuania vs Andorra" tvg-logo="https://img.gvapi.cc/football/team/f2b6806d6ed60d2d87b0dd5ae62e6f20.png!w80" group-title="CoLaTV",[23:00] 30/09 ⚽ ĐTQG Lithuania vs Andorra (BLV STING) • Giao hữu Quốc tế [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/14707124_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-a0765ab6c353" tvg-name="ĐTQG Lithuania vs Andorra" tvg-logo="https://img.gvapi.cc/football/team/f2b6806d6ed60d2d87b0dd5ae62e6f20.png!w80" group-title="CoLaTV",[23:00] 30/09 ⚽ ĐTQG Lithuania vs Andorra (BLV STING) • Giao hữu Quốc tế [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/14707124_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-ee8eef354f1b" tvg-name="AS Roma Nữ vs Barcelona Nữ" tvg-logo="https://img.gvapi.cc/football/team/09c9433cfa1c306e6b774a272da7f5a9.png!w80" group-title="CoLaTV",[23:45] 30/09 ⚽ AS Roma Nữ vs Barcelona Nữ (BLV SODA) • Champions League Nữ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/02456966_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-9e314f5bd72c" tvg-name="AS Roma Nữ vs Barcelona Nữ" tvg-logo="https://img.gvapi.cc/football/team/09c9433cfa1c306e6b774a272da7f5a9.png!w80" group-title="CoLaTV",[23:45] 30/09 ⚽ AS Roma Nữ vs Barcelona Nữ (BLV SODA) • Champions League Nữ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/02456966_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-dc228096bf72" tvg-name="AS Roma Nữ vs Barcelona Nữ" tvg-logo="https://img.gvapi.cc/football/team/09c9433cfa1c306e6b774a272da7f5a9.png!w80" group-title="CoLaTV",[23:45] 30/09 ⚽ AS Roma Nữ vs Barcelona Nữ (BLV SODA) • Champions League Nữ [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/02456966_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-1ef1285b0e77" tvg-name="Hacken Nữ vs Juventus Nữ" tvg-logo="https://img.gvapi.cc/football/team/e121cced31de682c590d3305327061df.png!w80" group-title="CoLaTV",[23:45] 30/09 ⚽ Hacken Nữ vs Juventus Nữ (BLV ROCKSTAR) • Champions League Nữ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/82054853_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-80c3918e9a52" tvg-name="Hacken Nữ vs Juventus Nữ" tvg-logo="https://img.gvapi.cc/football/team/e121cced31de682c590d3305327061df.png!w80" group-title="CoLaTV",[23:45] 30/09 ⚽ Hacken Nữ vs Juventus Nữ (BLV ROCKSTAR) • Champions League Nữ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/82054853_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-2cd3df894a71" tvg-name="Hacken Nữ vs Juventus Nữ" tvg-logo="https://img.gvapi.cc/football/team/e121cced31de682c590d3305327061df.png!w80" group-title="CoLaTV",[23:45] 30/09 ⚽ Hacken Nữ vs Juventus Nữ (BLV ROCKSTAR) • Champions League Nữ [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/82054853_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-d82c372b7b38" tvg-name="Paris FC Nữ vs Arsenal Nữ" tvg-logo="https://img.gvapi.cc/football/team/fabc3fa7f297e32d91291693eb8c1404.png!w80" group-title="CoLaTV",[23:45] 30/09 ⚽ Paris FC Nữ vs Arsenal Nữ (BLV SAMURAI) • Champions League Nữ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/07808742_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-2ca2494ec126" tvg-name="Paris FC Nữ vs Arsenal Nữ" tvg-logo="https://img.gvapi.cc/football/team/fabc3fa7f297e32d91291693eb8c1404.png!w80" group-title="CoLaTV",[23:45] 30/09 ⚽ Paris FC Nữ vs Arsenal Nữ (BLV SAMURAI) • Champions League Nữ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/07808742_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-c71d3229934b" tvg-name="Paris FC Nữ vs Arsenal Nữ" tvg-logo="https://img.gvapi.cc/football/team/fabc3fa7f297e32d91291693eb8c1404.png!w80" group-title="CoLaTV",[23:45] 30/09 ⚽ Paris FC Nữ vs Arsenal Nữ (BLV SAMURAI) • Champions League Nữ [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/07808742_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-de72e1a3ad51" tvg-name="Indiana Fever vs Las Vegas Aces" tvg-logo="https://img.gvapi.cc/basketball/team/81e9f1f9d6393fd128c6c014783d9fa2.png!w80" group-title="CoLaTV",[05:30] 30/09 🏀 Indiana Fever vs Las Vegas Aces (BLV Cozy) • Hiệp hội bóng rổ quốc gia nữ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/87379114_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-5e0e2df9801e" tvg-name="Indiana Fever vs Las Vegas Aces" tvg-logo="https://img.gvapi.cc/basketball/team/81e9f1f9d6393fd128c6c014783d9fa2.png!w80" group-title="CoLaTV",[05:30] 30/09 🏀 Indiana Fever vs Las Vegas Aces (BLV Cozy) • Hiệp hội bóng rổ quốc gia nữ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/87379114_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-60dbfeb4da43" tvg-name="Indiana Fever vs Las Vegas Aces" tvg-logo="https://img.gvapi.cc/basketball/team/81e9f1f9d6393fd128c6c014783d9fa2.png!w80" group-title="CoLaTV",[05:30] 30/09 🏀 Indiana Fever vs Las Vegas Aces (BLV Cozy) • Hiệp hội bóng rổ quốc gia nữ [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/87379114_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-4a6b5ab56273" tvg-name="New York Liberty vs Minnesota Lynx" tvg-logo="https://img.gvapi.cc/basketball/team/67cf5b4cfacab3792d2fde73e0af4ac0.png!w80" group-title="CoLaTV",[07:30] 30/09 🏀 New York Liberty vs Minnesota Lynx (BLV POCARI) • Hiệp hội bóng rổ quốc gia nữ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/19919577_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-bd7b1e4d136d" tvg-name="New York Liberty vs Minnesota Lynx" tvg-logo="https://img.gvapi.cc/basketball/team/67cf5b4cfacab3792d2fde73e0af4ac0.png!w80" group-title="CoLaTV",[07:30] 30/09 🏀 New York Liberty vs Minnesota Lynx (BLV POCARI) • Hiệp hội bóng rổ quốc gia nữ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/19919577_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-ddcd549ffeb0" tvg-name="New York Liberty vs Minnesota Lynx" tvg-logo="https://img.gvapi.cc/basketball/team/67cf5b4cfacab3792d2fde73e0af4ac0.png!w80" group-title="CoLaTV",[07:30] 30/09 🏀 New York Liberty vs Minnesota Lynx (BLV POCARI) • Hiệp hội bóng rổ quốc gia nữ [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/19919577_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-c2a2c060fe55" tvg-name="New Zealand Breakers vs Cairns Taipans" tvg-logo="https://img.gvapi.cc/basketball/team/n4e20cb4a61519f6a810b6b307ff8b574.png!w80" group-title="CoLaTV",[14:30] 30/09 🏀 New Zealand Breakers vs Cairns Taipans (BLV 247) • Liên đoàn Bóng rổ Quốc gia Úc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/90865415_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-135004bf3947" tvg-name="New Zealand Breakers vs Cairns Taipans" tvg-logo="https://img.gvapi.cc/basketball/team/n4e20cb4a61519f6a810b6b307ff8b574.png!w80" group-title="CoLaTV",[14:30] 30/09 🏀 New Zealand Breakers vs Cairns Taipans (BLV 247) • Liên đoàn Bóng rổ Quốc gia Úc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/90865415_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-ac8714952052" tvg-name="New Zealand Breakers vs Cairns Taipans" tvg-logo="https://img.gvapi.cc/basketball/team/n4e20cb4a61519f6a810b6b307ff8b574.png!w80" group-title="CoLaTV",[14:30] 30/09 🏀 New Zealand Breakers vs Cairns Taipans (BLV 247) • Liên đoàn Bóng rổ Quốc gia Úc [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/90865415_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-642c075adada" tvg-name="Sydney vs Brisbane Bullets" tvg-logo="https://img.gvapi.cc/basketball/team/eba4bbba15054de591179e0001ab718b.png!w80" group-title="CoLaTV",[16:30] 30/09 🏀 Sydney vs Brisbane Bullets (BLV ROCKSTAR) • Liên đoàn Bóng rổ Quốc gia Úc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/82054853_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-e4fe9c7bd90d" tvg-name="Sydney vs Brisbane Bullets" tvg-logo="https://img.gvapi.cc/basketball/team/eba4bbba15054de591179e0001ab718b.png!w80" group-title="CoLaTV",[16:30] 30/09 🏀 Sydney vs Brisbane Bullets (BLV ROCKSTAR) • Liên đoàn Bóng rổ Quốc gia Úc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.miekgo.app/live/82054853_tsc.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
+#EXTINF:-1 tvg-id="sport-505818e18690" tvg-name="Sydney vs Brisbane Bullets" tvg-logo="https://img.gvapi.cc/basketball/team/eba4bbba15054de591179e0001ab718b.png!w80" group-title="CoLaTV",[16:30] 30/09 🏀 Sydney vs Brisbane Bullets (BLV ROCKSTAR) • Liên đoàn Bóng rổ Quốc gia Úc [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://live05.meung.app/live/82054853_tsc.flv|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fcola.tv%2F
 #EXTINF:-1 tvg-id="sport-4b3d0a1afbc3" tvg-name="Kyrgyzstan W vs Maldives" tvg-logo="https://media.chuoichientv.net/media/20260604_133429_24e1757b.webp" group-title="Chuối Chiên",🔴 [21:00] 28/09 ⚽ Kyrgyzstan W vs Maldives (Chuối Lá) • Giao Hữu Quốc Tế [FHD • HLS]
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
@@ -1260,17 +2000,18 @@ https://eqr2hdarxfliv.vcdn.cloud/1790591142_hd/1790591142_hd@720p.m3u8|User-Agen
 #EXTVLCOPT:http-origin=https://giovang.org
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://eqr2hdarxfliv.vcdn.cloud/1790591202_hd/1790591202_hd@720p.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgiovang.org%2F&Origin=https%3A%2F%2Fgiovang.org
+#EXTINF:-1 tvg-id="sport-959c4dfb1525" tvg-name="Al-Shahaniya vs Al-Duhail" tvg-logo="https://static.flashscore.com/res/image/data/WU7OvUil-OWuMpcqT.png" group-title="Giờ Vàng",🔴 [00:15] 29/09 ⚽ Al-Shahaniya vs Al-Duhail (Tôm) • Qatar - QSL Cup [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-referrer=https://giovang.org/
+#EXTVLCOPT:http-origin=https://giovang.org
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://eqr2hdarxfliv.vcdn.cloud/1790591267_hd/1790591267_hd@720p.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgiovang.org%2F&Origin=https%3A%2F%2Fgiovang.org
 #EXTINF:-1 tvg-id="sport-5ce31d1e9e7e" tvg-name="Indian Railway vs Al Ittihad" tvg-logo="https://static.flashscore.com/res/image/data/hf8B8MYA-jiXeTAAb.png" group-title="Giờ Vàng",🔴 [21:45] 28/09 🏀 Indian Railway vs Al Ittihad (Chồn) • ASIA: WASL [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-referrer=https://giovang.org/
 #EXTVLCOPT:http-origin=https://giovang.org
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://eqr2hdarxfliv.vcdn.cloud/1790528591_hd/1790528591_hd@720p.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgiovang.org%2F&Origin=https%3A%2F%2Fgiovang.org
-#EXTINF:-1 tvg-id="sport-3d9af5335541" tvg-name="Al-Shahaniya vs Al-Duhail" tvg-logo="https://static.flashscore.com/res/image/data/WU7OvUil-OWuMpcqT.png" group-title="Giờ Vàng",[00:15] 29/09 ⚽ Al-Shahaniya vs Al-Duhail • Qatar - QSL Cup [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-referrer=https://giovang.asia/
-#EXTVLCOPT:http-origin=https://giovang.asia
-https://eqr2hdarxfliv.vcdn.cloud/1790591267_hd/1790591267_hd@720p.m3u8|Referer=https%3A%2F%2Fgiovang.asia%2F&Origin=https%3A%2F%2Fgiovang.asia
 #EXTINF:-1 tvg-id="sport-9d897e485223" tvg-name="Bỉ vs Pháp" tvg-logo="https://images.keovip88.net/images/teams/belgium.png" group-title="Giờ Vàng",[01:45] 29/09 ⚽ Bỉ vs Pháp (Ngọng) • UEFA Nations League [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-referrer=https://giovang.org/
@@ -1319,6 +2060,24 @@ https://eqr2hdarxfliv.vcdn.cloud/1790536088_hd/1790536088_hd@720p.m3u8|User-Agen
 #EXTVLCOPT:http-origin=https://giovang.org
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://eqr2hdarxfliv.vcdn.cloud/1790535887_hd/1790535887_hd@720p.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgiovang.org%2F&Origin=https%3A%2F%2Fgiovang.org
+#EXTINF:-1 tvg-id="sport-b893cf1dd5cf" tvg-name="Mỹ vs Chilê" tvg-logo="https://images.keovip88.net/images/teams/usa.png" group-title="Giờ Vàng",[07:00] 30/09 ⚽ Mỹ vs Chilê (Súp) • Giao hữu quốc tế [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-referrer=https://giovang.org/
+#EXTVLCOPT:http-origin=https://giovang.org
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://eqr2hdarxfliv.vcdn.cloud/1790613004_hd/1790613004_hd@720p.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgiovang.org%2F&Origin=https%3A%2F%2Fgiovang.org
+#EXTINF:-1 tvg-id="sport-0f0341029b89" tvg-name="Belize vs Saint Vincent &amp; Grenadines" tvg-logo="https://images.keovip88.net/images/teams/belize.png" group-title="Giờ Vàng",[09:00] 30/09 ⚽ Belize vs Saint Vincent & Grenadines (Trĩ) • CONCACAF Nations League [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-referrer=https://giovang.org/
+#EXTVLCOPT:http-origin=https://giovang.org
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://eqr2hdarxfliv.vcdn.cloud/1790613050_hd/1790613050_hd@720p.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgiovang.org%2F&Origin=https%3A%2F%2Fgiovang.org
+#EXTINF:-1 tvg-id="sport-dc9cb3b886b5" tvg-name="U23 Hàn Quốc vs U23 Trung Quốc" tvg-logo="https://images.keovip88.net/images/teams/south-korea-u23.png" group-title="Giờ Vàng",[13:00] 30/09 ⚽ U23 Hàn Quốc vs U23 Trung Quốc (BLV Hấu) • ASIAD 2026 [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-referrer=https://giovang.org/
+#EXTVLCOPT:http-origin=https://giovang.org
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://eqr2hdarxfliv.vcdn.cloud/1790613111_hd/1790613111_hd@720p.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgiovang.org%2F&Origin=https%3A%2F%2Fgiovang.org
 #EXTINF:-1 tvg-id="sport-3081bed2b6d6" tvg-name="Kyrgyzstan vs Thái Lan" tvg-logo="https://static.flashscore.com/res/image/data/QgrBggHG-4b37MkS4.png" group-title="Giờ Vàng",[08:00] 29/09 🏐 Kyrgyzstan vs Thái Lan (Trĩ) • Asiad 2026 [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-referrer=https://giovang.org/
@@ -1361,18 +2120,12 @@ https://eqr2hdarxfliv.vcdn.cloud/1790611221_hd/1790611221_hd@720p.m3u8|User-Agen
 #EXTVLCOPT:http-origin=https://giovang.org
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://eqr2hdarxfliv.vcdn.cloud/1790611342_hd/1790611342_hd@720p.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgiovang.org%2F&Origin=https%3A%2F%2Fgiovang.org
-#EXTINF:-1 tvg-id="sport-f22a4f128cda" tvg-name="Al Arabi(UAE) - Al Thaid" tvg-logo="https://img.sports-data.online/football/team/85e4815a287ffb7dae9cb3235c13de47.png" group-title="PhaLangTV",🔴 [21:40] 28/09 ⚽ Al Arabi(UAE) - Al Thaid • United Arab Emirates President Cup [HLS]
-#EXTGRP:PhaLangTV
-#EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/al-arabi-uae-al-thaid-2y8m4zhv0pgyql0
-#EXTVLCOPT:http-origin=https://phalang.live
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/cfca4986690b630189b5522dee76502e/playlist.m3u8|Referer=https%3A%2F%2Fphalang.live%2Ftruc-tiep%2Fal-arabi-uae-al-thaid-2y8m4zhv0pgyql0&Origin=https%3A%2F%2Fphalang.live&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-e8fbbb5d1d30" tvg-name="Al-Ittifaq Dubai - Al Orooba(UAE)" tvg-logo="https://img.sports-data.online/football/team/40268de2ee68d7be7e6fa9c66daf5a09.png" group-title="PhaLangTV",🔴 [21:40] 28/09 ⚽ Al-Ittifaq Dubai - Al Orooba(UAE) • United Arab Emirates President Cup [HLS]
-#EXTGRP:PhaLangTV
-#EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/al-ittifaq-dubai-al-orooba-uae-8yomo4hye42pq0j
-#EXTVLCOPT:http-origin=https://phalang.live
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/c9c376a393de988225364597a7068f4e/playlist.m3u8|Referer=https%3A%2F%2Fphalang.live%2Ftruc-tiep%2Fal-ittifaq-dubai-al-orooba-uae-8yomo4hye42pq0j&Origin=https%3A%2F%2Fphalang.live&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-085c84e01a60" tvg-name="Dana White's Contender Series: Season 10 / Week 8" tvg-logo="https://m.media-amazon.com/images/S/pv-target-images/92a6fe2caef3a15e2b920f0944f33dbe5eef66bdfe761a61595e8619555a18cb.jpg" group-title="Giờ Vàng",[06:00] 30/09 🥊 Dana White's Contender Series: Season 10 / Week 8 (Dory) • Dana White's Contender Series: Season 10 / Week 8 [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-referrer=https://giovang.org/
+#EXTVLCOPT:http-origin=https://giovang.org
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://eqr2hdarxfliv.vcdn.cloud/1789368893_hd/1789368893_hd@720p.m3u8|User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)&Referer=https%3A%2F%2Fgiovang.org%2F&Origin=https%3A%2F%2Fgiovang.org
 #EXTINF:-1 tvg-id="sport-539d09523f0b" tvg-name="Al Kharaitiyat - Al-Wakrah Sports Club" tvg-logo="https://img.sports-data.online/football/team/718ad64f1a3de007af0de47a9ca2df8f.jpg" group-title="PhaLangTV",🔴 [22:00] 28/09 ⚽ Al Kharaitiyat - Al-Wakrah Sports Club • Qatari Stars Cup [HLS]
 #EXTGRP:PhaLangTV
 #EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/al-kharaitiyat-al-wakrah-sports-club-l5ergphk054wr8k
@@ -1415,6 +2168,12 @@ https://lilive1.eu.cc/live/a4a08a04cdffd42db30f800e8ecb9a74/playlist.m3u8|Refere
 #EXTVLCOPT:http-origin=https://phalang.live
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/4a12d0e61e1ff75f3ccb503d89f7565a/playlist.m3u8|Referer=https%3A%2F%2Fphalang.live%2Ftruc-tiep%2Fequatorial-guinea-sierra-leone-23xmvkh6754zqg8&Origin=https%3A%2F%2Fphalang.live&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-9a7d3ef9c4b9" tvg-name="FK Dubocica - FK Javor Ivanjica" tvg-logo="https://img.sports-data.online/football/team/2af31d7d31ede6bdc78d73574aec1751.png" group-title="PhaLangTV",🔴 [23:00] 28/09 ⚽ FK Dubocica - FK Javor Ivanjica • Serbian Mozzart Bet Prva Liga [HLS]
+#EXTGRP:PhaLangTV
+#EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/fk-dubocica-fk-javor-ivanjica-dn1m1ghlwv44moe
+#EXTVLCOPT:http-origin=https://phalang.live
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/68863a775d00b3187f4ebdf3357c11ba/playlist.m3u8|Referer=https%3A%2F%2Fphalang.live%2Ftruc-tiep%2Ffk-dubocica-fk-javor-ivanjica-dn1m1ghlwv44moe&Origin=https%3A%2F%2Fphalang.live&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="sport-e566e1cd21bd" tvg-name="Georgia - Ukraine" tvg-logo="https://img0.aiscore.com/football/team/c5b86fa907b96e38e377ddfe82802cc6.png!w80" group-title="PhaLangTV",🔴 [23:00] 28/09 ⚽ Georgia - Ukraine • UEFA Nations League [HLS]
 #EXTGRP:PhaLangTV
 #EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/georgia-ukraine-23xmvkh6y1l0qg8
@@ -1451,6 +2210,12 @@ https://lilive1.eu.cc/live/90d18cd0ecdc0328513f5282eefb52c8/playlist.m3u8|Refere
 #EXTVLCOPT:http-origin=https://phalang.live
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/cf72a9ed47db9e486397e5221cc062d8/playlist.m3u8|Referer=https%3A%2F%2Fphalang.live%2Ftruc-tiep%2Fzimbabwe-democratic-republic-of-the-congo-1l4rjnh9v7kom7v&Origin=https%3A%2F%2Fphalang.live&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-8fb732b59d44" tvg-name="Maccabi Bnei Reineh - Hapoel Raanana" tvg-logo="https://img.sports-data.online/football/team/6a5db2a66428a695a9060d9accac6e6d.png" group-title="PhaLangTV",🔴 [23:45] 28/09 ⚽ Maccabi Bnei Reineh - Hapoel Raanana • Israel Leumit League [HLS]
+#EXTGRP:PhaLangTV
+#EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/maccabi-bnei-reineh-hapoel-raanana-4wyrn4h61w15q86
+#EXTVLCOPT:http-origin=https://phalang.live
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/7baafc6bcca407f1baf6dd7ec6be4dc4/playlist.m3u8|Referer=https%3A%2F%2Fphalang.live%2Ftruc-tiep%2Fmaccabi-bnei-reineh-hapoel-raanana-4wyrn4h61w15q86&Origin=https%3A%2F%2Fphalang.live&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="sport-4f3d8fe1c821" tvg-name="Belgium - France" tvg-logo="https://sta.vnres.co/file/common/20260926/485919021a1890269881d84d9953feb0.png" group-title="PhaLangTV",[01:45] 29/09 ⚽ Belgium - France • UEFA Nations League [HLS]
 #EXTGRP:PhaLangTV
 #EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/belgium-france-y0or5jh89ywjqwz
@@ -1469,72 +2234,60 @@ https://lilive1.eu.cc/live/4957940f861fc719c8e200362f301ac5/playlist.m3u8|Refere
 #EXTVLCOPT:http-origin=https://phalang.live
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/d6ac5e9753efb3b1c94d7d176a030d3e/playlist.m3u8|Referer=https%3A%2F%2Fphalang.live%2Ftruc-tiep%2Fturkiye-italy-n54qllhn4gw1qvy&Origin=https%3A%2F%2Fphalang.live&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-66374915e41b" tvg-name="Al Arabi(UAE) vs Al Thaid" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekhv44orepz/image/small" group-title="XoilacXTH",[21:40] 28/09 ⚽ Al Arabi(UAE) vs Al Thaid • UAE President Cup [FLV]
+#EXTINF:-1 tvg-id="sport-c2426c047c99" tvg-name="Pars Jonoubi Jam vs Naft M.I.S" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohypekq1zp/image/small" group-title="XoilacXTH",[22:30] 28/09 ⚽ Pars Jonoubi Jam vs Naft M.I.S • Iran Azadegan League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.zundrixmediapipeline.com/live/channel4.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-77293f0e66c1" tvg-name="Al Arabi(UAE) vs Al Thaid" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekhv44orepz/image/small" group-title="XoilacXTH",[21:40] 28/09 ⚽ Al Arabi(UAE) vs Al Thaid • UAE President Cup [FLV]
+https://live1.quickscoreboardz.com/live/channel1.flv?wsSecret=f8202d74159236b9730a6d2943a83540&wsABSTime=1790658094|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-896c2dbf449b" tvg-name="Naft Bandar Abbas vs Naft Gachsaran" tvg-logo="https://imgts.sportpulseapiz.com/football/team/2y8m4zh18y5ql07/image/small" group-title="XoilacXTH",[22:30] 28/09 ⚽ Naft Bandar Abbas vs Naft Gachsaran • Iran Azadegan League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001790613961-0-0-7d5ff24706ed9a406e3306090716ee61|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-d571d2a8d5f3" tvg-name="Slovakia U19 vs Ba Lan U19" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhgj17ryk0/image/small" group-title="XoilacXTH",[22:00] 28/09 ⚽ Slovakia U19 vs Ba Lan U19 • Giao Hữu Quốc Tế [FLV]
+https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=21a639bab238319b35d961e871a1c91d&wsABSTime=1790658095|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-f2c37aff09bf" tvg-name="Latvia vs Đảo Síp" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jh2vgqwzv/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Latvia vs Đảo Síp • UEFA Nations League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel10.flv?wsSecret=8a8264543101a624a0c87d079f899c0b&wsABSTime=1790657161|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-0be9465c2b2a" tvg-name="Al Kharaitiyat vs Al-Wakrah Sports Club" tvg-logo="https://imgts.sportpulseapiz.com/football/team/1l4rjnh6p54m7vx/image/small" group-title="XoilacXTH",[22:00] 28/09 ⚽ Al Kharaitiyat vs Al-Wakrah Sports Club • Qatari Stars Cup [FLV]
+https://live2.zundrixmediapipeline.com/live/channel2.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-3f2ef4064240" tvg-name="Latvia vs Đảo Síp" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jh2vgqwzv/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Latvia vs Đảo Síp • UEFA Nations League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel11.flv?wsSecret=74a552f526f51b3e360f302557f61236&wsABSTime=1790657161|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-c6792e9da88a" tvg-name="Leixoes U23 vs Vizela U23" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlh980oryk0/image/small" group-title="XoilacXTH",[22:00] 28/09 ⚽ Leixoes U23 vs Vizela U23 • U23 Bồ Đào Nha [FLV]
+https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001790614895-0-0-1cb4d30d8d9219c251ac1a7beb957339|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-d54dbe1d6689" tvg-name="Latvia vs Đảo Síp" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jh2vgqwzv/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Latvia vs Đảo Síp • UEFA Nations League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel12.flv?wsSecret=7c8aea365305c33ee5b3b32af1c8b569&wsABSTime=1790657161|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-05e4f596432f" tvg-name="MSK Zilina B vs Humenne" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h8xwzq86p/image/small" group-title="XoilacXTH",[22:00] 28/09 ⚽ MSK Zilina B vs Humenne • Slovak 2.Liga [FLV]
+https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001790614895-0-0-4cbd1e009ddcff39f6b2b44863b6cbd4|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-a41dd66c6298" tvg-name="Latvia vs Đảo Síp" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jh2vgqwzv/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Latvia vs Đảo Síp • UEFA Nations League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel13.flv?wsSecret=b64e07c8466627f8a6e7ead1542831df&wsABSTime=1790657161|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-9235e66191de" tvg-name="Pars Jonoubi Jam vs Naft M.I.S" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohypekq1zp/image/small" group-title="XoilacXTH",[22:30] 28/09 ⚽ Pars Jonoubi Jam vs Naft M.I.S • Iran Azadegan League [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-#EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel1.flv?wsSecret=4d0999b339daa72455902c96f2d8adad&wsABSTime=1790657161|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-86909b2e4ebf" tvg-name="Naft Bandar Abbas vs Naft Gachsaran" tvg-logo="https://imgts.sportpulseapiz.com/football/team/2y8m4zh18y5ql07/image/small" group-title="XoilacXTH",[22:30] 28/09 ⚽ Naft Bandar Abbas vs Naft Gachsaran • Iran Azadegan League [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-#EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=0ecc54639d936c487abbb599813c0363&wsABSTime=1790657162|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+https://live2.zundrixmediapipeline.com/live/channel17.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="sport-b4936db5d7b7" tvg-name="Armenia vs Montenegro" tvg-logo="https://imgts.sportpulseapiz.com/football/team/9vjxm8gh167r6od/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Armenia vs Montenegro • UEFA Nations League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 https://live2.zundrixmediapipeline.com/live/channel6.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-298fe9745f00" tvg-name="Armenia vs Montenegro" tvg-logo="https://imgts.sportpulseapiz.com/football/team/9vjxm8gh167r6od/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Armenia vs Montenegro • UEFA Nations League [FLV]
+#EXTINF:-1 tvg-id="sport-6aafa4d03381" tvg-name="Armenia vs Montenegro" tvg-logo="https://imgts.sportpulseapiz.com/football/team/9vjxm8gh167r6od/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Armenia vs Montenegro • UEFA Nations League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001790613962-0-0-df4779895dc77b20af4cc611518233cc|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-5a16b76bf33f" tvg-name="Armenia vs Montenegro" tvg-logo="https://imgts.sportpulseapiz.com/football/team/9vjxm8gh167r6od/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Armenia vs Montenegro • UEFA Nations League [FLV]
+https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001790614895-0-0-66ddc8199e3fa19daf6ec4b0bf103a42|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-a80a849d18b7" tvg-name="Armenia vs Montenegro" tvg-logo="https://imgts.sportpulseapiz.com/football/team/9vjxm8gh167r6od/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Armenia vs Montenegro • UEFA Nations League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-22.flv?auth_key=3000001790613962-0-0-54032cd6aa48ad39c51e4a5ed2325c06|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+https://live2.domaincdn.cc/livecdn/channel-22.flv?auth_key=3000001790614895-0-0-e33ca237d7a7190e5d197f7c35ba86ab|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="sport-e31fd9e76603" tvg-name="Armenia vs Montenegro" tvg-logo="https://imgts.sportpulseapiz.com/football/team/9vjxm8gh167r6od/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Armenia vs Montenegro • UEFA Nations League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
@@ -1547,153 +2300,171 @@ https://live2.zundrixmediapipeline.com/live/channel22.flv|Referer=https%3A%2F%2F
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 https://live2.zundrixmediapipeline.com/live/channel15.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-b65b58ab0bb4" tvg-name="Georgia vs Ukraine" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8gh4v0xr6od/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Georgia vs Ukraine • UEFA Nations League [FLV]
+#EXTINF:-1 tvg-id="sport-55261ca9493c" tvg-name="Georgia vs Ukraine" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8gh4v0xr6od/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Georgia vs Ukraine • UEFA Nations League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001790613962-0-0-48440b66dc5ba75119e5fdfbaef0d4fa|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-cfbe23ce4d86" tvg-name="Georgia vs Ukraine" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8gh4v0xr6od/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Georgia vs Ukraine • UEFA Nations League [FLV]
+https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001790614895-0-0-ad5868bae1b306975da7b4c1d5fc6f0c|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-9349b6a3833a" tvg-name="Georgia vs Ukraine" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8gh4v0xr6od/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Georgia vs Ukraine • UEFA Nations League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-13.flv?auth_key=3000001790613962-0-0-ed74d0d4b75d59f5e33aa86aa2e145db|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+https://live2.domaincdn.cc/livecdn/channel-13.flv?auth_key=3000001790614895-0-0-8e0d74ea432dbb623d9bb461cc9364f2|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="sport-e0445c22b913" tvg-name="Georgia vs Ukraine" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8gh4v0xr6od/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Georgia vs Ukraine • UEFA Nations League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 https://live2.zundrixmediapipeline.com/live/channel13.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-f2c37aff09bf" tvg-name="Latvia vs Đảo Síp" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jh2vgqwzv/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Latvia vs Đảo Síp • UEFA Nations League [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-#EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.zundrixmediapipeline.com/live/channel2.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-8b96eb210fac" tvg-name="Latvia vs Đảo Síp" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jh2vgqwzv/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Latvia vs Đảo Síp • UEFA Nations League [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-#EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001790613962-0-0-cf96cead3a0c4a8e0e5d7669df143791|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-93bf4f966723" tvg-name="Latvia vs Đảo Síp" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jh2vgqwzv/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Latvia vs Đảo Síp • UEFA Nations League [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-#EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001790613962-0-0-34d0130d2ecfcdf6f70ff5f1ec3ab3af|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-a41dd66c6298" tvg-name="Latvia vs Đảo Síp" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jh2vgqwzv/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Latvia vs Đảo Síp • UEFA Nations League [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-#EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.zundrixmediapipeline.com/live/channel17.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="sport-269829e2e022" tvg-name="Zimbabwe vs DR Congo" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh73wer1ge/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Zimbabwe vs DR Congo • CAF Africa Cup of Nations [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 https://live2.zundrixmediapipeline.com/live/channel24.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-d0458088107b" tvg-name="Zimbabwe vs DR Congo" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh73wer1ge/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Zimbabwe vs DR Congo • CAF Africa Cup of Nations [FLV]
+#EXTINF:-1 tvg-id="sport-2fb63592243d" tvg-name="Zimbabwe vs DR Congo" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh73wer1ge/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Zimbabwe vs DR Congo • CAF Africa Cup of Nations [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001790613962-0-0-aecc80e5f82c56d2c542c17d5d799d94|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001790614895-0-0-64a25ffdf2f6ada5e7392628740b62ad|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="sport-d4c87fbcb317" tvg-name="Guinea Xích Đạo vs Sierra Leone" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4zp5rzghv3wq82w/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Guinea Xích Đạo vs Sierra Leone • CAF Africa Cup of Nations [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 https://live2.zundrixmediapipeline.com/live/channel16.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-1632793c4e75" tvg-name="Guinea Xích Đạo vs Sierra Leone" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4zp5rzghv3wq82w/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Guinea Xích Đạo vs Sierra Leone • CAF Africa Cup of Nations [FLV]
+#EXTINF:-1 tvg-id="sport-ea2de46795ec" tvg-name="Guinea Xích Đạo vs Sierra Leone" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4zp5rzghv3wq82w/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Guinea Xích Đạo vs Sierra Leone • CAF Africa Cup of Nations [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001790613962-0-0-08677a5c8fcfd88eb347c9e49061e4e1|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-89d36e4f8392" tvg-name="FK Dubocica vs FK Javor Ivanjica" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dn1m1ghn2y1moep/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ FK Dubocica vs FK Javor Ivanjica • Hạng Nhất Serbia [FLV]
+https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001790614895-0-0-65daebeb94b7e03d9a53d092921529d8|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-fa57f303d709" tvg-name="FK Dubocica vs FK Javor Ivanjica" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dn1m1ghn2y1moep/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ FK Dubocica vs FK Javor Ivanjica • Hạng Nhất Serbia [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=224022321757bcf08067ad1be7956e7f&wsABSTime=1790657162|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=a73993f29b83157a5b39fa03c95878ce&wsABSTime=1790658095|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="sport-4af7ba073fe6" tvg-name="CH Trung Phi vs Burkina Faso" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohkx0yq1zp/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ CH Trung Phi vs Burkina Faso • CAF Africa Cup of Nations [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 https://live2.zundrixmediapipeline.com/live/channel18.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-0e1f4d5caf34" tvg-name="CH Trung Phi vs Burkina Faso" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohkx0yq1zp/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ CH Trung Phi vs Burkina Faso • CAF Africa Cup of Nations [FLV]
+#EXTINF:-1 tvg-id="sport-42b369268878" tvg-name="CH Trung Phi vs Burkina Faso" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohkx0yq1zp/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ CH Trung Phi vs Burkina Faso • CAF Africa Cup of Nations [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-18.flv?auth_key=3000001790613962-0-0-2da17f036fdc2da88978fbeb23fcb5b6|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-e22220f13750" tvg-name="Hapoel Kfar Shalem vs Maccabi Jaffa" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jhl2xnqwzv/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Hapoel Kfar Shalem vs Maccabi Jaffa • Hạng 2 Israel [FLV]
+https://live2.domaincdn.cc/livecdn/channel-18.flv?auth_key=3000001790614895-0-0-47ee68bb0383405a9bed30f3fd3bf2d8|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-aea0f0e8b198" tvg-name="Hapoel Kfar Shalem vs Maccabi Jaffa" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jhl2xnqwzv/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Hapoel Kfar Shalem vs Maccabi Jaffa • Hạng 2 Israel [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=f92b2e1a01f0cf6da6dea10979cbddb1&wsABSTime=1790657162|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-074cc9a3241f" tvg-name="Bor 1919 vs Metalac Gornji Milanovac" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekh1kx4repz/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Bor 1919 vs Metalac Gornji Milanovac • Hạng Nhất Serbia [FLV]
+https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=734f4dba678c7eed42e2fd02df2914c8&wsABSTime=1790658095|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-7c91c0314b8c" tvg-name="Bor 1919 vs Metalac Gornji Milanovac" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekh1kx4repz/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Bor 1919 vs Metalac Gornji Milanovac • Hạng Nhất Serbia [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=7d6d62905493203e0323a981778618dd&wsABSTime=1790657162|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-2e159e8a33da" tvg-name="Proleter 023 vs Jedinstvo UB" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h9xw1q86p/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Proleter 023 vs Jedinstvo UB • Hạng Nhất Serbia [FLV]
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=1d1813ba8641d6ff62150f6703dae183&wsABSTime=1790658095|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-1a29dfb71d00" tvg-name="Proleter 023 vs Jedinstvo UB" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h9xw1q86p/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Proleter 023 vs Jedinstvo UB • Hạng Nhất Serbia [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=e0fb5323c5a0d0297b1f9c12d8b977f6&wsABSTime=1790657161|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-63706fb0b276" tvg-name="Kiryat Gat vs Kafr Qasim" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhglzzryk0/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Kiryat Gat vs Kafr Qasim • Hạng 2 Israel [FLV]
+https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=2d31aa91838c0b0ae41d1b6b5e604318&wsABSTime=1790658095|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-14d1344780ae" tvg-name="Kiryat Gat vs Kafr Qasim" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhglzzryk0/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Kiryat Gat vs Kafr Qasim • Hạng 2 Israel [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel7.flv?wsSecret=fe7990c30ba68688ae2c405291005731&wsABSTime=1790657162|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-fc7d8b17ea75" tvg-name="Serbia U21 vs Iraq U23" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jednm9wh4e9ryox/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Serbia U21 vs Iraq U23 • Giao Hữu Quốc Tế [FLV]
+https://live1.quickscoreboardz.com/live/channel7.flv?wsSecret=e3db3d30a13c930498984aa350ef90ca&wsABSTime=1790658095|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-8c65b5820afc" tvg-name="Serbia U21 vs Iraq U23" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jednm9wh4e9ryox/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Serbia U21 vs Iraq U23 • Giao Hữu Quốc Tế [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live1.quickscoreboardz.com/live/channel8.flv?wsSecret=40c9c23743530a27a61228f5d54bb7fc&wsABSTime=1790657162|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+https://live1.quickscoreboardz.com/live/channel8.flv?wsSecret=caa0d9371392c58e716faffbdb3d0669&wsABSTime=1790658095|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-aacaab9cfcde" tvg-name="Brazil U20 vs Đan Mạch U20" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vl7oqdehpk2r510/image/small" group-title="XoilacXTH",[23:00] 28/09 ⚽ Brazil U20 vs Đan Mạch U20 • Giao Hữu Quốc Tế [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+#EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+https://live1.quickscoreboardz.com/live/channel9.flv?wsSecret=4ddd5302283994c7775782526a45705d&wsABSTime=1790658095|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-b17b9f55a1ec" tvg-name="Đan Mạch U21 vs Belarus U21" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jednm9why66ryox/image/small" group-title="XoilacXTH",[23:30] 28/09 ⚽ Đan Mạch U21 vs Belarus U21 • UEFA European U21 Championship [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+#EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+https://live2.zundrixmediapipeline.com/live/channel20.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-37a3a0a81539" tvg-name="Đan Mạch U21 vs Belarus U21" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jednm9why66ryox/image/small" group-title="XoilacXTH",[23:30] 28/09 ⚽ Đan Mạch U21 vs Belarus U21 • UEFA European U21 Championship [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+#EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+https://live2.domaincdn.cc/livecdn/channel-20.flv?auth_key=3000001790614895-0-0-74bdea7fffb78cc9dfdda40cc43f0991|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-43ee3f6d7002" tvg-name="Syria U17 vs Yemen U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/j1l4rjnh85om7vx/image/small" group-title="XoilacXTH",[00:00] 29/09 ⚽ Syria U17 vs Yemen U17 • WAFF-U17 [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+#EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+https://live2.zundrixmediapipeline.com/live/channel28.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-286a7910c1d2" tvg-name="Syria U17 vs Yemen U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/j1l4rjnh85om7vx/image/small" group-title="XoilacXTH",[00:00] 29/09 ⚽ Syria U17 vs Yemen U17 • WAFF-U17 [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+#EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+https://live2.domaincdn.cc/livecdn/channel-28.flv?auth_key=3000001790614895-0-0-5bc162cc7fdf7ef73e0207a240c2b836|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-3fb5ebcdacd3" tvg-name="Mauritania U23 vs DR Congo U23" tvg-logo="https://imgts.sportpulseapiz.com/football/team/1l4rjnh1lk4m7vx/image/small" group-title="XoilacXTH",[00:00] 29/09 ⚽ Mauritania U23 vs DR Congo U23 • AFRNC U23 [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+#EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+https://live1.quickscoreboardz.com/live/channel10.flv?wsSecret=ab411d9c43110141e2e740d70d1ea562&wsABSTime=1790658095|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-id="sport-eabcefcb0aec" tvg-name="NK Rudar Velenje vs Dravinja" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergphoo12r8k0/image/small" group-title="XoilacXTH",[00:00] 29/09 ⚽ NK Rudar Velenje vs Dravinja • Slovenia 2.Liga [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+#EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+https://live1.quickscoreboardz.com/live/channel11.flv?wsSecret=316345ad868a40c1f446c47d3315b548&wsABSTime=1790658095|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="sport-24f3a170abc3" tvg-name="Bỉ vs Pháp" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66hd5eqo9j/image/small" group-title="XoilacXTH",[01:45] 29/09 ⚽ Bỉ vs Pháp • UEFA Nations League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 https://live2.zundrixmediapipeline.com/live/channel24.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-e5aefcaadaaf" tvg-name="Bỉ vs Pháp" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66hd5eqo9j/image/small" group-title="XoilacXTH",[01:45] 29/09 ⚽ Bỉ vs Pháp • UEFA Nations League [FLV]
+#EXTINF:-1 tvg-id="sport-cf5d5feb036c" tvg-name="Bỉ vs Pháp" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66hd5eqo9j/image/small" group-title="XoilacXTH",[01:45] 29/09 ⚽ Bỉ vs Pháp • UEFA Nations League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001790613962-0-0-aecc80e5f82c56d2c542c17d5d799d94|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001790614895-0-0-64a25ffdf2f6ada5e7392628740b62ad|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="sport-34a045cc6550" tvg-name="Bỉ vs Pháp" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66hd5eqo9j/image/small" group-title="XoilacXTH",[01:45] 29/09 ⚽ Bỉ vs Pháp • UEFA Nations League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 https://live2.zundrixmediapipeline.com/live/channel2.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-cbd8a53214d5" tvg-name="Bỉ vs Pháp" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66hd5eqo9j/image/small" group-title="XoilacXTH",[01:45] 29/09 ⚽ Bỉ vs Pháp • UEFA Nations League [FLV]
+#EXTINF:-1 tvg-id="sport-b887310ded7a" tvg-name="Bỉ vs Pháp" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66hd5eqo9j/image/small" group-title="XoilacXTH",[01:45] 29/09 ⚽ Bỉ vs Pháp • UEFA Nations League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001790613962-0-0-cf96cead3a0c4a8e0e5d7669df143791|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001790614895-0-0-1cb4d30d8d9219c251ac1a7beb957339|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="sport-bdfdc3778180" tvg-name="Bỉ vs Pháp" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66hd5eqo9j/image/small" group-title="XoilacXTH",[01:45] 29/09 ⚽ Bỉ vs Pháp • UEFA Nations League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 https://live2.zundrixmediapipeline.com/live/channel1.flv|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
-#EXTINF:-1 tvg-id="sport-2e78de39c82b" tvg-name="Bỉ vs Pháp" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66hd5eqo9j/image/small" group-title="XoilacXTH",[01:45] 29/09 ⚽ Bỉ vs Pháp • UEFA Nations League [FLV]
+#EXTINF:-1 tvg-id="sport-94d130aff2ae" tvg-name="Bỉ vs Pháp" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66hd5eqo9j/image/small" group-title="XoilacXTH",[01:45] 29/09 ⚽ Bỉ vs Pháp • UEFA Nations League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 #EXTVLCOPT:http-origin=https://xl365.domainkqt.cc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790613962-0-0-d437e28dab9c84bf6dcca704697cdab0|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001790614895-0-0-3e4ce1656cf079a8154901eaadc7724f|Referer=https%3A%2F%2Fxl365.domainkqt.cc%2F&Origin=https%3A%2F%2Fxl365.domainkqt.cc&User-Agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F153.0.0.0%20Safari%2F537.36
