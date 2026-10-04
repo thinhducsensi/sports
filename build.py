@@ -2437,22 +2437,12 @@ def header_value(headers, name):
     return ""
 
 
-def encode_component(value):
-    return quote(str(value), safe="-_.!~*'()")
-
-
 def stream_url_with_headers(source):
-    blocked = {"host", "content-length", "transfer-encoding", "connection"}
-    headers = source.get("headers") or {}
-    params = []
-    for key, value in headers.items():
-        if str(key).lower() in blocked:
-            continue
-        params.append(f"{encode_component(key)}={encode_component(value)}")
-    if not params:
-        return source["url"]
-    separator = "&" if "|" in source["url"] else "|"
-    return f"{source['url']}{separator}{'&'.join(params)}"
+    # Keep the stream URL byte-for-byte as the provider returned it.
+    # Playback headers are emitted separately as #EXTVLCOPT lines below.
+    # Appending Kodi-style |Header=... parameters breaks a number of IPTV
+    # players and is redundant when EXTVLCOPT already carries UA/referrer.
+    return scalar_text(source.get("url"))
 
 
 def stable_source_id(match, source):
@@ -2676,15 +2666,12 @@ def build_playlist():
                     f'tvg-logo="{escape_attr(logo)}" group-title="{escape_attr(group_name)}",{title}'
                 )
                 lines.append(f"#EXTGRP:{safe_title_text(group_name)}")
-                referer = header_value(source.get("headers"), "Referer")
-                origin = header_value(source.get("headers"), "Origin")
                 user_agent = header_value(source.get("headers"), "User-Agent")
-                if referer:
-                    lines.append(f"#EXTVLCOPT:http-referrer={referer}")
-                if origin:
-                    lines.append(f"#EXTVLCOPT:http-origin={origin}")
+                referer = header_value(source.get("headers"), "Referer")
                 if user_agent:
                     lines.append(f"#EXTVLCOPT:http-user-agent={user_agent}")
+                if referer:
+                    lines.append(f"#EXTVLCOPT:http-referrer={referer}")
                 lines.append(stream_url_with_headers(source))
                 total_streams += 1
 
