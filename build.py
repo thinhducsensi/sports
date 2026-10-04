@@ -24,7 +24,7 @@ VERIFY_LIVE_WINDOW_MS = 12 * 60 * 60 * 1000
 # events must not acquire a live badge solely because a media URL responds.
 MAX_WORKERS = 24
 RESOLVER_TIMEOUT = 5.0
-USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+USER_AGENT = "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36"
 
 TERMINAL_STATUSES = {
     "ft", "finished", "finish", "ended", "end", "completed", "complete",
