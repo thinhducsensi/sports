@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url=""
-#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 16:45 04/10" group-title="🕒 Cập nhật 16:45 04/10",🕒 Cập nhật 16:45 04/10
+#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 17:01 04/10" group-title="🕒 Cập nhật 17:01 04/10",🕒 Cập nhật 17:01 04/10
 http://127.0.0.1/
 #EXTINF:-1 tvg-id="sport-0aa5b40863cd" tvg-name="Barito Putera vs Persela Lamongan" tvg-logo="https://img.gvapi.cc/football/team/631d7950b866054f174c8d7389418f3b.png" group-title="Gà Vàng 33",[15:30] 04/10 ⚽ Barito Putera vs Persela Lamongan [HLS]
 #EXTGRP:Gà Vàng 33
@@ -15,6 +15,10 @@ https://live2.zktsva.app/live/741294.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://gavang33.co/
 https://live2.zktsva.app/live/741294.flv
+#EXTINF:-1 tvg-id="sport-d901948e25a5" tvg-name="Sporting de Gijon B vs Union Langreo" tvg-logo="https://img.gvapi.cc/football/team/c862b02975932127779faae44decffb4.jpg" group-title="Gà Vàng 33",[17:00] 04/10 ⚽ Sporting de Gijon B vs Union Langreo [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.me/
+https://video.gvvsb.com/hls/output_v1.m3u8
 #EXTINF:-1 tvg-id="sport-ca4a6472b411" tvg-name="Tegevajaro Miyazaki vs RB Omiya Ardija" tvg-logo="https://img.gvapi.cc/football/team/d212b444eb151871d8fbbcafa8e36658.png" group-title="Gà Vàng 33",🔴 [17:00] 04/10 ⚽ Tegevajaro Miyazaki vs RB Omiya Ardija (Gà Siêu Tốc) • Japanese J2 League [HLS]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -25,10 +29,6 @@ https://live2.zktsva.app/live/307240.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://gavang33.co/
 https://live2.zktsva.app/live/307240.flv
-#EXTINF:-1 tvg-id="sport-d901948e25a5" tvg-name="Sporting de Gijon B vs Union Langreo" tvg-logo="https://img.gvapi.cc/football/team/c862b02975932127779faae44decffb4.jpg" group-title="Gà Vàng 33",[17:00] 04/10 ⚽ Sporting de Gijon B vs Union Langreo [HLS]
-#EXTGRP:Gà Vàng 33
-#EXTVLCOPT:http-referrer=https://gavang33.me/
-https://video.gvvsb.com/hls/output_v1.m3u8
 #EXTINF:-1 tvg-id="sport-8ad3127e03a0" tvg-name="Real Sociedad B vs Granada CF" tvg-logo="https://img.gvapi.cc/football/team/d29164c8a90c597e5333f1bf14f289f2.png" group-title="Gà Vàng 33",[19:00] 04/10 ⚽ Real Sociedad B vs Granada CF (Gà Siêu Péo) • Spanish Segunda Division [HLS]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -436,11 +436,11 @@ https://live05.miekgo.app/live/18812304_tsc.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.meung.app/live/18812304_tsc.flv
-#EXTINF:-1 tvg-id="sport-bb9ca5d3ba29" tvg-name="Kagoshima United vs Fukushima United FC" tvg-logo="https://img.gvapi.cc/football/team/ee938da6f631119cd2995f69f067c44b.png!w80" group-title="CoLaTV",🔴 [16:00] 04/10 ⚽ Kagoshima United vs Fukushima United FC • Giải bóng đá hạng ba Nhật Bản [HLS]
+#EXTINF:-1 tvg-id="sport-b90e3fd15a12" tvg-name="Kagoshima United vs Fukushima United FC" tvg-logo="https://img.gvapi.cc/football/team/ee938da6f631119cd2995f69f067c44b.png!w80" group-title="CoLaTV",🔴 [16:00] 04/10 ⚽ Kagoshima United vs Fukushima United FC • Giải bóng đá hạng ba Nhật Bản [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
-https://live2.dyrur1.com/live/72152028_437dfd36f2eb319995241a4ce72ff205_autoChange.m3u8?auth_key=1791121521-0-0-f314f2555542c993f4eefa3fac151eb2
+https://live2.dyrur1.com/live/72152028_437dfd36f2eb319995241a4ce72ff205_autoChange.m3u8?auth_key=1791122270-0-0-39efa4c0e899c0ef3f2af203d87b483f
 #EXTINF:-1 tvg-id="sport-4deb065c7570" tvg-name="SC Farense vs Chaves" tvg-logo="https://img.gvapi.cc/football/team/98c2ee8cb3277cf417eeab8c4ee0b936.png!w80" group-title="CoLaTV",🔴 [17:00] 04/10 ⚽ SC Farense vs Chaves (BLV MONSTER) • Giải hạng Hai Bồ Đào Nha [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -456,11 +456,11 @@ https://live05.miekgo.app/live/75915087_tsc.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.meung.app/live/75915087_tsc.flv
-#EXTINF:-1 tvg-id="sport-f280baef3d7e" tvg-name="SC Farense vs Chaves" tvg-logo="https://img.gvapi.cc/football/team/98c2ee8cb3277cf417eeab8c4ee0b936.png!w80" group-title="CoLaTV",🔴 [17:00] 04/10 ⚽ SC Farense vs Chaves • Giải hạng Hai Bồ Đào Nha
+#EXTINF:-1 tvg-id="sport-100eb15b6b8b" tvg-name="SC Farense vs Chaves" tvg-logo="https://img.gvapi.cc/football/team/98c2ee8cb3277cf417eeab8c4ee0b936.png!w80" group-title="CoLaTV",🔴 [17:00] 04/10 ⚽ SC Farense vs Chaves • Giải hạng Hai Bồ Đào Nha [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
-https
+https://live5.dyrur1.com/live/74352002_52bf41196d84671f0084169003f6701a_autoChange.m3u8?auth_key=1791122272-0-0-eadb47bd4921d2344c58fada76c371d6
 #EXTINF:-1 tvg-id="sport-53826057391b" tvg-name="Tegevajaro Miyazaki vs CLB Omiya Ardija" tvg-logo="https://img.gvapi.cc/football/team/d212b444eb151871d8fbbcafa8e36658.png!w80" group-title="CoLaTV",🔴 [17:00] 04/10 ⚽ Tegevajaro Miyazaki vs CLB Omiya Ardija (BLV SODA) • Giải bóng đá hạng nhì Nhật Bản [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -476,11 +476,11 @@ https://live05.miekgo.app/live/02456966_tsc.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.meung.app/live/02456966_tsc.flv
-#EXTINF:-1 tvg-id="sport-a6e28a7ea9c7" tvg-name="Tegevajaro Miyazaki vs CLB Omiya Ardija" tvg-logo="https://img.gvapi.cc/football/team/d212b444eb151871d8fbbcafa8e36658.png!w80" group-title="CoLaTV",🔴 [17:00] 04/10 ⚽ Tegevajaro Miyazaki vs CLB Omiya Ardija • Giải bóng đá hạng nhì Nhật Bản
+#EXTINF:-1 tvg-id="sport-c976c1cfa2e1" tvg-name="Tegevajaro Miyazaki vs CLB Omiya Ardija" tvg-logo="https://img.gvapi.cc/football/team/d212b444eb151871d8fbbcafa8e36658.png!w80" group-title="CoLaTV",🔴 [17:00] 04/10 ⚽ Tegevajaro Miyazaki vs CLB Omiya Ardija • Giải bóng đá hạng nhì Nhật Bản [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
-https
+https://live4.dyrur1.com/live/72151204_607a85fc1eca9a6e3f21f607b657ddde_autoChange.m3u8?auth_key=1791122272-0-0-3d71f21af6bf4e30538860f158833a02
 #EXTINF:-1 tvg-id="sport-029bda4aa313" tvg-name="R Sociedad B vs Câu lạc bộ bóng đá Granada" tvg-logo="https://img.gvapi.cc/football/team/d29164c8a90c597e5333f1bf14f289f2.png!w80" group-title="CoLaTV",[19:00] 04/10 ⚽ R Sociedad B vs Câu lạc bộ bóng đá Granada (BLV HỔ VẰN) • Giải bóng đá Hạng nhì Tây Ban Nha [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1311,6 +1311,21 @@ https://live05.miekgo.app/live/59444581_tsc.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.meung.app/live/59444581_tsc.flv
+#EXTINF:-1 tvg-id="sport-e3fa342409ea" tvg-name="Golden State Valkyries vs Las Vegas Aces" tvg-logo="https://img.gvapi.cc/basketball/team/380d81d4050b81debf9a5500239e96d0.png!w80" group-title="CoLaTV",[03:00] 05/10 🏀 Golden State Valkyries vs Las Vegas Aces (BLV 247) • Hiệp hội bóng rổ quốc gia nữ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/90865415_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-b33f182bd871" tvg-name="Golden State Valkyries vs Las Vegas Aces" tvg-logo="https://img.gvapi.cc/basketball/team/380d81d4050b81debf9a5500239e96d0.png!w80" group-title="CoLaTV",[03:00] 05/10 🏀 Golden State Valkyries vs Las Vegas Aces (BLV 247) • Hiệp hội bóng rổ quốc gia nữ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/90865415_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-bd2c885b58c1" tvg-name="Golden State Valkyries vs Las Vegas Aces" tvg-logo="https://img.gvapi.cc/basketball/team/380d81d4050b81debf9a5500239e96d0.png!w80" group-title="CoLaTV",[03:00] 05/10 🏀 Golden State Valkyries vs Las Vegas Aces (BLV 247) • Hiệp hội bóng rổ quốc gia nữ [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/90865415_tsc.flv
 #EXTINF:-1 tvg-id="sport-b31cd2f194ef" tvg-name="Los Angeles Clippers vs Golden State Warriors" tvg-logo="https://img.gvapi.cc/basketball/team/848b21021b2a1db7bde95ea52a1e021b.png!w80" group-title="CoLaTV",[06:00] 05/10 🏀 Los Angeles Clippers vs Golden State Warriors (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1525,6 +1540,11 @@ https://ftlh5sc02iliv.vcdn.cloud/1791094508_hd/1791094508_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1791018075_hd/1791018075_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-54425383f98f" tvg-name="Obradoiro CAB vs Real Madrid" tvg-logo="https://static.flashscore.com/res/image/data/GQO85GxS-MkO5VDN4.png" group-title="Giờ Vàng",🔴 [17:00] 04/10 🏀 Obradoiro CAB vs Real Madrid (Vịt) • ACB [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://ftlh5sc02iliv.vcdn.cloud/1791017529_hd/1791017529_hd@720p.m3u8
 #EXTINF:-1 tvg-id="sport-4d8838e8a65b" tvg-name="ASIAD 2026" tvg-logo="https://thumb.wikimedia.org/wikipedia/vi/thumb/1/14/2026_Asian_Games_logo.png/250px-2026_Asian_Games_logo.png?utm_source=vi.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" group-title="Giờ Vàng",🔴 [16:00] 04/10 🥊 ASIAD 2026 (BLV Túi Mù) • ASIAD 2026 [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1545,7 +1565,7 @@ https://ftlh5sc02iliv.vcdn.cloud/1791052822_hd/1791052822_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1791086369_hd/1791086369_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-456251ee478a" tvg-name="WE vs BRO" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ93kWdW4lojNbz2kclG30QhQpInGukGF4f_L2q57UfrQ&amp;s=10" group-title="Giờ Vàng",🔴 [16:00] 04/10 🎮 WE vs BRO (BLV Hấu) • Demacia Cup Global Invitational [HLS]
+#EXTINF:-1 tvg-id="sport-d169d93db57a" tvg-name="RED Canids vs KT" tvg-logo="https://static.flashscore.com/res/image/data/nc67QrEa-xvjkw0Lu.png" group-title="Giờ Vàng",🔴 [16:00] 04/10 🎮 RED Canids vs KT (BLV Hấu) • Demacia Cup Global Invitational [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
@@ -1580,11 +1600,11 @@ https://pzhgifbkllliv.vcdn.cloud/1791050006_hd/1791050006_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://pzhgifbkllliv.vcdn.cloud/1791050980_hd/1791050980_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-245e104ea7da" tvg-name="Obradoiro CAB vs Real Madrid" tvg-logo="https://static.flashscore.com/res/image/data/GQO85GxS-MkO5VDN4.png" group-title="Giờ Vàng",[17:00] 04/10 🏀 Obradoiro CAB vs Real Madrid (Vịt) • ACB [HLS]
+#EXTINF:-1 tvg-id="sport-107d52505e76" tvg-name="Scandicci Nữ vs Chieri '76 Nữ" tvg-logo="https://static.flashscore.com/res/image/data/0QZRMbg5-MuuCgGgG.png" group-title="Giờ Vàng",[21:00] 04/10 🏐 Scandicci Nữ vs Chieri '76 Nữ (Sún) • Seri A1 Nữ [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
-https://pzhgifbkllliv.vcdn.cloud/1791017529_hd/1791017529_hd@720p.m3u8
+https://ftlh5sc02iliv.vcdn.cloud/1791018164_hd/1791018164_hd@720p.m3u8
 #EXTINF:-1 tvg-id="sport-fb848ce32a81" tvg-name="Basket Zaragoza vs Valencia" tvg-logo="https://static.flashscore.com/res/image/data/QLeBxygl-lOzorRoq.png" group-title="Giờ Vàng",[22:00] 04/10 🏀 Basket Zaragoza vs Valencia (Chồn) • ACB [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1600,11 +1620,6 @@ https://pzhgifbkllliv.vcdn.cloud/1791051035_hd/1791051035_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://pzhgifbkllliv.vcdn.cloud/1791051097_hd/1791051097_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-107d52505e76" tvg-name="Scandicci Nữ vs Chieri '76 Nữ" tvg-logo="https://static.flashscore.com/res/image/data/0QZRMbg5-MuuCgGgG.png" group-title="Giờ Vàng",[21:00] 04/10 🏐 Scandicci Nữ vs Chieri '76 Nữ (Sún) • Seri A1 Nữ [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://ftlh5sc02iliv.vcdn.cloud/1791018164_hd/1791018164_hd@720p.m3u8
 #EXTINF:-1 tvg-id="sport-823dcc071874" tvg-name="BFX vs LGD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDRrEmNb1ep4AF3ZmHm103vbTGm5vAVnPog_JDcdUYxQ&amp;s=10" group-title="Giờ Vàng",[18:00] 04/10 🎮 BFX vs LGD (Cận) • Demacia Cup Global Invitational [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1630,138 +1645,138 @@ https://pzhgifbkllliv.vcdn.cloud/1791051179_hd/1791051179_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/tegevajaro-miyazaki-rb-omiya-ardija-4wyrn4h616z0q86
 https://lilive1.eu.cc/live/22b98755e24c258909444bed2228ca67/playlist.m3u8
-#EXTINF:-1 tvg-id="sport-752d4b6aa145" tvg-name="FK Ural-2 vs Nosta Novotroitsk" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hjkovqdyj/image/small" group-title="XoilacXTH",[15:00] 04/10 ⚽ FK Ural-2 vs Nosta Novotroitsk • RUS D3B [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel13.flv?wsSecret=49b0dadca090b512f2711c9c9e365c6f&wsABSTime=1791150355
 #EXTINF:-1 tvg-id="sport-274c2415fb48" tvg-name="Deren FC vs Khovd Broncos" tvg-logo="https://imgts.sportpulseapiz.com/football/team/n54qllhxeyvqvy9/image/small" group-title="XoilacXTH",[15:00] 04/10 ⚽ Deren FC vs Khovd Broncos • Ngoại Hạng Mông Cổ [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.zundrixmediapipeline.com/live/channel13.flv
-#EXTINF:-1 tvg-id="sport-313f77522c5e" tvg-name="Deren FC vs Khovd Broncos" tvg-logo="https://imgts.sportpulseapiz.com/football/team/n54qllhxeyvqvy9/image/small" group-title="XoilacXTH",[15:00] 04/10 ⚽ Deren FC vs Khovd Broncos • Ngoại Hạng Mông Cổ [FLV]
+#EXTINF:-1 tvg-id="sport-0ab1fe0aca03" tvg-name="Deren FC vs Khovd Broncos" tvg-logo="https://imgts.sportpulseapiz.com/football/team/n54qllhxeyvqvy9/image/small" group-title="XoilacXTH",[15:00] 04/10 ⚽ Deren FC vs Khovd Broncos • Ngoại Hạng Mông Cổ [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-13.flv?auth_key=3000001791107155-0-0-d766e91179fffe8fd75a58d7d06c6072
-#EXTINF:-1 tvg-id="sport-6dce970e065b" tvg-name="Hồng Kông Rangers vs Tai Po" tvg-logo="https://imgts.sportpulseapiz.com/football/team/1l4rjnh6pdpm7vx/image/small" group-title="XoilacXTH",[15:00] 04/10 ⚽ Hồng Kông Rangers vs Tai Po • Chinese Hong Kong League Cup [FLV]
+https://live2.domaincdn.cc/livecdn/channel-13.flv?auth_key=3000001791108094-0-0-2f8a97c5782c69d28d30f64db66607a2
+#EXTINF:-1 tvg-id="sport-8011d605929b" tvg-name="Brno B vs Blansko" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergpho3zkr8k0/image/small" group-title="XoilacXTH",[15:15] 04/10 ⚽ Brno B vs Blansko • Czech 3 liga [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel16.flv?wsSecret=faf4571ed998f4d5b04b10f900703ed9&wsABSTime=1791150355
-#EXTINF:-1 tvg-id="sport-50ea44c1eefc" tvg-name="Brno B vs Blansko" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergpho3zkr8k0/image/small" group-title="XoilacXTH",[15:15] 04/10 ⚽ Brno B vs Blansko • Czech 3 liga [FLV]
+https://live1.quickscoreboardz.com/live/channel17.flv?wsSecret=6d8e16983ad33c742a6c6759b1a540b7&wsABSTime=1791151294
+#EXTINF:-1 tvg-id="sport-9b7276012888" tvg-name="Hradec Kralove B vs Mlada Boleslav B" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y39mp1hjgn0mojx/image/small" group-title="XoilacXTH",[15:15] 04/10 ⚽ Hradec Kralove B vs Mlada Boleslav B • Czech 3 liga [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel17.flv?wsSecret=c33a45939285bcbffa3cdcf599c16b54&wsABSTime=1791150355
-#EXTINF:-1 tvg-id="sport-1e2d385040f8" tvg-name="Hradec Kralove B vs Mlada Boleslav B" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y39mp1hjgn0mojx/image/small" group-title="XoilacXTH",[15:15] 04/10 ⚽ Hradec Kralove B vs Mlada Boleslav B • Czech 3 liga [FLV]
+https://live1.quickscoreboardz.com/live/channel18.flv?wsSecret=7770200f5b4165276a398c6a2604911a&wsABSTime=1791151294
+#EXTINF:-1 tvg-id="sport-5d536b106528" tvg-name="Admira Praha vs Domazlice" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekhvgodrepz/image/small" group-title="XoilacXTH",[15:15] 04/10 ⚽ Admira Praha vs Domazlice • Czech 3 liga [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel18.flv?wsSecret=cc030e33f4f627a424d96358e5a61c5b&wsABSTime=1791150355
-#EXTINF:-1 tvg-id="sport-5d86b36c6afc" tvg-name="Admira Praha vs Domazlice" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekhvgodrepz/image/small" group-title="XoilacXTH",[15:15] 04/10 ⚽ Admira Praha vs Domazlice • Czech 3 liga [FLV]
+https://live1.quickscoreboardz.com/live/channel19.flv?wsSecret=6088ad3ceaee2c09c41a2dd97b5dc16f&wsABSTime=1791151294
+#EXTINF:-1 tvg-id="sport-b83d3ad17c17" tvg-name="Barito Putera vs Persela Lamongan" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekh989lrepz/image/small" group-title="XoilacXTH",[15:30] 04/10 ⚽ Barito Putera vs Persela Lamongan • Hạng 2 Indonesia [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel19.flv?wsSecret=d7f784a56b15ebed34a8bd73e51dd2a9&wsABSTime=1791150355
-#EXTINF:-1 tvg-id="sport-b1d4f3bf5ab6" tvg-name="Barito Putera vs Persela Lamongan" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekh989lrepz/image/small" group-title="XoilacXTH",[15:30] 04/10 ⚽ Barito Putera vs Persela Lamongan • Hạng 2 Indonesia [FLV]
+https://live1.quickscoreboardz.com/live/channel1.flv?wsSecret=6c92bc08ff18167fa307aec76677444e&wsABSTime=1791151294
+#EXTINF:-1 tvg-id="sport-9ca07e23195b" tvg-name="Viktoria Plzen B vs Dukla Praha B" tvg-logo="https://imgts.sportpulseapiz.com/football/team/n54qllh2dk2qvy9/image/small" group-title="XoilacXTH",[15:30] 04/10 ⚽ Viktoria Plzen B vs Dukla Praha B • Czech 3 liga [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel1.flv?wsSecret=e0c86da31bb87244e59c0f661aec11cf&wsABSTime=1791150355
-#EXTINF:-1 tvg-id="sport-075e16100348" tvg-name="Viktoria Plzen B vs Dukla Praha B" tvg-logo="https://imgts.sportpulseapiz.com/football/team/n54qllh2dk2qvy9/image/small" group-title="XoilacXTH",[15:30] 04/10 ⚽ Viktoria Plzen B vs Dukla Praha B • Czech 3 liga [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=af85124bf6e296535e17e40f2ee5449b&wsABSTime=1791150355
+https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=c4e259c545ceff6f92b9800eebceb9d6&wsABSTime=1791151294
 #EXTINF:-1 tvg-id="sport-d75aa01e6e15" tvg-name="Kagoshima Utd vs Fukushima FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzgh72xnq82w/image/small" group-title="XoilacXTH",[16:00] 04/10 ⚽ Kagoshima Utd vs Fukushima FC • J3 League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.zundrixmediapipeline.com/live/channel22.flv
-#EXTINF:-1 tvg-id="sport-b4f39c4194b9" tvg-name="Kagoshima Utd vs Fukushima FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzgh72xnq82w/image/small" group-title="XoilacXTH",[16:00] 04/10 ⚽ Kagoshima Utd vs Fukushima FC • J3 League [FLV]
+#EXTINF:-1 tvg-id="sport-a87c91dc6fcd" tvg-name="Kagoshima Utd vs Fukushima FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzgh72xnq82w/image/small" group-title="XoilacXTH",[16:00] 04/10 ⚽ Kagoshima Utd vs Fukushima FC • J3 League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-22.flv?auth_key=3000001791107155-0-0-52bffa9304ca9dde9f154e432f9b19d1
-#EXTINF:-1 tvg-id="sport-56393328902e" tvg-name="Yokohama SCC vs Criacao Shinjuku" tvg-logo="https://imgts.sportpulseapiz.com/football/team/23xmvkho4gyqg8n/image/small" group-title="XoilacXTH",[16:00] 04/10 ⚽ Yokohama SCC vs Criacao Shinjuku • JFL [FLV]
+https://live2.domaincdn.cc/livecdn/channel-22.flv?auth_key=3000001791108094-0-0-b72c57810851b25c190bd455ee169e81
+#EXTINF:-1 tvg-id="sport-ea99f62ab061" tvg-name="Yokohama SCC vs Criacao Shinjuku" tvg-logo="https://imgts.sportpulseapiz.com/football/team/23xmvkho4gyqg8n/image/small" group-title="XoilacXTH",[16:00] 04/10 ⚽ Yokohama SCC vs Criacao Shinjuku • JFL [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=2debdb05946807a9a670d40cce82cf9d&wsABSTime=1791150355
-#EXTINF:-1 tvg-id="sport-48f1866a2617" tvg-name="FK Yenisey II vs Chertanovo Moscow" tvg-logo="https://imgts.sportpulseapiz.com/football/team/2y8m4zh8w88ql07/image/small" group-title="XoilacXTH",[16:00] 04/10 ⚽ FK Yenisey II vs Chertanovo Moscow • RUS D3B [FLV]
+https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=c57311ff1ffbeb4752f305a9a4d05c9d&wsABSTime=1791151294
+#EXTINF:-1 tvg-id="sport-24513318a03a" tvg-name="FK Yenisey II vs Chertanovo Moscow" tvg-logo="https://imgts.sportpulseapiz.com/football/team/2y8m4zh8w88ql07/image/small" group-title="XoilacXTH",[16:00] 04/10 ⚽ FK Yenisey II vs Chertanovo Moscow • RUS D3B [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=64bbb9f46866d9c47eae6da13e8658c0&wsABSTime=1791150355
-#EXTINF:-1 tvg-id="sport-cef860218b70" tvg-name="Teplice B vs Spolana Neratovice" tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66hvypxqo9j/image/small" group-title="XoilacXTH",[16:00] 04/10 ⚽ Teplice B vs Spolana Neratovice • Czech 3 liga [FLV]
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=b5b5dded42a20e4070654c03660870ce&wsABSTime=1791151294
+#EXTINF:-1 tvg-id="sport-1a74169b2752" tvg-name="Teplice B vs Spolana Neratovice" tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66hvypxqo9j/image/small" group-title="XoilacXTH",[16:00] 04/10 ⚽ Teplice B vs Spolana Neratovice • Czech 3 liga [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=abe83efc62bc91819f376037684ee08b&wsABSTime=1791150355
-#EXTINF:-1 tvg-id="sport-7c48f8ac6b1e" tvg-name="Đức U16 vs Austria U16" tvg-logo="https://imgts.sportpulseapiz.com/football/team/yl5ergphxw1r8k0/image/small" group-title="XoilacXTH",[16:00] 04/10 ⚽ Đức U16 vs Austria U16 • Giao Hữu Quốc Tế [FLV]
+https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=fea517c8fe5941b8c0210896559e6d54&wsABSTime=1791151294
+#EXTINF:-1 tvg-id="sport-cf1250926b30" tvg-name="Đức U16 vs Austria U16" tvg-logo="https://imgts.sportpulseapiz.com/football/team/yl5ergphxw1r8k0/image/small" group-title="XoilacXTH",[16:00] 04/10 ⚽ Đức U16 vs Austria U16 • Giao Hữu Quốc Tế [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel83.flv?wsSecret=377cce1718822aae29c9ef8237f5f15f&wsABSTime=1791150355
-#EXTINF:-1 tvg-id="sport-9b6473c4dc8e" tvg-name="Wofoo Social Enterprises vs Bright Cerulean FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/2y8m4zhglepql07/image/small" group-title="XoilacXTH",[16:30] 04/10 ⚽ Wofoo Social Enterprises vs Bright Cerulean FC • Hong Kong First Division [FLV]
+https://live1.quickscoreboardz.com/live/channel83.flv?wsSecret=d33dfc2fd880e70b5885265eb207f82d&wsABSTime=1791151294
+#EXTINF:-1 tvg-id="sport-6c8ea9226c01" tvg-name="Wofoo Social Enterprises vs Bright Cerulean FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/2y8m4zhglepql07/image/small" group-title="XoilacXTH",[16:30] 04/10 ⚽ Wofoo Social Enterprises vs Bright Cerulean FC • Hong Kong First Division [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel7.flv?wsSecret=bd17db46c1e34c3d39c8480b3f22f21d&wsABSTime=1791150355
+https://live1.quickscoreboardz.com/live/channel7.flv?wsSecret=5d1a78c793ea17c6cbbf8adf6ef1f637&wsABSTime=1791151294
 #EXTINF:-1 tvg-id="sport-7cc40e91ee08" tvg-name="Aguilas-UMak FC vs Tuloy FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh52n3md7o/image/small" group-title="XoilacXTH",[16:45] 04/10 ⚽ Aguilas-UMak FC vs Tuloy FC • Philippines UFL [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.zundrixmediapipeline.com/live/channel20.flv
-#EXTINF:-1 tvg-id="sport-1cb21c5ec0e0" tvg-name="Aguilas-UMak FC vs Tuloy FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh52n3md7o/image/small" group-title="XoilacXTH",[16:45] 04/10 ⚽ Aguilas-UMak FC vs Tuloy FC • Philippines UFL [FLV]
+#EXTINF:-1 tvg-id="sport-d82598ad48b4" tvg-name="Aguilas-UMak FC vs Tuloy FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh52n3md7o/image/small" group-title="XoilacXTH",[16:45] 04/10 ⚽ Aguilas-UMak FC vs Tuloy FC • Philippines UFL [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-20.flv?auth_key=3000001791107155-0-0-ea259134f9c95e7ffe00f4c2df8ac106
+https://live2.domaincdn.cc/livecdn/channel-20.flv?auth_key=3000001791108094-0-0-5e4ed8776357b7718877dda3b9a4189e
+#EXTINF:-1 tvg-id="sport-87750008bc0b" tvg-name="Kolos Kovalivka II vs FK Oleksandria" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jhgz8oqwzv/image/small" group-title="XoilacXTH",[17:00] 04/10 ⚽ Kolos Kovalivka II vs FK Oleksandria • Hạng Nhất Ukraina [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live1.quickscoreboardz.com/live/channel8.flv?wsSecret=9754e92beca661dfb3f1f24fbd9f8c45&wsABSTime=1791151294
 #EXTINF:-1 tvg-id="sport-16ab12d6d398" tvg-name="Miyazaki vs RB Omiya Ardija" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8yomo4h7ep5q0j6/image/small" group-title="XoilacXTH",[17:00] 04/10 ⚽ Miyazaki vs RB Omiya Ardija • J2 League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.zundrixmediapipeline.com/live/channel6.flv
-#EXTINF:-1 tvg-id="sport-6d42e4de41b8" tvg-name="Miyazaki vs RB Omiya Ardija" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8yomo4h7ep5q0j6/image/small" group-title="XoilacXTH",[17:00] 04/10 ⚽ Miyazaki vs RB Omiya Ardija • J2 League [FLV]
+#EXTINF:-1 tvg-id="sport-bea289e2fdde" tvg-name="Miyazaki vs RB Omiya Ardija" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8yomo4h7ep5q0j6/image/small" group-title="XoilacXTH",[17:00] 04/10 ⚽ Miyazaki vs RB Omiya Ardija • J2 League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001791107156-0-0-c6d39a9e8982a47bd3e93de3ecc7d9e6
+https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001791108095-0-0-bd7119a1b5ec97fdcd1d47ef2b4e2622
 #EXTINF:-1 tvg-id="sport-10a8fd89f723" tvg-name="Nữ Granada vs Nữ Eibar" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jh4egxqwzv/image/small" group-title="XoilacXTH",[17:00] 04/10 ⚽ Nữ Granada vs Nữ Eibar • VĐQG Nữ Tây Ban Nha [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.zundrixmediapipeline.com/live/channel23.flv
-#EXTINF:-1 tvg-id="sport-6f92bf8eb0ba" tvg-name="Nữ Granada vs Nữ Eibar" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jh4egxqwzv/image/small" group-title="XoilacXTH",[17:00] 04/10 ⚽ Nữ Granada vs Nữ Eibar • VĐQG Nữ Tây Ban Nha [FLV]
+#EXTINF:-1 tvg-id="sport-48b88b8f5198" tvg-name="Nữ Granada vs Nữ Eibar" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jh4egxqwzv/image/small" group-title="XoilacXTH",[17:00] 04/10 ⚽ Nữ Granada vs Nữ Eibar • VĐQG Nữ Tây Ban Nha [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-23.flv?auth_key=3000001791107155-0-0-ea9f566ce4f97c331d3c0f5d2bf11c1c
-#EXTINF:-1 tvg-id="sport-95deee2d4d48" tvg-name="Sibir Novosibirsk vs Dynamo Bryansk" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdehn004r510/image/small" group-title="XoilacXTH",[17:00] 04/10 ⚽ Sibir Novosibirsk vs Dynamo Bryansk • RUS D3A [FLV]
+https://live2.domaincdn.cc/livecdn/channel-23.flv?auth_key=3000001791108095-0-0-437ad41e8c4b2a359c195ba81b3797af
+#EXTINF:-1 tvg-id="sport-48cd136e0bd8" tvg-name="Sibir Novosibirsk vs Dynamo Bryansk" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdehn004r510/image/small" group-title="XoilacXTH",[17:00] 04/10 ⚽ Sibir Novosibirsk vs Dynamo Bryansk • RUS D3A [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel10.flv?wsSecret=a85618fc94575b712958da0c45345499&wsABSTime=1791150355
+https://live1.quickscoreboardz.com/live/channel10.flv?wsSecret=bd6dffa28a1f2d56d9d50d3b065401e1&wsABSTime=1791151295
 #EXTINF:-1 tvg-id="sport-cf13b5174687" tvg-name="Nữ Kosovo U17 vs Nữ Ireland U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8gh8ev5r6od/image/small" group-title="XoilacXTH",[17:00] 04/10 ⚽ Nữ Kosovo U17 vs Nữ Ireland U17 • UEFA European U17 Womens Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.zundrixmediapipeline.com/live/channel7.flv
-#EXTINF:-1 tvg-id="sport-7f931be76c8c" tvg-name="Nữ Kosovo U17 vs Nữ Ireland U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8gh8ev5r6od/image/small" group-title="XoilacXTH",[17:00] 04/10 ⚽ Nữ Kosovo U17 vs Nữ Ireland U17 • UEFA European U17 Womens Championship [FLV]
+#EXTINF:-1 tvg-id="sport-2d431943fb39" tvg-name="Nữ Kosovo U17 vs Nữ Ireland U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8gh8ev5r6od/image/small" group-title="XoilacXTH",[17:00] 04/10 ⚽ Nữ Kosovo U17 vs Nữ Ireland U17 • UEFA European U17 Womens Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-7.flv?auth_key=3000001791107156-0-0-07e1f48c41f500f8a5479d37c880f9f6
+https://live2.domaincdn.cc/livecdn/channel-7.flv?auth_key=3000001791108095-0-0-5c208895becd9bfdd0a164a5af0ff63b
 #EXTINF:-1 tvg-id="sport-c78f2817b8da" tvg-name="Nữ Azerbaijan U17 vs Nữ Albania U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whkxy0ryox/image/small" group-title="XoilacXTH",[17:00] 04/10 ⚽ Nữ Azerbaijan U17 vs Nữ Albania U17 • UEFA European U17 Womens Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.zundrixmediapipeline.com/live/channel8.flv
-#EXTINF:-1 tvg-id="sport-240459139558" tvg-name="Nữ Azerbaijan U17 vs Nữ Albania U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whkxy0ryox/image/small" group-title="XoilacXTH",[17:00] 04/10 ⚽ Nữ Azerbaijan U17 vs Nữ Albania U17 • UEFA European U17 Womens Championship [FLV]
+#EXTINF:-1 tvg-id="sport-79cef502101b" tvg-name="Nữ Azerbaijan U17 vs Nữ Albania U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whkxy0ryox/image/small" group-title="XoilacXTH",[17:00] 04/10 ⚽ Nữ Azerbaijan U17 vs Nữ Albania U17 • UEFA European U17 Womens Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-8.flv?auth_key=3000001791107156-0-0-2521148e2d554d3afbe307b3c4687a84
+https://live2.domaincdn.cc/livecdn/channel-8.flv?auth_key=3000001791108095-0-0-0288ce4b5f0efb4a4a372b67dc00d78b
+#EXTINF:-1 tvg-id="sport-c8be40fcebca" tvg-name="Akron Togliatti-2 vs Dinamo Barnaul" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y39mp1h1z4gmojx/image/small" group-title="XoilacXTH",[17:00] 04/10 ⚽ Akron Togliatti-2 vs Dinamo Barnaul • RUS D3B [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live1.quickscoreboardz.com/live/channel14.flv?wsSecret=bdcd929cc8d2aaacfb74748532a99169&wsABSTime=1791151295
