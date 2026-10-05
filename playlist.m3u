@@ -1,10 +1,6 @@
 #EXTM3U x-tvg-url=""
-#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 11:15 05/10" group-title="🕒 Cập nhật 11:15 05/10",🕒 Cập nhật 11:15 05/10
+#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 11:31 05/10" group-title="🕒 Cập nhật 11:31 05/10",🕒 Cập nhật 11:31 05/10
 http://127.0.0.1/
-#EXTINF:-1 tvg-id="sport-8367a4fc30e2" tvg-name="Nicaragua vs Dominican Republic" tvg-logo="https://img.gvapi.cc/football/team/b6d69c1c07b1d8d83b953b28563999ae.png" group-title="Gà Vàng 33",🔴 [09:00] 05/10 ⚽ Nicaragua vs Dominican Republic [HLS]
-#EXTGRP:Gà Vàng 33
-#EXTVLCOPT:http-referrer=https://gavang33.me/
-https://video.gvvsb.com/hls/output_v1.m3u8
 #EXTINF:-1 tvg-id="sport-2981acbf026f" tvg-name="Malaysia vs Vietnam" tvg-logo="https://img.gvapi.cc/football/team/9e5b39abe0157cedd650c0d0c5cbd767.png" group-title="Gà Vàng 33",[16:00] 05/10 ⚽ Malaysia vs Vietnam (Gà Siêu Quỷ) • FIFA ASEAN Cup [HLS]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -85,6 +81,16 @@ https://live2.zktsva.app/live/289650.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://gavang33.co/
 https://live2.zktsva.app/live/289650.flv
+#EXTINF:-1 tvg-id="sport-98e766fe48c5" tvg-name="Ukraine U21 vs Albania U21" tvg-logo="https://img.gvapi.cc/football/team/5de6f7a36339ef5bedc3dc8741a1e222.png" group-title="Gà Vàng 33",[20:30] 05/10 ⚽ Ukraine U21 vs Albania U21 (Gà Siêu Tồ) • International Friendly [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+https://live2.zktsva.app/live/796315.m3u8
+#EXTINF:-1 tvg-id="sport-9324e3f06822" tvg-name="Ukraine U21 vs Albania U21" tvg-logo="https://img.gvapi.cc/football/team/5de6f7a36339ef5bedc3dc8741a1e222.png" group-title="Gà Vàng 33",[20:30] 05/10 ⚽ Ukraine U21 vs Albania U21 (Gà Siêu Tồ) • International Friendly [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://gavang33.co/
+https://live2.zktsva.app/live/796315.flv
 #EXTINF:-1 tvg-id="sport-abb23d8885f3" tvg-name="Mauritius vs Sri Lanka" tvg-logo="https://img.gvapi.cc/football/team/2fbdd77210d6beb40c3bd1bd026f63ed.png" group-title="Gà Vàng 33",[22:00] 05/10 ⚽ Mauritius vs Sri Lanka (Gà Siêu Péo) • International Friendly [HLS]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -125,142 +131,6 @@ https://live2.zktsva.app/live/741294.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://gavang33.co/
 https://live2.zktsva.app/live/741294.flv
-#EXTINF:-1 tvg-id="sport-98e766fe48c5" tvg-name="Ukraine U21 vs Albania U21" tvg-logo="https://img.gvapi.cc/football/team/5de6f7a36339ef5bedc3dc8741a1e222.png" group-title="Gà Vàng 33",[20:30] 05/10 🏅 Ukraine U21 vs Albania U21 (Gà Siêu Tồ) • International Friendly [HLS]
-#EXTGRP:Gà Vàng 33
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://gavang33.co/
-https://live2.zktsva.app/live/796315.m3u8
-#EXTINF:-1 tvg-id="sport-9324e3f06822" tvg-name="Ukraine U21 vs Albania U21" tvg-logo="https://img.gvapi.cc/football/team/5de6f7a36339ef5bedc3dc8741a1e222.png" group-title="Gà Vàng 33",[20:30] 05/10 🏅 Ukraine U21 vs Albania U21 (Gà Siêu Tồ) • International Friendly [FLV]
-#EXTGRP:Gà Vàng 33
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://gavang33.co/
-https://live2.zktsva.app/live/796315.flv
-#EXTINF:-1 tvg-id="sport-12805c6243b0" tvg-name="Nicaragua vs Cộng hòa Dominican" tvg-logo="https://img.gvapi.cc/football/team/b6d69c1c07b1d8d83b953b28563999ae.png!w80" group-title="CoLaTV",🔴 [09:00] 05/10 ⚽ Nicaragua vs Cộng hòa Dominican (REVIVE) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://colatv77.live/
-https://live05.meung.app/live/33982309_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-d6782fefac70" tvg-name="Nicaragua vs Cộng hòa Dominican" tvg-logo="https://img.gvapi.cc/football/team/b6d69c1c07b1d8d83b953b28563999ae.png!w80" group-title="CoLaTV",🔴 [09:00] 05/10 ⚽ Nicaragua vs Cộng hòa Dominican (REVIVE) • Liên minh bóng đá quốc gia châu Mỹ [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://colatv77.live/
-https://live05.miekgo.app/live/33982309_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-f0caa8b8b3e5" tvg-name="Nicaragua vs Cộng hòa Dominican" tvg-logo="https://img.gvapi.cc/football/team/b6d69c1c07b1d8d83b953b28563999ae.png!w80" group-title="CoLaTV",🔴 [09:00] 05/10 ⚽ Nicaragua vs Cộng hòa Dominican (REVIVE) • Liên minh bóng đá quốc gia châu Mỹ [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://colatv77.live/
-https://live05.meung.app/live/33982309_tsc.flv
-#EXTINF:-1 tvg-id="sport-c8e60b756c97" tvg-name="Nicaragua vs Cộng hòa Dominican" tvg-logo="https://img.gvapi.cc/football/team/b6d69c1c07b1d8d83b953b28563999ae.png!w80" group-title="CoLaTV",🔴 [09:00] 05/10 ⚽ Nicaragua vs Cộng hòa Dominican • Liên minh bóng đá quốc gia châu Mỹ [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://colatv77.live/
-https://live.dyrur1.com/live/73220764_c0d8639485c8365577e7eac91d847b64_autoChange.m3u8?auth_key=1791186433-0-0-983b2b3e0faf31c98e6dbcdcd829d053
-#EXTINF:-1 tvg-id="sport-a7a77ad74075" tvg-name="Mobis Phoebus vs KCC Egis" tvg-logo="https://img.gvapi.cc/basketball/team/8e93da8386dc5b378446762993400ca7.png!w80" group-title="CoLaTV",[12:00] 05/10 🏀 Mobis Phoebus vs KCC Egis (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/82054853_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-65cc4879e6e6" tvg-name="Mobis Phoebus vs KCC Egis" tvg-logo="https://img.gvapi.cc/basketball/team/8e93da8386dc5b378446762993400ca7.png!w80" group-title="CoLaTV",[12:00] 05/10 🏀 Mobis Phoebus vs KCC Egis (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/82054853_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-5891883cd0f3" tvg-name="Mobis Phoebus vs KCC Egis" tvg-logo="https://img.gvapi.cc/basketball/team/8e93da8386dc5b378446762993400ca7.png!w80" group-title="CoLaTV",[12:00] 05/10 🏀 Mobis Phoebus vs KCC Egis (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/82054853_tsc.flv
-#EXTINF:-1 tvg-id="sport-1d944e512ef6" tvg-name="Mobis Phoebus vs KCC Egis" tvg-logo="https://img.gvapi.cc/basketball/team/8e93da8386dc5b378446762993400ca7.png!w80" group-title="CoLaTV",[12:00] 05/10 🏀 Mobis Phoebus vs KCC Egis • Giải bóng rổ nam Hàn Quốc
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https
-#EXTINF:-1 tvg-id="sport-5f5613915d09" tvg-name="Incheon vs Anyang KGC" tvg-logo="https://img.gvapi.cc/basketball/team/64656d413393bbf84730b123a43cb876.png!w80" group-title="CoLaTV",[14:30] 05/10 🏀 Incheon vs Anyang KGC (BLV 247) • Giải bóng rổ nam Hàn Quốc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/90865415_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-9e2ecb0a1238" tvg-name="Incheon vs Anyang KGC" tvg-logo="https://img.gvapi.cc/basketball/team/64656d413393bbf84730b123a43cb876.png!w80" group-title="CoLaTV",[14:30] 05/10 🏀 Incheon vs Anyang KGC (BLV 247) • Giải bóng rổ nam Hàn Quốc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/90865415_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-0d60d28f4dda" tvg-name="Incheon vs Anyang KGC" tvg-logo="https://img.gvapi.cc/basketball/team/64656d413393bbf84730b123a43cb876.png!w80" group-title="CoLaTV",[14:30] 05/10 🏀 Incheon vs Anyang KGC (BLV 247) • Giải bóng rổ nam Hàn Quốc [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/90865415_tsc.flv
-#EXTINF:-1 tvg-id="sport-d4e92c121123" tvg-name="Detroit Pistons vs Phoenix suns" tvg-logo="https://img.gvapi.cc/basketball/team/3f82122a48e98eaccc5e71307eba801a.png!w80" group-title="CoLaTV",[06:00] 06/10 🏀 Detroit Pistons vs Phoenix suns (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/82054853_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-203e6c38cf21" tvg-name="Detroit Pistons vs Phoenix suns" tvg-logo="https://img.gvapi.cc/basketball/team/3f82122a48e98eaccc5e71307eba801a.png!w80" group-title="CoLaTV",[06:00] 06/10 🏀 Detroit Pistons vs Phoenix suns (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/82054853_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-69e334484f10" tvg-name="Detroit Pistons vs Phoenix suns" tvg-logo="https://img.gvapi.cc/basketball/team/3f82122a48e98eaccc5e71307eba801a.png!w80" group-title="CoLaTV",[06:00] 06/10 🏀 Detroit Pistons vs Phoenix suns (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/82054853_tsc.flv
-#EXTINF:-1 tvg-id="sport-392d3c32b55b" tvg-name="Philadelphia 76ers vs New York Knicks" tvg-logo="https://img.gvapi.cc/basketball/team/06e7bde6cca98873fe971fad4e67a9b6.png!w80" group-title="CoLaTV",[06:00] 06/10 🏀 Philadelphia 76ers vs New York Knicks (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/87379114_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-435fed854802" tvg-name="Philadelphia 76ers vs New York Knicks" tvg-logo="https://img.gvapi.cc/basketball/team/06e7bde6cca98873fe971fad4e67a9b6.png!w80" group-title="CoLaTV",[06:00] 06/10 🏀 Philadelphia 76ers vs New York Knicks (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/87379114_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-93ef7f246b3e" tvg-name="Philadelphia 76ers vs New York Knicks" tvg-logo="https://img.gvapi.cc/basketball/team/06e7bde6cca98873fe971fad4e67a9b6.png!w80" group-title="CoLaTV",[06:00] 06/10 🏀 Philadelphia 76ers vs New York Knicks (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/87379114_tsc.flv
-#EXTINF:-1 tvg-id="sport-f0e62c8fc94c" tvg-name="Milwaukee Bucks vs Minnesota Timberwolves" tvg-logo="https://img.gvapi.cc/basketball/team/172138a954c51bb257ac1ebaa52f01a1.png!w80" group-title="CoLaTV",[07:00] 06/10 🏀 Milwaukee Bucks vs Minnesota Timberwolves (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/19919577_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-43a067c6f226" tvg-name="Milwaukee Bucks vs Minnesota Timberwolves" tvg-logo="https://img.gvapi.cc/basketball/team/172138a954c51bb257ac1ebaa52f01a1.png!w80" group-title="CoLaTV",[07:00] 06/10 🏀 Milwaukee Bucks vs Minnesota Timberwolves (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/19919577_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-77234f7c4e9f" tvg-name="Milwaukee Bucks vs Minnesota Timberwolves" tvg-logo="https://img.gvapi.cc/basketball/team/172138a954c51bb257ac1ebaa52f01a1.png!w80" group-title="CoLaTV",[07:00] 06/10 🏀 Milwaukee Bucks vs Minnesota Timberwolves (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/19919577_tsc.flv
-#EXTINF:-1 tvg-id="sport-47f800e8185e" tvg-name="Sacramento Kings vs Los Angeles Lakers" tvg-logo="https://img.gvapi.cc/basketball/team/1fc010aba7ac510b5364e5f76ca4f060.png!w80" group-title="CoLaTV",[09:00] 06/10 🏀 Sacramento Kings vs Los Angeles Lakers (BLV 247) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/90865415_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-e7864cc7e800" tvg-name="Sacramento Kings vs Los Angeles Lakers" tvg-logo="https://img.gvapi.cc/basketball/team/1fc010aba7ac510b5364e5f76ca4f060.png!w80" group-title="CoLaTV",[09:00] 06/10 🏀 Sacramento Kings vs Los Angeles Lakers (BLV 247) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/90865415_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-a5fab0b6e645" tvg-name="Sacramento Kings vs Los Angeles Lakers" tvg-logo="https://img.gvapi.cc/basketball/team/1fc010aba7ac510b5364e5f76ca4f060.png!w80" group-title="CoLaTV",[09:00] 06/10 🏀 Sacramento Kings vs Los Angeles Lakers (BLV 247) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/90865415_tsc.flv
-#EXTINF:-1 tvg-id="sport-ab21d035474c" tvg-name="Busan KTF Sonicboom vs LG Sakers" tvg-logo="https://img.gvapi.cc/basketball/team/624b1a84ff50919f44835640108bdd42.png!w80" group-title="CoLaTV",[17:00] 06/10 🏀 Busan KTF Sonicboom vs LG Sakers (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/82054853_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-e06a6bb86e02" tvg-name="Busan KTF Sonicboom vs LG Sakers" tvg-logo="https://img.gvapi.cc/basketball/team/624b1a84ff50919f44835640108bdd42.png!w80" group-title="CoLaTV",[17:00] 06/10 🏀 Busan KTF Sonicboom vs LG Sakers (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/82054853_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-968eba399873" tvg-name="Busan KTF Sonicboom vs LG Sakers" tvg-logo="https://img.gvapi.cc/basketball/team/624b1a84ff50919f44835640108bdd42.png!w80" group-title="CoLaTV",[17:00] 06/10 🏀 Busan KTF Sonicboom vs LG Sakers (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/82054853_tsc.flv
 #EXTINF:-1 tvg-id="sport-27668e6ab049" tvg-name="Ecuador vs Panama" tvg-logo="https://img.gvapi.cc/football/team/4bcd83a98bc4ee323ec93c0f0e704d04.png!w80" group-title="CoLaTV",[13:30] 05/10 ⚽ Ecuador vs Panama (BLV MOUNTAIN DEW) • Cốc kỳ lân [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1041,6 +911,116 @@ https://live05.miekgo.app/live/99121525_tsc.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.meung.app/live/99121525_tsc.flv
+#EXTINF:-1 tvg-id="sport-a7a77ad74075" tvg-name="Mobis Phoebus vs KCC Egis" tvg-logo="https://img.gvapi.cc/basketball/team/8e93da8386dc5b378446762993400ca7.png!w80" group-title="CoLaTV",[12:00] 05/10 🏀 Mobis Phoebus vs KCC Egis (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/82054853_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-65cc4879e6e6" tvg-name="Mobis Phoebus vs KCC Egis" tvg-logo="https://img.gvapi.cc/basketball/team/8e93da8386dc5b378446762993400ca7.png!w80" group-title="CoLaTV",[12:00] 05/10 🏀 Mobis Phoebus vs KCC Egis (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/82054853_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-5891883cd0f3" tvg-name="Mobis Phoebus vs KCC Egis" tvg-logo="https://img.gvapi.cc/basketball/team/8e93da8386dc5b378446762993400ca7.png!w80" group-title="CoLaTV",[12:00] 05/10 🏀 Mobis Phoebus vs KCC Egis (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/82054853_tsc.flv
+#EXTINF:-1 tvg-id="sport-1d944e512ef6" tvg-name="Mobis Phoebus vs KCC Egis" tvg-logo="https://img.gvapi.cc/basketball/team/8e93da8386dc5b378446762993400ca7.png!w80" group-title="CoLaTV",[12:00] 05/10 🏀 Mobis Phoebus vs KCC Egis • Giải bóng rổ nam Hàn Quốc
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https
+#EXTINF:-1 tvg-id="sport-5f5613915d09" tvg-name="Incheon vs Anyang KGC" tvg-logo="https://img.gvapi.cc/basketball/team/64656d413393bbf84730b123a43cb876.png!w80" group-title="CoLaTV",[14:30] 05/10 🏀 Incheon vs Anyang KGC (BLV 247) • Giải bóng rổ nam Hàn Quốc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/90865415_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-9e2ecb0a1238" tvg-name="Incheon vs Anyang KGC" tvg-logo="https://img.gvapi.cc/basketball/team/64656d413393bbf84730b123a43cb876.png!w80" group-title="CoLaTV",[14:30] 05/10 🏀 Incheon vs Anyang KGC (BLV 247) • Giải bóng rổ nam Hàn Quốc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/90865415_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-0d60d28f4dda" tvg-name="Incheon vs Anyang KGC" tvg-logo="https://img.gvapi.cc/basketball/team/64656d413393bbf84730b123a43cb876.png!w80" group-title="CoLaTV",[14:30] 05/10 🏀 Incheon vs Anyang KGC (BLV 247) • Giải bóng rổ nam Hàn Quốc [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/90865415_tsc.flv
+#EXTINF:-1 tvg-id="sport-d4e92c121123" tvg-name="Detroit Pistons vs Phoenix suns" tvg-logo="https://img.gvapi.cc/basketball/team/3f82122a48e98eaccc5e71307eba801a.png!w80" group-title="CoLaTV",[06:00] 06/10 🏀 Detroit Pistons vs Phoenix suns (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/82054853_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-203e6c38cf21" tvg-name="Detroit Pistons vs Phoenix suns" tvg-logo="https://img.gvapi.cc/basketball/team/3f82122a48e98eaccc5e71307eba801a.png!w80" group-title="CoLaTV",[06:00] 06/10 🏀 Detroit Pistons vs Phoenix suns (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/82054853_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-69e334484f10" tvg-name="Detroit Pistons vs Phoenix suns" tvg-logo="https://img.gvapi.cc/basketball/team/3f82122a48e98eaccc5e71307eba801a.png!w80" group-title="CoLaTV",[06:00] 06/10 🏀 Detroit Pistons vs Phoenix suns (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/82054853_tsc.flv
+#EXTINF:-1 tvg-id="sport-392d3c32b55b" tvg-name="Philadelphia 76ers vs New York Knicks" tvg-logo="https://img.gvapi.cc/basketball/team/06e7bde6cca98873fe971fad4e67a9b6.png!w80" group-title="CoLaTV",[06:00] 06/10 🏀 Philadelphia 76ers vs New York Knicks (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/87379114_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-435fed854802" tvg-name="Philadelphia 76ers vs New York Knicks" tvg-logo="https://img.gvapi.cc/basketball/team/06e7bde6cca98873fe971fad4e67a9b6.png!w80" group-title="CoLaTV",[06:00] 06/10 🏀 Philadelphia 76ers vs New York Knicks (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/87379114_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-93ef7f246b3e" tvg-name="Philadelphia 76ers vs New York Knicks" tvg-logo="https://img.gvapi.cc/basketball/team/06e7bde6cca98873fe971fad4e67a9b6.png!w80" group-title="CoLaTV",[06:00] 06/10 🏀 Philadelphia 76ers vs New York Knicks (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/87379114_tsc.flv
+#EXTINF:-1 tvg-id="sport-f0e62c8fc94c" tvg-name="Milwaukee Bucks vs Minnesota Timberwolves" tvg-logo="https://img.gvapi.cc/basketball/team/172138a954c51bb257ac1ebaa52f01a1.png!w80" group-title="CoLaTV",[07:00] 06/10 🏀 Milwaukee Bucks vs Minnesota Timberwolves (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/19919577_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-43a067c6f226" tvg-name="Milwaukee Bucks vs Minnesota Timberwolves" tvg-logo="https://img.gvapi.cc/basketball/team/172138a954c51bb257ac1ebaa52f01a1.png!w80" group-title="CoLaTV",[07:00] 06/10 🏀 Milwaukee Bucks vs Minnesota Timberwolves (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/19919577_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-77234f7c4e9f" tvg-name="Milwaukee Bucks vs Minnesota Timberwolves" tvg-logo="https://img.gvapi.cc/basketball/team/172138a954c51bb257ac1ebaa52f01a1.png!w80" group-title="CoLaTV",[07:00] 06/10 🏀 Milwaukee Bucks vs Minnesota Timberwolves (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/19919577_tsc.flv
+#EXTINF:-1 tvg-id="sport-47f800e8185e" tvg-name="Sacramento Kings vs Los Angeles Lakers" tvg-logo="https://img.gvapi.cc/basketball/team/1fc010aba7ac510b5364e5f76ca4f060.png!w80" group-title="CoLaTV",[09:00] 06/10 🏀 Sacramento Kings vs Los Angeles Lakers (BLV 247) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/90865415_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-e7864cc7e800" tvg-name="Sacramento Kings vs Los Angeles Lakers" tvg-logo="https://img.gvapi.cc/basketball/team/1fc010aba7ac510b5364e5f76ca4f060.png!w80" group-title="CoLaTV",[09:00] 06/10 🏀 Sacramento Kings vs Los Angeles Lakers (BLV 247) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/90865415_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-a5fab0b6e645" tvg-name="Sacramento Kings vs Los Angeles Lakers" tvg-logo="https://img.gvapi.cc/basketball/team/1fc010aba7ac510b5364e5f76ca4f060.png!w80" group-title="CoLaTV",[09:00] 06/10 🏀 Sacramento Kings vs Los Angeles Lakers (BLV 247) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/90865415_tsc.flv
+#EXTINF:-1 tvg-id="sport-ab21d035474c" tvg-name="Busan KTF Sonicboom vs LG Sakers" tvg-logo="https://img.gvapi.cc/basketball/team/624b1a84ff50919f44835640108bdd42.png!w80" group-title="CoLaTV",[17:00] 06/10 🏀 Busan KTF Sonicboom vs LG Sakers (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/82054853_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-e06a6bb86e02" tvg-name="Busan KTF Sonicboom vs LG Sakers" tvg-logo="https://img.gvapi.cc/basketball/team/624b1a84ff50919f44835640108bdd42.png!w80" group-title="CoLaTV",[17:00] 06/10 🏀 Busan KTF Sonicboom vs LG Sakers (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/82054853_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-968eba399873" tvg-name="Busan KTF Sonicboom vs LG Sakers" tvg-logo="https://img.gvapi.cc/basketball/team/624b1a84ff50919f44835640108bdd42.png!w80" group-title="CoLaTV",[17:00] 06/10 🏀 Busan KTF Sonicboom vs LG Sakers (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/82054853_tsc.flv
 #EXTINF:-1 tvg-id="sport-d1a715321f6c" tvg-name="Malaysia vs Việt Nam" tvg-logo="https://media.chuoichientv.net/media/20250902_193521_ec2f00c2.png" group-title="Chuối Chiên",[16:00] 05/10 ⚽ Malaysia vs Việt Nam (Chuối Ngao) • FIFA Asean Cup [HLS]
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
@@ -1149,41 +1129,16 @@ https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
 https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8
+#EXTINF:-1 tvg-id="sport-528618fe90b1" tvg-name="Ulsan Hyundai Mobis Phoebus vs Jeonju KCC Egis" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/e22caa597076764dd0d04b55d46f764e.png" group-title="Giờ Vàng",🔴 [12:00] 05/10 🏀 Ulsan Hyundai Mobis Phoebus vs Jeonju KCC Egis (Cầy) • Korea Basketball League [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://ftlh5sc02iliv.vcdn.cloud/1791051035_hd/1791051035_hd@720p.m3u8
 #EXTINF:-1 tvg-id="sport-4b8aa4837aee" tvg-name="Groth J vs Harimoto T" tvg-logo="https://static.flashscore.com/res/image/data/SbVyJfil-YHmIcfL6.png" group-title="Giờ Vàng",🔴 [10:00] 05/10 🏓 Groth J vs Harimoto T (Dory) • China Smash 2026 [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1791156735_hd/1791156735_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-528618fe90b1" tvg-name="Ulsan Hyundai Mobis Phoebus vs Jeonju KCC Egis" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/e22caa597076764dd0d04b55d46f764e.png" group-title="Giờ Vàng",[12:00] 05/10 🏀 Ulsan Hyundai Mobis Phoebus vs Jeonju KCC Egis (Cầy) • Korea Basketball League [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://ftlh5sc02iliv.vcdn.cloud/1791051035_hd/1791051035_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-41ddbc7a3d85" tvg-name="Daegu KoGas Pegasus vs Anyang Jung Kwan Jang Red Boosters" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/a322b3f45e8fc272b36c48003e467f20.png" group-title="Giờ Vàng",[14:30] 05/10 🏀 Daegu KoGas Pegasus vs Anyang Jung Kwan Jang Red Boosters (Chồn) • Korea Basketball League [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://ftlh5sc02iliv.vcdn.cloud/1791051097_hd/1791051097_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-86f14c97098b" tvg-name="Atlanta Hawks vs Memphis Grizzlies" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/57bd383cc8c9b3d4f92a5d1c371e38e9.png" group-title="Giờ Vàng",[06:00] 06/10 🏀 Atlanta Hawks vs Memphis Grizzlies (Tôm) • National Basketball Association [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://ftlh5sc02iliv.vcdn.cloud/1791131318_hd/1791131318_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-a2737d3fe7d2" tvg-name="Detroit Pistons vs Phoenix Suns" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/c4677b9a5c8823ad3070069d8741a809.png" group-title="Giờ Vàng",[06:00] 06/10 🏀 Detroit Pistons vs Phoenix Suns (Cận) • National Basketball Association [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://ftlh5sc02iliv.vcdn.cloud/1791131356_hd/1791131356_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-32f58a6fb0ac" tvg-name="Philadelphia 76ers vs New York Knicks" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/7f086c864d1e283b7862a756f0b88373.png" group-title="Giờ Vàng",[06:00] 06/10 🏀 Philadelphia 76ers vs New York Knicks (Cầy) • National Basketball Association [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://ftlh5sc02iliv.vcdn.cloud/1791131378_hd/1791131378_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-64e502b9b3a4" tvg-name="Suwon KT vs LG Sakers" tvg-logo="https://static.flashscore.com/res/image/data/t4IslGYg-vDolgDz8.png" group-title="Giờ Vàng",[17:00] 06/10 🏀 Suwon KT vs LG Sakers (Chồn) • South Korean KBL Cup [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://pzhgifbkllliv.vcdn.cloud/1791132522_hd/1791132522_hd@720p.m3u8
 #EXTINF:-1 tvg-id="sport-e9e1e0be0be0" tvg-name="Malaysia vs Việt Nam" tvg-logo="https://images.keovip88.net/images/teams/malaysia.png" group-title="Giờ Vàng",[16:00] 05/10 ⚽ Malaysia vs Việt Nam (Đầu Cầu Việt Nam Vô Địch) • FIFA ASEAN Cup [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1309,6 +1264,31 @@ https://pzhgifbkllliv.vcdn.cloud/1791132458_hd/1791132458_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1791130829_hd/1791130829_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-41ddbc7a3d85" tvg-name="Daegu KoGas Pegasus vs Anyang Jung Kwan Jang Red Boosters" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/a322b3f45e8fc272b36c48003e467f20.png" group-title="Giờ Vàng",[14:30] 05/10 🏀 Daegu KoGas Pegasus vs Anyang Jung Kwan Jang Red Boosters (Chồn) • Korea Basketball League [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://ftlh5sc02iliv.vcdn.cloud/1791051097_hd/1791051097_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-86f14c97098b" tvg-name="Atlanta Hawks vs Memphis Grizzlies" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/57bd383cc8c9b3d4f92a5d1c371e38e9.png" group-title="Giờ Vàng",[06:00] 06/10 🏀 Atlanta Hawks vs Memphis Grizzlies (Tôm) • National Basketball Association [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://ftlh5sc02iliv.vcdn.cloud/1791131318_hd/1791131318_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-a2737d3fe7d2" tvg-name="Detroit Pistons vs Phoenix Suns" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/c4677b9a5c8823ad3070069d8741a809.png" group-title="Giờ Vàng",[06:00] 06/10 🏀 Detroit Pistons vs Phoenix Suns (Cận) • National Basketball Association [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://ftlh5sc02iliv.vcdn.cloud/1791131356_hd/1791131356_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-32f58a6fb0ac" tvg-name="Philadelphia 76ers vs New York Knicks" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/7f086c864d1e283b7862a756f0b88373.png" group-title="Giờ Vàng",[06:00] 06/10 🏀 Philadelphia 76ers vs New York Knicks (Cầy) • National Basketball Association [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://ftlh5sc02iliv.vcdn.cloud/1791131378_hd/1791131378_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-64e502b9b3a4" tvg-name="Suwon KT vs LG Sakers" tvg-logo="https://static.flashscore.com/res/image/data/t4IslGYg-vDolgDz8.png" group-title="Giờ Vàng",[17:00] 06/10 🏀 Suwon KT vs LG Sakers (Chồn) • South Korean KBL Cup [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://pzhgifbkllliv.vcdn.cloud/1791132522_hd/1791132522_hd@720p.m3u8
 #EXTINF:-1 tvg-id="sport-215d998f728e" tvg-name="Vakifbank vs Eczacibasi" tvg-logo="https://static.flashscore.com/res/image/data/YRICRqzB-A3UKTsyj.png" group-title="Giờ Vàng",[23:00] 06/10 🏐 Vakifbank vs Eczacibasi (Sún) • Super Cup Nữ - Chung kết [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1354,168 +1334,168 @@ https://lilive1.eu.cc/live/17ee54fb54d9313ef01c59720353ecd9/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.zundrixmediapipeline.com/live/channel7.flv
-#EXTINF:-1 tvg-id="sport-22dd29810ba8" tvg-name="FC Ulaanbaatar vs Ulaangom City" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jhe68lqwzv/image/small" group-title="XoilacXTH",[12:00] 05/10 ⚽ FC Ulaanbaatar vs Ulaangom City • Ngoại Hạng Mông Cổ [FLV]
+#EXTINF:-1 tvg-id="sport-ba89bd8a67e8" tvg-name="FC Ulaanbaatar vs Ulaangom City" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jhe68lqwzv/image/small" group-title="XoilacXTH",[12:00] 05/10 ⚽ FC Ulaanbaatar vs Ulaangom City • Ngoại Hạng Mông Cổ [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-7.flv?auth_key=3000001791173756-0-0-032010dc3cca575c885b36f2101b2451
-#EXTINF:-1 tvg-id="sport-542e230337d8" tvg-name="South United vs MEG" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh5998md7o/image/small" group-title="XoilacXTH",[12:30] 05/10 ⚽ South United vs MEG • Indian Bangalore Super Division [FLV]
+https://live2.domaincdn.cc/livecdn/channel-7.flv?auth_key=3000001791174683-0-0-4f4f7c1c245301f9f969e11ec60d1e63
+#EXTINF:-1 tvg-id="sport-497ac6c95d9e" tvg-name="South United vs MEG" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh5998md7o/image/small" group-title="XoilacXTH",[12:30] 05/10 ⚽ South United vs MEG • Indian Bangalore Super Division [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel20.flv?wsSecret=28cafab3be04e9dfb3b1666f1b47a657&wsABSTime=1791216956
+https://live1.quickscoreboardz.com/live/channel20.flv?wsSecret=90f14a1540a2f3603985eba7851d9571&wsABSTime=1791217883
 #EXTINF:-1 tvg-id="sport-b732e7a4e96a" tvg-name="Ecuador vs Panama" tvg-logo="https://imgts.sportpulseapiz.com/football/team/p3glrw7h2z5qdyj/image/small" group-title="XoilacXTH",[13:30] 05/10 ⚽ Ecuador vs Panama • Japanese Kirin Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.zundrixmediapipeline.com/live/channel14.flv
-#EXTINF:-1 tvg-id="sport-91e633acb16d" tvg-name="Ecuador vs Panama" tvg-logo="https://imgts.sportpulseapiz.com/football/team/p3glrw7h2z5qdyj/image/small" group-title="XoilacXTH",[13:30] 05/10 ⚽ Ecuador vs Panama • Japanese Kirin Cup [FLV]
+#EXTINF:-1 tvg-id="sport-8f3e06036897" tvg-name="Ecuador vs Panama" tvg-logo="https://imgts.sportpulseapiz.com/football/team/p3glrw7h2z5qdyj/image/small" group-title="XoilacXTH",[13:30] 05/10 ⚽ Ecuador vs Panama • Japanese Kirin Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-14.flv?auth_key=3000001791173756-0-0-100adf1eae7e54f7709ce6c1818aae59
-#EXTINF:-1 tvg-id="sport-3d66e5b30770" tvg-name="Wuhan Towns U21 vs Shanghai Port U20" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhz5pkryk0/image/small" group-title="XoilacXTH",[14:30] 05/10 ⚽ Wuhan Towns U21 vs Shanghai Port U20 • Trung Quốc U-21 League [FLV]
+https://live2.domaincdn.cc/livecdn/channel-14.flv?auth_key=3000001791174683-0-0-da569ff38c0f6c91535c032d091c53d5
+#EXTINF:-1 tvg-id="sport-08132a9e3cfd" tvg-name="Wuhan Towns U21 vs Shanghai Port U20" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhz5pkryk0/image/small" group-title="XoilacXTH",[14:30] 05/10 ⚽ Wuhan Towns U21 vs Shanghai Port U20 • Trung Quốc U-21 League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel8.flv?wsSecret=035e457e34cb88fcfda7a3385eff2d8c&wsABSTime=1791216956
+https://live1.quickscoreboardz.com/live/channel8.flv?wsSecret=14724840aa19502dc1fae5ad8947ede4&wsABSTime=1791217883
 #EXTINF:-1 tvg-id="sport-f7179c865987" tvg-name="Hunters FC vs Amtat FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhj55oryk0/image/small" group-title="XoilacXTH",[15:00] 05/10 ⚽ Hunters FC vs Amtat FC • Ngoại Hạng Mông Cổ [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.zundrixmediapipeline.com/live/channel13.flv
-#EXTINF:-1 tvg-id="sport-d502f7f393c8" tvg-name="Hunters FC vs Amtat FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhj55oryk0/image/small" group-title="XoilacXTH",[15:00] 05/10 ⚽ Hunters FC vs Amtat FC • Ngoại Hạng Mông Cổ [FLV]
+#EXTINF:-1 tvg-id="sport-4a6ea8d406f1" tvg-name="Hunters FC vs Amtat FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhj55oryk0/image/small" group-title="XoilacXTH",[15:00] 05/10 ⚽ Hunters FC vs Amtat FC • Ngoại Hạng Mông Cổ [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-13.flv?auth_key=3000001791173756-0-0-45111894b3f049a5bf784ea8400e3cbd
-#EXTINF:-1 tvg-id="sport-d0fcc11406dd" tvg-name="Nữ Lebanon U17 vs Nữ Macao U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohn436q1zp/image/small" group-title="XoilacXTH",[15:00] 05/10 ⚽ Nữ Lebanon U17 vs Nữ Macao U17 • CAFA U17 Womens Championship [FLV]
+https://live2.domaincdn.cc/livecdn/channel-13.flv?auth_key=3000001791174683-0-0-b841625832e8cc627e0b89dc96290c58
+#EXTINF:-1 tvg-id="sport-ecfbe35ff722" tvg-name="Nữ Lebanon U17 vs Nữ Macao U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohn436q1zp/image/small" group-title="XoilacXTH",[15:00] 05/10 ⚽ Nữ Lebanon U17 vs Nữ Macao U17 • CAFA U17 Womens Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel20.flv?wsSecret=28cafab3be04e9dfb3b1666f1b47a657&wsABSTime=1791216956
-#EXTINF:-1 tvg-id="sport-5150c7281d5a" tvg-name="Nữ Kyrgyzstan U17 vs Nữ Bắc Mariana U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyhn57dr1ge/image/small" group-title="XoilacXTH",[15:00] 05/10 ⚽ Nữ Kyrgyzstan U17 vs Nữ Bắc Mariana U17 • CAFA U17 Womens Championship [FLV]
+https://live1.quickscoreboardz.com/live/channel20.flv?wsSecret=90f14a1540a2f3603985eba7851d9571&wsABSTime=1791217883
+#EXTINF:-1 tvg-id="sport-c2d67aaf6191" tvg-name="Nữ Kyrgyzstan U17 vs Nữ Bắc Mariana U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyhn57dr1ge/image/small" group-title="XoilacXTH",[15:00] 05/10 ⚽ Nữ Kyrgyzstan U17 vs Nữ Bắc Mariana U17 • CAFA U17 Womens Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel21.flv?wsSecret=5607d03854e79c1853f180b264348535&wsABSTime=1791216956
-#EXTINF:-1 tvg-id="sport-4675b3a06321" tvg-name="Nữ Ấn Độ U17 vs Nữ Iraqi U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whgzn7ryox/image/small" group-title="XoilacXTH",[15:00] 05/10 ⚽ Nữ Ấn Độ U17 vs Nữ Iraqi U17 • CAFA U17 Womens Championship [FLV]
+https://live1.quickscoreboardz.com/live/channel21.flv?wsSecret=65f1a4df3fd2cbe98085999af24b0888&wsABSTime=1791217883
+#EXTINF:-1 tvg-id="sport-bd7b5f1936dd" tvg-name="Nữ Ấn Độ U17 vs Nữ Iraqi U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whgzn7ryox/image/small" group-title="XoilacXTH",[15:00] 05/10 ⚽ Nữ Ấn Độ U17 vs Nữ Iraqi U17 • CAFA U17 Womens Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel22.flv?wsSecret=79ab3b92545d03486e20d20c7c24c1d3&wsABSTime=1791216956
-#EXTINF:-1 tvg-id="sport-09064b1bc084" tvg-name="FC United Stars vs Bengaluru Roots FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phpzl8m2wd/image/small" group-title="XoilacXTH",[15:00] 05/10 ⚽ FC United Stars vs Bengaluru Roots FC • Indian Bangalore Super Division [FLV]
+https://live1.quickscoreboardz.com/live/channel22.flv?wsSecret=35fb07e1dd6e4dce35ff0bca311bceb1&wsABSTime=1791217883
+#EXTINF:-1 tvg-id="sport-2c0db892bd27" tvg-name="FC United Stars vs Bengaluru Roots FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phpzl8m2wd/image/small" group-title="XoilacXTH",[15:00] 05/10 ⚽ FC United Stars vs Bengaluru Roots FC • Indian Bangalore Super Division [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel23.flv?wsSecret=f7ce888af21b4285c484943fa7d7bbd6&wsABSTime=1791216956
-#EXTINF:-1 tvg-id="sport-28c6acf76601" tvg-name="Hungary U18 vs Italy U18" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hygnrz84/image/small" group-title="XoilacXTH",[15:30] 05/10 ⚽ Hungary U18 vs Italy U18 • Giao Hữu Quốc Tế [FLV]
+https://live1.quickscoreboardz.com/live/channel23.flv?wsSecret=f284e22bcf84a17c39d037f25eeda584&wsABSTime=1791217883
+#EXTINF:-1 tvg-id="sport-e2949d6d91a9" tvg-name="Hungary U18 vs Italy U18" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hygnrz84/image/small" group-title="XoilacXTH",[15:30] 05/10 ⚽ Hungary U18 vs Italy U18 • Giao Hữu Quốc Tế [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=ade89e53fe6376e8b8f9e0a5c452b78a&wsABSTime=1791216956
+https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=579f8cb2569c4667c9738267ed445170&wsABSTime=1791217883
 #EXTINF:-1 tvg-id="sport-6809dd4baf0c" tvg-name="Malaysia vs Việt Nam" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h298mojx/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Malaysia vs Việt Nam • FIFA ASEAN Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.zundrixmediapipeline.com/live/channel1.flv
-#EXTINF:-1 tvg-id="sport-abbbf8815bab" tvg-name="Malaysia vs Việt Nam" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h298mojx/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Malaysia vs Việt Nam • FIFA ASEAN Cup [FLV]
+#EXTINF:-1 tvg-id="sport-9a6cff471c79" tvg-name="Malaysia vs Việt Nam" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h298mojx/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Malaysia vs Việt Nam • FIFA ASEAN Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001791173756-0-0-ee56c3cb98fe809ba262814de397997d
-#EXTINF:-1 tvg-id="sport-c1382409fd44" tvg-name="Malaysia vs Việt Nam" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h298mojx/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Malaysia vs Việt Nam • FIFA ASEAN Cup [FLV]
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001791174683-0-0-5a5c2b0b504d46664dc91f183cf6866b
+#EXTINF:-1 tvg-id="sport-26ba187285ec" tvg-name="Malaysia vs Việt Nam" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h298mojx/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Malaysia vs Việt Nam • FIFA ASEAN Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel15.flv?wsSecret=06cef984eca915ceadda746b9b1e9ee0&wsABSTime=1791216956
+https://live1.quickscoreboardz.com/live/channel15.flv?wsSecret=a75ca6206675df63488512f82f7c08a4&wsABSTime=1791217883
 #EXTINF:-1 tvg-id="sport-4e8dfcd9db6d" tvg-name="Malaysia vs Việt Nam" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h298mojx/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Malaysia vs Việt Nam • FIFA ASEAN Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.zundrixmediapipeline.com/live/channel11.flv
-#EXTINF:-1 tvg-id="sport-49b4a05857bc" tvg-name="Malaysia vs Việt Nam" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h298mojx/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Malaysia vs Việt Nam • FIFA ASEAN Cup [FLV]
+#EXTINF:-1 tvg-id="sport-77210ce79ab8" tvg-name="Malaysia vs Việt Nam" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h298mojx/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Malaysia vs Việt Nam • FIFA ASEAN Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001791173757-0-0-909246058f8f1565e0f383567a379aa4
+https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001791174684-0-0-e6b24d15028761e6683bc0422a64aa2b
 #EXTINF:-1 tvg-id="sport-59bb313bb2de" tvg-name="Malaysia vs Việt Nam" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h298mojx/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Malaysia vs Việt Nam • FIFA ASEAN Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.zundrixmediapipeline.com/live/channel6.flv
-#EXTINF:-1 tvg-id="sport-5233fa525cdb" tvg-name="Malaysia vs Việt Nam" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h298mojx/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Malaysia vs Việt Nam • FIFA ASEAN Cup [FLV]
+#EXTINF:-1 tvg-id="sport-263162a83b40" tvg-name="Malaysia vs Việt Nam" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h298mojx/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Malaysia vs Việt Nam • FIFA ASEAN Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001791173757-0-0-9139f85e51d69af489c7a37943d83ac1
-#EXTINF:-1 tvg-id="sport-e4bc98ef14d9" tvg-name="Malaysia vs Việt Nam" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h298mojx/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Malaysia vs Việt Nam • FIFA ASEAN Cup [FLV]
+https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001791174684-0-0-d46810b43ba94278ff624043fd8a4c6c
+#EXTINF:-1 tvg-id="sport-d2b035f5d42a" tvg-name="Malaysia vs Việt Nam" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h298mojx/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Malaysia vs Việt Nam • FIFA ASEAN Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-11.flv?auth_key=3000001791173757-0-0-732d145b658801726628ad9b19872187
-#EXTINF:-1 tvg-id="sport-f1fe82a1ffa0" tvg-name="Malaysia vs Việt Nam" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h298mojx/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Malaysia vs Việt Nam • FIFA ASEAN Cup [FLV]
+https://live2.domaincdn.cc/livecdn/channel-11.flv?auth_key=3000001791174684-0-0-5a7dbc82b57b563d38c395321102a280
+#EXTINF:-1 tvg-id="sport-6bad4eef6b99" tvg-name="Malaysia vs Việt Nam" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h298mojx/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Malaysia vs Việt Nam • FIFA ASEAN Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel16.flv?wsSecret=32b1d18b44bc0db393beff537584e414&wsABSTime=1791216957
-#EXTINF:-1 tvg-id="sport-2ae0c2743b11" tvg-name="Malaysia vs Việt Nam" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h298mojx/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Malaysia vs Việt Nam • FIFA ASEAN Cup [FLV]
+https://live1.quickscoreboardz.com/live/channel16.flv?wsSecret=c569ceaab936806944f87fe1c11ec7c5&wsABSTime=1791217884
+#EXTINF:-1 tvg-id="sport-e02c9e337f3e" tvg-name="Malaysia vs Việt Nam" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h298mojx/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Malaysia vs Việt Nam • FIFA ASEAN Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=e595caf37d66f0984c6c33b60e097087&wsABSTime=1791216957
-#EXTINF:-1 tvg-id="sport-f5cfd4f4fbf1" tvg-name="Nữ Indonesia U17 vs Nữ Bahrain U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghx86eq82w/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Nữ Indonesia U17 vs Nữ Bahrain U17 • CAFA U17 Womens Championship [FLV]
+https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=6365e2d2a3f77f63d43f436bf7635c8e&wsABSTime=1791217884
+#EXTINF:-1 tvg-id="sport-afcf3d7f0754" tvg-name="Nữ Indonesia U17 vs Nữ Bahrain U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghx86eq82w/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Nữ Indonesia U17 vs Nữ Bahrain U17 • CAFA U17 Womens Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel24.flv?wsSecret=3dff51084631c771b57937d277cdbd26&wsABSTime=1791216956
-#EXTINF:-1 tvg-id="sport-aa2d25b76fe6" tvg-name="Nữ Đài Loan U17 vs Nữ Campuchia U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nhled2md7o/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Nữ Đài Loan U17 vs Nữ Campuchia U17 • CAFA U17 Womens Championship [FLV]
+https://live1.quickscoreboardz.com/live/channel24.flv?wsSecret=996b018ed670da61750e9619fcb220f4&wsABSTime=1791217883
+#EXTINF:-1 tvg-id="sport-61c8c5018f49" tvg-name="Nữ Đài Loan U17 vs Nữ Campuchia U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nhled2md7o/image/small" group-title="XoilacXTH",[16:00] 05/10 ⚽ Nữ Đài Loan U17 vs Nữ Campuchia U17 • CAFA U17 Womens Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel25.flv?wsSecret=9d89ce216a352f64612a8d80d45dbac1&wsABSTime=1791216956
-#EXTINF:-1 tvg-id="sport-346d2dbfed64" tvg-name="Xứ Wales U19 vs Bắc Ireland U19" tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66ho1x6qo9j/image/small" group-title="XoilacXTH",[17:00] 05/10 ⚽ Xứ Wales U19 vs Bắc Ireland U19 • Giao Hữu Quốc Tế [FLV]
+https://live1.quickscoreboardz.com/live/channel25.flv?wsSecret=73a58a6b277cbd94e0d11d61caa77d96&wsABSTime=1791217883
+#EXTINF:-1 tvg-id="sport-5549a624c3c2" tvg-name="Xứ Wales U19 vs Bắc Ireland U19" tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66ho1x6qo9j/image/small" group-title="XoilacXTH",[17:00] 05/10 ⚽ Xứ Wales U19 vs Bắc Ireland U19 • Giao Hữu Quốc Tế [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=cb81f34d95e399c5249a62df676d3131&wsABSTime=1791216956
+https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=a45a40d4caf6e065b8c7a192ccd86e42&wsABSTime=1791217883
 #EXTINF:-1 tvg-id="sport-6b4117354ae3" tvg-name="Nhật Bản vs New Zealand" tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66hooj2qo9j/image/small" group-title="XoilacXTH",[17:30] 05/10 ⚽ Nhật Bản vs New Zealand • Japanese Kirin Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.zundrixmediapipeline.com/live/channel24.flv
-#EXTINF:-1 tvg-id="sport-bb3e3055be41" tvg-name="Nhật Bản vs New Zealand" tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66hooj2qo9j/image/small" group-title="XoilacXTH",[17:30] 05/10 ⚽ Nhật Bản vs New Zealand • Japanese Kirin Cup [FLV]
+#EXTINF:-1 tvg-id="sport-9ab412ad1fdb" tvg-name="Nhật Bản vs New Zealand" tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66hooj2qo9j/image/small" group-title="XoilacXTH",[17:30] 05/10 ⚽ Nhật Bản vs New Zealand • Japanese Kirin Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001791173756-0-0-e1204184a3adf28bc556c2b8576e1fd7
-#EXTINF:-1 tvg-id="sport-7bdb37a671d3" tvg-name="Kodagu FC vs Technico FF" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8gh8nknr6od/image/small" group-title="XoilacXTH",[17:30] 05/10 ⚽ Kodagu FC vs Technico FF • Indian Bangalore Super Division [FLV]
+https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001791174683-0-0-75275e41a23d4d9e85cb576c4c626c1c
+#EXTINF:-1 tvg-id="sport-66bd0d6a455d" tvg-name="Kodagu FC vs Technico FF" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8gh8nknr6od/image/small" group-title="XoilacXTH",[17:30] 05/10 ⚽ Kodagu FC vs Technico FF • Indian Bangalore Super Division [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel26.flv?wsSecret=de4e5b04de208d4cf57842ee09cad873&wsABSTime=1791216956
-#EXTINF:-1 tvg-id="sport-7315cd63eefd" tvg-name="Nữ Myanmar U17 vs Nữ Guam U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jw2r09hw9ddrz84/image/small" group-title="XoilacXTH",[17:30] 05/10 ⚽ Nữ Myanmar U17 vs Nữ Guam U17 • CAFA U17 Womens Championship [FLV]
+https://live1.quickscoreboardz.com/live/channel26.flv?wsSecret=e0feed736a1ad8af1a0e9b27fa66a795&wsABSTime=1791217883
+#EXTINF:-1 tvg-id="sport-aa299763ef41" tvg-name="Nữ Myanmar U17 vs Nữ Guam U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jw2r09hw9ddrz84/image/small" group-title="XoilacXTH",[17:30] 05/10 ⚽ Nữ Myanmar U17 vs Nữ Guam U17 • CAFA U17 Womens Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel27.flv?wsSecret=422f465a6e913ede911f736c6aa30c38&wsABSTime=1791216956
-#EXTINF:-1 tvg-id="sport-789b734ae52a" tvg-name="North District U22 vs Eastern U22" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergphppeor8k0/image/small" group-title="XoilacXTH",[17:45] 05/10 ⚽ North District U22 vs Eastern U22 • HK U22L [FLV]
+https://live1.quickscoreboardz.com/live/channel27.flv?wsSecret=f23ce87999c06b9678dc4355258be341&wsABSTime=1791217883
+#EXTINF:-1 tvg-id="sport-1cb6d3a8d603" tvg-name="North District U22 vs Eastern U22" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergphppeor8k0/image/small" group-title="XoilacXTH",[17:45] 05/10 ⚽ North District U22 vs Eastern U22 • HK U22L [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=2d097e2f38327afc3e8ada5f901657d6&wsABSTime=1791216956
+https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=2d9c68a944c86f70a267c0018117d07e&wsABSTime=1791217883
 #EXTINF:-1 tvg-id="sport-4cbf1ba64451" tvg-name="Shenzhen Peng U21 vs Jinmen Tiger U21" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phw2z2m2wd/image/small" group-title="XoilacXTH",[18:00] 05/10 ⚽ Shenzhen Peng U21 vs Jinmen Tiger U21 • Trung Quốc U-21 League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.zundrixmediapipeline.com/live/channel10.flv
-#EXTINF:-1 tvg-id="sport-505cde5825f2" tvg-name="Shenzhen Peng U21 vs Jinmen Tiger U21" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phw2z2m2wd/image/small" group-title="XoilacXTH",[18:00] 05/10 ⚽ Shenzhen Peng U21 vs Jinmen Tiger U21 • Trung Quốc U-21 League [FLV]
+#EXTINF:-1 tvg-id="sport-0040e18ae93d" tvg-name="Shenzhen Peng U21 vs Jinmen Tiger U21" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phw2z2m2wd/image/small" group-title="XoilacXTH",[18:00] 05/10 ⚽ Shenzhen Peng U21 vs Jinmen Tiger U21 • Trung Quốc U-21 League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-10.flv?auth_key=3000001791173756-0-0-a3a5d6f36876ee72bdd57bc7fa485e60
-#EXTINF:-1 tvg-id="sport-20938a9ee0b3" tvg-name="A.P.S. Zakynthos vs Apollon Kalamarias F.C." tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohk45xq1zp/image/small" group-title="XoilacXTH",[18:00] 05/10 ⚽ A.P.S. Zakynthos vs Apollon Kalamarias F.C. • Greek Super League 2 [FLV]
+https://live2.domaincdn.cc/livecdn/channel-10.flv?auth_key=3000001791174683-0-0-520438e14c35c59ff81a5860d70e2018
+#EXTINF:-1 tvg-id="sport-1a9def335a5c" tvg-name="A.P.S. Zakynthos vs Apollon Kalamarias F.C." tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohk45xq1zp/image/small" group-title="XoilacXTH",[18:00] 05/10 ⚽ A.P.S. Zakynthos vs Apollon Kalamarias F.C. • Greek Super League 2 [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=0157ce240792e1238dd78d3e9165e633&wsABSTime=1791216956
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=4338c43daccbfe406404100636201410&wsABSTime=1791217883
