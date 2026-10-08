@@ -1,24 +1,10 @@
 #EXTM3U x-tvg-url=""
-#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 00:45 09/10" group-title="🕒 Cập nhật 00:45 09/10",🕒 Cập nhật 00:45 09/10
+#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 01:01 09/10" group-title="🕒 Cập nhật 01:01 09/10",🕒 Cập nhật 01:01 09/10
 http://127.0.0.1/
-#EXTINF:-1 tvg-id="sport-cac3eaa7532d" tvg-name="Al-Nasr Dubai vs Hatta" tvg-logo="https://img.gvapi.cc/football/team/5e5f56f16382d66ff8bcdb20bd309169.png" group-title="Gà Vàng 33",🔴 [22:45] 08/10 ⚽ Al-Nasr Dubai vs Hatta [HLS]
+#EXTINF:-1 tvg-id="sport-45e1a3724010" tvg-name="KuPs vs AC Oulu" tvg-logo="https://img.gvapi.cc/football/team/1fced0158de1169e9bc3209f4ab98e84.png" group-title="Gà Vàng 33",🔴 [23:00] 08/10 ⚽ KuPs vs AC Oulu [HLS]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-referrer=https://gavang33.me/
-https://live2.zktsva.app/live/289650.m3u8
-#EXTINF:-1 tvg-id="sport-0f6a04c87cc8" tvg-name="Al-Nasr Dubai vs Hatta" tvg-logo="https://img.gvapi.cc/football/team/5e5f56f16382d66ff8bcdb20bd309169.png" group-title="Gà Vàng 33",🔴 [22:45] 08/10 ⚽ Al-Nasr Dubai vs Hatta [FLV]
-#EXTGRP:Gà Vàng 33
-#EXTVLCOPT:http-referrer=https://gavang33.me/
-https://live2.zktsva.app/live/289650.flv
-#EXTINF:-1 tvg-id="sport-d1dd6dd8bd80" tvg-name="KuPs vs AC Oulu" tvg-logo="https://img.gvapi.cc/football/team/1fced0158de1169e9bc3209f4ab98e84.png" group-title="Gà Vàng 33",🔴 [23:00] 08/10 ⚽ KuPs vs AC Oulu (Gà Siêu Nhí) • Finnish Veikkausliiga [HLS]
-#EXTGRP:Gà Vàng 33
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://gavang33.co/
-https://live2.zktsva.app/live/301263.m3u8
-#EXTINF:-1 tvg-id="sport-30e79e916aef" tvg-name="KuPs vs AC Oulu" tvg-logo="https://img.gvapi.cc/football/team/1fced0158de1169e9bc3209f4ab98e84.png" group-title="Gà Vàng 33",🔴 [23:00] 08/10 ⚽ KuPs vs AC Oulu (Gà Siêu Nhí) • Finnish Veikkausliiga [FLV]
-#EXTGRP:Gà Vàng 33
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://gavang33.co/
-https://live2.zktsva.app/live/301263.flv
+https://video.gvvsb.com/hls/output_v1.m3u8
 #EXTINF:-1 tvg-id="sport-01b319c3c532" tvg-name="Modern Sport FC vs Bank El Ahly" tvg-logo="https://img.gvapi.cc/football/team/53f4bc55c48cd39be78fa4fa69645f31.png" group-title="Gà Vàng 33",🔴 [00:00] 09/10 ⚽ Modern Sport FC vs Bank El Ahly (Gà Siêu Tốc) • Egypt League Cup [HLS]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -609,62 +595,22 @@ https://live2.zktsva.app/live/304565.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://gavang33.co/
 https://live2.zktsva.app/live/304565.flv
-#EXTINF:-1 tvg-id="sport-f297acf05dd8" tvg-name="Al Nasr Dubai vs CLB Hatta" tvg-logo="https://img.gvapi.cc/football/team/2011473c10a119e01f2085bb836b62b2.png!w80" group-title="CoLaTV",🔴 [22:45] 08/10 ⚽ Al Nasr Dubai vs CLB Hatta (SAMURAI) • Cúp liên đoàn UAE [HLS]
+#EXTINF:-1 tvg-id="sport-d1983f182305" tvg-name="CLB KuPs vs CLB AC Oulu" tvg-logo="https://img.gvapi.cc/football/team/1fced0158de1169e9bc3209f4ab98e84.png!w80" group-title="CoLaTV",🔴 [23:00] 08/10 ⚽ CLB KuPs vs CLB AC Oulu (STING) • Giải Bóng đá Vô địch Quốc gia Phần Lan [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
-https://live05.meung.app/live/07808742_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-7fe31cf45421" tvg-name="Al Nasr Dubai vs CLB Hatta" tvg-logo="https://img.gvapi.cc/football/team/2011473c10a119e01f2085bb836b62b2.png!w80" group-title="CoLaTV",🔴 [22:45] 08/10 ⚽ Al Nasr Dubai vs CLB Hatta (SAMURAI) • Cúp liên đoàn UAE [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://colatv77.live/
-https://live05.miekgo.app/live/07808742_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-a30c8546556d" tvg-name="Al Nasr Dubai vs CLB Hatta" tvg-logo="https://img.gvapi.cc/football/team/2011473c10a119e01f2085bb836b62b2.png!w80" group-title="CoLaTV",🔴 [22:45] 08/10 ⚽ Al Nasr Dubai vs CLB Hatta (SAMURAI) • Cúp liên đoàn UAE [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://colatv77.live/
-https://live05.meung.app/live/07808742_tsc.flv
-#EXTINF:-1 tvg-id="sport-46502c0cfc86" tvg-name="Al Nasr Dubai vs CLB Hatta" tvg-logo="https://img.gvapi.cc/football/team/2011473c10a119e01f2085bb836b62b2.png!w80" group-title="CoLaTV",🔴 [22:45] 08/10 ⚽ Al Nasr Dubai vs CLB Hatta • Cúp liên đoàn UAE [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-referrer=https://colatv77.live/
-https://live1.dyrur1.com/live/74606384_c43c21c2cfe08b35e98a792ffe8b6a83_autoChange.m3u8?auth_key=1791495623-0-0-d97c03ff237676c29856c40c9fc71345
-#EXTINF:-1 tvg-id="sport-77f4228c407b" tvg-name="Khor Fakkan vs Al Wasl" tvg-logo="https://img.gvapi.cc/football/team/e1113e780b7ceaee329d95bedc2de575.png!w80" group-title="CoLaTV",🔴 [22:45] 08/10 ⚽ Khor Fakkan vs Al Wasl (BLV PEPSI) • Cúp liên đoàn UAE [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/59444581_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-ccf8abc5ecf9" tvg-name="Khor Fakkan vs Al Wasl" tvg-logo="https://img.gvapi.cc/football/team/e1113e780b7ceaee329d95bedc2de575.png!w80" group-title="CoLaTV",🔴 [22:45] 08/10 ⚽ Khor Fakkan vs Al Wasl (BLV PEPSI) • Cúp liên đoàn UAE [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/59444581_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-77cf0154da4c" tvg-name="Khor Fakkan vs Al Wasl" tvg-logo="https://img.gvapi.cc/football/team/e1113e780b7ceaee329d95bedc2de575.png!w80" group-title="CoLaTV",🔴 [22:45] 08/10 ⚽ Khor Fakkan vs Al Wasl (BLV PEPSI) • Cúp liên đoàn UAE [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/59444581_tsc.flv
-#EXTINF:-1 tvg-id="sport-0143640be8dc" tvg-name="Khor Fakkan vs Al Wasl" tvg-logo="https://img.gvapi.cc/football/team/e1113e780b7ceaee329d95bedc2de575.png!w80" group-title="CoLaTV",🔴 [22:45] 08/10 ⚽ Khor Fakkan vs Al Wasl • Cúp liên đoàn UAE [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live.dyrur1.com/live/74606378_45a57e5a570d0a3b8edfa75abae18224_autoChange.m3u8?auth_key=1791495718-0-0-cab9eaf147251e6a9e8b5114858afbdc
-#EXTINF:-1 tvg-id="sport-11a8d86f0801" tvg-name="CLB KuPs vs CLB AC Oulu" tvg-logo="https://img.gvapi.cc/football/team/1fced0158de1169e9bc3209f4ab98e84.png!w80" group-title="CoLaTV",🔴 [23:00] 08/10 ⚽ CLB KuPs vs CLB AC Oulu (BLV STING) • Giải Bóng đá Vô địch Quốc gia Phần Lan [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.meung.app/live/14707124_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-347bf40d5e45" tvg-name="CLB KuPs vs CLB AC Oulu" tvg-logo="https://img.gvapi.cc/football/team/1fced0158de1169e9bc3209f4ab98e84.png!w80" group-title="CoLaTV",🔴 [23:00] 08/10 ⚽ CLB KuPs vs CLB AC Oulu (BLV STING) • Giải Bóng đá Vô địch Quốc gia Phần Lan [FLV]
+#EXTINF:-1 tvg-id="sport-ff4095045576" tvg-name="CLB KuPs vs CLB AC Oulu" tvg-logo="https://img.gvapi.cc/football/team/1fced0158de1169e9bc3209f4ab98e84.png!w80" group-title="CoLaTV",🔴 [23:00] 08/10 ⚽ CLB KuPs vs CLB AC Oulu (STING) • Giải Bóng đá Vô địch Quốc gia Phần Lan [HLS]
 #EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/14707124_tsc.flv
-#EXTINF:-1 tvg-id="sport-6de7be5eaf17" tvg-name="CLB KuPs vs CLB AC Oulu" tvg-logo="https://img.gvapi.cc/football/team/1fced0158de1169e9bc3209f4ab98e84.png!w80" group-title="CoLaTV",🔴 [23:00] 08/10 ⚽ CLB KuPs vs CLB AC Oulu • Giải Bóng đá Vô địch Quốc gia Phần Lan [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live.dyrur1.com/live/74299686_3ac1c268bb40b638b268e3f0e0d4cb84_autoChange.m3u8?auth_key=1791495718-0-0-a1a760afef623799bda7706f29f3b7e4
-#EXTINF:-1 tvg-id="sport-65298004fd27" tvg-name="CLB KuPs vs CLB AC Oulu" tvg-logo="https://img.gvapi.cc/football/team/1fced0158de1169e9bc3209f4ab98e84.png!w80" group-title="CoLaTV",🔴 [23:00] 08/10 ⚽ CLB KuPs vs CLB AC Oulu (BLV STING) • Giải Bóng đá Vô địch Quốc gia Phần Lan [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live05.miekgo.app/live/14707124_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-9c12fc2dd7bc" tvg-name="CLB KuPs vs CLB AC Oulu" tvg-logo="https://img.gvapi.cc/football/team/1fced0158de1169e9bc3209f4ab98e84.png!w80" group-title="CoLaTV",🔴 [23:00] 08/10 ⚽ CLB KuPs vs CLB AC Oulu (STING) • Giải Bóng đá Vô địch Quốc gia Phần Lan [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://colatv77.live/
+https://live05.meung.app/live/14707124_tsc.flv
+#EXTINF:-1 tvg-id="sport-5c02fa127ba3" tvg-name="CLB KuPs vs CLB AC Oulu" tvg-logo="https://img.gvapi.cc/football/team/1fced0158de1169e9bc3209f4ab98e84.png!w80" group-title="CoLaTV",🔴 [23:00] 08/10 ⚽ CLB KuPs vs CLB AC Oulu • Giải Bóng đá Vô địch Quốc gia Phần Lan [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://colatv77.live/
+https://live.dyrur1.com/live/74299686_3ac1c268bb40b638b268e3f0e0d4cb84_autoChange.m3u8?auth_key=1791496259-0-0-601b4f7e4607fab58975144163d1255d
 #EXTINF:-1 tvg-id="sport-e2d55d40561d" tvg-name="Al Wakra vs CLB Al Gharafa" tvg-logo="https://img.gvapi.cc/football/team/c47e10954dc1d2b623ddf0d89d63c14d.png!w80" group-title="CoLaTV",🔴 [00:00] 09/10 ⚽ Al Wakra vs CLB Al Gharafa (BLV HỔ VẰN) • Giải vô địch quốc gia Qatar [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -680,11 +626,11 @@ https://live05.miekgo.app/live/07428422_tsc.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.meung.app/live/07428422_tsc.flv
-#EXTINF:-1 tvg-id="sport-0ee178626943" tvg-name="Al Wakra vs CLB Al Gharafa" tvg-logo="https://img.gvapi.cc/football/team/c47e10954dc1d2b623ddf0d89d63c14d.png!w80" group-title="CoLaTV",🔴 [00:00] 09/10 ⚽ Al Wakra vs CLB Al Gharafa • Giải vô địch quốc gia Qatar [HLS]
+#EXTINF:-1 tvg-id="sport-a43e79a80745" tvg-name="Al Wakra vs CLB Al Gharafa" tvg-logo="https://img.gvapi.cc/football/team/c47e10954dc1d2b623ddf0d89d63c14d.png!w80" group-title="CoLaTV",🔴 [00:00] 09/10 ⚽ Al Wakra vs CLB Al Gharafa • Giải vô địch quốc gia Qatar [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
-https://live.dyrur1.com/live/73374516_8e94bbb7ea8a7e510025406d4cb5fa62_autoChange.m3u8?auth_key=1791495718-0-0-a8a3d74bf5b357323321c17f11668ac6
+https://live.dyrur1.com/live/73374516_8e94bbb7ea8a7e510025406d4cb5fa62_autoChange.m3u8?auth_key=1791496622-0-0-ae1261b2dbdd8e2c0e046586175fca06
 #EXTINF:-1 tvg-id="sport-fb09f6623b81" tvg-name="Al-Okhdood vs Al Ula FC" tvg-logo="https://img.gvapi.cc/football/team/47edbc8776467d4a14314c82b25344ab.png!w80" group-title="CoLaTV",🔴 [00:00] 09/10 ⚽ Al-Okhdood vs Al Ula FC (BLV MOUNTAIN DEW) • Giải bóng đá Hạng nhất Ả Rập Xê Út [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -700,11 +646,11 @@ https://live05.miekgo.app/live/87547578_tsc.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.meung.app/live/87547578_tsc.flv
-#EXTINF:-1 tvg-id="sport-18df69033000" tvg-name="Al-Okhdood vs Al Ula FC" tvg-logo="https://img.gvapi.cc/football/team/47edbc8776467d4a14314c82b25344ab.png!w80" group-title="CoLaTV",🔴 [00:00] 09/10 ⚽ Al-Okhdood vs Al Ula FC • Giải bóng đá Hạng nhất Ả Rập Xê Út [HLS]
+#EXTINF:-1 tvg-id="sport-44d9b8d1530a" tvg-name="Al-Okhdood vs Al Ula FC" tvg-logo="https://img.gvapi.cc/football/team/47edbc8776467d4a14314c82b25344ab.png!w80" group-title="CoLaTV",🔴 [00:00] 09/10 ⚽ Al-Okhdood vs Al Ula FC • Giải bóng đá Hạng nhất Ả Rập Xê Út [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
-https://live3.dyrur1.com/live/73206484_450074c559e4b81a9bf3ce48fec021f9_autoChange.m3u8?auth_key=1791495718-0-0-d708c81dba7bfb73704598fae37dc84f
+https://live3.dyrur1.com/live/73206484_450074c559e4b81a9bf3ce48fec021f9_autoChange.m3u8?auth_key=1791496622-0-0-242a94c71ccb120fcac414c7e9430d94
 #EXTINF:-1 tvg-id="sport-1392168ff323" tvg-name="FC tương lai vs NBE SC" tvg-logo="https://img.gvapi.cc/football/team/53f4bc55c48cd39be78fa4fa69645f31.png!w80" group-title="CoLaTV",🔴 [00:00] 09/10 ⚽ FC tương lai vs NBE SC (BLV C2) • Cúp Liên đoàn Bóng đá Ai Cập [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -720,31 +666,31 @@ https://live05.miekgo.app/live/08552895_tsc.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.meung.app/live/08552895_tsc.flv
-#EXTINF:-1 tvg-id="sport-c68d6a2bd5d5" tvg-name="FC tương lai vs NBE SC" tvg-logo="https://img.gvapi.cc/football/team/53f4bc55c48cd39be78fa4fa69645f31.png!w80" group-title="CoLaTV",🔴 [00:00] 09/10 ⚽ FC tương lai vs NBE SC • Cúp Liên đoàn Bóng đá Ai Cập [HLS]
+#EXTINF:-1 tvg-id="sport-5c22dcd6d96a" tvg-name="FC tương lai vs NBE SC" tvg-logo="https://img.gvapi.cc/football/team/53f4bc55c48cd39be78fa4fa69645f31.png!w80" group-title="CoLaTV",🔴 [00:00] 09/10 ⚽ FC tương lai vs NBE SC • Cúp Liên đoàn Bóng đá Ai Cập [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
-https://live2.dyrur1.com/live/73658448_102d5276d24c21d3cac085ad07fc8e07_autoChange.m3u8?auth_key=1791495718-0-0-0ccec907203ed86bdc16e70fadbe1c2c
+https://live2.dyrur1.com/live/73658448_102d5276d24c21d3cac085ad07fc8e07_autoChange.m3u8?auth_key=1791496622-0-0-6d4dc54b94088d06f230aef928cec57f
 #EXTINF:-1 tvg-id="sport-31a74b1a3f28" tvg-name="CFR vs Universitaea Cluj" tvg-logo="https://img.gvapi.cc/football/team/6f927eb040bdd5c972a9343fd9c8b873.png!w80" group-title="CoLaTV",🔴 [00:30] 09/10 ⚽ CFR vs Universitaea Cluj (BLV 7UP) • Giải Vô địch quốc gia Romania [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.meung.app/live/78905744_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-5e14d669202c" tvg-name="CFR vs Universitaea Cluj" tvg-logo="https://img.gvapi.cc/football/team/6f927eb040bdd5c972a9343fd9c8b873.png!w80" group-title="CoLaTV",🔴 [00:30] 09/10 ⚽ CFR vs Universitaea Cluj (BLV 7UP) • Giải Vô địch quốc gia Romania [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/78905744_tsc.flv
-#EXTINF:-1 tvg-id="sport-068e4c91f81f" tvg-name="CFR vs Universitaea Cluj" tvg-logo="https://img.gvapi.cc/football/team/6f927eb040bdd5c972a9343fd9c8b873.png!w80" group-title="CoLaTV",🔴 [00:30] 09/10 ⚽ CFR vs Universitaea Cluj • Giải Vô địch quốc gia Romania [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live.dyrur1.com/live/73430770_ba82e8c6230eb120480e73ef1a1bcf32_autoChange.m3u8?auth_key=1791495718-0-0-e58a59640c255120c52e33d99d2a39d4
 #EXTINF:-1 tvg-id="sport-4b3add583654" tvg-name="CFR vs Universitaea Cluj" tvg-logo="https://img.gvapi.cc/football/team/6f927eb040bdd5c972a9343fd9c8b873.png!w80" group-title="CoLaTV",🔴 [00:30] 09/10 ⚽ CFR vs Universitaea Cluj (BLV 7UP) • Giải Vô địch quốc gia Romania [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/78905744_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-5e14d669202c" tvg-name="CFR vs Universitaea Cluj" tvg-logo="https://img.gvapi.cc/football/team/6f927eb040bdd5c972a9343fd9c8b873.png!w80" group-title="CoLaTV",🔴 [00:30] 09/10 ⚽ CFR vs Universitaea Cluj (BLV 7UP) • Giải Vô địch quốc gia Romania [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/78905744_tsc.flv
+#EXTINF:-1 tvg-id="sport-6d91381831e7" tvg-name="CFR vs Universitaea Cluj" tvg-logo="https://img.gvapi.cc/football/team/6f927eb040bdd5c972a9343fd9c8b873.png!w80" group-title="CoLaTV",🔴 [00:30] 09/10 ⚽ CFR vs Universitaea Cluj • Giải Vô địch quốc gia Romania [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live.dyrur1.com/live/73430770_ba82e8c6230eb120480e73ef1a1bcf32_autoChange.m3u8?auth_key=1791496622-0-0-55de57e38e8119ac0e8f7044ce971e6c
 #EXTINF:-1 tvg-id="sport-5ba1c02e0352" tvg-name="CLB Shamrock Rovers vs Drogheda Utd" tvg-logo="https://img.gvapi.cc/football/team/52a0b0ec8cb8af8d29711d63ed1d0c8c.png!w80" group-title="CoLaTV",[02:00] 09/10 ⚽ CLB Shamrock Rovers vs Drogheda Utd (BLV MONSTER) • Giải vô địch quốc gia Ireland [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1025,16 +971,16 @@ https://live05.meung.app/live/16226575_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.meung.app/live/78905744_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-2866f6d382db" tvg-name="Kashiwa Reysol vs Vissel Kobe" tvg-logo="https://img.gvapi.cc/football/team/d272859d78eb8ca7a14753f4293fbf45.png!w80" group-title="CoLaTV",[17:00] 09/10 ⚽ Kashiwa Reysol vs Vissel Kobe (BLV 7UP) • Giải vô địch quốc gia Nhật Bản [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/78905744_tsc.flv
 #EXTINF:-1 tvg-id="sport-2536a8babca0" tvg-name="Kashiwa Reysol vs Vissel Kobe" tvg-logo="https://img.gvapi.cc/football/team/d272859d78eb8ca7a14753f4293fbf45.png!w80" group-title="CoLaTV",[17:00] 09/10 ⚽ Kashiwa Reysol vs Vissel Kobe (BLV 7UP) • Giải vô địch quốc gia Nhật Bản [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/78905744_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-2866f6d382db" tvg-name="Kashiwa Reysol vs Vissel Kobe" tvg-logo="https://img.gvapi.cc/football/team/d272859d78eb8ca7a14753f4293fbf45.png!w80" group-title="CoLaTV",[17:00] 09/10 ⚽ Kashiwa Reysol vs Vissel Kobe (BLV 7UP) • Giải vô địch quốc gia Nhật Bản [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/78905744_tsc.flv
 #EXTINF:-1 tvg-id="sport-49d63e66dcce" tvg-name="Ratchaburi vs Sukhothai" tvg-logo="https://img.gvapi.cc/football/team/ca2b8d70931647840c78209be51763a3.png!w80" group-title="CoLaTV",[18:00] 09/10 ⚽ Ratchaburi vs Sukhothai (BLV AQUA) • Thái League 1 [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1100,31 +1046,31 @@ https://live05.meung.app/live/19919577_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.meung.app/live/78905744_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-1276c2907668" tvg-name="Zhejiang Professional vs Shanghai Port" tvg-logo="https://img.gvapi.cc/football/team/cc1aef5e69e8d01ba3d3712f24040347.png!w80" group-title="CoLaTV",[19:00] 09/10 ⚽ Zhejiang Professional vs Shanghai Port (BLV 7UP) • Giải bóng đá ngoại hạng Trung Quốc [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/78905744_tsc.flv
 #EXTINF:-1 tvg-id="sport-d8ca8e196947" tvg-name="Zhejiang Professional vs Shanghai Port" tvg-logo="https://img.gvapi.cc/football/team/cc1aef5e69e8d01ba3d3712f24040347.png!w80" group-title="CoLaTV",[19:00] 09/10 ⚽ Zhejiang Professional vs Shanghai Port (BLV 7UP) • Giải bóng đá ngoại hạng Trung Quốc [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/78905744_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-1276c2907668" tvg-name="Zhejiang Professional vs Shanghai Port" tvg-logo="https://img.gvapi.cc/football/team/cc1aef5e69e8d01ba3d3712f24040347.png!w80" group-title="CoLaTV",[19:00] 09/10 ⚽ Zhejiang Professional vs Shanghai Port (BLV 7UP) • Giải bóng đá ngoại hạng Trung Quốc [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/78905744_tsc.flv
 #EXTINF:-1 tvg-id="sport-6bea39e8ae22" tvg-name="Al Wahda vs CLB Al Dhafra" tvg-logo="https://img.gvapi.cc/football/team/da5a07224920e4856d3b14e7e1a86741.png!w80" group-title="CoLaTV",[20:10] 09/10 ⚽ Al Wahda vs CLB Al Dhafra (BLV STING) • Cúp liên đoàn UAE [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.meung.app/live/14707124_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-2038d5f67e85" tvg-name="Al Wahda vs CLB Al Dhafra" tvg-logo="https://img.gvapi.cc/football/team/da5a07224920e4856d3b14e7e1a86741.png!w80" group-title="CoLaTV",[20:10] 09/10 ⚽ Al Wahda vs CLB Al Dhafra (BLV STING) • Cúp liên đoàn UAE [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/14707124_tsc.flv
 #EXTINF:-1 tvg-id="sport-1a7caa1ffc44" tvg-name="Al Wahda vs CLB Al Dhafra" tvg-logo="https://img.gvapi.cc/football/team/da5a07224920e4856d3b14e7e1a86741.png!w80" group-title="CoLaTV",[20:10] 09/10 ⚽ Al Wahda vs CLB Al Dhafra (BLV STING) • Cúp liên đoàn UAE [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/14707124_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-2038d5f67e85" tvg-name="Al Wahda vs CLB Al Dhafra" tvg-logo="https://img.gvapi.cc/football/team/da5a07224920e4856d3b14e7e1a86741.png!w80" group-title="CoLaTV",[20:10] 09/10 ⚽ Al Wahda vs CLB Al Dhafra (BLV STING) • Cúp liên đoàn UAE [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/14707124_tsc.flv
 #EXTINF:-1 tvg-id="sport-7f26ed86dfb0" tvg-name="Veres-Rivne vs Câu lạc bộ bóng đá Shakhtar Donetsk" tvg-logo="https://img.gvapi.cc/football/team/a707913a6243a0bf393035cbdbfbccf0.png!w80" group-title="CoLaTV",[20:30] 09/10 ⚽ Veres-Rivne vs Câu lạc bộ bóng đá Shakhtar Donetsk (BLV C2) • Giải Ngoại hạng Ukraina [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1205,16 +1151,16 @@ https://live05.meung.app/live/08552895_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.meung.app/live/14707124_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-b41b1b3b60af" tvg-name="Corvinul Hunedoara vs CS Voluntari" tvg-logo="https://img.gvapi.cc/football/team/0d34b3c5bdf01947c5d8e3e36cc82962.png!w80" group-title="CoLaTV",[22:00] 09/10 ⚽ Corvinul Hunedoara vs CS Voluntari (BLV STING) • Giải Vô địch quốc gia Romania [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/14707124_tsc.flv
 #EXTINF:-1 tvg-id="sport-3685baaf705d" tvg-name="Corvinul Hunedoara vs CS Voluntari" tvg-logo="https://img.gvapi.cc/football/team/0d34b3c5bdf01947c5d8e3e36cc82962.png!w80" group-title="CoLaTV",[22:00] 09/10 ⚽ Corvinul Hunedoara vs CS Voluntari (BLV STING) • Giải Vô địch quốc gia Romania [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/14707124_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-b41b1b3b60af" tvg-name="Corvinul Hunedoara vs CS Voluntari" tvg-logo="https://img.gvapi.cc/football/team/0d34b3c5bdf01947c5d8e3e36cc82962.png!w80" group-title="CoLaTV",[22:00] 09/10 ⚽ Corvinul Hunedoara vs CS Voluntari (BLV STING) • Giải Vô địch quốc gia Romania [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/14707124_tsc.flv
 #EXTINF:-1 tvg-id="sport-031a328f551f" tvg-name="SJK vs CLB Lahti" tvg-logo="https://img.gvapi.cc/football/team/1102270dc5201968f3eeffbc20da56bc.png!w80" group-title="CoLaTV",[22:00] 09/10 ⚽ SJK vs CLB Lahti (BLV SODA) • Giải Bóng đá Vô địch Quốc gia Phần Lan [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1370,16 +1316,16 @@ https://live05.meung.app/live/08552895_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.meung.app/live/78905744_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-90c891d0d993" tvg-name="PSV Eindhoven vs SC Heerenveen" tvg-logo="https://img.gvapi.cc/football/team/cad5af4d1ff0e6f3119af3d273d95d31.png!w80" group-title="CoLaTV",[01:00] 10/10 ⚽ PSV Eindhoven vs SC Heerenveen (BLV 7UP) • Giải Bóng đá Vô địch Quốc gia Hà Lan [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/78905744_tsc.flv
 #EXTINF:-1 tvg-id="sport-3260ad358ab9" tvg-name="PSV Eindhoven vs SC Heerenveen" tvg-logo="https://img.gvapi.cc/football/team/cad5af4d1ff0e6f3119af3d273d95d31.png!w80" group-title="CoLaTV",[01:00] 10/10 ⚽ PSV Eindhoven vs SC Heerenveen (BLV 7UP) • Giải Bóng đá Vô địch Quốc gia Hà Lan [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/78905744_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-90c891d0d993" tvg-name="PSV Eindhoven vs SC Heerenveen" tvg-logo="https://img.gvapi.cc/football/team/cad5af4d1ff0e6f3119af3d273d95d31.png!w80" group-title="CoLaTV",[01:00] 10/10 ⚽ PSV Eindhoven vs SC Heerenveen (BLV 7UP) • Giải Bóng đá Vô địch Quốc gia Hà Lan [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/78905744_tsc.flv
 #EXTINF:-1 tvg-id="sport-989763bee8da" tvg-name="Borussia Dortmund vs SV Werder Bremen" tvg-logo="https://img.gvapi.cc/football/team/bbfacbdbe67705172c6414d7e9c21b58.png!w80" group-title="CoLaTV",[01:30] 10/10 ⚽ Borussia Dortmund vs SV Werder Bremen (BLV REVIVE) • Giải bóng đá vô địch quốc gia Đức [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1430,16 +1376,16 @@ https://live05.meung.app/live/07428422_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.meung.app/live/14707124_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-1492bcbe5ca8" tvg-name="West Ham United vs Câu lạc bộ bóng đá Queens Park Rangers" tvg-logo="https://img.gvapi.cc/football/team/d71ebda5c7fbca9093a1c2978c46f619.png!w80" group-title="CoLaTV",[02:00] 10/10 ⚽ West Ham United vs Câu lạc bộ bóng đá Queens Park Rangers (BLV STING) • Championship [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/14707124_tsc.flv
 #EXTINF:-1 tvg-id="sport-f4d5caddc20f" tvg-name="West Ham United vs Câu lạc bộ bóng đá Queens Park Rangers" tvg-logo="https://img.gvapi.cc/football/team/d71ebda5c7fbca9093a1c2978c46f619.png!w80" group-title="CoLaTV",[02:00] 10/10 ⚽ West Ham United vs Câu lạc bộ bóng đá Queens Park Rangers (BLV STING) • Championship [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/14707124_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-1492bcbe5ca8" tvg-name="West Ham United vs Câu lạc bộ bóng đá Queens Park Rangers" tvg-logo="https://img.gvapi.cc/football/team/d71ebda5c7fbca9093a1c2978c46f619.png!w80" group-title="CoLaTV",[02:00] 10/10 ⚽ West Ham United vs Câu lạc bộ bóng đá Queens Park Rangers (BLV STING) • Championship [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/14707124_tsc.flv
 #EXTINF:-1 tvg-id="sport-f7a236ae96c9" tvg-name="Braga vs Sporting" tvg-logo="https://img.gvapi.cc/football/team/1fe75f826dab40e6e89cbe961c7e9116.png!w80" group-title="CoLaTV",[02:15] 10/10 ⚽ Braga vs Sporting (BLV PEPSI) • Giải Bóng đá Vô địch Quốc gia Bồ Đào Nha [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1760,16 +1706,16 @@ https://live05.meung.app/live/08552895_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.meung.app/live/78905744_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-fd00080de4dd" tvg-name="FC Augsburg vs FC Bayern München" tvg-logo="https://img.gvapi.cc/football/team/db4411a3c4ce1d0f092f5b9d1df08664.png!w80" group-title="CoLaTV",[20:30] 10/10 ⚽ FC Augsburg vs FC Bayern München (BLV 7UP) • Giải bóng đá vô địch quốc gia Đức [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/78905744_tsc.flv
 #EXTINF:-1 tvg-id="sport-f757ca3ddaa5" tvg-name="FC Augsburg vs FC Bayern München" tvg-logo="https://img.gvapi.cc/football/team/db4411a3c4ce1d0f092f5b9d1df08664.png!w80" group-title="CoLaTV",[20:30] 10/10 ⚽ FC Augsburg vs FC Bayern München (BLV 7UP) • Giải bóng đá vô địch quốc gia Đức [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/78905744_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-fd00080de4dd" tvg-name="FC Augsburg vs FC Bayern München" tvg-logo="https://img.gvapi.cc/football/team/db4411a3c4ce1d0f092f5b9d1df08664.png!w80" group-title="CoLaTV",[20:30] 10/10 ⚽ FC Augsburg vs FC Bayern München (BLV 7UP) • Giải bóng đá vô địch quốc gia Đức [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/78905744_tsc.flv
 #EXTINF:-1 tvg-id="sport-f1939be9c687" tvg-name="Paderborn vs VfB Stuttgart" tvg-logo="https://img.gvapi.cc/football/team/7c8c3c50966c793eba910e18659759a1.png!w80" group-title="CoLaTV",[20:30] 10/10 ⚽ Paderborn vs VfB Stuttgart (BLV FANTA) • Giải bóng đá vô địch quốc gia Đức [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1880,16 +1826,16 @@ https://live05.meung.app/live/33982309_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.meung.app/live/14707124_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-c407c1557e87" tvg-name="Sunderland vs Brighton &amp; Hove Albion FC" tvg-logo="https://img.gvapi.cc/football/team/957bdc50c307e2a9b526b34b3792da1a.png!w80" group-title="CoLaTV",[21:00] 10/10 ⚽ Sunderland vs Brighton & Hove Albion FC (BLV STING) • Giải bóng đá Ngoại hạng Anh [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/14707124_tsc.flv
 #EXTINF:-1 tvg-id="sport-9eecd8f6ca25" tvg-name="Sunderland vs Brighton &amp; Hove Albion FC" tvg-logo="https://img.gvapi.cc/football/team/957bdc50c307e2a9b526b34b3792da1a.png!w80" group-title="CoLaTV",[21:00] 10/10 ⚽ Sunderland vs Brighton & Hove Albion FC (BLV STING) • Giải bóng đá Ngoại hạng Anh [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/14707124_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-c407c1557e87" tvg-name="Sunderland vs Brighton &amp; Hove Albion FC" tvg-logo="https://img.gvapi.cc/football/team/957bdc50c307e2a9b526b34b3792da1a.png!w80" group-title="CoLaTV",[21:00] 10/10 ⚽ Sunderland vs Brighton & Hove Albion FC (BLV STING) • Giải bóng đá Ngoại hạng Anh [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/14707124_tsc.flv
 #EXTINF:-1 tvg-id="sport-b645669dc266" tvg-name="Alaves vs Atlético Madrid" tvg-logo="https://img.gvapi.cc/football/team/fffbebaa7a0c3c2db7e8d637a3de1811.png!w80" group-title="CoLaTV",[21:15] 10/10 ⚽ Alaves vs Atlético Madrid (BLV BÍ ĐAO) • Giải Bóng đá Vô địch Quốc gia Tây Ban Nha [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -2000,16 +1946,16 @@ https://live05.meung.app/live/08552895_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.meung.app/live/78905744_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-7ca502b7254d" tvg-name="Manchester United vs Câu lạc bộ Tottenham Hotspur" tvg-logo="https://img.gvapi.cc/football/team/d39ce586fd7278342dde33b3090b3f75.png!w80" group-title="CoLaTV",[23:30] 10/10 ⚽ Manchester United vs Câu lạc bộ Tottenham Hotspur (BLV 7UP) • Giải bóng đá Ngoại hạng Anh [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.meung.app/live/78905744_tsc.flv
 #EXTINF:-1 tvg-id="sport-278c9e2357ff" tvg-name="Manchester United vs Câu lạc bộ Tottenham Hotspur" tvg-logo="https://img.gvapi.cc/football/team/d39ce586fd7278342dde33b3090b3f75.png!w80" group-title="CoLaTV",[23:30] 10/10 ⚽ Manchester United vs Câu lạc bộ Tottenham Hotspur (BLV 7UP) • Giải bóng đá Ngoại hạng Anh [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/78905744_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-7ca502b7254d" tvg-name="Manchester United vs Câu lạc bộ Tottenham Hotspur" tvg-logo="https://img.gvapi.cc/football/team/d39ce586fd7278342dde33b3090b3f75.png!w80" group-title="CoLaTV",[23:30] 10/10 ⚽ Manchester United vs Câu lạc bộ Tottenham Hotspur (BLV 7UP) • Giải bóng đá Ngoại hạng Anh [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.meung.app/live/78905744_tsc.flv
 #EXTINF:-1 tvg-id="sport-e33cacb66374" tvg-name="RB Leipzig vs Eintracht Frankfurt" tvg-logo="https://img.gvapi.cc/football/team/26a59fe5653a96ba72f4f1e4e08b6d4b.png!w80" group-title="CoLaTV",[23:30] 10/10 ⚽ RB Leipzig vs Eintracht Frankfurt (BLV PEPSI) • Giải bóng đá vô địch quốc gia Đức [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -2270,26 +2216,26 @@ https://live05.miekgo.app/live/82054853_tsc.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.meung.app/live/82054853_tsc.flv
-#EXTINF:-1 tvg-id="sport-0cbff9ac4d86" tvg-name="KuPS vs AC Oulu" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131801_7659ea88.png" group-title="Chuối Chiên",🔴 [23:00] 08/10 ⚽ KuPS vs AC Oulu (Chuối Lá) • VĐQG Phần Lan [HLS]
-#EXTGRP:Chuối Chiên
-#EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
-https://gckc0525.edgemaxcdn.org/live/chuoila/playlist.m3u8
 #EXTINF:-1 tvg-id="sport-a32e4e561ed1" tvg-name="KuPS vs AC Oulu" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131801_7659ea88.png" group-title="Chuối Chiên",🔴 [23:00] 08/10 ⚽ KuPS vs AC Oulu (Chuối Lá) • VĐQG Phần Lan [HLS]
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
 https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8
+#EXTINF:-1 tvg-id="sport-0cbff9ac4d86" tvg-name="KuPS vs AC Oulu" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131801_7659ea88.png" group-title="Chuối Chiên",🔴 [23:00] 08/10 ⚽ KuPS vs AC Oulu (Chuối Lá) • VĐQG Phần Lan [HLS]
+#EXTGRP:Chuối Chiên
+#EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
+https://gckc0525.edgemaxcdn.org/live/chuoila/playlist.m3u8
 #EXTINF:-1 tvg-id="sport-a1e6ba4307af" tvg-name="KuPS vs AC Oulu" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131801_7659ea88.png" group-title="Chuối Chiên",🔴 [23:00] 08/10 ⚽ KuPS vs AC Oulu (Chuối Lá) • VĐQG Phần Lan [FHD • HLS]
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
 https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8
-#EXTINF:-1 tvg-id="sport-8aaa891982f9" tvg-name="Orduspor 1967 vs Karadeniz Ereğli BSK" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125932_75849baa.png" group-title="Chuối Chiên",🔴 [00:00] 09/10 ⚽ Orduspor 1967 vs Karadeniz Ereğli BSK (Chuối Nhỏ) • Cúp Thổ Nhĩ Kỳ [HLS]
-#EXTGRP:Chuối Chiên
-#EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
-https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinho/playlist.m3u8
 #EXTINF:-1 tvg-id="sport-828417825be9" tvg-name="Orduspor 1967 vs Karadeniz Ereğli BSK" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125932_75849baa.png" group-title="Chuối Chiên",🔴 [00:00] 09/10 ⚽ Orduspor 1967 vs Karadeniz Ereğli BSK (Chuối Nhỏ) • Cúp Thổ Nhĩ Kỳ [HLS]
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
 https://gckc0525.edgemaxcdn.org/live/chuoinho/playlist.m3u8
+#EXTINF:-1 tvg-id="sport-8aaa891982f9" tvg-name="Orduspor 1967 vs Karadeniz Ereğli BSK" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125932_75849baa.png" group-title="Chuối Chiên",🔴 [00:00] 09/10 ⚽ Orduspor 1967 vs Karadeniz Ereğli BSK (Chuối Nhỏ) • Cúp Thổ Nhĩ Kỳ [HLS]
+#EXTGRP:Chuối Chiên
+#EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinho/playlist.m3u8
 #EXTINF:-1 tvg-id="sport-c4727a5f356a" tvg-name="Orduspor 1967 vs Karadeniz Ereğli BSK" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125932_75849baa.png" group-title="Chuối Chiên",🔴 [00:00] 09/10 ⚽ Orduspor 1967 vs Karadeniz Ereğli BSK (Chuối Nhỏ) • Cúp Thổ Nhĩ Kỳ [FHD • HLS]
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
@@ -2342,16 +2288,6 @@ https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
 https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8
-#EXTINF:-1 tvg-id="sport-a7a829e3836e" tvg-name="Al Nasr vs Hatta" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwEM-xxWzeVitnazbPYdIgmN-Fwgj2GaxvcwAYuRtPRA&amp;s=10" group-title="Giờ Vàng",🔴 [22:45] 08/10 ⚽ Al Nasr vs Hatta (Tôm) • United Arab Emirates - UAE League Cup [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://ftlh5sc02iliv.vcdn.cloud/1791441738_hd/1791441738_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-4cff521746cf" tvg-name="KuPS vs AC Oulu" tvg-logo="https://images.keovip88.net/images/teams/kups.png" group-title="Giờ Vàng",🔴 [23:00] 08/10 ⚽ KuPS vs AC Oulu (Mickey) • VĐQG Phần Lan [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://ftlh5sc02iliv.vcdn.cloud/1791259010_hd/1791259010_hd@720p.m3u8
 #EXTINF:-1 tvg-id="sport-e8a7661dfc98" tvg-name="Santos vs Flamengo" tvg-logo="https://images.keovip88.net/images/teams/santos.png" group-title="Giờ Vàng",[05:30] 09/10 ⚽ Santos vs Flamengo (Ngọng) • VĐQG Brazil [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -2617,6 +2553,11 @@ https://pzhgifbkllliv.vcdn.cloud/1791480907_hd/1791480907_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://pzhgifbkllliv.vcdn.cloud/1791481165_hd/1791481165_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-01a862af7f7d" tvg-name="Hisamitsu Springs Nữ vs Aleeza Aichi Nữ" tvg-logo="https://upload.wikimedia.org/wikipedia/en/7/7d/Hisamitsusprings.png?utm_source=en.wikipedia.org&amp;utm_campaign=index&amp;utm_content=original" group-title="Giờ Vàng",[16:05] 10/10 🏐 Hisamitsu Springs Nữ vs Aleeza Aichi Nữ (Trĩ) • Nhật Bản SV. League [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://pzhgifbkllliv.vcdn.cloud/1791481291_hd/1791481291_hd@720p.m3u8
 #EXTINF:-1 tvg-id="sport-06b9fc62726c" tvg-name="Cleverland Guardians vs Chicago White Sox" tvg-logo="https://static.flashscore.com/res/image/data/CMe9zXzS-QNrz0V5B.png" group-title="Giờ Vàng",[07:00] 09/10 ⚾ Cleverland Guardians vs Chicago White Sox (Cận) • MLB [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -2642,11 +2583,6 @@ https://ftlh5sc02iliv.vcdn.cloud/1791463246_hd/1791463246_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1791103825_hd/1791103825_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-01a862af7f7d" tvg-name="Hisamitsu Springs Nữ vs Aleeza Aichi Nữ" tvg-logo="https://upload.wikimedia.org/wikipedia/en/7/7d/Hisamitsusprings.png?utm_source=en.wikipedia.org&amp;utm_campaign=index&amp;utm_content=original" group-title="Giờ Vàng",[16:05] 10/10 🏐 Hisamitsu Springs Nữ vs Aleeza Aichi Nữ (Trĩ) • Nhật Bản SV. League [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://pzhgifbkllliv.vcdn.cloud/1791481291_hd/1791481291_hd@720p.m3u8
 #EXTINF:-1 tvg-id="sport-0a7b668e82c6" tvg-name="Elise Mertens vs Iga Swiatek" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAFGPMy-RQNuSOUV8rsxwSTt1gTC3_hQlH4Kn_uxntrQ&amp;s" group-title="Giờ Vàng",[18:00] 10/10 🎾 Elise Mertens vs Iga Swiatek (Ben) • WTA Beijing Open [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -2672,158 +2608,168 @@ https://lilive1.eu.cc/live/43807b24a3ad6adc6d3d0e27e3444a15/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/sweden-women-u23-finland-women-u23-dj2ryoh7v3l1q1z
 https://lilive1.eu.cc/live/8ff3d72c79f9f9c3d50d75e75b1704f4/playlist.m3u8
+#EXTINF:-1 tvg-id="sport-3f9d2037a078" tvg-name="Al Okhdood - Al Ula FC" tvg-logo="https://img.sports-data.online/football/team/47edbc8776467d4a14314c82b25344ab.png" group-title="PhaLangTV",🔴 [00:00] 09/10 ⚽ Al Okhdood - Al Ula FC • Saudi Arabia Division 1 [HLS]
+#EXTGRP:PhaLangTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/al-okhdood-al-ula-fc-dj2ryohloz75q1z
+https://lilive1.eu.cc/live/8649843209f11ccafcb35c5bc59f9979/playlist.m3u8
 #EXTINF:-1 tvg-id="sport-7e887f8af527" tvg-name="Al-Wakrah Sports Club - Al-Gharafa Sports Club" tvg-logo="https://img.sports-data.online/football/team/7dc879cf9017e0afa51a45de8aab7ec4.png" group-title="PhaLangTV",🔴 [00:00] 09/10 ⚽ Al-Wakrah Sports Club - Al-Gharafa Sports Club • Qatar Stars League [HLS]
 #EXTGRP:PhaLangTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/al-wakrah-sports-club-al-gharafa-sports-club-4jwq2ghn2k3gm0v
 https://lilive1.eu.cc/live/83d3f7e566546f8fac385a65b61163a8/playlist.m3u8
+#EXTINF:-1 tvg-id="sport-a2d4d220eab4" tvg-name="Ghazl El Mahallah - Abou Qir Fertilizers SC" tvg-logo="https://img.sports-data.online/football/team/dc6da5d579f4ffcc2574f14a19ce7a98.png" group-title="PhaLangTV",🔴 [00:00] 09/10 ⚽ Ghazl El Mahallah - Abou Qir Fertilizers SC • Egypt League Cup [HLS]
+#EXTGRP:PhaLangTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/ghazl-el-mahallah-abou-qir-fertilizers-sc-dj2ryoh7vdepq1z
+https://lilive1.eu.cc/live/205d19ab87b4fcc7bf9c0302c4519148/playlist.m3u8
+#EXTINF:-1 tvg-id="sport-0d2e1bb011bc" tvg-name="Modern Sport FC - Bank El Ahly" tvg-logo="https://img.sports-data.online/football/team/53f4bc55c48cd39be78fa4fa69645f31.png" group-title="PhaLangTV",🔴 [00:00] 09/10 ⚽ Modern Sport FC - Bank El Ahly • Egypt League Cup [HLS]
+#EXTGRP:PhaLangTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/modern-sport-fc-bank-el-ahly-pxwrxlhlp238ryk
+https://lilive1.eu.cc/live/03170bcbdf16ec5fd147efc931d0ec45/playlist.m3u8
+#EXTINF:-1 tvg-id="sport-82f38baaa07f" tvg-name="Orduspor - Kdz Ereglispor" tvg-logo="https://img.sports-data.online/football/team/c60d870eaad6a3946ab3e8734466e532.jpg" group-title="PhaLangTV",🔴 [00:00] 09/10 ⚽ Orduspor - Kdz Ereglispor • Turkish Cup [HLS]
+#EXTGRP:PhaLangTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/orduspor-kdz-ereglispor-2y8m4zhv0zdvql0
+https://lilive1.eu.cc/live/2ead854f61763ececc829fc40e8bcb73/playlist.m3u8
 #EXTINF:-1 tvg-id="sport-bec96e332caf" tvg-name="CFR Cluj - FC Universitatea Cluj" tvg-logo="https://img.sports-data.online/football/team/6f927eb040bdd5c972a9343fd9c8b873.png" group-title="PhaLangTV",🔴 [00:30] 09/10 ⚽ CFR Cluj - FC Universitatea Cluj • Romanian Super Liga [HLS]
 #EXTGRP:PhaLangTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/cfr-cluj-fc-universitatea-cluj-vjxm8ghe6379r6o
 https://lilive1.eu.cc/live/de62bef28b8842261654a5144acb5880/playlist.m3u8
-#EXTINF:-1 tvg-id="sport-a27117dd3023" tvg-name="Naft Missan vs Erbil SC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8gh4zx1r6od/image/small" group-title="XoilacXTH",[22:45] 08/10 ⚽ Naft Missan vs Erbil SC • Ngoại hạng Iraq [FLV]
+#EXTINF:-1 tvg-id="sport-0ed7d2849b8a" tvg-name="Nữ Benin vs Nữ Mali" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nhz15pmd7o/image/small" group-title="XoilacXTH",[23:00] 08/10 ⚽ Nữ Benin vs Nữ Mali • CAF Women [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=46a07eb87f5cecf22fe2dbe739f0b435&wsABSTime=1791524751
-#EXTINF:-1 tvg-id="sport-6989796131f8" tvg-name="Khor Fakkan SSC vs Al-Wasl SC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dn1m1gh42g3moep/image/small" group-title="XoilacXTH",[22:45] 08/10 ⚽ Khor Fakkan SSC vs Al-Wasl SC • UAE Cup [FLV]
+https://live2.zundrixmediapipeline.com/live/channel11.flv
+#EXTINF:-1 tvg-id="sport-1a94b2814199" tvg-name="Nữ Benin vs Nữ Mali" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nhz15pmd7o/image/small" group-title="XoilacXTH",[23:00] 08/10 ⚽ Nữ Benin vs Nữ Mali • CAF Women [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.zundrixmediapipeline.com/live/channel7.flv
-#EXTINF:-1 tvg-id="sport-473ebe15ef86" tvg-name="Khor Fakkan SSC vs Al-Wasl SC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dn1m1gh42g3moep/image/small" group-title="XoilacXTH",[22:45] 08/10 ⚽ Khor Fakkan SSC vs Al-Wasl SC • UAE Cup [FLV]
+https://live2.domaincdn.cc/livecdn/channel-11.flv?auth_key=3000001791482487-0-0-ddc5f803a880d6125347a306db8fbfd8
+#EXTINF:-1 tvg-id="sport-be1c1651d3d0" tvg-name="Al-Hala vs Buri" tvg-logo="https://imgts.sportpulseapiz.com/football/team/1l4rjnh6lwom7vx/image/small" group-title="XoilacXTH",[23:00] 08/10 ⚽ Al-Hala vs Buri • Bahrain King Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-7.flv?auth_key=3000001791481551-0-0-09918edc1ab1f84f46acbbf9c80b505c
-#EXTINF:-1 tvg-id="sport-a521bb902e4a" tvg-name="Al-Nasr Dubai vs Hatta" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jw2r09hl6x0rz84/image/small" group-title="XoilacXTH",[22:45] 08/10 ⚽ Al-Nasr Dubai vs Hatta • UAE Cup [FLV]
+https://live1.quickscoreboardz.com/live/channel19.flv?wsSecret=ba200f675ebb5a7a74d97c00b68e6dec&wsABSTime=1791525686
+#EXTINF:-1 tvg-id="sport-4cfd62cb3ec2" tvg-name="Nữ Alingsas vs Nữ Elfsborg" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phwod7m2wd/image/small" group-title="XoilacXTH",[23:30] 08/10 ⚽ Nữ Alingsas vs Nữ Elfsborg • Sweden Women [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.zundrixmediapipeline.com/live/channel22.flv
-#EXTINF:-1 tvg-id="sport-a9d680d3f8e3" tvg-name="Al-Nasr Dubai vs Hatta" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jw2r09hl6x0rz84/image/small" group-title="XoilacXTH",[22:45] 08/10 ⚽ Al-Nasr Dubai vs Hatta • UAE Cup [FLV]
+https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=bd828f2a07856560e690bbb91194260c&wsABSTime=1791525687
+#EXTINF:-1 tvg-id="sport-ad6f271d79b3" tvg-name="Nữ Na Uy U23 vs Nữ Bồ Đào Nha U23" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1hxdymojx/image/small" group-title="XoilacXTH",[23:30] 08/10 ⚽ Nữ Na Uy U23 vs Nữ Bồ Đào Nha U23 • Giao Hữu Quốc Tế [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-22.flv?auth_key=3000001791481551-0-0-5d8eb5afc66c5c1412653d731f3fc718
-#EXTINF:-1 tvg-id="sport-8abea4c7567e" tvg-name="KuPs vs AC Oulu" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66hp13qo9j/image/small" group-title="XoilacXTH",[23:00] 08/10 ⚽ KuPs vs AC Oulu • VĐQG Phần Lan [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.zundrixmediapipeline.com/live/channel5.flv
-#EXTINF:-1 tvg-id="sport-32e9d153bd07" tvg-name="KuPs vs AC Oulu" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66hp13qo9j/image/small" group-title="XoilacXTH",[23:00] 08/10 ⚽ KuPs vs AC Oulu • VĐQG Phần Lan [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-5.flv?auth_key=3000001791481551-0-0-1a6650b593c3c955f8e6b5a2b7203fe1
-#EXTINF:-1 tvg-id="sport-c82258610ae9" tvg-name="Nữ Benin vs Nữ Mali" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nhz15pmd7o/image/small" group-title="XoilacXTH",[23:00] 08/10 ⚽ Nữ Benin vs Nữ Mali • CAF Women [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel32.flv?wsSecret=5949e048739a464659daac16af741e7e&wsABSTime=1791524751
-#EXTINF:-1 tvg-id="sport-5e366f4042f3" tvg-name="Um Alhassam vs Isa Town" tvg-logo="https://imgts.sportpulseapiz.com/football/team/2y8m4zhzze3ql07/image/small" group-title="XoilacXTH",[23:00] 08/10 ⚽ Um Alhassam vs Isa Town • Bahrain King Cup [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel22.flv?wsSecret=bcac408d508a9ca7ad083ee8ac31cd7a&wsABSTime=1791524751
-#EXTINF:-1 tvg-id="sport-004f145b965b" tvg-name="Al-Hala vs Buri" tvg-logo="https://imgts.sportpulseapiz.com/football/team/1l4rjnh6lwom7vx/image/small" group-title="XoilacXTH",[23:00] 08/10 ⚽ Al-Hala vs Buri • Bahrain King Cup [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel19.flv?wsSecret=5d8979e2300e32495960d17ad74bfdc1&wsABSTime=1791524751
-#EXTINF:-1 tvg-id="sport-e47dca15e9fa" tvg-name="Union Touarga vs RS Berkane" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jh4x6zqwzv/image/small" group-title="XoilacXTH",[23:00] 08/10 ⚽ Union Touarga vs RS Berkane • VĐQG Marốc [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.zundrixmediapipeline.com/live/channel17.flv
-#EXTINF:-1 tvg-id="sport-b377abf77162" tvg-name="Union Touarga vs RS Berkane" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jh4x6zqwzv/image/small" group-title="XoilacXTH",[23:00] 08/10 ⚽ Union Touarga vs RS Berkane • VĐQG Marốc [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001791481551-0-0-2b6246669549a2facd0c9552419ad318
-#EXTINF:-1 tvg-id="sport-499671f45b59" tvg-name="Nữ Alingsas vs Nữ Elfsborg" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phwod7m2wd/image/small" group-title="XoilacXTH",[23:30] 08/10 ⚽ Nữ Alingsas vs Nữ Elfsborg • Sweden Women [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=d895d0e6a1344699922ff25c2ca54fc6&wsABSTime=1791524751
-#EXTINF:-1 tvg-id="sport-4720392d13d4" tvg-name="Nữ Na Uy U23 vs Nữ Bồ Đào Nha U23" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1hxdymojx/image/small" group-title="XoilacXTH",[23:30] 08/10 ⚽ Nữ Na Uy U23 vs Nữ Bồ Đào Nha U23 • Giao Hữu Quốc Tế [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel31.flv?wsSecret=4d849764b30e74014c8b0c534bfa4590&wsABSTime=1791524751
+https://live1.quickscoreboardz.com/live/channel31.flv?wsSecret=b4bc42424cb1252ef218d0e4a5c27042&wsABSTime=1791525687
 #EXTINF:-1 tvg-id="sport-41431440b439" tvg-name="Al Okhdood vs Al Ula FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y39mp1h3dl6mojx/image/small" group-title="XoilacXTH",[00:00] 09/10 ⚽ Al Okhdood vs Al Ula FC • Hạng Nhất Saudi Arabia [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.zundrixmediapipeline.com/live/channel10.flv
-#EXTINF:-1 tvg-id="sport-bb265c905705" tvg-name="Al Okhdood vs Al Ula FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y39mp1h3dl6mojx/image/small" group-title="XoilacXTH",[00:00] 09/10 ⚽ Al Okhdood vs Al Ula FC • Hạng Nhất Saudi Arabia [FLV]
+#EXTINF:-1 tvg-id="sport-7d45c1357e89" tvg-name="Al Okhdood vs Al Ula FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y39mp1h3dl6mojx/image/small" group-title="XoilacXTH",[00:00] 09/10 ⚽ Al Okhdood vs Al Ula FC • Hạng Nhất Saudi Arabia [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-10.flv?auth_key=3000001791481552-0-0-8a888ea7e57d6dda430ef80ef4b3c27a
+https://live2.domaincdn.cc/livecdn/channel-10.flv?auth_key=3000001791482487-0-0-cc2525efaa6a63c150e529c560fb3750
 #EXTINF:-1 tvg-id="sport-63bd709c21f9" tvg-name="Ghazl El Mahallah vs Abou Qir Fertilizers SC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vl7oqdehvw5r510/image/small" group-title="XoilacXTH",[00:00] 09/10 ⚽ Ghazl El Mahallah vs Abou Qir Fertilizers SC • Egypt League Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.zundrixmediapipeline.com/live/channel24.flv
-#EXTINF:-1 tvg-id="sport-09c4f2eddbfc" tvg-name="Ghazl El Mahallah vs Abou Qir Fertilizers SC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vl7oqdehvw5r510/image/small" group-title="XoilacXTH",[00:00] 09/10 ⚽ Ghazl El Mahallah vs Abou Qir Fertilizers SC • Egypt League Cup [FLV]
+#EXTINF:-1 tvg-id="sport-2e0ca70f3411" tvg-name="Ghazl El Mahallah vs Abou Qir Fertilizers SC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vl7oqdehvw5r510/image/small" group-title="XoilacXTH",[00:00] 09/10 ⚽ Ghazl El Mahallah vs Abou Qir Fertilizers SC • Egypt League Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001791481551-0-0-a357641bfb1e38e5b9202c4b9fdf8f39
+https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001791482487-0-0-1d25bcda26630de67102f81e88753b09
 #EXTINF:-1 tvg-id="sport-49e69b77c356" tvg-name="Future FC vs Bank El Ahly" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8yomo4h2kddq0j6/image/small" group-title="XoilacXTH",[00:00] 09/10 ⚽ Future FC vs Bank El Ahly • Egypt League Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.zundrixmediapipeline.com/live/channel15.flv
-#EXTINF:-1 tvg-id="sport-2c321e37ea04" tvg-name="Future FC vs Bank El Ahly" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8yomo4h2kddq0j6/image/small" group-title="XoilacXTH",[00:00] 09/10 ⚽ Future FC vs Bank El Ahly • Egypt League Cup [FLV]
+#EXTINF:-1 tvg-id="sport-264b59a9095f" tvg-name="Future FC vs Bank El Ahly" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8yomo4h2kddq0j6/image/small" group-title="XoilacXTH",[00:00] 09/10 ⚽ Future FC vs Bank El Ahly • Egypt League Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001791481551-0-0-80d8eba8d597b7a04986406c416d6819
+https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001791482487-0-0-d00b4b7ef099f4cbc61eca53d2557520
 #EXTINF:-1 tvg-id="sport-ea01ba20f5da" tvg-name="Al-Wakrah Sports Club vs Al-Gharafa Sports Club" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohkl6pq1zp/image/small" group-title="XoilacXTH",[00:00] 09/10 ⚽ Al-Wakrah Sports Club vs Al-Gharafa Sports Club • VĐQG Qatar [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.zundrixmediapipeline.com/live/channel12.flv
-#EXTINF:-1 tvg-id="sport-cc94a190e0d0" tvg-name="Al-Wakrah Sports Club vs Al-Gharafa Sports Club" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohkl6pq1zp/image/small" group-title="XoilacXTH",[00:00] 09/10 ⚽ Al-Wakrah Sports Club vs Al-Gharafa Sports Club • VĐQG Qatar [FLV]
+#EXTINF:-1 tvg-id="sport-cd38031c755e" tvg-name="Al-Wakrah Sports Club vs Al-Gharafa Sports Club" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohkl6pq1zp/image/small" group-title="XoilacXTH",[00:00] 09/10 ⚽ Al-Wakrah Sports Club vs Al-Gharafa Sports Club • VĐQG Qatar [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-12.flv?auth_key=3000001791481551-0-0-86e9ab7ed43039435fec768408094d95
-#EXTINF:-1 tvg-id="sport-84baaec2bede" tvg-name="Orduspor vs Kdz Ereglispor" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdehnnp3r510/image/small" group-title="XoilacXTH",[00:00] 09/10 ⚽ Orduspor vs Kdz Ereglispor • Cúp Thổ Nhĩ Kỳ [FLV]
+https://live2.domaincdn.cc/livecdn/channel-12.flv?auth_key=3000001791482487-0-0-cf50561f9bc640b738c901cb833b56ab
+#EXTINF:-1 tvg-id="sport-10b184b6421b" tvg-name="Orduspor vs Kdz Ereglispor" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdehnnp3r510/image/small" group-title="XoilacXTH",[00:00] 09/10 ⚽ Orduspor vs Kdz Ereglispor • Cúp Thổ Nhĩ Kỳ [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=de1a369646bafdb39b9316a43c7a84c4&wsABSTime=1791524751
-#EXTINF:-1 tvg-id="sport-31c7ca70fb27" tvg-name="MB Rouissat vs USM Libreville" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phogjvm2wd/image/small" group-title="XoilacXTH",[00:00] 09/10 ⚽ MB Rouissat vs USM Libreville • Algerian Ligue Professionnelle 1 [FLV]
+https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=8293ff7c0a5e4ac0bf9e6135c04cf3cb&wsABSTime=1791525687
+#EXTINF:-1 tvg-id="sport-8a5bb8ce8e71" tvg-name="MB Rouissat vs USM Libreville" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phogjvm2wd/image/small" group-title="XoilacXTH",[00:00] 09/10 ⚽ MB Rouissat vs USM Libreville • Algerian Ligue Professionnelle 1 [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=e21fb9052b3ee708f1316faa75553e5f&wsABSTime=1791524751
-#EXTINF:-1 tvg-id="sport-b7731e40dde9" tvg-name="Indep. Juniors vs AD Nueve de Octubre" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8yomo4h288dq0j6/image/small" group-title="XoilacXTH",[00:00] 09/10 ⚽ Indep. Juniors vs AD Nueve de Octubre • Hạng 2 Ecuador [FLV]
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=9d2c16d79ceb43e270c3e017932eb7f9&wsABSTime=1791525687
+#EXTINF:-1 tvg-id="sport-6fcb2fde192b" tvg-name="Indep. Juniors vs AD Nueve de Octubre" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8yomo4h288dq0j6/image/small" group-title="XoilacXTH",[00:00] 09/10 ⚽ Indep. Juniors vs AD Nueve de Octubre • Hạng 2 Ecuador [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=6dd6ed6a0d0c031dbb2fbca7a7a540dd&wsABSTime=1791524751
+https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=75c81da0c99f6908457073f49ffdc7ed&wsABSTime=1791525687
 #EXTINF:-1 tvg-id="sport-ac757d4ca6e9" tvg-name="CFR Cluj vs Universitatea Cluj" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hv23rz84/image/small" group-title="XoilacXTH",[00:30] 09/10 ⚽ CFR Cluj vs Universitatea Cluj • VĐQG Romania [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.zundrixmediapipeline.com/live/channel16.flv
-#EXTINF:-1 tvg-id="sport-0c03e290bc28" tvg-name="CFR Cluj vs Universitatea Cluj" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hv23rz84/image/small" group-title="XoilacXTH",[00:30] 09/10 ⚽ CFR Cluj vs Universitatea Cluj • VĐQG Romania [FLV]
+#EXTINF:-1 tvg-id="sport-1bbef2c524b6" tvg-name="CFR Cluj vs Universitatea Cluj" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hv23rz84/image/small" group-title="XoilacXTH",[00:30] 09/10 ⚽ CFR Cluj vs Universitatea Cluj • VĐQG Romania [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001791481551-0-0-f51449992bb984897c0021c3c90bac84
-#EXTINF:-1 tvg-id="sport-aaf5a2aaf632" tvg-name="Vanersborg FK vs Kumla" tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66h0ne0qo9j/image/small" group-title="XoilacXTH",[00:30] 09/10 ⚽ Vanersborg FK vs Kumla • Hạng 2 Thụy Điển [FLV]
+https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001791482487-0-0-e610ea14841771cee96dd27424c16bf9
+#EXTINF:-1 tvg-id="sport-e500880c1705" tvg-name="Vanersborg FK vs Kumla" tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66h0ne0qo9j/image/small" group-title="XoilacXTH",[00:30] 09/10 ⚽ Vanersborg FK vs Kumla • Hạng 2 Thụy Điển [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel7.flv?wsSecret=8303ac619a4d895ba33e76c16570b392&wsABSTime=1791524751
-#EXTINF:-1 tvg-id="sport-3dca603f8815" tvg-name="Al Talaba vs Al Shorta" tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghjy41q82w/image/small" group-title="XoilacXTH",[00:30] 09/10 ⚽ Al Talaba vs Al Shorta • Ngoại hạng Iraq [FLV]
+https://live1.quickscoreboardz.com/live/channel7.flv?wsSecret=b1772665cb6343ea66639016c2cc5abc&wsABSTime=1791525687
+#EXTINF:-1 tvg-id="sport-8415e5c0207c" tvg-name="Al Talaba vs Al Shorta" tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghjy41q82w/image/small" group-title="XoilacXTH",[00:30] 09/10 ⚽ Al Talaba vs Al Shorta • Ngoại hạng Iraq [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel21.flv?wsSecret=f2e2534a7c7963f8f63d0608da7d65f6&wsABSTime=1791524751
+https://live1.quickscoreboardz.com/live/channel21.flv?wsSecret=7f745707cd11c94d17612497f5cc024b&wsABSTime=1791525687
+#EXTINF:-1 tvg-id="sport-c56716f32fd0" tvg-name="Moquegua vs Cienciano" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohn348q1zp/image/small" group-title="XoilacXTH",[01:00] 09/10 ⚽ Moquegua vs Cienciano • VĐQG Peru [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live2.zundrixmediapipeline.com/live/channel14.flv
+#EXTINF:-1 tvg-id="sport-28f5c34d7b08" tvg-name="Moquegua vs Cienciano" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohn348q1zp/image/small" group-title="XoilacXTH",[01:00] 09/10 ⚽ Moquegua vs Cienciano • VĐQG Peru [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live2.domaincdn.cc/livecdn/channel-14.flv?auth_key=3000001791482487-0-0-fb19da2b052777c21be57faabfc5eb78
+#EXTINF:-1 tvg-id="sport-804aef252201" tvg-name="Atletico Mineiro U20 vs Athletic Club MG U20" tvg-logo="https://imgts.sportpulseapiz.com/football/team/n54qllh20g9qvy9/image/small" group-title="XoilacXTH",[01:00] 09/10 ⚽ Atletico Mineiro U20 vs Athletic Club MG U20 • Brazilian Youth Cup [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live1.quickscoreboardz.com/live/channel8.flv?wsSecret=453253ed7b5ff09afe3d47ec472e134c&wsABSTime=1791525687
+#EXTINF:-1 tvg-id="sport-3aae9c43cbcd" tvg-name="Lanus (R) vs Central Cordoba (R)" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jh4k4nqwzv/image/small" group-title="XoilacXTH",[01:00] 09/10 ⚽ Lanus (R) vs Central Cordoba (R) • Giải trẻ Argentina [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live1.quickscoreboardz.com/live/channel9.flv?wsSecret=c473ee53ce055f86c4b9de145e609a13&wsABSTime=1791525687
+#EXTINF:-1 tvg-id="sport-af1da913ddcc" tvg-name="Atletico Tucuman (R) vs Talleres Cordoba (R)" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9wh946vryox/image/small" group-title="XoilacXTH",[01:00] 09/10 ⚽ Atletico Tucuman (R) vs Talleres Cordoba (R) • Giải trẻ Argentina [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live1.quickscoreboardz.com/live/channel10.flv?wsSecret=81efcd70f88f0e020b63fecd327f570a&wsABSTime=1791525693
+#EXTINF:-1 tvg-id="sport-b855c4ca56a9" tvg-name="Belgrano (R) vs San Martin (R)" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phod36m2wd/image/small" group-title="XoilacXTH",[01:00] 09/10 ⚽ Belgrano (R) vs San Martin (R) • Giải trẻ Argentina [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live1.quickscoreboardz.com/live/channel11.flv?wsSecret=d2dbab2b9cde1c14c51a83dcb27d994b&wsABSTime=1791525687
+#EXTINF:-1 tvg-id="sport-2ab635b6522a" tvg-name="Sarmiento Junin (R) vs Velez Sarsfield (R)" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlh18plryk0/image/small" group-title="XoilacXTH",[01:00] 09/10 ⚽ Sarmiento Junin (R) vs Velez Sarsfield (R) • Giải trẻ Argentina [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live1.quickscoreboardz.com/live/channel12.flv?wsSecret=f2d71264c865a319ea0e1a16174ebda8&wsABSTime=1791525687
