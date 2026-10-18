@@ -1,14 +1,10 @@
 #EXTM3U x-tvg-url=""
-#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 08:01 18/10" group-title="🕒 Cập nhật 08:01 18/10",🕒 Cập nhật 08:01 18/10
+#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 08:15 18/10" group-title="🕒 Cập nhật 08:15 18/10",🕒 Cập nhật 08:15 18/10
 http://127.0.0.1/
-#EXTINF:-1 tvg-id="sport-76bc1bac7d75" tvg-name="Atletico Tucuman vs CA Rosario Central" tvg-logo="https://img.gvapi.cc/football/team/59c0d1f66ce24214b14ab12ddc9a3ccd.png" group-title="Gà Vàng 33",🔴 [06:00] 18/10 ⚽ Atletico Tucuman vs CA Rosario Central [HLS]
+#EXTINF:-1 tvg-id="sport-7fb0c268bb71" tvg-name="Atletico Tucuman vs CA Rosario Central" tvg-logo="https://img.gvapi.cc/football/team/59c0d1f66ce24214b14ab12ddc9a3ccd.png" group-title="Gà Vàng 33",🔴 [06:00] 18/10 ⚽ Atletico Tucuman vs CA Rosario Central [HLS]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-referrer=https://gavang33.me/
-https://live2.zktsva.app/live/432017.m3u8
-#EXTINF:-1 tvg-id="sport-c1f153cf60ea" tvg-name="Atletico Tucuman vs CA Rosario Central" tvg-logo="https://img.gvapi.cc/football/team/59c0d1f66ce24214b14ab12ddc9a3ccd.png" group-title="Gà Vàng 33",🔴 [06:00] 18/10 ⚽ Atletico Tucuman vs CA Rosario Central [FLV]
-#EXTGRP:Gà Vàng 33
-#EXTVLCOPT:http-referrer=https://gavang33.me/
-https://live2.zktsva.app/live/432017.flv
+https://video.gvvsb.com/hls/output_v1.m3u8
 #EXTINF:-1 tvg-id="sport-710312152d3d" tvg-name="Atlanta Utd vs Inter Miami CF" tvg-logo="https://img.gvapi.cc/football/team/dcb67dd58619e29d84853ac2e4ac5e27.png" group-title="Gà Vàng 33",🔴 [06:40] 18/10 ⚽ Atlanta Utd vs Inter Miami CF (Gà Siêu Tồ) • United States Major League Soccer [HLS]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -547,25 +543,21 @@ https://live2.zktsva.app/live/289650.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://gavang33.co/
 https://live2.zktsva.app/live/289650.flv
-#EXTINF:-1 tvg-id="sport-1ec44c72e52a" tvg-name="Atl. Tucuman vs CLB Rosario Central" tvg-logo="https://img.gvapi.cc/football/team/2d87cf3b426597f02435e2c72e8def93.png!w80" group-title="CoLaTV",🔴 [06:00] 18/10 ⚽ Atl. Tucuman vs CLB Rosario Central (BLV POCARI) • Giải Bóng đá Vô địch Quốc gia Argentina [HLS]
+#EXTINF:-1 tvg-id="sport-608e3cc07225" tvg-name="Atl. Tucuman vs CLB Rosario Central" tvg-logo="https://img.gvapi.cc/football/team/2d87cf3b426597f02435e2c72e8def93.png!w80" group-title="CoLaTV",🔴 [06:00] 18/10 ⚽ Atl. Tucuman vs CLB Rosario Central (POCARI) • Giải Bóng đá Vô địch Quốc gia Argentina [HLS]
 #EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live05.zhwpg.app/live/19919577_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-022092155444" tvg-name="Atl. Tucuman vs CLB Rosario Central" tvg-logo="https://img.gvapi.cc/football/team/2d87cf3b426597f02435e2c72e8def93.png!w80" group-title="CoLaTV",🔴 [06:00] 18/10 ⚽ Atl. Tucuman vs CLB Rosario Central (BLV POCARI) • Giải Bóng đá Vô địch Quốc gia Argentina [HLS]
+#EXTINF:-1 tvg-id="sport-f425d2a8d313" tvg-name="Atl. Tucuman vs CLB Rosario Central" tvg-logo="https://img.gvapi.cc/football/team/2d87cf3b426597f02435e2c72e8def93.png!w80" group-title="CoLaTV",🔴 [06:00] 18/10 ⚽ Atl. Tucuman vs CLB Rosario Central (POCARI) • Giải Bóng đá Vô địch Quốc gia Argentina [HLS]
 #EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live05.miekgo.app/live/19919577_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-a3e9182ba1ab" tvg-name="Atl. Tucuman vs CLB Rosario Central" tvg-logo="https://img.gvapi.cc/football/team/2d87cf3b426597f02435e2c72e8def93.png!w80" group-title="CoLaTV",🔴 [06:00] 18/10 ⚽ Atl. Tucuman vs CLB Rosario Central (BLV POCARI) • Giải Bóng đá Vô địch Quốc gia Argentina [FLV]
+#EXTINF:-1 tvg-id="sport-c64cf76597e3" tvg-name="Atl. Tucuman vs CLB Rosario Central" tvg-logo="https://img.gvapi.cc/football/team/2d87cf3b426597f02435e2c72e8def93.png!w80" group-title="CoLaTV",🔴 [06:00] 18/10 ⚽ Atl. Tucuman vs CLB Rosario Central (POCARI) • Giải Bóng đá Vô địch Quốc gia Argentina [FLV]
 #EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live05.zhwpg.app/live/19919577_tsc.flv
-#EXTINF:-1 tvg-id="sport-b6f1e43e8a66" tvg-name="Atl. Tucuman vs CLB Rosario Central" tvg-logo="https://img.gvapi.cc/football/team/2d87cf3b426597f02435e2c72e8def93.png!w80" group-title="CoLaTV",🔴 [06:00] 18/10 ⚽ Atl. Tucuman vs CLB Rosario Central • Giải Bóng đá Vô địch Quốc gia Argentina [HLS]
+#EXTINF:-1 tvg-id="sport-811cf26f0371" tvg-name="Atl. Tucuman vs CLB Rosario Central" tvg-logo="https://img.gvapi.cc/football/team/2d87cf3b426597f02435e2c72e8def93.png!w80" group-title="CoLaTV",🔴 [06:00] 18/10 ⚽ Atl. Tucuman vs CLB Rosario Central • Giải Bóng đá Vô địch Quốc gia Argentina [HLS]
 #EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live1.dyrur1.com/live/13397555_3ba5c9efaee70ce46b2ddd5703522da5_autoChange.m3u8?auth_key=1792299118-0-0-b13f8751fe0aa12c9e0574f9482eaa8a
 #EXTINF:-1 tvg-id="sport-e9e14b1e67d0" tvg-name="Atlanta Utd vs Inter Miami" tvg-logo="https://img.gvapi.cc/football/team/dcb67dd58619e29d84853ac2e4ac5e27.png!w80" group-title="CoLaTV",🔴 [06:40] 18/10 ⚽ Atlanta Utd vs Inter Miami (BLV FANTA) • Major League Soccer [HLS]
 #EXTGRP:CoLaTV
@@ -582,11 +574,11 @@ https://live05.zhwpg.app/live/16226575_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/16226575_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-4e171a4d501e" tvg-name="Atlanta Utd vs Inter Miami" tvg-logo="https://img.gvapi.cc/football/team/dcb67dd58619e29d84853ac2e4ac5e27.png!w80" group-title="CoLaTV",🔴 [06:40] 18/10 ⚽ Atlanta Utd vs Inter Miami • Major League Soccer [HLS]
+#EXTINF:-1 tvg-id="sport-bf9d514cff76" tvg-name="Atlanta Utd vs Inter Miami" tvg-logo="https://img.gvapi.cc/football/team/dcb67dd58619e29d84853ac2e4ac5e27.png!w80" group-title="CoLaTV",🔴 [06:40] 18/10 ⚽ Atlanta Utd vs Inter Miami • Major League Soccer [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
-https://live5.dyrur1.com/live/13375483_10015e0bf6d9431daad4cc7d16529964_autoChange.m3u8?auth_key=1792299646-0-0-691d02304310d124d15bfacebead86ac
+https://live5.dyrur1.com/live/13375483_10015e0bf6d9431daad4cc7d16529964_autoChange.m3u8?auth_key=1792300508-0-0-e52bc8e9fce2c9659f76713905dafd44
 #EXTINF:-1 tvg-id="sport-487d5784e200" tvg-name="New York City vs Los Angeles FC" tvg-logo="https://img.gvapi.cc/football/team/f5bbc8573e1b019164b11b13c49598bd.png!w80" group-title="CoLaTV",🔴 [06:40] 18/10 ⚽ New York City vs Los Angeles FC (BLV TEPPY) • Major League Soccer [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -602,11 +594,11 @@ https://live05.zhwpg.app/live/33860426_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/33860426_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-11d35f467fba" tvg-name="New York City vs Los Angeles FC" tvg-logo="https://img.gvapi.cc/football/team/f5bbc8573e1b019164b11b13c49598bd.png!w80" group-title="CoLaTV",🔴 [06:40] 18/10 ⚽ New York City vs Los Angeles FC • Major League Soccer [HLS]
+#EXTINF:-1 tvg-id="sport-c5f8af09f01f" tvg-name="New York City vs Los Angeles FC" tvg-logo="https://img.gvapi.cc/football/team/f5bbc8573e1b019164b11b13c49598bd.png!w80" group-title="CoLaTV",🔴 [06:40] 18/10 ⚽ New York City vs Los Angeles FC • Major League Soccer [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
-https://live3.dyrur1.com/live/g6763i5r98vio7r_0f02e4c6e7d8a04d73c59d2206f40c3d_autoChange.m3u8?auth_key=1792299644-0-0-f446e1344959cb574b319e678f479aaf
+https://live.dyrur1.com/live/14533141_00129a651020e5e22c8eedd1a1a2b5f7_autoChange.m3u8?auth_key=1792300511-0-0-3472174c1cfdf7e7cd5d18b017f74403
 #EXTINF:-1 tvg-id="sport-b1256f3fc88b" tvg-name="Toluca vs Atletico San Luis" tvg-logo="https://img.gvapi.cc/football/team/725ccd5793be6b4f8dd917170dd17d04.png!w80" group-title="CoLaTV",🔴 [08:00] 18/10 ⚽ Toluca vs Atletico San Luis (BLV AQUA) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -622,11 +614,11 @@ https://live05.zhwpg.app/live/18812304_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/18812304_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-76d28443ebfb" tvg-name="Toluca vs Atletico San Luis" tvg-logo="https://img.gvapi.cc/football/team/725ccd5793be6b4f8dd917170dd17d04.png!w80" group-title="CoLaTV",🔴 [08:00] 18/10 ⚽ Toluca vs Atletico San Luis • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
+#EXTINF:-1 tvg-id="sport-e4f6a876a68f" tvg-name="Toluca vs Atletico San Luis" tvg-logo="https://img.gvapi.cc/football/team/725ccd5793be6b4f8dd917170dd17d04.png!w80" group-title="CoLaTV",🔴 [08:00] 18/10 ⚽ Toluca vs Atletico San Luis • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
-https://live1.dyrur1.com/live/13994982_9dfd32162e25af43235570990c657891_autoChange.m3u8?auth_key=1792299627-0-0-fc4ccde77687ee5abff5374b558ae7ec
+https://live1.dyrur1.com/live/13994982_9dfd32162e25af43235570990c657891_autoChange.m3u8?auth_key=1792300491-0-0-461bcdb974da0766d41b3871146dce61
 #EXTINF:-1 tvg-id="sport-2cd0faf67db8" tvg-name="Wellington Phoenix vs Melbourne Victory" tvg-logo="https://img.gvapi.cc/football/team/1162efa593827d2a7566b5862dee72e4.png!w80" group-title="CoLaTV",[09:00] 18/10 ⚽ Wellington Phoenix vs Melbourne Victory (BLV SODA) • Giải vô địch quốc gia Úc [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -2054,14 +2046,14 @@ https://stm9ee346727718.stream.hdplaylink.com/cctvlive/troctruhd/playlist.m3u8
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
 https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8
-#EXTINF:-1 tvg-id="sport-4877109403df" tvg-name="Leon vs Club America" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131434_fbad589d.png" group-title="Chuối Chiên",[08:00] 18/10 ⚽ Leon vs Club America (Chuối To) • VĐQG Mexico [FHD • HLS]
-#EXTGRP:Chuối Chiên
-#EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
-https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8
 #EXTINF:-1 tvg-id="sport-fc70c3456e4c" tvg-name="Leon vs Club America" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131434_fbad589d.png" group-title="Chuối Chiên",[08:00] 18/10 ⚽ Leon vs Club America (Chuối To) • VĐQG Mexico [HD • HLS]
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
 https://gckc0525.edgemaxcdn.org/live/chuoito/playlist.m3u8
+#EXTINF:-1 tvg-id="sport-4877109403df" tvg-name="Leon vs Club America" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131434_fbad589d.png" group-title="Chuối Chiên",[08:00] 18/10 ⚽ Leon vs Club America (Chuối To) • VĐQG Mexico [FHD • HLS]
+#EXTGRP:Chuối Chiên
+#EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8
 #EXTINF:-1 tvg-id="sport-6a9b253927b1" tvg-name="Wellington Phoenix vs Melbourne Victory" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_130439_bf7a95dc.png" group-title="Chuối Chiên",[09:00] 18/10 ⚽ Wellington Phoenix vs Melbourne Victory (Chuối Kem) • A-League [HLS]
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
@@ -2264,11 +2256,6 @@ https://ftlh5sc02iliv.vcdn.cloud/1792220938_hd/1792220938_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792221421_hd/1792221421_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-4fa7da9d793e" tvg-name="Universitario De Vinto - San Antonio Bulo Bulo" tvg-logo="https://img.sports-data.online/football/team/78806733b03788c901fd2f2cda1f0bd2.png" group-title="PhaLangTV",🔴 [04:15] 18/10 ⚽ Universitario De Vinto - San Antonio Bulo Bulo • Bolivian Primera Division [HLS]
-#EXTGRP:PhaLangTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/universitario-de-vinto-san-antonio-bulo-bulo-318q66hx5l3vqo9
-https://lilive1.eu.cc/live/33676d347faf771c560882da9f7e0f35/playlist.m3u8
 #EXTINF:-1 tvg-id="sport-d80d9fa44a72" tvg-name="America MG - Operario Ferroviario PR" tvg-logo="https://img.sports-data.online/football/team/24403efa393f55163b5593c435bbe4a7.png" group-title="PhaLangTV",🔴 [04:30] 18/10 ⚽ America MG - Operario Ferroviario PR • Brazilian Serie B [HLS]
 #EXTGRP:PhaLangTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
@@ -2474,133 +2461,153 @@ https://lilive1.eu.cc/live/f49d81968347b1eaf88304cfc59633c2/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/bayer-04-leverkusen-sc-freiburg-8yomo4h1o5y6q0j
 https://lilive1.eu.cc/live/89e039e62388351a167103e9cc1a04cf/playlist.m3u8
-#EXTINF:-1 tvg-id="sport-dd242fcc9683" tvg-name="Velez Sarsfield vs Gimnasia Mendoza" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8y39mp1h8zjmojx/image/small" group-title="XoilacXTH",[06:00] 18/10 ⚽ Velez Sarsfield vs Gimnasia Mendoza • VĐQG Argentina [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel10.flv?wsSecret=c15da1636971da56b852921df1128fb4&wsABSTime=1792328486
-#EXTINF:-1 tvg-id="sport-b255cb9064a7" tvg-name="Santos Laguna vs Queretaro FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdehn63nr510/image/small" group-title="XoilacXTH",[06:00] 18/10 ⚽ Santos Laguna vs Queretaro FC • VĐQG Mexico [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.jorvakstreamcache.com/live/channel25.flv
-#EXTINF:-1 tvg-id="sport-aa54d2673bf5" tvg-name="Santos Laguna vs Queretaro FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdehn63nr510/image/small" group-title="XoilacXTH",[06:00] 18/10 ⚽ Santos Laguna vs Queretaro FC • VĐQG Mexico [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-25.flv?auth_key=3000001792285286-0-0-be382596cf936a6d633d6821f08fb6f0
-#EXTINF:-1 tvg-id="sport-a110dce01c60" tvg-name="Louisville City vs Indy Eleven" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh76kor1ge/image/small" group-title="XoilacXTH",[06:00] 18/10 ⚽ Louisville City vs Indy Eleven • USL Championship [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel12.flv?wsSecret=a05f2741a1a72e6afe3713cf57911c50&wsABSTime=1792328486
-#EXTINF:-1 tvg-id="sport-d7329e3cb749" tvg-name="Hartford Athletic vs Brooklyn FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergphvd69r8k0/image/small" group-title="XoilacXTH",[06:00] 18/10 ⚽ Hartford Athletic vs Brooklyn FC • USL Championship [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel13.flv?wsSecret=a353c1fe076daec4a1cfe01fb05c8fa7&wsABSTime=1792328486
-#EXTINF:-1 tvg-id="sport-24eeb0ebc2f4" tvg-name="Westchester SC vs Omaha" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phpnkem2wd/image/small" group-title="XoilacXTH",[06:00] 18/10 ⚽ Westchester SC vs Omaha • USL League One [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel14.flv?wsSecret=1aad48f834dd7c129ad6a607fa6d7c01&wsABSTime=1792328486
-#EXTINF:-1 tvg-id="sport-78de92d5fa2d" tvg-name="Greenville Triumph vs Charlotte Indep" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekhyn9grepz/image/small" group-title="XoilacXTH",[06:00] 18/10 ⚽ Greenville Triumph vs Charlotte Indep • USL League One [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel15.flv?wsSecret=a8d8869bd2f9980e249737e3e876bfce&wsABSTime=1792328486
-#EXTINF:-1 tvg-id="sport-a376fe91fa1f" tvg-name="UNAN Managua vs San Marcos FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergph3d5zr8k0/image/small" group-title="XoilacXTH",[06:00] 18/10 ⚽ UNAN Managua vs San Marcos FC • VĐQG Nicaragua [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel33.flv?wsSecret=9882ef63b07aaf0002e7dca1c7fe10cf&wsABSTime=1792328486
-#EXTINF:-1 tvg-id="sport-d1c49d41fc14" tvg-name="Miami FC vs Charleston Battery" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh7n90r1ge/image/small" group-title="XoilacXTH",[06:00] 18/10 ⚽ Miami FC vs Charleston Battery • USL Championship [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel34.flv?wsSecret=6576cf19d6a85147036d2fb99473035e&wsABSTime=1792328486
-#EXTINF:-1 tvg-id="sport-7cb0ed0e53b7" tvg-name="Millonarios vs CD Jaguares" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhg9x5ryk0/image/small" group-title="XoilacXTH",[06:05] 18/10 ⚽ Millonarios vs CD Jaguares • VĐQG Colombia [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel27.flv?wsSecret=e74e22d036fa4f56c40bbede14b0db4f&wsABSTime=1792328486
 #EXTINF:-1 tvg-id="sport-83d96f15a415" tvg-name="Club Guadalajara vs Tigres UANL" tvg-logo="https://imgts.sportpulseapiz.com/football/team/yl5ergph1e7r8k0/image/small" group-title="XoilacXTH",[06:07] 18/10 ⚽ Club Guadalajara vs Tigres UANL • VĐQG Mexico [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel23.flv
-#EXTINF:-1 tvg-id="sport-13bccb8ef0c2" tvg-name="Club Guadalajara vs Tigres UANL" tvg-logo="https://imgts.sportpulseapiz.com/football/team/yl5ergph1e7r8k0/image/small" group-title="XoilacXTH",[06:07] 18/10 ⚽ Club Guadalajara vs Tigres UANL • VĐQG Mexico [FLV]
+#EXTINF:-1 tvg-id="sport-41d11d1ce32d" tvg-name="Club Guadalajara vs Tigres UANL" tvg-logo="https://imgts.sportpulseapiz.com/football/team/yl5ergph1e7r8k0/image/small" group-title="XoilacXTH",[06:07] 18/10 ⚽ Club Guadalajara vs Tigres UANL • VĐQG Mexico [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-23.flv?auth_key=3000001792285287-0-0-d25090aec2a1fb52b4c6eb9b659f2e6f
-#EXTINF:-1 tvg-id="sport-bccb51e421fa" tvg-name="Nữ Wellington Phoenix vs Nữ Melbourne City" tvg-logo="https://imgts.sportpulseapiz.com/football/team/n54qllh8vneqvy9/image/small" group-title="XoilacXTH",[06:15] 18/10 ⚽ Nữ Wellington Phoenix vs Nữ Melbourne City • Australia W-League [FLV]
+https://live2.domaincdn.cc/livecdn/channel-23.flv?auth_key=3000001792286149-0-0-04a060ea397a47976dbe1a3f67ab6b6c
+#EXTINF:-1 tvg-id="sport-3bbf3e268729" tvg-name="CA Independente vs Veraguas FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jh4566qwzv/image/small" group-title="XoilacXTH",[06:15] 18/10 ⚽ CA Independente vs Veraguas FC • VĐQG Panama [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.jorvakstreamcache.com/live/channel10.flv
-#EXTINF:-1 tvg-id="sport-2c2aea4e17c0" tvg-name="Nữ Wellington Phoenix vs Nữ Melbourne City" tvg-logo="https://imgts.sportpulseapiz.com/football/team/n54qllh8vneqvy9/image/small" group-title="XoilacXTH",[06:15] 18/10 ⚽ Nữ Wellington Phoenix vs Nữ Melbourne City • Australia W-League [FLV]
+https://live1.quickscoreboardz.com/live/channel17.flv?wsSecret=1b5729bf95d490caffe5fb5bd67b9e3d&wsABSTime=1792329349
+#EXTINF:-1 tvg-id="sport-a522163d394e" tvg-name="Juticalpa vs Atletico Choloma" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whk02eryox/image/small" group-title="XoilacXTH",[06:15] 18/10 ⚽ Juticalpa vs Atletico Choloma • VĐQG Honduras [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-10.flv?auth_key=3000001792285287-0-0-e697ff53a02253dd7b394049097d8547
-#EXTINF:-1 tvg-id="sport-92912dc1687f" tvg-name="CA Independente vs Veraguas FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jh4566qwzv/image/small" group-title="XoilacXTH",[06:15] 18/10 ⚽ CA Independente vs Veraguas FC • VĐQG Panama [FLV]
+https://live1.quickscoreboardz.com/live/channel18.flv?wsSecret=3353a87cc6f475fa565a1b002fc6de1b&wsABSTime=1792329349
+#EXTINF:-1 tvg-id="sport-eb20d25843d0" tvg-name="Blooming vs In. Petrolero" tvg-logo="https://imgts.sportpulseapiz.com/football/team/n54qllh2j8gqvy9/image/small" group-title="XoilacXTH",[06:30] 18/10 ⚽ Blooming vs In. Petrolero • VĐQG Bolivia [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel17.flv?wsSecret=c89bad21edd3b81879ae271ca3cb3503&wsABSTime=1792328487
-#EXTINF:-1 tvg-id="sport-01be01ed1025" tvg-name="Juticalpa vs Atletico Choloma" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whk02eryox/image/small" group-title="XoilacXTH",[06:15] 18/10 ⚽ Juticalpa vs Atletico Choloma • VĐQG Honduras [FLV]
+https://live1.quickscoreboardz.com/live/channel19.flv?wsSecret=941d3139cbc11d0200913a704dc247e2&wsABSTime=1792329349
+#EXTINF:-1 tvg-id="sport-27e4487ee599" tvg-name="Tampa Bay FC vs Detroit City" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh47vwr1ge/image/small" group-title="XoilacXTH",[06:30] 18/10 ⚽ Tampa Bay FC vs Detroit City • USL Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel18.flv?wsSecret=4721cbd8cd6cb1aabe2935eb04c1825f&wsABSTime=1792328487
-#EXTINF:-1 tvg-id="sport-6f016d84dbe5" tvg-name="Blooming vs In. Petrolero" tvg-logo="https://imgts.sportpulseapiz.com/football/team/n54qllh2j8gqvy9/image/small" group-title="XoilacXTH",[06:30] 18/10 ⚽ Blooming vs In. Petrolero • VĐQG Bolivia [FLV]
+https://live1.quickscoreboardz.com/live/channel20.flv?wsSecret=285fc953c5b35243f21f99b10109a7e1&wsABSTime=1792329349
+#EXTINF:-1 tvg-id="sport-7c3a6702de82" tvg-name="Rhode Island vs Pittsburgh R" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whg3gzryox/image/small" group-title="XoilacXTH",[06:30] 18/10 ⚽ Rhode Island vs Pittsburgh R • USL Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel19.flv?wsSecret=005c7dbaa9c58fb9843f87c32a7783ce&wsABSTime=1792328487
-#EXTINF:-1 tvg-id="sport-a0e1b868dc3c" tvg-name="Tampa Bay FC vs Detroit City" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh47vwr1ge/image/small" group-title="XoilacXTH",[06:30] 18/10 ⚽ Tampa Bay FC vs Detroit City • USL Championship [FLV]
+https://live1.quickscoreboardz.com/live/channel21.flv?wsSecret=dad3646284048464aa57d021984a0488&wsABSTime=1792329349
+#EXTINF:-1 tvg-id="sport-e6ba99e8736c" tvg-name="Fort Wayne FC vs Sarasota Paradise" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nhwnz6md7o/image/small" group-title="XoilacXTH",[06:30] 18/10 ⚽ Fort Wayne FC vs Sarasota Paradise • USL League One [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel20.flv?wsSecret=11c6c2c93d24798216c9f33c2b6660a2&wsABSTime=1792328487
-#EXTINF:-1 tvg-id="sport-0e22f422d491" tvg-name="Rhode Island vs Pittsburgh R" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whg3gzryox/image/small" group-title="XoilacXTH",[06:30] 18/10 ⚽ Rhode Island vs Pittsburgh R • USL Championship [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel21.flv?wsSecret=af54e726bc25a544d09cfe1651830d74&wsABSTime=1792328487
-#EXTINF:-1 tvg-id="sport-c94320ed93c0" tvg-name="Fort Wayne FC vs Sarasota Paradise" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nhwnz6md7o/image/small" group-title="XoilacXTH",[06:30] 18/10 ⚽ Fort Wayne FC vs Sarasota Paradise • USL League One [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel22.flv?wsSecret=f50c90dc114430338248ce8eedcc71ad&wsABSTime=1792328486
+https://live1.quickscoreboardz.com/live/channel22.flv?wsSecret=cf5ca8a503a17b619fa65bdd9d381442&wsABSTime=1792329349
 #EXTINF:-1 tvg-id="sport-92c8d987faff" tvg-name="Atlanta United vs Inter Miami" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergph39nxr8k0/image/small" group-title="XoilacXTH",[06:40] 18/10 ⚽ Atlanta United vs Inter Miami • MLS_Nhà Nghề Mỹ [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel19.flv
-#EXTINF:-1 tvg-id="sport-fc095fd75e08" tvg-name="Atlanta United vs Inter Miami" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergph39nxr8k0/image/small" group-title="XoilacXTH",[06:40] 18/10 ⚽ Atlanta United vs Inter Miami • MLS_Nhà Nghề Mỹ [FLV]
+#EXTINF:-1 tvg-id="sport-68504578aa90" tvg-name="Atlanta United vs Inter Miami" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergph39nxr8k0/image/small" group-title="XoilacXTH",[06:40] 18/10 ⚽ Atlanta United vs Inter Miami • MLS_Nhà Nghề Mỹ [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001792285287-0-0-8aeb6698415de75ec174b40070201ed8
+https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001792286149-0-0-a21a32d24dc555919a037225a9861286
 #EXTINF:-1 tvg-id="sport-504668cc3304" tvg-name="NY Red Bulls vs Toronto FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jednm9whlweryox/image/small" group-title="XoilacXTH",[06:40] 18/10 ⚽ NY Red Bulls vs Toronto FC • MLS_Nhà Nghề Mỹ [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel21.flv
-#EXTINF:-1 tvg-id="sport-57b085970bfe" tvg-name="NY Red Bulls vs Toronto FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jednm9whlweryox/image/small" group-title="XoilacXTH",[06:40] 18/10 ⚽ NY Red Bulls vs Toronto FC • MLS_Nhà Nghề Mỹ [FLV]
+#EXTINF:-1 tvg-id="sport-9c64fdaab466" tvg-name="NY Red Bulls vs Toronto FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jednm9whlweryox/image/small" group-title="XoilacXTH",[06:40] 18/10 ⚽ NY Red Bulls vs Toronto FC • MLS_Nhà Nghề Mỹ [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-21.flv?auth_key=3000001792285287-0-0-9a0b9c2877cdb5df3bdc15ab7691369e
+https://live2.domaincdn.cc/livecdn/channel-21.flv?auth_key=3000001792286149-0-0-fa6b9746667ba56f409b2c3a9fb0f1f6
 #EXTINF:-1 tvg-id="sport-22acff43fb97" tvg-name="Orlando City vs DC United" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hoxvrz84/image/small" group-title="XoilacXTH",[06:40] 18/10 ⚽ Orlando City vs DC United • MLS_Nhà Nghề Mỹ [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel7.flv
-#EXTINF:-1 tvg-id="sport-943370d1a103" tvg-name="Orlando City vs DC United" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hoxvrz84/image/small" group-title="XoilacXTH",[06:40] 18/10 ⚽ Orlando City vs DC United • MLS_Nhà Nghề Mỹ [FLV]
+#EXTINF:-1 tvg-id="sport-79791f0b1da0" tvg-name="Orlando City vs DC United" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hoxvrz84/image/small" group-title="XoilacXTH",[06:40] 18/10 ⚽ Orlando City vs DC United • MLS_Nhà Nghề Mỹ [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-7.flv?auth_key=3000001792285287-0-0-22cde95578c61d8418f4f29bafd49256
+https://live2.domaincdn.cc/livecdn/channel-7.flv?auth_key=3000001792286149-0-0-f6692eb21f282056c13db1e5b662e35b
+#EXTINF:-1 tvg-id="sport-7d599f08fa1a" tvg-name="New York City vs Los Angeles FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhoo2ryk0/image/small" group-title="XoilacXTH",[06:40] 18/10 ⚽ New York City vs Los Angeles FC • MLS_Nhà Nghề Mỹ [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live2.jorvakstreamcache.com/live/channel17.flv
+#EXTINF:-1 tvg-id="sport-1df50fc41f3b" tvg-name="New York City vs Los Angeles FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhoo2ryk0/image/small" group-title="XoilacXTH",[06:40] 18/10 ⚽ New York City vs Los Angeles FC • MLS_Nhà Nghề Mỹ [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001792286149-0-0-9bac98a82d5039c849b7d188673e7540
+#EXTINF:-1 tvg-id="sport-47c6e806a34f" tvg-name="New England vs Chicago Fire" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jednm9wh4z3ryox/image/small" group-title="XoilacXTH",[06:40] 18/10 ⚽ New England vs Chicago Fire • MLS_Nhà Nghề Mỹ [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live2.jorvakstreamcache.com/live/channel28.flv
+#EXTINF:-1 tvg-id="sport-a381b9910227" tvg-name="New England vs Chicago Fire" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jednm9wh4z3ryox/image/small" group-title="XoilacXTH",[06:40] 18/10 ⚽ New England vs Chicago Fire • MLS_Nhà Nghề Mỹ [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live2.domaincdn.cc/livecdn/channel-28.flv?auth_key=3000001792286149-0-0-2d290477986c002fa4a083809c5f5019
+#EXTINF:-1 tvg-id="sport-5aed37e3ebac" tvg-name="São Paulo vs Vasco da Gama" tvg-logo="https://imgts.sportpulseapiz.com/football/team/d23xmvkhjj6qg8n/image/small" group-title="XoilacXTH",[07:00] 18/10 ⚽ São Paulo vs Vasco da Gama • VĐQG Brasil [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live1.quickscoreboardz.com/live/channel23.flv?wsSecret=1d4737fe5c193637604ea4099d0602ce&wsABSTime=1792329349
+#EXTINF:-1 tvg-id="sport-f299091208b3" tvg-name="Tulsa Roughneck vs Oakland Roots" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8ghggo2r6od/image/small" group-title="XoilacXTH",[07:00] 18/10 ⚽ Tulsa Roughneck vs Oakland Roots • USL Championship [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live1.quickscoreboardz.com/live/channel24.flv?wsSecret=9a152a859a621494b9d46d1db5815d57&wsABSTime=1792329349
+#EXTINF:-1 tvg-id="sport-789fa935887f" tvg-name="San Antonio vs New Mexico United" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7h134gqdyj/image/small" group-title="XoilacXTH",[07:30] 18/10 ⚽ San Antonio vs New Mexico United • USL Championship [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live1.quickscoreboardz.com/live/channel35.flv?wsSecret=158f067d2fc1d5047803f62e2a005493&wsABSTime=1792329349
+#EXTINF:-1 tvg-id="sport-5c93454b1571" tvg-name="Sporting Kansas vs Real Salt Lake" tvg-logo="https://imgts.sportpulseapiz.com/football/team/p3glrw7he7gqdyj/image/small" group-title="XoilacXTH",[07:40] 18/10 ⚽ Sporting Kansas vs Real Salt Lake • MLS_Nhà Nghề Mỹ [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live2.jorvakstreamcache.com/live/channel13.flv
+#EXTINF:-1 tvg-id="sport-73b4d6d8ed73" tvg-name="Sporting Kansas vs Real Salt Lake" tvg-logo="https://imgts.sportpulseapiz.com/football/team/p3glrw7he7gqdyj/image/small" group-title="XoilacXTH",[07:40] 18/10 ⚽ Sporting Kansas vs Real Salt Lake • MLS_Nhà Nghề Mỹ [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live2.domaincdn.cc/livecdn/channel-13.flv?auth_key=3000001792286149-0-0-13bf27cfe1e7f74a16b2b99c4f8b9c7d
+#EXTINF:-1 tvg-id="sport-0f8bd63150a2" tvg-name="Houston Dynamo vs FC Dallas" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jhp77qwzv/image/small" group-title="XoilacXTH",[07:40] 18/10 ⚽ Houston Dynamo vs FC Dallas • MLS_Nhà Nghề Mỹ [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live2.jorvakstreamcache.com/live/channel14.flv
+#EXTINF:-1 tvg-id="sport-539d678ecdb6" tvg-name="Houston Dynamo vs FC Dallas" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jhp77qwzv/image/small" group-title="XoilacXTH",[07:40] 18/10 ⚽ Houston Dynamo vs FC Dallas • MLS_Nhà Nghề Mỹ [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live2.domaincdn.cc/livecdn/channel-14.flv?auth_key=3000001792286149-0-0-8280d218488408fb1040757cb57e214b
+#EXTINF:-1 tvg-id="sport-607cb357ff23" tvg-name="Austin FC vs Vancouver Whitecaps" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jw2r09hj73erz84/image/small" group-title="XoilacXTH",[07:40] 18/10 ⚽ Austin FC vs Vancouver Whitecaps • MLS_Nhà Nghề Mỹ [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live2.jorvakstreamcache.com/live/channel12.flv
+#EXTINF:-1 tvg-id="sport-590af35588b3" tvg-name="Austin FC vs Vancouver Whitecaps" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jw2r09hj73erz84/image/small" group-title="XoilacXTH",[07:40] 18/10 ⚽ Austin FC vs Vancouver Whitecaps • MLS_Nhà Nghề Mỹ [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live2.domaincdn.cc/livecdn/channel-12.flv?auth_key=3000001792286149-0-0-b8a669f8df56d696f5a64c10df08a37e
+#EXTINF:-1 tvg-id="sport-402eb24ec60c" tvg-name="Nữ Denver Summit vs Nữ Angel City" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8yomo4hz6pnq0j6/image/small" group-title="XoilacXTH",[07:45] 18/10 ⚽ Nữ Denver Summit vs Nữ Angel City • Nữ USA [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live1.quickscoreboardz.com/live/channel25.flv?wsSecret=6be0bed5d8f78c40f10abcbb9942b5b6&wsABSTime=1792329349
+#EXTINF:-1 tvg-id="sport-47b7f174d5e7" tvg-name="Toluca vs Atl. San Luis" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66h9p6qo9j/image/small" group-title="XoilacXTH",[08:00] 18/10 ⚽ Toluca vs Atl. San Luis • VĐQG Mexico [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live2.jorvakstreamcache.com/live/channel9.flv
+#EXTINF:-1 tvg-id="sport-e6e7c7ce4f59" tvg-name="Toluca vs Atl. San Luis" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z318q66h9p6qo9j/image/small" group-title="XoilacXTH",[08:00] 18/10 ⚽ Toluca vs Atl. San Luis • VĐQG Mexico [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live2.domaincdn.cc/livecdn/channel-9.flv?auth_key=3000001792286149-0-0-c090bc06b8598320c56674e4ab2ae5d9
