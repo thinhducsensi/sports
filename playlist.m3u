@@ -1,20 +1,14 @@
 #EXTM3U x-tvg-url=""
-#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 20:01 19/10" group-title="🕒 Cập nhật 20:01 19/10",🕒 Cập nhật 20:01 19/10
+#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 20:15 19/10" group-title="🕒 Cập nhật 20:15 19/10",🕒 Cập nhật 20:15 19/10
 http://127.0.0.1/
 #EXTINF:-1 tvg-id="sport-a61d41666085" tvg-name="Santa Clara U23 vs Braga U23" tvg-logo="https://img.gvapi.cc/football/team/e7f496f594add2954bb58b2132e1e788.png" group-title="Gà Vàng 33",🔴 [17:00] 19/10 ⚽ Santa Clara U23 vs Braga U23 [HLS]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-referrer=https://gavang33.me/
 https://video.gvvsb.com/hls/output_v1.m3u8
-#EXTINF:-1 tvg-id="sport-161e1c0d552a" tvg-name="Cong An Ho Chi Minh City vs The Cong-Viettel" tvg-logo="https://img.gvapi.cc/football/team/99dd3ac7267c0e3870d9ad785e6f9661.png" group-title="Gà Vàng 33",🔴 [18:00] 19/10 ⚽ Cong An Ho Chi Minh City vs The Cong-Viettel (Gà Siêu Ngố) • Vietnam National Champion League [HLS]
+#EXTINF:-1 tvg-id="sport-97bd8fe8a8aa" tvg-name="Cong An Ho Chi Minh City vs The Cong-Viettel" tvg-logo="https://img.gvapi.cc/football/team/99dd3ac7267c0e3870d9ad785e6f9661.png" group-title="Gà Vàng 33",🔴 [18:00] 19/10 ⚽ Cong An Ho Chi Minh City vs The Cong-Viettel [HLS]
 #EXTGRP:Gà Vàng 33
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://gavang33.co/
-https://live2.zktsva.app/live/301238.m3u8
-#EXTINF:-1 tvg-id="sport-7f6513bfd08a" tvg-name="Cong An Ho Chi Minh City vs The Cong-Viettel" tvg-logo="https://img.gvapi.cc/football/team/99dd3ac7267c0e3870d9ad785e6f9661.png" group-title="Gà Vàng 33",🔴 [18:00] 19/10 ⚽ Cong An Ho Chi Minh City vs The Cong-Viettel (Gà Siêu Ngố) • Vietnam National Champion League [FLV]
-#EXTGRP:Gà Vàng 33
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://gavang33.co/
-https://live2.zktsva.app/live/301238.flv
+#EXTVLCOPT:http-referrer=https://gavang33.me/
+https://video.gvvsb.com/hls/output_v1.m3u8
 #EXTINF:-1 tvg-id="sport-5e05c2f7d168" tvg-name="El Gounah vs Smouha SC" tvg-logo="https://img.gvapi.cc/football/team/35e665fa4086e183fda582249d625c2b.png" group-title="Gà Vàng 33",[21:00] 19/10 ⚽ El Gounah vs Smouha SC (Gà Siêu Mõm) • Egyptian Premier League [HLS]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -386,11 +380,11 @@ https://live05.zhwpg.app/live/07428422_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/07428422_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-1a4eaa12dc85" tvg-name="Phnom Penh Crown vs Life FC" tvg-logo="https://img.gvapi.cc/football/team/03dd1707147dbd5897a8dcae40991e2c.png!w80" group-title="CoLaTV",🔴 [18:00] 19/10 ⚽ Phnom Penh Crown vs Life FC • Giải bóng đá Premier League Campuchia [HLS]
+#EXTINF:-1 tvg-id="sport-167bd948b878" tvg-name="Phnom Penh Crown vs Life FC" tvg-logo="https://img.gvapi.cc/football/team/03dd1707147dbd5897a8dcae40991e2c.png!w80" group-title="CoLaTV",🔴 [18:00] 19/10 ⚽ Phnom Penh Crown vs Life FC • Giải bóng đá Premier League Campuchia [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
-https://live1.dyrur1.com/live/14441201_cba89ee7c951bfce225ce2e2f1bf18db_autoChange.m3u8?auth_key=1792429140-0-0-de5a77ad0d1d8c176e96e2ba2c28cfd1
+https://live1.dyrur1.com/live/14441201_cba89ee7c951bfce225ce2e2f1bf18db_autoChange.m3u8?auth_key=1792429837-0-0-b871e609a6f0336365996e1220a7b440
 #EXTINF:-1 tvg-id="sport-5ba988c5cb61" tvg-name="Thành phố Hồ Chí Minh vs Thể Công - Viettel" tvg-logo="https://img.gvapi.cc/football/team/99dd3ac7267c0e3870d9ad785e6f9661.png!w80" group-title="CoLaTV",🔴 [18:00] 19/10 ⚽ Thành phố Hồ Chí Minh vs Thể Công - Viettel (C2) • Giải vô địch quốc gia Việt Nam [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
@@ -422,11 +416,11 @@ https://live05.zhwpg.app/live/87379114_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/87379114_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-ac1d14096aa6" tvg-name="Beijing Konggu vs Shanghai" tvg-logo="https://img.gvapi.cc/basketball/team/559cfc139ec9e214e54b4ddae5d1cba7.png!w80" group-title="CoLaTV",🔴 [18:35] 19/10 🏀 Beijing Konggu vs Shanghai • Giải bóng rổ nam Trung Quốc [HLS]
+#EXTINF:-1 tvg-id="sport-329f5b46218c" tvg-name="Beijing Konggu vs Shanghai" tvg-logo="https://img.gvapi.cc/basketball/team/559cfc139ec9e214e54b4ddae5d1cba7.png!w80" group-title="CoLaTV",🔴 [18:35] 19/10 🏀 Beijing Konggu vs Shanghai • Giải bóng rổ nam Trung Quốc [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
-https://live.dyrur1.com/live/14472779_a4cb9fef3cb95a39070abdf36c767b62_autoChange.m3u8?auth_key=1792429140-0-0-96c1dc3354cae59205e93e061a9f0baf
+https://live.dyrur1.com/live/14472779_a4cb9fef3cb95a39070abdf36c767b62_autoChange.m3u8?auth_key=1792429837-0-0-8ba604080a24b39ae6529532a6950809
 #EXTINF:-1 tvg-id="sport-7907eb28fcd6" tvg-name="Jiangsu Kendiya vs Shenzhen" tvg-logo="https://img.gvapi.cc/basketball/team/b25897e323bba837824c2d7fead03826.png!w80" group-title="CoLaTV",🔴 [18:35] 19/10 🏀 Jiangsu Kendiya vs Shenzhen (BLV POCARI) • Giải bóng rổ nam Trung Quốc [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -442,11 +436,11 @@ https://live05.zhwpg.app/live/19919577_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/19919577_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-61d78bcf3b56" tvg-name="Jiangsu Kendiya vs Shenzhen" tvg-logo="https://img.gvapi.cc/basketball/team/b25897e323bba837824c2d7fead03826.png!w80" group-title="CoLaTV",🔴 [18:35] 19/10 🏀 Jiangsu Kendiya vs Shenzhen • Giải bóng rổ nam Trung Quốc [HLS]
+#EXTINF:-1 tvg-id="sport-c1aa0772f8e3" tvg-name="Jiangsu Kendiya vs Shenzhen" tvg-logo="https://img.gvapi.cc/basketball/team/b25897e323bba837824c2d7fead03826.png!w80" group-title="CoLaTV",🔴 [18:35] 19/10 🏀 Jiangsu Kendiya vs Shenzhen • Giải bóng rổ nam Trung Quốc [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
-https://live1.dyrur1.com/live/14472780_4b15088c3ed81835a3bba139e1681df4_autoChange.m3u8?auth_key=1792429140-0-0-4e9ef6fb601cb454ae4555a8a6b6ca71
+https://live1.dyrur1.com/live/14472780_4b15088c3ed81835a3bba139e1681df4_autoChange.m3u8?auth_key=1792429837-0-0-7a1b202667bc5113dd8551391fe66549
 #EXTINF:-1 tvg-id="sport-ebf846e0746b" tvg-name="CLB Manisa BB Spor vs CLB Muglaspor" tvg-logo="https://img.gvapi.cc/football/team/952ab041b861b04dee0bc92f155a2a32.png!w80" group-title="CoLaTV",[21:00] 19/10 ⚽ CLB Manisa BB Spor vs CLB Muglaspor (BLV TEPPY) • Giải Bóng đá Vô địch Quốc gia Thổ Nhĩ Kỳ [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1273,11 +1267,6 @@ https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792309510_hd/1792309510_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-d460242ae821" tvg-name="TP Hồ Chí Minh vs Thể Công Viettel" tvg-logo="https://vpf.vn/wp-content/uploads/2019/12/HCM-FC-New-202627.png" group-title="Giờ Vàng",🔴 [18:00] 19/10 ⚽ TP Hồ Chí Minh vs Thể Công Viettel (Tỵ) • V-League [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://ftlh5sc02iliv.vcdn.cloud/1792309593_hd/1792309593_hd@720p.m3u8
 #EXTINF:-1 tvg-id="sport-2ed7f76fac9b" tvg-name="Beijing Royal Fighters vs Shanghai Jiushi Sharks" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/af8d9f59130550be6228fcd35c70ae11.png" group-title="Giờ Vàng",🔴 [18:35] 19/10 🏀 Beijing Royal Fighters vs Shanghai Jiushi Sharks (Tôm) • Chinese Basketball Association [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1293,22 +1282,22 @@ https://ftlh5sc02iliv.vcdn.cloud/1792311528_hd/1792311528_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792393036_hd/1792393036_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-e7d75eea3001" tvg-name="Al Zulfi vs Al Ula" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxWgR0c-sy5rDNjUGvvvCEiLuB4qURyPZAKH1EtoMqw&amp;s=10" group-title="Giờ Vàng",[22:05] 19/10 ⚽ Al Zulfi vs Al Ula (Bee) • Cúp Hoàng tử Faisal bin Fahd [HLS]
+#EXTINF:-1 tvg-id="sport-0b5008cdba2f" tvg-name="Al Zulfi vs Al Ula" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxWgR0c-sy5rDNjUGvvvCEiLuB4qURyPZAKH1EtoMqw&amp;s=10" group-title="Giờ Vàng",[22:05] 19/10 ⚽ Al Zulfi vs Al Ula (Bee) • Cúp Hoàng tử Faisal bin Fahd [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://pzhgifbkllliv.vcdn.cloud/1792309670_hd/1792309670_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-4971679493b2" tvg-name="Al-Feiha vs Al Ahli Jeddah" tvg-logo="https://images.keovip88.net/images/teams/al-feiha.png" group-title="Giờ Vàng",[22:05] 19/10 ⚽ Al-Feiha vs Al Ahli Jeddah (Chồn) • VĐQG Ả Rập Xê Út [HLS]
+#EXTINF:-1 tvg-id="sport-e2e4aa299845" tvg-name="Al-Feiha vs Al Ahli Jeddah" tvg-logo="https://images.keovip88.net/images/teams/al-feiha.png" group-title="Giờ Vàng",[22:05] 19/10 ⚽ Al-Feiha vs Al Ahli Jeddah (Chồn) • VĐQG Ả Rập Xê Út [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792309956_hd/1792309956_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-7c22f9989e6c" tvg-name="Abha vs Al Kholood" tvg-logo="https://images.keovip88.net/images/teams/abha.png" group-title="Giờ Vàng",[22:20] 19/10 ⚽ Abha vs Al Kholood (Súp) • VĐQG Ả Rập Xê Út [HLS]
+#EXTINF:-1 tvg-id="sport-a20d3c40d5fc" tvg-name="Abha vs Al Kholood" tvg-logo="https://images.keovip88.net/images/teams/abha.png" group-title="Giờ Vàng",[22:20] 19/10 ⚽ Abha vs Al Kholood (Súp) • VĐQG Ả Rập Xê Út [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792310075_hd/1792310075_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-f26f70702d74" tvg-name="Damac vs Al Ta'ee" tvg-logo="https://static.flashscore.com/res/image/data/f1Df7KeM-29Hb7UEa.png" group-title="Giờ Vàng",[22:20] 19/10 ⚽ Damac vs Al Ta'ee (Hứa) • Cúp Hoàng tử Faisal bin Fahd [HLS]
+#EXTINF:-1 tvg-id="sport-1e6ee4019571" tvg-name="Damac vs Al Ta'ee" tvg-logo="https://static.flashscore.com/res/image/data/f1Df7KeM-29Hb7UEa.png" group-title="Giờ Vàng",[22:20] 19/10 ⚽ Damac vs Al Ta'ee (Hứa) • Cúp Hoàng tử Faisal bin Fahd [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
@@ -1338,17 +1327,17 @@ https://ftlh5sc02iliv.vcdn.cloud/1792403871_hd/1792403871_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792404007_hd/1792404007_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-2e686a0e263e" tvg-name="Tottenham Hotspur vs Coventry" tvg-logo="https://images.keovip88.net/images/teams/tottenham-hotspur.png" group-title="Giờ Vàng",[02:00] 20/10 ⚽ Tottenham Hotspur vs Coventry (Chồn) • Ngoại hạng Anh [HLS]
+#EXTINF:-1 tvg-id="sport-32d80fb62e8f" tvg-name="Tottenham Hotspur vs Coventry" tvg-logo="https://images.keovip88.net/images/teams/tottenham-hotspur.png" group-title="Giờ Vàng",[02:00] 20/10 ⚽ Tottenham Hotspur vs Coventry (Chồn) • Ngoại hạng Anh [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792403945_hd/1792403945_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-71d7008fe8cb" tvg-name="Corinthians Paulista (SP) vs Vitoria Salvador BA" tvg-logo="https://images.keovip88.net/images/teams/corinthians-paulista-sp.png" group-title="Giờ Vàng",[06:00] 20/10 ⚽ Corinthians Paulista (SP) vs Vitoria Salvador BA (Ngọng) • VĐQG Brazil [HLS]
+#EXTINF:-1 tvg-id="sport-759de9a89c12" tvg-name="Corinthians Paulista (SP) vs Vitoria Salvador BA" tvg-logo="https://images.keovip88.net/images/teams/corinthians-paulista-sp.png" group-title="Giờ Vàng",[06:00] 20/10 ⚽ Corinthians Paulista (SP) vs Vitoria Salvador BA (Ngọng) • VĐQG Brazil [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792404052_hd/1792404052_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-f32a38193b1d" tvg-name="Adhyaksa Farmel FC vs Malut United" tvg-logo="https://images.keovip88.net/images/teams/adhyaksa-farmel-fc.png" group-title="Giờ Vàng",[15:30] 20/10 ⚽ Adhyaksa Farmel FC vs Malut United (Tỵ) • VĐQG Indonesia [HLS]
+#EXTINF:-1 tvg-id="sport-90074ac1c028" tvg-name="Adhyaksa Farmel FC vs Malut United" tvg-logo="https://images.keovip88.net/images/teams/adhyaksa-farmel-fc.png" group-title="Giờ Vàng",[15:30] 20/10 ⚽ Adhyaksa Farmel FC vs Malut United (Tỵ) • VĐQG Indonesia [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
@@ -1358,22 +1347,22 @@ https://ftlh5sc02iliv.vcdn.cloud/1792310180_hd/1792310180_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792310287_hd/1792310287_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-5c4c92d34bf7" tvg-name="Dewa United FC vs Persijap Jepara" tvg-logo="https://images.keovip88.net/images/teams/dewa-united-fc.png" group-title="Giờ Vàng",[19:00] 20/10 ⚽ Dewa United FC vs Persijap Jepara (Trĩ) • VĐQG Indonesia [HLS]
+#EXTINF:-1 tvg-id="sport-e563df642d30" tvg-name="Dewa United FC vs Persijap Jepara" tvg-logo="https://images.keovip88.net/images/teams/dewa-united-fc.png" group-title="Giờ Vàng",[19:00] 20/10 ⚽ Dewa United FC vs Persijap Jepara (Trĩ) • VĐQG Indonesia [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792310255_hd/1792310255_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-af80cbe345a6" tvg-name="Hajer vs Al Najma" tvg-logo="https://upload.wikimedia.org/wikipedia/en/8/86/Hajer_FC_logo.png?utm_source=en.wikipedia.org&amp;utm_campaign=index&amp;utm_content=original" group-title="Giờ Vàng",[21:45] 20/10 ⚽ Hajer vs Al Najma (Trĩ) • Cúp Hoàng tử Faisal bin Fahd [HLS]
+#EXTINF:-1 tvg-id="sport-18ebf273739e" tvg-name="Hajer vs Al Najma" tvg-logo="https://upload.wikimedia.org/wikipedia/en/8/86/Hajer_FC_logo.png?utm_source=en.wikipedia.org&amp;utm_campaign=index&amp;utm_content=original" group-title="Giờ Vàng",[21:45] 20/10 ⚽ Hajer vs Al Najma (Trĩ) • Cúp Hoàng tử Faisal bin Fahd [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://pzhgifbkllliv.vcdn.cloud/1792310354_hd/1792310354_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-9db4e0f64d6c" tvg-name="Al-Draih vs Al-Riyadh" tvg-logo="https://images.keovip88.net/images/teams/al-draih.png" group-title="Giờ Vàng",[22:00] 20/10 ⚽ Al-Draih vs Al-Riyadh (Súp) • VĐQG Ả Rập Xê Út [HLS]
+#EXTINF:-1 tvg-id="sport-95b4046f4ec7" tvg-name="Al-Draih vs Al-Riyadh" tvg-logo="https://images.keovip88.net/images/teams/al-draih.png" group-title="Giờ Vàng",[22:00] 20/10 ⚽ Al-Draih vs Al-Riyadh (Súp) • VĐQG Ả Rập Xê Út [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792310459_hd/1792310459_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-6e0f36a0dac2" tvg-name="Xorazm Urganch vs Buxoro FK" tvg-logo="https://images.keovip88.net/images/teams/xorazm-urganch.png" group-title="Giờ Vàng",[22:00] 20/10 ⚽ Xorazm Urganch vs Buxoro FK (Bee) • Uzbekistan Super League [HLS]
+#EXTINF:-1 tvg-id="sport-f04aa58dc7c2" tvg-name="Xorazm Urganch vs Buxoro FK" tvg-logo="https://images.keovip88.net/images/teams/xorazm-urganch.png" group-title="Giờ Vàng",[22:00] 20/10 ⚽ Xorazm Urganch vs Buxoro FK (Bee) • Uzbekistan Super League [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
@@ -1388,7 +1377,7 @@ https://ftlh5sc02iliv.vcdn.cloud/1792310507_hd/1792310507_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792310542_hd/1792310542_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-b242f1908e3f" tvg-name="Seoul SK Knights vs Anyang Jung Kwan Jang Red Boosters" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/425cf7236b655f8922a9b53220d3d1b6.png" group-title="Giờ Vàng",[17:00] 20/10 🏀 Seoul SK Knights vs Anyang Jung Kwan Jang Red Boosters (Vịt) • Korea Basketball League [HLS]
+#EXTINF:-1 tvg-id="sport-2edaac426e75" tvg-name="Seoul SK Knights vs Anyang Jung Kwan Jang Red Boosters" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/425cf7236b655f8922a9b53220d3d1b6.png" group-title="Giờ Vàng",[17:00] 20/10 🏀 Seoul SK Knights vs Anyang Jung Kwan Jang Red Boosters (Vịt) • Korea Basketball League [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
@@ -1398,17 +1387,17 @@ https://ftlh5sc02iliv.vcdn.cloud/1792311587_hd/1792311587_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792311621_hd/1792311621_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-e17f605caa47" tvg-name="Fujian Xunxing Sturgeons vs Zhejiang Lions" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/513a673e2abf3080d21b0dc4d0b0dad8.png" group-title="Giờ Vàng",[18:35] 20/10 🏀 Fujian Xunxing Sturgeons vs Zhejiang Lions (Vịt) • Chinese Basketball Association [HLS]
+#EXTINF:-1 tvg-id="sport-d561229cac88" tvg-name="Fujian Xunxing Sturgeons vs Zhejiang Lions" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/513a673e2abf3080d21b0dc4d0b0dad8.png" group-title="Giờ Vàng",[18:35] 20/10 🏀 Fujian Xunxing Sturgeons vs Zhejiang Lions (Vịt) • Chinese Basketball Association [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792311659_hd/1792311659_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-9ab697a34521" tvg-name="Jilin Northeast Tigers vs SiChuan Jingqiang Blue Whales" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/9b1edb3adebae8211e057008d8352b03.png" group-title="Giờ Vàng",[18:35] 20/10 🏀 Jilin Northeast Tigers vs SiChuan Jingqiang Blue Whales (Tôm) • Chinese Basketball Association [HLS]
+#EXTINF:-1 tvg-id="sport-e3b125e0cf2f" tvg-name="Jilin Northeast Tigers vs SiChuan Jingqiang Blue Whales" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/9b1edb3adebae8211e057008d8352b03.png" group-title="Giờ Vàng",[18:35] 20/10 🏀 Jilin Northeast Tigers vs SiChuan Jingqiang Blue Whales (Tôm) • Chinese Basketball Association [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792311703_hd/1792311703_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-424dbe03df41" tvg-name="Ningbo Rockets vs Shanxi Loongs Fenjiu" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/78539aa7b6e4518265799642461ab855.png" group-title="Giờ Vàng",[18:35] 20/10 🏀 Ningbo Rockets vs Shanxi Loongs Fenjiu (Hấu) • Chinese Basketball Association [HLS]
+#EXTINF:-1 tvg-id="sport-4922770f7e9d" tvg-name="Ningbo Rockets vs Shanxi Loongs Fenjiu" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/78539aa7b6e4518265799642461ab855.png" group-title="Giờ Vàng",[18:35] 20/10 🏀 Ningbo Rockets vs Shanxi Loongs Fenjiu (Hấu) • Chinese Basketball Association [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
@@ -1458,18 +1447,8 @@ https://lilive1.eu.cc/live/d976459bc3c7eca3f2cdef88c9e85ddb/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel20.flv
-#EXTINF:-1 tvg-id="sport-c8f7b0849763" tvg-name="Slovenia U17 vs Moldova U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghj3ezq82w/image/small" group-title="XoilacXTH",🔴 [17:00] 19/10 ⚽ Slovenia U17 vs Moldova U17 • UEFA European U17 Football Championship [FLV]
+#EXTINF:-1 tvg-id="sport-4fe3391168b5" tvg-name="Slovenia U17 vs Moldova U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghj3ezq82w/image/small" group-title="XoilacXTH",🔴 [17:00] 19/10 ⚽ Slovenia U17 vs Moldova U17 • UEFA European U17 Football Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-20.flv?auth_key=3000001792414885-0-0-7c5a12886ac21dfff42422c91fe22d6a
-#EXTINF:-1 tvg-id="sport-c0e117e5f8d7" tvg-name="CH Séc U17 vs Belarus U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y39mp1h3k0gmojx/image/small" group-title="XoilacXTH",🔴 [17:00] 19/10 ⚽ CH Séc U17 vs Belarus U17 • UEFA European U17 Football Championship [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.jorvakstreamcache.com/live/channel14.flv
-#EXTINF:-1 tvg-id="sport-b54f23c82978" tvg-name="CH Séc U17 vs Belarus U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y39mp1h3k0gmojx/image/small" group-title="XoilacXTH",🔴 [17:00] 19/10 ⚽ CH Séc U17 vs Belarus U17 • UEFA European U17 Football Championship [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-14.flv?auth_key=3000001792414885-0-0-029da812e37f5eb0a43fdc39c77003cf
+https://live2.domaincdn.cc/livecdn/channel-20.flv?auth_key=3000001792415754-0-0-76ccc46352c35c274be95df6e3767ac1
