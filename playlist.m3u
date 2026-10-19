@@ -1,14 +1,10 @@
 #EXTM3U x-tvg-url=""
-#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 15:31 19/10" group-title="🕒 Cập nhật 15:31 19/10",🕒 Cập nhật 15:31 19/10
+#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 15:45 19/10" group-title="🕒 Cập nhật 15:45 19/10",🕒 Cập nhật 15:45 19/10
 http://127.0.0.1/
-#EXTINF:-1 tvg-id="sport-2e21c72e8ca5" tvg-name="FarDU vs Metallurg Bekobod" tvg-logo="https://img.gvapi.cc/football/team/c4958354eae05d5e126c22453ef39a63.png" group-title="Gà Vàng 33",[17:00] 19/10 ⚽ FarDU vs Metallurg Bekobod [HLS]
+#EXTINF:-1 tvg-id="sport-37996157149c" tvg-name="FarDU vs Metallurg Bekobod" tvg-logo="https://img.gvapi.cc/football/team/c4958354eae05d5e126c22453ef39a63.png" group-title="Gà Vàng 33",[17:00] 19/10 ⚽ FarDU vs Metallurg Bekobod [HLS]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-referrer=https://gavang33.me/
-https://live2.zktsva.app/live/301263.m3u8
-#EXTINF:-1 tvg-id="sport-149bc30a43c3" tvg-name="FarDU vs Metallurg Bekobod" tvg-logo="https://img.gvapi.cc/football/team/c4958354eae05d5e126c22453ef39a63.png" group-title="Gà Vàng 33",[17:00] 19/10 ⚽ FarDU vs Metallurg Bekobod [FLV]
-#EXTGRP:Gà Vàng 33
-#EXTVLCOPT:http-referrer=https://gavang33.me/
-https://live2.zktsva.app/live/301263.flv
+https://video.gvvsb.com/hls/output_v1.m3u8
 #EXTINF:-1 tvg-id="sport-161e1c0d552a" tvg-name="Cong An Ho Chi Minh City vs The Cong-Viettel" tvg-logo="https://img.gvapi.cc/football/team/99dd3ac7267c0e3870d9ad785e6f9661.png" group-title="Gà Vàng 33",[18:00] 19/10 ⚽ Cong An Ho Chi Minh City vs The Cong-Viettel (Gà Siêu Ngố) • Vietnam National Champion League [HLS]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -456,6 +452,11 @@ https://live05.miekgo.app/live/08552895_tsc.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.zhwpg.app/live/08552895_tsc.flv
+#EXTINF:-1 tvg-id="sport-01930db72b5f" tvg-name="Thành phố Hồ Chí Minh vs Thể Công - Viettel" tvg-logo="https://img.gvapi.cc/football/team/99dd3ac7267c0e3870d9ad785e6f9661.png!w80" group-title="CoLaTV",[18:00] 19/10 ⚽ Thành phố Hồ Chí Minh vs Thể Công - Viettel • Giải vô địch quốc gia Việt Nam
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https
 #EXTINF:-1 tvg-id="sport-ebf846e0746b" tvg-name="CLB Manisa BB Spor vs CLB Muglaspor" tvg-logo="https://img.gvapi.cc/football/team/952ab041b861b04dee0bc92f155a2a32.png!w80" group-title="CoLaTV",[21:00] 19/10 ⚽ CLB Manisa BB Spor vs CLB Muglaspor (BLV TEPPY) • Giải Bóng đá Vô địch Quốc gia Thổ Nhĩ Kỳ [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1481,128 +1482,128 @@ https://ftlh5sc02iliv.vcdn.cloud/1792311765_hd/1792311765_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792393036_hd/1792393036_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-6a831c54968e" tvg-name="Nữ Henan vs Nữ Qingdao Coast" tvg-logo="https://imgts.sportpulseapiz.com/football/team/v2y8m4zhyopql07/image/small" group-title="XoilacXTH",[14:30] 19/10 ⚽ Nữ Henan vs Nữ Qingdao Coast • Chinese Women League One [FLV]
+#EXTINF:-1 tvg-id="sport-a3fe5dded199" tvg-name="Nữ Henan vs Nữ Qingdao Coast" tvg-logo="https://imgts.sportpulseapiz.com/football/team/v2y8m4zhyopql07/image/small" group-title="XoilacXTH",[14:30] 19/10 ⚽ Nữ Henan vs Nữ Qingdao Coast • Chinese Women League One [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=4a9785f78c8bb4d8469939607b54ec18&wsABSTime=1792441872
-#EXTINF:-1 tvg-id="sport-bd0da52cff25" tvg-name="Nữ Yongchuan vs Nữ Shanghai Huilong" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4hvznzq86p/image/small" group-title="XoilacXTH",[14:30] 19/10 ⚽ Nữ Yongchuan vs Nữ Shanghai Huilong • Chinese Women League One [FLV]
+https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=8f0af8f1309bdddae4f410f25ee48895&wsABSTime=1792442751
+#EXTINF:-1 tvg-id="sport-6cf6ebe76d64" tvg-name="Nữ Yongchuan vs Nữ Shanghai Huilong" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4hvznzq86p/image/small" group-title="XoilacXTH",[14:30] 19/10 ⚽ Nữ Yongchuan vs Nữ Shanghai Huilong • Chinese Women League One [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=1db8ac926a6bc79f19a0fa262185a166&wsABSTime=1792441872
+https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=6a69585e9b7a47642b69b1fcfe7d0d41&wsABSTime=1792442751
 #EXTINF:-1 tvg-id="sport-a1f16a90d05e" tvg-name="Nữ Hebei Snow Ruyi vs Nữ Shanghai Shenhua" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekhve2xrepz/image/small" group-title="XoilacXTH",[14:30] 19/10 ⚽ Nữ Hebei Snow Ruyi vs Nữ Shanghai Shenhua • Chinese Women League One [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel13.flv
-#EXTINF:-1 tvg-id="sport-cc51ca2b1883" tvg-name="Nữ Hebei Snow Ruyi vs Nữ Shanghai Shenhua" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekhve2xrepz/image/small" group-title="XoilacXTH",[14:30] 19/10 ⚽ Nữ Hebei Snow Ruyi vs Nữ Shanghai Shenhua • Chinese Women League One [FLV]
+#EXTINF:-1 tvg-id="sport-844826b196e5" tvg-name="Nữ Hebei Snow Ruyi vs Nữ Shanghai Shenhua" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekhve2xrepz/image/small" group-title="XoilacXTH",[14:30] 19/10 ⚽ Nữ Hebei Snow Ruyi vs Nữ Shanghai Shenhua • Chinese Women League One [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-13.flv?auth_key=3000001792398672-0-0-b35e2bfd0f479ad87e7bdf10e7a88869
-#EXTINF:-1 tvg-id="sport-d3f521dbc549" tvg-name="Nữ Wuhan vs Nữ Fujian Nanan" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whg6y6ryox/image/small" group-title="XoilacXTH",[14:30] 19/10 ⚽ Nữ Wuhan vs Nữ Fujian Nanan • Chinese Women League One [FLV]
+https://live2.domaincdn.cc/livecdn/channel-13.flv?auth_key=3000001792399551-0-0-acbfc7020c8be42d837570836fcb2d2c
+#EXTINF:-1 tvg-id="sport-96ec463a0759" tvg-name="Nữ Wuhan vs Nữ Fujian Nanan" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whg6y6ryox/image/small" group-title="XoilacXTH",[14:30] 19/10 ⚽ Nữ Wuhan vs Nữ Fujian Nanan • Chinese Women League One [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=d461ec9891ff36d1f9dfdbd43f03acba&wsABSTime=1792441872
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=6b8c782ae2fcb24f0ba3d7a56a7196e5&wsABSTime=1792442751
 #EXTINF:-1 tvg-id="sport-bf760742b516" tvg-name="Tai Po vs Southern District" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhg972ryk0/image/small" group-title="XoilacXTH",[15:00] 19/10 ⚽ Tai Po vs Southern District • Ngoại Hạng HồngKông [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel7.flv
-#EXTINF:-1 tvg-id="sport-d73dbe9b0d04" tvg-name="Tai Po vs Southern District" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhg972ryk0/image/small" group-title="XoilacXTH",[15:00] 19/10 ⚽ Tai Po vs Southern District • Ngoại Hạng HồngKông [FLV]
+#EXTINF:-1 tvg-id="sport-22aa335a835b" tvg-name="Tai Po vs Southern District" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhg972ryk0/image/small" group-title="XoilacXTH",[15:00] 19/10 ⚽ Tai Po vs Southern District • Ngoại Hạng HồngKông [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-7.flv?auth_key=3000001792398672-0-0-70f0eefcd74fb45fb202dc03ec37d95d
-#EXTINF:-1 tvg-id="sport-a209c7d33fb6" tvg-name="FK Ural-2 vs FC Izhevsk" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hjkovqdyj/image/small" group-title="XoilacXTH",[15:00] 19/10 ⚽ FK Ural-2 vs FC Izhevsk • RUS D3B [FLV]
+https://live2.domaincdn.cc/livecdn/channel-7.flv?auth_key=3000001792399551-0-0-265e001dd41735092c37f620acb3e481
+#EXTINF:-1 tvg-id="sport-7a9cbd79e9a2" tvg-name="FK Ural-2 vs FC Izhevsk" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hjkovqdyj/image/small" group-title="XoilacXTH",[15:00] 19/10 ⚽ FK Ural-2 vs FC Izhevsk • RUS D3B [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel8.flv?wsSecret=52bd8cf74d3fa378ff3bb93850c29063&wsABSTime=1792441872
-#EXTINF:-1 tvg-id="sport-cda67326fef9" tvg-name="Hal FC vs SC Bengaluru" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8yomo4hvgkeq0j6/image/small" group-title="XoilacXTH",[15:00] 19/10 ⚽ Hal FC vs SC Bengaluru • Indian Bangalore Super Division [FLV]
+https://live1.quickscoreboardz.com/live/channel8.flv?wsSecret=5c7db57ce52193b004f3636bad93e6d3&wsABSTime=1792442751
+#EXTINF:-1 tvg-id="sport-e8f3bed41e43" tvg-name="Hal FC vs SC Bengaluru" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8yomo4hvgkeq0j6/image/small" group-title="XoilacXTH",[15:00] 19/10 ⚽ Hal FC vs SC Bengaluru • Indian Bangalore Super Division [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel27.flv?wsSecret=53b4257fff3d52f73cd1ac9771051802&wsABSTime=1792441872
-#EXTINF:-1 tvg-id="sport-32b43d4c7045" tvg-name="KF Trepca Mitrovice U19 vs KF Dinamo Ferizaj U19" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h9jppq86p/image/small" group-title="XoilacXTH",[15:00] 19/10 ⚽ KF Trepca Mitrovice U19 vs KF Dinamo Ferizaj U19 • Kos U19 [FLV]
+https://live1.quickscoreboardz.com/live/channel27.flv?wsSecret=b5a93799b8b8323901864c2d776a24b9&wsABSTime=1792442751
+#EXTINF:-1 tvg-id="sport-4493d328bbff" tvg-name="KF Trepca Mitrovice U19 vs KF Dinamo Ferizaj U19" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h9jppq86p/image/small" group-title="XoilacXTH",[15:00] 19/10 ⚽ KF Trepca Mitrovice U19 vs KF Dinamo Ferizaj U19 • Kos U19 [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel1.flv?wsSecret=593ac3391a246fd60ead3da2b7af110b&wsABSTime=1792441872
-#EXTINF:-1 tvg-id="sport-91ed2825af73" tvg-name="Nongkrem SC vs Mawkhar SC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlh10n0ryk0/image/small" group-title="XoilacXTH",[16:00] 19/10 ⚽ Nongkrem SC vs Mawkhar SC • Indian Shillong Premier League [FLV]
+https://live1.quickscoreboardz.com/live/channel1.flv?wsSecret=07e36548d8efd4a713ab5a14bde33c43&wsABSTime=1792442751
+#EXTINF:-1 tvg-id="sport-5ecfd24f3256" tvg-name="Nongkrem SC vs Mawkhar SC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlh10n0ryk0/image/small" group-title="XoilacXTH",[16:00] 19/10 ⚽ Nongkrem SC vs Mawkhar SC • Indian Shillong Premier League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel28.flv?wsSecret=f8f1447725a6182964f6abdd6f3a364d&wsABSTime=1792441872
-#EXTINF:-1 tvg-id="sport-853b1a9ed7ff" tvg-name="Nữ Phần Lan U16 vs Nữ Thụy Điển U16" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8gh4olxr6od/image/small" group-title="XoilacXTH",[16:00] 19/10 ⚽ Nữ Phần Lan U16 vs Nữ Thụy Điển U16 • Giao Hữu Quốc Tế [FLV]
+https://live1.quickscoreboardz.com/live/channel28.flv?wsSecret=c1f6f86ba1e5d5908e07a29647956b04&wsABSTime=1792442751
+#EXTINF:-1 tvg-id="sport-a8621e77f458" tvg-name="Nữ Phần Lan U16 vs Nữ Thụy Điển U16" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8gh4olxr6od/image/small" group-title="XoilacXTH",[16:00] 19/10 ⚽ Nữ Phần Lan U16 vs Nữ Thụy Điển U16 • Giao Hữu Quốc Tế [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel29.flv?wsSecret=de9ca595a529e82ac958bf608c13e59e&wsABSTime=1792441872
-#EXTINF:-1 tvg-id="sport-1ca60fe9e3b5" tvg-name="Nữ Kasem Bundit FC vs Nữ BRU Burirat Academy" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergphepwyr8k0/image/small" group-title="XoilacXTH",[16:00] 19/10 ⚽ Nữ Kasem Bundit FC vs Nữ BRU Burirat Academy • Thai Women Super League [FLV]
+https://live1.quickscoreboardz.com/live/channel29.flv?wsSecret=fa74cfcbb9910cfef724a76054a2413f&wsABSTime=1792442751
+#EXTINF:-1 tvg-id="sport-2af96ad001cc" tvg-name="Nữ Kasem Bundit FC vs Nữ BRU Burirat Academy" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergphepwyr8k0/image/small" group-title="XoilacXTH",[16:00] 19/10 ⚽ Nữ Kasem Bundit FC vs Nữ BRU Burirat Academy • Thai Women Super League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel30.flv?wsSecret=0320e78a6f0e7b541bea48624fe38a97&wsABSTime=1792441872
-#EXTINF:-1 tvg-id="sport-f8ba3e657c61" tvg-name="Kryvbas U21 vs LNZ Cherkasy U21" tvg-logo="https://imgts.sportpulseapiz.com/football/team/d23xmvkhn2nqg8n/image/small" group-title="XoilacXTH",[16:00] 19/10 ⚽ Kryvbas U21 vs LNZ Cherkasy U21 • Giải Trẻ Ukrainian [FLV]
+https://live1.quickscoreboardz.com/live/channel30.flv?wsSecret=07363b86c7ba367e8e644e3cb5393fda&wsABSTime=1792442751
+#EXTINF:-1 tvg-id="sport-d41f9ac1441b" tvg-name="Kryvbas U21 vs LNZ Cherkasy U21" tvg-logo="https://imgts.sportpulseapiz.com/football/team/d23xmvkhn2nqg8n/image/small" group-title="XoilacXTH",[16:00] 19/10 ⚽ Kryvbas U21 vs LNZ Cherkasy U21 • Giải Trẻ Ukrainian [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel31.flv?wsSecret=4ecdb04e38969e49b2dc7ecf4c760655&wsABSTime=1792441872
-#EXTINF:-1 tvg-id="sport-3b259b639806" tvg-name="Karpaty U21 vs Epitsentr U21" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlh1jp0ryk0/image/small" group-title="XoilacXTH",[16:00] 19/10 ⚽ Karpaty U21 vs Epitsentr U21 • Giải Trẻ Ukrainian [FLV]
+https://live1.quickscoreboardz.com/live/channel31.flv?wsSecret=23d7f8ec1cc65e8ba556d41b5d56394d&wsABSTime=1792442751
+#EXTINF:-1 tvg-id="sport-7dd732620d7f" tvg-name="Karpaty U21 vs Epitsentr U21" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlh1jp0ryk0/image/small" group-title="XoilacXTH",[16:00] 19/10 ⚽ Karpaty U21 vs Epitsentr U21 • Giải Trẻ Ukrainian [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel32.flv?wsSecret=01aaf0b1b171dac5d97aa6d7c97f9fab&wsABSTime=1792441872
-#EXTINF:-1 tvg-id="sport-cff39163b512" tvg-name="Soccer Saga vs Roqs FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jw2r09hw5z8rz84/image/small" group-title="XoilacXTH",[16:30] 19/10 ⚽ Soccer Saga vs Roqs FC • India Mumbai Super Division [FLV]
+https://live1.quickscoreboardz.com/live/channel32.flv?wsSecret=f159b54cbe3dc9d79f2be75a555223c1&wsABSTime=1792442751
+#EXTINF:-1 tvg-id="sport-e44d5d9b28ca" tvg-name="Soccer Saga vs Roqs FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jw2r09hw5z8rz84/image/small" group-title="XoilacXTH",[16:30] 19/10 ⚽ Soccer Saga vs Roqs FC • India Mumbai Super Division [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel33.flv?wsSecret=2750d1b3feab422d2781e6fb0feaebdf&wsABSTime=1792441872
+https://live1.quickscoreboardz.com/live/channel33.flv?wsSecret=ebe4c97bd644c8b4899e0323c17dc951&wsABSTime=1792442751
 #EXTINF:-1 tvg-id="sport-d5875d0b152a" tvg-name="Slovenia U17 vs Moldova U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghj3ezq82w/image/small" group-title="XoilacXTH",[17:00] 19/10 ⚽ Slovenia U17 vs Moldova U17 • UEFA European U17 Football Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel20.flv
-#EXTINF:-1 tvg-id="sport-7e3987a4cb16" tvg-name="Slovenia U17 vs Moldova U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghj3ezq82w/image/small" group-title="XoilacXTH",[17:00] 19/10 ⚽ Slovenia U17 vs Moldova U17 • UEFA European U17 Football Championship [FLV]
+#EXTINF:-1 tvg-id="sport-a11fdb58bd6b" tvg-name="Slovenia U17 vs Moldova U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghj3ezq82w/image/small" group-title="XoilacXTH",[17:00] 19/10 ⚽ Slovenia U17 vs Moldova U17 • UEFA European U17 Football Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-20.flv?auth_key=3000001792398672-0-0-9647e46656638ec55796a2089f0e9595
+https://live2.domaincdn.cc/livecdn/channel-20.flv?auth_key=3000001792399551-0-0-ce020085aa83af77c6cad6ed7fd881a1
 #EXTINF:-1 tvg-id="sport-c0e117e5f8d7" tvg-name="CH Séc U17 vs Belarus U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y39mp1h3k0gmojx/image/small" group-title="XoilacXTH",[17:00] 19/10 ⚽ CH Séc U17 vs Belarus U17 • UEFA European U17 Football Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel14.flv
-#EXTINF:-1 tvg-id="sport-5e50f247db84" tvg-name="CH Séc U17 vs Belarus U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y39mp1h3k0gmojx/image/small" group-title="XoilacXTH",[17:00] 19/10 ⚽ CH Séc U17 vs Belarus U17 • UEFA European U17 Football Championship [FLV]
+#EXTINF:-1 tvg-id="sport-0ff9df46efef" tvg-name="CH Séc U17 vs Belarus U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y39mp1h3k0gmojx/image/small" group-title="XoilacXTH",[17:00] 19/10 ⚽ CH Séc U17 vs Belarus U17 • UEFA European U17 Football Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-14.flv?auth_key=3000001792398672-0-0-54d057f946ec7d7b3fbb47743270015e
-#EXTINF:-1 tvg-id="sport-f858d1bb0d34" tvg-name="Santa Clara U23 vs Braga U23" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hz7enqdyj/image/small" group-title="XoilacXTH",[17:00] 19/10 ⚽ Santa Clara U23 vs Braga U23 • U23 Bồ Đào Nha [FLV]
+https://live2.domaincdn.cc/livecdn/channel-14.flv?auth_key=3000001792399551-0-0-17b7515bd284fe657318909acdcd2e28
+#EXTINF:-1 tvg-id="sport-2b53e315a87b" tvg-name="Santa Clara U23 vs Braga U23" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hz7enqdyj/image/small" group-title="XoilacXTH",[17:00] 19/10 ⚽ Santa Clara U23 vs Braga U23 • U23 Bồ Đào Nha [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel11.flv?wsSecret=8efb03b71db8038f214591720cfd5448&wsABSTime=1792441872
-#EXTINF:-1 tvg-id="sport-ac30b1c312e0" tvg-name="FarDU vs Metallurg Bekobod" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekh37l9repz/image/small" group-title="XoilacXTH",[17:00] 19/10 ⚽ FarDU vs Metallurg Bekobod • Uzbekistan Pro League [FLV]
+https://live1.quickscoreboardz.com/live/channel11.flv?wsSecret=3e5fff2e21643b5a9d8b215966b86ed8&wsABSTime=1792442751
+#EXTINF:-1 tvg-id="sport-327af2f411aa" tvg-name="FarDU vs Metallurg Bekobod" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekh37l9repz/image/small" group-title="XoilacXTH",[17:00] 19/10 ⚽ FarDU vs Metallurg Bekobod • Uzbekistan Pro League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel12.flv?wsSecret=54dd1dcea270168fa40a95a055333fc0&wsABSTime=1792441872
+https://live1.quickscoreboardz.com/live/channel12.flv?wsSecret=2670a9642ae194ca9241361657d26382&wsABSTime=1792442751
 #EXTINF:-1 tvg-id="sport-8c58f2d4b018" tvg-name="Metalist 1925 vs FC Livyi Bereh" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7h1dd3qdyj/image/small" group-title="XoilacXTH",[17:00] 19/10 ⚽ Metalist 1925 vs FC Livyi Bereh • Ngoại Hạng Ukraina [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel23.flv
-#EXTINF:-1 tvg-id="sport-fe995c56c1a5" tvg-name="Metalist 1925 vs FC Livyi Bereh" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7h1dd3qdyj/image/small" group-title="XoilacXTH",[17:00] 19/10 ⚽ Metalist 1925 vs FC Livyi Bereh • Ngoại Hạng Ukraina [FLV]
+#EXTINF:-1 tvg-id="sport-c1e3b4e0adc9" tvg-name="Metalist 1925 vs FC Livyi Bereh" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7h1dd3qdyj/image/small" group-title="XoilacXTH",[17:00] 19/10 ⚽ Metalist 1925 vs FC Livyi Bereh • Ngoại Hạng Ukraina [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-23.flv?auth_key=3000001792398672-0-0-2617aab9e970b510281e15c0adc53c58
-#EXTINF:-1 tvg-id="sport-929b76d8febe" tvg-name="Rwanda U17 vs Ethiopia U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohyypoq1zp/image/small" group-title="XoilacXTH",[17:00] 19/10 ⚽ Rwanda U17 vs Ethiopia U17 • CAF U17 Championship [FLV]
+https://live2.domaincdn.cc/livecdn/channel-23.flv?auth_key=3000001792399551-0-0-d92c7e4f31836311e4e81b19bbaf627b
+#EXTINF:-1 tvg-id="sport-f0c3d1d9447f" tvg-name="Rwanda U17 vs Ethiopia U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohyypoq1zp/image/small" group-title="XoilacXTH",[17:00] 19/10 ⚽ Rwanda U17 vs Ethiopia U17 • CAF U17 Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel10.flv?wsSecret=938cd605d908904ab58dcb4b77339e9b&wsABSTime=1792441872
+https://live1.quickscoreboardz.com/live/channel10.flv?wsSecret=97b74d142654b138d5a7fa7d08d449ac&wsABSTime=1792442751
