@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url=""
-#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 08:15 19/10" group-title="🕒 Cập nhật 08:15 19/10",🕒 Cập nhật 08:15 19/10
+#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 08:31 19/10" group-title="🕒 Cập nhật 08:31 19/10",🕒 Cập nhật 08:31 19/10
 http://127.0.0.1/
 #EXTINF:-1 tvg-id="sport-c7ea8315784c" tvg-name="Rayados de Monterrey vs Pachuca" tvg-logo="https://img.gvapi.cc/football/team/5c3f819a35454f424d85df5757650f8b.png" group-title="Gà Vàng 33",🔴 [08:00] 19/10 ⚽ Rayados de Monterrey vs Pachuca (Gà Siêu Tốc) • Mexico Liga MX [HLS]
 #EXTGRP:Gà Vàng 33
@@ -11,12 +11,20 @@ https://live2.zktsva.app/live/307240.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://gavang33.co/
 https://live2.zktsva.app/live/307240.flv
-#EXTINF:-1 tvg-id="sport-6079d61a6d2b" tvg-name="Deportivo Cali vs Atletico Junior Barranquilla" tvg-logo="https://img.gvapi.cc/football/team/b997a2811a0caed43ff38b631a708420.png" group-title="Gà Vàng 33",🔴 [08:10] 19/10 ⚽ Deportivo Cali vs Atletico Junior Barranquilla (Gà Siêu Tồ) • Categoría Primera A [HLS]
+#EXTINF:-1 tvg-id="sport-45299e43be9a" tvg-name="Deportivo Cali vs Atletico Junior Barranquilla" tvg-logo="https://img.gvapi.cc/football/team/b997a2811a0caed43ff38b631a708420.png" group-title="Gà Vàng 33",[08:10] 19/10 ⚽ Deportivo Cali vs Atletico Junior Barranquilla [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.me/
+https://live2.zktsva.app/live/796315.m3u8
+#EXTINF:-1 tvg-id="sport-1592269007e1" tvg-name="Deportivo Cali vs Atletico Junior Barranquilla" tvg-logo="https://img.gvapi.cc/football/team/b997a2811a0caed43ff38b631a708420.png" group-title="Gà Vàng 33",[08:10] 19/10 ⚽ Deportivo Cali vs Atletico Junior Barranquilla [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.me/
+https://live2.zktsva.app/live/796315.flv
+#EXTINF:-1 tvg-id="sport-74ced1dff69d" tvg-name="Deportivo Cali vs Atletico Junior Barranquilla" tvg-logo="https://img.gvapi.cc/football/team/b997a2811a0caed43ff38b631a708420.png" group-title="Gà Vàng 33",🔴 [08:20] 19/10 🏅 Deportivo Cali vs Atletico Junior Barranquilla (Gà Siêu Tồ) • Categoría Primera A [HLS]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://gavang33.co/
 https://live2.zktsva.app/live/796315.m3u8
-#EXTINF:-1 tvg-id="sport-df71fa9c4998" tvg-name="Deportivo Cali vs Atletico Junior Barranquilla" tvg-logo="https://img.gvapi.cc/football/team/b997a2811a0caed43ff38b631a708420.png" group-title="Gà Vàng 33",🔴 [08:10] 19/10 ⚽ Deportivo Cali vs Atletico Junior Barranquilla (Gà Siêu Tồ) • Categoría Primera A [FLV]
+#EXTINF:-1 tvg-id="sport-90b896949f15" tvg-name="Deportivo Cali vs Atletico Junior Barranquilla" tvg-logo="https://img.gvapi.cc/football/team/b997a2811a0caed43ff38b631a708420.png" group-title="Gà Vàng 33",🔴 [08:20] 19/10 🏅 Deportivo Cali vs Atletico Junior Barranquilla (Gà Siêu Tồ) • Categoría Primera A [FLV]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://gavang33.co/
@@ -183,25 +191,21 @@ https://live05.zhwpg.app/live/75748097_tsc.flv
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live.dyrur1.com/live/14219092_759fd5ef46c278056ad7a3a7aa094bb0_autoChange.m3u8?auth_key=1792385726-0-0-aea52172b41d5c7a57e18184374f20e6
-#EXTINF:-1 tvg-id="sport-cf2f39c03a76" tvg-name="Belgrano vs River Plate" tvg-logo="https://img.gvapi.cc/football/team/f24c6d2696f439d43875fba52100991d.png!w80" group-title="CoLaTV",🔴 [06:15] 19/10 ⚽ Belgrano vs River Plate (BLV SAMURAI) • Giải Bóng đá Vô địch Quốc gia Argentina [HLS]
+#EXTINF:-1 tvg-id="sport-bf75e376cadf" tvg-name="Belgrano vs River Plate" tvg-logo="https://img.gvapi.cc/football/team/f24c6d2696f439d43875fba52100991d.png!w80" group-title="CoLaTV",🔴 [06:15] 19/10 ⚽ Belgrano vs River Plate (SAMURAI) • Giải Bóng đá Vô địch Quốc gia Argentina [HLS]
 #EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live05.zhwpg.app/live/07808742_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-2bdd02cbf57a" tvg-name="Belgrano vs River Plate" tvg-logo="https://img.gvapi.cc/football/team/f24c6d2696f439d43875fba52100991d.png!w80" group-title="CoLaTV",🔴 [06:15] 19/10 ⚽ Belgrano vs River Plate (BLV SAMURAI) • Giải Bóng đá Vô địch Quốc gia Argentina [FLV]
+#EXTINF:-1 tvg-id="sport-398f1e9415ae" tvg-name="Belgrano vs River Plate" tvg-logo="https://img.gvapi.cc/football/team/f24c6d2696f439d43875fba52100991d.png!w80" group-title="CoLaTV",🔴 [06:15] 19/10 ⚽ Belgrano vs River Plate (SAMURAI) • Giải Bóng đá Vô địch Quốc gia Argentina [HLS]
 #EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.zhwpg.app/live/07808742_tsc.flv
-#EXTINF:-1 tvg-id="sport-0207ea277c63" tvg-name="Belgrano vs River Plate" tvg-logo="https://img.gvapi.cc/football/team/f24c6d2696f439d43875fba52100991d.png!w80" group-title="CoLaTV",🔴 [06:15] 19/10 ⚽ Belgrano vs River Plate (BLV SAMURAI) • Giải Bóng đá Vô địch Quốc gia Argentina [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live05.miekgo.app/live/07808742_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-8be3c5481d9a" tvg-name="Belgrano vs River Plate" tvg-logo="https://img.gvapi.cc/football/team/f24c6d2696f439d43875fba52100991d.png!w80" group-title="CoLaTV",🔴 [06:15] 19/10 ⚽ Belgrano vs River Plate • Giải Bóng đá Vô địch Quốc gia Argentina [HLS]
+#EXTINF:-1 tvg-id="sport-f58750f3fa65" tvg-name="Belgrano vs River Plate" tvg-logo="https://img.gvapi.cc/football/team/f24c6d2696f439d43875fba52100991d.png!w80" group-title="CoLaTV",🔴 [06:15] 19/10 ⚽ Belgrano vs River Plate (SAMURAI) • Giải Bóng đá Vô địch Quốc gia Argentina [FLV]
 #EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-referrer=https://colatv77.live/
+https://live05.zhwpg.app/live/07808742_tsc.flv
+#EXTINF:-1 tvg-id="sport-ff7e623633f8" tvg-name="Belgrano vs River Plate" tvg-logo="https://img.gvapi.cc/football/team/f24c6d2696f439d43875fba52100991d.png!w80" group-title="CoLaTV",🔴 [06:15] 19/10 ⚽ Belgrano vs River Plate • Giải Bóng đá Vô địch Quốc gia Argentina [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live1.dyrur1.com/live/13397559_273d62a5502675e3bd64ab8430de7b2c_autoChange.m3u8?auth_key=1792386840-0-0-e6893e1b913a7b35f8473ffced426e2d
 #EXTINF:-1 tvg-id="sport-15a7ecb203b8" tvg-name="Monterrey vs Pachuca" tvg-logo="https://img.gvapi.cc/football/team/5c3f819a35454f424d85df5757650f8b.png!w80" group-title="CoLaTV",🔴 [08:00] 19/10 ⚽ Monterrey vs Pachuca (BLV BÍ ĐAO) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
@@ -218,31 +222,31 @@ https://live05.zhwpg.app/live/99121525_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/99121525_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-6da89a80446f" tvg-name="Monterrey vs Pachuca" tvg-logo="https://img.gvapi.cc/football/team/5c3f819a35454f424d85df5757650f8b.png!w80" group-title="CoLaTV",🔴 [08:00] 19/10 ⚽ Monterrey vs Pachuca • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
+#EXTINF:-1 tvg-id="sport-6eb2db1797ec" tvg-name="Monterrey vs Pachuca" tvg-logo="https://img.gvapi.cc/football/team/5c3f819a35454f424d85df5757650f8b.png!w80" group-title="CoLaTV",🔴 [08:00] 19/10 ⚽ Monterrey vs Pachuca • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
-https://live1.dyrur1.com/live/13999822_d9e734e879094fc95992bb3460f0178d_autoChange.m3u8?auth_key=1792386931-0-0-ccaec9888c46ba63bd775e7b612094c2
-#EXTINF:-1 tvg-id="sport-43b7239b659f" tvg-name="CLB Deportivo Cali vs Junior" tvg-logo="https://img.gvapi.cc/football/team/b997a2811a0caed43ff38b631a708420.png!w80" group-title="CoLaTV",🔴 [08:10] 19/10 ⚽ CLB Deportivo Cali vs Junior (BLV FANTA) • Giải vô địch quốc gia Colombia [HLS]
+https://live1.dyrur1.com/live/13999822_d9e734e879094fc95992bb3460f0178d_autoChange.m3u8?auth_key=1792387845-0-0-85069c588a1bb7afa1b341ca2e64d6dc
+#EXTINF:-1 tvg-id="sport-f9a61b188644" tvg-name="CLB Deportivo Cali vs Junior" tvg-logo="https://img.gvapi.cc/football/team/b997a2811a0caed43ff38b631a708420.png!w80" group-title="CoLaTV",🔴 [08:20] 19/10 ⚽ CLB Deportivo Cali vs Junior (BLV FANTA) • Giải vô địch quốc gia Colombia [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.zhwpg.app/live/16226575_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-eda3d3ad6c8d" tvg-name="CLB Deportivo Cali vs Junior" tvg-logo="https://img.gvapi.cc/football/team/b997a2811a0caed43ff38b631a708420.png!w80" group-title="CoLaTV",🔴 [08:10] 19/10 ⚽ CLB Deportivo Cali vs Junior (BLV FANTA) • Giải vô địch quốc gia Colombia [FLV]
+#EXTINF:-1 tvg-id="sport-db38f882eb98" tvg-name="CLB Deportivo Cali vs Junior" tvg-logo="https://img.gvapi.cc/football/team/b997a2811a0caed43ff38b631a708420.png!w80" group-title="CoLaTV",🔴 [08:20] 19/10 ⚽ CLB Deportivo Cali vs Junior (BLV FANTA) • Giải vô địch quốc gia Colombia [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.zhwpg.app/live/16226575_tsc.flv
-#EXTINF:-1 tvg-id="sport-24dd0818f581" tvg-name="CLB Deportivo Cali vs Junior" tvg-logo="https://img.gvapi.cc/football/team/b997a2811a0caed43ff38b631a708420.png!w80" group-title="CoLaTV",🔴 [08:10] 19/10 ⚽ CLB Deportivo Cali vs Junior (BLV FANTA) • Giải vô địch quốc gia Colombia [HLS]
+#EXTINF:-1 tvg-id="sport-87515ee3f0a2" tvg-name="CLB Deportivo Cali vs Junior" tvg-logo="https://img.gvapi.cc/football/team/b997a2811a0caed43ff38b631a708420.png!w80" group-title="CoLaTV",🔴 [08:20] 19/10 ⚽ CLB Deportivo Cali vs Junior (BLV FANTA) • Giải vô địch quốc gia Colombia [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/16226575_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-c2834dc56dfe" tvg-name="CLB Deportivo Cali vs Junior" tvg-logo="https://img.gvapi.cc/football/team/b997a2811a0caed43ff38b631a708420.png!w80" group-title="CoLaTV",🔴 [08:10] 19/10 ⚽ CLB Deportivo Cali vs Junior • Giải vô địch quốc gia Colombia
+#EXTINF:-1 tvg-id="sport-fecca0991129" tvg-name="CLB Deportivo Cali vs Junior" tvg-logo="https://img.gvapi.cc/football/team/b997a2811a0caed43ff38b631a708420.png!w80" group-title="CoLaTV",🔴 [08:20] 19/10 ⚽ CLB Deportivo Cali vs Junior • Giải vô địch quốc gia Colombia [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
-https
+https://live.dyrur1.com/live/13975499_9255d221ecb10ddc1f0643d4c9ecc728_autoChange.m3u8?auth_key=1792387845-0-0-3813882f915cc9fbe673507b1e287c5a
 #EXTINF:-1 tvg-id="sport-b72652bc480a" tvg-name="Amtat FC vs Khovd Western" tvg-logo="https://img.gvapi.cc/football/team/a812559c6be7a54bd172038ff1ccebec.png!w80" group-title="CoLaTV",[12:00] 19/10 ⚽ Amtat FC vs Khovd Western (BLV MOUNTAIN DEW) • Giải ngoại hạng Mông Cổ [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -263,16 +267,16 @@ https://live05.zhwpg.app/live/87547578_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.zhwpg.app/live/07808742_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-1d66776b2306" tvg-name="Ulaangom City FC vs Khovd" tvg-logo="https://img.gvapi.cc/football/team/cc0f42f7eec708cb429156b1becb3f93.png!w80" group-title="CoLaTV",[15:00] 19/10 ⚽ Ulaangom City FC vs Khovd (BLV SAMURAI) • Giải ngoại hạng Mông Cổ [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.zhwpg.app/live/07808742_tsc.flv
 #EXTINF:-1 tvg-id="sport-2a6aeaf48f19" tvg-name="Ulaangom City FC vs Khovd" tvg-logo="https://img.gvapi.cc/football/team/cc0f42f7eec708cb429156b1becb3f93.png!w80" group-title="CoLaTV",[15:00] 19/10 ⚽ Ulaangom City FC vs Khovd (BLV SAMURAI) • Giải ngoại hạng Mông Cổ [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/07808742_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-1d66776b2306" tvg-name="Ulaangom City FC vs Khovd" tvg-logo="https://img.gvapi.cc/football/team/cc0f42f7eec708cb429156b1becb3f93.png!w80" group-title="CoLaTV",[15:00] 19/10 ⚽ Ulaangom City FC vs Khovd (BLV SAMURAI) • Giải ngoại hạng Mông Cổ [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.zhwpg.app/live/07808742_tsc.flv
 #EXTINF:-1 tvg-id="sport-79b9f4056351" tvg-name="Fergana University vs Metallurg Bekabad" tvg-logo="https://img.gvapi.cc/football/team/c4958354eae05d5e126c22453ef39a63.png!w80" group-title="CoLaTV",[17:00] 19/10 ⚽ Fergana University vs Metallurg Bekabad (BLV TEPPY) • Bóng đá Hạng 2 Uzbekistan [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -503,16 +507,16 @@ https://live05.zhwpg.app/live/33860426_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.zhwpg.app/live/07808742_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-ebbd9a96390f" tvg-name="Bursaspor vs CLB Pendikspor" tvg-logo="https://img.gvapi.cc/football/team/f896ac253c19008aeabfb49c3ef044db.png!w80" group-title="CoLaTV",[00:00] 20/10 ⚽ Bursaspor vs CLB Pendikspor (BLV SAMURAI) • Giải Bóng đá Vô địch Quốc gia Thổ Nhĩ Kỳ [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.zhwpg.app/live/07808742_tsc.flv
 #EXTINF:-1 tvg-id="sport-1d259874d807" tvg-name="Bursaspor vs CLB Pendikspor" tvg-logo="https://img.gvapi.cc/football/team/f896ac253c19008aeabfb49c3ef044db.png!w80" group-title="CoLaTV",[00:00] 20/10 ⚽ Bursaspor vs CLB Pendikspor (BLV SAMURAI) • Giải Bóng đá Vô địch Quốc gia Thổ Nhĩ Kỳ [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/07808742_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-ebbd9a96390f" tvg-name="Bursaspor vs CLB Pendikspor" tvg-logo="https://img.gvapi.cc/football/team/f896ac253c19008aeabfb49c3ef044db.png!w80" group-title="CoLaTV",[00:00] 20/10 ⚽ Bursaspor vs CLB Pendikspor (BLV SAMURAI) • Giải Bóng đá Vô địch Quốc gia Thổ Nhĩ Kỳ [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.zhwpg.app/live/07808742_tsc.flv
 #EXTINF:-1 tvg-id="sport-d6d4eebb7471" tvg-name="CLB Trabzonspor vs Besiktas JK" tvg-logo="https://img.gvapi.cc/football/team/9dc9c8f928d5cafdc90a747fe0439c2d.png!w80" group-title="CoLaTV",[00:00] 20/10 ⚽ CLB Trabzonspor vs Besiktas JK (BLV BÍ ĐAO) • Giải Ngoại hạng Thổ Nhĩ Kỳ [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -668,16 +672,16 @@ https://live05.zhwpg.app/live/02456966_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.zhwpg.app/live/07808742_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-7ae7b03fb419" tvg-name="Braga vs Gil Vicente" tvg-logo="https://img.gvapi.cc/football/team/1fe75f826dab40e6e89cbe961c7e9116.png!w80" group-title="CoLaTV",[02:15] 20/10 ⚽ Braga vs Gil Vicente (BLV SAMURAI) • Giải Bóng đá Vô địch Quốc gia Bồ Đào Nha [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.zhwpg.app/live/07808742_tsc.flv
 #EXTINF:-1 tvg-id="sport-3c2480f7dfa3" tvg-name="Braga vs Gil Vicente" tvg-logo="https://img.gvapi.cc/football/team/1fe75f826dab40e6e89cbe961c7e9116.png!w80" group-title="CoLaTV",[02:15] 20/10 ⚽ Braga vs Gil Vicente (BLV SAMURAI) • Giải Bóng đá Vô địch Quốc gia Bồ Đào Nha [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/07808742_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-7ae7b03fb419" tvg-name="Braga vs Gil Vicente" tvg-logo="https://img.gvapi.cc/football/team/1fe75f826dab40e6e89cbe961c7e9116.png!w80" group-title="CoLaTV",[02:15] 20/10 ⚽ Braga vs Gil Vicente (BLV SAMURAI) • Giải Bóng đá Vô địch Quốc gia Bồ Đào Nha [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.zhwpg.app/live/07808742_tsc.flv
 #EXTINF:-1 tvg-id="sport-e556e2a44724" tvg-name="Braga vs Gil Vicente" tvg-logo="https://img.gvapi.cc/football/team/1fe75f826dab40e6e89cbe961c7e9116.png!w80" group-title="CoLaTV",[02:15] 20/10 ⚽ Braga vs Gil Vicente • Giải Bóng đá Vô địch Quốc gia Bồ Đào Nha
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1222,21 +1226,6 @@ https://ftlh5sc02iliv.vcdn.cloud/1792311703_hd/1792311703_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792311765_hd/1792311765_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-c57091d7c87d" tvg-name="Bahia - BA - Flamengo - RJ" tvg-logo="https://img.sports-data.online/football/team/20456802ad5f8243dc282c4650c414e1.png" group-title="PhaLangTV",🔴 [04:30] 19/10 ⚽ Bahia - BA - Flamengo - RJ • Brazilian Serie A [HLS]
-#EXTGRP:PhaLangTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/bahia-ba-flamengo-rj-dj2ryohlekd1q1z
-https://lilive1.eu.cc/live/d93f63f0d0d4160a31e6857f07635111/playlist.m3u8
-#EXTINF:-1 tvg-id="sport-785d06014cf3" tvg-name="Barcelona SC(ECU) - CD Universidad Católica" tvg-logo="https://img.sports-data.online/football/team/6d064d1f345472d9d6bf47a5d0cc0d71.png" group-title="PhaLangTV",🔴 [04:30] 19/10 ⚽ Barcelona SC(ECU) - CD Universidad Católica • LigaPro Serie A [HLS]
-#EXTGRP:PhaLangTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/barcelona-sc-ecu-cd-universidad-catolica-y0or5jh9xe56qwz
-https://lilive1.eu.cc/live/ab1a14f69c16f7e102b0387a67e259b9/playlist.m3u8
-#EXTINF:-1 tvg-id="sport-0495d9c0ca08" tvg-name="San Martin Tucuman - Ferrocarril Midland" tvg-logo="https://img.sports-data.online/football/team/b6cd6f7995d906fc541b42b8219df67a.png" group-title="PhaLangTV",🔴 [04:30] 19/10 ⚽ San Martin Tucuman - Ferrocarril Midland • ARG Primera Nacional [HLS]
-#EXTGRP:PhaLangTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/san-martin-tucuman-ferrocarril-midland-ednm9whw2284ryo
-https://lilive1.eu.cc/live/f0234cc5c8e70fb78183d40fe9d19b2c/playlist.m3u8
 #EXTINF:-1 tvg-id="sport-5cff58707704" tvg-name="Municipal Pérez Zeledón - CS Herediano" tvg-logo="https://img.sports-data.online/football/team/71b66f0b7a71294f9c30f7f5bdf0cf86.png" group-title="PhaLangTV",🔴 [05:00] 19/10 ⚽ Municipal Pérez Zeledón - CS Herediano • Costa Rica Primera Division [HLS]
 #EXTGRP:PhaLangTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
@@ -1302,143 +1291,138 @@ https://lilive1.eu.cc/live/c588b150f6221c2f53dd99f48292b70a/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/tigres-women-queretaro-women-l7oqdehgpz16r51
 https://lilive1.eu.cc/live/efea1e08670baa95f527527f372ec981/playlist.m3u8
-#EXTINF:-1 tvg-id="sport-aa06e8f58ce7" tvg-name="Belgrano vs River Plate" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vl7oqdehzxxr510/image/small" group-title="XoilacXTH",[06:15] 19/10 ⚽ Belgrano vs River Plate • VĐQG Argentina [FLV]
+#EXTINF:-1 tvg-id="sport-ad54c0e0a76c" tvg-name="CD FAS vs Municipal Zacatecoluca" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh04g0md7o/image/small" group-title="XoilacXTH",[06:30] 19/10 ⚽ CD FAS vs Municipal Zacatecoluca • Hạng Nhất El Salvador [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.jorvakstreamcache.com/live/channel14.flv
-#EXTINF:-1 tvg-id="sport-30c085da6019" tvg-name="Belgrano vs River Plate" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vl7oqdehzxxr510/image/small" group-title="XoilacXTH",[06:15] 19/10 ⚽ Belgrano vs River Plate • VĐQG Argentina [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-14.flv?auth_key=3000001792372551-0-0-42fbb07fabbe8773a452ebfc94326066
-#EXTINF:-1 tvg-id="sport-5089617717f4" tvg-name="Cienciano vs UTC Cajamarca" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hww4oqdyj/image/small" group-title="XoilacXTH",[06:30] 19/10 ⚽ Cienciano vs UTC Cajamarca • VĐQG Peru [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.jorvakstreamcache.com/live/channel9.flv
-#EXTINF:-1 tvg-id="sport-e8aff768f26e" tvg-name="Cienciano vs UTC Cajamarca" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hww4oqdyj/image/small" group-title="XoilacXTH",[06:30] 19/10 ⚽ Cienciano vs UTC Cajamarca • VĐQG Peru [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-9.flv?auth_key=3000001792372551-0-0-a3cce65834db8a9b342863525844bb9b
-#EXTINF:-1 tvg-id="sport-b545066423c8" tvg-name="Club Guabira vs Oriente Petrolero" tvg-logo="https://imgts.sportpulseapiz.com/football/team/23xmvkh3y9nqg8n/image/small" group-title="XoilacXTH",[06:30] 19/10 ⚽ Club Guabira vs Oriente Petrolero • VĐQG Bolivia [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel8.flv?wsSecret=bae15499e8a071c145687e729c46ba71&wsABSTime=1792415751
-#EXTINF:-1 tvg-id="sport-f553ad1d55a0" tvg-name="CD FAS vs Municipal Zacatecoluca" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh04g0md7o/image/small" group-title="XoilacXTH",[06:30] 19/10 ⚽ CD FAS vs Municipal Zacatecoluca • Hạng Nhất El Salvador [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel9.flv?wsSecret=3f6fd68e875546baa4d95baf41d2800d&wsABSTime=1792415751
-#EXTINF:-1 tvg-id="sport-ccd79d147ebc" tvg-name="Conaree United vs Old Road Jets" tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghzx8vq82w/image/small" group-title="XoilacXTH",[06:30] 19/10 ⚽ Conaree United vs Old Road Jets • Saint Kitts Nevis Premier League [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel36.flv?wsSecret=b9269cac980f80930e198385e0ce699b&wsABSTime=1792415751
+https://live1.quickscoreboardz.com/live/channel9.flv?wsSecret=ec5efd23df453068c35155514cc8e18b&wsABSTime=1792416674
 #EXTINF:-1 tvg-id="sport-4cbc6f9b121c" tvg-name="Nữ SC Corinthians vs Nữ Caracas" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdehnxp6r510/image/small" group-title="XoilacXTH",[07:00] 19/10 ⚽ Nữ SC Corinthians vs Nữ Caracas • CONMEBOL Copa Libertadores Femenino [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel10.flv
-#EXTINF:-1 tvg-id="sport-06e5dae671e8" tvg-name="Nữ SC Corinthians vs Nữ Caracas" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdehnxp6r510/image/small" group-title="XoilacXTH",[07:00] 19/10 ⚽ Nữ SC Corinthians vs Nữ Caracas • CONMEBOL Copa Libertadores Femenino [FLV]
+#EXTINF:-1 tvg-id="sport-d1259edc6606" tvg-name="Nữ SC Corinthians vs Nữ Caracas" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdehnxp6r510/image/small" group-title="XoilacXTH",[07:00] 19/10 ⚽ Nữ SC Corinthians vs Nữ Caracas • CONMEBOL Copa Libertadores Femenino [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-10.flv?auth_key=3000001792372551-0-0-1e913494e09527508f3b48c229d47c7b
+https://live2.domaincdn.cc/livecdn/channel-10.flv?auth_key=3000001792373474-0-0-3be5ecfad78b312aa949d2630fdce54f
 #EXTINF:-1 tvg-id="sport-edaa2e4a3697" tvg-name="Nữ Ind. del Valle vs Nữ Uni. Deportes" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phw82jm2wd/image/small" group-title="XoilacXTH",[07:00] 19/10 ⚽ Nữ Ind. del Valle vs Nữ Uni. Deportes • CONMEBOL Copa Libertadores Femenino [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel12.flv
-#EXTINF:-1 tvg-id="sport-69ce249f0a11" tvg-name="Nữ Ind. del Valle vs Nữ Uni. Deportes" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phw82jm2wd/image/small" group-title="XoilacXTH",[07:00] 19/10 ⚽ Nữ Ind. del Valle vs Nữ Uni. Deportes • CONMEBOL Copa Libertadores Femenino [FLV]
+#EXTINF:-1 tvg-id="sport-60b7635bf89b" tvg-name="Nữ Ind. del Valle vs Nữ Uni. Deportes" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phw82jm2wd/image/small" group-title="XoilacXTH",[07:00] 19/10 ⚽ Nữ Ind. del Valle vs Nữ Uni. Deportes • CONMEBOL Copa Libertadores Femenino [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-12.flv?auth_key=3000001792372552-0-0-c85e60381eb52caf42e98756f9817ef6
-#EXTINF:-1 tvg-id="sport-34c831a9fa5a" tvg-name="Municipal vs Guastatoya" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y39mp1h3ew4mojx/image/small" group-title="XoilacXTH",[07:00] 19/10 ⚽ Municipal vs Guastatoya • VĐQG Guatemala [FLV]
+https://live2.domaincdn.cc/livecdn/channel-12.flv?auth_key=3000001792373474-0-0-a929b27283063a2da6f3604bf1df9997
+#EXTINF:-1 tvg-id="sport-d8254bf4acda" tvg-name="Municipal vs Guastatoya" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y39mp1h3ew4mojx/image/small" group-title="XoilacXTH",[07:00] 19/10 ⚽ Municipal vs Guastatoya • VĐQG Guatemala [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel37.flv?wsSecret=46730d9a51f0e9739b66ec5197a92dc6&wsABSTime=1792415751
+https://live1.quickscoreboardz.com/live/channel37.flv?wsSecret=5b263ff66814676c465b0c7143559af2&wsABSTime=1792416674
 #EXTINF:-1 tvg-id="sport-892e1b55444d" tvg-name="Nữ Tigres vs Nữ Queretaro" tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66hv44zqo9j/image/small" group-title="XoilacXTH",[07:05] 19/10 ⚽ Nữ Tigres vs Nữ Queretaro • VĐQG Nữ Mexico [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel19.flv
-#EXTINF:-1 tvg-id="sport-264389e535cf" tvg-name="Nữ Tigres vs Nữ Queretaro" tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66hv44zqo9j/image/small" group-title="XoilacXTH",[07:05] 19/10 ⚽ Nữ Tigres vs Nữ Queretaro • VĐQG Nữ Mexico [FLV]
+#EXTINF:-1 tvg-id="sport-3e138e6ad074" tvg-name="Nữ Tigres vs Nữ Queretaro" tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66hv44zqo9j/image/small" group-title="XoilacXTH",[07:05] 19/10 ⚽ Nữ Tigres vs Nữ Queretaro • VĐQG Nữ Mexico [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001792372551-0-0-8553f6c2c768374c5a48501978e9074b
-#EXTINF:-1 tvg-id="sport-8554aca05d52" tvg-name="Sacachispas GT vs Nueva Santa Rosa CDF" tvg-logo="https://imgts.sportpulseapiz.com/football/team/1l4rjnhzeeem7vx/image/small" group-title="XoilacXTH",[07:10] 19/10 ⚽ Sacachispas GT vs Nueva Santa Rosa CDF • Hạng 2 Guatemala [FLV]
+https://live2.domaincdn.cc/livecdn/channel-19.flv?auth_key=3000001792373474-0-0-5339742d8cd8ea63c09af5acd5614f9c
+#EXTINF:-1 tvg-id="sport-31c00213cada" tvg-name="Sacachispas GT vs Nueva Santa Rosa CDF" tvg-logo="https://imgts.sportpulseapiz.com/football/team/1l4rjnhzeeem7vx/image/small" group-title="XoilacXTH",[07:10] 19/10 ⚽ Sacachispas GT vs Nueva Santa Rosa CDF • Hạng 2 Guatemala [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel38.flv?wsSecret=bffc0290a762875e2e28d6bc2ddd55f1&wsABSTime=1792415751
-#EXTINF:-1 tvg-id="sport-3789254af40e" tvg-name="Austin FC II vs SJ Earthquakes (R)" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7ph9881m2wd/image/small" group-title="XoilacXTH",[07:30] 19/10 ⚽ Austin FC II vs SJ Earthquakes (R) • MLS Next Pro [FLV]
+https://live1.quickscoreboardz.com/live/channel38.flv?wsSecret=960483fc899e90fc76e6fb54dd0a07b1&wsABSTime=1792416674
+#EXTINF:-1 tvg-id="sport-f522369b79d2" tvg-name="Austin FC II vs SJ Earthquakes (R)" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7ph9881m2wd/image/small" group-title="XoilacXTH",[07:30] 19/10 ⚽ Austin FC II vs SJ Earthquakes (R) • MLS Next Pro [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel12.flv?wsSecret=2aff4116ee1d56e229b45f1fd697c1bf&wsABSTime=1792415751
+https://live1.quickscoreboardz.com/live/channel12.flv?wsSecret=f9e447330e75fe4c0ccda47559b3e3c2&wsABSTime=1792416674
 #EXTINF:-1 tvg-id="sport-79369e5547f7" tvg-name="Rayados de Monterrey vs Pachuca" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlh60kryk0/image/small" group-title="XoilacXTH",[08:00] 19/10 ⚽ Rayados de Monterrey vs Pachuca • VĐQG Mexico [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel6.flv
-#EXTINF:-1 tvg-id="sport-5313e032beda" tvg-name="Rayados de Monterrey vs Pachuca" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlh60kryk0/image/small" group-title="XoilacXTH",[08:00] 19/10 ⚽ Rayados de Monterrey vs Pachuca • VĐQG Mexico [FLV]
+#EXTINF:-1 tvg-id="sport-737ee91cc168" tvg-name="Rayados de Monterrey vs Pachuca" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlh60kryk0/image/small" group-title="XoilacXTH",[08:00] 19/10 ⚽ Rayados de Monterrey vs Pachuca • VĐQG Mexico [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001792372552-0-0-d1ba987a01056f5b3a510bf7dfdc1fc8
+https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001792373474-0-0-aa9d19c63c8da9e4cec5bd6af8ee9689
 #EXTINF:-1 tvg-id="sport-11daa0414000" tvg-name="Nữ Club America vs Nữ Pachuca" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hjk57qdyj/image/small" group-title="XoilacXTH",[08:00] 19/10 ⚽ Nữ Club America vs Nữ Pachuca • VĐQG Nữ Mexico [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel11.flv
-#EXTINF:-1 tvg-id="sport-edf96511c3da" tvg-name="Nữ Club America vs Nữ Pachuca" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hjk57qdyj/image/small" group-title="XoilacXTH",[08:00] 19/10 ⚽ Nữ Club America vs Nữ Pachuca • VĐQG Nữ Mexico [FLV]
+#EXTINF:-1 tvg-id="sport-ed464bddae58" tvg-name="Nữ Club America vs Nữ Pachuca" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hjk57qdyj/image/small" group-title="XoilacXTH",[08:00] 19/10 ⚽ Nữ Club America vs Nữ Pachuca • VĐQG Nữ Mexico [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-11.flv?auth_key=3000001792372552-0-0-d79998b493108a27d704c068086c4b37
-#EXTINF:-1 tvg-id="sport-4fdeefaae275" tvg-name="Rancho Santana FC vs Diriangen" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jw2r09hj18lrz84/image/small" group-title="XoilacXTH",[08:00] 19/10 ⚽ Rancho Santana FC vs Diriangen • VĐQG Nicaragua [FLV]
+https://live2.domaincdn.cc/livecdn/channel-11.flv?auth_key=3000001792373474-0-0-d0eb2126fe0ae9244ab1dc9b56ac9697
+#EXTINF:-1 tvg-id="sport-3e8ef355406d" tvg-name="Rancho Santana FC vs Diriangen" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jw2r09hj18lrz84/image/small" group-title="XoilacXTH",[08:00] 19/10 ⚽ Rancho Santana FC vs Diriangen • VĐQG Nicaragua [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel30.flv?wsSecret=dd0147d3d40d7094327813b43b28b214&wsABSTime=1792415751
-#EXTINF:-1 tvg-id="sport-dbe761f5dd11" tvg-name="Huehuetecos FC vs CSD Amatitlan" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dn1m1gh1peymoep/image/small" group-title="XoilacXTH",[08:00] 19/10 ⚽ Huehuetecos FC vs CSD Amatitlan • Hạng 2 Guatemala [FLV]
+https://live1.quickscoreboardz.com/live/channel30.flv?wsSecret=f3f9cfdc2ab16c17e53a4ec1200c61b3&wsABSTime=1792416674
+#EXTINF:-1 tvg-id="sport-feeec87eabd8" tvg-name="Huehuetecos FC vs CSD Amatitlan" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dn1m1gh1peymoep/image/small" group-title="XoilacXTH",[08:00] 19/10 ⚽ Huehuetecos FC vs CSD Amatitlan • Hạng 2 Guatemala [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel31.flv?wsSecret=8ec6966942f0c2f71c7bdfbbde2ab6d3&wsABSTime=1792415751
-#EXTINF:-1 tvg-id="sport-a74791d3b393" tvg-name="Deportivo Cali vs Atletico Junior" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohkkoeq1zp/image/small" group-title="XoilacXTH",[08:10] 19/10 ⚽ Deportivo Cali vs Atletico Junior • VĐQG Colombia [FLV]
+https://live1.quickscoreboardz.com/live/channel31.flv?wsSecret=d0b66fac7f1220855ffe98d0f9e7997f&wsABSTime=1792416674
+#EXTINF:-1 tvg-id="sport-bda97586aa80" tvg-name="Deportivo Cali vs Atletico Junior" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohkkoeq1zp/image/small" group-title="XoilacXTH",[08:20] 19/10 ⚽ Deportivo Cali vs Atletico Junior • VĐQG Colombia [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel16.flv
-#EXTINF:-1 tvg-id="sport-56098a3fb6a3" tvg-name="Deportivo Cali vs Atletico Junior" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohkkoeq1zp/image/small" group-title="XoilacXTH",[08:10] 19/10 ⚽ Deportivo Cali vs Atletico Junior • VĐQG Colombia [FLV]
+#EXTINF:-1 tvg-id="sport-3f145e875038" tvg-name="Deportivo Cali vs Atletico Junior" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohkkoeq1zp/image/small" group-title="XoilacXTH",[08:20] 19/10 ⚽ Deportivo Cali vs Atletico Junior • VĐQG Colombia [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001792372552-0-0-e60577fdd4f16d3eb699f269658d9fe1
-#EXTINF:-1 tvg-id="sport-4cab89168eec" tvg-name="Marquense vs Suchitepequez" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vl7oqdeh53lr510/image/small" group-title="XoilacXTH",[09:10] 19/10 ⚽ Marquense vs Suchitepequez • VĐQG Guatemala [FLV]
+https://live2.domaincdn.cc/livecdn/channel-16.flv?auth_key=3000001792373474-0-0-25778681256d11126fe3411131b92306
+#EXTINF:-1 tvg-id="sport-c740678c8f1e" tvg-name="Marquense vs Suchitepequez" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vl7oqdeh53lr510/image/small" group-title="XoilacXTH",[09:10] 19/10 ⚽ Marquense vs Suchitepequez • VĐQG Guatemala [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel13.flv?wsSecret=adea043d8fcacd9970cfec7a4b28b236&wsABSTime=1792415751
-#EXTINF:-1 tvg-id="sport-49b6ca8a9c39" tvg-name="Mawtawar SC vs Nongrim Hills" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7ph9ep5m2wd/image/small" group-title="XoilacXTH",[11:30] 19/10 ⚽ Mawtawar SC vs Nongrim Hills • Indian Shillong Premier League [FLV]
+https://live1.quickscoreboardz.com/live/channel13.flv?wsSecret=f1d34f07ecfd4f7170aad3dfd57b528e&wsABSTime=1792416674
+#EXTINF:-1 tvg-id="sport-a012e7d6a3e2" tvg-name="Mawtawar SC vs Nongrim Hills" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7ph9ep5m2wd/image/small" group-title="XoilacXTH",[11:30] 19/10 ⚽ Mawtawar SC vs Nongrim Hills • Indian Shillong Premier League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel30.flv?wsSecret=dd0147d3d40d7094327813b43b28b214&wsABSTime=1792415751
+https://live1.quickscoreboardz.com/live/channel30.flv?wsSecret=f3f9cfdc2ab16c17e53a4ec1200c61b3&wsABSTime=1792416674
 #EXTINF:-1 tvg-id="sport-467f3a64fa85" tvg-name="Amtat FC vs Khovd Western" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jh1vx1qwzv/image/small" group-title="XoilacXTH",[12:00] 19/10 ⚽ Amtat FC vs Khovd Western • Ngoại Hạng Mông Cổ [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel21.flv
-#EXTINF:-1 tvg-id="sport-c657471fdd90" tvg-name="Amtat FC vs Khovd Western" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jh1vx1qwzv/image/small" group-title="XoilacXTH",[12:00] 19/10 ⚽ Amtat FC vs Khovd Western • Ngoại Hạng Mông Cổ [FLV]
+#EXTINF:-1 tvg-id="sport-198c088a6292" tvg-name="Amtat FC vs Khovd Western" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jh1vx1qwzv/image/small" group-title="XoilacXTH",[12:00] 19/10 ⚽ Amtat FC vs Khovd Western • Ngoại Hạng Mông Cổ [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-21.flv?auth_key=3000001792372552-0-0-3e0daffe77d923a1a19ad6e972d0b91d
+https://live2.domaincdn.cc/livecdn/channel-21.flv?auth_key=3000001792373474-0-0-823eaa3677514276c1b7c884ad6cbc87
+#EXTINF:-1 tvg-id="sport-429840608ffd" tvg-name="Nữ Henan vs Nữ Qingdao Coast" tvg-logo="https://imgts.sportpulseapiz.com/football/team/v2y8m4zhyopql07/image/small" group-title="XoilacXTH",[14:30] 19/10 ⚽ Nữ Henan vs Nữ Qingdao Coast • Chinese Women League One [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=b2598c445f3ca9efae2c0c6c8d83f47f&wsABSTime=1792416674
+#EXTINF:-1 tvg-id="sport-3ea7fc3c4e8b" tvg-name="Nữ Yongchuan vs Nữ Shanghai Huilong" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4hvznzq86p/image/small" group-title="XoilacXTH",[14:30] 19/10 ⚽ Nữ Yongchuan vs Nữ Shanghai Huilong • Chinese Women League One [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=487c5fefa8b1c43172a659f89b63495e&wsABSTime=1792416674
+#EXTINF:-1 tvg-id="sport-a1f16a90d05e" tvg-name="Nữ Hebei Snow Ruyi vs Nữ Shanghai Shenhua" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekhve2xrepz/image/small" group-title="XoilacXTH",[14:30] 19/10 ⚽ Nữ Hebei Snow Ruyi vs Nữ Shanghai Shenhua • Chinese Women League One [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live2.jorvakstreamcache.com/live/channel13.flv
+#EXTINF:-1 tvg-id="sport-ff7e6a742d61" tvg-name="Nữ Hebei Snow Ruyi vs Nữ Shanghai Shenhua" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekhve2xrepz/image/small" group-title="XoilacXTH",[14:30] 19/10 ⚽ Nữ Hebei Snow Ruyi vs Nữ Shanghai Shenhua • Chinese Women League One [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live2.domaincdn.cc/livecdn/channel-13.flv?auth_key=3000001792373474-0-0-1da25827bddc92d596c965e05542b3bc
+#EXTINF:-1 tvg-id="sport-97dd23e96f27" tvg-name="Nữ Wuhan vs Nữ Fujian Nanan" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whg6y6ryox/image/small" group-title="XoilacXTH",[14:30] 19/10 ⚽ Nữ Wuhan vs Nữ Fujian Nanan • Chinese Women League One [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=e22bc856ded81daa91e2e4c92a870939&wsABSTime=1792416674
