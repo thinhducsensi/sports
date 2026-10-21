@@ -1,16 +1,16 @@
 #EXTM3U x-tvg-url=""
-#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 10:01 21/10" group-title="🕒 Cập nhật 10:01 21/10",🕒 Cập nhật 10:01 21/10
+#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 10:15 21/10" group-title="🕒 Cập nhật 10:15 21/10",🕒 Cập nhật 10:15 21/10
 http://127.0.0.1/
 #EXTINF:-1 tvg-id="sport-a120ac0c5d43" tvg-name="Tigres UANL vs Club Leon" tvg-logo="https://img.gvapi.cc/football/team/a7df6424c12ac9b7a6e5ca3ff953d5b3.png" group-title="Gà Vàng 33",[10:00] 21/10 ⚽ Tigres UANL vs Club Leon [HLS]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-referrer=https://gavang33.me/
 https://video.gvvsb.com/hls/output_v1.m3u8
-#EXTINF:-1 tvg-id="sport-b97077ced185" tvg-name="Bali United vs Garudayaksa FC" tvg-logo="https://img.gvapi.cc/football/team/09fe2ecf88f68970da755f8655d5da8a.png" group-title="Gà Vàng 33",[15:30] 21/10 ⚽ Bali United vs Garudayaksa FC (Gà Siêu Mõm) • Indonesian Super League [HLS]
+#EXTINF:-1 tvg-id="sport-b97077ced185" tvg-name="Bali United vs Garudayaksa FC" tvg-logo="https://img.gvapi.cc/football/team/09fe2ecf88f68970da755f8655d5da8a.png" group-title="Gà Vàng 33",🔴 [15:30] 21/10 ⚽ Bali United vs Garudayaksa FC (Gà Siêu Mõm) • Indonesian Super League [HLS]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://gavang33.co/
 https://live2.zktsva.app/live/300523.m3u8
-#EXTINF:-1 tvg-id="sport-3de72d526fb5" tvg-name="Bali United vs Garudayaksa FC" tvg-logo="https://img.gvapi.cc/football/team/09fe2ecf88f68970da755f8655d5da8a.png" group-title="Gà Vàng 33",[15:30] 21/10 ⚽ Bali United vs Garudayaksa FC (Gà Siêu Mõm) • Indonesian Super League [FLV]
+#EXTINF:-1 tvg-id="sport-3de72d526fb5" tvg-name="Bali United vs Garudayaksa FC" tvg-logo="https://img.gvapi.cc/football/team/09fe2ecf88f68970da755f8655d5da8a.png" group-title="Gà Vàng 33",🔴 [15:30] 21/10 ⚽ Bali United vs Garudayaksa FC (Gà Siêu Mõm) • Indonesian Super League [FLV]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://gavang33.co/
@@ -433,45 +433,37 @@ https://live05.qioetj.app/live/07808742_tsc.flv
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live1.dyrur1.com/live/14471811_d0fb15563db994795dadb408dac9c455_autoChange.m3u8?auth_key=1792563776-0-0-76629032a35a62dd82e54ff812f58692
-#EXTINF:-1 tvg-id="sport-656ea878c5fc" tvg-name="Atletico San Luis vs Queretaro" tvg-logo="https://img.gvapi.cc/football/team/f6c489e1e71d37e301b30df37a43b8a4.png!w80" group-title="CoLaTV",🔴 [08:00] 21/10 ⚽ Atletico San Luis vs Queretaro (BLV TEPPY) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
+#EXTINF:-1 tvg-id="sport-5571bd4865f5" tvg-name="Atletico San Luis vs Queretaro" tvg-logo="https://img.gvapi.cc/football/team/f6c489e1e71d37e301b30df37a43b8a4.png!w80" group-title="CoLaTV",🔴 [08:00] 21/10 ⚽ Atletico San Luis vs Queretaro (TEPPY) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live05.qioetj.app/live/33860426_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-0a2ff28ea9c0" tvg-name="Atletico San Luis vs Queretaro" tvg-logo="https://img.gvapi.cc/football/team/f6c489e1e71d37e301b30df37a43b8a4.png!w80" group-title="CoLaTV",🔴 [08:00] 21/10 ⚽ Atletico San Luis vs Queretaro (BLV TEPPY) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
+#EXTINF:-1 tvg-id="sport-822178f7c046" tvg-name="Atletico San Luis vs Queretaro" tvg-logo="https://img.gvapi.cc/football/team/f6c489e1e71d37e301b30df37a43b8a4.png!w80" group-title="CoLaTV",🔴 [08:00] 21/10 ⚽ Atletico San Luis vs Queretaro (TEPPY) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live05.miekgo.app/live/33860426_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-967cdd735694" tvg-name="Atletico San Luis vs Queretaro" tvg-logo="https://img.gvapi.cc/football/team/f6c489e1e71d37e301b30df37a43b8a4.png!w80" group-title="CoLaTV",🔴 [08:00] 21/10 ⚽ Atletico San Luis vs Queretaro (BLV TEPPY) • Giải Vô địch Bóng đá Quốc gia Mexico [FLV]
+#EXTINF:-1 tvg-id="sport-874b82917fbb" tvg-name="Atletico San Luis vs Queretaro" tvg-logo="https://img.gvapi.cc/football/team/f6c489e1e71d37e301b30df37a43b8a4.png!w80" group-title="CoLaTV",🔴 [08:00] 21/10 ⚽ Atletico San Luis vs Queretaro (TEPPY) • Giải Vô địch Bóng đá Quốc gia Mexico [FLV]
 #EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live05.qioetj.app/live/33860426_tsc.flv
-#EXTINF:-1 tvg-id="sport-edb635d3e326" tvg-name="Atletico San Luis vs Queretaro" tvg-logo="https://img.gvapi.cc/football/team/f6c489e1e71d37e301b30df37a43b8a4.png!w80" group-title="CoLaTV",🔴 [08:00] 21/10 ⚽ Atletico San Luis vs Queretaro • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
+#EXTINF:-1 tvg-id="sport-4cedef6080b9" tvg-name="Atletico San Luis vs Queretaro" tvg-logo="https://img.gvapi.cc/football/team/f6c489e1e71d37e301b30df37a43b8a4.png!w80" group-title="CoLaTV",🔴 [08:00] 21/10 ⚽ Atletico San Luis vs Queretaro • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live1.dyrur1.com/live/13999821_2154206b8201b7e454f8d9890e0437b7_autoChange.m3u8?auth_key=1792565671-0-0-7f168ac0e5523dfd0b05de6d8127611c
-#EXTINF:-1 tvg-id="sport-e05503e03c5b" tvg-name="Juarez vs CLB Atlante" tvg-logo="https://img.gvapi.cc/football/team/2ef06350057f561b5dce57c7fca99a74.png!w80" group-title="CoLaTV",🔴 [08:00] 21/10 ⚽ Juarez vs CLB Atlante (BLV SPRITE) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
+#EXTINF:-1 tvg-id="sport-ad9637d7da97" tvg-name="Juarez vs CLB Atlante" tvg-logo="https://img.gvapi.cc/football/team/2ef06350057f561b5dce57c7fca99a74.png!w80" group-title="CoLaTV",🔴 [08:00] 21/10 ⚽ Juarez vs CLB Atlante (SPRITE) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live05.qioetj.app/live/75748097_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-c38861ecc498" tvg-name="Juarez vs CLB Atlante" tvg-logo="https://img.gvapi.cc/football/team/2ef06350057f561b5dce57c7fca99a74.png!w80" group-title="CoLaTV",🔴 [08:00] 21/10 ⚽ Juarez vs CLB Atlante (BLV SPRITE) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
+#EXTINF:-1 tvg-id="sport-858855426563" tvg-name="Juarez vs CLB Atlante" tvg-logo="https://img.gvapi.cc/football/team/2ef06350057f561b5dce57c7fca99a74.png!w80" group-title="CoLaTV",🔴 [08:00] 21/10 ⚽ Juarez vs CLB Atlante (SPRITE) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live05.miekgo.app/live/75748097_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-89c7d3f1bf98" tvg-name="Juarez vs CLB Atlante" tvg-logo="https://img.gvapi.cc/football/team/2ef06350057f561b5dce57c7fca99a74.png!w80" group-title="CoLaTV",🔴 [08:00] 21/10 ⚽ Juarez vs CLB Atlante (BLV SPRITE) • Giải Vô địch Bóng đá Quốc gia Mexico [FLV]
+#EXTINF:-1 tvg-id="sport-2515e2ce0fb0" tvg-name="Juarez vs CLB Atlante" tvg-logo="https://img.gvapi.cc/football/team/2ef06350057f561b5dce57c7fca99a74.png!w80" group-title="CoLaTV",🔴 [08:00] 21/10 ⚽ Juarez vs CLB Atlante (SPRITE) • Giải Vô địch Bóng đá Quốc gia Mexico [FLV]
 #EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live05.qioetj.app/live/75748097_tsc.flv
-#EXTINF:-1 tvg-id="sport-458939953f4b" tvg-name="Juarez vs CLB Atlante" tvg-logo="https://img.gvapi.cc/football/team/2ef06350057f561b5dce57c7fca99a74.png!w80" group-title="CoLaTV",🔴 [08:00] 21/10 ⚽ Juarez vs CLB Atlante • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
+#EXTINF:-1 tvg-id="sport-5642cce27f07" tvg-name="Juarez vs CLB Atlante" tvg-logo="https://img.gvapi.cc/football/team/2ef06350057f561b5dce57c7fca99a74.png!w80" group-title="CoLaTV",🔴 [08:00] 21/10 ⚽ Juarez vs CLB Atlante • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live.dyrur1.com/live/13999820_93f3bcf94565c4893d4160299d27bab8_autoChange.m3u8?auth_key=1792565671-0-0-c50833c0d5a7777c77e8800168f7f833
 #EXTINF:-1 tvg-id="sport-8549bb1f4256" tvg-name="Tigres vs Club Leon" tvg-logo="https://img.gvapi.cc/football/team/a7df6424c12ac9b7a6e5ca3ff953d5b3.png!w80" group-title="CoLaTV",🔴 [10:00] 21/10 ⚽ Tigres vs Club Leon (BLV GIÀ LÀNG) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
@@ -488,31 +480,31 @@ https://live05.qioetj.app/live/14830711_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/14830711_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-e07ceccf675f" tvg-name="Tigres vs Club Leon" tvg-logo="https://img.gvapi.cc/football/team/a7df6424c12ac9b7a6e5ca3ff953d5b3.png!w80" group-title="CoLaTV",🔴 [10:00] 21/10 ⚽ Tigres vs Club Leon • Giải Vô địch Bóng đá Quốc gia Mexico
+#EXTINF:-1 tvg-id="sport-9bf55bb39870" tvg-name="Tigres vs Club Leon" tvg-logo="https://img.gvapi.cc/football/team/a7df6424c12ac9b7a6e5ca3ff953d5b3.png!w80" group-title="CoLaTV",🔴 [10:00] 21/10 ⚽ Tigres vs Club Leon • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
-https
-#EXTINF:-1 tvg-id="sport-3d87635da4a7" tvg-name="San Antonio Spurs vs Oklahoma City Thunder" tvg-logo="https://img.gvapi.cc/basketball/team/5305d1a7b721b5bef418041eff53ba82.png!w80" group-title="CoLaTV",🔴 [08:50] 21/10 🏀 San Antonio Spurs vs Oklahoma City Thunder (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [HLS]
+https://live.dyrur1.com/live/13999819_51823a4df2f0932418b7ef0eab2de3ce_autoChange.m3u8?auth_key=1792566915-0-0-c785da6cdee206bfdebfec17d8b9dad7
+#EXTINF:-1 tvg-id="sport-b802a4a0450d" tvg-name="San Antonio Spurs vs Oklahoma City Thunder" tvg-logo="https://img.gvapi.cc/basketball/team/5305d1a7b721b5bef418041eff53ba82.png!w80" group-title="CoLaTV",🔴 [08:30] 21/10 🏀 San Antonio Spurs vs Oklahoma City Thunder (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.qioetj.app/live/82054853_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-8fc3639d50e5" tvg-name="San Antonio Spurs vs Oklahoma City Thunder" tvg-logo="https://img.gvapi.cc/basketball/team/5305d1a7b721b5bef418041eff53ba82.png!w80" group-title="CoLaTV",🔴 [08:50] 21/10 🏀 San Antonio Spurs vs Oklahoma City Thunder (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTINF:-1 tvg-id="sport-5721b5ddd774" tvg-name="San Antonio Spurs vs Oklahoma City Thunder" tvg-logo="https://img.gvapi.cc/basketball/team/5305d1a7b721b5bef418041eff53ba82.png!w80" group-title="CoLaTV",🔴 [08:30] 21/10 🏀 San Antonio Spurs vs Oklahoma City Thunder (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [FLV]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.qioetj.app/live/82054853_tsc.flv
-#EXTINF:-1 tvg-id="sport-fecb15133e20" tvg-name="San Antonio Spurs vs Oklahoma City Thunder" tvg-logo="https://img.gvapi.cc/basketball/team/5305d1a7b721b5bef418041eff53ba82.png!w80" group-title="CoLaTV",🔴 [08:50] 21/10 🏀 San Antonio Spurs vs Oklahoma City Thunder (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTINF:-1 tvg-id="sport-acc3e20b23fc" tvg-name="San Antonio Spurs vs Oklahoma City Thunder" tvg-logo="https://img.gvapi.cc/basketball/team/5305d1a7b721b5bef418041eff53ba82.png!w80" group-title="CoLaTV",🔴 [08:30] 21/10 🏀 San Antonio Spurs vs Oklahoma City Thunder (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/82054853_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-eff30057fbe0" tvg-name="San Antonio Spurs vs Oklahoma City Thunder" tvg-logo="https://img.gvapi.cc/basketball/team/5305d1a7b721b5bef418041eff53ba82.png!w80" group-title="CoLaTV",🔴 [08:50] 21/10 🏀 San Antonio Spurs vs Oklahoma City Thunder • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTINF:-1 tvg-id="sport-4477406ff3ac" tvg-name="San Antonio Spurs vs Oklahoma City Thunder" tvg-logo="https://img.gvapi.cc/basketball/team/5305d1a7b721b5bef418041eff53ba82.png!w80" group-title="CoLaTV",🔴 [08:30] 21/10 🏀 San Antonio Spurs vs Oklahoma City Thunder • Hiệp hội Bóng rổ Quốc gia [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
-https://live1.dyrur1.com/live/14304080_4e745cdb67511bc753ad2dacb6d80344_autoChange.m3u8?auth_key=1792566059-0-0-a46007784866c06cacca8a00266009ad
+https://live1.dyrur1.com/live/14304080_4e745cdb67511bc753ad2dacb6d80344_autoChange.m3u8?auth_key=1792566915-0-0-537262b18a3fa46f9c6e47973170181a
 #EXTINF:-1 tvg-id="sport-52d3841dea2a" tvg-name="CLB Yamagata vs Hokkaido Consadole Sapporo" tvg-logo="https://img.gvapi.cc/football/team/5f12aeb3876fe101ab8b486ff9ea679a.png!w80" group-title="CoLaTV",[11:00] 21/10 ⚽ CLB Yamagata vs Hokkaido Consadole Sapporo (BLV BÍ ĐAO) • Giải bóng đá hạng nhì Nhật Bản [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1712,6 +1704,10 @@ https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoisayhd/playlist.m3u8
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
 https://gckc0525.edgemaxcdn.org/live/chuoisayhd/playlist.m3u8
+#EXTINF:-1 tvg-id="sport-2bc1eb65052d" tvg-name="Tigres UANL vs Leon" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133406_3bc30a80.png" group-title="Chuối Chiên",[10:00] 21/10 ⚽ Tigres UANL vs Leon (Chuối Kem) • VĐQG Mexico [HLS]
+#EXTGRP:Chuối Chiên
+#EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
+https://gckc0525.edgemaxcdn.org/live/chuoikem/playlist.m3u8
 #EXTINF:-1 tvg-id="sport-4600959f292f" tvg-name="Tigres UANL vs Leon" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133406_3bc30a80.png" group-title="Chuối Chiên",[10:00] 21/10 ⚽ Tigres UANL vs Leon (Chuối Kem) • VĐQG Mexico [HLS]
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
@@ -1720,10 +1716,6 @@ https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
 https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8
-#EXTINF:-1 tvg-id="sport-2bc1eb65052d" tvg-name="Tigres UANL vs Leon" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133406_3bc30a80.png" group-title="Chuối Chiên",[10:00] 21/10 ⚽ Tigres UANL vs Leon (Chuối Kem) • VĐQG Mexico [HLS]
-#EXTGRP:Chuối Chiên
-#EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
-https://gckc0525.edgemaxcdn.org/live/chuoikem/playlist.m3u8
 #EXTINF:-1 tvg-id="sport-97df45232c5b" tvg-name="Bali United vs Garudayaksa" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_134617_73ab7535.png" group-title="Chuối Chiên",[15:30] 21/10 ⚽ Bali United vs Garudayaksa (Chuối Tây) • VĐQG Indonesia [HLS]
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
@@ -1736,6 +1728,10 @@ https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
 https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8
+#EXTINF:-1 tvg-id="sport-541c6252a110" tvg-name="Shimizu S-pulse vs Machida Zelvia" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_132409_e59d2efe.png" group-title="Chuối Chiên",[17:00] 21/10 ⚽ Shimizu S-pulse vs Machida Zelvia (Chuối Kem) • J1 League [HLS]
+#EXTGRP:Chuối Chiên
+#EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
+https://gckc0525.edgemaxcdn.org/live/chuoikem/playlist.m3u8
 #EXTINF:-1 tvg-id="sport-f52809647b03" tvg-name="Shimizu S-pulse vs Machida Zelvia" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_132409_e59d2efe.png" group-title="Chuối Chiên",[17:00] 21/10 ⚽ Shimizu S-pulse vs Machida Zelvia (Chuối Kem) • J1 League [HLS]
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
@@ -1744,10 +1740,6 @@ https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
 https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8
-#EXTINF:-1 tvg-id="sport-541c6252a110" tvg-name="Shimizu S-pulse vs Machida Zelvia" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_132409_e59d2efe.png" group-title="Chuối Chiên",[17:00] 21/10 ⚽ Shimizu S-pulse vs Machida Zelvia (Chuối Kem) • J1 League [HLS]
-#EXTGRP:Chuối Chiên
-#EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
-https://gckc0525.edgemaxcdn.org/live/chuoikem/playlist.m3u8
 #EXTINF:-1 tvg-id="sport-b397045e9183" tvg-name="Como U19 vs Manchester United U19" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_143950_6df9c0b7.png" group-title="Chuối Chiên",[18:00] 21/10 ⚽ Como U19 vs Manchester United U19 (Chuối Nhỏ) • UEFA Youth League [HLS]
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
@@ -1832,6 +1824,10 @@ https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
 https://gckc0525.edgemaxcdn.org/live/chuoilahd/playlist.m3u8
+#EXTINF:-1 tvg-id="sport-88e3b8a6b18e" tvg-name="Lille vs Galatasaray" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125509_02157926.png" group-title="Chuối Chiên",[23:45] 21/10 ⚽ Lille vs Galatasaray (Chuối Kem) • UEFA Champions League [HLS]
+#EXTGRP:Chuối Chiên
+#EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
+https://gckc0525.edgemaxcdn.org/live/chuoikem/playlist.m3u8
 #EXTINF:-1 tvg-id="sport-00c4088efe2a" tvg-name="Lille vs Galatasaray" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125509_02157926.png" group-title="Chuối Chiên",[23:45] 21/10 ⚽ Lille vs Galatasaray (Chuối Kem) • UEFA Champions League [HLS]
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
@@ -1840,10 +1836,6 @@ https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
 https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8
-#EXTINF:-1 tvg-id="sport-88e3b8a6b18e" tvg-name="Lille vs Galatasaray" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125509_02157926.png" group-title="Chuối Chiên",[23:45] 21/10 ⚽ Lille vs Galatasaray (Chuối Kem) • UEFA Champions League [HLS]
-#EXTGRP:Chuối Chiên
-#EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
-https://gckc0525.edgemaxcdn.org/live/chuoikem/playlist.m3u8
 #EXTINF:-1 tvg-id="sport-597eedcd45cb" tvg-name="Aston Villa vs Viking" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125552_15f20ce5.png" group-title="Chuối Chiên",[02:00] 22/10 ⚽ Aston Villa vs Viking (Chuối Tây) • UEFA Champions League [HLS]
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
@@ -1916,11 +1908,6 @@ https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoigia/playlist.m3u8
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
 https://gckc0525.edgemaxcdn.org/live/chuoigiahd/playlist.m3u8
-#EXTINF:-1 tvg-id="sport-97d96ea722ef" tvg-name="FC Juarez vs CF Atlante" tvg-logo="https://images.keovip88.net/images/teams/fc-juarez.png" group-title="Giờ Vàng",🔴 [08:00] 21/10 ⚽ FC Juarez vs CF Atlante (Bee) • Mexico Liga MX [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://ftlh5sc02iliv.vcdn.cloud/1792425445_hd/1792425445_hd@720p.m3u8
 #EXTINF:-1 tvg-id="sport-1fc5e46f30ce" tvg-name="Inac Kobe Leonesa vs JEF United" tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/-dzxSZwvXWZ-BSkwdODvHQ_96x96.png" group-title="Giờ Vàng",🔴 [10:00] 21/10 ⚽ Inac Kobe Leonesa vs JEF United (Trĩ) • Japan - WE League [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1956,7 +1943,7 @@ https://pzhgifbkllliv.vcdn.cloud/1792310643_hd/1792310643_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792310681_hd/1792310681_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-59bc77c73349" tvg-name="FC Tokyo vs Kashiwa Reysol" tvg-logo="https://images.keovip88.net/images/teams/fc-tokyo.png" group-title="Giờ Vàng",[17:00] 21/10 ⚽ FC Tokyo vs Kashiwa Reysol (Mason) • VĐQG Nhật Bản [HLS]
+#EXTINF:-1 tvg-id="sport-bea4c2b96fce" tvg-name="FC Tokyo vs Kashiwa Reysol" tvg-logo="https://images.keovip88.net/images/teams/fc-tokyo.png" group-title="Giờ Vàng",[17:00] 21/10 ⚽ FC Tokyo vs Kashiwa Reysol (Mason) • VĐQG Nhật Bản [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
@@ -1966,7 +1953,7 @@ https://ftlh5sc02iliv.vcdn.cloud/1792310726_hd/1792310726_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792310752_hd/1792310752_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-262903b0403b" tvg-name="Kyoto Sanga vs Kashima Antlers" tvg-logo="https://images.keovip88.net/images/teams/kyoto-sanga.png" group-title="Giờ Vàng",[17:00] 21/10 ⚽ Kyoto Sanga vs Kashima Antlers (Mù) • VĐQG Nhật Bản [HLS]
+#EXTINF:-1 tvg-id="sport-3fe2dfcbaacf" tvg-name="Kyoto Sanga vs Kashima Antlers" tvg-logo="https://images.keovip88.net/images/teams/kyoto-sanga.png" group-title="Giờ Vàng",[17:00] 21/10 ⚽ Kyoto Sanga vs Kashima Antlers (Mù) • VĐQG Nhật Bản [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
@@ -2026,7 +2013,7 @@ https://ftlh5sc02iliv.vcdn.cloud/1792431765_hd/1792431765_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792549688_hd/1792549688_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-50bdacaf140e" tvg-name="Persik Kediri vs PSS Sleman" tvg-logo="https://images.keovip88.net/images/teams/persik-kediri.png" group-title="Giờ Vàng",[15:30] 22/10 ⚽ Persik Kediri vs PSS Sleman (Tỵ) • VĐQG Indonesia [HLS]
+#EXTINF:-1 tvg-id="sport-739d76f77181" tvg-name="Persik Kediri vs PSS Sleman" tvg-logo="https://images.keovip88.net/images/teams/persik-kediri.png" group-title="Giờ Vàng",[15:30] 22/10 ⚽ Persik Kediri vs PSS Sleman (Tỵ) • VĐQG Indonesia [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
@@ -2076,11 +2063,31 @@ https://ftlh5sc02iliv.vcdn.cloud/1792311867_hd/1792311867_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792311915_hd/1792311915_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-f6480822e7c3" tvg-name="Internacional de Bogotá - Fortaleza" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7ph635m2wd/image/small" group-title="PhaLangTV",🔴 [06:15] 21/10 ⚽ Internacional de Bogotá - Fortaleza • Categoría Primera A [HLS]
-#EXTGRP:PhaLangTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/internacional-de-bogota-fortaleza-pxwrxlhyo5kzryk
-https://lilive1.eu.cc/live/4eeb830163034eaf2a982dcb64d57039/playlist.m3u8
+#EXTINF:-1 tvg-id="sport-bb79c11fc01a" tvg-name="Illawarra Hawks vs Sydney Kings" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/e97aa6ff62044e05b1dc126043568a18.png" group-title="Giờ Vàng",[15:30] 22/10 🏀 Illawarra Hawks vs Sydney Kings (Tôm) • National Basketball League(Australia) [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://ftlh5sc02iliv.vcdn.cloud/1792551670_hd/1792551670_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-63f211eec532" tvg-name="Beijing Shougang Ducks vs Shenzhen Leopards" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/58867afcb7d9cb68ffd5338c62c7af6a.png" group-title="Giờ Vàng",[18:35] 22/10 🏀 Beijing Shougang Ducks vs Shenzhen Leopards (Chồn) • Chinese Basketball Association [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://ftlh5sc02iliv.vcdn.cloud/1792551696_hd/1792551696_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-1b575e3c0dd3" tvg-name="Fujian Xunxing Sturgeons vs Ningbo Rockets" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/513a673e2abf3080d21b0dc4d0b0dad8.png" group-title="Giờ Vàng",[18:35] 22/10 🏀 Fujian Xunxing Sturgeons vs Ningbo Rockets (Cầy) • Chinese Basketball Association [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://ftlh5sc02iliv.vcdn.cloud/1792551734_hd/1792551734_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-dd0ecfd3ebca" tvg-name="Jilin Northeast Tigers vs Xinjiang Flying Tigers" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/9b1edb3adebae8211e057008d8352b03.png" group-title="Giờ Vàng",[18:35] 22/10 🏀 Jilin Northeast Tigers vs Xinjiang Flying Tigers (Điếc) • Chinese Basketball Association [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://ftlh5sc02iliv.vcdn.cloud/1792551810_hd/1792551810_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-6817acda6b30" tvg-name="Shanxi Loongs Fenjiu vs Shanghai Jiushi Sharks" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/2b1276c6b68b581bd3023f5f11bb6f44.png" group-title="Giờ Vàng",[18:35] 22/10 🏀 Shanxi Loongs Fenjiu vs Shanghai Jiushi Sharks (Vịt) • Chinese Basketball Association [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://ftlh5sc02iliv.vcdn.cloud/1792551854_hd/1792551854_hd@720p.m3u8
 #EXTINF:-1 tvg-id="sport-c5e37a75e7c2" tvg-name="Cucuta - Atl. Nacional" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8gh493wr6od/image/small" group-title="PhaLangTV",🔴 [06:30] 21/10 ⚽ Cucuta - Atl. Nacional • Categoría Primera A [HLS]
 #EXTGRP:PhaLangTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
@@ -2116,138 +2123,138 @@ https://lilive1.eu.cc/live/a82c2b96b14312ec181ebb8e02ac3c1e/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel10.flv
-#EXTINF:-1 tvg-id="sport-7eab7fddf63a" tvg-name="Millonarios vs Once Caldas" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhg9x5ryk0/image/small" group-title="XoilacXTH",[08:30] 21/10 ⚽ Millonarios vs Once Caldas • VĐQG Colombia [FLV]
+#EXTINF:-1 tvg-id="sport-256e5d84256c" tvg-name="Millonarios vs Once Caldas" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhg9x5ryk0/image/small" group-title="XoilacXTH",[08:30] 21/10 ⚽ Millonarios vs Once Caldas • VĐQG Colombia [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-10.flv?auth_key=3000001792551688-0-0-1981fae601cabd5925f707657486650b
+https://live2.domaincdn.cc/livecdn/channel-10.flv?auth_key=3000001792552554-0-0-26528500838f847fcdab51d61aeb2322
 #EXTINF:-1 tvg-id="sport-9bfe5ccd4e1a" tvg-name="Marathon vs Alianza Salvador" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhgngvryk0/image/small" group-title="XoilacXTH",[09:00] 21/10 ⚽ Marathon vs Alianza Salvador • Central American Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel7.flv
-#EXTINF:-1 tvg-id="sport-4ea4185ae0ad" tvg-name="Marathon vs Alianza Salvador" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhgngvryk0/image/small" group-title="XoilacXTH",[09:00] 21/10 ⚽ Marathon vs Alianza Salvador • Central American Cup [FLV]
+#EXTINF:-1 tvg-id="sport-a40657a8ce64" tvg-name="Marathon vs Alianza Salvador" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhgngvryk0/image/small" group-title="XoilacXTH",[09:00] 21/10 ⚽ Marathon vs Alianza Salvador • Central American Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-7.flv?auth_key=3000001792551688-0-0-f8a98f9b5cb4dedb8a42f0580820908b
-#EXTINF:-1 tvg-id="sport-28791b8e5c36" tvg-name="Malacateco vs Comunicaciones" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergpho7ldr8k0/image/small" group-title="XoilacXTH",[09:00] 21/10 ⚽ Malacateco vs Comunicaciones • VĐQG Guatemala [FLV]
+https://live2.domaincdn.cc/livecdn/channel-7.flv?auth_key=3000001792552554-0-0-e3e25ebf9c2c88f8e4286f228191d974
+#EXTINF:-1 tvg-id="sport-7f6d669b5a14" tvg-name="Malacateco vs Comunicaciones" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergpho7ldr8k0/image/small" group-title="XoilacXTH",[09:00] 21/10 ⚽ Malacateco vs Comunicaciones • VĐQG Guatemala [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=8f193234d1f1ffa7a3b9facd482da28c&wsABSTime=1792594888
-#EXTINF:-1 tvg-id="sport-d5de0a3ede41" tvg-name="Nữ Saprissa vs Nữ Alajuelense" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7ph0dyym2wd/image/small" group-title="XoilacXTH",[09:00] 21/10 ⚽ Nữ Saprissa vs Nữ Alajuelense • CostaRica Women Primera Division [FLV]
+https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=32b07ccd6aa1f37aa43320e7d78e7769&wsABSTime=1792595754
+#EXTINF:-1 tvg-id="sport-ea323e43ea01" tvg-name="Nữ Saprissa vs Nữ Alajuelense" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7ph0dyym2wd/image/small" group-title="XoilacXTH",[09:00] 21/10 ⚽ Nữ Saprissa vs Nữ Alajuelense • CostaRica Women Primera Division [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel34.flv?wsSecret=7a50f56ba73ae30ab7002737ec953dad&wsABSTime=1792594888
+https://live1.quickscoreboardz.com/live/channel34.flv?wsSecret=158cedc4909dd4684b4182eb5059eafe&wsABSTime=1792595754
 #EXTINF:-1 tvg-id="sport-0cf0ebb03186" tvg-name="Tigres UANL vs Club Leon" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whk9g2ryox/image/small" group-title="XoilacXTH",[10:00] 21/10 ⚽ Tigres UANL vs Club Leon • VĐQG Mexico [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel22.flv
-#EXTINF:-1 tvg-id="sport-72749d5254da" tvg-name="Tigres UANL vs Club Leon" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whk9g2ryox/image/small" group-title="XoilacXTH",[10:00] 21/10 ⚽ Tigres UANL vs Club Leon • VĐQG Mexico [FLV]
+#EXTINF:-1 tvg-id="sport-c4eec1220ed4" tvg-name="Tigres UANL vs Club Leon" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whk9g2ryox/image/small" group-title="XoilacXTH",[10:00] 21/10 ⚽ Tigres UANL vs Club Leon • VĐQG Mexico [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-22.flv?auth_key=3000001792551688-0-0-7d5009739811a6bb67964c3c79a0c56d
-#EXTINF:-1 tvg-id="sport-95dad56c0ebc" tvg-name="Nữ Inac Kobe vs Nữ JEF United" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hw4z3qdyj/image/small" group-title="XoilacXTH",[10:00] 21/10 ⚽ Nữ Inac Kobe vs Nữ JEF United • Women Empowerment League [FLV]
+https://live2.domaincdn.cc/livecdn/channel-22.flv?auth_key=3000001792552554-0-0-80b4324f704031599711e06c62ced23f
+#EXTINF:-1 tvg-id="sport-30f31c224ea1" tvg-name="Nữ Inac Kobe vs Nữ JEF United" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hw4z3qdyj/image/small" group-title="XoilacXTH",[10:00] 21/10 ⚽ Nữ Inac Kobe vs Nữ JEF United • Women Empowerment League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=195dd4369eacbbe6e9085cf7c0b0ce3d&wsABSTime=1792594888
+https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=575f5b1542171bee3587247dce8877f1&wsABSTime=1792595754
 #EXTINF:-1 tvg-id="sport-e872ff4a8d6c" tvg-name="Nữ Guadalajara vs Nữ Club Necaxa" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh33p0r1ge/image/small" group-title="XoilacXTH",[10:07] 21/10 ⚽ Nữ Guadalajara vs Nữ Club Necaxa • VĐQG Nữ Mexico [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel28.flv
-#EXTINF:-1 tvg-id="sport-f5d3d8bb3428" tvg-name="Nữ Guadalajara vs Nữ Club Necaxa" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh33p0r1ge/image/small" group-title="XoilacXTH",[10:07] 21/10 ⚽ Nữ Guadalajara vs Nữ Club Necaxa • VĐQG Nữ Mexico [FLV]
+#EXTINF:-1 tvg-id="sport-79f7fce8bdd6" tvg-name="Nữ Guadalajara vs Nữ Club Necaxa" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh33p0r1ge/image/small" group-title="XoilacXTH",[10:07] 21/10 ⚽ Nữ Guadalajara vs Nữ Club Necaxa • VĐQG Nữ Mexico [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-28.flv?auth_key=3000001792551688-0-0-7c16639f863b67f3ed57259a6fc36051
+https://live2.domaincdn.cc/livecdn/channel-28.flv?auth_key=3000001792552555-0-0-c53a6b4fb81f9bd78163e01c4625c52d
 #EXTINF:-1 tvg-id="sport-c3cb50eee870" tvg-name="M. Yamagata vs Consadole Sapporo" tvg-logo="https://imgts.sportpulseapiz.com/football/team/56ypq3nho18md7o/image/small" group-title="XoilacXTH",[11:00] 21/10 ⚽ M. Yamagata vs Consadole Sapporo • J2 League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel20.flv
-#EXTINF:-1 tvg-id="sport-bd1d85124393" tvg-name="M. Yamagata vs Consadole Sapporo" tvg-logo="https://imgts.sportpulseapiz.com/football/team/56ypq3nho18md7o/image/small" group-title="XoilacXTH",[11:00] 21/10 ⚽ M. Yamagata vs Consadole Sapporo • J2 League [FLV]
+#EXTINF:-1 tvg-id="sport-3244c40393e0" tvg-name="M. Yamagata vs Consadole Sapporo" tvg-logo="https://imgts.sportpulseapiz.com/football/team/56ypq3nho18md7o/image/small" group-title="XoilacXTH",[11:00] 21/10 ⚽ M. Yamagata vs Consadole Sapporo • J2 League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-20.flv?auth_key=3000001792551688-0-0-dc52eb1c235fa362782dae8eec47d1f4
-#EXTINF:-1 tvg-id="sport-4f5e2401e626" tvg-name="Nagano Parceiro vs FC Ryukyu" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7h10oeqdyj/image/small" group-title="XoilacXTH",[11:00] 21/10 ⚽ Nagano Parceiro vs FC Ryukyu • J3 League [FLV]
+https://live2.domaincdn.cc/livecdn/channel-20.flv?auth_key=3000001792552554-0-0-102bdbc0e768aa56cd0adb1c5d123acd
+#EXTINF:-1 tvg-id="sport-58b2d153126d" tvg-name="Nagano Parceiro vs FC Ryukyu" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7h10oeqdyj/image/small" group-title="XoilacXTH",[11:00] 21/10 ⚽ Nagano Parceiro vs FC Ryukyu • J3 League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=0594dd251d88e8489c2448cadd32f558&wsABSTime=1792594888
-#EXTINF:-1 tvg-id="sport-a59dbcdef9b3" tvg-name="Tochigi SC vs Reilac Shiga FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/2y8m4zh3n80ql07/image/small" group-title="XoilacXTH",[11:00] 21/10 ⚽ Tochigi SC vs Reilac Shiga FC • J3 League [FLV]
+https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=c0fcaaaf3746f98a0eb534444882e1a7&wsABSTime=1792595754
+#EXTINF:-1 tvg-id="sport-968e65bf7e4b" tvg-name="Tochigi SC vs Reilac Shiga FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/2y8m4zh3n80ql07/image/small" group-title="XoilacXTH",[11:00] 21/10 ⚽ Tochigi SC vs Reilac Shiga FC • J3 League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=bbf7ed6faceb33d34e3bdff9e602979a&wsABSTime=1792594888
-#EXTINF:-1 tvg-id="sport-c13e6443c213" tvg-name="Fukushima FC vs Giravanz Kita" tvg-logo="https://imgts.sportpulseapiz.com/football/team/23xmvkh310zqg8n/image/small" group-title="XoilacXTH",[11:00] 21/10 ⚽ Fukushima FC vs Giravanz Kita • J3 League [FLV]
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=c134321470b80fb5695b97306cc95a3d&wsABSTime=1792595754
+#EXTINF:-1 tvg-id="sport-c7915ec62ac2" tvg-name="Fukushima FC vs Giravanz Kita" tvg-logo="https://imgts.sportpulseapiz.com/football/team/23xmvkh310zqg8n/image/small" group-title="XoilacXTH",[11:00] 21/10 ⚽ Fukushima FC vs Giravanz Kita • J3 League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=787d772af3dcc7c9dbc04919895e46f1&wsABSTime=1792594888
-#EXTINF:-1 tvg-id="sport-546fd9f97e59" tvg-name="Nữ Elfen Saitama vs Nữ Mynavi Sendai" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhgzd3ryk0/image/small" group-title="XoilacXTH",[11:00] 21/10 ⚽ Nữ Elfen Saitama vs Nữ Mynavi Sendai • Women Empowerment League [FLV]
+https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=80ec85e6a951b213ccf1d2815e4c8b49&wsABSTime=1792595754
+#EXTINF:-1 tvg-id="sport-48aa33a0f3be" tvg-name="Nữ Elfen Saitama vs Nữ Mynavi Sendai" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhgzd3ryk0/image/small" group-title="XoilacXTH",[11:00] 21/10 ⚽ Nữ Elfen Saitama vs Nữ Mynavi Sendai • Women Empowerment League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel7.flv?wsSecret=9de1ee9cd38f0f9e0e239492741b54e5&wsABSTime=1792594888
-#EXTINF:-1 tvg-id="sport-3a3615431887" tvg-name="Kasem Bundit Uni. FC vs Toko Customs United" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh44y2r1ge/image/small" group-title="XoilacXTH",[15:00] 21/10 ⚽ Kasem Bundit Uni. FC vs Toko Customs United • Thai FA Cup [FLV]
+https://live1.quickscoreboardz.com/live/channel7.flv?wsSecret=ddd17b9ce47af0b211616670ff37486a&wsABSTime=1792595754
+#EXTINF:-1 tvg-id="sport-83f9aa221dd5" tvg-name="Kasem Bundit Uni. FC vs Toko Customs United" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh44y2r1ge/image/small" group-title="XoilacXTH",[15:00] 21/10 ⚽ Kasem Bundit Uni. FC vs Toko Customs United • Thai FA Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel1.flv?wsSecret=d77e7ffbd9c7d1b6fe96ce1489339499&wsABSTime=1792594888
+https://live1.quickscoreboardz.com/live/channel1.flv?wsSecret=d63392af133384a778e97ce56d731f36&wsABSTime=1792595754
 #EXTINF:-1 tvg-id="sport-aaeaf76da50c" tvg-name="Dome FC vs Sisaket United" tvg-logo="https://imgts.sportpulseapiz.com/football/team/1l4rjnh12lkm7vx/image/small" group-title="XoilacXTH",[15:00] 21/10 ⚽ Dome FC vs Sisaket United • Thai FA Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel7.flv
-#EXTINF:-1 tvg-id="sport-bf5e37f4d2e4" tvg-name="Dome FC vs Sisaket United" tvg-logo="https://imgts.sportpulseapiz.com/football/team/1l4rjnh12lkm7vx/image/small" group-title="XoilacXTH",[15:00] 21/10 ⚽ Dome FC vs Sisaket United • Thai FA Cup [FLV]
+#EXTINF:-1 tvg-id="sport-8f131aa41ff5" tvg-name="Dome FC vs Sisaket United" tvg-logo="https://imgts.sportpulseapiz.com/football/team/1l4rjnh12lkm7vx/image/small" group-title="XoilacXTH",[15:00] 21/10 ⚽ Dome FC vs Sisaket United • Thai FA Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-7.flv?auth_key=3000001792551688-0-0-f8a98f9b5cb4dedb8a42f0580820908b
-#EXTINF:-1 tvg-id="sport-4231a124d716" tvg-name="Chumphon United vs Songkhla FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohnpe9q1zp/image/small" group-title="XoilacXTH",[15:00] 21/10 ⚽ Chumphon United vs Songkhla FC • Thai FA Cup [FLV]
+https://live2.domaincdn.cc/livecdn/channel-7.flv?auth_key=3000001792552554-0-0-e3e25ebf9c2c88f8e4286f228191d974
+#EXTINF:-1 tvg-id="sport-724449c0ea61" tvg-name="Chumphon United vs Songkhla FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohnpe9q1zp/image/small" group-title="XoilacXTH",[15:00] 21/10 ⚽ Chumphon United vs Songkhla FC • Thai FA Cup [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=195dd4369eacbbe6e9085cf7c0b0ce3d&wsABSTime=1792594888
-#EXTINF:-1 tvg-id="sport-956993da48e3" tvg-name="Guangdong Wuchuan vs Xingtai Wanshuai" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phpngem2wd/image/small" group-title="XoilacXTH",[15:00] 21/10 ⚽ Guangdong Wuchuan vs Xingtai Wanshuai • CFA Member Association Champions League [FLV]
+https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=575f5b1542171bee3587247dce8877f1&wsABSTime=1792595754
+#EXTINF:-1 tvg-id="sport-75a456d0a2a6" tvg-name="Guangdong Wuchuan vs Xingtai Wanshuai" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phpngem2wd/image/small" group-title="XoilacXTH",[15:00] 21/10 ⚽ Guangdong Wuchuan vs Xingtai Wanshuai • CFA Member Association Champions League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=0594dd251d88e8489c2448cadd32f558&wsABSTime=1792594888
+https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=c0fcaaaf3746f98a0eb534444882e1a7&wsABSTime=1792595754
 #EXTINF:-1 tvg-id="sport-aec7f66a501e" tvg-name="Bali United vs Garudayaksa FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dn1m1ghe757moep/image/small" group-title="XoilacXTH",[15:30] 21/10 ⚽ Bali United vs Garudayaksa FC • VĐQG Indonesia [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel24.flv
-#EXTINF:-1 tvg-id="sport-e8dfbabdb30f" tvg-name="Bali United vs Garudayaksa FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dn1m1ghe757moep/image/small" group-title="XoilacXTH",[15:30] 21/10 ⚽ Bali United vs Garudayaksa FC • VĐQG Indonesia [FLV]
+#EXTINF:-1 tvg-id="sport-4c4147e2375e" tvg-name="Bali United vs Garudayaksa FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dn1m1ghe757moep/image/small" group-title="XoilacXTH",[15:30] 21/10 ⚽ Bali United vs Garudayaksa FC • VĐQG Indonesia [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001792551688-0-0-b0e3e01d631ded465c2861ebba31e1f2
+https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001792552555-0-0-c82f7054998605cb085979be58e952bb
 #EXTINF:-1 tvg-id="sport-d1eb7f480a01" tvg-name="Kasuka FC vs Shan United" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phoxk2m2wd/image/small" group-title="XoilacXTH",[16:30] 21/10 ⚽ Kasuka FC vs Shan United • AFC Challenge League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel12.flv
-#EXTINF:-1 tvg-id="sport-58ff7e2d737a" tvg-name="Kasuka FC vs Shan United" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phoxk2m2wd/image/small" group-title="XoilacXTH",[16:30] 21/10 ⚽ Kasuka FC vs Shan United • AFC Challenge League [FLV]
+#EXTINF:-1 tvg-id="sport-db223f96a132" tvg-name="Kasuka FC vs Shan United" tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phoxk2m2wd/image/small" group-title="XoilacXTH",[16:30] 21/10 ⚽ Kasuka FC vs Shan United • AFC Challenge League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-12.flv?auth_key=3000001792551688-0-0-5bb869766c48ce9c4ee99568e771243f
-#EXTINF:-1 tvg-id="sport-f0e1ab2f71e2" tvg-name="Nữ Nojima Stella vs Nữ Albirex Niigata" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jhewx8qwzv/image/small" group-title="XoilacXTH",[16:30] 21/10 ⚽ Nữ Nojima Stella vs Nữ Albirex Niigata • Women Empowerment League [FLV]
+https://live2.domaincdn.cc/livecdn/channel-12.flv?auth_key=3000001792552555-0-0-a8c15d32e01b50953d4ce6243213a7cf
+#EXTINF:-1 tvg-id="sport-7a792e94437b" tvg-name="Nữ Nojima Stella vs Nữ Albirex Niigata" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jhewx8qwzv/image/small" group-title="XoilacXTH",[16:30] 21/10 ⚽ Nữ Nojima Stella vs Nữ Albirex Niigata • Women Empowerment League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=bbf7ed6faceb33d34e3bdff9e602979a&wsABSTime=1792594888
-#EXTINF:-1 tvg-id="sport-1ffff86b8125" tvg-name="Respublika FA vs Pakhtakor II" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whel29ryox/image/small" group-title="XoilacXTH",[17:00] 21/10 ⚽ Respublika FA vs Pakhtakor II • Uzbekistan Pro League [FLV]
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=c134321470b80fb5695b97306cc95a3d&wsABSTime=1792595754
+#EXTINF:-1 tvg-id="sport-863dca389479" tvg-name="Respublika FA vs Pakhtakor II" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whel29ryox/image/small" group-title="XoilacXTH",[17:00] 21/10 ⚽ Respublika FA vs Pakhtakor II • Uzbekistan Pro League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=bbf7ed6faceb33d34e3bdff9e602979a&wsABSTime=1792594888
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=cde332265f71de4cc7e562b0466c7080&wsABSTime=1792595755
