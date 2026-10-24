@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url=""
-#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 04:45 25/10" group-title="🕒 Cập nhật 04:45 25/10",🕒 Cập nhật 04:45 25/10
+#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 05:01 25/10" group-title="🕒 Cập nhật 05:01 25/10",🕒 Cập nhật 05:01 25/10
 http://127.0.0.1/
 #EXTINF:-1 tvg-id="sport-811810d9f2a0" tvg-name="Lazio vs Parma" tvg-logo="https://img.cltvap.cc/football/team/5a2ff46efa33abc6b2908eb6279dfbf8.png" group-title="Gà Vàng 33",🔴 [01:45] 25/10 ⚽ Lazio vs Parma [HLS]
 #EXTGRP:Gà Vàng 33
@@ -13,12 +13,20 @@ https://video.gvvsb.com/hls/output_v1.m3u8
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-referrer=https://gavang33.me/
 https://video.gvvsb.com/hls/output_v1.m3u8
-#EXTINF:-1 tvg-id="sport-3fe135c3b010" tvg-name="New York Red Bulls vs Inter Miami CF" tvg-logo="https://img.cltvap.cc/football/team/8b8fe90668461b90ddc20516b0e6796d.png" group-title="Gà Vàng 33",🔴 [04:30] 25/10 ⚽ New York Red Bulls vs Inter Miami CF (Gà Siêu Tồ) • United States Major League Soccer [HLS]
+#EXTINF:-1 tvg-id="sport-1ad80b2bab5b" tvg-name="New York Red Bulls vs Inter Miami CF" tvg-logo="https://img.cltvap.cc/football/team/8b8fe90668461b90ddc20516b0e6796d.png" group-title="Gà Vàng 33",[04:30] 25/10 ⚽ New York Red Bulls vs Inter Miami CF [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.me/
+https://live2.zktsva.app/live/796315.m3u8
+#EXTINF:-1 tvg-id="sport-86fba297bade" tvg-name="New York Red Bulls vs Inter Miami CF" tvg-logo="https://img.cltvap.cc/football/team/8b8fe90668461b90ddc20516b0e6796d.png" group-title="Gà Vàng 33",[04:30] 25/10 ⚽ New York Red Bulls vs Inter Miami CF [FLV]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.me/
+https://live2.zktsva.app/live/796315.flv
+#EXTINF:-1 tvg-id="sport-703585884c95" tvg-name="New York Red Bulls vs Inter Miami CF" tvg-logo="https://img.cltvap.cc/football/team/8b8fe90668461b90ddc20516b0e6796d.png" group-title="Gà Vàng 33",🔴 [04:40] 25/10 🏅 New York Red Bulls vs Inter Miami CF (Gà Siêu Tồ) • United States Major League Soccer [HLS]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://gavang33.co/
 https://live2.zktsva.app/live/796315.m3u8
-#EXTINF:-1 tvg-id="sport-7b64ca4d3f13" tvg-name="New York Red Bulls vs Inter Miami CF" tvg-logo="https://img.cltvap.cc/football/team/8b8fe90668461b90ddc20516b0e6796d.png" group-title="Gà Vàng 33",🔴 [04:30] 25/10 ⚽ New York Red Bulls vs Inter Miami CF (Gà Siêu Tồ) • United States Major League Soccer [FLV]
+#EXTINF:-1 tvg-id="sport-a34506d5d204" tvg-name="New York Red Bulls vs Inter Miami CF" tvg-logo="https://img.cltvap.cc/football/team/8b8fe90668461b90ddc20516b0e6796d.png" group-title="Gà Vàng 33",🔴 [04:40] 25/10 🏅 New York Red Bulls vs Inter Miami CF (Gà Siêu Tồ) • United States Major League Soccer [FLV]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://gavang33.co/
@@ -388,11 +396,11 @@ https://live05.yefpwmc.app/live/75748097_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/75748097_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-4873997b4ba3" tvg-name="New York Red Bulls vs Inter Miami" tvg-logo="https://img.cltvap.cc/football/team/8b8fe90668461b90ddc20516b0e6796d.png!w80" group-title="CoLaTV",🔴 [04:40] 25/10 ⚽ New York Red Bulls vs Inter Miami • Major League Soccer [HLS]
+#EXTINF:-1 tvg-id="sport-811c12be7baf" tvg-name="New York Red Bulls vs Inter Miami" tvg-logo="https://img.cltvap.cc/football/team/8b8fe90668461b90ddc20516b0e6796d.png!w80" group-title="CoLaTV",🔴 [04:40] 25/10 ⚽ New York Red Bulls vs Inter Miami • Major League Soccer [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
-https://live.dyrur1.com/live/13375497_bc01c5ed16d9802a5e790339e32a03ef_autoChange.m3u8?auth_key=1792892474-0-0-98b1a093a73d7c4d02de9cf3172465a0
+https://live.dyrur1.com/live/13375497_bc01c5ed16d9802a5e790339e32a03ef_autoChange.m3u8?auth_key=1792893480-0-0-b3a4c6540843ec8ee89ad03db66f26c7
 #EXTINF:-1 tvg-id="sport-2cf7905143a6" tvg-name="Charlotte Hornets vs Miami Heat" tvg-logo="https://img.cltvap.cc/basketball/team/e52f6ac53681289c91703501a960cb3c.png!w80" group-title="CoLaTV",🔴 [05:00] 25/10 🏀 Charlotte Hornets vs Miami Heat (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -408,306 +416,11 @@ https://live05.yefpwmc.app/live/87379114_tsc.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.miekgo.app/live/87379114_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-1850e2bdce50" tvg-name="Charlotte Hornets vs Miami Heat" tvg-logo="https://img.cltvap.cc/basketball/team/e52f6ac53681289c91703501a960cb3c.png!w80" group-title="CoLaTV",🔴 [05:00] 25/10 🏀 Charlotte Hornets vs Miami Heat • Hiệp hội Bóng rổ Quốc gia
+#EXTINF:-1 tvg-id="sport-734d33833ba0" tvg-name="Charlotte Hornets vs Miami Heat" tvg-logo="https://img.cltvap.cc/basketball/team/e52f6ac53681289c91703501a960cb3c.png!w80" group-title="CoLaTV",🔴 [05:00] 25/10 🏀 Charlotte Hornets vs Miami Heat • Hiệp hội Bóng rổ Quốc gia [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
-https
-#EXTINF:-1 tvg-id="sport-3ddfc40c1b53" tvg-name="Philadelphia 76ers vs Milwaukee Bucks" tvg-logo="https://img.cltvap.cc/basketball/team/06e7bde6cca98873fe971fad4e67a9b6.png!w80" group-title="CoLaTV",[06:30] 25/10 🏀 Philadelphia 76ers vs Milwaukee Bucks (BLV 247) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/90865415_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-dc163ff1827c" tvg-name="Philadelphia 76ers vs Milwaukee Bucks" tvg-logo="https://img.cltvap.cc/basketball/team/06e7bde6cca98873fe971fad4e67a9b6.png!w80" group-title="CoLaTV",[06:30] 25/10 🏀 Philadelphia 76ers vs Milwaukee Bucks (BLV 247) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/90865415_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-09159823409e" tvg-name="Philadelphia 76ers vs Milwaukee Bucks" tvg-logo="https://img.cltvap.cc/basketball/team/06e7bde6cca98873fe971fad4e67a9b6.png!w80" group-title="CoLaTV",[06:30] 25/10 🏀 Philadelphia 76ers vs Milwaukee Bucks (BLV 247) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/90865415_tsc.flv
-#EXTINF:-1 tvg-id="sport-16bc6770797d" tvg-name="Philadelphia 76ers vs Milwaukee Bucks" tvg-logo="https://img.cltvap.cc/basketball/team/06e7bde6cca98873fe971fad4e67a9b6.png!w80" group-title="CoLaTV",[06:30] 25/10 🏀 Philadelphia 76ers vs Milwaukee Bucks • Hiệp hội Bóng rổ Quốc gia
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https
-#EXTINF:-1 tvg-id="sport-493cbe1909a1" tvg-name="Dallas Mavericks vs San Antonio Spurs" tvg-logo="https://img.cltvap.cc/basketball/team/42d7b5ec22b2eb411d68f94a04eab742.png!w80" group-title="CoLaTV",[07:00] 25/10 🏀 Dallas Mavericks vs San Antonio Spurs (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/82054853_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-65ff183313bc" tvg-name="Dallas Mavericks vs San Antonio Spurs" tvg-logo="https://img.cltvap.cc/basketball/team/42d7b5ec22b2eb411d68f94a04eab742.png!w80" group-title="CoLaTV",[07:00] 25/10 🏀 Dallas Mavericks vs San Antonio Spurs (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/82054853_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-57dcc3086a20" tvg-name="Dallas Mavericks vs San Antonio Spurs" tvg-logo="https://img.cltvap.cc/basketball/team/42d7b5ec22b2eb411d68f94a04eab742.png!w80" group-title="CoLaTV",[07:00] 25/10 🏀 Dallas Mavericks vs San Antonio Spurs (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/82054853_tsc.flv
-#EXTINF:-1 tvg-id="sport-1d3560f53efc" tvg-name="Atlanta Hawks vs Houston Rockets" tvg-logo="https://img.cltvap.cc/basketball/team/4e67b14905a05af9e1bd04406bf8690f.png!w80" group-title="CoLaTV",[07:30] 25/10 🏀 Atlanta Hawks vs Houston Rockets (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/87379114_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-4ce210538835" tvg-name="Atlanta Hawks vs Houston Rockets" tvg-logo="https://img.cltvap.cc/basketball/team/4e67b14905a05af9e1bd04406bf8690f.png!w80" group-title="CoLaTV",[07:30] 25/10 🏀 Atlanta Hawks vs Houston Rockets (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/87379114_tsc.flv
-#EXTINF:-1 tvg-id="sport-264e812282eb" tvg-name="Atlanta Hawks vs Houston Rockets" tvg-logo="https://img.cltvap.cc/basketball/team/4e67b14905a05af9e1bd04406bf8690f.png!w80" group-title="CoLaTV",[07:30] 25/10 🏀 Atlanta Hawks vs Houston Rockets (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/87379114_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-720f6266d1a5" tvg-name="Denver Nuggets vs New Orleans Pelicans" tvg-logo="https://img.cltvap.cc/basketball/team/403a12aa187f47045c18d137cd8103dc.png!w80" group-title="CoLaTV",[08:00] 25/10 🏀 Denver Nuggets vs New Orleans Pelicans (BLV LIPTON) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/89756030_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-0790bcafe8d9" tvg-name="Denver Nuggets vs New Orleans Pelicans" tvg-logo="https://img.cltvap.cc/basketball/team/403a12aa187f47045c18d137cd8103dc.png!w80" group-title="CoLaTV",[08:00] 25/10 🏀 Denver Nuggets vs New Orleans Pelicans (BLV LIPTON) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/89756030_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-698201eb1c71" tvg-name="Denver Nuggets vs New Orleans Pelicans" tvg-logo="https://img.cltvap.cc/basketball/team/403a12aa187f47045c18d137cd8103dc.png!w80" group-title="CoLaTV",[08:00] 25/10 🏀 Denver Nuggets vs New Orleans Pelicans (BLV LIPTON) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/89756030_tsc.flv
-#EXTINF:-1 tvg-id="sport-e566f3a9c3c9" tvg-name="Phoenix suns vs Golden State Warriors" tvg-logo="https://img.cltvap.cc/basketball/team/da3c882a7e0bc592b4c1ba9d8c5fb68d.png!w80" group-title="CoLaTV",[09:00] 25/10 🏀 Phoenix suns vs Golden State Warriors (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/19919577_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-755555a9830c" tvg-name="Phoenix suns vs Golden State Warriors" tvg-logo="https://img.cltvap.cc/basketball/team/da3c882a7e0bc592b4c1ba9d8c5fb68d.png!w80" group-title="CoLaTV",[09:00] 25/10 🏀 Phoenix suns vs Golden State Warriors (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/19919577_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-624d429b65bb" tvg-name="Phoenix suns vs Golden State Warriors" tvg-logo="https://img.cltvap.cc/basketball/team/da3c882a7e0bc592b4c1ba9d8c5fb68d.png!w80" group-title="CoLaTV",[09:00] 25/10 🏀 Phoenix suns vs Golden State Warriors (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/19919577_tsc.flv
-#EXTINF:-1 tvg-id="sport-b1c753f50f48" tvg-name="Cairns Taipans vs New Zealand Breakers" tvg-logo="https://img.cltvap.cc/basketball/team/2f4677e5f2089fb794a968f25c2dcb3a.png!w80" group-title="CoLaTV",[11:00] 25/10 🏀 Cairns Taipans vs New Zealand Breakers (BLV 247) • Liên đoàn Bóng rổ Quốc gia Úc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/90865415_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-b8d625c29029" tvg-name="Cairns Taipans vs New Zealand Breakers" tvg-logo="https://img.cltvap.cc/basketball/team/2f4677e5f2089fb794a968f25c2dcb3a.png!w80" group-title="CoLaTV",[11:00] 25/10 🏀 Cairns Taipans vs New Zealand Breakers (BLV 247) • Liên đoàn Bóng rổ Quốc gia Úc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/90865415_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-52e61c9298f7" tvg-name="Cairns Taipans vs New Zealand Breakers" tvg-logo="https://img.cltvap.cc/basketball/team/2f4677e5f2089fb794a968f25c2dcb3a.png!w80" group-title="CoLaTV",[11:00] 25/10 🏀 Cairns Taipans vs New Zealand Breakers (BLV 247) • Liên đoàn Bóng rổ Quốc gia Úc [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/90865415_tsc.flv
-#EXTINF:-1 tvg-id="sport-8b457341e657" tvg-name="Anyang KGC vs Wonju Dongbu Promy" tvg-logo="https://img.cltvap.cc/basketball/team/30683c359531664a5b97f129c047fcdc.png!w80" group-title="CoLaTV",[12:00] 25/10 🏀 Anyang KGC vs Wonju Dongbu Promy (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/82054853_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-760799307437" tvg-name="Anyang KGC vs Wonju Dongbu Promy" tvg-logo="https://img.cltvap.cc/basketball/team/30683c359531664a5b97f129c047fcdc.png!w80" group-title="CoLaTV",[12:00] 25/10 🏀 Anyang KGC vs Wonju Dongbu Promy (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/82054853_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-b20b7bab788b" tvg-name="Anyang KGC vs Wonju Dongbu Promy" tvg-logo="https://img.cltvap.cc/basketball/team/30683c359531664a5b97f129c047fcdc.png!w80" group-title="CoLaTV",[12:00] 25/10 🏀 Anyang KGC vs Wonju Dongbu Promy (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/82054853_tsc.flv
-#EXTINF:-1 tvg-id="sport-57c676b3c1a0" tvg-name="Melbourne Tigers vs Sydney" tvg-logo="https://img.cltvap.cc/basketball/team/1378fd08dd9c93b8b32faec38114cc24.png!w80" group-title="CoLaTV",[13:00] 25/10 🏀 Melbourne Tigers vs Sydney (BLV Cozy) • Liên đoàn Bóng rổ Quốc gia Úc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/87379114_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-0b6fb9b188db" tvg-name="Melbourne Tigers vs Sydney" tvg-logo="https://img.cltvap.cc/basketball/team/1378fd08dd9c93b8b32faec38114cc24.png!w80" group-title="CoLaTV",[13:00] 25/10 🏀 Melbourne Tigers vs Sydney (BLV Cozy) • Liên đoàn Bóng rổ Quốc gia Úc [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/87379114_tsc.flv
-#EXTINF:-1 tvg-id="sport-9bb34508863f" tvg-name="Melbourne Tigers vs Sydney" tvg-logo="https://img.cltvap.cc/basketball/team/1378fd08dd9c93b8b32faec38114cc24.png!w80" group-title="CoLaTV",[13:00] 25/10 🏀 Melbourne Tigers vs Sydney (BLV Cozy) • Liên đoàn Bóng rổ Quốc gia Úc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/87379114_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-eb359bbd665b" tvg-name="Incheon vs Seoul Samsung Thunders" tvg-logo="https://img.cltvap.cc/basketball/team/64656d413393bbf84730b123a43cb876.png!w80" group-title="CoLaTV",[14:30] 25/10 🏀 Incheon vs Seoul Samsung Thunders (BLV POCARI) • Giải bóng rổ nam Hàn Quốc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/19919577_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-4c571ac847b4" tvg-name="Incheon vs Seoul Samsung Thunders" tvg-logo="https://img.cltvap.cc/basketball/team/64656d413393bbf84730b123a43cb876.png!w80" group-title="CoLaTV",[14:30] 25/10 🏀 Incheon vs Seoul Samsung Thunders (BLV POCARI) • Giải bóng rổ nam Hàn Quốc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/19919577_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-b7066a9135d6" tvg-name="Incheon vs Seoul Samsung Thunders" tvg-logo="https://img.cltvap.cc/basketball/team/64656d413393bbf84730b123a43cb876.png!w80" group-title="CoLaTV",[14:30] 25/10 🏀 Incheon vs Seoul Samsung Thunders (BLV POCARI) • Giải bóng rổ nam Hàn Quốc [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/19919577_tsc.flv
-#EXTINF:-1 tvg-id="sport-a1a75818abd9" tvg-name="Sichuan vs Zhejiang Chouzhou" tvg-logo="https://img.cltvap.cc/basketball/team/nd80e6d5b1e2d6d989b5c3b7790fe0025.png!w80" group-title="CoLaTV",[18:35] 25/10 🏀 Sichuan vs Zhejiang Chouzhou (BLV Cozy) • Giải bóng rổ nam Trung Quốc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/87379114_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-c3e288701b2c" tvg-name="Sichuan vs Zhejiang Chouzhou" tvg-logo="https://img.cltvap.cc/basketball/team/nd80e6d5b1e2d6d989b5c3b7790fe0025.png!w80" group-title="CoLaTV",[18:35] 25/10 🏀 Sichuan vs Zhejiang Chouzhou (BLV Cozy) • Giải bóng rổ nam Trung Quốc [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/87379114_tsc.flv
-#EXTINF:-1 tvg-id="sport-2fbedc9936bf" tvg-name="Sichuan vs Zhejiang Chouzhou" tvg-logo="https://img.cltvap.cc/basketball/team/nd80e6d5b1e2d6d989b5c3b7790fe0025.png!w80" group-title="CoLaTV",[18:35] 25/10 🏀 Sichuan vs Zhejiang Chouzhou (BLV Cozy) • Giải bóng rổ nam Trung Quốc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/87379114_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-535ebc1b1b70" tvg-name="Sichuan vs Zhejiang Chouzhou" tvg-logo="https://img.cltvap.cc/basketball/team/nd80e6d5b1e2d6d989b5c3b7790fe0025.png!w80" group-title="CoLaTV",[18:35] 25/10 🏀 Sichuan vs Zhejiang Chouzhou • Giải bóng rổ nam Trung Quốc
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https
-#EXTINF:-1 tvg-id="sport-869185f78686" tvg-name="Utah Jazz vs Los Angeles Lakers" tvg-logo="https://img.cltvap.cc/basketball/team/8c88df221129169246c5b8a82955fa34.png!w80" group-title="CoLaTV",[04:00] 26/10 🏀 Utah Jazz vs Los Angeles Lakers (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/19919577_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-c8251652aa9d" tvg-name="Utah Jazz vs Los Angeles Lakers" tvg-logo="https://img.cltvap.cc/basketball/team/8c88df221129169246c5b8a82955fa34.png!w80" group-title="CoLaTV",[04:00] 26/10 🏀 Utah Jazz vs Los Angeles Lakers (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/19919577_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-890b2ae511bf" tvg-name="Utah Jazz vs Los Angeles Lakers" tvg-logo="https://img.cltvap.cc/basketball/team/8c88df221129169246c5b8a82955fa34.png!w80" group-title="CoLaTV",[04:00] 26/10 🏀 Utah Jazz vs Los Angeles Lakers (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/19919577_tsc.flv
-#EXTINF:-1 tvg-id="sport-9bb8d46a2a0c" tvg-name="Minnesota Timberwolves vs Toronto Raptors" tvg-logo="https://img.cltvap.cc/basketball/team/38794d0ac418d8f2d03bd17a2623f3ed.png!w80" group-title="CoLaTV",[06:00] 26/10 🏀 Minnesota Timberwolves vs Toronto Raptors (BLV 247) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/90865415_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-118fc91f60dd" tvg-name="Minnesota Timberwolves vs Toronto Raptors" tvg-logo="https://img.cltvap.cc/basketball/team/38794d0ac418d8f2d03bd17a2623f3ed.png!w80" group-title="CoLaTV",[06:00] 26/10 🏀 Minnesota Timberwolves vs Toronto Raptors (BLV 247) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/90865415_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-af458430692b" tvg-name="Minnesota Timberwolves vs Toronto Raptors" tvg-logo="https://img.cltvap.cc/basketball/team/38794d0ac418d8f2d03bd17a2623f3ed.png!w80" group-title="CoLaTV",[06:00] 26/10 🏀 Minnesota Timberwolves vs Toronto Raptors (BLV 247) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/90865415_tsc.flv
-#EXTINF:-1 tvg-id="sport-425b3297adf7" tvg-name="New York Knicks vs Orlando Magic" tvg-logo="https://img.cltvap.cc/basketball/team/49f8b0ef2ed529b44dba6ebb99a0d5ff.png!w80" group-title="CoLaTV",[06:00] 26/10 🏀 New York Knicks vs Orlando Magic (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/82054853_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-976761a01a92" tvg-name="New York Knicks vs Orlando Magic" tvg-logo="https://img.cltvap.cc/basketball/team/49f8b0ef2ed529b44dba6ebb99a0d5ff.png!w80" group-title="CoLaTV",[06:00] 26/10 🏀 New York Knicks vs Orlando Magic (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/82054853_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-aa33d12582dd" tvg-name="New York Knicks vs Orlando Magic" tvg-logo="https://img.cltvap.cc/basketball/team/49f8b0ef2ed529b44dba6ebb99a0d5ff.png!w80" group-title="CoLaTV",[06:00] 26/10 🏀 New York Knicks vs Orlando Magic (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/82054853_tsc.flv
-#EXTINF:-1 tvg-id="sport-3dc020a7943f" tvg-name="Oklahoma City Thunder vs Los Angeles Clippers" tvg-logo="https://img.cltvap.cc/basketball/team/319e03be75fee4098a83b1d0e01940b7.png!w80" group-title="CoLaTV",[06:00] 26/10 🏀 Oklahoma City Thunder vs Los Angeles Clippers (BLV LIPTON) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/89756030_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-408acb86bc36" tvg-name="Oklahoma City Thunder vs Los Angeles Clippers" tvg-logo="https://img.cltvap.cc/basketball/team/319e03be75fee4098a83b1d0e01940b7.png!w80" group-title="CoLaTV",[06:00] 26/10 🏀 Oklahoma City Thunder vs Los Angeles Clippers (BLV LIPTON) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/89756030_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-9d21eafd3131" tvg-name="Oklahoma City Thunder vs Los Angeles Clippers" tvg-logo="https://img.cltvap.cc/basketball/team/319e03be75fee4098a83b1d0e01940b7.png!w80" group-title="CoLaTV",[06:00] 26/10 🏀 Oklahoma City Thunder vs Los Angeles Clippers (BLV LIPTON) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/89756030_tsc.flv
-#EXTINF:-1 tvg-id="sport-7f05082042bf" tvg-name="Philadelphia 76ers vs Detroit Pistons" tvg-logo="https://img.cltvap.cc/basketball/team/06e7bde6cca98873fe971fad4e67a9b6.png!w80" group-title="CoLaTV",[06:30] 26/10 🏀 Philadelphia 76ers vs Detroit Pistons (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/87379114_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-dfc1168b49a3" tvg-name="Philadelphia 76ers vs Detroit Pistons" tvg-logo="https://img.cltvap.cc/basketball/team/06e7bde6cca98873fe971fad4e67a9b6.png!w80" group-title="CoLaTV",[06:30] 26/10 🏀 Philadelphia 76ers vs Detroit Pistons (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/87379114_tsc.flv
-#EXTINF:-1 tvg-id="sport-c2d976b11304" tvg-name="Philadelphia 76ers vs Detroit Pistons" tvg-logo="https://img.cltvap.cc/basketball/team/06e7bde6cca98873fe971fad4e67a9b6.png!w80" group-title="CoLaTV",[06:30] 26/10 🏀 Philadelphia 76ers vs Detroit Pistons (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/87379114_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-d4ba7d3fca0f" tvg-name="Sacramento Kings vs Memphis Grizzlies" tvg-logo="https://img.cltvap.cc/basketball/team/1fc010aba7ac510b5364e5f76ca4f060.png!w80" group-title="CoLaTV",[08:00] 26/10 🏀 Sacramento Kings vs Memphis Grizzlies (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/19919577_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-f9b03baf184b" tvg-name="Sacramento Kings vs Memphis Grizzlies" tvg-logo="https://img.cltvap.cc/basketball/team/1fc010aba7ac510b5364e5f76ca4f060.png!w80" group-title="CoLaTV",[08:00] 26/10 🏀 Sacramento Kings vs Memphis Grizzlies (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/19919577_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-873dba1548fb" tvg-name="Sacramento Kings vs Memphis Grizzlies" tvg-logo="https://img.cltvap.cc/basketball/team/1fc010aba7ac510b5364e5f76ca4f060.png!w80" group-title="CoLaTV",[08:00] 26/10 🏀 Sacramento Kings vs Memphis Grizzlies (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/19919577_tsc.flv
-#EXTINF:-1 tvg-id="sport-5d78b32532da" tvg-name="Goyang Carrot Jumpers vs LG Sakers" tvg-logo="https://img.cltvap.cc/basketball/team/4a5ba2f4b39c4cb6db259ed9fb916da1.png!w80" group-title="CoLaTV",[17:00] 26/10 🏀 Goyang Carrot Jumpers vs LG Sakers (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/82054853_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-baa8172c6ffa" tvg-name="Goyang Carrot Jumpers vs LG Sakers" tvg-logo="https://img.cltvap.cc/basketball/team/4a5ba2f4b39c4cb6db259ed9fb916da1.png!w80" group-title="CoLaTV",[17:00] 26/10 🏀 Goyang Carrot Jumpers vs LG Sakers (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/82054853_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-98c52156ca54" tvg-name="Goyang Carrot Jumpers vs LG Sakers" tvg-logo="https://img.cltvap.cc/basketball/team/4a5ba2f4b39c4cb6db259ed9fb916da1.png!w80" group-title="CoLaTV",[17:00] 26/10 🏀 Goyang Carrot Jumpers vs LG Sakers (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/82054853_tsc.flv
-#EXTINF:-1 tvg-id="sport-b161019d56bc" tvg-name="Shanghai vs Guangdong Southern Tigers" tvg-logo="https://img.cltvap.cc/basketball/team/1125281dafbf06dad029825221e83d5a.png!w80" group-title="CoLaTV",[18:35] 26/10 🏀 Shanghai vs Guangdong Southern Tigers (BLV 247) • Giải bóng rổ nam Trung Quốc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/90865415_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-336689cb98c1" tvg-name="Shanghai vs Guangdong Southern Tigers" tvg-logo="https://img.cltvap.cc/basketball/team/1125281dafbf06dad029825221e83d5a.png!w80" group-title="CoLaTV",[18:35] 26/10 🏀 Shanghai vs Guangdong Southern Tigers (BLV 247) • Giải bóng rổ nam Trung Quốc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/90865415_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-5067c839ddc1" tvg-name="Shanghai vs Guangdong Southern Tigers" tvg-logo="https://img.cltvap.cc/basketball/team/1125281dafbf06dad029825221e83d5a.png!w80" group-title="CoLaTV",[18:35] 26/10 🏀 Shanghai vs Guangdong Southern Tigers (BLV 247) • Giải bóng rổ nam Trung Quốc [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/90865415_tsc.flv
-#EXTINF:-1 tvg-id="sport-37fe9ef490df" tvg-name="Ningbo Tingwo vs Jiutai Rural Commercial Bank" tvg-logo="https://img.cltvap.cc/basketball/team/9b17d2feb1397b99fa0530fba4c7385b.png!w80" group-title="CoLaTV",[18:35] 26/10 🏀 Ningbo Tingwo vs Jiutai Rural Commercial Bank (BLV Cozy) • Giải bóng rổ nam Trung Quốc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/87379114_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-1b6c60e68817" tvg-name="Ningbo Tingwo vs Jiutai Rural Commercial Bank" tvg-logo="https://img.cltvap.cc/basketball/team/9b17d2feb1397b99fa0530fba4c7385b.png!w80" group-title="CoLaTV",[18:35] 26/10 🏀 Ningbo Tingwo vs Jiutai Rural Commercial Bank (BLV Cozy) • Giải bóng rổ nam Trung Quốc [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/87379114_tsc.flv
-#EXTINF:-1 tvg-id="sport-61d30c438ffa" tvg-name="Ningbo Tingwo vs Jiutai Rural Commercial Bank" tvg-logo="https://img.cltvap.cc/basketball/team/9b17d2feb1397b99fa0530fba4c7385b.png!w80" group-title="CoLaTV",[18:35] 26/10 🏀 Ningbo Tingwo vs Jiutai Rural Commercial Bank (BLV Cozy) • Giải bóng rổ nam Trung Quốc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.miekgo.app/live/87379114_tsc.m3u8
+https://live3.dyrur1.com/live/14315709_be2d2a57c7ea90208ac4d8fe2969abed_autoChange.m3u8?auth_key=1792893476-0-0-622d1d571cb3faf3e1d540c03ba31033
 #EXTINF:-1 tvg-id="sport-eb01a6397860" tvg-name="Atlanta Utd vs CLB Chicago Fire" tvg-logo="https://img.cltvap.cc/football/team/dcb67dd58619e29d84853ac2e4ac5e27.png!w80" group-title="CoLaTV",[06:30] 25/10 ⚽ Atlanta Utd vs CLB Chicago Fire (BLV MOUNTAIN DEW) • Major League Soccer [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1748,6 +1461,301 @@ https://live05.miekgo.app/live/75915087_tsc.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.yefpwmc.app/live/75915087_tsc.flv
+#EXTINF:-1 tvg-id="sport-3ddfc40c1b53" tvg-name="Philadelphia 76ers vs Milwaukee Bucks" tvg-logo="https://img.cltvap.cc/basketball/team/06e7bde6cca98873fe971fad4e67a9b6.png!w80" group-title="CoLaTV",[06:30] 25/10 🏀 Philadelphia 76ers vs Milwaukee Bucks (BLV 247) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/90865415_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-dc163ff1827c" tvg-name="Philadelphia 76ers vs Milwaukee Bucks" tvg-logo="https://img.cltvap.cc/basketball/team/06e7bde6cca98873fe971fad4e67a9b6.png!w80" group-title="CoLaTV",[06:30] 25/10 🏀 Philadelphia 76ers vs Milwaukee Bucks (BLV 247) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/90865415_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-09159823409e" tvg-name="Philadelphia 76ers vs Milwaukee Bucks" tvg-logo="https://img.cltvap.cc/basketball/team/06e7bde6cca98873fe971fad4e67a9b6.png!w80" group-title="CoLaTV",[06:30] 25/10 🏀 Philadelphia 76ers vs Milwaukee Bucks (BLV 247) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/90865415_tsc.flv
+#EXTINF:-1 tvg-id="sport-16bc6770797d" tvg-name="Philadelphia 76ers vs Milwaukee Bucks" tvg-logo="https://img.cltvap.cc/basketball/team/06e7bde6cca98873fe971fad4e67a9b6.png!w80" group-title="CoLaTV",[06:30] 25/10 🏀 Philadelphia 76ers vs Milwaukee Bucks • Hiệp hội Bóng rổ Quốc gia
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https
+#EXTINF:-1 tvg-id="sport-493cbe1909a1" tvg-name="Dallas Mavericks vs San Antonio Spurs" tvg-logo="https://img.cltvap.cc/basketball/team/42d7b5ec22b2eb411d68f94a04eab742.png!w80" group-title="CoLaTV",[07:00] 25/10 🏀 Dallas Mavericks vs San Antonio Spurs (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/82054853_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-65ff183313bc" tvg-name="Dallas Mavericks vs San Antonio Spurs" tvg-logo="https://img.cltvap.cc/basketball/team/42d7b5ec22b2eb411d68f94a04eab742.png!w80" group-title="CoLaTV",[07:00] 25/10 🏀 Dallas Mavericks vs San Antonio Spurs (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/82054853_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-57dcc3086a20" tvg-name="Dallas Mavericks vs San Antonio Spurs" tvg-logo="https://img.cltvap.cc/basketball/team/42d7b5ec22b2eb411d68f94a04eab742.png!w80" group-title="CoLaTV",[07:00] 25/10 🏀 Dallas Mavericks vs San Antonio Spurs (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/82054853_tsc.flv
+#EXTINF:-1 tvg-id="sport-1d3560f53efc" tvg-name="Atlanta Hawks vs Houston Rockets" tvg-logo="https://img.cltvap.cc/basketball/team/4e67b14905a05af9e1bd04406bf8690f.png!w80" group-title="CoLaTV",[07:30] 25/10 🏀 Atlanta Hawks vs Houston Rockets (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/87379114_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-4ce210538835" tvg-name="Atlanta Hawks vs Houston Rockets" tvg-logo="https://img.cltvap.cc/basketball/team/4e67b14905a05af9e1bd04406bf8690f.png!w80" group-title="CoLaTV",[07:30] 25/10 🏀 Atlanta Hawks vs Houston Rockets (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/87379114_tsc.flv
+#EXTINF:-1 tvg-id="sport-264e812282eb" tvg-name="Atlanta Hawks vs Houston Rockets" tvg-logo="https://img.cltvap.cc/basketball/team/4e67b14905a05af9e1bd04406bf8690f.png!w80" group-title="CoLaTV",[07:30] 25/10 🏀 Atlanta Hawks vs Houston Rockets (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/87379114_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-720f6266d1a5" tvg-name="Denver Nuggets vs New Orleans Pelicans" tvg-logo="https://img.cltvap.cc/basketball/team/403a12aa187f47045c18d137cd8103dc.png!w80" group-title="CoLaTV",[08:00] 25/10 🏀 Denver Nuggets vs New Orleans Pelicans (BLV LIPTON) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/89756030_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-0790bcafe8d9" tvg-name="Denver Nuggets vs New Orleans Pelicans" tvg-logo="https://img.cltvap.cc/basketball/team/403a12aa187f47045c18d137cd8103dc.png!w80" group-title="CoLaTV",[08:00] 25/10 🏀 Denver Nuggets vs New Orleans Pelicans (BLV LIPTON) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/89756030_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-698201eb1c71" tvg-name="Denver Nuggets vs New Orleans Pelicans" tvg-logo="https://img.cltvap.cc/basketball/team/403a12aa187f47045c18d137cd8103dc.png!w80" group-title="CoLaTV",[08:00] 25/10 🏀 Denver Nuggets vs New Orleans Pelicans (BLV LIPTON) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/89756030_tsc.flv
+#EXTINF:-1 tvg-id="sport-e566f3a9c3c9" tvg-name="Phoenix suns vs Golden State Warriors" tvg-logo="https://img.cltvap.cc/basketball/team/da3c882a7e0bc592b4c1ba9d8c5fb68d.png!w80" group-title="CoLaTV",[09:00] 25/10 🏀 Phoenix suns vs Golden State Warriors (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/19919577_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-755555a9830c" tvg-name="Phoenix suns vs Golden State Warriors" tvg-logo="https://img.cltvap.cc/basketball/team/da3c882a7e0bc592b4c1ba9d8c5fb68d.png!w80" group-title="CoLaTV",[09:00] 25/10 🏀 Phoenix suns vs Golden State Warriors (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/19919577_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-624d429b65bb" tvg-name="Phoenix suns vs Golden State Warriors" tvg-logo="https://img.cltvap.cc/basketball/team/da3c882a7e0bc592b4c1ba9d8c5fb68d.png!w80" group-title="CoLaTV",[09:00] 25/10 🏀 Phoenix suns vs Golden State Warriors (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/19919577_tsc.flv
+#EXTINF:-1 tvg-id="sport-b1c753f50f48" tvg-name="Cairns Taipans vs New Zealand Breakers" tvg-logo="https://img.cltvap.cc/basketball/team/2f4677e5f2089fb794a968f25c2dcb3a.png!w80" group-title="CoLaTV",[11:00] 25/10 🏀 Cairns Taipans vs New Zealand Breakers (BLV 247) • Liên đoàn Bóng rổ Quốc gia Úc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/90865415_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-b8d625c29029" tvg-name="Cairns Taipans vs New Zealand Breakers" tvg-logo="https://img.cltvap.cc/basketball/team/2f4677e5f2089fb794a968f25c2dcb3a.png!w80" group-title="CoLaTV",[11:00] 25/10 🏀 Cairns Taipans vs New Zealand Breakers (BLV 247) • Liên đoàn Bóng rổ Quốc gia Úc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/90865415_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-52e61c9298f7" tvg-name="Cairns Taipans vs New Zealand Breakers" tvg-logo="https://img.cltvap.cc/basketball/team/2f4677e5f2089fb794a968f25c2dcb3a.png!w80" group-title="CoLaTV",[11:00] 25/10 🏀 Cairns Taipans vs New Zealand Breakers (BLV 247) • Liên đoàn Bóng rổ Quốc gia Úc [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/90865415_tsc.flv
+#EXTINF:-1 tvg-id="sport-8b457341e657" tvg-name="Anyang KGC vs Wonju Dongbu Promy" tvg-logo="https://img.cltvap.cc/basketball/team/30683c359531664a5b97f129c047fcdc.png!w80" group-title="CoLaTV",[12:00] 25/10 🏀 Anyang KGC vs Wonju Dongbu Promy (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/82054853_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-760799307437" tvg-name="Anyang KGC vs Wonju Dongbu Promy" tvg-logo="https://img.cltvap.cc/basketball/team/30683c359531664a5b97f129c047fcdc.png!w80" group-title="CoLaTV",[12:00] 25/10 🏀 Anyang KGC vs Wonju Dongbu Promy (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/82054853_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-b20b7bab788b" tvg-name="Anyang KGC vs Wonju Dongbu Promy" tvg-logo="https://img.cltvap.cc/basketball/team/30683c359531664a5b97f129c047fcdc.png!w80" group-title="CoLaTV",[12:00] 25/10 🏀 Anyang KGC vs Wonju Dongbu Promy (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/82054853_tsc.flv
+#EXTINF:-1 tvg-id="sport-57c676b3c1a0" tvg-name="Melbourne Tigers vs Sydney" tvg-logo="https://img.cltvap.cc/basketball/team/1378fd08dd9c93b8b32faec38114cc24.png!w80" group-title="CoLaTV",[13:00] 25/10 🏀 Melbourne Tigers vs Sydney (BLV Cozy) • Liên đoàn Bóng rổ Quốc gia Úc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/87379114_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-0b6fb9b188db" tvg-name="Melbourne Tigers vs Sydney" tvg-logo="https://img.cltvap.cc/basketball/team/1378fd08dd9c93b8b32faec38114cc24.png!w80" group-title="CoLaTV",[13:00] 25/10 🏀 Melbourne Tigers vs Sydney (BLV Cozy) • Liên đoàn Bóng rổ Quốc gia Úc [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/87379114_tsc.flv
+#EXTINF:-1 tvg-id="sport-9bb34508863f" tvg-name="Melbourne Tigers vs Sydney" tvg-logo="https://img.cltvap.cc/basketball/team/1378fd08dd9c93b8b32faec38114cc24.png!w80" group-title="CoLaTV",[13:00] 25/10 🏀 Melbourne Tigers vs Sydney (BLV Cozy) • Liên đoàn Bóng rổ Quốc gia Úc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/87379114_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-eb359bbd665b" tvg-name="Incheon vs Seoul Samsung Thunders" tvg-logo="https://img.cltvap.cc/basketball/team/64656d413393bbf84730b123a43cb876.png!w80" group-title="CoLaTV",[14:30] 25/10 🏀 Incheon vs Seoul Samsung Thunders (BLV POCARI) • Giải bóng rổ nam Hàn Quốc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/19919577_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-4c571ac847b4" tvg-name="Incheon vs Seoul Samsung Thunders" tvg-logo="https://img.cltvap.cc/basketball/team/64656d413393bbf84730b123a43cb876.png!w80" group-title="CoLaTV",[14:30] 25/10 🏀 Incheon vs Seoul Samsung Thunders (BLV POCARI) • Giải bóng rổ nam Hàn Quốc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/19919577_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-b7066a9135d6" tvg-name="Incheon vs Seoul Samsung Thunders" tvg-logo="https://img.cltvap.cc/basketball/team/64656d413393bbf84730b123a43cb876.png!w80" group-title="CoLaTV",[14:30] 25/10 🏀 Incheon vs Seoul Samsung Thunders (BLV POCARI) • Giải bóng rổ nam Hàn Quốc [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/19919577_tsc.flv
+#EXTINF:-1 tvg-id="sport-a1a75818abd9" tvg-name="Sichuan vs Zhejiang Chouzhou" tvg-logo="https://img.cltvap.cc/basketball/team/nd80e6d5b1e2d6d989b5c3b7790fe0025.png!w80" group-title="CoLaTV",[18:35] 25/10 🏀 Sichuan vs Zhejiang Chouzhou (BLV Cozy) • Giải bóng rổ nam Trung Quốc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/87379114_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-c3e288701b2c" tvg-name="Sichuan vs Zhejiang Chouzhou" tvg-logo="https://img.cltvap.cc/basketball/team/nd80e6d5b1e2d6d989b5c3b7790fe0025.png!w80" group-title="CoLaTV",[18:35] 25/10 🏀 Sichuan vs Zhejiang Chouzhou (BLV Cozy) • Giải bóng rổ nam Trung Quốc [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/87379114_tsc.flv
+#EXTINF:-1 tvg-id="sport-2fbedc9936bf" tvg-name="Sichuan vs Zhejiang Chouzhou" tvg-logo="https://img.cltvap.cc/basketball/team/nd80e6d5b1e2d6d989b5c3b7790fe0025.png!w80" group-title="CoLaTV",[18:35] 25/10 🏀 Sichuan vs Zhejiang Chouzhou (BLV Cozy) • Giải bóng rổ nam Trung Quốc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/87379114_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-535ebc1b1b70" tvg-name="Sichuan vs Zhejiang Chouzhou" tvg-logo="https://img.cltvap.cc/basketball/team/nd80e6d5b1e2d6d989b5c3b7790fe0025.png!w80" group-title="CoLaTV",[18:35] 25/10 🏀 Sichuan vs Zhejiang Chouzhou • Giải bóng rổ nam Trung Quốc
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https
+#EXTINF:-1 tvg-id="sport-869185f78686" tvg-name="Utah Jazz vs Los Angeles Lakers" tvg-logo="https://img.cltvap.cc/basketball/team/8c88df221129169246c5b8a82955fa34.png!w80" group-title="CoLaTV",[04:00] 26/10 🏀 Utah Jazz vs Los Angeles Lakers (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/19919577_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-c8251652aa9d" tvg-name="Utah Jazz vs Los Angeles Lakers" tvg-logo="https://img.cltvap.cc/basketball/team/8c88df221129169246c5b8a82955fa34.png!w80" group-title="CoLaTV",[04:00] 26/10 🏀 Utah Jazz vs Los Angeles Lakers (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/19919577_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-890b2ae511bf" tvg-name="Utah Jazz vs Los Angeles Lakers" tvg-logo="https://img.cltvap.cc/basketball/team/8c88df221129169246c5b8a82955fa34.png!w80" group-title="CoLaTV",[04:00] 26/10 🏀 Utah Jazz vs Los Angeles Lakers (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/19919577_tsc.flv
+#EXTINF:-1 tvg-id="sport-9bb8d46a2a0c" tvg-name="Minnesota Timberwolves vs Toronto Raptors" tvg-logo="https://img.cltvap.cc/basketball/team/38794d0ac418d8f2d03bd17a2623f3ed.png!w80" group-title="CoLaTV",[06:00] 26/10 🏀 Minnesota Timberwolves vs Toronto Raptors (BLV 247) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/90865415_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-118fc91f60dd" tvg-name="Minnesota Timberwolves vs Toronto Raptors" tvg-logo="https://img.cltvap.cc/basketball/team/38794d0ac418d8f2d03bd17a2623f3ed.png!w80" group-title="CoLaTV",[06:00] 26/10 🏀 Minnesota Timberwolves vs Toronto Raptors (BLV 247) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/90865415_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-af458430692b" tvg-name="Minnesota Timberwolves vs Toronto Raptors" tvg-logo="https://img.cltvap.cc/basketball/team/38794d0ac418d8f2d03bd17a2623f3ed.png!w80" group-title="CoLaTV",[06:00] 26/10 🏀 Minnesota Timberwolves vs Toronto Raptors (BLV 247) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/90865415_tsc.flv
+#EXTINF:-1 tvg-id="sport-425b3297adf7" tvg-name="New York Knicks vs Orlando Magic" tvg-logo="https://img.cltvap.cc/basketball/team/49f8b0ef2ed529b44dba6ebb99a0d5ff.png!w80" group-title="CoLaTV",[06:00] 26/10 🏀 New York Knicks vs Orlando Magic (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/82054853_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-976761a01a92" tvg-name="New York Knicks vs Orlando Magic" tvg-logo="https://img.cltvap.cc/basketball/team/49f8b0ef2ed529b44dba6ebb99a0d5ff.png!w80" group-title="CoLaTV",[06:00] 26/10 🏀 New York Knicks vs Orlando Magic (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/82054853_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-aa33d12582dd" tvg-name="New York Knicks vs Orlando Magic" tvg-logo="https://img.cltvap.cc/basketball/team/49f8b0ef2ed529b44dba6ebb99a0d5ff.png!w80" group-title="CoLaTV",[06:00] 26/10 🏀 New York Knicks vs Orlando Magic (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/82054853_tsc.flv
+#EXTINF:-1 tvg-id="sport-3dc020a7943f" tvg-name="Oklahoma City Thunder vs Los Angeles Clippers" tvg-logo="https://img.cltvap.cc/basketball/team/319e03be75fee4098a83b1d0e01940b7.png!w80" group-title="CoLaTV",[06:00] 26/10 🏀 Oklahoma City Thunder vs Los Angeles Clippers (BLV LIPTON) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/89756030_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-408acb86bc36" tvg-name="Oklahoma City Thunder vs Los Angeles Clippers" tvg-logo="https://img.cltvap.cc/basketball/team/319e03be75fee4098a83b1d0e01940b7.png!w80" group-title="CoLaTV",[06:00] 26/10 🏀 Oklahoma City Thunder vs Los Angeles Clippers (BLV LIPTON) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/89756030_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-9d21eafd3131" tvg-name="Oklahoma City Thunder vs Los Angeles Clippers" tvg-logo="https://img.cltvap.cc/basketball/team/319e03be75fee4098a83b1d0e01940b7.png!w80" group-title="CoLaTV",[06:00] 26/10 🏀 Oklahoma City Thunder vs Los Angeles Clippers (BLV LIPTON) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/89756030_tsc.flv
+#EXTINF:-1 tvg-id="sport-7f05082042bf" tvg-name="Philadelphia 76ers vs Detroit Pistons" tvg-logo="https://img.cltvap.cc/basketball/team/06e7bde6cca98873fe971fad4e67a9b6.png!w80" group-title="CoLaTV",[06:30] 26/10 🏀 Philadelphia 76ers vs Detroit Pistons (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/87379114_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-dfc1168b49a3" tvg-name="Philadelphia 76ers vs Detroit Pistons" tvg-logo="https://img.cltvap.cc/basketball/team/06e7bde6cca98873fe971fad4e67a9b6.png!w80" group-title="CoLaTV",[06:30] 26/10 🏀 Philadelphia 76ers vs Detroit Pistons (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/87379114_tsc.flv
+#EXTINF:-1 tvg-id="sport-c2d976b11304" tvg-name="Philadelphia 76ers vs Detroit Pistons" tvg-logo="https://img.cltvap.cc/basketball/team/06e7bde6cca98873fe971fad4e67a9b6.png!w80" group-title="CoLaTV",[06:30] 26/10 🏀 Philadelphia 76ers vs Detroit Pistons (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/87379114_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-d4ba7d3fca0f" tvg-name="Sacramento Kings vs Memphis Grizzlies" tvg-logo="https://img.cltvap.cc/basketball/team/1fc010aba7ac510b5364e5f76ca4f060.png!w80" group-title="CoLaTV",[08:00] 26/10 🏀 Sacramento Kings vs Memphis Grizzlies (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/19919577_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-f9b03baf184b" tvg-name="Sacramento Kings vs Memphis Grizzlies" tvg-logo="https://img.cltvap.cc/basketball/team/1fc010aba7ac510b5364e5f76ca4f060.png!w80" group-title="CoLaTV",[08:00] 26/10 🏀 Sacramento Kings vs Memphis Grizzlies (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/19919577_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-873dba1548fb" tvg-name="Sacramento Kings vs Memphis Grizzlies" tvg-logo="https://img.cltvap.cc/basketball/team/1fc010aba7ac510b5364e5f76ca4f060.png!w80" group-title="CoLaTV",[08:00] 26/10 🏀 Sacramento Kings vs Memphis Grizzlies (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/19919577_tsc.flv
+#EXTINF:-1 tvg-id="sport-5d78b32532da" tvg-name="Goyang Carrot Jumpers vs LG Sakers" tvg-logo="https://img.cltvap.cc/basketball/team/4a5ba2f4b39c4cb6db259ed9fb916da1.png!w80" group-title="CoLaTV",[17:00] 26/10 🏀 Goyang Carrot Jumpers vs LG Sakers (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/82054853_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-baa8172c6ffa" tvg-name="Goyang Carrot Jumpers vs LG Sakers" tvg-logo="https://img.cltvap.cc/basketball/team/4a5ba2f4b39c4cb6db259ed9fb916da1.png!w80" group-title="CoLaTV",[17:00] 26/10 🏀 Goyang Carrot Jumpers vs LG Sakers (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/82054853_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-98c52156ca54" tvg-name="Goyang Carrot Jumpers vs LG Sakers" tvg-logo="https://img.cltvap.cc/basketball/team/4a5ba2f4b39c4cb6db259ed9fb916da1.png!w80" group-title="CoLaTV",[17:00] 26/10 🏀 Goyang Carrot Jumpers vs LG Sakers (BLV ROCKSTAR) • Giải bóng rổ nam Hàn Quốc [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/82054853_tsc.flv
+#EXTINF:-1 tvg-id="sport-b161019d56bc" tvg-name="Shanghai vs Guangdong Southern Tigers" tvg-logo="https://img.cltvap.cc/basketball/team/1125281dafbf06dad029825221e83d5a.png!w80" group-title="CoLaTV",[18:35] 26/10 🏀 Shanghai vs Guangdong Southern Tigers (BLV 247) • Giải bóng rổ nam Trung Quốc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/90865415_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-336689cb98c1" tvg-name="Shanghai vs Guangdong Southern Tigers" tvg-logo="https://img.cltvap.cc/basketball/team/1125281dafbf06dad029825221e83d5a.png!w80" group-title="CoLaTV",[18:35] 26/10 🏀 Shanghai vs Guangdong Southern Tigers (BLV 247) • Giải bóng rổ nam Trung Quốc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/90865415_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-5067c839ddc1" tvg-name="Shanghai vs Guangdong Southern Tigers" tvg-logo="https://img.cltvap.cc/basketball/team/1125281dafbf06dad029825221e83d5a.png!w80" group-title="CoLaTV",[18:35] 26/10 🏀 Shanghai vs Guangdong Southern Tigers (BLV 247) • Giải bóng rổ nam Trung Quốc [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/90865415_tsc.flv
+#EXTINF:-1 tvg-id="sport-37fe9ef490df" tvg-name="Ningbo Tingwo vs Jiutai Rural Commercial Bank" tvg-logo="https://img.cltvap.cc/basketball/team/9b17d2feb1397b99fa0530fba4c7385b.png!w80" group-title="CoLaTV",[18:35] 26/10 🏀 Ningbo Tingwo vs Jiutai Rural Commercial Bank (BLV Cozy) • Giải bóng rổ nam Trung Quốc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/87379114_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-1b6c60e68817" tvg-name="Ningbo Tingwo vs Jiutai Rural Commercial Bank" tvg-logo="https://img.cltvap.cc/basketball/team/9b17d2feb1397b99fa0530fba4c7385b.png!w80" group-title="CoLaTV",[18:35] 26/10 🏀 Ningbo Tingwo vs Jiutai Rural Commercial Bank (BLV Cozy) • Giải bóng rổ nam Trung Quốc [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/87379114_tsc.flv
+#EXTINF:-1 tvg-id="sport-61d30c438ffa" tvg-name="Ningbo Tingwo vs Jiutai Rural Commercial Bank" tvg-logo="https://img.cltvap.cc/basketball/team/9b17d2feb1397b99fa0530fba4c7385b.png!w80" group-title="CoLaTV",[18:35] 26/10 🏀 Ningbo Tingwo vs Jiutai Rural Commercial Bank (BLV Cozy) • Giải bóng rổ nam Trung Quốc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.miekgo.app/live/87379114_tsc.m3u8
 #EXTINF:-1 tvg-id="sport-db1506e17db7" tvg-name="New York Red Bulls vs Inter Miami" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131603_9cb4c304.png" group-title="Chuối Chiên",[04:30] 25/10 ⚽ New York Red Bulls vs Inter Miami (Chuối Chao) • Major League Soccer [HLS]
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
@@ -1777,6 +1785,11 @@ https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792821588_hd/1792821588_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-46cba4c3b7b5" tvg-name="Charlotte Hornets vs Miami Heat" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/9e28959b5af233b67c389787d2886c84.png" group-title="Giờ Vàng",🔴 [05:00] 25/10 🏀 Charlotte Hornets vs Miami Heat (Chồn) • National Basketball Association [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://ftlh5sc02iliv.vcdn.cloud/1792821909_hd/1792821909_hd@720p.m3u8
 #EXTINF:-1 tvg-id="sport-5f27cb04344b" tvg-name="F1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Gb3S_hVBxADavywtKLX_sSpJUrlsxbdBeKq6YIXZqQ&amp;s" group-title="Giờ Vàng",🔴 [04:00] 25/10 🏅 F1 (Ngu) • MSC Cruises United States Grand Prix [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1787,51 +1800,6 @@ https://ftlh5sc02iliv.vcdn.cloud/1792822478_hd/1792822478_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792822664_hd/1792822664_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-46cba4c3b7b5" tvg-name="Charlotte Hornets vs Miami Heat" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/9e28959b5af233b67c389787d2886c84.png" group-title="Giờ Vàng",[05:00] 25/10 🏀 Charlotte Hornets vs Miami Heat (Chồn) • National Basketball Association [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://ftlh5sc02iliv.vcdn.cloud/1792821909_hd/1792821909_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-cd24f4aa1bc3" tvg-name="Cleveland Cavaliers vs Brooklyn Nets" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/d4d48671e1b8c3830897ac4f6604ea9a.png" group-title="Giờ Vàng",[06:30] 25/10 🏀 Cleveland Cavaliers vs Brooklyn Nets (Vịt) • National Basketball Association [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://ftlh5sc02iliv.vcdn.cloud/1792821969_hd/1792821969_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-63b903bee781" tvg-name="Philadelphia 76ers vs Milwaukee Bucks" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/7f086c864d1e283b7862a756f0b88373.png" group-title="Giờ Vàng",[06:30] 25/10 🏀 Philadelphia 76ers vs Milwaukee Bucks (Cầy) • National Basketball Association [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://ftlh5sc02iliv.vcdn.cloud/1792821932_hd/1792821932_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-2f09e5cee519" tvg-name="Utah Jazz vs Los Angeles Lakers" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/a0f2371dad505780cccd4cba8baa0610.png" group-title="Giờ Vàng",[04:00] 26/10 🏀 Utah Jazz vs Los Angeles Lakers (Tôm) • National Basketball Association [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://ftlh5sc02iliv.vcdn.cloud/1792822001_hd/1792822001_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-476bb5242405" tvg-name="Brooklyn Nets vs Indiana Pacers" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/c01b5e6f6659dd42195e9db3aaef13b7.png" group-title="Giờ Vàng",[05:00] 26/10 🏀 Brooklyn Nets vs Indiana Pacers (Chồn) • National Basketball Association [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://ftlh5sc02iliv.vcdn.cloud/1792822024_hd/1792822024_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-0ce6245b51bb" tvg-name="Minnesota Timberwolves vs Toronto Raptors" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/e97782502546bad80da0347446a3a311.png" group-title="Giờ Vàng",[06:00] 26/10 🏀 Minnesota Timberwolves vs Toronto Raptors (Ben) • National Basketball Association [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://ftlh5sc02iliv.vcdn.cloud/1792822110_hd/1792822110_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-5214b956d5ad" tvg-name="New York Knicks vs Orlando Magic" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/c34850b658b2b7735d3bf51912e01bd1.png" group-title="Giờ Vàng",[06:00] 26/10 🏀 New York Knicks vs Orlando Magic (Cầy) • National Basketball Association [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://ftlh5sc02iliv.vcdn.cloud/1792822061_hd/1792822061_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-f35b4c46037f" tvg-name="Oklahoma City Thunder vs Los Angeles Clippers" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/75c31ec2c28ab86f2f54563667653426.png" group-title="Giờ Vàng",[06:00] 26/10 🏀 Oklahoma City Thunder vs Los Angeles Clippers (Điếc) • National Basketball Association [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://ftlh5sc02iliv.vcdn.cloud/1792822083_hd/1792822083_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-d225b59b0ee3" tvg-name="Philadelphia 76ers vs Detroit Pistons" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/7f086c864d1e283b7862a756f0b88373.png" group-title="Giờ Vàng",[06:30] 26/10 🏀 Philadelphia 76ers vs Detroit Pistons (Mickey) • National Basketball Association [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://ftlh5sc02iliv.vcdn.cloud/1792822147_hd/1792822147_hd@720p.m3u8
 #EXTINF:-1 tvg-id="sport-1a32c1bb2c26" tvg-name="SHB Đà Nẵng vs Hà Nội" tvg-logo="https://images.keovip88.net/images/teams/da-nang.png" group-title="Giờ Vàng",[18:00] 25/10 ⚽ SHB Đà Nẵng vs Hà Nội (Dory) • V-League [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1912,6 +1880,46 @@ https://ftlh5sc02iliv.vcdn.cloud/1792821849_hd/1792821849_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792821855_hd/1792821855_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-cd24f4aa1bc3" tvg-name="Cleveland Cavaliers vs Brooklyn Nets" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/d4d48671e1b8c3830897ac4f6604ea9a.png" group-title="Giờ Vàng",[06:30] 25/10 🏀 Cleveland Cavaliers vs Brooklyn Nets (Vịt) • National Basketball Association [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://ftlh5sc02iliv.vcdn.cloud/1792821969_hd/1792821969_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-63b903bee781" tvg-name="Philadelphia 76ers vs Milwaukee Bucks" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/7f086c864d1e283b7862a756f0b88373.png" group-title="Giờ Vàng",[06:30] 25/10 🏀 Philadelphia 76ers vs Milwaukee Bucks (Cầy) • National Basketball Association [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://ftlh5sc02iliv.vcdn.cloud/1792821932_hd/1792821932_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-2f09e5cee519" tvg-name="Utah Jazz vs Los Angeles Lakers" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/a0f2371dad505780cccd4cba8baa0610.png" group-title="Giờ Vàng",[04:00] 26/10 🏀 Utah Jazz vs Los Angeles Lakers (Tôm) • National Basketball Association [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://ftlh5sc02iliv.vcdn.cloud/1792822001_hd/1792822001_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-476bb5242405" tvg-name="Brooklyn Nets vs Indiana Pacers" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/c01b5e6f6659dd42195e9db3aaef13b7.png" group-title="Giờ Vàng",[05:00] 26/10 🏀 Brooklyn Nets vs Indiana Pacers (Chồn) • National Basketball Association [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://ftlh5sc02iliv.vcdn.cloud/1792822024_hd/1792822024_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-0ce6245b51bb" tvg-name="Minnesota Timberwolves vs Toronto Raptors" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/e97782502546bad80da0347446a3a311.png" group-title="Giờ Vàng",[06:00] 26/10 🏀 Minnesota Timberwolves vs Toronto Raptors (Ben) • National Basketball Association [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://ftlh5sc02iliv.vcdn.cloud/1792822110_hd/1792822110_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-5214b956d5ad" tvg-name="New York Knicks vs Orlando Magic" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/c34850b658b2b7735d3bf51912e01bd1.png" group-title="Giờ Vàng",[06:00] 26/10 🏀 New York Knicks vs Orlando Magic (Cầy) • National Basketball Association [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://ftlh5sc02iliv.vcdn.cloud/1792822061_hd/1792822061_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-f35b4c46037f" tvg-name="Oklahoma City Thunder vs Los Angeles Clippers" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/75c31ec2c28ab86f2f54563667653426.png" group-title="Giờ Vàng",[06:00] 26/10 🏀 Oklahoma City Thunder vs Los Angeles Clippers (Điếc) • National Basketball Association [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://ftlh5sc02iliv.vcdn.cloud/1792822083_hd/1792822083_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-d225b59b0ee3" tvg-name="Philadelphia 76ers vs Detroit Pistons" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/7f086c864d1e283b7862a756f0b88373.png" group-title="Giờ Vàng",[06:30] 26/10 🏀 Philadelphia 76ers vs Detroit Pistons (Mickey) • National Basketball Association [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://ftlh5sc02iliv.vcdn.cloud/1792822147_hd/1792822147_hd@720p.m3u8
 #EXTINF:-1 tvg-id="sport-5d20a74246fa" tvg-name="Baltimore Ravens vs Cincinnati Bengals" tvg-logo="https://static.flashscore.com/res/image/data/dUe4S2il-40MWbKRi.png" group-title="Giờ Vàng",[00:00] 26/10 🏉 Baltimore Ravens vs Cincinnati Bengals (Riko) • NFL [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1927,26 +1935,6 @@ https://ftlh5sc02iliv.vcdn.cloud/1792822801_hd/1792822801_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://ftlh5sc02iliv.vcdn.cloud/1792822524_hd/1792822524_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-600e3caa7ea4" tvg-name="Al Riyadh - Al Taawoun" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jhlg17qwzv/image/small" group-title="PhaLangTV",🔴 [01:00] 25/10 ⚽ Al Riyadh - Al Taawoun • Saudi Professional League [HLS]
-#EXTGRP:PhaLangTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/al-riyadh-al-taawoun-3glrw7hn8e3nqdy
-https://lilive1.eu.cc/live/ab3313fde84155c8d31f4034d2f5797f/playlist.m3u8
-#EXTINF:-1 tvg-id="sport-ed3479d25f85" tvg-name="FCSB - FC Rapid 1923" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l965mkyh969r1ge/image/small" group-title="PhaLangTV",🔴 [01:00] 25/10 ⚽ FCSB - FC Rapid 1923 • Romanian Super Liga [HLS]
-#EXTGRP:PhaLangTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/fcsb-fc-rapid-1923-3glrw7hn5pwxqdy
-https://lilive1.eu.cc/live/f128585a92c8bc196b20875b87fd7427/playlist.m3u8
-#EXTINF:-1 tvg-id="sport-2e7b9061f77e" tvg-name="Nữ Venezuela U17 - Nữ Nhật Bản U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhgex8ryk0/image/small" group-title="PhaLangTV",🔴 [01:00] 25/10 ⚽ Nữ Venezuela U17 - Nữ Nhật Bản U17 • FIFA U17 Women's World Cup [HLS]
-#EXTGRP:PhaLangTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/nu-venezuela-u17-nu-nhat-ban-u17-jw2r09hkgvkkrz8
-https://lilive1.eu.cc/live/ac3566df42502231e8ae9fd50f55368c/playlist.m3u8
-#EXTINF:-1 tvg-id="sport-7924f324e15d" tvg-name="Nữ Zambia U17 - Nữ Pháp U17" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergpho7ydr8k0/image/small" group-title="PhaLangTV",🔴 [01:00] 25/10 ⚽ Nữ Zambia U17 - Nữ Pháp U17 • FIFA U17 Women's World Cup [HLS]
-#EXTGRP:PhaLangTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/nu-zambia-u17-nu-phap-u17-318q66hx3p82qo9
-https://lilive1.eu.cc/live/4017ca716259fdc125674a68521f210f/playlist.m3u8
 #EXTINF:-1 tvg-id="sport-3cf2e8fc8056" tvg-name="Wisla Krakow - R. Czestochowa" tvg-logo="https://imgts.sportpulseapiz.com/football/team/9k82rekh413repz/image/small" group-title="PhaLangTV",🔴 [01:15] 25/10 ⚽ Wisla Krakow - R. Czestochowa • PKO Bank Polski EKSTRAKLASA [HLS]
 #EXTGRP:PhaLangTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
@@ -2032,133 +2020,128 @@ https://lilive1.eu.cc/live/0405645452a6b7f2707d1a4c97f3120d/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://phalang.live/truc-tiep/ny-red-bulls-inter-miami-n54qllhnz3w3qvy
 https://lilive1.eu.cc/live/d7cce601aab42b64fc42d2f6c16b9342/playlist.m3u8
-#EXTINF:-1 tvg-id="sport-b2d7f57e5503" tvg-name="Gualaceo SC vs Vargas Torres" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9wh9x54ryox/image/small" group-title="XoilacXTH",[03:00] 25/10 ⚽ Gualaceo SC vs Vargas Torres • Hạng 2 Ecuador [FLV]
+#EXTINF:-1 tvg-id="sport-99abb5eb291e" tvg-name="Gualaceo SC vs Vargas Torres" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9wh9x54ryox/image/small" group-title="XoilacXTH",[03:00] 25/10 ⚽ Gualaceo SC vs Vargas Torres • Hạng 2 Ecuador [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=8577598cb64e0ccbad789479a1c27180&wsABSTime=1792921554
-#EXTINF:-1 tvg-id="sport-5a09ce896be4" tvg-name="Talleres Cordoba vs Defensa Y Justicia" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh7gl3r1ge/image/small" group-title="XoilacXTH",[03:00] 25/10 ⚽ Talleres Cordoba vs Defensa Y Justicia • VĐQG Argentina [FLV]
+https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=19c5d2812cd8552aeb28db2baa7b3070&wsABSTime=1792922491
+#EXTINF:-1 tvg-id="sport-9153bdf070d6" tvg-name="New York Cosmos vs Chattanooga Wolves" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh5le4md7o/image/small" group-title="XoilacXTH",[03:00] 25/10 ⚽ New York Cosmos vs Chattanooga Wolves • USL League One [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.jorvakstreamcache.com/live/channel10.flv
-#EXTINF:-1 tvg-id="sport-f868613ef778" tvg-name="Talleres Cordoba vs Defensa Y Justicia" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh7gl3r1ge/image/small" group-title="XoilacXTH",[03:00] 25/10 ⚽ Talleres Cordoba vs Defensa Y Justicia • VĐQG Argentina [FLV]
+https://live1.quickscoreboardz.com/live/channel22.flv?wsSecret=338819cc09bb5c337b9526e3914f8cc3&wsABSTime=1792922491
+#EXTINF:-1 tvg-id="sport-8e3468f95752" tvg-name="Ferroviaria SP vs Maringa FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h84p3q86p/image/small" group-title="XoilacXTH",[03:00] 25/10 ⚽ Ferroviaria SP vs Maringa FC • Brazilian Serie C [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-10.flv?auth_key=3000001792878354-0-0-ca0168223a74a33202edf642f3d0b7dc
-#EXTINF:-1 tvg-id="sport-47be9b1e982d" tvg-name="New York Cosmos vs Chattanooga Wolves" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh5le4md7o/image/small" group-title="XoilacXTH",[03:00] 25/10 ⚽ New York Cosmos vs Chattanooga Wolves • USL League One [FLV]
+https://live1.quickscoreboardz.com/live/channel23.flv?wsSecret=0645d5f54f2fa8eb49524ead31f9b1d3&wsABSTime=1792922491
+#EXTINF:-1 tvg-id="sport-b96b3753fd3f" tvg-name="Cusco FC vs Sporting Cristal" tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66h0z87qo9j/image/small" group-title="XoilacXTH",[03:15] 25/10 ⚽ Cusco FC vs Sporting Cristal • VĐQG Peru [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel22.flv?wsSecret=1dff079b06502a3900f8a8cd38bab6a1&wsABSTime=1792921554
-#EXTINF:-1 tvg-id="sport-07d4c21711e6" tvg-name="Ferroviaria SP vs Maringa FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h84p3q86p/image/small" group-title="XoilacXTH",[03:00] 25/10 ⚽ Ferroviaria SP vs Maringa FC • Brazilian Serie C [FLV]
+https://live1.quickscoreboardz.com/live/channel24.flv?wsSecret=0f28a58887dc0d2e7a9ee7c0d99ab31b&wsABSTime=1792922491
+#EXTINF:-1 tvg-id="sport-a3888f23801c" tvg-name="Loudoun United vs Brooklyn FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jw2r09hx3verz84/image/small" group-title="XoilacXTH",[04:00] 25/10 ⚽ Loudoun United vs Brooklyn FC • USL Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel23.flv?wsSecret=62b9239518fbf8e45e23d0c3b22de170&wsABSTime=1792921554
-#EXTINF:-1 tvg-id="sport-69a8fdb1fa7d" tvg-name="Cusco FC vs Sporting Cristal" tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66h0z87qo9j/image/small" group-title="XoilacXTH",[03:15] 25/10 ⚽ Cusco FC vs Sporting Cristal • VĐQG Peru [FLV]
+https://live1.quickscoreboardz.com/live/channel25.flv?wsSecret=e1788e930d53c52b1505284d615e6279&wsABSTime=1792922491
+#EXTINF:-1 tvg-id="sport-379f952b70fd" tvg-name="Portland Hearts of Pine vs Charlotte Indep" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryoh25jeq1zp/image/small" group-title="XoilacXTH",[04:00] 25/10 ⚽ Portland Hearts of Pine vs Charlotte Indep • USL League One [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel24.flv?wsSecret=42935a4749151d7b05ef3d888e4971c5&wsABSTime=1792921554
-#EXTINF:-1 tvg-id="sport-3e6774f016d2" tvg-name="Loudoun United vs Brooklyn FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jw2r09hx3verz84/image/small" group-title="XoilacXTH",[04:00] 25/10 ⚽ Loudoun United vs Brooklyn FC • USL Championship [FLV]
+https://live1.quickscoreboardz.com/live/channel26.flv?wsSecret=01a1be98f9f016b7ad92d41af5da33dc&wsABSTime=1792922491
+#EXTINF:-1 tvg-id="sport-5223d5e39e57" tvg-name="Atletico Choloma vs Génesis Policía Nacional" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9wh9d2eryox/image/small" group-title="XoilacXTH",[04:00] 25/10 ⚽ Atletico Choloma vs Génesis Policía Nacional • VĐQG Honduras [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel25.flv?wsSecret=c6c859ffe93f90c170d73ba8d3cd50a5&wsABSTime=1792921554
-#EXTINF:-1 tvg-id="sport-437fcb557db4" tvg-name="Portland Hearts of Pine vs Charlotte Indep" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryoh25jeq1zp/image/small" group-title="XoilacXTH",[04:00] 25/10 ⚽ Portland Hearts of Pine vs Charlotte Indep • USL League One [FLV]
+https://live1.quickscoreboardz.com/live/channel27.flv?wsSecret=29d8c6ed05510909d566daba6bf6a6fc&wsABSTime=1792922491
+#EXTINF:-1 tvg-id="sport-c045696928e2" tvg-name="Vasco da Gama vs Corinthians SP" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jednm9whll2ryox/image/small" group-title="XoilacXTH",[04:30] 25/10 ⚽ Vasco da Gama vs Corinthians SP • VĐQG Brasil [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel26.flv?wsSecret=d892d41bd187919cb09e913fbdfaeaf5&wsABSTime=1792921554
-#EXTINF:-1 tvg-id="sport-88de36cda312" tvg-name="Atletico Choloma vs Génesis Policía Nacional" tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9wh9d2eryox/image/small" group-title="XoilacXTH",[04:00] 25/10 ⚽ Atletico Choloma vs Génesis Policía Nacional • VĐQG Honduras [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel27.flv?wsSecret=17671a341f3e934783e83b681fc33e0b&wsABSTime=1792921554
-#EXTINF:-1 tvg-id="sport-caaac341ed2c" tvg-name="NY Red Bulls vs Inter Miami" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jednm9whlweryox/image/small" group-title="XoilacXTH",[04:30] 25/10 ⚽ NY Red Bulls vs Inter Miami • MLS_Nhà Nghề Mỹ [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.jorvakstreamcache.com/live/channel2.flv
-#EXTINF:-1 tvg-id="sport-8ab17028b7bb" tvg-name="NY Red Bulls vs Inter Miami" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jednm9whlweryox/image/small" group-title="XoilacXTH",[04:30] 25/10 ⚽ NY Red Bulls vs Inter Miami • MLS_Nhà Nghề Mỹ [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001792878354-0-0-04db00522a60d2f8c3e3ba51b94a9bc5
-#EXTINF:-1 tvg-id="sport-8e299e745ede" tvg-name="NY Red Bulls vs Inter Miami" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jednm9whlweryox/image/small" group-title="XoilacXTH",[04:30] 25/10 ⚽ NY Red Bulls vs Inter Miami • MLS_Nhà Nghề Mỹ [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-14.flv?auth_key=3000001792878355-0-0-956b587c38809a84f5190ccdd89b1d5f
-#EXTINF:-1 tvg-id="sport-b8a9fabaae47" tvg-name="NY Red Bulls vs Inter Miami" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jednm9whlweryox/image/small" group-title="XoilacXTH",[04:30] 25/10 ⚽ NY Red Bulls vs Inter Miami • MLS_Nhà Nghề Mỹ [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel14.flv?wsSecret=b634fccf4c685a003e3cc4d96e2dd6a8&wsABSTime=1792921555
-#EXTINF:-1 tvg-id="sport-f0692621555e" tvg-name="Vasco da Gama vs Corinthians SP" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jednm9whll2ryox/image/small" group-title="XoilacXTH",[04:30] 25/10 ⚽ Vasco da Gama vs Corinthians SP • VĐQG Brasil [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel1.flv?wsSecret=e212b2a53e40943cbbf6a8b041153114&wsABSTime=1792921554
+https://live1.quickscoreboardz.com/live/channel1.flv?wsSecret=8a3bcc986cd59a2f43bbc1e4afb0f568&wsABSTime=1792922491
 #EXTINF:-1 tvg-id="sport-415fff2fbbf4" tvg-name="Palmeiras vs RB Bragantino" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4zp5rzgh993q82w/image/small" group-title="XoilacXTH",[04:30] 25/10 ⚽ Palmeiras vs RB Bragantino • VĐQG Brasil [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel9.flv
-#EXTINF:-1 tvg-id="sport-b90f7ee07634" tvg-name="Palmeiras vs RB Bragantino" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4zp5rzgh993q82w/image/small" group-title="XoilacXTH",[04:30] 25/10 ⚽ Palmeiras vs RB Bragantino • VĐQG Brasil [FLV]
+#EXTINF:-1 tvg-id="sport-20b660431f14" tvg-name="Palmeiras vs RB Bragantino" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4zp5rzgh993q82w/image/small" group-title="XoilacXTH",[04:30] 25/10 ⚽ Palmeiras vs RB Bragantino • VĐQG Brasil [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-9.flv?auth_key=3000001792878354-0-0-43da464885008a2131273761cf9fec94
-#EXTINF:-1 tvg-id="sport-dc16491ff055" tvg-name="LDU Quito vs Macara" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z8yomo4hd49q0j6/image/small" group-title="XoilacXTH",[04:30] 25/10 ⚽ LDU Quito vs Macara • VĐQG Ecuador [FLV]
+https://live2.domaincdn.cc/livecdn/channel-9.flv?auth_key=3000001792879291-0-0-77b7fb0cc7dc18858d2545b78b6210f4
+#EXTINF:-1 tvg-id="sport-27fc2f313258" tvg-name="LDU Quito vs Macara" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z8yomo4hd49q0j6/image/small" group-title="XoilacXTH",[04:30] 25/10 ⚽ LDU Quito vs Macara • VĐQG Ecuador [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=1a7df1ec07b0541bd66ed7381ffd0d67&wsABSTime=1792921554
-#EXTINF:-1 tvg-id="sport-5edd0895f67a" tvg-name="Ponte Preta vs Fortaleza" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kn54qllh667qvy9/image/small" group-title="XoilacXTH",[04:30] 25/10 ⚽ Ponte Preta vs Fortaleza • Hạng 2 Brazil [FLV]
+https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=7521f75739cd6c9bef72a22bf66cba2e&wsABSTime=1792922491
+#EXTINF:-1 tvg-id="sport-0afbb5329c0b" tvg-name="Ponte Preta vs Fortaleza" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kn54qllh667qvy9/image/small" group-title="XoilacXTH",[04:30] 25/10 ⚽ Ponte Preta vs Fortaleza • Hạng 2 Brazil [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=68bb7e69ddf9ae155a77413cccbc8a76&wsABSTime=1792921554
-#EXTINF:-1 tvg-id="sport-a4e3451a9298" tvg-name="CRB AL vs Londrina PR" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h8d1yq86p/image/small" group-title="XoilacXTH",[04:30] 25/10 ⚽ CRB AL vs Londrina PR • Hạng 2 Brazil [FLV]
+https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=80a0dd94969761821354de5bfcd8f132&wsABSTime=1792922491
+#EXTINF:-1 tvg-id="sport-b664706d844a" tvg-name="CRB AL vs Londrina PR" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h8d1yq86p/image/small" group-title="XoilacXTH",[04:30] 25/10 ⚽ CRB AL vs Londrina PR • Hạng 2 Brazil [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=3a1db86bdbe50d3522df8df9ea19fdaf&wsABSTime=1792921554
-#EXTINF:-1 tvg-id="sport-1b473d81bdae" tvg-name="Charleston Battery vs Indy Eleven" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h800zq86p/image/small" group-title="XoilacXTH",[05:00] 25/10 ⚽ Charleston Battery vs Indy Eleven • USL Championship [FLV]
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=cd74c2760fbfa199780b90b2c7627ff7&wsABSTime=1792922491
+#EXTINF:-1 tvg-id="sport-1239ec0d8b33" tvg-name="NY Red Bulls vs Inter Miami" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jednm9whlweryox/image/small" group-title="XoilacXTH",[04:40] 25/10 ⚽ NY Red Bulls vs Inter Miami • MLS_Nhà Nghề Mỹ [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=8577598cb64e0ccbad789479a1c27180&wsABSTime=1792921554
-#EXTINF:-1 tvg-id="sport-5aeebafa4d36" tvg-name="Richmond Kickers vs Greenville Triumph" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergpholnyr8k0/image/small" group-title="XoilacXTH",[05:00] 25/10 ⚽ Richmond Kickers vs Greenville Triumph • USL League One [FLV]
+https://live2.jorvakstreamcache.com/live/channel2.flv
+#EXTINF:-1 tvg-id="sport-33266df52928" tvg-name="NY Red Bulls vs Inter Miami" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jednm9whlweryox/image/small" group-title="XoilacXTH",[04:40] 25/10 ⚽ NY Red Bulls vs Inter Miami • MLS_Nhà Nghề Mỹ [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel7.flv?wsSecret=32e42e8761e9c802c1274631246b6618&wsABSTime=1792921554
-#EXTINF:-1 tvg-id="sport-96bfa7bd2b2e" tvg-name="Deportivo Madryn vs San Telmo" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohyn07q1zp/image/small" group-title="XoilacXTH",[05:00] 25/10 ⚽ Deportivo Madryn vs San Telmo • Hạng 2 Argentina [FLV]
+https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001792879291-0-0-bbcdf0091836de08590f644d1f77bd74
+#EXTINF:-1 tvg-id="sport-5abfc5beb694" tvg-name="NY Red Bulls vs Inter Miami" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jednm9whlweryox/image/small" group-title="XoilacXTH",[04:40] 25/10 ⚽ NY Red Bulls vs Inter Miami • MLS_Nhà Nghề Mỹ [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel8.flv?wsSecret=30ab9dc7d237cceb20e5d8bd86487e76&wsABSTime=1792921554
-#EXTINF:-1 tvg-id="sport-77ad48bb47e0" tvg-name="Dep. Maldonado vs Danubio FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghjevlq82w/image/small" group-title="XoilacXTH",[05:00] 25/10 ⚽ Dep. Maldonado vs Danubio FC • VĐQG Uruguay [FLV]
+https://live2.domaincdn.cc/livecdn/channel-14.flv?auth_key=3000001792879291-0-0-31479a59056a47a6e721d2496603edda
+#EXTINF:-1 tvg-id="sport-e9cf677b47fa" tvg-name="NY Red Bulls vs Inter Miami" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jednm9whlweryox/image/small" group-title="XoilacXTH",[04:40] 25/10 ⚽ NY Red Bulls vs Inter Miami • MLS_Nhà Nghề Mỹ [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel11.flv?wsSecret=5c3d3ad9b37c2e4666700c9124182a9f&wsABSTime=1792921554
+https://live1.quickscoreboardz.com/live/channel14.flv?wsSecret=5d208c6875d01405ca8701dd628b41bd&wsABSTime=1792922492
+#EXTINF:-1 tvg-id="sport-146f15448b8e" tvg-name="Charleston Battery vs Indy Eleven" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h800zq86p/image/small" group-title="XoilacXTH",[05:00] 25/10 ⚽ Charleston Battery vs Indy Eleven • USL Championship [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=19c5d2812cd8552aeb28db2baa7b3070&wsABSTime=1792922491
+#EXTINF:-1 tvg-id="sport-15c1c4f4157b" tvg-name="Richmond Kickers vs Greenville Triumph" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergpholnyr8k0/image/small" group-title="XoilacXTH",[05:00] 25/10 ⚽ Richmond Kickers vs Greenville Triumph • USL League One [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live1.quickscoreboardz.com/live/channel7.flv?wsSecret=42d6e61ea5abfecc1565b07236c9c0ce&wsABSTime=1792922491
+#EXTINF:-1 tvg-id="sport-35e50fc008a9" tvg-name="Deportivo Madryn vs San Telmo" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohyn07q1zp/image/small" group-title="XoilacXTH",[05:00] 25/10 ⚽ Deportivo Madryn vs San Telmo • Hạng 2 Argentina [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live1.quickscoreboardz.com/live/channel8.flv?wsSecret=7ad9041a1f0473c3a6a73aa82e54e3df&wsABSTime=1792922491
+#EXTINF:-1 tvg-id="sport-9c34750a1a1f" tvg-name="Dep. Maldonado vs Danubio FC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghjevlq82w/image/small" group-title="XoilacXTH",[05:00] 25/10 ⚽ Dep. Maldonado vs Danubio FC • VĐQG Uruguay [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live1.quickscoreboardz.com/live/channel11.flv?wsSecret=28df2b8bb4b3b951eeccddb24ca8f17d&wsABSTime=1792922491
 #EXTINF:-1 tvg-id="sport-3d051ee5192b" tvg-name="CA San Lorenzo vs Newell Old Boys" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlh836ryk0/image/small" group-title="XoilacXTH",[05:15] 25/10 ⚽ CA San Lorenzo vs Newell Old Boys • VĐQG Argentina [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live2.jorvakstreamcache.com/live/channel20.flv
-#EXTINF:-1 tvg-id="sport-8175d4b20b4b" tvg-name="CA San Lorenzo vs Newell Old Boys" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlh836ryk0/image/small" group-title="XoilacXTH",[05:15] 25/10 ⚽ CA San Lorenzo vs Newell Old Boys • VĐQG Argentina [FLV]
+#EXTINF:-1 tvg-id="sport-e22338006064" tvg-name="CA San Lorenzo vs Newell Old Boys" tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlh836ryk0/image/small" group-title="XoilacXTH",[05:15] 25/10 ⚽ CA San Lorenzo vs Newell Old Boys • VĐQG Argentina [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-20.flv?auth_key=3000001792878354-0-0-7f3e9472afc201855d3ff7e26350d277
-#EXTINF:-1 tvg-id="sport-2f352941a108" tvg-name="Chapecoense SC vs Fluminense RJ" tvg-logo="https://imgts.sportpulseapiz.com/football/team/p4jwq2ghjj5m0ve/image/small" group-title="XoilacXTH",[05:30] 25/10 ⚽ Chapecoense SC vs Fluminense RJ • VĐQG Brasil [FLV]
+https://live2.domaincdn.cc/livecdn/channel-20.flv?auth_key=3000001792879291-0-0-8451fd6ff39bd49ba6313a9e36c2b820
+#EXTINF:-1 tvg-id="sport-c7bca7481881" tvg-name="Chapecoense SC vs Fluminense RJ" tvg-logo="https://imgts.sportpulseapiz.com/football/team/p4jwq2ghjj5m0ve/image/small" group-title="XoilacXTH",[05:30] 25/10 ⚽ Chapecoense SC vs Fluminense RJ • VĐQG Brasil [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel10.flv?wsSecret=b4bcdad108120e572341a17259131606&wsABSTime=1792921555
+https://live1.quickscoreboardz.com/live/channel10.flv?wsSecret=561aea153d22f7a4eaf9f8f7c8e9c5e5&wsABSTime=1792922491
+#EXTINF:-1 tvg-id="sport-782f32253a44" tvg-name="Sportivo 2 de Mayo vs Deportivo Recoleta" tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergpho28or8k0/image/small" group-title="XoilacXTH",[05:30] 25/10 ⚽ Sportivo 2 de Mayo vs Deportivo Recoleta • Hạng Nhất Paraguay [FLV]
+#EXTGRP:XoilacXTH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
+https://live1.quickscoreboardz.com/live/channel12.flv?wsSecret=62a1cd216c6263bf32db295378e11255&wsABSTime=1792922491
