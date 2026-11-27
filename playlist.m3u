@@ -1,22 +1,16 @@
 #EXTM3U x-tvg-url=""
-#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 10:01 27/11" group-title="🕒 Cập nhật 10:01 27/11",🕒 Cập nhật 10:01 27/11
+#EXTINF:-1 tvg-id="playlist-update" tvg-name="🕒 Cập nhật 10:16 27/11" group-title="🕒 Cập nhật 10:16 27/11",🕒 Cập nhật 10:16 27/11
 http://127.0.0.1/
-#EXTINF:-1 tvg-id="sport-1a02de91f92e" tvg-name="Pachuca vs Club Deportivo Guadalajara" tvg-logo="https://img.cltvap.cc/football/team/cff411edceeeb7c1677d9db65ce47164.png" group-title="Gà Vàng 33",🔴 [08:00] 27/11 ⚽ Pachuca vs Club Deportivo Guadalajara (Gà Siêu Tốc) • Mexico Liga MX [HLS]
+#EXTINF:-1 tvg-id="sport-5dad50e1d510" tvg-name="Pachuca vs Club Deportivo Guadalajara" tvg-logo="https://img.cltvap.cc/football/team/cff411edceeeb7c1677d9db65ce47164.png" group-title="Gà Vàng 33",🔴 [08:00] 27/11 ⚽ Pachuca vs Club Deportivo Guadalajara [HLS]
+#EXTGRP:Gà Vàng 33
+#EXTVLCOPT:http-referrer=https://gavang33.me/
+https://video.gvvsb.com/hls/output_v1.m3u8
+#EXTINF:-1 tvg-id="sport-bd0469730a70" tvg-name="Club Leon vs Cruz Azul" tvg-logo="https://img.cltvap.cc/football/team/4695f653aca6ac49ff2baa4a961fa67b.png" group-title="Gà Vàng 33",🔴 [10:10] 27/11 ⚽ Club Leon vs Cruz Azul (Gà Siêu Tốc) • Mexico Liga MX [HLS]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://gavang33.co/
 https://live2.zktsva.app/live/307240.m3u8
-#EXTINF:-1 tvg-id="sport-f7833c6ab0aa" tvg-name="Pachuca vs Club Deportivo Guadalajara" tvg-logo="https://img.cltvap.cc/football/team/cff411edceeeb7c1677d9db65ce47164.png" group-title="Gà Vàng 33",🔴 [08:00] 27/11 ⚽ Pachuca vs Club Deportivo Guadalajara (Gà Siêu Tốc) • Mexico Liga MX [FLV]
-#EXTGRP:Gà Vàng 33
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://gavang33.co/
-https://live2.zktsva.app/live/307240.flv
-#EXTINF:-1 tvg-id="sport-bd0469730a70" tvg-name="Club Leon vs Cruz Azul" tvg-logo="https://img.cltvap.cc/football/team/4695f653aca6ac49ff2baa4a961fa67b.png" group-title="Gà Vàng 33",[10:10] 27/11 ⚽ Club Leon vs Cruz Azul (Gà Siêu Tốc) • Mexico Liga MX [HLS]
-#EXTGRP:Gà Vàng 33
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://gavang33.co/
-https://live2.zktsva.app/live/307240.m3u8
-#EXTINF:-1 tvg-id="sport-c27d2560db5e" tvg-name="Club Leon vs Cruz Azul" tvg-logo="https://img.cltvap.cc/football/team/4695f653aca6ac49ff2baa4a961fa67b.png" group-title="Gà Vàng 33",[10:10] 27/11 ⚽ Club Leon vs Cruz Azul (Gà Siêu Tốc) • Mexico Liga MX [FLV]
+#EXTINF:-1 tvg-id="sport-c27d2560db5e" tvg-name="Club Leon vs Cruz Azul" tvg-logo="https://img.cltvap.cc/football/team/4695f653aca6ac49ff2baa4a961fa67b.png" group-title="Gà Vàng 33",🔴 [10:10] 27/11 ⚽ Club Leon vs Cruz Azul (Gà Siêu Tốc) • Mexico Liga MX [FLV]
 #EXTGRP:Gà Vàng 33
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://gavang33.co/
@@ -711,26 +705,22 @@ https://live2.zktsva.app/live/796315.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://gavang33.co/
 https://live2.zktsva.app/live/796315.flv
-#EXTINF:-1 tvg-id="sport-466dcdc9318d" tvg-name="Pachuca vs Chivas Guadalajara" tvg-logo="https://img.cltvap.cc/football/team/cff411edceeeb7c1677d9db65ce47164.png!w80" group-title="CoLaTV",🔴 [08:00] 27/11 ⚽ Pachuca vs Chivas Guadalajara (BLV TEPPY) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
+#EXTINF:-1 tvg-id="sport-8f58f7703a87" tvg-name="Pachuca vs Chivas Guadalajara" tvg-logo="https://img.cltvap.cc/football/team/cff411edceeeb7c1677d9db65ce47164.png!w80" group-title="CoLaTV",🔴 [08:00] 27/11 ⚽ Pachuca vs Chivas Guadalajara (TEPPY) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live05.wecile.app/live/33860426.m3u8
-#EXTINF:-1 tvg-id="sport-f3dbe415cb84" tvg-name="Pachuca vs Chivas Guadalajara" tvg-logo="https://img.cltvap.cc/football/team/cff411edceeeb7c1677d9db65ce47164.png!w80" group-title="CoLaTV",🔴 [08:00] 27/11 ⚽ Pachuca vs Chivas Guadalajara (BLV TEPPY) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
+#EXTINF:-1 tvg-id="sport-b20643897337" tvg-name="Pachuca vs Chivas Guadalajara" tvg-logo="https://img.cltvap.cc/football/team/cff411edceeeb7c1677d9db65ce47164.png!w80" group-title="CoLaTV",🔴 [08:00] 27/11 ⚽ Pachuca vs Chivas Guadalajara (TEPPY) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live05.yefpwmc.app/live/33860426_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-8fb76987d540" tvg-name="Pachuca vs Chivas Guadalajara" tvg-logo="https://img.cltvap.cc/football/team/cff411edceeeb7c1677d9db65ce47164.png!w80" group-title="CoLaTV",🔴 [08:00] 27/11 ⚽ Pachuca vs Chivas Guadalajara (BLV TEPPY) • Giải Vô địch Bóng đá Quốc gia Mexico [FLV]
+#EXTINF:-1 tvg-id="sport-3805eeab8356" tvg-name="Pachuca vs Chivas Guadalajara" tvg-logo="https://img.cltvap.cc/football/team/cff411edceeeb7c1677d9db65ce47164.png!w80" group-title="CoLaTV",🔴 [08:00] 27/11 ⚽ Pachuca vs Chivas Guadalajara (TEPPY) • Giải Vô địch Bóng đá Quốc gia Mexico [FLV]
 #EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
+#EXTVLCOPT:http-referrer=https://colatv77.live/
 https://live05.wecile.app/live/33860426.flv
-#EXTINF:-1 tvg-id="sport-31dc00ea8afa" tvg-name="Pachuca vs Chivas Guadalajara" tvg-logo="https://img.cltvap.cc/football/team/cff411edceeeb7c1677d9db65ce47164.png!w80" group-title="CoLaTV",🔴 [08:00] 27/11 ⚽ Pachuca vs Chivas Guadalajara • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
+#EXTINF:-1 tvg-id="sport-64a7987f3b4f" tvg-name="Pachuca vs Chivas Guadalajara" tvg-logo="https://img.cltvap.cc/football/team/cff411edceeeb7c1677d9db65ce47164.png!w80" group-title="CoLaTV",🔴 [08:00] 27/11 ⚽ Pachuca vs Chivas Guadalajara • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live.hztx2020.com/live/14727187_9d1b7ec1d15cd45285d524ccb370f188_autoChange.m3u8?auth_key=1795762863-0-0-1eae8114b61a637da8d02b14b7099ba7
+#EXTVLCOPT:http-referrer=https://colatv77.live/
+https://live.hztx2020.com/live/14727187_9d1b7ec1d15cd45285d524ccb370f188_autoChange.m3u8?auth_key=1795763391-0-0-1d2f8f25e978da77edfa31bfd7f5b84a
 #EXTINF:-1 tvg-id="sport-a5797252ebee" tvg-name="Club Leon vs Cruz Azul" tvg-logo="https://img.cltvap.cc/football/team/4695f653aca6ac49ff2baa4a961fa67b.png!w80" group-title="CoLaTV",🔴 [10:10] 27/11 ⚽ Club Leon vs Cruz Azul (BLV PEPSI) • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -746,26 +736,286 @@ https://live05.yefpwmc.app/live/59444581_tsc.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.wecile.app/live/59444581.flv
-#EXTINF:-1 tvg-id="sport-dcca7c93d0c2" tvg-name="Club Leon vs Cruz Azul" tvg-logo="https://img.cltvap.cc/football/team/4695f653aca6ac49ff2baa4a961fa67b.png!w80" group-title="CoLaTV",🔴 [10:10] 27/11 ⚽ Club Leon vs Cruz Azul • Giải Vô địch Bóng đá Quốc gia Mexico
+#EXTINF:-1 tvg-id="sport-5a1793b30899" tvg-name="Club Leon vs Cruz Azul" tvg-logo="https://img.cltvap.cc/football/team/4695f653aca6ac49ff2baa4a961fa67b.png!w80" group-title="CoLaTV",🔴 [10:10] 27/11 ⚽ Club Leon vs Cruz Azul • Giải Vô địch Bóng đá Quốc gia Mexico [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live.hztx2020.com/live/14727185_ef6e6d46511681ff8bf1b0feeb598b55_autoChange.m3u8?auth_key=1795763739-0-0-90895bef9602de009c3f46046e35a3bf
+#EXTINF:-1 tvg-id="sport-7cf9c98c3827" tvg-name="Jordan vs New Zealand" tvg-logo="https://img.cltvap.cc/basketball/team/ad269016d377a139581206b40ad4a941.png!w80" group-title="CoLaTV",[13:00] 27/11 🏀 Jordan vs New Zealand (BLV TARZAAN) • Vòng loại World Cup khu vực Châu Á [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/56998120.m3u8
+#EXTINF:-1 tvg-id="sport-ec80314e79ad" tvg-name="Jordan vs New Zealand" tvg-logo="https://img.cltvap.cc/basketball/team/ad269016d377a139581206b40ad4a941.png!w80" group-title="CoLaTV",[13:00] 27/11 🏀 Jordan vs New Zealand (BLV TARZAAN) • Vòng loại World Cup khu vực Châu Á [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/56998120_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-67502709ffe6" tvg-name="Jordan vs New Zealand" tvg-logo="https://img.cltvap.cc/basketball/team/ad269016d377a139581206b40ad4a941.png!w80" group-title="CoLaTV",[13:00] 27/11 🏀 Jordan vs New Zealand (BLV TARZAAN) • Vòng loại World Cup khu vực Châu Á [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/56998120.flv
+#EXTINF:-1 tvg-id="sport-5c5299b57fda" tvg-name="Jordan vs New Zealand" tvg-logo="https://img.cltvap.cc/basketball/team/ad269016d377a139581206b40ad4a941.png!w80" group-title="CoLaTV",[13:00] 27/11 🏀 Jordan vs New Zealand • Vòng loại World Cup khu vực Châu Á
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https
-#EXTINF:-1 tvg-id="sport-36ed9a9f0155" tvg-name="LSU vs Southern Methodist" tvg-logo="https://img.cltvap.cc/basketball/team/dca2c70b3ed5afb137fc366112f1a05c.png!w80" group-title="CoLaTV",🔴 [07:00] 27/11 🏀 LSU vs Southern Methodist (BLV ROCKSTAR) • NCAA [HLS]
+#EXTINF:-1 tvg-id="sport-c669ec3ca5bb" tvg-name="Indonesia vs Thái Lan" tvg-logo="https://img.cltvap.cc/basketball/team/8d4aca15bee632dc0709e24152c7f529.png!w80" group-title="CoLaTV",[15:00] 27/11 🏀 Indonesia vs Thái Lan (BLV Cozy) • Vòng loại Cúp Bóng rổ Châu Á [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/87379114.m3u8
+#EXTINF:-1 tvg-id="sport-61894a5c66d8" tvg-name="Indonesia vs Thái Lan" tvg-logo="https://img.cltvap.cc/basketball/team/8d4aca15bee632dc0709e24152c7f529.png!w80" group-title="CoLaTV",[15:00] 27/11 🏀 Indonesia vs Thái Lan (BLV Cozy) • Vòng loại Cúp Bóng rổ Châu Á [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/87379114_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-2e9f40fb5e25" tvg-name="Indonesia vs Thái Lan" tvg-logo="https://img.cltvap.cc/basketball/team/8d4aca15bee632dc0709e24152c7f529.png!w80" group-title="CoLaTV",[15:00] 27/11 🏀 Indonesia vs Thái Lan (BLV Cozy) • Vòng loại Cúp Bóng rổ Châu Á [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/87379114.flv
+#EXTINF:-1 tvg-id="sport-d148fbe8aa79" tvg-name="UC Capitals Women vs Melbourne Boomers Nữ" tvg-logo="https://img.cltvap.cc/basketball/team/0bf8d00e9a4df141d819d0be02302d42.png!w80" group-title="CoLaTV",[15:00] 27/11 🏀 UC Capitals Women vs Melbourne Boomers Nữ (BLV LIPTON) • Giải Bóng Rổ Chuyên Nghiệp Nữ Úc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/89756030.m3u8
+#EXTINF:-1 tvg-id="sport-6ee5021eac24" tvg-name="UC Capitals Women vs Melbourne Boomers Nữ" tvg-logo="https://img.cltvap.cc/basketball/team/0bf8d00e9a4df141d819d0be02302d42.png!w80" group-title="CoLaTV",[15:00] 27/11 🏀 UC Capitals Women vs Melbourne Boomers Nữ (BLV LIPTON) • Giải Bóng Rổ Chuyên Nghiệp Nữ Úc [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/89756030_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-02510f6e9385" tvg-name="UC Capitals Women vs Melbourne Boomers Nữ" tvg-logo="https://img.cltvap.cc/basketball/team/0bf8d00e9a4df141d819d0be02302d42.png!w80" group-title="CoLaTV",[15:00] 27/11 🏀 UC Capitals Women vs Melbourne Boomers Nữ (BLV LIPTON) • Giải Bóng Rổ Chuyên Nghiệp Nữ Úc [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/89756030.flv
+#EXTINF:-1 tvg-id="sport-0b490babc713" tvg-name="Iran vs Australia" tvg-logo="https://img.cltvap.cc/basketball/team/77418e1cfd63306bf63717d76c23e910.png!w80" group-title="CoLaTV",[16:00] 27/11 🏀 Iran vs Australia (BLV ROCKSTAR) • Vòng loại World Cup khu vực Châu Á [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.wecile.app/live/82054853.m3u8
-#EXTINF:-1 tvg-id="sport-ee0c1b5ae54a" tvg-name="LSU vs Southern Methodist" tvg-logo="https://img.cltvap.cc/basketball/team/dca2c70b3ed5afb137fc366112f1a05c.png!w80" group-title="CoLaTV",🔴 [07:00] 27/11 🏀 LSU vs Southern Methodist (BLV ROCKSTAR) • NCAA [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/82054853.flv
-#EXTINF:-1 tvg-id="sport-50878ae2db33" tvg-name="LSU vs Southern Methodist" tvg-logo="https://img.cltvap.cc/basketball/team/dca2c70b3ed5afb137fc366112f1a05c.png!w80" group-title="CoLaTV",🔴 [07:00] 27/11 🏀 LSU vs Southern Methodist (BLV ROCKSTAR) • NCAA [HLS]
+#EXTINF:-1 tvg-id="sport-371579fd9be7" tvg-name="Iran vs Australia" tvg-logo="https://img.cltvap.cc/basketball/team/77418e1cfd63306bf63717d76c23e910.png!w80" group-title="CoLaTV",[16:00] 27/11 🏀 Iran vs Australia (BLV ROCKSTAR) • Vòng loại World Cup khu vực Châu Á [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.yefpwmc.app/live/82054853_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-541094de3485" tvg-name="Iran vs Australia" tvg-logo="https://img.cltvap.cc/basketball/team/77418e1cfd63306bf63717d76c23e910.png!w80" group-title="CoLaTV",[16:00] 27/11 🏀 Iran vs Australia (BLV ROCKSTAR) • Vòng loại World Cup khu vực Châu Á [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/82054853.flv
+#EXTINF:-1 tvg-id="sport-eb16c4bb2e4b" tvg-name="Syrian vs Philippines" tvg-logo="https://img.cltvap.cc/basketball/team/d5313f24c755a8f9d6963dd1d532b118.png!w80" group-title="CoLaTV",[19:00] 27/11 🏀 Syrian vs Philippines (BLV POCARI) • Vòng loại World Cup khu vực Châu Á [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/19919577.m3u8
+#EXTINF:-1 tvg-id="sport-9b911867a04f" tvg-name="Syrian vs Philippines" tvg-logo="https://img.cltvap.cc/basketball/team/d5313f24c755a8f9d6963dd1d532b118.png!w80" group-title="CoLaTV",[19:00] 27/11 🏀 Syrian vs Philippines (BLV POCARI) • Vòng loại World Cup khu vực Châu Á [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/19919577_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-8e983fb469a2" tvg-name="Syrian vs Philippines" tvg-logo="https://img.cltvap.cc/basketball/team/d5313f24c755a8f9d6963dd1d532b118.png!w80" group-title="CoLaTV",[19:00] 27/11 🏀 Syrian vs Philippines (BLV POCARI) • Vòng loại World Cup khu vực Châu Á [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/19919577.flv
+#EXTINF:-1 tvg-id="sport-78b2b0d2e1c4" tvg-name="Kansas vs Villanova" tvg-logo="https://img.cltvap.cc/basketball/team/e37875b00a57abec6aaeff5b98f89971.png!w80" group-title="CoLaTV",[05:00] 28/11 🏀 Kansas vs Villanova (BLV TARZAAN) • NCAA [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/56998120.m3u8
+#EXTINF:-1 tvg-id="sport-d7eb528cb01c" tvg-name="Kansas vs Villanova" tvg-logo="https://img.cltvap.cc/basketball/team/e37875b00a57abec6aaeff5b98f89971.png!w80" group-title="CoLaTV",[05:00] 28/11 🏀 Kansas vs Villanova (BLV TARZAAN) • NCAA [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/56998120_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-74b25157fba2" tvg-name="Kansas vs Villanova" tvg-logo="https://img.cltvap.cc/basketball/team/e37875b00a57abec6aaeff5b98f89971.png!w80" group-title="CoLaTV",[05:00] 28/11 🏀 Kansas vs Villanova (BLV TARZAAN) • NCAA [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/56998120.flv
+#EXTINF:-1 tvg-id="sport-5ad735459457" tvg-name="Brasil vs Hoa Kỳ" tvg-logo="https://img.cltvap.cc/basketball/team/2bc5dd83d6d15f000d58b22ec80d5ff7.png!w80" group-title="CoLaTV",[06:10] 28/11 🏀 Brasil vs Hoa Kỳ (BLV 247) • Vòng loại World Cup Châu Mỹ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/90865415.m3u8
+#EXTINF:-1 tvg-id="sport-4fc7188bd13c" tvg-name="Brasil vs Hoa Kỳ" tvg-logo="https://img.cltvap.cc/basketball/team/2bc5dd83d6d15f000d58b22ec80d5ff7.png!w80" group-title="CoLaTV",[06:10] 28/11 🏀 Brasil vs Hoa Kỳ (BLV 247) • Vòng loại World Cup Châu Mỹ [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/90865415_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-51e43a27a996" tvg-name="Brasil vs Hoa Kỳ" tvg-logo="https://img.cltvap.cc/basketball/team/2bc5dd83d6d15f000d58b22ec80d5ff7.png!w80" group-title="CoLaTV",[06:10] 28/11 🏀 Brasil vs Hoa Kỳ (BLV 247) • Vòng loại World Cup Châu Mỹ [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/90865415.flv
+#EXTINF:-1 tvg-id="sport-06f890e7ad47" tvg-name="New York Knicks vs Miami Heat" tvg-logo="https://img.cltvap.cc/basketball/team/49f8b0ef2ed529b44dba6ebb99a0d5ff.png!w80" group-title="CoLaTV",[07:00] 28/11 🏀 New York Knicks vs Miami Heat (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/87379114.m3u8
+#EXTINF:-1 tvg-id="sport-68ec30642822" tvg-name="New York Knicks vs Miami Heat" tvg-logo="https://img.cltvap.cc/basketball/team/49f8b0ef2ed529b44dba6ebb99a0d5ff.png!w80" group-title="CoLaTV",[07:00] 28/11 🏀 New York Knicks vs Miami Heat (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/87379114_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-004cc9827bc5" tvg-name="New York Knicks vs Miami Heat" tvg-logo="https://img.cltvap.cc/basketball/team/49f8b0ef2ed529b44dba6ebb99a0d5ff.png!w80" group-title="CoLaTV",[07:00] 28/11 🏀 New York Knicks vs Miami Heat (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/87379114.flv
+#EXTINF:-1 tvg-id="sport-5cb2859294c2" tvg-name="Indiana Pacers vs Philadelphia 76ers" tvg-logo="https://img.cltvap.cc/basketball/team/6f313b682482799762cf60dbc30dbfae.png!w80" group-title="CoLaTV",[07:30] 28/11 🏀 Indiana Pacers vs Philadelphia 76ers (BLV TARZAAN) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/56998120.m3u8
+#EXTINF:-1 tvg-id="sport-cca58b32c372" tvg-name="Indiana Pacers vs Philadelphia 76ers" tvg-logo="https://img.cltvap.cc/basketball/team/6f313b682482799762cf60dbc30dbfae.png!w80" group-title="CoLaTV",[07:30] 28/11 🏀 Indiana Pacers vs Philadelphia 76ers (BLV TARZAAN) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/56998120_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-268012e8d874" tvg-name="Indiana Pacers vs Philadelphia 76ers" tvg-logo="https://img.cltvap.cc/basketball/team/6f313b682482799762cf60dbc30dbfae.png!w80" group-title="CoLaTV",[07:30] 28/11 🏀 Indiana Pacers vs Philadelphia 76ers (BLV TARZAAN) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/56998120.flv
+#EXTINF:-1 tvg-id="sport-e116e9944b01" tvg-name="Đội bóng rổ Boston Celtics vs Atlanta Hawks" tvg-logo="https://img.cltvap.cc/basketball/team/884c1c1f5db46c170df3c34a8e213ec9.png!w80" group-title="CoLaTV",[08:00] 28/11 🏀 Đội bóng rổ Boston Celtics vs Atlanta Hawks (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/19919577.m3u8
+#EXTINF:-1 tvg-id="sport-73ffca0c263c" tvg-name="Đội bóng rổ Boston Celtics vs Atlanta Hawks" tvg-logo="https://img.cltvap.cc/basketball/team/884c1c1f5db46c170df3c34a8e213ec9.png!w80" group-title="CoLaTV",[08:00] 28/11 🏀 Đội bóng rổ Boston Celtics vs Atlanta Hawks (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/19919577_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-5dba8b899084" tvg-name="Đội bóng rổ Boston Celtics vs Atlanta Hawks" tvg-logo="https://img.cltvap.cc/basketball/team/884c1c1f5db46c170df3c34a8e213ec9.png!w80" group-title="CoLaTV",[08:00] 28/11 🏀 Đội bóng rổ Boston Celtics vs Atlanta Hawks (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/19919577.flv
+#EXTINF:-1 tvg-id="sport-245da1dedbb2" tvg-name="Minnesota Timberwolves vs Memphis Grizzlies" tvg-logo="https://img.cltvap.cc/basketball/team/38794d0ac418d8f2d03bd17a2623f3ed.png!w80" group-title="CoLaTV",[08:30] 28/11 🏀 Minnesota Timberwolves vs Memphis Grizzlies (BLV 247) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/90865415.m3u8
+#EXTINF:-1 tvg-id="sport-4e0e9f59a81b" tvg-name="Minnesota Timberwolves vs Memphis Grizzlies" tvg-logo="https://img.cltvap.cc/basketball/team/38794d0ac418d8f2d03bd17a2623f3ed.png!w80" group-title="CoLaTV",[08:30] 28/11 🏀 Minnesota Timberwolves vs Memphis Grizzlies (BLV 247) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/90865415_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-4877ff4507eb" tvg-name="Minnesota Timberwolves vs Memphis Grizzlies" tvg-logo="https://img.cltvap.cc/basketball/team/38794d0ac418d8f2d03bd17a2623f3ed.png!w80" group-title="CoLaTV",[08:30] 28/11 🏀 Minnesota Timberwolves vs Memphis Grizzlies (BLV 247) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/90865415.flv
+#EXTINF:-1 tvg-id="sport-fff4a0910f3d" tvg-name="San Antonio Spurs vs Los Angeles Lakers" tvg-logo="https://img.cltvap.cc/basketball/team/5305d1a7b721b5bef418041eff53ba82.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 San Antonio Spurs vs Los Angeles Lakers (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/82054853.m3u8
+#EXTINF:-1 tvg-id="sport-ee019293cbe4" tvg-name="San Antonio Spurs vs Los Angeles Lakers" tvg-logo="https://img.cltvap.cc/basketball/team/5305d1a7b721b5bef418041eff53ba82.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 San Antonio Spurs vs Los Angeles Lakers (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/82054853_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-fbd8232be04a" tvg-name="San Antonio Spurs vs Los Angeles Lakers" tvg-logo="https://img.cltvap.cc/basketball/team/5305d1a7b721b5bef418041eff53ba82.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 San Antonio Spurs vs Los Angeles Lakers (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/82054853.flv
+#EXTINF:-1 tvg-id="sport-3c9e85fcb1f4" tvg-name="San Antonio Spurs vs Los Angeles Lakers" tvg-logo="https://img.cltvap.cc/basketball/team/5305d1a7b721b5bef418041eff53ba82.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 San Antonio Spurs vs Los Angeles Lakers (BLV TARZAAN) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/56998120.m3u8
+#EXTINF:-1 tvg-id="sport-6f860b672728" tvg-name="San Antonio Spurs vs Los Angeles Lakers" tvg-logo="https://img.cltvap.cc/basketball/team/5305d1a7b721b5bef418041eff53ba82.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 San Antonio Spurs vs Los Angeles Lakers (BLV TARZAAN) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/56998120_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-ae22e4362821" tvg-name="San Antonio Spurs vs Los Angeles Lakers" tvg-logo="https://img.cltvap.cc/basketball/team/5305d1a7b721b5bef418041eff53ba82.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 San Antonio Spurs vs Los Angeles Lakers (BLV TARZAAN) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/56998120.flv
+#EXTINF:-1 tvg-id="sport-1301d25e7063" tvg-name="Utah Jazz vs Denver Nuggets" tvg-logo="https://img.cltvap.cc/basketball/team/8c88df221129169246c5b8a82955fa34.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 Utah Jazz vs Denver Nuggets (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/87379114.m3u8
+#EXTINF:-1 tvg-id="sport-99dce3365d60" tvg-name="Utah Jazz vs Denver Nuggets" tvg-logo="https://img.cltvap.cc/basketball/team/8c88df221129169246c5b8a82955fa34.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 Utah Jazz vs Denver Nuggets (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/87379114_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-b025e782c478" tvg-name="Utah Jazz vs Denver Nuggets" tvg-logo="https://img.cltvap.cc/basketball/team/8c88df221129169246c5b8a82955fa34.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 Utah Jazz vs Denver Nuggets (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/87379114.flv
+#EXTINF:-1 tvg-id="sport-a95c681298b6" tvg-name="Portland Trail Blazers vs Golden State Warriors" tvg-logo="https://img.cltvap.cc/basketball/team/4512175b1415f69816e816160093bcc0.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 Portland Trail Blazers vs Golden State Warriors (BLV LIPTON) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/89756030.m3u8
+#EXTINF:-1 tvg-id="sport-bd3c16c389a2" tvg-name="Portland Trail Blazers vs Golden State Warriors" tvg-logo="https://img.cltvap.cc/basketball/team/4512175b1415f69816e816160093bcc0.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 Portland Trail Blazers vs Golden State Warriors (BLV LIPTON) • Hiệp hội Bóng rổ Quốc gia [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/89756030_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-a6100085be37" tvg-name="Portland Trail Blazers vs Golden State Warriors" tvg-logo="https://img.cltvap.cc/basketball/team/4512175b1415f69816e816160093bcc0.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 Portland Trail Blazers vs Golden State Warriors (BLV LIPTON) • Hiệp hội Bóng rổ Quốc gia [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/89756030.flv
+#EXTINF:-1 tvg-id="sport-9b8ab3f02094" tvg-name="Nebraska O. vs Jacksonville State" tvg-logo="https://img.cltvap.cc/basketball/team/f1dff0ffc4b6490aa244f2fd040be5ba.png!w80" group-title="CoLaTV",[10:30] 28/11 🏀 Nebraska O. vs Jacksonville State (BLV POCARI) • NCAA [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/19919577.m3u8
+#EXTINF:-1 tvg-id="sport-9b44f83107a0" tvg-name="Nebraska O. vs Jacksonville State" tvg-logo="https://img.cltvap.cc/basketball/team/f1dff0ffc4b6490aa244f2fd040be5ba.png!w80" group-title="CoLaTV",[10:30] 28/11 🏀 Nebraska O. vs Jacksonville State (BLV POCARI) • NCAA [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/19919577_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-eaca41fb8741" tvg-name="Nebraska O. vs Jacksonville State" tvg-logo="https://img.cltvap.cc/basketball/team/f1dff0ffc4b6490aa244f2fd040be5ba.png!w80" group-title="CoLaTV",[10:30] 28/11 🏀 Nebraska O. vs Jacksonville State (BLV POCARI) • NCAA [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/19919577.flv
+#EXTINF:-1 tvg-id="sport-a4be096e3fdc" tvg-name="Bahrain vs Kazakhstan" tvg-logo="https://img.cltvap.cc/basketball/team/939045fc3f62477368f62d714ab67401.png!w80" group-title="CoLaTV",[15:00] 28/11 🏀 Bahrain vs Kazakhstan (BLV ROCKSTAR) • Vòng loại Cúp Bóng rổ Châu Á [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/82054853.m3u8
+#EXTINF:-1 tvg-id="sport-00b38bf1447a" tvg-name="Bahrain vs Kazakhstan" tvg-logo="https://img.cltvap.cc/basketball/team/939045fc3f62477368f62d714ab67401.png!w80" group-title="CoLaTV",[15:00] 28/11 🏀 Bahrain vs Kazakhstan (BLV ROCKSTAR) • Vòng loại Cúp Bóng rổ Châu Á [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/82054853_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-a7e043dbdd4b" tvg-name="Bahrain vs Kazakhstan" tvg-logo="https://img.cltvap.cc/basketball/team/939045fc3f62477368f62d714ab67401.png!w80" group-title="CoLaTV",[15:00] 28/11 🏀 Bahrain vs Kazakhstan (BLV ROCKSTAR) • Vòng loại Cúp Bóng rổ Châu Á [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/82054853.flv
+#EXTINF:-1 tvg-id="sport-2bc318962e61" tvg-name="United Arab Emirates vs Sri Lanka" tvg-logo="https://img.cltvap.cc/basketball/team/bdee645df8bc3b8f33e4354133224f89.png!w80" group-title="CoLaTV",[18:00] 28/11 🏀 United Arab Emirates vs Sri Lanka (BLV LIPTON) • Vòng loại Cúp Bóng rổ Châu Á [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/89756030.m3u8
+#EXTINF:-1 tvg-id="sport-546741e4fca1" tvg-name="United Arab Emirates vs Sri Lanka" tvg-logo="https://img.cltvap.cc/basketball/team/bdee645df8bc3b8f33e4354133224f89.png!w80" group-title="CoLaTV",[18:00] 28/11 🏀 United Arab Emirates vs Sri Lanka (BLV LIPTON) • Vòng loại Cúp Bóng rổ Châu Á [HLS]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.yefpwmc.app/live/89756030_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-a7a4418a27a6" tvg-name="United Arab Emirates vs Sri Lanka" tvg-logo="https://img.cltvap.cc/basketball/team/bdee645df8bc3b8f33e4354133224f89.png!w80" group-title="CoLaTV",[18:00] 28/11 🏀 United Arab Emirates vs Sri Lanka (BLV LIPTON) • Vòng loại Cúp Bóng rổ Châu Á [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/89756030.flv
 #EXTINF:-1 tvg-id="sport-ed484f4ef049" tvg-name="CLB Broadmeadow Magic vs CLB Queensland Lions SC" tvg-logo="https://img.cltvap.cc/football/team/4f0ff310b253f34bfd414c5b2502082c.png!w80" group-title="CoLaTV",[15:30] 27/11 ⚽ CLB Broadmeadow Magic vs CLB Queensland Lions SC (BLV TEPPY) • Aus Champ [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -1591,16 +1841,16 @@ https://live05.wecile.app/live/87379114.flv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.wecile.app/live/82054853.m3u8
-#EXTINF:-1 tvg-id="sport-14a407687793" tvg-name="Vissel Kobe vs Chiba" tvg-logo="https://img.cltvap.cc/football/team/d85cce27ab583e5b3cead155f02b098a.png!w80" group-title="CoLaTV",[13:00] 28/11 ⚽ Vissel Kobe vs Chiba (BLV ROCKSTAR) • Giải vô địch quốc gia Nhật Bản [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/82054853.flv
 #EXTINF:-1 tvg-id="sport-93b4962be030" tvg-name="Vissel Kobe vs Chiba" tvg-logo="https://img.cltvap.cc/football/team/d85cce27ab583e5b3cead155f02b098a.png!w80" group-title="CoLaTV",[13:00] 28/11 ⚽ Vissel Kobe vs Chiba (BLV ROCKSTAR) • Giải vô địch quốc gia Nhật Bản [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.yefpwmc.app/live/82054853_tsc.m3u8
+#EXTINF:-1 tvg-id="sport-14a407687793" tvg-name="Vissel Kobe vs Chiba" tvg-logo="https://img.cltvap.cc/football/team/d85cce27ab583e5b3cead155f02b098a.png!w80" group-title="CoLaTV",[13:00] 28/11 ⚽ Vissel Kobe vs Chiba (BLV ROCKSTAR) • Giải vô địch quốc gia Nhật Bản [FLV]
+#EXTGRP:CoLaTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://cola.tv/
+https://live05.wecile.app/live/82054853.flv
 #EXTINF:-1 tvg-id="sport-799584dc7fd6" tvg-name="Kashiwa Reysol vs Sanfrecce Hiroshima" tvg-logo="https://img.cltvap.cc/football/team/d272859d78eb8ca7a14753f4293fbf45.png!w80" group-title="CoLaTV",[14:00] 28/11 ⚽ Kashiwa Reysol vs Sanfrecce Hiroshima (BLV TEPPY) • Giải vô địch quốc gia Nhật Bản [HLS]
 #EXTGRP:CoLaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -2021,302 +2271,27 @@ https://live05.yefpwmc.app/live/75915087_tsc.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://cola.tv/
 https://live05.wecile.app/live/75915087.flv
-#EXTINF:-1 tvg-id="sport-7cf9c98c3827" tvg-name="Jordan vs New Zealand" tvg-logo="https://img.cltvap.cc/basketball/team/ad269016d377a139581206b40ad4a941.png!w80" group-title="CoLaTV",[13:00] 27/11 🏀 Jordan vs New Zealand (BLV TARZAAN) • Vòng loại World Cup khu vực Châu Á [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/56998120.m3u8
-#EXTINF:-1 tvg-id="sport-ec80314e79ad" tvg-name="Jordan vs New Zealand" tvg-logo="https://img.cltvap.cc/basketball/team/ad269016d377a139581206b40ad4a941.png!w80" group-title="CoLaTV",[13:00] 27/11 🏀 Jordan vs New Zealand (BLV TARZAAN) • Vòng loại World Cup khu vực Châu Á [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/56998120_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-67502709ffe6" tvg-name="Jordan vs New Zealand" tvg-logo="https://img.cltvap.cc/basketball/team/ad269016d377a139581206b40ad4a941.png!w80" group-title="CoLaTV",[13:00] 27/11 🏀 Jordan vs New Zealand (BLV TARZAAN) • Vòng loại World Cup khu vực Châu Á [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/56998120.flv
-#EXTINF:-1 tvg-id="sport-5c5299b57fda" tvg-name="Jordan vs New Zealand" tvg-logo="https://img.cltvap.cc/basketball/team/ad269016d377a139581206b40ad4a941.png!w80" group-title="CoLaTV",[13:00] 27/11 🏀 Jordan vs New Zealand • Vòng loại World Cup khu vực Châu Á
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https
-#EXTINF:-1 tvg-id="sport-c669ec3ca5bb" tvg-name="Indonesia vs Thái Lan" tvg-logo="https://img.cltvap.cc/basketball/team/8d4aca15bee632dc0709e24152c7f529.png!w80" group-title="CoLaTV",[15:00] 27/11 🏀 Indonesia vs Thái Lan (BLV Cozy) • Vòng loại Cúp Bóng rổ Châu Á [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/87379114.m3u8
-#EXTINF:-1 tvg-id="sport-61894a5c66d8" tvg-name="Indonesia vs Thái Lan" tvg-logo="https://img.cltvap.cc/basketball/team/8d4aca15bee632dc0709e24152c7f529.png!w80" group-title="CoLaTV",[15:00] 27/11 🏀 Indonesia vs Thái Lan (BLV Cozy) • Vòng loại Cúp Bóng rổ Châu Á [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/87379114_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-2e9f40fb5e25" tvg-name="Indonesia vs Thái Lan" tvg-logo="https://img.cltvap.cc/basketball/team/8d4aca15bee632dc0709e24152c7f529.png!w80" group-title="CoLaTV",[15:00] 27/11 🏀 Indonesia vs Thái Lan (BLV Cozy) • Vòng loại Cúp Bóng rổ Châu Á [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/87379114.flv
-#EXTINF:-1 tvg-id="sport-d148fbe8aa79" tvg-name="UC Capitals Women vs Melbourne Boomers Nữ" tvg-logo="https://img.cltvap.cc/basketball/team/0bf8d00e9a4df141d819d0be02302d42.png!w80" group-title="CoLaTV",[15:00] 27/11 🏀 UC Capitals Women vs Melbourne Boomers Nữ (BLV LIPTON) • Giải Bóng Rổ Chuyên Nghiệp Nữ Úc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/89756030.m3u8
-#EXTINF:-1 tvg-id="sport-6ee5021eac24" tvg-name="UC Capitals Women vs Melbourne Boomers Nữ" tvg-logo="https://img.cltvap.cc/basketball/team/0bf8d00e9a4df141d819d0be02302d42.png!w80" group-title="CoLaTV",[15:00] 27/11 🏀 UC Capitals Women vs Melbourne Boomers Nữ (BLV LIPTON) • Giải Bóng Rổ Chuyên Nghiệp Nữ Úc [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/89756030_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-02510f6e9385" tvg-name="UC Capitals Women vs Melbourne Boomers Nữ" tvg-logo="https://img.cltvap.cc/basketball/team/0bf8d00e9a4df141d819d0be02302d42.png!w80" group-title="CoLaTV",[15:00] 27/11 🏀 UC Capitals Women vs Melbourne Boomers Nữ (BLV LIPTON) • Giải Bóng Rổ Chuyên Nghiệp Nữ Úc [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/89756030.flv
-#EXTINF:-1 tvg-id="sport-0b490babc713" tvg-name="Iran vs Australia" tvg-logo="https://img.cltvap.cc/basketball/team/77418e1cfd63306bf63717d76c23e910.png!w80" group-title="CoLaTV",[16:00] 27/11 🏀 Iran vs Australia (BLV ROCKSTAR) • Vòng loại World Cup khu vực Châu Á [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/82054853.m3u8
-#EXTINF:-1 tvg-id="sport-541094de3485" tvg-name="Iran vs Australia" tvg-logo="https://img.cltvap.cc/basketball/team/77418e1cfd63306bf63717d76c23e910.png!w80" group-title="CoLaTV",[16:00] 27/11 🏀 Iran vs Australia (BLV ROCKSTAR) • Vòng loại World Cup khu vực Châu Á [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/82054853.flv
-#EXTINF:-1 tvg-id="sport-371579fd9be7" tvg-name="Iran vs Australia" tvg-logo="https://img.cltvap.cc/basketball/team/77418e1cfd63306bf63717d76c23e910.png!w80" group-title="CoLaTV",[16:00] 27/11 🏀 Iran vs Australia (BLV ROCKSTAR) • Vòng loại World Cup khu vực Châu Á [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/82054853_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-eb16c4bb2e4b" tvg-name="Syrian vs Philippines" tvg-logo="https://img.cltvap.cc/basketball/team/d5313f24c755a8f9d6963dd1d532b118.png!w80" group-title="CoLaTV",[19:00] 27/11 🏀 Syrian vs Philippines (BLV POCARI) • Vòng loại World Cup khu vực Châu Á [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/19919577.m3u8
-#EXTINF:-1 tvg-id="sport-9b911867a04f" tvg-name="Syrian vs Philippines" tvg-logo="https://img.cltvap.cc/basketball/team/d5313f24c755a8f9d6963dd1d532b118.png!w80" group-title="CoLaTV",[19:00] 27/11 🏀 Syrian vs Philippines (BLV POCARI) • Vòng loại World Cup khu vực Châu Á [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/19919577_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-8e983fb469a2" tvg-name="Syrian vs Philippines" tvg-logo="https://img.cltvap.cc/basketball/team/d5313f24c755a8f9d6963dd1d532b118.png!w80" group-title="CoLaTV",[19:00] 27/11 🏀 Syrian vs Philippines (BLV POCARI) • Vòng loại World Cup khu vực Châu Á [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/19919577.flv
-#EXTINF:-1 tvg-id="sport-78b2b0d2e1c4" tvg-name="Kansas vs Villanova" tvg-logo="https://img.cltvap.cc/basketball/team/e37875b00a57abec6aaeff5b98f89971.png!w80" group-title="CoLaTV",[05:00] 28/11 🏀 Kansas vs Villanova (BLV TARZAAN) • NCAA [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/56998120.m3u8
-#EXTINF:-1 tvg-id="sport-d7eb528cb01c" tvg-name="Kansas vs Villanova" tvg-logo="https://img.cltvap.cc/basketball/team/e37875b00a57abec6aaeff5b98f89971.png!w80" group-title="CoLaTV",[05:00] 28/11 🏀 Kansas vs Villanova (BLV TARZAAN) • NCAA [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/56998120_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-74b25157fba2" tvg-name="Kansas vs Villanova" tvg-logo="https://img.cltvap.cc/basketball/team/e37875b00a57abec6aaeff5b98f89971.png!w80" group-title="CoLaTV",[05:00] 28/11 🏀 Kansas vs Villanova (BLV TARZAAN) • NCAA [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/56998120.flv
-#EXTINF:-1 tvg-id="sport-5ad735459457" tvg-name="Brasil vs Hoa Kỳ" tvg-logo="https://img.cltvap.cc/basketball/team/2bc5dd83d6d15f000d58b22ec80d5ff7.png!w80" group-title="CoLaTV",[06:10] 28/11 🏀 Brasil vs Hoa Kỳ (BLV 247) • Vòng loại World Cup Châu Mỹ [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/90865415.m3u8
-#EXTINF:-1 tvg-id="sport-4fc7188bd13c" tvg-name="Brasil vs Hoa Kỳ" tvg-logo="https://img.cltvap.cc/basketball/team/2bc5dd83d6d15f000d58b22ec80d5ff7.png!w80" group-title="CoLaTV",[06:10] 28/11 🏀 Brasil vs Hoa Kỳ (BLV 247) • Vòng loại World Cup Châu Mỹ [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/90865415_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-51e43a27a996" tvg-name="Brasil vs Hoa Kỳ" tvg-logo="https://img.cltvap.cc/basketball/team/2bc5dd83d6d15f000d58b22ec80d5ff7.png!w80" group-title="CoLaTV",[06:10] 28/11 🏀 Brasil vs Hoa Kỳ (BLV 247) • Vòng loại World Cup Châu Mỹ [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/90865415.flv
-#EXTINF:-1 tvg-id="sport-06f890e7ad47" tvg-name="New York Knicks vs Miami Heat" tvg-logo="https://img.cltvap.cc/basketball/team/49f8b0ef2ed529b44dba6ebb99a0d5ff.png!w80" group-title="CoLaTV",[07:00] 28/11 🏀 New York Knicks vs Miami Heat (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/87379114.m3u8
-#EXTINF:-1 tvg-id="sport-68ec30642822" tvg-name="New York Knicks vs Miami Heat" tvg-logo="https://img.cltvap.cc/basketball/team/49f8b0ef2ed529b44dba6ebb99a0d5ff.png!w80" group-title="CoLaTV",[07:00] 28/11 🏀 New York Knicks vs Miami Heat (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/87379114_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-004cc9827bc5" tvg-name="New York Knicks vs Miami Heat" tvg-logo="https://img.cltvap.cc/basketball/team/49f8b0ef2ed529b44dba6ebb99a0d5ff.png!w80" group-title="CoLaTV",[07:00] 28/11 🏀 New York Knicks vs Miami Heat (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/87379114.flv
-#EXTINF:-1 tvg-id="sport-5cb2859294c2" tvg-name="Indiana Pacers vs Philadelphia 76ers" tvg-logo="https://img.cltvap.cc/basketball/team/6f313b682482799762cf60dbc30dbfae.png!w80" group-title="CoLaTV",[07:30] 28/11 🏀 Indiana Pacers vs Philadelphia 76ers (BLV TARZAAN) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/56998120.m3u8
-#EXTINF:-1 tvg-id="sport-cca58b32c372" tvg-name="Indiana Pacers vs Philadelphia 76ers" tvg-logo="https://img.cltvap.cc/basketball/team/6f313b682482799762cf60dbc30dbfae.png!w80" group-title="CoLaTV",[07:30] 28/11 🏀 Indiana Pacers vs Philadelphia 76ers (BLV TARZAAN) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/56998120_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-268012e8d874" tvg-name="Indiana Pacers vs Philadelphia 76ers" tvg-logo="https://img.cltvap.cc/basketball/team/6f313b682482799762cf60dbc30dbfae.png!w80" group-title="CoLaTV",[07:30] 28/11 🏀 Indiana Pacers vs Philadelphia 76ers (BLV TARZAAN) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/56998120.flv
-#EXTINF:-1 tvg-id="sport-e116e9944b01" tvg-name="Đội bóng rổ Boston Celtics vs Atlanta Hawks" tvg-logo="https://img.cltvap.cc/basketball/team/884c1c1f5db46c170df3c34a8e213ec9.png!w80" group-title="CoLaTV",[08:00] 28/11 🏀 Đội bóng rổ Boston Celtics vs Atlanta Hawks (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/19919577.m3u8
-#EXTINF:-1 tvg-id="sport-73ffca0c263c" tvg-name="Đội bóng rổ Boston Celtics vs Atlanta Hawks" tvg-logo="https://img.cltvap.cc/basketball/team/884c1c1f5db46c170df3c34a8e213ec9.png!w80" group-title="CoLaTV",[08:00] 28/11 🏀 Đội bóng rổ Boston Celtics vs Atlanta Hawks (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/19919577_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-5dba8b899084" tvg-name="Đội bóng rổ Boston Celtics vs Atlanta Hawks" tvg-logo="https://img.cltvap.cc/basketball/team/884c1c1f5db46c170df3c34a8e213ec9.png!w80" group-title="CoLaTV",[08:00] 28/11 🏀 Đội bóng rổ Boston Celtics vs Atlanta Hawks (BLV POCARI) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/19919577.flv
-#EXTINF:-1 tvg-id="sport-245da1dedbb2" tvg-name="Minnesota Timberwolves vs Memphis Grizzlies" tvg-logo="https://img.cltvap.cc/basketball/team/38794d0ac418d8f2d03bd17a2623f3ed.png!w80" group-title="CoLaTV",[08:30] 28/11 🏀 Minnesota Timberwolves vs Memphis Grizzlies (BLV 247) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/90865415.m3u8
-#EXTINF:-1 tvg-id="sport-4e0e9f59a81b" tvg-name="Minnesota Timberwolves vs Memphis Grizzlies" tvg-logo="https://img.cltvap.cc/basketball/team/38794d0ac418d8f2d03bd17a2623f3ed.png!w80" group-title="CoLaTV",[08:30] 28/11 🏀 Minnesota Timberwolves vs Memphis Grizzlies (BLV 247) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/90865415_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-4877ff4507eb" tvg-name="Minnesota Timberwolves vs Memphis Grizzlies" tvg-logo="https://img.cltvap.cc/basketball/team/38794d0ac418d8f2d03bd17a2623f3ed.png!w80" group-title="CoLaTV",[08:30] 28/11 🏀 Minnesota Timberwolves vs Memphis Grizzlies (BLV 247) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/90865415.flv
-#EXTINF:-1 tvg-id="sport-fff4a0910f3d" tvg-name="San Antonio Spurs vs Los Angeles Lakers" tvg-logo="https://img.cltvap.cc/basketball/team/5305d1a7b721b5bef418041eff53ba82.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 San Antonio Spurs vs Los Angeles Lakers (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/82054853.m3u8
-#EXTINF:-1 tvg-id="sport-fbd8232be04a" tvg-name="San Antonio Spurs vs Los Angeles Lakers" tvg-logo="https://img.cltvap.cc/basketball/team/5305d1a7b721b5bef418041eff53ba82.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 San Antonio Spurs vs Los Angeles Lakers (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/82054853.flv
-#EXTINF:-1 tvg-id="sport-ee019293cbe4" tvg-name="San Antonio Spurs vs Los Angeles Lakers" tvg-logo="https://img.cltvap.cc/basketball/team/5305d1a7b721b5bef418041eff53ba82.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 San Antonio Spurs vs Los Angeles Lakers (BLV ROCKSTAR) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/82054853_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-3c9e85fcb1f4" tvg-name="San Antonio Spurs vs Los Angeles Lakers" tvg-logo="https://img.cltvap.cc/basketball/team/5305d1a7b721b5bef418041eff53ba82.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 San Antonio Spurs vs Los Angeles Lakers (BLV TARZAAN) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/56998120.m3u8
-#EXTINF:-1 tvg-id="sport-6f860b672728" tvg-name="San Antonio Spurs vs Los Angeles Lakers" tvg-logo="https://img.cltvap.cc/basketball/team/5305d1a7b721b5bef418041eff53ba82.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 San Antonio Spurs vs Los Angeles Lakers (BLV TARZAAN) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/56998120_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-ae22e4362821" tvg-name="San Antonio Spurs vs Los Angeles Lakers" tvg-logo="https://img.cltvap.cc/basketball/team/5305d1a7b721b5bef418041eff53ba82.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 San Antonio Spurs vs Los Angeles Lakers (BLV TARZAAN) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/56998120.flv
-#EXTINF:-1 tvg-id="sport-1301d25e7063" tvg-name="Utah Jazz vs Denver Nuggets" tvg-logo="https://img.cltvap.cc/basketball/team/8c88df221129169246c5b8a82955fa34.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 Utah Jazz vs Denver Nuggets (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/87379114.m3u8
-#EXTINF:-1 tvg-id="sport-99dce3365d60" tvg-name="Utah Jazz vs Denver Nuggets" tvg-logo="https://img.cltvap.cc/basketball/team/8c88df221129169246c5b8a82955fa34.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 Utah Jazz vs Denver Nuggets (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/87379114_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-b025e782c478" tvg-name="Utah Jazz vs Denver Nuggets" tvg-logo="https://img.cltvap.cc/basketball/team/8c88df221129169246c5b8a82955fa34.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 Utah Jazz vs Denver Nuggets (BLV Cozy) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/87379114.flv
-#EXTINF:-1 tvg-id="sport-a95c681298b6" tvg-name="Portland Trail Blazers vs Golden State Warriors" tvg-logo="https://img.cltvap.cc/basketball/team/4512175b1415f69816e816160093bcc0.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 Portland Trail Blazers vs Golden State Warriors (BLV LIPTON) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/89756030.m3u8
-#EXTINF:-1 tvg-id="sport-bd3c16c389a2" tvg-name="Portland Trail Blazers vs Golden State Warriors" tvg-logo="https://img.cltvap.cc/basketball/team/4512175b1415f69816e816160093bcc0.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 Portland Trail Blazers vs Golden State Warriors (BLV LIPTON) • Hiệp hội Bóng rổ Quốc gia [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/89756030_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-a6100085be37" tvg-name="Portland Trail Blazers vs Golden State Warriors" tvg-logo="https://img.cltvap.cc/basketball/team/4512175b1415f69816e816160093bcc0.png!w80" group-title="CoLaTV",[09:30] 28/11 🏀 Portland Trail Blazers vs Golden State Warriors (BLV LIPTON) • Hiệp hội Bóng rổ Quốc gia [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/89756030.flv
-#EXTINF:-1 tvg-id="sport-9b8ab3f02094" tvg-name="Nebraska O. vs Jacksonville State" tvg-logo="https://img.cltvap.cc/basketball/team/f1dff0ffc4b6490aa244f2fd040be5ba.png!w80" group-title="CoLaTV",[10:30] 28/11 🏀 Nebraska O. vs Jacksonville State (BLV POCARI) • NCAA [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/19919577.m3u8
-#EXTINF:-1 tvg-id="sport-9b44f83107a0" tvg-name="Nebraska O. vs Jacksonville State" tvg-logo="https://img.cltvap.cc/basketball/team/f1dff0ffc4b6490aa244f2fd040be5ba.png!w80" group-title="CoLaTV",[10:30] 28/11 🏀 Nebraska O. vs Jacksonville State (BLV POCARI) • NCAA [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/19919577_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-eaca41fb8741" tvg-name="Nebraska O. vs Jacksonville State" tvg-logo="https://img.cltvap.cc/basketball/team/f1dff0ffc4b6490aa244f2fd040be5ba.png!w80" group-title="CoLaTV",[10:30] 28/11 🏀 Nebraska O. vs Jacksonville State (BLV POCARI) • NCAA [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/19919577.flv
-#EXTINF:-1 tvg-id="sport-a4be096e3fdc" tvg-name="Bahrain vs Kazakhstan" tvg-logo="https://img.cltvap.cc/basketball/team/939045fc3f62477368f62d714ab67401.png!w80" group-title="CoLaTV",[15:00] 28/11 🏀 Bahrain vs Kazakhstan (BLV ROCKSTAR) • Vòng loại Cúp Bóng rổ Châu Á [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/82054853.m3u8
-#EXTINF:-1 tvg-id="sport-a7e043dbdd4b" tvg-name="Bahrain vs Kazakhstan" tvg-logo="https://img.cltvap.cc/basketball/team/939045fc3f62477368f62d714ab67401.png!w80" group-title="CoLaTV",[15:00] 28/11 🏀 Bahrain vs Kazakhstan (BLV ROCKSTAR) • Vòng loại Cúp Bóng rổ Châu Á [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/82054853.flv
-#EXTINF:-1 tvg-id="sport-00b38bf1447a" tvg-name="Bahrain vs Kazakhstan" tvg-logo="https://img.cltvap.cc/basketball/team/939045fc3f62477368f62d714ab67401.png!w80" group-title="CoLaTV",[15:00] 28/11 🏀 Bahrain vs Kazakhstan (BLV ROCKSTAR) • Vòng loại Cúp Bóng rổ Châu Á [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/82054853_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-2bc318962e61" tvg-name="United Arab Emirates vs Sri Lanka" tvg-logo="https://img.cltvap.cc/basketball/team/bdee645df8bc3b8f33e4354133224f89.png!w80" group-title="CoLaTV",[18:00] 28/11 🏀 United Arab Emirates vs Sri Lanka (BLV LIPTON) • Vòng loại Cúp Bóng rổ Châu Á [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/89756030.m3u8
-#EXTINF:-1 tvg-id="sport-546741e4fca1" tvg-name="United Arab Emirates vs Sri Lanka" tvg-logo="https://img.cltvap.cc/basketball/team/bdee645df8bc3b8f33e4354133224f89.png!w80" group-title="CoLaTV",[18:00] 28/11 🏀 United Arab Emirates vs Sri Lanka (BLV LIPTON) • Vòng loại Cúp Bóng rổ Châu Á [HLS]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.yefpwmc.app/live/89756030_tsc.m3u8
-#EXTINF:-1 tvg-id="sport-a7a4418a27a6" tvg-name="United Arab Emirates vs Sri Lanka" tvg-logo="https://img.cltvap.cc/basketball/team/bdee645df8bc3b8f33e4354133224f89.png!w80" group-title="CoLaTV",[18:00] 28/11 🏀 United Arab Emirates vs Sri Lanka (BLV LIPTON) • Vòng loại Cúp Bóng rổ Châu Á [FLV]
-#EXTGRP:CoLaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://cola.tv/
-https://live05.wecile.app/live/89756030.flv
-#EXTINF:-1 tvg-id="sport-1c7c56fe41b5" tvg-name="Pachuca vs Guadalajara Chivas" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131434_2bc770b2.png" group-title="Chuối Chiên",🔴 [08:00] 27/11 ⚽ Pachuca vs Guadalajara Chivas (Chuối Kem) • VĐQG Mexico [HLS]
-#EXTGRP:Chuối Chiên
-#EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
-https://gckc0525.edgemaxcdn.org/live/chuoikem/playlist.m3u8
 #EXTINF:-1 tvg-id="sport-90ce0dd02648" tvg-name="Pachuca vs Guadalajara Chivas" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131434_2bc770b2.png" group-title="Chuối Chiên",🔴 [08:00] 27/11 ⚽ Pachuca vs Guadalajara Chivas (Chuối Kem) • VĐQG Mexico [HLS]
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
 https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8
+#EXTINF:-1 tvg-id="sport-1c7c56fe41b5" tvg-name="Pachuca vs Guadalajara Chivas" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131434_2bc770b2.png" group-title="Chuối Chiên",🔴 [08:00] 27/11 ⚽ Pachuca vs Guadalajara Chivas (Chuối Kem) • VĐQG Mexico [HLS]
+#EXTGRP:Chuối Chiên
+#EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
+https://gckc0525.edgemaxcdn.org/live/chuoikem/playlist.m3u8
 #EXTINF:-1 tvg-id="sport-d42bbbe98557" tvg-name="Pachuca vs Guadalajara Chivas" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131434_2bc770b2.png" group-title="Chuối Chiên",🔴 [08:00] 27/11 ⚽ Pachuca vs Guadalajara Chivas (Chuối Kem) • VĐQG Mexico [FHD • HLS]
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
 https://gckc0525.edgemaxcdn.org/live/chuoikemhd/playlist.m3u8
-#EXTINF:-1 tvg-id="sport-d6253d058462" tvg-name="Leon vs Cruz Azul" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131434_fbad589d.png" group-title="Chuối Chiên",[10:10] 27/11 ⚽ Leon vs Cruz Azul (Chuối Chao) • VĐQG Mexico [HLS]
+#EXTINF:-1 tvg-id="sport-d6253d058462" tvg-name="Leon vs Cruz Azul" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131434_fbad589d.png" group-title="Chuối Chiên",🔴 [10:10] 27/11 ⚽ Leon vs Cruz Azul (Chuối Chao) • VĐQG Mexico [HLS]
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
 https://gckc0525.edgemaxcdn.org/live/chuoichao/playlist.m3u8
-#EXTINF:-1 tvg-id="sport-49c1c9f85484" tvg-name="Leon vs Cruz Azul" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131434_fbad589d.png" group-title="Chuối Chiên",[10:10] 27/11 ⚽ Leon vs Cruz Azul (Chuối Chao) • VĐQG Mexico [HLS]
+#EXTINF:-1 tvg-id="sport-49c1c9f85484" tvg-name="Leon vs Cruz Azul" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131434_fbad589d.png" group-title="Chuối Chiên",🔴 [10:10] 27/11 ⚽ Leon vs Cruz Azul (Chuối Chao) • VĐQG Mexico [HLS]
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
 https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8
-#EXTINF:-1 tvg-id="sport-73ab03446ab4" tvg-name="Leon vs Cruz Azul" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131434_fbad589d.png" group-title="Chuối Chiên",[10:10] 27/11 ⚽ Leon vs Cruz Azul (Chuối Chao) • VĐQG Mexico [FHD • HLS]
+#EXTINF:-1 tvg-id="sport-73ab03446ab4" tvg-name="Leon vs Cruz Azul" tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131434_fbad589d.png" group-title="Chuối Chiên",🔴 [10:10] 27/11 ⚽ Leon vs Cruz Azul (Chuối Chao) • VĐQG Mexico [FHD • HLS]
 #EXTGRP:Chuối Chiên
 #EXTVLCOPT:http-referrer=https://fhd-01.cctvsignal.xyz/
 https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8
@@ -2337,6 +2312,66 @@ https://gckc0525.edgemaxcdn.org/live/chuoiluahd/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://pzhgifbkllliv.vcdn.cloud/1795678006_hd/1795678006_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-579554e86953" tvg-name="Malaysia vs Fiji" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/a4b3bf9470a9dc6bd70093549652a13c.png" group-title="Giờ Vàng",[12:00] 27/11 🏀 Malaysia vs Fiji (Ngu) • Asia Cup Qualifiers [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://pzhgifbkllliv.vcdn.cloud/1795677476_hd/1795677476_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-57df6361da24" tvg-name="Jordan vs New Zealand" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/e43e71c4c323cd8cbfa066024d17bef0.jpg" group-title="Giờ Vàng",[13:00] 27/11 🏀 Jordan vs New Zealand (Cầy) • World Cup Asia qualifiers [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://pzhgifbkllliv.vcdn.cloud/1795677750_hd/1795677750_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-5e9666c1bdc9" tvg-name="Indonesia vs Thailand" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/373559b1eae432eecb6bb29589f1bcfe.gif" group-title="Giờ Vàng",[15:00] 27/11 🏀 Indonesia vs Thailand (Điếc) • Asia Cup Qualifiers [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://pzhgifbkllliv.vcdn.cloud/1795575279_hd/1795575279_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-15973b8f25f9" tvg-name="Iran vs Australia" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/fd824340b59fd17ed954aa1dafac0564.jpg" group-title="Giờ Vàng",[16:00] 27/11 🏀 Iran vs Australia (Chồn) • World Cup Asia qualifiers [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://pzhgifbkllliv.vcdn.cloud/1795575301_hd/1795575301_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-748ff977a88c" tvg-name="Hong Kong China vs Mongolia" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/bc17d59b01db36bcbba153ca9911d62c.png" group-title="Giờ Vàng",[18:00] 27/11 🏀 Hong Kong China vs Mongolia (Chồn) • Asia Cup Qualifiers [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://pzhgifbkllliv.vcdn.cloud/1795575452_hd/1795575452_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-4c3ba691bc4e" tvg-name="Sri Lanka vs Bahrain" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/7fde79664952b15c263a879bc59211ba.png" group-title="Giờ Vàng",[19:00] 27/11 🏀 Sri Lanka vs Bahrain (Cầy) • Asia Cup Qualifiers [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://pzhgifbkllliv.vcdn.cloud/1795575538_hd/1795575538_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-5f55008b3728" tvg-name="Syria vs Philippines" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/0715d1f2f9ca8ea91035f3fcc2af4d35.png" group-title="Giờ Vàng",[19:00] 27/11 🏀 Syria vs Philippines (Cận) • World Cup Asia qualifiers [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://pzhgifbkllliv.vcdn.cloud/1795575508_hd/1795575508_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-d6c746394046" tvg-name="Estonia vs France" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/393a8d084dec3d0628034214e552180a.jpg" group-title="Giờ Vàng",[00:00] 28/11 🏀 Estonia vs France (Cầy) • World Cup European qualifiers [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://pzhgifbkllliv.vcdn.cloud/1795678666_hd/1795678666_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-f6c9326d575a" tvg-name="Latvia vs Germany" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/de9804d0eeb15dd7fe56c4b8bae4640c.jpg" group-title="Giờ Vàng",[00:30] 28/11 🏀 Latvia vs Germany (Chồn) • World Cup European qualifiers [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://pzhgifbkllliv.vcdn.cloud/1795678692_hd/1795678692_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-64ff5cb0de92" tvg-name="Poland vs Croatia" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/ba808fbea3947aa8d123bdaa2e9da97d.jpg" group-title="Giờ Vàng",[02:45] 28/11 🏀 Poland vs Croatia (Cầy) • World Cup European qualifiers [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://pzhgifbkllliv.vcdn.cloud/1795678715_hd/1795678715_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-6aa1a8a8bb28" tvg-name="Bahrain vs Kazakhstan" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/8c461c07aaa52929101f0f3f369ce9a1.gif" group-title="Giờ Vàng",[15:00] 28/11 🏀 Bahrain vs Kazakhstan (Ngu) • Asia Cup Qualifiers [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://pzhgifbkllliv.vcdn.cloud/1795575565_hd/1795575565_hd@720p.m3u8
+#EXTINF:-1 tvg-id="sport-7757b657e89d" tvg-name="United Arab Emirates vs Sri Lanka" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/2b794e95819c64c838fd0b228aa31404.png" group-title="Giờ Vàng",[18:00] 28/11 🏀 United Arab Emirates vs Sri Lanka (Ngu) • Asia Cup Qualifiers [HLS]
+#EXTGRP:Giờ Vàng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://giovang.org/
+https://pzhgifbkllliv.vcdn.cloud/1795575589_hd/1795575589_hd@720p.m3u8
 #EXTINF:-1 tvg-id="sport-4aa3256ffe1e" tvg-name="Huế FC vs Đồng Tâm Long An" tvg-logo="https://images.keovip88.net/images/teams/huda-hue.png" group-title="Giờ Vàng",[15:30] 27/11 ⚽ Huế FC vs Đồng Tâm Long An (Hấu) • Hạng Nhất Việt Nam [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -2517,66 +2552,6 @@ https://pzhgifbkllliv.vcdn.cloud/1795574637_hd/1795574637_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://pzhgifbkllliv.vcdn.cloud/1795574680_hd/1795574680_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-579554e86953" tvg-name="Malaysia vs Fiji" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/a4b3bf9470a9dc6bd70093549652a13c.png" group-title="Giờ Vàng",[12:00] 27/11 🏀 Malaysia vs Fiji (Ngu) • Asia Cup Qualifiers [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://pzhgifbkllliv.vcdn.cloud/1795677476_hd/1795677476_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-57df6361da24" tvg-name="Jordan vs New Zealand" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/e43e71c4c323cd8cbfa066024d17bef0.jpg" group-title="Giờ Vàng",[13:00] 27/11 🏀 Jordan vs New Zealand (Cầy) • World Cup Asia qualifiers [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://pzhgifbkllliv.vcdn.cloud/1795677750_hd/1795677750_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-5e9666c1bdc9" tvg-name="Indonesia vs Thailand" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/373559b1eae432eecb6bb29589f1bcfe.gif" group-title="Giờ Vàng",[15:00] 27/11 🏀 Indonesia vs Thailand (Điếc) • Asia Cup Qualifiers [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://pzhgifbkllliv.vcdn.cloud/1795575279_hd/1795575279_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-82dc4db4ef64" tvg-name="Iran vs Australia" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/fd824340b59fd17ed954aa1dafac0564.jpg" group-title="Giờ Vàng",[16:00] 27/11 🏀 Iran vs Australia (Chồn) • World Cup Asia qualifiers [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://pzhgifbkllliv.vcdn.cloud/1795575301_hd/1795575301_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-748ff977a88c" tvg-name="Hong Kong China vs Mongolia" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/bc17d59b01db36bcbba153ca9911d62c.png" group-title="Giờ Vàng",[18:00] 27/11 🏀 Hong Kong China vs Mongolia (Chồn) • Asia Cup Qualifiers [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://pzhgifbkllliv.vcdn.cloud/1795575452_hd/1795575452_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-4c3ba691bc4e" tvg-name="Sri Lanka vs Bahrain" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/7fde79664952b15c263a879bc59211ba.png" group-title="Giờ Vàng",[19:00] 27/11 🏀 Sri Lanka vs Bahrain (Cầy) • Asia Cup Qualifiers [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://pzhgifbkllliv.vcdn.cloud/1795575538_hd/1795575538_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-5f55008b3728" tvg-name="Syria vs Philippines" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/0715d1f2f9ca8ea91035f3fcc2af4d35.png" group-title="Giờ Vàng",[19:00] 27/11 🏀 Syria vs Philippines (Cận) • World Cup Asia qualifiers [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://pzhgifbkllliv.vcdn.cloud/1795575508_hd/1795575508_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-d6c746394046" tvg-name="Estonia vs France" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/393a8d084dec3d0628034214e552180a.jpg" group-title="Giờ Vàng",[00:00] 28/11 🏀 Estonia vs France (Cầy) • World Cup European qualifiers [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://pzhgifbkllliv.vcdn.cloud/1795678666_hd/1795678666_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-f6c9326d575a" tvg-name="Latvia vs Germany" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/de9804d0eeb15dd7fe56c4b8bae4640c.jpg" group-title="Giờ Vàng",[00:30] 28/11 🏀 Latvia vs Germany (Chồn) • World Cup European qualifiers [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://pzhgifbkllliv.vcdn.cloud/1795678692_hd/1795678692_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-64ff5cb0de92" tvg-name="Poland vs Croatia" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/ba808fbea3947aa8d123bdaa2e9da97d.jpg" group-title="Giờ Vàng",[02:45] 28/11 🏀 Poland vs Croatia (Cầy) • World Cup European qualifiers [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://pzhgifbkllliv.vcdn.cloud/1795678715_hd/1795678715_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-6aa1a8a8bb28" tvg-name="Bahrain vs Kazakhstan" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/8c461c07aaa52929101f0f3f369ce9a1.gif" group-title="Giờ Vàng",[15:00] 28/11 🏀 Bahrain vs Kazakhstan (Ngu) • Asia Cup Qualifiers [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://pzhgifbkllliv.vcdn.cloud/1795575565_hd/1795575565_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-7757b657e89d" tvg-name="United Arab Emirates vs Sri Lanka" tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/2b794e95819c64c838fd0b228aa31404.png" group-title="Giờ Vàng",[18:00] 28/11 🏀 United Arab Emirates vs Sri Lanka (Ngu) • Asia Cup Qualifiers [HLS]
-#EXTGRP:Giờ Vàng
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://giovang.org/
-https://pzhgifbkllliv.vcdn.cloud/1795575589_hd/1795575589_hd@720p.m3u8
 #EXTINF:-1 tvg-id="sport-3f1d40f372bc" tvg-name="PGL Major Stage 1 vs Swiss Round 5" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaHZNdOwvIhT7HUflJeW9vcNqgQtpWq2K-ibx6QSUVtQ&amp;s=10" group-title="Giờ Vàng",[13:00] 27/11 🎮 PGL Major Stage 1 vs Swiss Round 5 (Mickey) • PGL Major Singapore 2026 Stage 1 [HLS]
 #EXTGRP:Giờ Vàng
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -2587,143 +2562,133 @@ https://pzhgifbkllliv.vcdn.cloud/1795677884_hd/1795677884_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://giovang.org/
 https://pzhgifbkllliv.vcdn.cloud/1795679288_hd/1795679288_hd@720p.m3u8
-#EXTINF:-1 tvg-id="sport-ae0076aa0788" tvg-name="Pachuca vs Club Guadalajara" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z8yomo4hpy5q0j6/image/small" group-title="XoilacXTH",🔴 [08:00] 27/11 ⚽ Pachuca vs Club Guadalajara • VĐQG Mexico [FLV]
+#EXTINF:-1 tvg-id="sport-8037bf314842" tvg-name="Veroskronos Tsuno vs Gakunan F Mosuperio" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyhng3yr1ge/image/small" group-title="XoilacXTH",🔴 [08:45] 27/11 ⚽ Veroskronos Tsuno vs Gakunan F Mosuperio • JPN Regional League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live3979.zundrixmediapipeline.com/live/channel10.flv
-#EXTINF:-1 tvg-id="sport-9c063917721a" tvg-name="Pachuca vs Club Guadalajara" tvg-logo="https://imgts.sportpulseapiz.com/football/team/z8yomo4hpy5q0j6/image/small" group-title="XoilacXTH",🔴 [08:00] 27/11 ⚽ Pachuca vs Club Guadalajara • VĐQG Mexico [FLV]
+https://live1.quickscoreboardz.com/live/channel20.flv?wsSecret=4fcb0c5fda77a68cdde6ac93fbfb99ff&wsABSTime=1795792559
+#EXTINF:-1 tvg-id="sport-42d2ea7ef6d5" tvg-name="Mongolia U15 vs Ma Cao U15" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4hvy6oq86p/image/small" group-title="XoilacXTH",🔴 [09:00] 27/11 ⚽ Mongolia U15 vs Ma Cao U15 • EAFF U15 Men Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.streamhaulcdn.com/livecdn/channel-10.flv?auth_key=3000001795748491-0-0-b4661a9bc92948ea5dc4f812274519fb
-#EXTINF:-1 tvg-id="sport-2696b509ed8e" tvg-name="Veroskronos Tsuno vs Gakunan F Mosuperio" tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyhng3yr1ge/image/small" group-title="XoilacXTH",🔴 [08:45] 27/11 ⚽ Veroskronos Tsuno vs Gakunan F Mosuperio • JPN Regional League [FLV]
+https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=1f399fd7483c85e356a3bff64a91f1ef&wsABSTime=1795792559
+#EXTINF:-1 tvg-id="sport-914eb372a52c" tvg-name="Juarez FC U21 vs Chivas Guadalajara U21" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8yomo4hz4v7q0j6/image/small" group-title="XoilacXTH",🔴 [09:00] 27/11 ⚽ Juarez FC U21 vs Chivas Guadalajara U21 • MEX U21 [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel20.flv?wsSecret=c555474412283a5f84f9c8d27972a578&wsABSTime=1795791691
-#EXTINF:-1 tvg-id="sport-b7e32e036754" tvg-name="Mongolia U15 vs Ma Cao U15" tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4hvy6oq86p/image/small" group-title="XoilacXTH",🔴 [09:00] 27/11 ⚽ Mongolia U15 vs Ma Cao U15 • EAFF U15 Men Championship [FLV]
+https://live1.quickscoreboardz.com/live/channel21.flv?wsSecret=bd3af88a43559f8a9b3a8f6838d9eef3&wsABSTime=1795792559
+#EXTINF:-1 tvg-id="sport-13df89f35f50" tvg-name="Bangalore United FC vs MEG" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekhyglerepz/image/small" group-title="XoilacXTH",🔴 [09:50] 27/11 ⚽ Bangalore United FC vs MEG • Indian Bangalore Super Division [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel3.flv?wsSecret=be0260cb95d76d471f05077e19f347f7&wsABSTime=1795791691
-#EXTINF:-1 tvg-id="sport-b098d3057ce7" tvg-name="Juarez FC U21 vs Chivas Guadalajara U21" tvg-logo="https://imgts.sportpulseapiz.com/football/team/8yomo4hz4v7q0j6/image/small" group-title="XoilacXTH",🔴 [09:00] 27/11 ⚽ Juarez FC U21 vs Chivas Guadalajara U21 • MEX U21 [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel21.flv?wsSecret=d72c9ce395c0bc4834bd3c7dbba9cc7c&wsABSTime=1795791691
-#EXTINF:-1 tvg-id="sport-e654856cdff9" tvg-name="Bangalore United FC vs MEG" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekhyglerepz/image/small" group-title="XoilacXTH",🔴 [09:50] 27/11 ⚽ Bangalore United FC vs MEG • Indian Bangalore Super Division [FLV]
-#EXTGRP:XoilacXTH
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=463f54e64808b2d98fd53a4f57426525&wsABSTime=1795791691
-#EXTINF:-1 tvg-id="sport-4a20b5d6b2a7" tvg-name="Club Leon vs Cruz Azul" tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghjkxvq82w/image/small" group-title="XoilacXTH",[10:10] 27/11 ⚽ Club Leon vs Cruz Azul • VĐQG Mexico [FLV]
+https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=f149ecc84cf65ce34fa0373a4ada2076&wsABSTime=1795792559
+#EXTINF:-1 tvg-id="sport-4a20b5d6b2a7" tvg-name="Club Leon vs Cruz Azul" tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghjkxvq82w/image/small" group-title="XoilacXTH",🔴 [10:10] 27/11 ⚽ Club Leon vs Cruz Azul • VĐQG Mexico [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live3979.zundrixmediapipeline.com/live/channel23.flv
-#EXTINF:-1 tvg-id="sport-bd744f6bd39c" tvg-name="Club Leon vs Cruz Azul" tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghjkxvq82w/image/small" group-title="XoilacXTH",[10:10] 27/11 ⚽ Club Leon vs Cruz Azul • VĐQG Mexico [FLV]
+#EXTINF:-1 tvg-id="sport-cdc56ca5d295" tvg-name="Club Leon vs Cruz Azul" tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghjkxvq82w/image/small" group-title="XoilacXTH",🔴 [10:10] 27/11 ⚽ Club Leon vs Cruz Azul • VĐQG Mexico [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.streamhaulcdn.com/livecdn/channel-23.flv?auth_key=3000001795748491-0-0-05b0e5e058d4fcb721bea674bcc6dd0f
-#EXTINF:-1 tvg-id="sport-cae68f33a544" tvg-name="Nankatsu SC vs Aries Tokyo" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hzz4zqdyj/image/small" group-title="XoilacXTH",[11:30] 27/11 ⚽ Nankatsu SC vs Aries Tokyo • JPN Regional League [FLV]
+https://live2.streamhaulcdn.com/livecdn/channel-23.flv?auth_key=3000001795749360-0-0-5d956dff7c79fc5395b289f55f00a65e
+#EXTINF:-1 tvg-id="sport-b80157fae0be" tvg-name="Nankatsu SC vs Aries Tokyo" tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hzz4zqdyj/image/small" group-title="XoilacXTH",[11:30] 27/11 ⚽ Nankatsu SC vs Aries Tokyo • JPN Regional League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel20.flv?wsSecret=c555474412283a5f84f9c8d27972a578&wsABSTime=1795791691
+https://live1.quickscoreboardz.com/live/channel20.flv?wsSecret=4fcb0c5fda77a68cdde6ac93fbfb99ff&wsABSTime=1795792559
 #EXTINF:-1 tvg-id="sport-38f9c41117cf" tvg-name="Bangalore Dream United FC vs Bangalore City" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlh95xzryk0/image/small" group-title="XoilacXTH",[12:25] 27/11 ⚽ Bangalore Dream United FC vs Bangalore City • Indian Bangalore Super Division [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live3979.zundrixmediapipeline.com/live/channel7.flv
-#EXTINF:-1 tvg-id="sport-d266200e90ba" tvg-name="Bangalore Dream United FC vs Bangalore City" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlh95xzryk0/image/small" group-title="XoilacXTH",[12:25] 27/11 ⚽ Bangalore Dream United FC vs Bangalore City • Indian Bangalore Super Division [FLV]
+#EXTINF:-1 tvg-id="sport-47f2a68892df" tvg-name="Bangalore Dream United FC vs Bangalore City" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlh95xzryk0/image/small" group-title="XoilacXTH",[12:25] 27/11 ⚽ Bangalore Dream United FC vs Bangalore City • Indian Bangalore Super Division [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.streamhaulcdn.com/livecdn/channel-7.flv?auth_key=3000001795748491-0-0-222e3b3fa153d814a4e3fcf5fc9cf7ad
-#EXTINF:-1 tvg-id="sport-4c70e7b2ec4d" tvg-name="Guam U15 vs Bắc Mariana U15" tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66hj8x2qo9j/image/small" group-title="XoilacXTH",[13:30] 27/11 ⚽ Guam U15 vs Bắc Mariana U15 • EAFF U15 Men Championship [FLV]
+https://live2.streamhaulcdn.com/livecdn/channel-7.flv?auth_key=3000001795749360-0-0-214d59bbb19ef3035c8521304ae46ba4
+#EXTINF:-1 tvg-id="sport-deb97441167a" tvg-name="Guam U15 vs Bắc Mariana U15" tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66hj8x2qo9j/image/small" group-title="XoilacXTH",[13:30] 27/11 ⚽ Guam U15 vs Bắc Mariana U15 • EAFF U15 Men Championship [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=1352ca7688c36183eabcde050fedbd69&wsABSTime=1795791691
-#EXTINF:-1 tvg-id="sport-7b9b4151a8c4" tvg-name="Nữ Arba Minch vs Nữ Ethiopian Sports Academy" tvg-logo="https://imgts.sportpulseapiz.com/football/team/1l4rjnhk2j7m7vx/image/small" group-title="XoilacXTH",[14:00] 27/11 ⚽ Nữ Arba Minch vs Nữ Ethiopian Sports Academy • Ethiopia HL W [FLV]
+https://live1.quickscoreboardz.com/live/channel2.flv?wsSecret=bcdfccb0be18ce62aa3553b328e63b66&wsABSTime=1795792559
+#EXTINF:-1 tvg-id="sport-4ec0a7d64697" tvg-name="Nữ Arba Minch vs Nữ Ethiopian Sports Academy" tvg-logo="https://imgts.sportpulseapiz.com/football/team/1l4rjnhk2j7m7vx/image/small" group-title="XoilacXTH",[14:00] 27/11 ⚽ Nữ Arba Minch vs Nữ Ethiopian Sports Academy • Ethiopia HL W [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel20.flv?wsSecret=c555474412283a5f84f9c8d27972a578&wsABSTime=1795791691
+https://live1.quickscoreboardz.com/live/channel20.flv?wsSecret=4fcb0c5fda77a68cdde6ac93fbfb99ff&wsABSTime=1795792559
 #EXTINF:-1 tvg-id="sport-9dd1d15922a5" tvg-name="Uptown Rebels SC vs FC Agniputhra" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8ghp746r6od/image/small" group-title="XoilacXTH",[14:55] 27/11 ⚽ Uptown Rebels SC vs FC Agniputhra • Indian Bangalore Super Division [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live3979.zundrixmediapipeline.com/live/channel9.flv
-#EXTINF:-1 tvg-id="sport-65e804add599" tvg-name="Uptown Rebels SC vs FC Agniputhra" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8ghp746r6od/image/small" group-title="XoilacXTH",[14:55] 27/11 ⚽ Uptown Rebels SC vs FC Agniputhra • Indian Bangalore Super Division [FLV]
+#EXTINF:-1 tvg-id="sport-cc689ffee363" tvg-name="Uptown Rebels SC vs FC Agniputhra" tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8ghp746r6od/image/small" group-title="XoilacXTH",[14:55] 27/11 ⚽ Uptown Rebels SC vs FC Agniputhra • Indian Bangalore Super Division [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.streamhaulcdn.com/livecdn/channel-9.flv?auth_key=3000001795748491-0-0-44bd71fc378e60c59336ccffb7142553
+https://live2.streamhaulcdn.com/livecdn/channel-9.flv?auth_key=3000001795749360-0-0-99818b20180658d59beb4faf3f2f2449
 #EXTINF:-1 tvg-id="sport-13ffc04c7544" tvg-name="Huda Huế vs Đồng Tâm Long An" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekh96p9repz/image/small" group-title="XoilacXTH",[15:30] 27/11 ⚽ Huda Huế vs Đồng Tâm Long An • V.LEAGUE 2 [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live3979.zundrixmediapipeline.com/live/channel19.flv
-#EXTINF:-1 tvg-id="sport-a1a8a3bd89e2" tvg-name="Huda Huế vs Đồng Tâm Long An" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekh96p9repz/image/small" group-title="XoilacXTH",[15:30] 27/11 ⚽ Huda Huế vs Đồng Tâm Long An • V.LEAGUE 2 [FLV]
+#EXTINF:-1 tvg-id="sport-2d601896b0fa" tvg-name="Huda Huế vs Đồng Tâm Long An" tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekh96p9repz/image/small" group-title="XoilacXTH",[15:30] 27/11 ⚽ Huda Huế vs Đồng Tâm Long An • V.LEAGUE 2 [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.streamhaulcdn.com/livecdn/channel-19.flv?auth_key=3000001795748491-0-0-b4d6c4934529995d0350956143102d0f
+https://live2.streamhaulcdn.com/livecdn/channel-19.flv?auth_key=3000001795749359-0-0-eb2dca8a00d4b34e1fa8a378e4989acd
 #EXTINF:-1 tvg-id="sport-71305fe8d622" tvg-name="Broadmeadow Magic vs Queensland Lions SC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhgz1eryk0/image/small" group-title="XoilacXTH",[15:30] 27/11 ⚽ Broadmeadow Magic vs Queensland Lions SC • Australia Champions [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live3979.zundrixmediapipeline.com/live/channel21.flv
-#EXTINF:-1 tvg-id="sport-b1b0a2935127" tvg-name="Broadmeadow Magic vs Queensland Lions SC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhgz1eryk0/image/small" group-title="XoilacXTH",[15:30] 27/11 ⚽ Broadmeadow Magic vs Queensland Lions SC • Australia Champions [FLV]
+#EXTINF:-1 tvg-id="sport-9bf86aa00d8e" tvg-name="Broadmeadow Magic vs Queensland Lions SC" tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhgz1eryk0/image/small" group-title="XoilacXTH",[15:30] 27/11 ⚽ Broadmeadow Magic vs Queensland Lions SC • Australia Champions [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.streamhaulcdn.com/livecdn/channel-21.flv?auth_key=3000001795748491-0-0-cb14c4651e8338ff5747f013fe1bc087
+https://live2.streamhaulcdn.com/livecdn/channel-21.flv?auth_key=3000001795749360-0-0-0096373b9bba19ed8110e0583f728e3b
 #EXTINF:-1 tvg-id="sport-45aee2c6db48" tvg-name="Nữ Tây Ban Nha U19 vs Nữ Israel U19" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh0o0omd7o/image/small" group-title="XoilacXTH",[15:30] 27/11 ⚽ Nữ Tây Ban Nha U19 vs Nữ Israel U19 • European Women [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live3979.zundrixmediapipeline.com/live/channel17.flv
-#EXTINF:-1 tvg-id="sport-624b6a3ef5c5" tvg-name="Nữ Tây Ban Nha U19 vs Nữ Israel U19" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh0o0omd7o/image/small" group-title="XoilacXTH",[15:30] 27/11 ⚽ Nữ Tây Ban Nha U19 vs Nữ Israel U19 • European Women [FLV]
+#EXTINF:-1 tvg-id="sport-1efd520b11fd" tvg-name="Nữ Tây Ban Nha U19 vs Nữ Israel U19" tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh0o0omd7o/image/small" group-title="XoilacXTH",[15:30] 27/11 ⚽ Nữ Tây Ban Nha U19 vs Nữ Israel U19 • European Women [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.streamhaulcdn.com/livecdn/channel-17.flv?auth_key=3000001795748491-0-0-2d0d3e8ade09903905f1f1160070c531
-#EXTINF:-1 tvg-id="sport-2024c5e416db" tvg-name="Bangladesh Police vs Abahani Limited" tvg-logo="https://imgts.sportpulseapiz.com/football/team/2y8m4zhjy3wql07/image/small" group-title="XoilacXTH",[15:30] 27/11 ⚽ Bangladesh Police vs Abahani Limited • Bangladesh Premier League [FLV]
+https://live2.streamhaulcdn.com/livecdn/channel-17.flv?auth_key=3000001795749359-0-0-668592b408c47ad395c5422546676b15
+#EXTINF:-1 tvg-id="sport-f5bd15eaf9df" tvg-name="Bangladesh Police vs Abahani Limited" tvg-logo="https://imgts.sportpulseapiz.com/football/team/2y8m4zhjy3wql07/image/small" group-title="XoilacXTH",[15:30] 27/11 ⚽ Bangladesh Police vs Abahani Limited • Bangladesh Premier League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=a01cab0591698cfd55a3f0abe05925b3&wsABSTime=1795791691
-#EXTINF:-1 tvg-id="sport-6e3d3b8d08c2" tvg-name="Rahmatgonj MFS vs Mohammedan Dhaka" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dn1m1ghexe0moep/image/small" group-title="XoilacXTH",[15:30] 27/11 ⚽ Rahmatgonj MFS vs Mohammedan Dhaka • Bangladesh Premier League [FLV]
+https://live1.quickscoreboardz.com/live/channel5.flv?wsSecret=c323ce263184d326c644dbc4dbe2829f&wsABSTime=1795792559
+#EXTINF:-1 tvg-id="sport-fbdd02938566" tvg-name="Rahmatgonj MFS vs Mohammedan Dhaka" tvg-logo="https://imgts.sportpulseapiz.com/football/team/dn1m1ghexe0moep/image/small" group-title="XoilacXTH",[15:30] 27/11 ⚽ Rahmatgonj MFS vs Mohammedan Dhaka • Bangladesh Premier League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=c5086b15ee8a86b450fc9303c8b0c527&wsABSTime=1795791691
-#EXTINF:-1 tvg-id="sport-3489f8d13780" tvg-name="Dhaka Wanderers vs Arambagh KS" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y39mp1hyknomojx/image/small" group-title="XoilacXTH",[15:30] 27/11 ⚽ Dhaka Wanderers vs Arambagh KS • Bangladesh Premier League [FLV]
+https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=c89d6e83dfa6e1c71fd8a32121a97982&wsABSTime=1795792560
+#EXTINF:-1 tvg-id="sport-51e6caa5f75d" tvg-name="Dhaka Wanderers vs Arambagh KS" tvg-logo="https://imgts.sportpulseapiz.com/football/team/y39mp1hyknomojx/image/small" group-title="XoilacXTH",[15:30] 27/11 ⚽ Dhaka Wanderers vs Arambagh KS • Bangladesh Premier League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel7.flv?wsSecret=bc89779b3e29133f2d838b3fe71c1431&wsABSTime=1795791691
+https://live1.quickscoreboardz.com/live/channel7.flv?wsSecret=16c63702625a0b6c3ef82e882101f1f2&wsABSTime=1795792559
 #EXTINF:-1 tvg-id="sport-969689b35ea8" tvg-name="Macarthur FC vs Melbourne City" tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66h47j0qo9j/image/small" group-title="XoilacXTH",[15:40] 27/11 ⚽ Macarthur FC vs Melbourne City • Australia A-League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
 https://live3979.zundrixmediapipeline.com/live/channel15.flv
-#EXTINF:-1 tvg-id="sport-87ca0b35ad30" tvg-name="Macarthur FC vs Melbourne City" tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66h47j0qo9j/image/small" group-title="XoilacXTH",[15:40] 27/11 ⚽ Macarthur FC vs Melbourne City • Australia A-League [FLV]
+#EXTINF:-1 tvg-id="sport-4026fddcfd6b" tvg-name="Macarthur FC vs Melbourne City" tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66h47j0qo9j/image/small" group-title="XoilacXTH",[15:40] 27/11 ⚽ Macarthur FC vs Melbourne City • Australia A-League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live2.streamhaulcdn.com/livecdn/channel-15.flv?auth_key=3000001795748491-0-0-aa83664193158412e4bae661b94b8406
-#EXTINF:-1 tvg-id="sport-d1cc40a854e0" tvg-name="Nữ Đảo Síp vs Nữ Luxembourg" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kdj2ryohzo9q1zp/image/small" group-title="XoilacXTH",[16:00] 27/11 ⚽ Nữ Đảo Síp vs Nữ Luxembourg • Giao Hữu Quốc Tế [FLV]
+https://live2.streamhaulcdn.com/livecdn/channel-15.flv?auth_key=3000001795749360-0-0-f722c8175a2c1e1af371a0d0ce814d28
+#EXTINF:-1 tvg-id="sport-8c07dbf08bac" tvg-name="Nữ Đảo Síp vs Nữ Luxembourg" tvg-logo="https://imgts.sportpulseapiz.com/football/team/kdj2ryohzo9q1zp/image/small" group-title="XoilacXTH",[16:00] 27/11 ⚽ Nữ Đảo Síp vs Nữ Luxembourg • Giao Hữu Quốc Tế [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel8.flv?wsSecret=fb00f583ba918f6af20375e3c493cf45&wsABSTime=1795791691
-#EXTINF:-1 tvg-id="sport-c92334ffb56a" tvg-name="Caykur Rizespor U19 vs Kasimpasa U19" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jw2r09hlyj4rz84/image/small" group-title="XoilacXTH",[16:00] 27/11 ⚽ Caykur Rizespor U19 vs Kasimpasa U19 • Turkish U19 A2 League [FLV]
+https://live1.quickscoreboardz.com/live/channel8.flv?wsSecret=087fbf9228bdb95276676b456737c452&wsABSTime=1795792560
+#EXTINF:-1 tvg-id="sport-a0047bdb4dc0" tvg-name="Caykur Rizespor U19 vs Kasimpasa U19" tvg-logo="https://imgts.sportpulseapiz.com/football/team/jw2r09hlyj4rz84/image/small" group-title="XoilacXTH",[16:00] 27/11 ⚽ Caykur Rizespor U19 vs Kasimpasa U19 • Turkish U19 A2 League [FLV]
 #EXTGRP:XoilacXTH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel9.flv?wsSecret=3ad4ae73670ca56eb6ae3898b8c61715&wsABSTime=1795791691
+https://live1.quickscoreboardz.com/live/channel9.flv?wsSecret=bcf20192efde6c55ab8290cee0f07d5c&wsABSTime=1795792559
